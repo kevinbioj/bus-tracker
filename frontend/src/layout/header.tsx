@@ -38,7 +38,7 @@ export default function Header() {
             href="/vehicles"
           >
             <Table width={20} height={20} />
-            Véhicules & Historiques
+            Véhicules
           </Link>
         </div>
       </nav>
