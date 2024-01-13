@@ -18,13 +18,13 @@ export default function NextStops({ stopTimes, width }: NextStopsProps) {
               <div className="flex-1 flex justify-between">
                 <span
                   className="mr-2 overflow-hidden text-ellipsis whitespace-nowrap"
-                  style={{ width: `${width - 16 - 32 - 8 - (isRealtime ? 8 : 0)}px` }}
+                  style={{ width: `${width - 16 - 38 - 8 - (isRealtime ? 8 : 0)}px` }}
                 >
                   {stopTime.name}
                 </span>
                 {isRealtime && <Rss className="-rotate-90" color="green" size={8} />}
               </div>
-              <div className="text-center w-8">
+              <div className="tabular-nums text-center w-[38px]">
                 {match([stopTime.timestamp, stopTime.delta])
                   .with([null, P.any], () => <X className="mx-auto -mt-0.5" color="red" size={18} strokeWidth={3} />)
                   .with([P.number, null], ([time]) => <span>{dayjs.unix(time).format("HH:mm")}</span>)
