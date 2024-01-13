@@ -1,0 +1,11 @@
+{
+  "name": "Bus Tracker",
+  "short_name": "Bus Tracker",
+  "description": "Application de suivi des véhicules de transports en commun.",
+  "theme_color": "#B0105F",
+  "background_color": "#B0105F",
+  "start_url": "/",
+  "lang": "fr",
+  "icons": [{ "src": "/app-icon.png" }],
+  "display": "fullscreen"
+}

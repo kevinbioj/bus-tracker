@@ -1,0 +1,32 @@
+{
+  "name": "yabs",
+  "version": "1.0.0",
+  "description": "",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "decompress": "^4.2.1",
+    "drizzle-orm": "^0.29.2",
+    "fastify": "^4.25.1",
+    "node-cron": "^3.0.3",
+    "protobufjs": "^7.2.5",
+    "ts-pattern": "^5.0.6"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/decompress": "^4.2.7",
+    "@types/node-cron": "^3.0.11",
+    "prettier": "^3.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
