@@ -59,7 +59,8 @@ export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
           {vehicle.name && <p className="font-medium">{vehicle.name}</p>}
           {vehicle.currentRouteId !== null ? (
             <p>
-              En circulation depuis <span className="font-medium">{dayjs(vehicle.sinceTime!).format("HH:mm")}</span>
+              En circulation depuis{" "}
+              <span className="font-medium tabular-nums">{dayjs(vehicle.sinceTime!).format("HH:mm")}</span>
             </p>
           ) : (
             <p>
@@ -67,8 +68,10 @@ export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
               {vehicle.sinceTime !== null && (
                 <>
                   {" "}
-                  depuis le <span className="font-medium">{dayjs(vehicle.sinceTime).format("DD/MM")}</span> à{" "}
-                  <span className="font-medium">{dayjs(vehicle.sinceTime).format("HH:mm")}</span>
+                  depuis le <span className="font-medium tabular-nums">
+                    {dayjs(vehicle.sinceTime).format("DD/MM")}
+                  </span>{" "}
+                  à <span className="font-medium tabular-nums">{dayjs(vehicle.sinceTime).format("HH:mm")}</span>
                 </>
               )}
             </p>

@@ -20,12 +20,12 @@ export function ActivityCard({ data }: { data: VehicleActivityDto }) {
       <p className="my-auto text-2xl">
         {data.endTime !== null ? (
           <>
-            <span className="font-medium">{dayjs(data.startTime).format("HH:mm")}</span> à{" "}
-            <span className="font-medium">{dayjs(data.endTime).format("HH:mm")}</span>
+            <span className="font-medium tabular-nums">{dayjs(data.startTime).format("HH:mm")}</span> à{" "}
+            <span className="font-medium tabular-nums">{dayjs(data.endTime).format("HH:mm")}</span>
           </>
         ) : (
           <>
-            depuis <span className="font-medium">{dayjs(data.startTime).format("HH:mm")}</span>
+            depuis <span className="font-medium tabular-nums">{dayjs(data.startTime).format("HH:mm")}</span>
           </>
         )}
       </p>
