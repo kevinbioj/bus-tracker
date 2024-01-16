@@ -39,7 +39,7 @@ export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
           className="border-l-[1px] border-black dark:border-white mx-2 my-1"
           style={route ? { borderColor: route.colors.text } : {}}
         />
-        <h3 className="flex font-medium gap-1.5 justify-center ml-1 text-2xl sm:my-auto sm:text-4xl sm:w-24">
+        <h3 className="flex font-medium gap-1.5 justify-center ml-1 tabular-nums text-2xl sm:my-auto sm:text-4xl sm:w-32">
           {vehicle.number}
         </h3>
       </div>

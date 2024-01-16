@@ -69,7 +69,7 @@ export function Girouette({ className, pages, routeNumber = defaultRouteNumber, 
   const currentPage = pages[count % pages.length];
   const height = (17 * width) / 192;
   const onePixel = width / 192;
-  const widerRnSpacing = routeNumber.font?.endsWith("SUPX") && routeNumber.outlineColor !== "undefined";
+  const widerRnSpacing = routeNumber.font?.endsWith("SUPX") && typeof routeNumber.outlineColor !== "undefined";
   return (
     <div
       className={clsx("aspect-[192/17] border-white flex", className)}
