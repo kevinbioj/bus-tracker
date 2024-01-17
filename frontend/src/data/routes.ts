@@ -1270,11 +1270,11 @@ const routes: Route[] = [
     destinations: [
       {
         id: ["E. Lacroix"],
-        name: "Eugène Lacroix",
+        name: "Édouard Lacroix",
         city: "SAINT-PIERRE-DE-MANNEVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#9BD4E3", textColor: "#000000", text: "44" },
-          pages: [{ font: "1510N2E1", text: "EUGENE LACROIX" }, { text: ["SAINT-PIERRE", "DE-MANNEVILLE"] }],
+          pages: [{ font: "1510N2E1", text: "EDOUARD LACROIX" }, { text: ["SAINT-PIERRE", "DE-MANNEVILLE"] }],
         },
       },
       {
@@ -1285,7 +1285,7 @@ const routes: Route[] = [
           routeNumber: { backgroundColor: "#9BD4E3", textColor: "#000000", text: "44" },
           pages: [
             { font: "1508C2E1", textSpacing: 1, text: "CHAPELLE SAINT-SIMEON" },
-            { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LES-ROUEN" },
+            { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LÈS-ROUEN" },
           ],
         },
       },
