@@ -14,6 +14,11 @@ export async function fetchVehicles() {
   return data.sort((a, b) => +(a.vehicle.id ?? Infinity) - +(b.vehicle.id ?? Infinity));
 }
 
+export async function fetchVehicleList() {
+  const response = await fetch(`${YABS_URL}/history`);
+  return response.json() as Promise<LightVehicleDto[]>;
+}
+
 export async function fetchOperatorVehicles(operator: string) {
   const response = await fetch(`${YABS_URL}/history/${operator}`);
   if (!response.ok) return null;
