@@ -300,7 +300,12 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
     });
 
     const lastStop = stopTimes.at(-1);
-    if (typeof lastStop !== "undefined" && dayjs().diff(dayjs.unix(+lastStop.timestamp!), "minutes") >= 10) return;
+    if (
+      dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), "minutes") >= 10 &&
+      typeof lastStop !== "undefined" &&
+      dayjs().diff(dayjs.unix(+lastStop.timestamp!), "minutes") >= 10
+    )
+      return;
 
     const vehicleDescriptor = vehiclePosition.vehicle.vehicle;
     const vehicleId =
