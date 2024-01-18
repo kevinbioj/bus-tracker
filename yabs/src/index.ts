@@ -10,6 +10,7 @@ import { computeEntries } from "~/yabs/compute-entries";
 import { getOperatorVehicles } from "~/yabs/vehicles/get-operator-vehicles";
 import { getVehicle } from "~/yabs/vehicles/get-vehicle";
 import { insertActivity } from "~/yabs/vehicles/insert-activity";
+import { getVehicles } from "~/yabs/vehicles/get-vehicles";
 
 const waitFor = (time: number) => new Promise((r) => setTimeout(r, time));
 const DEFAULT_RETRY_COUNT = 5;
@@ -22,6 +23,7 @@ let hasComputedFirstEntries = false;
 console.log(`YABS\tListening on port ${port}.`);
 const server = fastify();
 server.get("/vehicles", handleGetVehicles);
+server.get("/history", handleGetVehicleList);
 server.get("/history/:operator", handleGetOperatorVehicleList);
 server.get("/history/:operator/:number", handleGetOperatorVehicle);
 server.listen({ port });
@@ -64,6 +66,10 @@ function handleGetVehicles(_: FastifyRequest, reply: FastifyReply) {
     },
     timestamp: entry.timestamp,
   }));
+}
+
+async function handleGetVehicleList(request: FastifyRequest) {
+  return getVehicles();
 }
 
 async function handleGetOperatorVehicleList(request: FastifyRequest) {
