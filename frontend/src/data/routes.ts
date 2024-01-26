@@ -126,8 +126,8 @@ const routes: Route[] = [
             text: "T1",
           },
           pages: [
-            { font: "1508C2E1", text: "MONT-AUX-MALADES" },
-            { font: "1508C2E1", text: "MONT-SAINT-AIGNAN" },
+            { font: "1508C2E1", textSpacing: 3, text: "MONT-AUX-MALADES" },
+            { font: "1508C2E1", textSpacing: 3, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
@@ -294,10 +294,12 @@ const routes: Route[] = [
             backgroundColor: "#E6007E",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-
             text: "F1",
           },
-          pages: [{ font: "1508C2E1", text: "PLAINE DE LA RONCE" }, { text: "ISNEAUVILLE" }],
+          pages: [
+            { font: "1508C2E1", textSpacing: 3, text: "PLAINE DE LA RONCE" },
+            { textSpacing: 3, text: "ISNEAUVILLE" },
+          ],
         },
       },
     ],
@@ -316,7 +318,6 @@ const routes: Route[] = [
             backgroundColor: "#A2559D",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-
             text: "F2",
           },
           pages: [{ text: "TAMARELLE" }, { text: "BIHOREL" }],
@@ -333,7 +334,6 @@ const routes: Route[] = [
             backgroundColor: "#A2559D",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-
             text: "F2",
           },
           pages: [{ text: "HOTEL DE VILLE" }, { text: "ROUEN" }],
@@ -348,10 +348,12 @@ const routes: Route[] = [
             backgroundColor: "#A2559D",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-
             text: "F2",
           },
-          pages: [{ text: ["CENTRE COMMERCIAL", "LA VATINE"] }, { font: "1508C2E1", text: "MONT-SAINT-AIGNAN" }],
+          pages: [
+            { textSpacing: 3, text: ["CENTRE COMMERCIAL", "LA VATINE"] },
+            { font: "1508C2E1", textSpacing: 3, text: "MONT-SAINT-AIGNAN" },
+          ],
         },
       },
     ],
@@ -367,9 +369,9 @@ const routes: Route[] = [
         name: "Centre Commercial",
         city: "TOURVILLE-LA-RIVIÈRE",
         girouette: {
-          routeNumber: { backgroundColor: "#E8E100", textColor: "#000000", outlineColor: "#FFFFFF", text: "F3" },
+          routeNumber: { backgroundColor: "#FFDD00", textColor: "#000000", text: "F3" },
           pages: [
-            { font: "1508C2E1", text: "CENTRE COMMERCIAL" },
+            { font: "1508C2E1", textSpacing: 3, text: "CENTRE COMMERCIAL" },
             { font: "1508C2E1", text: "TOURVILLE-LA-RIVIERE" },
           ],
         },
@@ -381,7 +383,7 @@ const routes: Route[] = [
         name: "Pôle Multimodal",
         city: "OISSEL",
         girouette: {
-          routeNumber: { backgroundColor: "#E8E100", textColor: "#000000", outlineColor: "#FFFFFF", text: "F3" },
+          routeNumber: { backgroundColor: "#FFDD00", textColor: "#000000", text: "F3" },
           pages: [{ font: "1510N2E1", text: "POLE MULTIMODAL" }, { text: "OISSEL" }],
         },
       },
@@ -392,7 +394,7 @@ const routes: Route[] = [
         name: "Hôtel de Ville",
         city: "SOTTEVILLE-LÈS-ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#E8E100", textColor: "#000000", outlineColor: "#FFFFFF", text: "F3" },
+          routeNumber: { backgroundColor: "#FFDD00", textColor: "#000000", text: "F3" },
           pages: [{ text: "HOTEL DE VILLE" }, { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" }],
         },
       },
@@ -412,7 +414,6 @@ const routes: Route[] = [
             backgroundColor: "#EC6408",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-
             text: "F4",
           },
           pages: [{ text: "MONT-RIBOUDET" }, { text: "ROUEN" }],
@@ -427,10 +428,9 @@ const routes: Route[] = [
             backgroundColor: "#EC6408",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-
             text: "F4",
           },
-          pages: [{ font: "1508C2E1", text: "HAMEAU DE FREVAUX" }, { text: "MALAUNAY" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HAMEAU DE FREVAUX" }, { text: "MALAUNAY" }],
         },
       },
     ],
@@ -445,7 +445,7 @@ const routes: Route[] = [
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
         girouette: {
-          routeNumber: { backgroundColor: "#97BE0D", textColor: "#000000", outlineColor: "#FFFFFF", text: "F5" },
+          routeNumber: { backgroundColor: "#AFC900", textColor: "#000000", text: "F5" },
           pages: [{ text: "LYCEE GALILEE" }, { font: "1310C2E1", textSpacing: 1, text: "FRANQUEVILLE-SAINT-PIERRE" }],
         },
       },
@@ -454,8 +454,8 @@ const routes: Route[] = [
         name: "Théâtre des Arts",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#97BE0D", textColor: "#000000", outlineColor: "#FFFFFF", text: "F5" },
-          pages: [{ font: "1508C2E1", text: "THEATRE DES ARTS" }, { text: "ROUEN" }],
+          routeNumber: { backgroundColor: "#AFC900", textColor: "#000000", text: "F5" },
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "THEATRE DES ARTS" }, { text: "ROUEN" }],
         },
       },
     ],
@@ -549,7 +549,7 @@ const routes: Route[] = [
 
             text: "F7",
           },
-          pages: [{ text: "LA PLEIADE" }, { font: "1508C2E1", text: "MONT-SAINT-AIGNAN" }],
+          pages: [{ text: "LA PLEIADE" }, { font: "1508C2E1", textSpacing: 3, text: "MONT-SAINT-AIGNAN" }],
         },
       },
     ],
@@ -642,7 +642,7 @@ const routes: Route[] = [
         name: "Lycée Flaubert",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#FF5500", textColor: "#000000", outlineColor: "#FFFFFF", text: "10" },
+          routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "10" },
           pages: [{ text: "LYCEE FLAUBERT" }, { text: "ROUEN" }],
         },
       },
@@ -652,7 +652,7 @@ const routes: Route[] = [
         name: "La Maine",
         city: "MAROMME",
         girouette: {
-          routeNumber: { backgroundColor: "#FF5500", textColor: "#000000", outlineColor: "#FFFFFF", text: "10" },
+          routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "10" },
           pages: [{ text: "LA MAINE" }, { text: "MAROMME" }],
         },
       },
@@ -706,7 +706,7 @@ const routes: Route[] = [
         name: "Martainville",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#FF5500", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
+          routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
           pages: [{ text: "MARTAINVILLE" }, { text: "ROUEN" }],
         },
       },
@@ -715,7 +715,7 @@ const routes: Route[] = [
         name: "École de Musique",
         city: "BOOS",
         girouette: {
-          routeNumber: { backgroundColor: "#FF5500", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
+          routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
           pages: [{ font: "1510N2E1", wordSpacing: -1, text: "ECOLE DE MUSIQUE" }, { text: "BOOS" }],
         },
       },
@@ -788,7 +788,7 @@ const routes: Route[] = [
         city: "DÉVILLE-LÈS-ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "15" },
-          pages: [{ text: "JULES VERNE" }, { font: "1508C2E1", text: "DEVILLE-LES-ROUEN" }],
+          pages: [{ text: "JULES VERNE" }, { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LES-ROUEN" }],
         },
       },
     ],
@@ -804,7 +804,7 @@ const routes: Route[] = [
         name: "Mairie",
         city: "SAINT-AUBIN-ÉPINAY",
         girouette: {
-          routeNumber: { backgroundColor: "#AA55FF", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
+          routeNumber: { backgroundColor: "#B762CC", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
           pages: [{ text: "MAIRIE" }, { font: "1508C2E1", text: "SAINT-AUBIN-EPINAY" }],
         },
       },
@@ -814,7 +814,7 @@ const routes: Route[] = [
         name: "Rue de l'Église",
         city: "SAINT-LÉGER-DU-BOURG-DENIS",
         girouette: {
-          routeNumber: { backgroundColor: "#AA55FF", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
+          routeNumber: { backgroundColor: "#B762CC", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
           pages: [{ text: "RUE DE L'EGLISE" }, { text: ["SAINT-LEGER", "DU-BOURG-DENIS"] }],
         },
       },
@@ -825,7 +825,7 @@ const routes: Route[] = [
         name: "Hôtel de Ville",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#AA55FF", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
+          routeNumber: { backgroundColor: "#B762CC", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
           pages: [{ text: "HOTEL DE VILLE" }, { text: "ROUEN" }],
         },
       },
@@ -835,7 +835,7 @@ const routes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#AA55FF", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
+          routeNumber: { backgroundColor: "#B762CC", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
           pages: [{ text: "BOULINGRIN" }, { text: "ROUEN" }],
         },
       },
@@ -844,7 +844,7 @@ const routes: Route[] = [
         name: "Le Chapitre",
         city: "BIHOREL",
         girouette: {
-          routeNumber: { backgroundColor: "#AA55FF", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
+          routeNumber: { backgroundColor: "#B762CC", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
           pages: [{ text: "LE CHAPITRE" }, { text: "BIHOREL" }],
         },
       },
@@ -860,7 +860,7 @@ const routes: Route[] = [
         name: "Barrières de Darnétal",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#FF00AA", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
+          routeNumber: { backgroundColor: "#F56278", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
           pages: [{ font: "1508C2E1", text: "BARRIERES DE DARNETAL" }, { text: "ROUEN" }],
         },
       },
@@ -869,10 +869,10 @@ const routes: Route[] = [
         name: "Parc de la Vatine",
         city: "MONT-SAINT-AIGNAN",
         girouette: {
-          routeNumber: { backgroundColor: "#FF00AA", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
+          routeNumber: { backgroundColor: "#F56278", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
           pages: [
-            { font: "1508C2E1", text: "PARC DE LA VATINE" },
-            { font: "1508C2E1", text: "MONT-SAINT-AIGNAN" },
+            { font: "1508C2E1", textSpacing: 3, text: "PARC DE LA VATINE" },
+            { font: "1508C2E1", textSpacing: 3, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
@@ -938,7 +938,7 @@ const routes: Route[] = [
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
-          pages: [{ font: "1508C2E1", text: "THEATRE DES ARTS" }, { text: "ROUEN" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "THEATRE DES ARTS" }, { text: "ROUEN" }],
         },
       },
     ],
@@ -953,7 +953,7 @@ const routes: Route[] = [
         name: "Bois Tison",
         city: "SAINT-JACQUES-SUR-DARNÉTAL",
         girouette: {
-          routeNumber: { backgroundColor: "#FF00AA", textColor: "#000000", outlineColor: "#FFFFFF", text: "28" },
+          routeNumber: { backgroundColor: "#F56278", textColor: "#000000", outlineColor: "#FFFFFF", text: "28" },
           pages: [{ text: "BOIS TISON" }, { text: ["SAINT-JACQUES", "SUR-DARNETAL"] }],
         },
       },
@@ -962,7 +962,7 @@ const routes: Route[] = [
         name: "Louise Michel",
         city: "DARNÉTAL",
         girouette: {
-          routeNumber: { backgroundColor: "#FF00AA", textColor: "#000000", outlineColor: "#FFFFFF", text: "28" },
+          routeNumber: { backgroundColor: "#F56278", textColor: "#000000", outlineColor: "#FFFFFF", text: "28" },
           pages: [{ text: "LOUISE MICHEL" }, { text: "DARNETAL" }],
         },
       },
@@ -1014,7 +1014,7 @@ const routes: Route[] = [
         name: "Sente d'Houdeville",
         city: "CANTELEU",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "35" },
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "35" },
           pages: [{ font: "1508C2E1", text: "SENTE D'HOUDEVILLE" }, { text: "CANTELEU" }],
         },
       },
@@ -1024,7 +1024,7 @@ const routes: Route[] = [
         name: "Mont-Riboudet - Kindarena",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "35" },
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "35" },
           pages: [{ text: "MONT-RIBOUDET" }, { text: "ROUEN" }],
         },
       },
@@ -1033,7 +1033,7 @@ const routes: Route[] = [
         name: "École Moulin",
         city: "NOTRE-DAME-DE-BONDEVILLE",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "35" },
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "35" },
           pages: [{ text: "ECOLE MOULIN" }, { font: "1310C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
         },
       },
@@ -1049,7 +1049,7 @@ const routes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "36" },
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "36" },
           pages: [{ text: "BOULINGRIN" }, { text: "ROUEN" }],
         },
       },
@@ -1058,7 +1058,7 @@ const routes: Route[] = [
         name: "Coteaux du Larmont",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "36" },
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "36" },
           pages: [{ font: "1508C2E1", text: "COTEAUX DU LARMONT" }, { text: "ROUEN" }],
         },
       },
@@ -1074,8 +1074,11 @@ const routes: Route[] = [
         name: "Plaine de la Ronce",
         city: "ISNEAUVILLE",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "37" },
-          pages: [{ font: "1508C2E1", text: "PLAINE DE LA RONCE" }, { text: "ISNEAUVILLE" }],
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "37" },
+          pages: [
+            { font: "1508C2E1", textSpacing: 3, text: "PLAINE DE LA RONCE" },
+            { textSpacing: 3, text: "ISNEAUVILLE" },
+          ],
         },
       },
       {
@@ -1083,8 +1086,8 @@ const routes: Route[] = [
         name: "Hauts Poiriers",
         city: "ISNEAUVILLE",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "37" },
-          pages: [{ text: "HAUTS-POIRIERS" }, { text: "ISNEAUVILLE" }],
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "37" },
+          pages: [{ text: "HAUTS-POIRIERS" }, { textSpacing: 3, text: "ISNEAUVILLE" }],
         },
       },
       {
@@ -1092,8 +1095,8 @@ const routes: Route[] = [
         name: "Les Bosquets",
         city: "ISNEAUVILLE",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "37" },
-          pages: [{ text: "LES BOSQUETS" }, { text: "ISNEAUVILLE" }],
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "37" },
+          pages: [{ text: "LES BOSQUETS" }, { textSpacing: 3, text: "ISNEAUVILLE" }],
         },
       },
     ],
@@ -1109,7 +1112,7 @@ const routes: Route[] = [
         name: "Mairie",
         city: "MONTMAIN",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "38" },
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "38" },
           pages: [{ text: "MAIRIE" }, { text: "MONTMAIN" }],
         },
       },
@@ -1118,7 +1121,7 @@ const routes: Route[] = [
         name: "Coteaux Branly",
         city: "DARNÉTAL",
         girouette: {
-          routeNumber: { backgroundColor: "#C2C200", textColor: "#000000", outlineColor: "#FFFFFF", text: "38" },
+          routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "38" },
           pages: [{ font: "1510N2E1", text: "COTEAUX BRANLY" }, { text: "DARNETAL" }],
         },
       },
@@ -1134,7 +1137,7 @@ const routes: Route[] = [
         name: "Vente Olivier",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
-          routeNumber: { backgroundColor: "#FF5500", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
+          routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
           pages: [
             { font: "1510N2E1", text: "VENTE OLIVIER" },
             { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
@@ -1147,7 +1150,7 @@ const routes: Route[] = [
         name: "La Bastille",
         city: "SOTTEVILLE-LÈS-ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#FF5500", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
+          routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
           pages: [{ text: "LA BASTILLE" }, { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" }],
         },
       },
@@ -1158,7 +1161,7 @@ const routes: Route[] = [
         name: "Hôtel de Ville",
         city: "SOTTEVILLE-LÈS-ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#FF5500", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
+          routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
           pages: [{ text: "HOTEL DE VILLE" }, { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" }],
         },
       },
@@ -1167,7 +1170,7 @@ const routes: Route[] = [
         name: "Ancienne Mare",
         city: "PETIT-QUEVILLY",
         girouette: {
-          routeNumber: { backgroundColor: "#FF5500", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
+          routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
           pages: [{ text: "ANCIENNE MARE" }, { text: "PETIT-QUEVILLY" }],
         },
       },
@@ -1278,7 +1281,7 @@ const routes: Route[] = [
           routeNumber: { backgroundColor: "#55AAFF", textColor: "#000000", outlineColor: "#FFFFFF", text: "44" },
           pages: [
             { font: "1508C2E1", textSpacing: 1, text: "CHAPELLE SAINT-SIMEON" },
-            { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LÈS-ROUEN" },
+            { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LES-ROUEN" },
           ],
         },
       },
