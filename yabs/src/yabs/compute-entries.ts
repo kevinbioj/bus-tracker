@@ -214,7 +214,7 @@ export async function fetchTripUpdate(resource: Resource) {
         }
       }
 
-      const id = trip.block ?? trip.id;
+      const id = vehicleId ? `VEHICLE_${vehicleId}` : `TRIP_${trip.block ?? trip.id}`;
       entries.set(id, {
         id: `${resource.source.id}_${id}`,
         stopTimes: dayjs.unix(currentStopTime.timestamp!).isAfter()
@@ -311,7 +311,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
     const vehicleId =
       resource.source.getVehicleNumber?.(vehicleDescriptor) ?? vehicleDescriptor.label ?? vehicleDescriptor.id;
 
-    const id = trip.block ?? trip.id;
+    const id = vehicleId ? `VEHICLE_${vehicleId}` : `TRIP_${trip.block ?? trip.id}`;
     entries.set(id, {
       id: `${resource.source.id}_${id}`,
       source: resource.source.getOperator?.(trip) ?? resource.source.id,
