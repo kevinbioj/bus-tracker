@@ -3,7 +3,7 @@
 import { clsx } from "clsx";
 import { ComponentPropsWithoutRef, useEffect, useState } from "react";
 
-const getFontHeight = (font: string) => (font === "METRO" ? 24 : font === "2409C3E1" ? 20 : +font.substring(0, 2));
+const getFontHeight = (font: string) => (font === "METRO" ? 16 : +font.substring(0, 2));
 
 const paneBackgroundColor = "#1D1D1B";
 const ledBackgroundColor = "#FF8000";
@@ -23,13 +23,13 @@ export type RouteNumber = {
   font?:
     | "1310C2E1"
     | "1407SUPX"
+    | "14LUPLAN"
     | "1507SUPX"
     | "1508C2E1"
     | "1508SUPX"
     | "1510N2E1"
     | "1513B3E1"
     | "1710SUPX"
-    | "2409C3E1"
     | "METRO";
   textSpacing?: TextSpacing;
   wordSpacing?: WordSpacing;
@@ -51,13 +51,13 @@ type Page = {
       font?:
         | "1310C2E1"
         | "1407SUPX"
+        | "14LUPLAN"
         | "1507SUPX"
         | "1508C2E1"
         | "1508SUPX"
         | "1510N2E1"
         | "1513B3E1"
-        | "1710SUPX"
-        | "2409C3E1";
+        | "1710SUPX";
       text: string;
     }
   | { font?: "0808B2E1"; text: [string, string] }

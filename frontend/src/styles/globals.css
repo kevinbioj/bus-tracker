@@ -32,6 +32,12 @@
 
 @font-face {
   font-display: block;
+  font-family: '14LUPLAN';
+  src: url('../fonts/girouette/14LUPLAN.ttf');
+}
+
+@font-face {
+  font-display: block;
   font-family: "1507SUPX";
   src: url("../fonts/girouette/1507SUPX.ttf");
 }
@@ -64,12 +70,6 @@
   font-display: block;
   font-family: "1710SUPX";
   src: url("../fonts/girouette/1710SUPX.ttf");
-}
-
-@font-face {
-  font-display: block;
-  font-family: '2409C3E1';
-  src: url('../fonts/girouette/2409C3E1.ttf');
 }
 
 @font-face {

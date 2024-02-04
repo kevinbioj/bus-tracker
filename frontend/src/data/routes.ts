@@ -82,13 +82,13 @@ const routes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
-          dimensions: { height: 24, rnWidth: 24, textWidth: 98 },
+          dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "2409C3E1", text: "BOULINGRIN" },
-            { font: "2409C3E1", text: "ROUEN" },
+            { font: "14LUPLAN", textSpacing: 1, text: "BOULINGRIN" },
+            { font: "14LUPLAN", textSpacing: 1, text: "ROUEN" },
           ],
-          width: 268,
+          width: 300,
         },
       },
       {
@@ -96,13 +96,13 @@ const routes: Route[] = [
         name: "Georges Braque",
         city: "GRAND-QUEVILLY",
         girouette: {
-          dimensions: { height: 24, rnWidth: 24, textWidth: 98 },
+          dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "2409C3E1", text: "G. BRAQUE" },
-            { font: "2409C3E1", text: "GD-QUEVILLY" },
+            { font: "14LUPLAN", textSpacing: 1, text: "G. BRAQUE" },
+            { font: "14LUPLAN", textSpacing: 1, text: "GD-QUEVILLY" },
           ],
-          width: 268,
+          width: 300,
         },
       },
       {
@@ -110,13 +110,13 @@ const routes: Route[] = [
         name: "Technopôle",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
-          dimensions: { height: 24, rnWidth: 24, textWidth: 98 },
+          dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "2409C3E1", text: "TECHNOPOLE" },
-            { font: "2409C3E1", text: "ST-ETIENNE" },
+            { font: "14LUPLAN", textSpacing: 1, text: "TECHNOPOLE" },
+            { font: "14LUPLAN", textSpacing: 1, text: "ST-ETIENNE" },
           ],
-          width: 268,
+          width: 300,
         },
       },
     ],
