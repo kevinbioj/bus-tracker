@@ -3,7 +3,7 @@
 import { clsx } from "clsx";
 import { ComponentPropsWithoutRef, useEffect, useState } from "react";
 
-const getFontHeight = (font: string) => (font === "METRO" ? 24 : +font.substring(0, 2));
+const getFontHeight = (font: string) => (font === "METRO" ? 24 : font === "2409C3E1" ? 20 : +font.substring(0, 2));
 
 const paneBackgroundColor = "#1D1D1B";
 const ledBackgroundColor = "#FF8000";

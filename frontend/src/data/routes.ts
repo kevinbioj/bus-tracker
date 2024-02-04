@@ -82,7 +82,7 @@ const routes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
-          dimensions: { height: 24, rnWidth: 24, textWidth: 112 },
+          dimensions: { height: 24, rnWidth: 24, textWidth: 98 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
             { font: "2409C3E1", text: "BOULINGRIN" },
@@ -96,11 +96,11 @@ const routes: Route[] = [
         name: "Georges Braque",
         city: "GRAND-QUEVILLY",
         girouette: {
-          dimensions: { height: 24, rnWidth: 24, textWidth: 112 },
+          dimensions: { height: 24, rnWidth: 24, textWidth: 98 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
             { font: "2409C3E1", text: "G. BRAQUE" },
-            { font: "2409C3E1", text: "Gd-QUEVILLY" },
+            { font: "2409C3E1", text: "GD-QUEVILLY" },
           ],
           width: 268,
         },
@@ -110,11 +110,11 @@ const routes: Route[] = [
         name: "Technopôle",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
-          dimensions: { height: 24, rnWidth: 24, textWidth: 112 },
+          dimensions: { height: 24, rnWidth: 24, textWidth: 98 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "2409C3E1", text: "TECHNÔPOLE" },
-            { font: "2409C3E1", text: "St-ÉTIENNE" },
+            { font: "2409C3E1", text: "TECHNOPOLE" },
+            { font: "2409C3E1", text: "ST-ETIENNE" },
           ],
           width: 268,
         },
