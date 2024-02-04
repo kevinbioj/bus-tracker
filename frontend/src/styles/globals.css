@@ -68,6 +68,12 @@
 
 @font-face {
   font-display: block;
+  font-family: '2409C3E1';
+  src: url('../fonts/girouette/2409C3E1.ttf');
+}
+
+@font-face {
+  font-display: block;
   font-family: "METRO";
   src: url("../fonts/girouette/METRO.ttf");
 }

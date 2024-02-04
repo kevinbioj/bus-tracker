@@ -58,7 +58,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
   const timestamp = dayjs.unix(data.vehicle.position.timestamp);
   const operator = operators.find((operator) => operator.id === data.source)!;
 
-  const girouetteWidth = Math.min(width - 50, 384);
+  const girouetteWidth = Math.min(width - 50, destination?.girouette?.width ?? 384);
 
   return (
     <ReactMoveableCircleMarker

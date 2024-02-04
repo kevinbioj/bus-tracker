@@ -82,8 +82,13 @@ const routes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
+          dimensions: { height: 24, rnWidth: 24, textWidth: 112 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
-          pages: [{ text: "BOULINGRIN" }, { text: "ROUEN" }],
+          pages: [
+            { font: "2409C3E1", text: "BOULINGRIN" },
+            { font: "2409C3E1", text: "ROUEN" },
+          ],
+          width: 268,
         },
       },
       {
@@ -91,11 +96,13 @@ const routes: Route[] = [
         name: "Georges Braque",
         city: "GRAND-QUEVILLY",
         girouette: {
+          dimensions: { height: 24, rnWidth: 24, textWidth: 112 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "1510N2E1", text: "GEORGES BRAQUE" },
-            { font: "1510N2E1", text: "GRAND-QUEVILLY" },
+            { font: "2409C3E1", text: "G. BRAQUE" },
+            { font: "2409C3E1", text: "Gd-QUEVILLY" },
           ],
+          width: 268,
         },
       },
       {
@@ -103,8 +110,13 @@ const routes: Route[] = [
         name: "Technopôle",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
+          dimensions: { height: 24, rnWidth: 24, textWidth: 112 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
-          pages: [{ text: "TECHNOPOLE" }, { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
+          pages: [
+            { font: "2409C3E1", text: "TECHNÔPOLE" },
+            { font: "2409C3E1", text: "St-ÉTIENNE" },
+          ],
+          width: 268,
         },
       },
     ],
@@ -430,7 +442,10 @@ const routes: Route[] = [
             outlineColor: "#000000",
             text: "F4",
           },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HAMEAU DE FREVAUX" }, { text: "MALAUNAY" }],
+          pages: [
+            { font: "1508C2E1", textSpacing: 3, text: "HAMEAU DE FREVAUX" },
+            { textSpacing: 5, text: "MALAUNAY" },
+          ],
         },
       },
     ],
