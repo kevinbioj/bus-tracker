@@ -39,7 +39,7 @@ const scholarRoutes: Route[] = [
         },
       },
       {
-        id: ["POLE MULTIMODAL COTONI"],
+        id: ["POLE MULTIMODAL DOC COTONI"],
         autoHide: true,
         alternate: "Pôle Multimodal-Cotoni",
         name: "Pôle Multimodal-Cotoni",
@@ -79,7 +79,7 @@ const scholarRoutes: Route[] = [
         },
       },
       {
-        id: ["POLE MULTIMODAL COTONI"],
+        id: ["POLE MULTIMODAL DOC COTONI"],
         autoHide: true,
         name: "Pôle Multimodal-Cotoni",
         city: "OISSEL",
@@ -208,7 +208,7 @@ const scholarRoutes: Route[] = [
             outlineColor: "#000000",
             text: "104",
           },
-          pages: [{ font: "1507SUPX", text: "COLLEGE JACQUES BREL" }],
+          pages: [{ font: "1407SUPX", text: "COLLEGE JACQUES BREL" }],
         },
       },
       {
@@ -247,7 +247,7 @@ const scholarRoutes: Route[] = [
             outlineColor: "#000000",
             text: "106",
           },
-          pages: [{ font: "1507SUPX", text: "COLLEGE JACQUES BREL" }],
+          pages: [{ font: "1407SUPX", text: "COLLEGE JACQUES BREL" }],
         },
       },
       {
