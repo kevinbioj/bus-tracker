@@ -278,7 +278,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
     )
       return;
 
-    let currentDelta: number | null = tripUpdate ? 0 : null;
+    let currentDelta: number | null = null;
     const stopTimes = trip.stops.map((stopTime) => {
       const stopTimeUpdate = tripUpdate?.tripUpdate.stopTimeUpdate.find((stu) => stu.stopId === stopTime.stop.id);
       const partialStopTime = {
