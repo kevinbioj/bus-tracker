@@ -44,11 +44,29 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "LNR",
+    name: "NOMAD - Transdev Normandie Interurbain",
+    logo: {
+      href: "/assets/operators/nomad.svg",
+      size: [512, 144],
+    },
+    issues: [],
+  },
+  {
     id: "TNVS",
     name: "SNgo! - Transdev Normandie Val de Seine",
     logo: {
-      href: "/assets/operators/sngo.png",
-      size: [140, 140],
+      href: "/assets/operators/sngo.jpg",
+      size: [1280, 678],
+    },
+    issues: [],
+  },
+  {
+    id: "TUD",
+    name: "DeepMob - Transdev Urbain Dieppe",
+    logo: {
+      href: "/assets/operators/deepmob.svg",
+      size: [595, 356],
     },
     issues: [],
   },

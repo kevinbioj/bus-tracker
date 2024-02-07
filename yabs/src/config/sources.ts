@@ -63,13 +63,13 @@ const sources: Source[] = [
     generateShapes: true,
   },
   {
-    id: "NOMAD",
+    id: "LNR",
     staticResourceHref: "https://gtfs.kevinbioj.fr/nomad.zip",
     tripUpdateHref: "https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates",
     vehiclePositionHref: "https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions",
     refreshCron: "10,40 * * * * * ",
     filters: { scheduled: () => false },
-    getOperator: () => "TNI",
+    getOperator: () => "LNR",
   },
   {
     id: "SNGO",
@@ -80,15 +80,18 @@ const sources: Source[] = [
     routePrefix: "SNGO",
     getOperator: () => "TNVS",
   },
-  // {
-  //   id: "TUD",
-  //   staticResourceHref: "https://www.data.gouv.fr/fr/datasets/r/62248658-0eba-4f4e-b367-aaea635ecd38",
-  //   tripUpdateHref: "https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates",
-  //   vehiclePositionHref: "https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions",
-  //   refreshCron: "0 * * * * *",
-  //   routePrefix: "DEEPMOB",
-  //   getOperator: () => "TUD",
-  // },
+  {
+    id: "TUD",
+    staticResourceHref: "https://www.data.gouv.fr/fr/datasets/r/62248658-0eba-4f4e-b367-aaea635ecd38",
+    tripUpdateHref: "https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates",
+    vehiclePositionHref: "https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions",
+    refreshCron: "0 * * * * *",
+    routePrefix: "DEEPMOB",
+    filters: {
+      scheduled: (trip) => ["1", "2", "3", "97", "14"].includes(trip.route),
+    },
+    getOperator: () => "TUD",
+  },
 ];
 
 export default sources;

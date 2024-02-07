@@ -3,6 +3,7 @@ import { Route } from "~/@types";
 const nomadRoutes: Route[] = [
   {
     id: "NOMAD-216",
+    mapOnly: true,
     name: "216",
     colors: { background: "#4A2999", text: "#FAFAFA" },
     destinations: [
@@ -78,6 +79,7 @@ const nomadRoutes: Route[] = [
   },
   {
     id: "NOMAD-228",
+    mapOnly: true,
     name: "228",
     colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
