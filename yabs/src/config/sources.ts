@@ -26,7 +26,7 @@ const sources: Source[] = [
     vehiclePositionHref: "https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb",
     refreshCron: "0,15,30,45 * * * * *",
     filters: {
-      // scheduled: (trip) => (trip.calendar.id.startsWith("IST") && trip.route !== "06") || trip.route === "529",
+      scheduled: (trip) => (trip.calendar.id.startsWith("IST") && trip.route !== "06") || trip.route === "529",
     },
     getOperator: (trip: Trip) =>
       trip.route === "06" || trip.route === "529" || trip.calendar.id.startsWith("IST") ? "TNI" : "TCAR",
@@ -63,7 +63,9 @@ const sources: Source[] = [
   },
   {
     id: "NOMAD",
-    staticResourceHref: "https://kevinbioj.fr/gtfs/GTFS.NOMAD.zip",
+    staticResourceHref: "https://gtfs.kevinbioj.fr/nomad.zip",
+    tripUpdateHref: "https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates",
+    vehiclePositionHref: "https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions",
     refreshCron: "10,40 * * * * * ",
     getOperator: () => "TNI",
   },

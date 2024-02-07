@@ -662,7 +662,7 @@ const routes: Route[] = [
         },
       },
       {
-        id: ["Maromme La Maine MAROMME", "La Maine"],
+        id: ["La Maine MAROMME", "Maromme La Maine MAROMME", "La Maine"],
         alternate: "Maromme La Maine",
         name: "La Maine",
         city: "MAROMME",
@@ -1025,7 +1025,7 @@ const routes: Route[] = [
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Sente d'Houdeville"],
+        id: ["Sente d'Houdeville CANTELEU", "Sente d'Houdeville"],
         name: "Sente d'Houdeville",
         city: "CANTELEU",
         girouette: {
@@ -1044,7 +1044,7 @@ const routes: Route[] = [
         },
       },
       {
-        id: ["Ecole Moulin"],
+        id: ["Ecole Moulin NOTRE-DAME-DE-BONDEVILLE", "Ecole Moulin"],
         name: "École Moulin",
         city: "NOTRE-DAME-DE-BONDEVILLE",
         girouette: {

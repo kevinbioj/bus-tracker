@@ -2,12 +2,12 @@ import { Route } from "~/@types";
 
 const nomadRoutes: Route[] = [
   {
-    id: "1006979",
+    id: "NOMAD-216",
     name: "216",
     colors: { background: "#4A2999", text: "#FAFAFA" },
     destinations: [
       {
-        id: ["ROUEN - VERNEUIL D'AVRE ET D'ITON"],
+        id: ["VERNEUIL D'AVRE ET D'ITON"],
         autoHide: true,
         alternate: "Verneuil d'Avre et d'Iton",
         name: "Gare SNCF",
@@ -24,7 +24,7 @@ const nomadRoutes: Route[] = [
         },
       },
       {
-        id: ["MONT SAINT AIGNAN - EVREUX", "ROUEN - EVREUX"],
+        id: ["ÉVREUX"],
         autoHide: true,
         alternate: "Évreux",
         name: "Gare Routière",
@@ -41,7 +41,7 @@ const nomadRoutes: Route[] = [
         },
       },
       {
-        id: ["EVREUX - ROUEN", "LOUVIERS - ROUEN", "VERNEUIL D'AVRE ET D'ITON - ROUEN"],
+        id: ["ROUEN"],
         autoHide: true,
         alternate: "Rouen",
         name: "Gare Routière",
@@ -58,7 +58,7 @@ const nomadRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUEN - MONT SAINT AIGNAN"],
+        id: ["MONT-SAINT-AIGNAN"],
         autoHide: true,
         alternate: "Mont-Saint-Aignan",
         name: "Campus",
@@ -77,12 +77,12 @@ const nomadRoutes: Route[] = [
     ],
   },
   {
-    id: "1006959",
+    id: "NOMAD-228",
     name: "228",
-    colors: { background: "#BA941C", text: "#FAFAFA" },
+    colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["ROUEN - PONT AUDEMER"],
+        id: ["PONT-AUDEMER"],
         autoHide: true,
         alternate: "Pont-Audemer",
         name: "Gare Routière",
@@ -99,7 +99,7 @@ const nomadRoutes: Route[] = [
         },
       },
       {
-        id: ["PONT AUDEMER - BOURG ACHARD"],
+        id: ["BOURG ACHARD"],
         autoHide: true,
         alternate: "Bourg-Achard",
         name: "Pompiers",
@@ -116,7 +116,7 @@ const nomadRoutes: Route[] = [
         },
       },
       {
-        id: ["PONT AUDEMER - ROUEN", "ROUTOT - ROUEN"],
+        id: ["ROUEN", "ROUEN"],
         autoHide: true,
         alternate: "Rouen",
         name: "Gare Routière",
