@@ -2,6 +2,7 @@ import { brandColor } from "~/../constants";
 import { Route } from "~/@types";
 import nomadRoutes from "~/data/nomad-routes";
 import scholarRoutes from "~/data/scholar-routes";
+import sngoRoutes from "~/data/sngo-routes";
 
 const routes: Route[] = [
   {
@@ -1714,6 +1715,7 @@ const routes: Route[] = [
       },
     ],
   },
+  ...sngoRoutes,
   ...scholarRoutes,
   ...nomadRoutes,
 ];

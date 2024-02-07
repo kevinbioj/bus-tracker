@@ -7,6 +7,7 @@ export type Source = {
   tripUpdateHref?: string;
   vehiclePositionHref?: string;
   refreshCron: string;
+  routePrefix?: string;
   filters?: {
     scheduled?: (trip: Trip, index: number, array: Trip[]) => boolean;
     tripUpdate?: (tripUpdate: TripUpdateEntity, index: number, array: TripUpdateEntity[]) => boolean;
@@ -68,6 +69,15 @@ const sources: Source[] = [
     vehiclePositionHref: "https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions",
     refreshCron: "10,40 * * * * * ",
     getOperator: () => "TNI",
+  },
+  {
+    id: "SNGO",
+    staticResourceHref: "https://www.data.gouv.fr/fr/datasets/r/71bf48f1-178e-4ce3-ba9d-361cc5be76a7",
+    tripUpdateHref: "https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates",
+    vehiclePositionHref: "https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions",
+    refreshCron: "0 * * * * *",
+    routePrefix: "SNGO",
+    getOperator: () => "TNVS",
   },
 ];
 

@@ -100,7 +100,7 @@ export function computeScheduled(resource: Resource, processedTrips: string[] = 
       trip: {
         id: trip.id,
         calendar: trip.calendar.id,
-        route: trip.route,
+        route: resource.source.routePrefix ? `${resource.source.routePrefix}-${trip.route}` : trip.route,
         direction: trip.direction,
         headsign: trip.headsign ?? stopTimes.at(-1)!.name,
       },
@@ -223,7 +223,7 @@ export async function fetchTripUpdate(resource: Resource) {
         trip: {
           id: trip.id,
           calendar: trip.calendar.id,
-          route: trip.route,
+          route: resource.source.routePrefix ? `${resource.source.routePrefix}-${trip.route}` : trip.route,
           direction: trip.direction,
           headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
         },
@@ -323,7 +323,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
       trip: {
         id: trip.id,
         calendar: trip.calendar.id,
-        route: trip.route,
+        route: resource.source.routePrefix ? `${resource.source.routePrefix}-${trip.route}` : trip.route,
         direction: trip.direction,
         headsign: trip.headsign,
       },

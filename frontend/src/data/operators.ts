@@ -43,6 +43,15 @@ const operators: Operator[] = [
     },
     issues: [],
   },
+  {
+    id: "TNVS",
+    name: "Transdev Normandie Val de Seine",
+    logo: {
+      href: "/assets/operators/transdev-normandie.svg",
+      size: [478, 147],
+    },
+    issues: [],
+  },
 ];
 
 export default operators;
