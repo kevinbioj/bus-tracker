@@ -26,7 +26,7 @@ const sources: Source[] = [
     vehiclePositionHref: "https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb",
     refreshCron: "0,15,30,45 * * * * *",
     filters: {
-      scheduled: (trip) => (trip.calendar.id.startsWith("IST") && trip.route !== "06") || trip.route === "529",
+      // scheduled: (trip) => (trip.calendar.id.startsWith("IST") && trip.route !== "06") || trip.route === "529",
     },
     getOperator: (trip: Trip) =>
       trip.route === "06" || trip.route === "529" || trip.calendar.id.startsWith("IST") ? "TNI" : "TCAR",
