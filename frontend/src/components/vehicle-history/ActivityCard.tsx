@@ -13,6 +13,8 @@ export function ActivityCard({ data }: { data: VehicleActivityDto }) {
     >
       {route.id === "?" ? (
         <p className="font-medium my-auto pt-[1px] text-2xl text-center w-12">{data.routeId}</p>
+      ) : route.mapOnly ? (
+        <h3 className="flex font-semibold items-center justify-center text-3xl w-12">{route.name}</h3>
       ) : (
         <Image alt={route.name} src={`/assets/routes/${route.id}.svg`} width={48} height={48} />
       )}
