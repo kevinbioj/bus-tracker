@@ -13,7 +13,7 @@ export default function OperatorCard({ operator }: OperatorCardProps) {
   return (
     <article className="flex flex-col sm:flex-row gap-x-6 gap-y-2">
       <div className="mx-auto w-52 relative">
-        <Image src={operator.logo.href} alt={operator.name} width={width} height={height} />
+        <Image className="mx-auto" src={operator.logo.href} alt={operator.name} width={width} height={height} />
       </div>
       <div className="flex-1 text-center sm:text-left">
         <h3 className="font-medium text-lg">{operator.name}</h3>

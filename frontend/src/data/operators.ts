@@ -45,10 +45,10 @@ const operators: Operator[] = [
   },
   {
     id: "TNVS",
-    name: "Transdev Normandie Val de Seine",
+    name: "SNgo! - Transdev Normandie Val de Seine",
     logo: {
-      href: "/assets/operators/transdev-normandie.svg",
-      size: [478, 147],
+      href: "/assets/operators/sngo.png",
+      size: [140, 140],
     },
     issues: [],
   },
