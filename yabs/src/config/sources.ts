@@ -80,15 +80,15 @@ const sources: Source[] = [
     routePrefix: "SNGO",
     getOperator: () => "TNVS",
   },
-  {
-    id: "TUD",
-    staticResourceHref: "https://www.data.gouv.fr/fr/datasets/r/62248658-0eba-4f4e-b367-aaea635ecd38",
-    tripUpdateHref: "https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates",
-    vehiclePositionHref: "https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions",
-    refreshCron: "0 * * * * *",
-    routePrefix: "DEEPMOB",
-    getOperator: () => "TUD",
-  },
+  // {
+  //   id: "TUD",
+  //   staticResourceHref: "https://www.data.gouv.fr/fr/datasets/r/62248658-0eba-4f4e-b367-aaea635ecd38",
+  //   tripUpdateHref: "https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates",
+  //   vehiclePositionHref: "https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions",
+  //   refreshCron: "0 * * * * *",
+  //   routePrefix: "DEEPMOB",
+  //   getOperator: () => "TUD",
+  // },
 ];
 
 export default sources;
