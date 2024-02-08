@@ -10,7 +10,7 @@ export default function NextStops({ stopTimes, width }: NextStopsProps) {
   if (stopTimes.length === 0) return null;
   return (
     <div className="mt-0.5 -mb-1.5 px-2">
-      <div className="font-[Rubik] min-w-44 mt-0.5 w-full">
+      <div className="font-[Rubik] max-h-24 min-w-44 mt-0.5 overflow-scroll w-full">
         {stopTimes.map((stopTime) => {
           const isRealtime = stopTime.delta !== null;
           return (

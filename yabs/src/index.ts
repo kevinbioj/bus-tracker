@@ -53,7 +53,7 @@ function handleGetVehicles(_: FastifyRequest, reply: FastifyReply) {
       route: entry.trip.route,
       direction: entry.trip.direction,
       headsign: entry.trip.headsign,
-      stopTimes: entry.stopTimes.slice(0, 5),
+      stopTimes: entry.stopTimes,
     },
     vehicle: {
       id: entry.vehicle.id,
