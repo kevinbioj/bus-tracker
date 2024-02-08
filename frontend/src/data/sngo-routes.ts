@@ -361,7 +361,7 @@ const sngoRoutes: Route[] = [
         name: "Normandie Parc Nord",
         city: "DOUAINS",
         girouette: {
-          routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
+          routeNumber: { backgroundColor: "#252B5A", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
           pages: [{ text: "DOUAINS" }, { font: "1508C2E1", text: "NORMANDIE PARC NORD" }],
         },
       },
@@ -370,7 +370,7 @@ const sngoRoutes: Route[] = [
         name: "Gare Routière",
         city: "PACY-SUR-EURE",
         girouette: {
-          routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
+          routeNumber: { backgroundColor: "#252B5A", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
           pages: [{ text: "PACY-SUR-EURE" }, { text: "GARE ROUTIERE" }],
         },
       },
@@ -379,7 +379,7 @@ const sngoRoutes: Route[] = [
         name: "République",
         city: "VERNON",
         girouette: {
-          routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
+          routeNumber: { backgroundColor: "#252B5A", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
           pages: [{ text: "VERNON" }, { text: "REPUBLIQUE" }],
         },
       },
