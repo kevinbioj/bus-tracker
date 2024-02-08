@@ -53,7 +53,7 @@ export function computeScheduled(resource: Resource, processedTrips: string[] = 
       sequence: stopTime.sequence,
       timestamp: parseTime(stopTime.time).unix(),
       distanceTraveled: stopTime.distanceTraveled,
-      delta: null,
+      isRealtime: false,
     }));
 
     const currentStopTime = [...stopTimes].reverse().find((stopTime) => Date.now() >= +stopTime.timestamp * 1000)!;
@@ -146,28 +146,43 @@ export async function fetchTripUpdate(resource: Resource) {
 
       let currentDelta: number | null = null;
       const stopTimes = trip.stops.map((stopTime) => {
-        const stopTimeUpdate = tripUpdate.tripUpdate.stopTimeUpdate.find((stu) => stu.stopId === stopTime.stop.id);
+        const stopTimeUpdate = tripUpdate?.tripUpdate.stopTimeUpdate.find((stu) => stu.stopId === stopTime.stop.id);
         const partialStopTime = {
           id: stopTime.stop.id,
           name: stopTime.stop.name,
           sequence: stopTime.sequence,
           distanceTraveled: stopTime.distanceTraveled,
         };
-        if (typeof stopTimeUpdate !== "undefined") currentDelta = stopTimeUpdate.arrival?.delay ?? 0;
-        if (stopTimeUpdate?.scheduleRelationship === "SKIPPED")
-          return { ...partialStopTime, timestamp: null, delta: null };
-        return {
-          ...partialStopTime,
-          timestamp: parseTime(stopTime.time)
-            .add((resource.source.propagateDelays ? currentDelta : stopTimeUpdate?.arrival?.delay) ?? 0, "seconds")
-            .unix(),
-          delta: (resource.source.propagateDelays ? currentDelta : stopTimeUpdate?.arrival?.delay) ?? null,
-        };
+
+        if (typeof stopTimeUpdate === "undefined") {
+          return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
+        }
+
+        if (stopTimeUpdate?.scheduleRelationship === "NO-DATA") {
+          currentDelta = null;
+          return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
+        }
+
+        if (stopTimeUpdate.scheduleRelationship === "SKIPPED") {
+          return { ...partialStopTime, timestamp: null, isRealtime: true };
+        }
+
+        if (typeof stopTimeUpdate.arrival?.delay === "number") {
+          currentDelta = stopTimeUpdate.arrival.delay;
+        }
+
+        const timestamp =
+          typeof stopTimeUpdate.arrival?.time === "string"
+            ? +stopTimeUpdate.arrival.time
+            : parseTime(stopTime.time)
+                .add((resource.source.propagateDelays ? currentDelta : stopTimeUpdate.arrival?.delay) ?? 0, "seconds")
+                .unix();
+        return { ...partialStopTime, timestamp, isRealtime: true };
       });
 
       const currentStopTime =
         [...stopTimes].reverse().find((stopTime) => {
-          if (stopTime.delta === null) return false;
+          if (stopTime.timestamp === null) return false;
           return dayjs().isAfter(dayjs.unix(stopTime.timestamp));
         }) ?? stopTimes[0];
       if (dayjs().diff(dayjs.unix(currentStopTime.timestamp!), "minutes") > 10) return;
@@ -285,18 +300,32 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
         id: stopTime.stop.id,
         name: stopTime.stop.name,
         sequence: stopTime.sequence,
-        scheduled: stopTime.time,
       };
-      if (typeof stopTimeUpdate !== "undefined") currentDelta = stopTimeUpdate?.arrival?.delay ?? 0;
-      if (stopTimeUpdate?.scheduleRelationship === "SKIPPED")
-        return { ...partialStopTime, timestamp: null, delta: null };
-      return {
-        ...partialStopTime,
-        timestamp: parseTime(stopTime.time)
-          .add((resource.source.propagateDelays ? currentDelta : stopTimeUpdate?.arrival?.delay) ?? 0, "seconds")
-          .unix(),
-        delta: (resource.source.propagateDelays ? currentDelta : stopTimeUpdate?.arrival?.delay) ?? null,
-      };
+
+      if (typeof stopTimeUpdate === "undefined") {
+        return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
+      }
+
+      if (stopTimeUpdate?.scheduleRelationship === "NO-DATA") {
+        currentDelta = null;
+        return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
+      }
+
+      if (stopTimeUpdate.scheduleRelationship === "SKIPPED") {
+        return { ...partialStopTime, timestamp: null, isRealtime: true };
+      }
+
+      if (typeof stopTimeUpdate.arrival?.delay === "number") {
+        currentDelta = stopTimeUpdate.arrival.delay;
+      }
+
+      const timestamp =
+        typeof stopTimeUpdate.arrival?.time === "string"
+          ? +stopTimeUpdate.arrival.time
+          : parseTime(stopTime.time)
+              .add((resource.source.propagateDelays ? currentDelta : stopTimeUpdate.arrival?.delay) ?? 0, "seconds")
+              .unix();
+      return { ...partialStopTime, timestamp, isRealtime: true };
     });
 
     const lastStop = stopTimes.at(-1);
@@ -315,11 +344,15 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
     entries.set(id, {
       id: `${resource.source.id}_${id}`,
       source: resource.source.getOperator?.(trip) ?? resource.source.id,
-      stopTimes: stopTimes.filter((stopTime) => {
-        if (stopTime.timestamp === null)
-          return parseTime(stopTime.scheduled).isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), "minute");
-        return dayjs.unix(stopTime.timestamp).isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), "minute");
-      }),
+      stopTimes:
+        typeof vehiclePosition.vehicle.currentStopSequence === "number"
+          ? stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!)
+          : stopTimes.filter((stopTime) => {
+              if (stopTime.timestamp === null) return false;
+              return dayjs
+                .unix(stopTime.timestamp)
+                .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), "minute");
+            }),
       trip: {
         id: trip.id,
         calendar: trip.calendar.id,

@@ -1,5 +1,6 @@
 import { brandColor } from "~/../constants";
 import { Route } from "~/@types";
+import capcotRoutes from "~/data/capcot-routes";
 import deepMobRoutes from "~/data/deepmob-routes";
 import nomadRoutes from "~/data/nomad-routes";
 import scholarRoutes from "~/data/scholar-routes";
@@ -1716,6 +1717,7 @@ const routes: Route[] = [
       },
     ],
   },
+  ...capcotRoutes,
   ...deepMobRoutes,
   ...sngoRoutes,
   ...scholarRoutes,

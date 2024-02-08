@@ -43,7 +43,7 @@ export type StopTime = {
   sequence: number;
   name: string;
   timestamp: number | null;
-  delta: number | null;
+  isRealtime: boolean;
 };
 
 //- TRIPS

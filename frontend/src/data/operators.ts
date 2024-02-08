@@ -70,6 +70,15 @@ const operators: Operator[] = [
     },
     issues: [],
   },
+  {
+    id: "CAPCOT",
+    name: "Cap Cotentin - Transdev Cotentin",
+    logo: {
+      href: "/assets/operators/capcotentin.svg",
+      size: [100, 100],
+    },
+    issues: [],
+  },
 ];
 
 export default operators;
