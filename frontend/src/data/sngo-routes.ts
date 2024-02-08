@@ -331,12 +331,21 @@ const sngoRoutes: Route[] = [
     colors: { background: "#EF7D00", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["ECOS Place de l'Eglise"],
-        name: "Place de l'Eglise",
-        city: "ECOS",
+        id: ["VERNON Lycée Dumézil"],
+        name: "Lycée Dumézil",
+        city: "VERNON",
         girouette: {
           routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
-          pages: [{ text: "ECOS" }, { font: "1510N2E1", textSpacing: 1, text: "PLACE DE L'EGLISE" }],
+          pages: [{ text: "VERNON" }, { text: "LYCEE DUMEZIL" }],
+        },
+      },
+      {
+        id: ["VERNON République"],
+        name: "République",
+        city: "VERNON",
+        girouette: {
+          routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
+          pages: [{ text: "VERNON" }, { text: "REPUBLIQUE" }],
         },
       },
       {
