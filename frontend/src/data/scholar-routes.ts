@@ -473,9 +473,9 @@ const scholarRoutes: Route[] = [
     colors: { background: "#FFDD00", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["École J.Y. Cousteau SAINTE-MARGUERITE-SUR-DUCLAIR"],
+        id: ["École Cousteau SAINTE-MARGUERITE-SUR-DUCLAIR"],
         autoHide: true,
-        name: "École Jacques-Yves Cousteau",
+        name: "École Cousteau",
         city: "SAINTE-MARGUERITE-SUR-DUCLAIR",
       },
     ],
@@ -486,7 +486,7 @@ const scholarRoutes: Route[] = [
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["École d'Épinay ÉPINAY-SUR-DUCLAIR"],
+        id: ["Ecole ÉPINAY-SUR-DUCLAIR"],
         autoHide: true,
         alternate: "École d'Épinay",
         name: "École",
