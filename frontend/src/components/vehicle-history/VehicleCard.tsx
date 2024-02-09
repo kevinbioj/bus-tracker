@@ -50,7 +50,11 @@ export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
       <div className="flex gap-2 flex-1 mt-2 mx-2 sm:mt-0 sm:mx-0">
         <div className="h-12 w-12 relative">
           {route ? (
-            <Image src={`/assets/routes/${route.id}.svg`} alt={route.name} fill />
+            route.noCartridge ? (
+              <p className="flex justify-center items-center h-full font-semibold text-2xl">{route.name}</p>
+            ) : (
+              <Image src={`/assets/routes/${route.id}.svg`} alt={route.name} fill />
+            )
           ) : (
             <Zzz className="mx-auto" width={48} height={48} />
           )}

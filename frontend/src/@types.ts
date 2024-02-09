@@ -20,9 +20,9 @@ export type Operator = {
 export type Route = {
   id: string;
   mapOnly?: boolean;
+  noCartridge?: boolean;
   name: string;
   colors: { background: string; text: string };
-  cartridgeHref?: string;
   destinations: RouteTripDestination[];
 };
 

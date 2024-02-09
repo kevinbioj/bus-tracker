@@ -3,6 +3,7 @@ import { Route } from "~/@types";
 import capcotRoutes from "~/data/capcot-routes";
 import deepMobRoutes from "~/data/deepmob-routes";
 import nomadRoutes from "~/data/nomad-routes";
+import rezobusRoutes from "~/data/rezobus-routes";
 import scholarRoutes from "~/data/scholar-routes";
 import sngoRoutes from "~/data/sngo-routes";
 
@@ -1717,6 +1718,7 @@ const routes: Route[] = [
       },
     ],
   },
+  ...rezobusRoutes,
   ...capcotRoutes,
   ...deepMobRoutes,
   ...sngoRoutes,
@@ -1725,6 +1727,7 @@ const routes: Route[] = [
 ];
 
 export const unknownRoute: Route = {
+  noCartridge: true,
   colors: { background: brandColor.DEFAULT, text: "#FFFFFF" },
   destinations: [],
   id: "?",

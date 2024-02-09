@@ -11,8 +11,8 @@ export function ActivityCard({ data }: { data: VehicleActivityDto }) {
       className="flex min-h-12 px-2 py-1 rounded-md"
       style={{ backgroundColor: route.colors.background, color: route.colors.text }}
     >
-      {route.id === "?" ? (
-        <p className="font-medium my-auto pt-[1px] text-2xl text-center w-12">{data.routeId}</p>
+      {route.noCartridge ? (
+        <p className="font-medium my-auto pt-[1px] text-2xl text-center w-12">{route.name}</p>
       ) : (
         <Image alt={route.name} src={`/assets/routes/${route.id}.svg`} width={48} height={48} />
       )}

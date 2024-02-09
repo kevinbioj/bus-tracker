@@ -79,6 +79,15 @@ const operators: Operator[] = [
     },
     issues: [],
   },
+  {
+    id: "REZOBUS",
+    name: "Rezo'Bus - Transdev Normandie Interurbain",
+    logo: {
+      href: "/assets/operators/rezobus.svg",
+      size: [222, 73],
+    },
+    issues: [{ message: "Certains véhicules ne disposent pas de numéro de parc.", status: "ONGOING" }],
+  },
 ];
 
 export default operators;

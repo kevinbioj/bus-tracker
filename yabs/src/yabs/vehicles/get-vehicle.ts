@@ -46,10 +46,13 @@ export async function getVehicle(identifier: VehicleIdentifier, period?: string)
     .where(and(eq(vehicleActivities.vehicleId, vehicle.id), eq(ACTIVITY_MONTH_SELECT(false), period)))
     .orderBy(desc(vehicleActivities.startTime))
     .then((activities) =>
-      activities.map((activity) => ({
+      activities.map((activity, index) => ({
         routeId: activity.routeId,
         startTime: activity.startTime,
-        endTime: dayjs().diff(dayjs(activity.updatedTime), "seconds") < ACTIVITY_TIMEOUT ? null : activity.updatedTime,
+        endTime:
+          index === 0 && dayjs().diff(dayjs(activity.updatedTime), "seconds") < ACTIVITY_TIMEOUT
+            ? null
+            : activity.updatedTime,
       })),
     );
 

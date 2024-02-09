@@ -40,7 +40,10 @@ async function loadCalendars(resourcePath: string) {
     .text()
     .then(parseCsv)
     .catch(() => []);
-  const calendarDates = await Bun.file(join(resourcePath, "calendar_dates.txt")).text().then(parseCsv);
+  const calendarDates = await Bun.file(join(resourcePath, "calendar_dates.txt"))
+    .text()
+    .then(parseCsv)
+    .catch(() => []);
   const calendarSet = calendars.reduce((calendars, calendar) => {
     calendars.set(calendar.service_id, {
       id: calendar.service_id,

@@ -190,7 +190,9 @@ export async function fetchTripUpdate(resource: Resource) {
 
       const vehicleDescriptor = tripUpdate.tripUpdate.vehicle;
       const vehicleId = vehicleDescriptor
-        ? resource.source.getVehicleNumber?.(vehicleDescriptor) ?? vehicleDescriptor.label ?? vehicleDescriptor.id
+        ? resource.source.getVehicleNumber
+          ? resource.source.getVehicleNumber(vehicleDescriptor)
+          : vehicleDescriptor.label ?? vehicleDescriptor.id
         : null;
 
       const currentStop = resource.stops.get(currentStopTime.id)!;
@@ -337,8 +339,9 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
       return;
 
     const vehicleDescriptor = vehiclePosition.vehicle.vehicle;
-    const vehicleId =
-      resource.source.getVehicleNumber?.(vehicleDescriptor) ?? vehicleDescriptor.label ?? vehicleDescriptor.id;
+    const vehicleId = resource.source.getVehicleNumber
+      ? resource.source.getVehicleNumber(vehicleDescriptor)
+      : vehicleDescriptor.label ?? vehicleDescriptor.id;
 
     const id = vehicleId ? `VEHICLE_${vehicleId}` : `TRIP_${trip.block ?? trip.id}`;
     entries.set(id, {
