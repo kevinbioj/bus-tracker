@@ -138,6 +138,32 @@ const sources: Source[] = [
     getOperator: () => "HOBUS",
     getVehicleNumber: () => null,
   },
+  {
+    id: "NEVA",
+    staticResourceHref: "https://zenbus.net/gtfs/static/download.zip?dataset=granville",
+    tripUpdateHref: "https://zenbus.net/gtfs/rt/poll.proto?dataset=granville",
+    vehiclePositionHref: "https://zenbus.net/gtfs/rt/poll.proto?dataset=granville",
+    refreshCron: "25,55 * * * * *",
+    routePrefix: "NEVA",
+    filters: {
+      scheduled: () => false,
+    },
+    getOperator: () => "NEVA",
+    getVehicleNumber: () => null,
+  },
+  {
+    id: "LBUS",
+    staticResourceHref: "https://zenbus.net/gtfs/static/download.zip?dataset=bernay",
+    tripUpdateHref: "https://zenbus.net/gtfs/rt/poll.proto?dataset=bernay",
+    vehiclePositionHref: "https://zenbus.net/gtfs/rt/poll.proto?dataset=bernay",
+    refreshCron: "25,55 * * * * *",
+    routePrefix: "LBUS",
+    filters: {
+      scheduled: () => false,
+    },
+    getOperator: () => "LBUS",
+    getVehicleNumber: () => null,
+  },
 ];
 
 export default sources;

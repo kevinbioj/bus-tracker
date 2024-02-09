@@ -108,7 +108,7 @@ export function Girouette({
           color: routeNumber.textColor ?? ledBackgroundColor,
           fontFamily: `"${routeNumber.font ?? "1513B3E1"}"`,
           fontSize: `${(height / dimensions.height) * getFontHeight(routeNumber.font ?? "1513B3E1")}px`,
-          letterSpacing: `${onePixel * (routeNumber.textSpacing ?? widerRnSpacing ? 3 : 2)}px`,
+          letterSpacing: `${onePixel * (routeNumber.textSpacing ?? (widerRnSpacing ? 3 : 2))}px`,
           lineHeight: `${(height / dimensions.height) * getFontHeight(routeNumber.font ?? "1513B3E1")}px`,
           paddingLeft: `${
             onePixel * (routeNumber.textSpacing ?? widerRnSpacing ? 3 : 2) + onePixel * (routeNumber.paddingLeft ?? 0)

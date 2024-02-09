@@ -117,6 +117,26 @@ const operators: Operator[] = [
     },
     issues: [],
   },
+  {
+    id: "NEVA",
+    name: "Néva - Transdev Normandie Manche",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/neva.png",
+      size: [2774, 1244],
+    },
+    issues: [],
+  },
+  {
+    id: "LBUS",
+    name: "L'Bus - Keolis Normandie Seine",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/lbus.png",
+      size: [1020, 208],
+    },
+    issues: [],
+  },
 ];
 
 export default operators;

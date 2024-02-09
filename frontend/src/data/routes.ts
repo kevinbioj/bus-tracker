@@ -4,6 +4,8 @@ import astrobusRoutes from "~/data/astrobus-routes";
 import capcotRoutes from "~/data/capcot-routes";
 import deepMobRoutes from "~/data/deepmob-routes";
 import hobusRoutes from "~/data/hobus-routes";
+import lbusRoutes from "~/data/lbus-routes";
+import nevaRoutes from "~/data/neva-routes";
 import nomadRoutes from "~/data/nomad-routes";
 import rezobusRoutes from "~/data/rezobus-routes";
 import scholarRoutes from "~/data/scholar-routes";
@@ -1720,6 +1722,8 @@ const routes: Route[] = [
       },
     ],
   },
+  ...lbusRoutes,
+  ...nevaRoutes,
   ...hobusRoutes,
   ...astrobusRoutes,
   ...rezobusRoutes,
