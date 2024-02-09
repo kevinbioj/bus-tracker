@@ -4,6 +4,7 @@ const operators: Operator[] = [
   {
     id: "TCAR",
     name: "Transdev Rouen",
+    hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-rouen.svg",
       size: [419, 147],
@@ -19,6 +20,7 @@ const operators: Operator[] = [
   {
     id: "TAE",
     name: "Régie des Transports urbains de l'Agglomération Elbeuvienne",
+    hasHistory: true,
     logo: {
       href: "/assets/operators/tae.svg",
       size: [3367, 1064],
@@ -28,6 +30,7 @@ const operators: Operator[] = [
   {
     id: "TNI",
     name: "Transdev Normandie Interurbain",
+    hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-normandie.svg",
       size: [478, 147],
@@ -37,6 +40,7 @@ const operators: Operator[] = [
   {
     id: "HANGA",
     name: "Cars Hangard",
+    hasHistory: false,
     logo: {
       href: "/assets/operators/cars-hangard.png",
       size: [283, 142],
@@ -46,6 +50,7 @@ const operators: Operator[] = [
   {
     id: "LNR",
     name: "NOMAD - Transdev Normandie Interurbain",
+    hasHistory: true,
     logo: {
       href: "/assets/operators/nomad.svg",
       size: [512, 144],
@@ -55,6 +60,7 @@ const operators: Operator[] = [
   {
     id: "TNVS",
     name: "SNgo! - Transdev Normandie Val de Seine",
+    hasHistory: true,
     logo: {
       href: "/assets/operators/sngo.jpg",
       size: [1280, 678],
@@ -64,6 +70,7 @@ const operators: Operator[] = [
   {
     id: "TUD",
     name: "DeepMob - Transdev Urbain Dieppe",
+    hasHistory: true,
     logo: {
       href: "/assets/operators/deepmob.svg",
       size: [595, 356],
@@ -73,6 +80,7 @@ const operators: Operator[] = [
   {
     id: "CAPCOT",
     name: "Cap Cotentin - Transdev Cotentin",
+    hasHistory: true,
     logo: {
       href: "/assets/operators/capcotentin.svg",
       size: [100, 100],
@@ -82,11 +90,22 @@ const operators: Operator[] = [
   {
     id: "REZOBUS",
     name: "Rezo'Bus - Transdev Normandie Interurbain",
+    hasHistory: true,
     logo: {
       href: "/assets/operators/rezobus.svg",
       size: [222, 73],
     },
-    issues: [{ message: "Certains véhicules ne disposent pas de numéro de parc.", status: "ONGOING" }],
+    issues: [],
+  },
+  {
+    id: "ASTROBUS",
+    name: "Astrobus - Keolis Calvados",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/astrobus.svg",
+      size: [595, 241],
+    },
+    issues: [],
   },
 ];
 

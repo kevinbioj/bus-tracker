@@ -61,6 +61,7 @@ const sources: Source[] = [
     staticResourceHref: "http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:004",
     refreshCron: "25 * * * * *",
     generateShapes: true,
+    getOperator: (trip) => (trip.route === "214" ? "TNI" : "HANGA"),
   },
   {
     id: "LNR",
@@ -110,6 +111,19 @@ const sources: Source[] = [
     routePrefix: "REZOBUS",
     getOperator: () => "REZOBUS",
     getVehicleNumber: (descriptor) => descriptor.label ?? null,
+  },
+  {
+    id: "ASTROBUS",
+    staticResourceHref: "https://zenbus.net/gtfs/static/download.zip?dataset=astrobus",
+    tripUpdateHref: "https://zenbus.net/gtfs/rt/poll.proto?dataset=astrobus",
+    vehiclePositionHref: "https://zenbus.net/gtfs/rt/poll.proto?dataset=astrobus",
+    refreshCron: "25,55 * * * * *",
+    routePrefix: "ASTROBUS",
+    filters: {
+      scheduled: () => false,
+    },
+    getOperator: () => "ASTROBUS",
+    getVehicleNumber: () => null,
   },
 ];
 

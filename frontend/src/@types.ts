@@ -4,6 +4,7 @@ import { GirouetteData } from "~/components/interactive-map/girouette";
 export type Operator = {
   id: string;
   name: string;
+  hasHistory: boolean;
   logo: {
     href: string;
     size: [number, number];
