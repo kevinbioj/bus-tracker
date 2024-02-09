@@ -10,6 +10,7 @@ import nomadRoutes from "~/data/nomad-routes";
 import rezobusRoutes from "~/data/rezobus-routes";
 import scholarRoutes from "~/data/scholar-routes";
 import sngoRoutes from "~/data/sngo-routes";
+import twistoRoutes from "~/data/twisto-routes";
 
 const routes: Route[] = [
   {
@@ -1722,6 +1723,7 @@ const routes: Route[] = [
       },
     ],
   },
+  ...twistoRoutes,
   ...lbusRoutes,
   ...nevaRoutes,
   ...hobusRoutes,

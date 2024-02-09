@@ -1,10 +1,9 @@
-import { exec } from "node:child_process";
-import { join } from "node:path";
+import { exec } from 'node:child_process';
+import { join } from 'node:path';
 
-import { Calendar, Shape, Stop, Trip } from "~/@types";
-import { Source } from "~/config/sources";
-import { groupBy } from "~/utils/group-by";
-import { parseCsv } from "~/utils/parse-csv";
+import { groupBy } from '~/utils/group-by';
+import { parseCsv } from '~/utils/parse-csv';
+import { Calendar, GtfsProperties, Shape, Stop, Trip } from '~/yabs/fetcher/gtfs/@types';
 
 const $ = (command: string) =>
   new Promise<string>((resolve, reject) =>
@@ -14,33 +13,33 @@ const $ = (command: string) =>
     }),
   );
 
-export async function downloadStaticResource(source: Source) {
-  const tmpdir = await $("mktemp -d");
-  await $(`wget -O "${join(tmpdir, "gtfs.zip")}" "${source.staticResourceHref}"`);
-  await $(`unzip -o ${join(tmpdir, "gtfs.zip")} -d ${tmpdir}`);
-  await $(`rm "${join(tmpdir, "feed_info.txt")}"`).catch(() => void 0);
-  if (source.generateShapes) {
-    if (typeof process.env.OSM_PATH === "undefined") {
+export async function downloadStaticResource(properties: GtfsProperties) {
+  const tmpdir = await $('mktemp -d');
+  await $(`wget -O "${join(tmpdir, 'gtfs.zip')}" "${properties.staticResourceHref}"`);
+  await $(`unzip -o ${join(tmpdir, 'gtfs.zip')} -d ${tmpdir}`);
+  await $(`rm "${join(tmpdir, 'feed_info.txt')}"`).catch(() => void 0);
+  if (properties.generateShapes) {
+    if (typeof process.env.OSM_PATH === 'undefined') {
       throw new Error("When generateShapes=true, the 'OSM_PATH' env variable must refer to a OSM file to use.");
     }
     await $(`pfaedle -D --inplace -x ${process.env.OSM_PATH} ${tmpdir}`).catch((e) =>
-      console.error(`YABS\t${source.id}\tFailed to generate shapes:`, e),
+      console.error(`YABS\t${properties.id}\tFailed to generate shapes:`, e),
     );
   }
   const [calendars, shapes, stops] = await Promise.all([loadCalendars(tmpdir), loadShapes(tmpdir), loadStops(tmpdir)]);
   const trips = await loadTrips(tmpdir, calendars, shapes, stops);
   await $(`rm -r "${tmpdir}"`);
-  return { calendars, source, stops, trips };
+  return { calendars, stops, trips };
 }
 
 // ---
 
 async function loadCalendars(resourcePath: string) {
-  const calendars = await Bun.file(join(resourcePath, "calendar.txt"))
+  const calendars = await Bun.file(join(resourcePath, 'calendar.txt'))
     .text()
     .then(parseCsv)
     .catch(() => []);
-  const calendarDates = await Bun.file(join(resourcePath, "calendar_dates.txt"))
+  const calendarDates = await Bun.file(join(resourcePath, 'calendar_dates.txt'))
     .text()
     .then(parseCsv)
     .catch(() => []);
@@ -70,8 +69,8 @@ async function loadCalendars(resourcePath: string) {
         days: [false, false, false, false, false, false, false],
         blacklist: [],
         whitelist: [],
-        from: "20000101",
-        to: "20991231",
+        from: '20000101',
+        to: '20991231',
       });
     }
     const calendar = calendarSet.get(calendarDate.service_id)!;
@@ -89,7 +88,7 @@ async function loadCalendars(resourcePath: string) {
 }
 
 async function loadShapes(resourcePath: string) {
-  const shapePoints = await Bun.file(join(resourcePath, "shapes.txt"))
+  const shapePoints = await Bun.file(join(resourcePath, 'shapes.txt'))
     .text()
     .then(parseCsv)
     .catch(() => []);
@@ -109,7 +108,7 @@ async function loadShapes(resourcePath: string) {
 }
 
 async function loadStops(resourcePath: string) {
-  const stops = await Bun.file(join(resourcePath, "stops.txt")).text().then(parseCsv);
+  const stops = await Bun.file(join(resourcePath, 'stops.txt')).text().then(parseCsv);
   return stops.reduce((stops, stop) => {
     stops.set(stop.stop_id, {
       id: stop.stop_id,
@@ -127,9 +126,9 @@ async function loadTrips(
   shapes: Map<string, Shape>,
   stops: Map<string, Stop>,
 ) {
-  const trips = await Bun.file(join(resourcePath, "trips.txt")).text().then(parseCsv);
+  const trips = await Bun.file(join(resourcePath, 'trips.txt')).text().then(parseCsv);
   const stopTimes = groupBy(
-    await Bun.file(join(resourcePath, "stop_times.txt")).text().then(parseCsv),
+    await Bun.file(join(resourcePath, 'stop_times.txt')).text().then(parseCsv),
     (stopTime) => stopTime.trip_id,
   );
   return trips.reduce((trips, trip) => {

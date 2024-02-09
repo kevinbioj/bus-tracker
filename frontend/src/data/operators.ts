@@ -48,6 +48,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "KCM",
+    name: "Twisto - Keolis Caen Mobilités",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/twisto.svg",
+      size: [600, 228],
+    },
+    issues: [],
+  },
+  {
     id: "LNR",
     name: "NOMAD - Transdev Normandie Interurbain",
     hasHistory: true,
@@ -130,7 +140,7 @@ const operators: Operator[] = [
   {
     id: "LBUS",
     name: "l'Bus - Keolis Normandie Seine",
-    hasHistory: true,
+    hasHistory: false,
     logo: {
       href: "/assets/operators/lbus.png",
       size: [1020, 208],

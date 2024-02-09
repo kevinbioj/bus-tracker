@@ -1,42 +1,45 @@
-import dayjs from "dayjs";
-import fastify, { FastifyReply, FastifyRequest } from "fastify";
-import { schedule } from "node-cron";
+import dayjs from 'dayjs';
+import fastify, { FastifyReply, FastifyRequest } from 'fastify';
+import { schedule } from 'node-cron';
+import { match } from 'ts-pattern';
 
-import { Resource, YabsEntry } from "~/@types";
-import { port } from "~/config/common";
-import sources, { Source } from "~/config/sources";
-import { downloadStaticResource } from "~/yabs/download-resource";
-import { computeEntries } from "~/yabs/compute-entries";
-import { getOperatorVehicles } from "~/yabs/vehicles/get-operator-vehicles";
-import { getVehicle } from "~/yabs/vehicles/get-vehicle";
-import { insertActivity } from "~/yabs/vehicles/insert-activity";
-import { getVehicles } from "~/yabs/vehicles/get-vehicles";
+import { YabsEntry } from '~/@types';
+import { port } from '~/config/common';
+import sources, { Source } from '~/config/sources';
+import { GtfsResource } from '~/yabs/fetcher/gtfs/@types';
+import { computeGtfsEntries } from '~/yabs/fetcher/gtfs/compute-entries';
+import { downloadStaticResource } from '~/yabs/fetcher/gtfs/download-resource';
+import { computeSiriEntries } from '~/yabs/fetcher/siri/compute-entries';
+import { getOperatorVehicles } from '~/yabs/vehicles/get-operator-vehicles';
+import { getVehicle } from '~/yabs/vehicles/get-vehicle';
+import { getVehicles } from '~/yabs/vehicles/get-vehicles';
+import { insertActivity } from '~/yabs/vehicles/insert-activity';
 
 const waitFor = (time: number) => new Promise((r) => setTimeout(r, time));
 const DEFAULT_RETRY_COUNT = 5;
 const DEFAULT_RETRY_INTERVAL = 10_000;
 
-const resources = new Map<string, Resource>();
+const gtfsResources = new Map<string, GtfsResource>();
 const output = new Map<string, YabsEntry[]>();
 let hasComputedFirstEntries = false;
 
 console.log(`YABS\tListening on port ${port}.`);
 const server = fastify();
-server.get("/vehicles", handleGetVehicles);
-server.get("/history", handleGetVehicleList);
-server.get("/history/:operator", handleGetOperatorVehicleList);
-server.get("/history/:operator/:number", handleGetOperatorVehicle);
+server.get('/vehicles', handleGetVehicles);
+server.get('/history', handleGetVehicleList);
+server.get('/history/:operator', handleGetOperatorVehicleList);
+server.get('/history/:operator/:number', handleGetOperatorVehicle);
 server.listen({ port });
 
-console.log("YABS\tLoading resources into memory.");
+console.log('YABS\tLoading resources into memory.');
 await Promise.all(sources.map((source) => updateResource(source)));
 
-console.log("YABS\tComputing first entries.");
+console.log('YABS\tComputing first entries.');
 await Promise.allSettled(sources.map((source) => updateEntries(source)));
 hasComputedFirstEntries = true;
 
-console.log("YABS\tRegistering scheduled tasks.");
-schedule("0 * * * *", () => sources.map((source) => updateResource(source)));
+console.log('YABS\tRegistering scheduled tasks.');
+schedule('0 * * * *', () => sources.map((source) => updateResource(source)));
 sources.map((source) => schedule(source.refreshCron, () => updateEntries(source)));
 
 // --- ROUTE HANDLERS
@@ -86,8 +89,8 @@ async function handleGetOperatorVehicle(request: FastifyRequest, reply: FastifyR
     return getVehicle({ operator, number: +number }, period);
   } catch (e) {
     if (e instanceof Error) {
-      if (e.message === "INVALID_PERIOD") return reply.code(400).send();
-      if (e.message === "VEHICLE_NOT_FOUND") return reply.code(404).send();
+      if (e.message === 'INVALID_PERIOD') return reply.code(400).send();
+      if (e.message === 'VEHICLE_NOT_FOUND') return reply.code(404).send();
     }
     console.error(e);
     return reply.code(500).send();
@@ -97,10 +100,14 @@ async function handleGetOperatorVehicle(request: FastifyRequest, reply: FastifyR
 // --- SCHEDULED JOBS
 
 async function updateResource(source: Source, retryCount = DEFAULT_RETRY_COUNT, interval = DEFAULT_RETRY_INTERVAL) {
+  if (source.type !== 'GTFS') {
+    console.log(`YABS\t${source.id}\tNo static resource required, ignoring.`);
+    return;
+  }
   const then = Date.now();
   try {
-    const resource = await downloadStaticResource(source);
-    resources.set(source.id, resource);
+    const resource = await downloadStaticResource(source.gtfsProperties);
+    gtfsResources.set(source.id, resource);
   } catch (e: unknown) {
     if (retryCount === 0) {
       console.error(`YABS\t${source.id}\tFailed to update resource: ${(e as Error).name} - Aborting.`);
@@ -123,14 +130,20 @@ async function updateResource(source: Source, retryCount = DEFAULT_RETRY_COUNT, 
 
 async function updateEntries(source: Source) {
   const then = Date.now();
-  const resource = resources.get(source.id);
-  if (typeof resource === "undefined") {
-    console.log(`YABS\t${source.id}\tResource is not ready yet, skipping update.`);
-    return;
-  }
   try {
-    const entries = await computeEntries(resource);
-    output.set(resource.source.id, entries);
+    const entries = await match(source)
+      .with({ type: 'GTFS' }, ({ gtfsProperties }) => {
+        const resource = gtfsResources.get(source.id);
+        if (typeof resource === 'undefined') {
+          console.log(`YABS\t${source.id}\tResource is not ready yet, skipping update.`);
+          return [];
+        }
+        return computeGtfsEntries(resource, gtfsProperties);
+      })
+      .with({ type: 'SIRI-XML' }, ({ siriProperties }) => computeSiriEntries(siriProperties))
+      .exhaustive();
+
+    output.set(source.id, entries);
     await Promise.all(
       entries
         .filter((data) => data.vehicle.id !== null)

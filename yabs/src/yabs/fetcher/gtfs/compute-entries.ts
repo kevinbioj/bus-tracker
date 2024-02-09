@@ -1,43 +1,46 @@
-import dayjs from "dayjs";
-import { P, match } from "ts-pattern";
+import dayjs from 'dayjs';
+import { P, match } from 'ts-pattern';
 
-import { Resource, YabsEntry } from "~/@types";
-import { decodeTripUpdate, decodeVehiclePosition } from "~/yabs/decode-gtfsrt";
-import { checkCalendar } from "~/utils/check-calendar";
-import { checkTrip } from "~/utils/check-trip";
-import { parseTime } from "~/utils/parse-time";
+import { YabsEntry } from '~/@types';
+import { checkCalendar } from '~/utils/check-calendar';
+import { checkTrip } from '~/utils/check-trip';
+import { parseTime } from '~/utils/parse-time';
+import { GtfsProperties, GtfsResource } from '~/yabs/fetcher/gtfs/@types';
+import { decodeTripUpdate, decodeVehiclePosition } from '~/yabs/fetcher/gtfs/decode-gtfsrt';
 
-export async function computeEntries(resource: Resource): Promise<YabsEntry[]> {
-  const entries = await match([resource.source.tripUpdateHref, resource.source.vehiclePositionHref])
+export async function computeGtfsEntries(resource: GtfsResource, properties: GtfsProperties): Promise<YabsEntry[]> {
+  const entries = await match([properties.tripUpdateHref, properties.vehiclePositionHref])
     .with([P.string, P.string], async () => {
-      const realtimeEntries = await fetchVehiclePositionAndTripUpdate(resource);
+      const realtimeEntries = await fetchVehiclePositionAndTripUpdate(resource, properties);
       const scheduledEntries = computeScheduled(
         resource,
+        properties,
         realtimeEntries.map((rt) => rt.trip.id),
       );
       return [realtimeEntries, scheduledEntries].flat();
     })
     .with([P.string, P.nullish], async () => {
-      const realtimeEntries = await fetchTripUpdate(resource);
+      const realtimeEntries = await fetchTripUpdate(resource, properties);
       const scheduledEntries = computeScheduled(
         resource,
+        properties,
         realtimeEntries.map((rt) => rt.trip.id),
       );
       return [realtimeEntries, scheduledEntries].flat();
     })
-    .otherwise(() => computeScheduled(resource));
+    .otherwise(() => computeScheduled(resource, properties));
 
   return entries;
 }
 
 // ---
 
-export function computeScheduled(resource: Resource, processedTrips: string[] = []) {
-  const filter = resource.source.filters?.scheduled;
+export function computeScheduled(resource: GtfsResource, properties: GtfsProperties, processedTrips: string[] = []) {
+  const filter = properties.filters?.scheduled;
 
   const ongoingTrips = [...resource.trips.values()].filter((trip, index, array) => {
     // 1. We run through the custom filter first.
-    if (typeof filter !== "undefined" && !filter(trip, index, array)) return false;
+    if (typeof filter !== 'undefined' && !filter(trip, index, array)) return false;
     // 2. If the trip was already seen in realtime data, we skip it.
     if (processedTrips.includes(trip.id)) return false;
     // 3. If a trip with the same block (if available) was processed, we skip it.
@@ -95,35 +98,35 @@ export function computeScheduled(resource: Resource, processedTrips: string[] = 
     }
 
     return {
-      id: `${resource.source.id}_${trip.id}`,
+      id: `${properties.id}_${trip.id}`,
       stopTimes: stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
       trip: {
         id: trip.id,
         calendar: trip.calendar.id,
-        route: resource.source.routePrefix ? `${resource.source.routePrefix}-${trip.route}` : trip.route,
+        route: properties.routePrefix ? `${properties.routePrefix}-${trip.route}` : trip.route,
         direction: trip.direction,
         headsign: trip.headsign ?? stopTimes.at(-1)!.name,
       },
       vehicle: {
         id: null,
         position: {
-          type: "SCHEDULED",
+          type: 'SCHEDULED',
           ...estimatedPosition,
         },
       },
-      source: resource.source.getOperator?.(trip) ?? resource.source.id,
+      source: properties.getOperator?.(trip) ?? properties.id,
       timestamp: dayjs().unix(),
     } as const;
   });
 }
 
-export async function fetchTripUpdate(resource: Resource) {
-  if (typeof resource.source.tripUpdateHref === "undefined")
-    throw new Error(`${resource.source.id}\tNo href to trip updates was found, cannot continue.`);
+export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsProperties) {
+  if (typeof properties.tripUpdateHref === 'undefined')
+    throw new Error(`${properties.id}\tNo href to trip updates was found, cannot continue.`);
 
   const entries = new Map<string, YabsEntry>();
 
-  const tripUpdate = await fetch(resource.source.tripUpdateHref)
+  const tripUpdate = await fetch(properties.tripUpdateHref)
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeTripUpdate(buffer));
@@ -131,15 +134,15 @@ export async function fetchTripUpdate(resource: Resource) {
   tripUpdate.entity
     .sort((a, b) => +b.tripUpdate.timestamp - +a.tripUpdate.timestamp)
     .filter((trip, index, array) => {
-      const filter = resource.source.filters?.tripUpdate;
+      const filter = properties.filters?.tripUpdate;
       return filter ? filter(trip, index, array) : true;
     })
     .forEach((tripUpdate) => {
       // if (dayjs().diff(dayjs.unix(+tripUpdate.tripUpdate.timestamp), "minutes") >= 10) return;
       const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
-      if (typeof trip === "undefined") return;
+      if (typeof trip === 'undefined') return;
       if (
-        typeof tripUpdate.tripUpdate.trip.routeId !== "undefined" &&
+        typeof tripUpdate.tripUpdate.trip.routeId !== 'undefined' &&
         tripUpdate.tripUpdate.trip.routeId !== trip.route
       )
         return;
@@ -154,28 +157,28 @@ export async function fetchTripUpdate(resource: Resource) {
           distanceTraveled: stopTime.distanceTraveled,
         };
 
-        if (typeof stopTimeUpdate === "undefined") {
+        if (typeof stopTimeUpdate === 'undefined') {
           return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
         }
 
-        if (stopTimeUpdate?.scheduleRelationship === "NO-DATA") {
+        if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
           currentDelta = null;
           return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
         }
 
-        if (stopTimeUpdate.scheduleRelationship === "SKIPPED") {
+        if (stopTimeUpdate.scheduleRelationship === 'SKIPPED') {
           return { ...partialStopTime, timestamp: null, isRealtime: true };
         }
 
-        if (typeof stopTimeUpdate.arrival?.delay === "number") {
+        if (typeof stopTimeUpdate.arrival?.delay === 'number') {
           currentDelta = stopTimeUpdate.arrival.delay;
         }
 
         const timestamp =
-          typeof stopTimeUpdate.arrival?.time === "string"
+          typeof stopTimeUpdate.arrival?.time === 'string'
             ? +stopTimeUpdate.arrival.time
             : parseTime(stopTime.time)
-                .add((resource.source.propagateDelays ? currentDelta : stopTimeUpdate.arrival?.delay) ?? 0, "seconds")
+                .add((properties.propagateDelays ? currentDelta : stopTimeUpdate.arrival?.delay) ?? 0, 'seconds')
                 .unix();
         return { ...partialStopTime, timestamp, isRealtime: true };
       });
@@ -185,13 +188,13 @@ export async function fetchTripUpdate(resource: Resource) {
           if (stopTime.timestamp === null) return false;
           return dayjs().isAfter(dayjs.unix(stopTime.timestamp));
         }) ?? stopTimes[0];
-      if (dayjs().diff(dayjs.unix(currentStopTime.timestamp!), "minutes") > 10) return;
+      if (dayjs().diff(dayjs.unix(currentStopTime.timestamp!), 'minutes') > 10) return;
       const currentStopTimeIdx = stopTimes.indexOf(currentStopTime);
 
       const vehicleDescriptor = tripUpdate.tripUpdate.vehicle;
       const vehicleId = vehicleDescriptor
-        ? resource.source.getVehicleNumber
-          ? resource.source.getVehicleNumber(vehicleDescriptor)
+        ? properties.getVehicleNumber
+          ? properties.getVehicleNumber(vehicleDescriptor)
           : vehicleDescriptor.label ?? vehicleDescriptor.id
         : null;
 
@@ -233,25 +236,25 @@ export async function fetchTripUpdate(resource: Resource) {
 
       const id = vehicleId ? `VEHICLE_${vehicleId}` : `TRIP_${trip.block ?? trip.id}`;
       entries.set(id, {
-        id: `${resource.source.id}_${id}`,
+        id: `${properties.id}_${id}`,
         stopTimes: dayjs.unix(currentStopTime.timestamp!).isAfter()
           ? stopTimes
           : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
         trip: {
           id: trip.id,
           calendar: trip.calendar.id,
-          route: resource.source.routePrefix ? `${resource.source.routePrefix}-${trip.route}` : trip.route,
+          route: properties.routePrefix ? `${properties.routePrefix}-${trip.route}` : trip.route,
           direction: trip.direction,
           headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
         },
         vehicle: {
           id: vehicleId,
           position: {
-            type: "REALTIME",
+            type: 'REALTIME',
             ...estimatedPosition,
           },
         },
-        source: resource.source.getOperator?.(trip) ?? resource.source.id,
+        source: properties.getOperator?.(trip) ?? properties.id,
         timestamp: +tripUpdate.tripUpdate.timestamp,
       });
     });
@@ -259,39 +262,36 @@ export async function fetchTripUpdate(resource: Resource) {
   return [...entries.values()];
 }
 
-export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
-  if (
-    typeof resource.source.tripUpdateHref === "undefined" ||
-    typeof resource.source.vehiclePositionHref === "undefined"
-  )
-    throw new Error(`${resource.source.id}\tBoth trip update and vehicle position href must be set.`);
+export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, properties: GtfsProperties) {
+  if (typeof properties.tripUpdateHref === 'undefined' || typeof properties.vehiclePositionHref === 'undefined')
+    throw new Error(`${properties.id}\tBoth trip update and vehicle position href must be set.`);
 
   const entries = new Map<string, YabsEntry>();
 
-  const tripUpdates = await fetch(resource.source.tripUpdateHref)
+  const tripUpdates = await fetch(properties.tripUpdateHref)
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeTripUpdate(buffer));
 
-  const vehiclePositions = await fetch(resource.source.vehiclePositionHref)
+  const vehiclePositions = await fetch(properties.vehiclePositionHref)
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeVehiclePosition(buffer));
 
   vehiclePositions.entity.forEach((vehiclePosition) => {
-    if (typeof vehiclePosition.vehicle.trip === "undefined") return;
+    if (typeof vehiclePosition.vehicle.trip === 'undefined') return;
     const trip = resource.trips.get(vehiclePosition.vehicle.trip.tripId);
-    if (typeof trip === "undefined") return;
+    if (typeof trip === 'undefined') return;
     if (
-      typeof vehiclePosition.vehicle.trip.routeId !== "undefined" &&
+      typeof vehiclePosition.vehicle.trip.routeId !== 'undefined' &&
       vehiclePosition.vehicle.trip.routeId !== trip.route
     )
       return;
 
     const tripUpdate = tripUpdates.entity.find((tripUpdate) => tripUpdate.tripUpdate.trip.tripId === trip.id);
     if (
-      typeof tripUpdate === "undefined" &&
-      dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), "minutes") >= 10
+      typeof tripUpdate === 'undefined' &&
+      dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minutes') >= 10
     )
       return;
 
@@ -304,62 +304,62 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
         sequence: stopTime.sequence,
       };
 
-      if (typeof stopTimeUpdate === "undefined") {
+      if (typeof stopTimeUpdate === 'undefined') {
         return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
       }
 
-      if (stopTimeUpdate?.scheduleRelationship === "NO-DATA") {
+      if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
         currentDelta = null;
         return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
       }
 
-      if (stopTimeUpdate.scheduleRelationship === "SKIPPED") {
+      if (stopTimeUpdate.scheduleRelationship === 'SKIPPED') {
         return { ...partialStopTime, timestamp: null, isRealtime: true };
       }
 
-      if (typeof stopTimeUpdate.arrival?.delay === "number") {
+      if (typeof stopTimeUpdate.arrival?.delay === 'number') {
         currentDelta = stopTimeUpdate.arrival.delay;
       }
 
       const timestamp =
-        typeof stopTimeUpdate.arrival?.time === "string"
+        typeof stopTimeUpdate.arrival?.time === 'string'
           ? +stopTimeUpdate.arrival.time
           : parseTime(stopTime.time)
-              .add((resource.source.propagateDelays ? currentDelta : stopTimeUpdate.arrival?.delay) ?? 0, "seconds")
+              .add((properties.propagateDelays ? currentDelta : stopTimeUpdate.arrival?.delay) ?? 0, 'seconds')
               .unix();
       return { ...partialStopTime, timestamp, isRealtime: true };
     });
 
     const lastStop = stopTimes.at(-1);
     if (
-      dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), "minutes") >= 10 &&
-      typeof lastStop !== "undefined" &&
-      dayjs().diff(dayjs.unix(+lastStop.timestamp!), "minutes") >= 10
+      dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minutes') >= 10 &&
+      typeof lastStop !== 'undefined' &&
+      dayjs().diff(dayjs.unix(+lastStop.timestamp!), 'minutes') >= 10
     )
       return;
 
     const vehicleDescriptor = vehiclePosition.vehicle.vehicle;
-    const vehicleId = resource.source.getVehicleNumber
-      ? resource.source.getVehicleNumber(vehicleDescriptor)
+    const vehicleId = properties.getVehicleNumber
+      ? properties.getVehicleNumber(vehicleDescriptor)
       : vehicleDescriptor.label ?? vehicleDescriptor.id;
 
     const id = vehicleId ? `VEHICLE_${vehicleId}` : `TRIP_${trip.block ?? trip.id}`;
     entries.set(id, {
-      id: `${resource.source.id}_${id}`,
-      source: resource.source.getOperator?.(trip) ?? resource.source.id,
+      id: `${properties.id}_${id}`,
+      source: properties.getOperator?.(trip) ?? properties.id,
       stopTimes:
-        typeof vehiclePosition.vehicle.currentStopSequence === "number"
+        typeof vehiclePosition.vehicle.currentStopSequence === 'number'
           ? stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!)
           : stopTimes.filter((stopTime) => {
               if (stopTime.timestamp === null) return false;
               return dayjs
                 .unix(stopTime.timestamp)
-                .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), "minute");
+                .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minute');
             }),
       trip: {
         id: trip.id,
         calendar: trip.calendar.id,
-        route: resource.source.routePrefix ? `${resource.source.routePrefix}-${trip.route}` : trip.route,
+        route: properties.routePrefix ? `${properties.routePrefix}-${trip.route}` : trip.route,
         direction: trip.direction,
         headsign: trip.headsign,
       },
@@ -369,7 +369,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: Resource) {
           latitude: vehiclePosition.vehicle.position.latitude,
           longitude: vehiclePosition.vehicle.position.longitude,
           timestamp: +vehiclePosition.vehicle.timestamp,
-          type: "GPS",
+          type: 'GPS',
         },
       },
       timestamp: +vehiclePosition.vehicle.timestamp,
