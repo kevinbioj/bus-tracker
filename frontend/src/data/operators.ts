@@ -99,7 +99,7 @@ const operators: Operator[] = [
   },
   {
     id: "ASTROBUS",
-    name: "Astrobus - Keolis Calvados",
+    name: "Astrobus - Keolis Lisieux Normandie",
     hasHistory: false,
     logo: {
       href: "/assets/operators/astrobus.svg",
@@ -119,7 +119,7 @@ const operators: Operator[] = [
   },
   {
     id: "NEVA",
-    name: "Néva - Transdev Normandie Manche",
+    name: "Néva - Com. de Communes Granville Terre et Mer",
     hasHistory: false,
     logo: {
       href: "/assets/operators/neva.png",
@@ -129,7 +129,7 @@ const operators: Operator[] = [
   },
   {
     id: "LBUS",
-    name: "L'Bus - Keolis Normandie Seine",
+    name: "l'Bus - Keolis Normandie Seine",
     hasHistory: true,
     logo: {
       href: "/assets/operators/lbus.png",

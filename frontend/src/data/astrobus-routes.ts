@@ -102,7 +102,7 @@ const astrobusRoutes: Route[] = [
         name: "QUEBEC VIA CAMP FRANC",
         girouette: {
           routeNumber: { backgroundColor: "#009640", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: "QUEBEC VIA CAMP FRANC" }],
+          pages: [{ font: "1310C2E1", text: "QUEBEC VIA CAMP FRANC" }],
         },
       },
     ],

@@ -54,7 +54,7 @@ const hobusRoutes: Route[] = [
         name: "Phare – Naturospace",
         girouette: {
           routeNumber: { backgroundColor: "#00A0E3", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
-          pages: [{ font: "1510N2E1", text: "PHARE - NATUROSPACE" }],
+          pages: [{ font: "1508C2E1", text: "PHARE-NATUROSPACE" }],
         },
       },
       {
