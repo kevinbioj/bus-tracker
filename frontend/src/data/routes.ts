@@ -3,6 +3,7 @@ import { Route } from "~/@types";
 import astrobusRoutes from "~/data/astrobus-routes";
 import capcotRoutes from "~/data/capcot-routes";
 import deepMobRoutes from "~/data/deepmob-routes";
+import hobusRoutes from "~/data/hobus-routes";
 import nomadRoutes from "~/data/nomad-routes";
 import rezobusRoutes from "~/data/rezobus-routes";
 import scholarRoutes from "~/data/scholar-routes";
@@ -1719,6 +1720,7 @@ const routes: Route[] = [
       },
     ],
   },
+  ...hobusRoutes,
   ...astrobusRoutes,
   ...rezobusRoutes,
   ...capcotRoutes,

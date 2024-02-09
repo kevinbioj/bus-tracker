@@ -107,6 +107,16 @@ const operators: Operator[] = [
     },
     issues: [],
   },
+  {
+    id: "HOBUS",
+    name: "Hobus - Keolis Calvados",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/hobus.png",
+      size: [1000, 327],
+    },
+    issues: [],
+  },
 ];
 
 export default operators;

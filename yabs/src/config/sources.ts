@@ -125,6 +125,19 @@ const sources: Source[] = [
     getOperator: () => "ASTROBUS",
     getVehicleNumber: () => null,
   },
+  {
+    id: "HOBUS",
+    staticResourceHref: "https://zenbus.net/gtfs/static/download.zip?dataset=hobus",
+    tripUpdateHref: "https://zenbus.net/gtfs/rt/poll.proto?dataset=hobus",
+    vehiclePositionHref: "https://zenbus.net/gtfs/rt/poll.proto?dataset=hobus",
+    refreshCron: "25,55 * * * * *",
+    routePrefix: "HOBUS",
+    filters: {
+      scheduled: () => false,
+    },
+    getOperator: () => "HOBUS",
+    getVehicleNumber: () => null,
+  },
 ];
 
 export default sources;
