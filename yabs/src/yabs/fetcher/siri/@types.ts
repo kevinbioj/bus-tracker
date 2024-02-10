@@ -19,7 +19,8 @@ export type SiriVehicleActivity = {
     LineRef: string;
     DirectionName: number;
     DestinationName: string;
-    VehicleLocation: {
+    OriginAimedDepartureTime: string;
+    VehicleLocation?: {
       Longitude: number;
       Latitude: number;
     };

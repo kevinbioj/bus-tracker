@@ -27,48 +27,59 @@ export async function computeSiriEntries(properties: SiriProperties) {
   const payload = await response.text();
   const data = parser.parse(payload);
   const vehicles = data.Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity as SiriVehicleActivity[];
-  return vehicles.map((vehicle) => {
-    const timestamp = dayjs(vehicle.RecordedAtTime).unix();
-    const vehicleLabel = properties.getVehicleLabel(vehicle);
-    return {
-      id: `${properties.id}_VEHICLE_${vehicleLabel}`,
-      source: properties.id,
-      trip: {
-        id: vehicle.MonitoredVehicleJourney.FramedVehicleJourneyRef.DatedVehicleJourneyRef,
-        calendar: 'N/A',
-        direction: +vehicle.MonitoredVehicleJourney.DirectionName - 1,
-        headsign: vehicle.MonitoredVehicleJourney.DestinationName,
-        route: properties.prefix
-          ? `${properties.prefix}-${properties.getRouteId(vehicle)}`
-          : properties.getRouteId(vehicle),
-      },
-      vehicle: {
-        id: vehicleLabel.toString(),
-        position: {
-          latitude: vehicle.MonitoredVehicleJourney.VehicleLocation.Latitude,
-          longitude: vehicle.MonitoredVehicleJourney.VehicleLocation.Longitude,
-          timestamp,
-          type: 'GPS',
+  return vehicles
+    .sort(
+      (a, b) =>
+        dayjs(a.MonitoredVehicleJourney.OriginAimedDepartureTime).unix() -
+        dayjs(b.MonitoredVehicleJourney.OriginAimedDepartureTime).unix(),
+    )
+    .filter(
+      (vehicle, index, vehicles) =>
+        typeof vehicle.MonitoredVehicleJourney.VehicleLocation !== 'undefined' &&
+        vehicles.findIndex((v) => v.VehicleMonitoringRef === vehicle.VehicleMonitoringRef) === index,
+    )
+    .map((vehicle) => {
+      const timestamp = dayjs(vehicle.RecordedAtTime).unix();
+      const vehicleLabel = properties.getVehicleLabel(vehicle);
+      return {
+        id: `${properties.id}_VEHICLE_${vehicleLabel}`,
+        source: properties.id,
+        trip: {
+          id: vehicle.MonitoredVehicleJourney.FramedVehicleJourneyRef.DatedVehicleJourneyRef,
+          calendar: 'N/A',
+          direction: +vehicle.MonitoredVehicleJourney.DirectionName - 1,
+          headsign: vehicle.MonitoredVehicleJourney.DestinationName,
+          route: properties.prefix
+            ? `${properties.prefix}-${properties.getRouteId(vehicle)}`
+            : properties.getRouteId(vehicle),
         },
-      },
-      stopTimes:
-        [
-          vehicle.MonitoredVehicleJourney.MonitoredCall,
-          ...(Array.isArray(vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall)
-            ? vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall
-            : typeof vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall !== 'undefined'
-              ? [vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall]
-              : []),
-        ]
-          .sort((a, b) => a.Order - b.Order)
-          .map((stopCall) => ({
-            id: stopCall.StopPointRef,
-            name: stopCall.StopPointName,
-            sequence: stopCall.Order,
-            timestamp: dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
-            isRealtime: true,
-          })) ?? [],
-      timestamp: timestamp,
-    };
-  });
+        vehicle: {
+          id: vehicleLabel.toString(),
+          position: {
+            latitude: vehicle.MonitoredVehicleJourney.VehicleLocation!.Latitude,
+            longitude: vehicle.MonitoredVehicleJourney.VehicleLocation!.Longitude,
+            timestamp,
+            type: 'GPS',
+          },
+        },
+        stopTimes:
+          [
+            vehicle.MonitoredVehicleJourney.MonitoredCall,
+            ...(Array.isArray(vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall)
+              ? vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall
+              : typeof vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall !== 'undefined'
+                ? [vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall]
+                : []),
+          ]
+            .sort((a, b) => a.Order - b.Order)
+            .map((stopCall) => ({
+              id: stopCall.StopPointRef,
+              name: stopCall.StopPointName,
+              sequence: stopCall.Order,
+              timestamp: dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
+              isRealtime: true,
+            })) ?? [],
+        timestamp: timestamp,
+      };
+    });
 }
