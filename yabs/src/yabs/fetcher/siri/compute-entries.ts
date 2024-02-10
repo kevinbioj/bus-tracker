@@ -20,6 +20,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
     headers: {
       'Content-Type': 'application/xml',
       'Content-Length': vehicleMonitoringRequestPayload.length.toString(),
+      'User-Agent': 'Bus-Tracker.xyz/1.0',
     },
     method: 'POST',
   });

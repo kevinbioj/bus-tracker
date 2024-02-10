@@ -339,7 +339,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       if (typeof stopTimeUpdate.arrival?.delay === 'number') {
         currentDelta = stopTimeUpdate.arrival.delay;
       } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
-        currentDelta = dayjs(stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
+        currentDelta = dayjs.unix(+stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
       }
 
       const timestamp =
