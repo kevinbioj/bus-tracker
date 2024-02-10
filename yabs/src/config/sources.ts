@@ -15,9 +15,9 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'TCAR',
       staticResourceHref:
-        'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
-      tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
-      vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
+        'http://preprod.exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
+      tripUpdateHref: 'https://preprod.tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
+      vehiclePositionHref: 'https://preprod.tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       filters: {
         scheduled: (trip) => (trip.calendar.id.startsWith('IST') && trip.route !== '06') || trip.route === '529',
       },
