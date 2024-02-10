@@ -156,7 +156,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                 <span className="font-[Rubik] font-medium text-sm text-white">Voir ce véhicule</span>
               </Link>
             )}
-            {showNextStops && <NextStops stopTimes={data.trip.stopTimes} width={girouetteWidth + 1} />}
+            {showNextStops && <NextStops stopTimes={data.trip.stopTimes} />}
           </div>
         </div>
       </Popup>

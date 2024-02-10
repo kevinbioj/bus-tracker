@@ -143,18 +143,22 @@ async function updateEntries(source: Source) {
       .with({ type: 'SIRI-XML' }, ({ siriProperties }) => computeSiriEntries(siriProperties))
       .exhaustive();
 
-    output.set(source.id, entries);
-    await Promise.all(
-      entries
-        .filter((data) => data.vehicle.id !== null)
-        .map((data) =>
-          insertActivity(
-            { operator: data.source, number: +data.vehicle.id! },
-            { routeId: data.trip.route, time: dayjs.unix(data.timestamp).toDate() },
+    if (entries !== null) {
+      output.set(source.id, entries);
+      await Promise.all(
+        entries
+          .filter((data) => data.vehicle.id !== null)
+          .map((data) =>
+            insertActivity(
+              { operator: data.source, number: +data.vehicle.id! },
+              { routeId: data.trip.route, time: dayjs.unix(data.timestamp).toDate() },
+            ),
           ),
-        ),
-    );
-    console.log(`YABS\t${source.id}\tEntries were updated in ${Date.now() - then}ms.`);
+      );
+      console.log(`YABS\t${source.id}\tEntries were updated in ${Date.now() - then}ms.`);
+    } else {
+      console.log(`YABS\t${source.id}\tNo entries were returned, keeping old entries.`);
+    }
   } catch (e) {
     console.error(`YABS\t${source.id}\tFailed to update entries:\n`, e);
   }

@@ -1,12 +1,22 @@
 import dayjs from "dayjs";
+import dayjsDurationPlugin, { Duration } from "dayjs/plugin/duration";
+import dayjsRelativeTimePlugin from "dayjs/plugin/relativeTime";
 import { Rss, X } from "tabler-icons-react";
 import { P, match } from "ts-pattern";
 
 import { StopTime } from "~/@types";
 
-type NextStopsProps = { stopTimes: StopTime[]; width: number };
+dayjs.extend(dayjsDurationPlugin);
+dayjs.extend(dayjsRelativeTimePlugin);
 
-export default function NextStops({ stopTimes, width }: NextStopsProps) {
+type NextStopsProps = { stopTimes: StopTime[] };
+
+const humanizeDuration = (duration: Duration) =>
+  duration.asSeconds() < 60
+    ? `${duration.asSeconds()} seconde${duration.asSeconds() > 1 ? "s" : ""}`
+    : `${Math.floor(duration.asMinutes())} minute${Math.floor(duration.asMinutes()) > 1 ? "s" : ""}`;
+
+export default function NextStops({ stopTimes }: NextStopsProps) {
   if (stopTimes.length === 0) return null;
   return (
     <div className="-mb-2 px-2">
@@ -18,17 +28,32 @@ export default function NextStops({ stopTimes, width }: NextStopsProps) {
                 {stopTime.name}
               </span>
               {stopTime.isRealtime ? <Rss className="ml-auto -rotate-90" color="green" size={8} /> : <div></div>}
-              <div className="tabular-nums">
-                {match([stopTime.timestamp, stopTime.isRealtime])
-                  .with([null, P.boolean], () => (
-                    <X className="mx-auto -mt-0.5" color="red" size={18} strokeWidth={3} />
-                  ))
-                  .with([P.number, false], ([time]) => <span>{dayjs.unix(time).format("HH:mm")}</span>)
-                  .with([P.number, true], ([time]) => (
-                    <span className="text-green-700">{dayjs.unix(time).format("HH:mm")}</span>
-                  ))
-                  .exhaustive()}
-              </div>
+              {match([stopTime.timestamp, stopTime.isRealtime])
+                .with([null, P.boolean], () => <X className="mx-auto -mt-0.5" color="red" size={18} strokeWidth={3} />)
+                .with([P.number, false], ([time]) => (
+                  <span className="tabular-nums" title="Horaire théorique">
+                    {dayjs.unix(time).format("HH:mm")}
+                  </span>
+                ))
+                .with([P.number, true], ([time]) => {
+                  return (
+                    <span
+                      className="tabular-nums text-green-700"
+                      title={
+                        stopTime.delta !== null
+                          ? stopTime.delta === 0
+                            ? "À l'heure"
+                            : stopTime.delta < 0
+                              ? `Avance de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
+                              : `Retard de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
+                          : "Horaire temps-réel"
+                      }
+                    >
+                      {dayjs.unix(time).format("HH:mm")}
+                    </span>
+                  );
+                })
+                .exhaustive()}
             </div>
           );
         })}

@@ -6,6 +6,7 @@ export type YabsEntry = {
     name: string;
     sequence: number;
     timestamp: number | null;
+    delta: number | null;
     isRealtime: boolean;
   }[];
   trip: {

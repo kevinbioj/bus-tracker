@@ -35,6 +35,8 @@ export type SiriStopCall = {
   StopPointRef: string;
   Order: number;
   StopPointName: string;
+  AimedArrivalTime: string;
   ExpectedArrivalTime: string;
+  AimedDepartureTime?: string;
   ExpectedDepartureTime?: string;
 };

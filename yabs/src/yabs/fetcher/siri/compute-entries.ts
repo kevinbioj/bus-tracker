@@ -23,7 +23,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
     },
     method: 'POST',
   });
-  if (!response.ok) return [];
+  if (!response.ok) return null;
   const payload = await response.text();
   const data = parser.parse(payload);
   const vehicles = data.Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity as SiriVehicleActivity[];
@@ -59,7 +59,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
             latitude: vehicle.MonitoredVehicleJourney.VehicleLocation!.Latitude,
             longitude: vehicle.MonitoredVehicleJourney.VehicleLocation!.Longitude,
             timestamp,
-            type: 'GPS',
+            type: 'GPS' as const,
           },
         },
         stopTimes:
@@ -77,6 +77,10 @@ export async function computeSiriEntries(properties: SiriProperties) {
               name: stopCall.StopPointName,
               sequence: stopCall.Order,
               timestamp: dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
+              delta: dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).diff(
+                stopCall.AimedDepartureTime ?? stopCall.AimedArrivalTime,
+                'seconds',
+              ),
               isRealtime: true,
             })) ?? [],
         timestamp: timestamp,

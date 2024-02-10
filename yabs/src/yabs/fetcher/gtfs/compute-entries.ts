@@ -56,6 +56,7 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
       sequence: stopTime.sequence,
       timestamp: parseTime(stopTime.time).unix(),
       distanceTraveled: stopTime.distanceTraveled,
+      delta: null,
       isRealtime: false,
     }));
 
@@ -164,34 +165,33 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
             timestamp: parseTime(stopTime.time)
               .add(shouldPropagate ? currentDelta! : 0, 'seconds')
               .unix(),
+            delta: shouldPropagate ? currentDelta! : null,
             isRealtime: shouldPropagate,
           };
         }
 
         if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
           currentDelta = null;
-          return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
+          return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), delta: null, isRealtime: false };
         }
 
         if (stopTimeUpdate.scheduleRelationship === 'SKIPPED') {
-          return { ...partialStopTime, timestamp: null, isRealtime: true };
+          return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
         }
 
-        if (properties.propagateDelays) {
-          if (typeof stopTimeUpdate.arrival?.delay === 'number') {
-            currentDelta = stopTimeUpdate.arrival.delay;
-          } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
-            currentDelta = dayjs(stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
-          }
+        if (typeof stopTimeUpdate.arrival?.delay === 'number') {
+          currentDelta = stopTimeUpdate.arrival.delay;
+        } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
+          currentDelta = dayjs(stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
         }
 
         const timestamp =
           typeof stopTimeUpdate.arrival?.time === 'string'
             ? +stopTimeUpdate.arrival.time
             : parseTime(stopTime.time)
-                .add(stopTimeUpdate.arrival?.delay ?? 0, 'seconds')
+                .add(currentDelta ?? 0, 'seconds')
                 .unix();
-        return { ...partialStopTime, timestamp, isRealtime: true };
+        return { ...partialStopTime, timestamp, delta: currentDelta, isRealtime: true };
       });
 
       const currentStopTime =
@@ -322,34 +322,33 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
           timestamp: parseTime(stopTime.time)
             .add(shouldPropagate ? currentDelta! : 0, 'seconds')
             .unix(),
+          delta: shouldPropagate ? currentDelta! : null,
           isRealtime: shouldPropagate,
         };
       }
 
       if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
         currentDelta = null;
-        return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
+        return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), delta: null, isRealtime: false };
       }
 
       if (stopTimeUpdate.scheduleRelationship === 'SKIPPED') {
-        return { ...partialStopTime, timestamp: null, isRealtime: true };
+        return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
       }
 
-      if (properties.propagateDelays) {
-        if (typeof stopTimeUpdate.arrival?.delay === 'number') {
-          currentDelta = stopTimeUpdate.arrival.delay;
-        } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
-          currentDelta = dayjs(stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
-        }
+      if (typeof stopTimeUpdate.arrival?.delay === 'number') {
+        currentDelta = stopTimeUpdate.arrival.delay;
+      } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
+        currentDelta = dayjs(stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
       }
 
       const timestamp =
         typeof stopTimeUpdate.arrival?.time === 'string'
           ? +stopTimeUpdate.arrival.time
           : parseTime(stopTime.time)
-              .add(stopTimeUpdate.arrival?.delay ?? 0, 'seconds')
+              .add(currentDelta ?? 0, 'seconds')
               .unix();
-      return { ...partialStopTime, timestamp, isRealtime: true };
+      return { ...partialStopTime, timestamp, delta: currentDelta, isRealtime: true };
     });
 
     const lastStop = stopTimes.at(-1);
