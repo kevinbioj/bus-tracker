@@ -158,7 +158,13 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         };
 
         if (typeof stopTimeUpdate === 'undefined') {
-          return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
+          return {
+            ...partialStopTime,
+            timestamp: parseTime(stopTime.time)
+              .add(currentDelta ?? 0, 'seconds')
+              .unix(),
+            isRealtime: currentDelta !== null,
+          };
         }
 
         if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
@@ -305,7 +311,13 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       };
 
       if (typeof stopTimeUpdate === 'undefined') {
-        return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), isRealtime: false };
+        return {
+          ...partialStopTime,
+          timestamp: parseTime(stopTime.time)
+            .add(currentDelta ?? 0, 'seconds')
+            .unix(),
+          isRealtime: currentDelta !== null,
+        };
       }
 
       if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
