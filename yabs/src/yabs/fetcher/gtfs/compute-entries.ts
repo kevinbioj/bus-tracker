@@ -158,12 +158,13 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         };
 
         if (typeof stopTimeUpdate === 'undefined') {
+          const shouldPropagate = !!properties.propagateDelays && currentDelta !== null;
           return {
             ...partialStopTime,
             timestamp: parseTime(stopTime.time)
-              .add(currentDelta ?? 0, 'seconds')
+              .add(shouldPropagate ? currentDelta! : 0, 'seconds')
               .unix(),
-            isRealtime: currentDelta !== null,
+            isRealtime: shouldPropagate,
           };
         }
 
@@ -176,15 +177,19 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           return { ...partialStopTime, timestamp: null, isRealtime: true };
         }
 
-        if (typeof stopTimeUpdate.arrival?.delay === 'number') {
-          currentDelta = stopTimeUpdate.arrival.delay;
+        if (properties.propagateDelays) {
+          if (typeof stopTimeUpdate.arrival?.delay === 'number') {
+            currentDelta = stopTimeUpdate.arrival.delay;
+          } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
+            currentDelta = dayjs(stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
+          }
         }
 
         const timestamp =
           typeof stopTimeUpdate.arrival?.time === 'string'
             ? +stopTimeUpdate.arrival.time
             : parseTime(stopTime.time)
-                .add((properties.propagateDelays ? currentDelta : stopTimeUpdate.arrival?.delay) ?? 0, 'seconds')
+                .add(stopTimeUpdate.arrival?.delay ?? 0, 'seconds')
                 .unix();
         return { ...partialStopTime, timestamp, isRealtime: true };
       });
@@ -311,12 +316,13 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       };
 
       if (typeof stopTimeUpdate === 'undefined') {
+        const shouldPropagate = !!properties.propagateDelays && currentDelta !== null;
         return {
           ...partialStopTime,
           timestamp: parseTime(stopTime.time)
-            .add(currentDelta ?? 0, 'seconds')
+            .add(shouldPropagate ? currentDelta! : 0, 'seconds')
             .unix(),
-          isRealtime: currentDelta !== null,
+          isRealtime: shouldPropagate,
         };
       }
 
@@ -329,15 +335,19 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         return { ...partialStopTime, timestamp: null, isRealtime: true };
       }
 
-      if (typeof stopTimeUpdate.arrival?.delay === 'number') {
-        currentDelta = stopTimeUpdate.arrival.delay;
+      if (properties.propagateDelays) {
+        if (typeof stopTimeUpdate.arrival?.delay === 'number') {
+          currentDelta = stopTimeUpdate.arrival.delay;
+        } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
+          currentDelta = dayjs(stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
+        }
       }
 
       const timestamp =
         typeof stopTimeUpdate.arrival?.time === 'string'
           ? +stopTimeUpdate.arrival.time
           : parseTime(stopTime.time)
-              .add((properties.propagateDelays ? currentDelta : stopTimeUpdate.arrival?.delay) ?? 0, 'seconds')
+              .add(stopTimeUpdate.arrival?.delay ?? 0, 'seconds')
               .unix();
       return { ...partialStopTime, timestamp, isRealtime: true };
     });
