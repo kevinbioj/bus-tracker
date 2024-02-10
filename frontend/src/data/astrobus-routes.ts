@@ -248,6 +248,39 @@ const astrobusRoutes: Route[] = [
       },
     ],
   },
+  {
+    id: "TWISTO-zenbus:Line:6325671926169600:LOC",
+    name: "14",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#D2A070", text: "#000000" },
+    destinations: [
+      {
+        id: ["MITTERRAND"],
+        name: "MITTERRAND",
+        girouette: {
+          routeNumber: { backgroundColor: "#D2A070", textColor: "#FFFFFF", outlineColor: "#000000", text: "14" },
+          pages: [{ text: "MITTERRAND" }],
+        },
+      },
+      {
+        id: ["ST DESIR"],
+        name: "ST DESIR",
+        girouette: {
+          routeNumber: { backgroundColor: "#D2A070", textColor: "#FFFFFF", outlineColor: "#000000", text: "14" },
+          pages: [{ text: "SAINT-DESIR" }],
+        },
+      },
+      {
+        id: ["ADELINE"],
+        name: "ADELINE",
+        girouette: {
+          routeNumber: { backgroundColor: "#D2A070", textColor: "#FFFFFF", outlineColor: "#000000", text: "14" },
+          pages: [{ text: "ADELINE" }],
+        },
+      },
+    ],
+  },
 ];
 
 export default astrobusRoutes;
