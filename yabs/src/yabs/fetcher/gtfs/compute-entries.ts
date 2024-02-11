@@ -179,15 +179,17 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
         }
 
-        if (typeof stopTimeUpdate.arrival?.delay === 'number') {
-          currentDelta = stopTimeUpdate.arrival.delay;
-        } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
-          currentDelta = dayjs(stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
+        const stopTimeEvent = stopTimeUpdate.departure ?? stopTimeUpdate.arrival;
+
+        if (typeof stopTimeEvent?.delay === 'number') {
+          currentDelta = stopTimeEvent.delay;
+        } else if (typeof stopTimeEvent?.time === 'string') {
+          currentDelta = dayjs.unix(+stopTimeEvent.time).diff(parseTime(stopTime.time), 'seconds');
         }
 
         const timestamp =
-          typeof stopTimeUpdate.arrival?.time === 'string'
-            ? +stopTimeUpdate.arrival.time
+          typeof stopTimeEvent?.time === 'string'
+            ? +stopTimeEvent.time
             : parseTime(stopTime.time)
                 .add(currentDelta ?? 0, 'seconds')
                 .unix();
@@ -336,15 +338,17 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
       }
 
-      if (typeof stopTimeUpdate.arrival?.delay === 'number') {
-        currentDelta = stopTimeUpdate.arrival.delay;
-      } else if (typeof stopTimeUpdate.arrival?.time === 'string') {
-        currentDelta = dayjs.unix(+stopTimeUpdate.arrival.time).diff(parseTime(stopTime.time), 'seconds');
+      const stopTimeEvent = stopTimeUpdate.departure ?? stopTimeUpdate.arrival;
+
+      if (typeof stopTimeEvent?.delay === 'number') {
+        currentDelta = stopTimeEvent.delay;
+      } else if (typeof stopTimeEvent?.time === 'string') {
+        currentDelta = dayjs.unix(+stopTimeEvent.time).diff(parseTime(stopTime.time), 'seconds');
       }
 
       const timestamp =
-        typeof stopTimeUpdate.arrival?.time === 'string'
-          ? +stopTimeUpdate.arrival.time
+        typeof stopTimeEvent?.time === 'string'
+          ? +stopTimeEvent.time
           : parseTime(stopTime.time)
               .add(currentDelta ?? 0, 'seconds')
               .unix();

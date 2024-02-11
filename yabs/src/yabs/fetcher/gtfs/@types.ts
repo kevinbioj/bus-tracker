@@ -66,6 +66,11 @@ export type Trip = {
 
 //- GTFS Real-Time
 
+export type StopTimeEvent = {
+  delay?: number;
+  time?: string;
+};
+
 export type VehicleDescriptor = {
   id: string;
   label?: string;
@@ -76,10 +81,8 @@ export type TripUpdateEntity = {
   tripUpdate: {
     stopTimeUpdate: Array<{
       scheduleRelationship?: 'SCHEDULED' | 'SKIPPED' | 'NO-DATA';
-      arrival?: {
-        delay?: number;
-        time?: string;
-      };
+      arrival?: StopTimeEvent;
+      departure?: StopTimeEvent;
       stopId: string;
     }>;
     timestamp: string;
@@ -124,3 +127,10 @@ export type GtfsRtVehiclePosition = {
   };
   entity: VehiclePositionEntity[];
 };
+
+// ---
+
+type RequireAtLeastOne<T, Keys extends keyof T = keyof T> = Pick<T, Exclude<keyof T, Keys>> &
+  {
+    [K in Keys]-?: Required<Pick<T, K>> & Partial<Pick<T, Exclude<Keys, K>>>;
+  }[Keys];
