@@ -42,6 +42,14 @@ export async function computeSiriEntries(properties: SiriProperties) {
     .map((vehicle) => {
       const timestamp = dayjs(vehicle.RecordedAtTime).unix();
       const vehicleLabel = properties.getVehicleLabel(vehicle);
+      const calls = [
+        vehicle.MonitoredVehicleJourney.MonitoredCall,
+        ...(Array.isArray(vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall)
+          ? vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall
+          : typeof vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall !== 'undefined'
+            ? [vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall]
+            : []),
+      ];
       return {
         id: `${properties.id}_VEHICLE_${vehicleLabel}`,
         source: properties.id,
@@ -63,15 +71,20 @@ export async function computeSiriEntries(properties: SiriProperties) {
             type: 'GPS' as const,
           },
         },
-        stopTimes:
-          [
-            vehicle.MonitoredVehicleJourney.MonitoredCall,
-            ...(Array.isArray(vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall)
-              ? vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall
-              : typeof vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall !== 'undefined'
-                ? [vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall]
-                : []),
-          ]
+        stopTimes: [
+          ...(dayjs().isBefore(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime)
+            ? [
+                {
+                  id: vehicle.MonitoredVehicleJourney.OriginRef,
+                  name: vehicle.MonitoredVehicleJourney.OriginName,
+                  sequence: 1,
+                  timestamp: dayjs(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime).unix(),
+                  delta: 0,
+                  isRealtime: true,
+                },
+              ]
+            : []),
+          ...(calls
             .sort((a, b) => a.Order - b.Order)
             .map((stopCall) => ({
               id: stopCall.StopPointRef,
@@ -83,7 +96,8 @@ export async function computeSiriEntries(properties: SiriProperties) {
                 'seconds',
               ),
               isRealtime: true,
-            })) ?? [],
+            })) ?? []),
+        ],
         timestamp: timestamp,
       };
     });
