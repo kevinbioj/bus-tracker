@@ -471,16 +471,16 @@ const twistoRoutes: Route[] = [
         id: ["CAEN Théâtre"],
         name: "CAEN Théâtre",
         girouette: {
-          routeNumber: { backgroundColor: "#f39869", textColor: "#000000", outlineColor: "#FFFFFF", text: "11EX" },
+          routeNumber: { backgroundColor: "#f39869", textColor: "#000000", outlineColor: "#FFFFFF", text: "11" },
           pages: [{ text: "CAEN Théâtre" }],
         },
       },
       {
-        id: ["CUVERVILLE Champ Picot"],
+        id: ["Cuverville Champ Picot"],
         name: "CUVERVILLE Champ Picot",
         girouette: {
-          routeNumber: { backgroundColor: "#f39869", textColor: "#000000", outlineColor: "#FFFFFF", text: "11EX" },
-          pages: [{ text: "CUVERVILLE Champ Picot" }],
+          routeNumber: { backgroundColor: "#f39869", textColor: "#000000", outlineColor: "#FFFFFF", text: "11" },
+          pages: [{ font: "1508C2E1", text: "CUVERVILLE EXPRESS" }],
         },
       },
     ],
@@ -508,15 +508,15 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["LION SUR MER Haut Lion"],
+        id: ["Lion-sur-Mer Haut-Lion"],
         name: "LION SUR MER Haut Lion",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "LION SUR MER Haut Lion" }],
+          pages: [{ text: "LION HAUT-LION" }],
         },
       },
       {
-        id: ["HEROUVILLE Allende"],
+        id: ["Hermanville-sur-Mer Allende"],
         name: "HEROUVILLE Allende",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
@@ -548,19 +548,19 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["HERMANVILLE Isaville"],
+        id: ["Hermanville-sur-Mer Isaville"],
         name: "HERMANVILLE Isaville",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "HERMANVILLE Isaville" }],
+          pages: [{ font: "1508C2E1", text: "HERMANVILLE ISAVILLE" }],
         },
       },
       {
-        id: ["OUISTREHAM Charmettes"],
+        id: ["Ouistreham RIVA CHARMETTES"],
         name: "OUISTREHAM Charmettes",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "OUISTREHAM Charmettes" }],
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM CHARMETTES" }],
         },
       },
       {
@@ -600,13 +600,8 @@ const twistoRoutes: Route[] = [
         name: "Haut-Lion",
         city: "LION-SUR-MER",
         girouette: {
-          routeNumber: {
-            font: "1508C2E1",
-            backgroundColor: "#a7c4af",
-            textColor: "#000000",
-            text: "12EX",
-          },
-          pages: [{ text: "LION-SUR-MER" }, { text: "HAUT-LION" }],
+          routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
+          pages: [{ text: "LION EXPRESS" }],
         },
       },
       {
@@ -614,8 +609,8 @@ const twistoRoutes: Route[] = [
         name: "Gare SNCF",
         city: "CAEN",
         girouette: {
-          routeNumber: { font: "1508C2E1", backgroundColor: "#a7c4af", textColor: "#000000", text: "12EX" },
-          pages: [{ text: "CAEN GARE SNCF" }],
+          routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
+          pages: [{ font: "1513B3E1", text: "CAEN EXPRESS" }],
         },
       },
       {
@@ -623,7 +618,7 @@ const twistoRoutes: Route[] = [
         name: "Riva Centre",
         city: "OUISTREHAM",
         girouette: {
-          routeNumber: { font: "1508C2E1", backgroundColor: "#a7c4af", textColor: "#000000", text: "12EX" },
+          routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
           pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM RIVA CENTRE" }],
         },
       },
@@ -720,11 +715,11 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["LION SUR MER Plage"],
+        id: ["Lion-sur-Mer Lion Plage"],
         name: "LION SUR MER Plage",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "LION SUR MER Plage" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "LION-SUR-MER PLAGE" }],
         },
       },
       {
@@ -824,7 +819,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#d186b2", textColor: "#000000", outlineColor: "#FFFFFF", text: "30" },
-          pages: [{ text: "CAEN GARE SNCF" }],
+          pages: [{ font: "1510N2E1", text: "CAEN GARE SNCF" }],
         },
       },
       {
@@ -877,11 +872,11 @@ const twistoRoutes: Route[] = [
     colors: { background: "#82c491", text: "#000000" },
     destinations: [
       {
-        id: ["VERSON Grand bois"],
+        id: ["Verson Grand Bois"],
         name: "VERSON Grand bois",
         girouette: {
           routeNumber: { backgroundColor: "#82c491", textColor: "#000000", outlineColor: "#FFFFFF", text: "32" },
-          pages: [{ text: "VERSON Grand bois" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "VERSON GRAND BOIS" }],
         },
       },
       {
@@ -1020,11 +1015,11 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Poincare"],
+        id: ["Caen Poincaré"],
         name: "CAEN Poincare",
         girouette: {
           routeNumber: { backgroundColor: "#7d6fa6", textColor: "#ffffff", outlineColor: "#000000", text: "40" },
-          pages: [{ text: "CAEN Poincare" }],
+          pages: [{ text: "CAEN POINCARE" }],
         },
       },
     ],
@@ -1073,6 +1068,1495 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#011337", textColor: "#ffffff", outlineColor: "#000000", text: "NUIT" },
           pages: [{ text: "Noctibus" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-100",
+    name: "100",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Place du Canada"],
+        name: "CAEN Place du Canada",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "100",
+          },
+          pages: [{ text: "CAEN Place du Canada" }],
+        },
+      },
+      {
+        id: ["AUTHIE Jacques Cartier"],
+        name: "AUTHIE Jacques Cartier",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "100",
+          },
+          pages: [{ text: "AUTHIE Jacques Cartier" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-101",
+    name: "101",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["OUISTREHAM Collège Monnet"],
+        name: "OUISTREHAM Collège Monnet",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "101",
+          },
+          pages: [{ text: "OUISTREHAM Collège Monnet" }],
+        },
+      },
+      {
+        id: ["BLAINVILLE Parc"],
+        name: "BLAINVILLE Parc",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "101",
+          },
+          pages: [{ text: "BLAINVILLE Parc" }],
+        },
+      },
+      {
+        id: ["LION SUR MER Plage"],
+        name: "LION SUR MER Plage",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "101",
+          },
+          pages: [{ text: "LION SUR MER Plage" }],
+        },
+      },
+      {
+        id: ["LION SUR MER Bas Lion"],
+        name: "LION SUR MER Bas Lion",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "101",
+          },
+          pages: [{ text: "LION SUR MER Bas Lion" }],
+        },
+      },
+      {
+        id: ["HERMANVILLE La Marque"],
+        name: "HERMANVILLE La Marque",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "101",
+          },
+          pages: [{ text: "HERMANVILLE La Marque" }],
+        },
+      },
+      {
+        id: ["COLLEVILLE Piéplu"],
+        name: "COLLEVILLE Piéplu",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "101",
+          },
+          pages: [{ text: "COLLEVILLE Piéplu" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-102",
+    name: "102",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["BRETTEVILLE Koenig"],
+        name: "BRETTEVILLE Koenig",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "102",
+          },
+          pages: [{ text: "BRETTEVILLE Koenig" }],
+        },
+      },
+      {
+        id: ["CAEN Collège Moulin"],
+        name: "CAEN Collège Moulin",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "102",
+          },
+          pages: [{ text: "CAEN Collège Moulin" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-103",
+    name: "103",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Calvaire Saint-Pierre"],
+        name: "CAEN Calvaire Saint-Pierre",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "103",
+          },
+          pages: [{ text: "CAEN Calvaire Saint-Pierre" }],
+        },
+      },
+      {
+        id: ["SAINTE-CROIX Hôtel Fortuné"],
+        name: "SAINTE-CROIX Hôtel Fortuné",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "103",
+          },
+          pages: [{ text: "SAINTE-CROIX Hôtel Fortuné" }],
+        },
+      },
+      {
+        id: ["THAON Mairie"],
+        name: "THAON Mairie",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "103",
+          },
+          pages: [{ text: "THAON Mairie" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-104",
+    name: "104",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Cité U Lebisey"],
+        name: "CAEN Cité U Lebisey",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "104",
+          },
+          pages: [{ text: "CAEN Cité U Lebisey" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-105",
+    name: "105",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Gare SNCF"],
+        name: "CAEN Gare SNCF",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "105",
+          },
+          pages: [{ text: "CAEN Gare SNCF" }],
+        },
+      },
+      {
+        id: ["CAEN Institut Lemonnier"],
+        name: "CAEN Institut Lemonnier",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "105",
+          },
+          pages: [{ text: "CAEN Institut Lemonnier" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-106",
+    name: "106",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["MONDEVILLE Paul Langevin"],
+        name: "MONDEVILLE Paul Langevin",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "106",
+          },
+          pages: [{ text: "MONDEVILLE Paul Langevin" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-107",
+    name: "107",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Hôtel de Ville"],
+        name: "CAEN Hôtel de Ville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "107",
+          },
+          pages: [{ text: "CAEN Hôtel de Ville" }],
+        },
+      },
+      {
+        id: ["CAEN Lycée Ste Ursule"],
+        name: "CAEN Lycée Ste Ursule",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "107",
+          },
+          pages: [{ text: "CAEN Lycée Ste Ursule" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-109",
+    name: "109",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Lycée de Gaulle"],
+        name: "CAEN Lycée de Gaulle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "109",
+          },
+          pages: [{ text: "CAEN Lycée de Gaulle" }],
+        },
+      },
+      {
+        id: ["CARPIQUET Aéroport"],
+        name: "CARPIQUET Aéroport",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "109",
+          },
+          pages: [{ text: "CARPIQUET Aéroport" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-110",
+    name: "110",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Colombelles Colombelles Mairie"],
+        name: "COLOMBELLES Mairie",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "110",
+          },
+          pages: [{ font: "1507SUPX", text: "COLOMBELLES MAIRIE" }],
+        },
+      },
+      {
+        id: ["CAEN Rostand Fresnel"],
+        name: "CAEN Rostand Fresnel",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "110",
+          },
+          pages: [{ text: "CAEN Rostand Fresnel" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-111",
+    name: "111",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["COLOMBELLES Mandela"],
+        name: "COLOMBELLES Mandela",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "111",
+          },
+          pages: [{ text: "COLOMBELLES Mandela" }],
+        },
+      },
+      {
+        id: ["MONDEVILLE Collège Guillemot"],
+        name: "MONDEVILLE Collège Guillemot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "111",
+          },
+          pages: [{ text: "MONDEVILLE Collège Guillemot" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-112",
+    name: "112",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CUVERVILLE Champ Picot"],
+        name: "CUVERVILLE Champ Picot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "112",
+          },
+          pages: [{ text: "CUVERVILLE Champ Picot" }],
+        },
+      },
+      {
+        id: ["CAEN Rostand Fresnel"],
+        name: "CAEN Rostand Fresnel",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "112",
+          },
+          pages: [{ text: "CAEN Rostand Fresnel" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-113",
+    name: "113",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["ETERVILLE le Rocreuil"],
+        name: "ETERVILLE le Rocreuil",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "113",
+          },
+          pages: [{ text: "ETERVILLE le Rocreuil" }],
+        },
+      },
+      {
+        id: ["VERSON Collège Prévert"],
+        name: "VERSON Collège Prévert",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "113",
+          },
+          pages: [{ text: "VERSON Collège Prévert" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-114",
+    name: "114",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Rostand Fresnel"],
+        name: "CAEN Rostand Fresnel",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "114",
+          },
+          pages: [{ text: "CAEN Rostand Fresnel" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-115",
+    name: "115",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CUVERVILLE Callouins"],
+        name: "CUVERVILLE Callouins",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "115",
+          },
+          pages: [{ text: "CUVERVILLE Callouins" }],
+        },
+      },
+      {
+        id: ["CAEN Rostand Fresnel"],
+        name: "CAEN Rostand Fresnel",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "115",
+          },
+          pages: [{ text: "CAEN Rostand Fresnel" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-116",
+    name: "116",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["HEROUVILLE Lebisey"],
+        name: "HEROUVILLE Lebisey",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "116",
+          },
+          pages: [{ text: "HEROUVILLE Lebisey" }],
+        },
+      },
+      {
+        id: ["HÉROUVILLE Collège Mandela"],
+        name: "HÉROUVILLE Collège Mandela",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "116",
+          },
+          pages: [{ text: "HÉROUVILLE Collège Mandela" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-118",
+    name: "118",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["LOUVIGNY Mesnil"],
+        name: "LOUVIGNY Mesnil",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "118",
+          },
+          pages: [{ text: "LOUVIGNY Mesnil" }],
+        },
+      },
+      {
+        id: ["FLEURY Collège Hawking"],
+        name: "FLEURY Collège Hawking",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "118",
+          },
+          pages: [{ text: "FLEURY Collège Hawking" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-119",
+    name: "119",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Copernic"],
+        name: "CAEN Copernic",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "119",
+          },
+          pages: [{ text: "CAEN Copernic" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-120",
+    name: "120",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Colombelles Place des Tilleuls"],
+        name: "COLOMBELLES Place des Tilleuls",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "120",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLOMBELLES" },
+            { font: "1507SUPX", text: "PLACE DES TILLEULS" },
+          ],
+        },
+      },
+      {
+        id: ["HEROUVILLE Allende"],
+        name: "HEROUVILLE Allende",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "120",
+          },
+          pages: [{ text: "HEROUVILLE Allende" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-121",
+    name: "121",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["B - COLOMBELLES Mairie"],
+        name: "B - COLOMBELLES Mairie",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "121",
+          },
+          pages: [{ text: "B - COLOMBELLES Mairie" }],
+        },
+      },
+      {
+        id: ["A - COLOMBELLES Lazzaro"],
+        name: "A - COLOMBELLES Lazzaro",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "121",
+          },
+          pages: [{ text: "A - COLOMBELLES Lazzaro" }],
+        },
+      },
+      {
+        id: ["B - MONDEVILLE Collège Guillemot"],
+        name: "B - MONDEVILLE Collège Guillemot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "121",
+          },
+          pages: [{ text: "B - MONDEVILLE Collège Guillemot" }],
+        },
+      },
+      {
+        id: ["A - MONDEVILLE Collège Guillemot"],
+        name: "A - MONDEVILLE Collège Guillemot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "121",
+          },
+          pages: [{ text: "A - MONDEVILLE Collège Guillemot" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-123",
+    name: "123",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["BLAINVILLE Langevin Wallon"],
+        name: "BLAINVILLE Langevin Wallon",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "123",
+          },
+          pages: [{ text: "BLAINVILLE Langevin Wallon" }],
+        },
+      },
+      {
+        id: ["SAINT AUBIN Eglise"],
+        name: "SAINT AUBIN Eglise",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "123",
+          },
+          pages: [{ text: "SAINT AUBIN Eglise" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-124",
+    name: "124",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Saint-Aubin-d&apos;Arquenay Saint-Aubin Eglise"],
+        name: "SAINT AUBIN Eglise",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "124",
+          },
+          pages: [{ font: "1507SUPX", text: "SAINT-AUBIN EGLISE" }],
+        },
+      },
+      {
+        id: ["CAEN Croix Guérin"],
+        name: "CAEN Croix Guérin",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "124",
+          },
+          pages: [{ text: "CAEN Croix Guérin" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-125",
+    name: "125",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Cité U Lebisey"],
+        name: "CAEN Cité U Lebisey",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "125",
+          },
+          pages: [{ text: "CAEN Cité U Lebisey" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-126",
+    name: "126",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SAINT-CONTEST Vellerie"],
+        name: "SAINT-CONTEST Vellerie",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "126",
+          },
+          pages: [{ text: "SAINT-CONTEST Vellerie" }],
+        },
+      },
+      {
+        id: ["CAEN Collège Monod"],
+        name: "CAEN Collège Monod",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "126",
+          },
+          pages: [{ text: "CAEN Collège Monod" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-127",
+    name: "127",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Villons-les-Buissons Coopérative"],
+        name: "VILLONS Coopérative",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "127",
+          },
+          pages: [{ font: "1508C2E1", text: "VILLONS COOPERATIVE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-130",
+    name: "130",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Gare SNCF"],
+        name: "CAEN Gare SNCF",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "130",
+          },
+          pages: [{ text: "CAEN Gare SNCF" }],
+        },
+      },
+      {
+        id: ["THUE ET MUE Primevères"],
+        name: "THUE ET MUE Primevères",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "130",
+          },
+          pages: [{ text: "THUE ET MUE Primevères" }],
+        },
+      },
+      {
+        id: ["CAEN Cité U Lebisey"],
+        name: "CAEN Cité U Lebisey",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "130",
+          },
+          pages: [{ text: "CAEN Cité U Lebisey" }],
+        },
+      },
+      {
+        id: ["CAEN Théâtre"],
+        name: "CAEN Théâtre",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "130",
+          },
+          pages: [{ text: "CAEN Théâtre" }],
+        },
+      },
+      {
+        id: ["CAEN T"],
+        name: "CAEN T",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "130",
+          },
+          pages: [{ text: "CAEN T" }],
+        },
+      },
+      {
+        id: ["BROUAY Mairie"],
+        name: "BROUAY Mairie",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "130",
+          },
+          pages: [{ text: "BROUAY Mairie" }],
+        },
+      },
+      {
+        id: ["BRETTEVILLE Bessin"],
+        name: "BRETTEVILLE Bessin",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "130",
+          },
+          pages: [{ text: "BRETTEVILLE Bessin" }],
+        },
+      },
+      {
+        id: ["ROTS Bourg"],
+        name: "ROTS Bourg",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "130",
+          },
+          pages: [{ text: "ROTS Bourg" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-131",
+    name: "131",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["TROARN Collège"],
+        name: "TROARN Collège",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "131",
+          },
+          pages: [{ text: "TROARN Collège" }],
+        },
+      },
+      {
+        id: ["BURES-SUR-DIVES Lavoir"],
+        name: "BURES-SUR-DIVES Lavoir",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "131",
+          },
+          pages: [{ text: "BURES-SUR-DIVES Lavoir" }],
+        },
+      },
+      {
+        id: ["SANNERVILLE Libération"],
+        name: "SANNERVILLE Libération",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "131",
+          },
+          pages: [{ text: "SANNERVILLE Libération" }],
+        },
+      },
+      {
+        id: ["SANNERVILLE Bourg"],
+        name: "SANNERVILLE Bourg",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "131",
+          },
+          pages: [{ text: "SANNERVILLE Bourg" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-133",
+    name: "133",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Théâtre"],
+        name: "CAEN Théâtre",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "133",
+          },
+          pages: [{ text: "CAEN Théâtre" }],
+        },
+      },
+      {
+        id: ["CAEN Lycée Malherbe"],
+        name: "CAEN Lycée Malherbe",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "133",
+          },
+          pages: [{ text: "CAEN Lycée Malherbe" }],
+        },
+      },
+      {
+        id: ["CHEUX Le Bosq"],
+        name: "CHEUX Le Bosq",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "133",
+          },
+          pages: [{ text: "CHEUX Le Bosq" }],
+        },
+      },
+      {
+        id: ["CHEUX Bourg"],
+        name: "CHEUX Bourg",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "133",
+          },
+          pages: [{ text: "CHEUX Bourg" }],
+        },
+      },
+      {
+        id: ["CAEN Collège Moulin"],
+        name: "CAEN Collège Moulin",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "133",
+          },
+          pages: [{ text: "CAEN Collège Moulin" }],
+        },
+      },
+      {
+        id: ["THUE ET MUE Mesnil Patry"],
+        name: "THUE ET MUE Mesnil Patry",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "133",
+          },
+          pages: [{ text: "THUE ET MUE Mesnil Patry" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-134",
+    name: "134",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Gare SNCF"],
+        name: "CAEN Gare SNCF",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "134",
+          },
+          pages: [{ text: "CAEN Gare SNCF" }],
+        },
+      },
+      {
+        id: ["CAEN Aviation"],
+        name: "CAEN Aviation",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "134",
+          },
+          pages: [{ text: "CAEN Aviation" }],
+        },
+      },
+      {
+        id: ["SOLIERS Tageret"],
+        name: "SOLIERS Tageret",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "134",
+          },
+          pages: [{ text: "SOLIERS Tageret" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-135",
+    name: "135",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN Gare SNCF"],
+        name: "CAEN Gare SNCF",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "135",
+          },
+          pages: [{ text: "CAEN Gare SNCF" }],
+        },
+      },
+      {
+        id: ["SAINT AIGNAN Mairie"],
+        name: "SAINT AIGNAN Mairie",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "135",
+          },
+          pages: [{ text: "SAINT AIGNAN Mairie" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-136",
+    name: "136",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["HEROUVILLE Allende"],
+        name: "HEROUVILLE Allende",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "136",
+          },
+          pages: [{ text: "HEROUVILLE Allende" }],
+        },
+      },
+      {
+        id: ["TROARN Stade"],
+        name: "TROARN Stade",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "136",
+          },
+          pages: [{ text: "TROARN Stade" }],
+        },
+      },
+      {
+        id: ["MESNIL 2ème Arrêt"],
+        name: "MESNIL 2ème Arrêt",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "136",
+          },
+          pages: [{ text: "MESNIL 2ème Arrêt" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-137",
+    name: "137",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["IFS Collège Senghor"],
+        name: "IFS Collège Senghor",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "137",
+          },
+          pages: [{ text: "IFS Collège Senghor" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-137A",
+    name: "137A",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SOLIERS Hameau du Four"],
+        name: "SOLIERS Hameau du Four",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "137A",
+          },
+          pages: [{ text: "SOLIERS Hameau du Four" }],
+        },
+      },
+      {
+        id: ["GRENTHEVILLE Le Hameau"],
+        name: "GRENTHEVILLE Le Hameau",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "137A",
+          },
+          pages: [{ text: "GRENTHEVILLE Le Hameau" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-137B",
+    name: "137B",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["BOURGUEBUS La Hogue"],
+        name: "BOURGUEBUS La Hogue",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "137B",
+          },
+          pages: [{ text: "BOURGUEBUS La Hogue" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-137C",
+    name: "137C",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["BOURGUEBUS Centre"],
+        name: "BOURGUEBUS Centre",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "137C",
+          },
+          pages: [{ text: "BOURGUEBUS Centre" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-137D",
+    name: "137D",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#702283", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SOLIERS Hameau du Four"],
+        name: "SOLIERS Hameau du Four",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#702283",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            text: "137D",
+          },
+          pages: [{ text: "SOLIERS Hameau du Four" }],
         },
       },
     ],
