@@ -113,6 +113,75 @@ const deepMobRoutes: Route[] = [
       },
     ],
   },
+  {
+    id: "DEEPMOB-500",
+    name: "500",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#00B1D5", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Collège Braque"],
+        name: "Collège Braque",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#00B1D5",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "500",
+          },
+          pages: [{ font: "1508SUPX", text: "COLLEGE BRAQUE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "DEEPMOB-700",
+    name: "700",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#00B1D5", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Thibermont"],
+        name: "Thibermont",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#00B1D5",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "700",
+          },
+          pages: [{ font: "1508SUPX", text: "THIBERMONT" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "DEEPMOB-900",
+    name: "900",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#00B1D5", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Lycée du Golf"],
+        name: "Lycée du Golf",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#00B1D5",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "900",
+          },
+          pages: [{ font: "1508SUPX", text: "LYCEE DU GOLF" }],
+        },
+      },
+    ],
+  },
 ];
 
 export default deepMobRoutes;

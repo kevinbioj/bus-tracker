@@ -103,6 +103,7 @@ export function Girouette({
     >
       <div
         className="flex items-center justify-center overflow-hidden whitespace-nowrap"
+        dangerouslySetInnerHTML={{ __html: routeNumber.text.trimEnd().replaceAll(" ", "&nbsp;") }}
         style={{
           backgroundColor: routeNumber.backgroundColor ?? paneBackgroundColor,
           color: routeNumber.textColor ?? ledBackgroundColor,
@@ -124,9 +125,7 @@ export function Girouette({
               }
             : {}),
         }}
-      >
-        {routeNumber.text}
-      </div>
+      />
       {Array.isArray(currentPage?.text) ? (
         <div
           className="flex flex-col justify-between overflow-hidden text-center whitespace-nowrap"
@@ -141,12 +140,13 @@ export function Girouette({
             width: `${onePixel * dimensions.textWidth}px`,
           }}
         >
-          <span>{currentPage.text[0]}</span>
-          <span>{currentPage.text[1]}</span>
+          <span dangerouslySetInnerHTML={{ __html: currentPage.text[0].trimEnd().replaceAll(" ", "&nbsp;") }} />
+          <span dangerouslySetInnerHTML={{ __html: currentPage.text[1].trimEnd().replaceAll(" ", "&nbsp;") }} />
         </div>
       ) : (
         <div
           className="flex items-center justify-center overflow-hidden text-center whitespace-nowrap"
+          dangerouslySetInnerHTML={{ __html: currentPage?.text.trimEnd().replaceAll(" ", "&nbsp;") }}
           style={{
             color: ledBackgroundColor,
             fontFamily: `"${currentPage?.font ?? "1513B3E1"}"`,
@@ -157,9 +157,7 @@ export function Girouette({
             width: `${onePixel * dimensions.textWidth}px`,
             wordSpacing: `${onePixel * (currentPage?.wordSpacing ?? 0)}px`,
           }}
-        >
-          {currentPage?.text}
-        </div>
+        />
       )}
     </div>
   );
