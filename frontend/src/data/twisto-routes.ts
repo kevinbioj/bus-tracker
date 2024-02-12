@@ -1060,7 +1060,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#011337", text: "#ffffff" },
     destinations: [
       {
-        id: ["HÉROUVILLE Portes de la Mer"],
+        id: ["Hérouville-Saint-Clair Portes de la Mer"],
         name: "HÉROUVILLE Portes de la Mer",
         girouette: {
           routeNumber: { backgroundColor: "#011337", textColor: "#ffffff", outlineColor: "#000000", text: "NUIT" },
