@@ -173,7 +173,7 @@ const twistoRoutes: Route[] = [
         city: "CARPIQUET",
         girouette: {
           routeNumber: { backgroundColor: "#c4ce10", textColor: "#000000", outlineColor: "#FFFFFF", text: "3" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CARPIQUET AEROPORT" }],
+          pages: [{ font: "1508C2E1", text: "CARPIQUET     AEROPORT" }],
         },
       },
     ],
@@ -412,16 +412,17 @@ const twistoRoutes: Route[] = [
         name: "Parc",
         city: "BLAINVILLE-SUR-ORNE",
         girouette: {
-          routeNumber: { backgroundColor: "#f29fc5", textColor: "#000000", outlineColor: "#FFFFFF", text: "10EX" },
-          pages: [{ font: "1510N2E1", text: "BLAINVILLE PARC" }],
+          routeNumber: { backgroundColor: "#f29fc5", textColor: "#000000", outlineColor: "#FFFFFF", text: "10" },
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "BLAINVILLE EXPRESS" }],
         },
       },
       {
-        id: ["CAEN Bellivet"],
-        name: "CAEN Bellivet",
+        id: ["Caen Bellivet"],
+        name: "Bellivet",
+        city: "CAEN",
         girouette: {
-          routeNumber: { backgroundColor: "#f29fc5", textColor: "#000000", outlineColor: "#FFFFFF", text: "10EX" },
-          pages: [{ text: "CAEN Bellivet" }],
+          routeNumber: { backgroundColor: "#f29fc5", textColor: "#000000", outlineColor: "#FFFFFF", text: "10" },
+          pages: [{ text: "CAEN EXPRESS" }],
         },
       },
     ],
@@ -451,12 +452,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Caen Hôtel de Ville"],
+        id: ["Caen Hôtel de Ville Quai 1"],
         name: "Hôtel de Ville",
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#ea5b0c", textColor: "#ffffff", outlineColor: "#000000", text: "11" },
-          pages: [{ text: "CAEN HOTEL DE VILLE" }],
+          pages: [{ font: "1508C2E1", text: "CAEN HOTEL DE VILLE" }],
         },
       },
     ],
@@ -468,11 +469,12 @@ const twistoRoutes: Route[] = [
     colors: { background: "#f39869", text: "#000000" },
     destinations: [
       {
-        id: ["CAEN Théâtre"],
-        name: "CAEN Théâtre",
+        id: ["Caen Théâtre Quai 1"],
+        name: "Théâtre",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#f39869", textColor: "#000000", outlineColor: "#FFFFFF", text: "11" },
-          pages: [{ text: "CAEN Théâtre" }],
+          pages: [{ text: "CAEN EXPRESS" }],
         },
       },
       {
@@ -492,43 +494,48 @@ const twistoRoutes: Route[] = [
     colors: { background: "#009d99", text: "#ffffff" },
     destinations: [
       {
-        id: ["CAEN Gare SNCF"],
-        name: "CAEN Gare SNCF",
+        id: ["Caen Gare SNCF"],
+        name: "Gare SNCF",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "CAEN Gare SNCF" }],
+          pages: [{ font: "1510N2E1", text: "CAEN GARE SNCF" }],
         },
       },
       {
-        id: ["CAEN Calvaire St-Pierre"],
-        name: "CAEN Calvaire St-Pierre",
+        id: ["Caen Calvaire Saint-Pierre"],
+        name: "Calvaire Saint-Pierre",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "CAEN Calvaire St-Pierre" }],
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN CALVAIRE ST-PIERRE" }],
         },
       },
       {
         id: ["Lion-sur-Mer Haut-Lion"],
-        name: "LION SUR MER Haut Lion",
+        name: "Haut-Lion",
+        city: "LION-SUR-MER",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
           pages: [{ text: "LION HAUT-LION" }],
         },
       },
       {
-        id: ["Hermanville-sur-Mer Allende"],
-        name: "HEROUVILLE Allende",
+        id: ["Hérouville-Saint-Clair Allende"],
+        name: "Allende",
+        city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "HEROUVILLE Allende" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HEROUVILLE ALLENDE" }],
         },
       },
       {
-        id: ["CAEN Croix Guerin"],
-        name: "CAEN Croix Guerin",
+        id: ["Caen Croix Guérin"],
+        name: "Croix Guérin",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "CAEN Croix Guerin" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CAEN CROIX GUERIN" }],
         },
       },
       {
@@ -540,11 +547,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Cite U Lebisey"],
-        name: "CAEN Cite U Lebisey",
+        id: ["Caen Cité U Lebisey"],
+        name: "Cité U Lebisey",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "CAEN Cite U Lebisey" }],
+          pages: [{ font: "1508C2E1", text: "CAEN CITE U LEBISEY" }],
         },
       },
       {
@@ -572,11 +580,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Tour Leroy"],
-        name: "CAEN Tour Leroy",
+        id: ["Caen Tour Leroy"],
+        name: "Tour Leroy",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "CAEN Tour Leroy" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CAEN TOUR LEROY" }],
         },
       },
       {
@@ -623,18 +632,19 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Tour Leroy"],
-        name: "CAEN Tour Leroy",
+        id: ["Caen Tour Leroy"],
+        name: "Tour Leroy",
+        city: "CAEN",
         girouette: {
-          routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", text: "12EX" },
-          pages: [{ text: "CAEN Tour Leroy" }],
+          routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
+          pages: [{ text: "CAEN EXPRESS" }],
         },
       },
       {
         id: ["OUISTREHAM Riva Charmettes"],
         name: "OUISTREHAM Riva Charmettes",
         girouette: {
-          routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", text: "12EX" },
+          routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
           pages: [{ text: "OUISTREHAM Riva Charmettes" }],
         },
       },
@@ -723,11 +733,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Calvaire Saint-Pierre"],
-        name: "CAEN Calvaire Saint-Pierre",
+        id: ["Caen Calvaire Saint-Pierre"],
+        name: "Calvaire Saint-Pierre",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "CAEN Calvaire Saint-Pierre" }],
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN CALVAIRE ST-PIERRE" }],
         },
       },
       {
@@ -763,11 +774,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["HEROUVILLE Allende"],
-        name: "HEROUVILLE Allende",
+        id: ["Hérouville-Saint-Clair Allende"],
+        name: "Allende",
+        city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "HEROUVILLE Allende" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HEROUVILLE ALLENDE" }],
         },
       },
     ],
@@ -1224,8 +1236,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Collège Moulin"],
-        name: "CAEN Collège Moulin",
+        id: ["Caen Collège Moulin"],
+        name: "Collège Moulin",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1234,7 +1247,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "102",
           },
-          pages: [{ text: "CAEN Collège Moulin" }],
+          pages: [{ font: "1507SUPX", text: "CAEN COLLEGE MOULIN" }],
         },
       },
     ],
@@ -1298,8 +1311,9 @@ const twistoRoutes: Route[] = [
     colors: { background: "#702283", text: "#ffffff" },
     destinations: [
       {
-        id: ["CAEN Cité U Lebisey"],
-        name: "CAEN Cité U Lebisey",
+        id: ["Caen Cité U Lebisey"],
+        name: "Cité U Lebisey",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1308,7 +1322,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "104",
           },
-          pages: [{ text: "CAEN Cité U Lebisey" }],
+          pages: [{ font: "1507SUPX", text: "CAEN CITE U LEBISEY" }],
         },
       },
     ],
@@ -1335,8 +1349,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Institut Lemonnier"],
-        name: "CAEN Institut Lemonnier",
+        id: ["Caen Institut Lemonnier"],
+        name: "Institut Lemonnier",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1345,7 +1360,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "105",
           },
-          pages: [{ text: "CAEN Institut Lemonnier" }],
+          pages: [{ font: "1407SUPX", textSpacing: 1, text: "CAEN INSTITUT LEMONNIER" }],
         },
       },
     ],
@@ -1395,8 +1410,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Lycée Ste Ursule"],
-        name: "CAEN Lycée Ste Ursule",
+        id: ["Caen Lycée Sainte-Ursule"],
+        name: "Lycée Sainte-Ursule",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1405,7 +1421,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "107",
           },
-          pages: [{ text: "CAEN Lycée Ste Ursule" }],
+          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN LYCEE ST-URSULE" }],
         },
       },
     ],
@@ -1418,8 +1434,9 @@ const twistoRoutes: Route[] = [
     colors: { background: "#702283", text: "#ffffff" },
     destinations: [
       {
-        id: ["CAEN Lycée de Gaulle"],
-        name: "CAEN Lycée de Gaulle",
+        id: ["Caen Lycée de Gaulle"],
+        name: "Lycée de Gaulle",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1428,7 +1445,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "109",
           },
-          pages: [{ text: "CAEN Lycée de Gaulle" }],
+          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN LYCEE DE GAULE" }],
         },
       },
       {
@@ -1506,8 +1523,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["MONDEVILLE Collège Guillemot"],
-        name: "MONDEVILLE Collège Guillemot",
+        id: ["Mondeville Collège Guillemot"],
+        name: "Collège Guillemot",
+        city: "MONDEVILLE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1516,7 +1534,10 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "111",
           },
-          pages: [{ text: "MONDEVILLE Collège Guillemot" }],
+          pages: [
+            { font: "1508SUPX", text: "MONDEVILLE" },
+            { font: "1507SUPX", text: "COLLEGE GUILLEMOT" },
+          ],
         },
       },
     ],
@@ -1543,8 +1564,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Rostand Fresnel"],
-        name: "CAEN Rostand Fresnel",
+        id: ["Caen Rostand-Fresnel"],
+        name: "Rostand-Fresnel",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1553,7 +1575,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "112",
           },
-          pages: [{ text: "CAEN Rostand Fresnel" }],
+          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
         },
       },
     ],
@@ -1640,8 +1662,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Rostand Fresnel"],
-        name: "CAEN Rostand Fresnel",
+        id: ["Caen Rostand-Fresnel"],
+        name: "Rostand-Fresnel",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1650,7 +1673,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "115",
           },
-          pages: [{ text: "CAEN Rostand Fresnel" }],
+          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
         },
       },
     ],
@@ -1737,8 +1760,9 @@ const twistoRoutes: Route[] = [
     colors: { background: "#702283", text: "#ffffff" },
     destinations: [
       {
-        id: ["CAEN Copernic"],
-        name: "CAEN Copernic",
+        id: ["Caen Copernic"],
+        name: "Copernic",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1747,7 +1771,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "119",
           },
-          pages: [{ text: "CAEN Copernic" }],
+          pages: [{ font: "1508SUPX", text: "CAEN COPERNIC" }],
         },
       },
     ],
@@ -1828,8 +1852,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["B - MONDEVILLE Collège Guillemot"],
-        name: "B - MONDEVILLE Collège Guillemot",
+        id: ["Mondeville Collège Guillemot"],
+        name: "Collège Guillemot",
+        city: "MONDEVILLE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1838,7 +1863,10 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "121",
           },
-          pages: [{ text: "B - MONDEVILLE Collège Guillemot" }],
+          pages: [
+            { font: "1508SUPX", text: "MONDEVILLE" },
+            { font: "1507SUPX", text: "COLLEGE GUILLEMOT" },
+          ],
         },
       },
       {
@@ -1916,8 +1944,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Croix Guérin"],
-        name: "CAEN Croix Guérin",
+        id: ["Caen Croix Guérin"],
+        name: "Croix Guérin",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1926,7 +1955,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "124",
           },
-          pages: [{ text: "CAEN Croix Guérin" }],
+          pages: [{ font: "1508SUPX", text: "CAEN CROIX GUERIN" }],
         },
       },
     ],
@@ -1939,8 +1968,9 @@ const twistoRoutes: Route[] = [
     colors: { background: "#702283", text: "#ffffff" },
     destinations: [
       {
-        id: ["CAEN Cité U Lebisey"],
-        name: "CAEN Cité U Lebisey",
+        id: ["Caen Cité U Lebisey"],
+        name: "Cité U Lebisey",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1949,7 +1979,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "125",
           },
-          pages: [{ text: "CAEN Cité U Lebisey" }],
+          pages: [{ font: "1507SUPX", text: "CAEN CITE U LEBISEY" }],
         },
       },
     ],

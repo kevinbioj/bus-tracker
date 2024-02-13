@@ -273,7 +273,7 @@ const scholarRoutes: Route[] = [
     name: "201",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
       {
         id: ["Les Mailles SAINT-PIERRE-DE-VARENGEVILLE"],
         autoHide: true,
@@ -287,7 +287,7 @@ const scholarRoutes: Route[] = [
     name: "202",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
       {
         id: ["Église SAINT-PAËR"],
         autoHide: true,
@@ -302,7 +302,7 @@ const scholarRoutes: Route[] = [
     name: "203",
     colors: { background: "#F4A3AF", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
       {
         id: ["Mairie SAINTE-MARGUERITE-SUR-DUCLAIR"],
         autoHide: true,
@@ -317,7 +317,7 @@ const scholarRoutes: Route[] = [
     name: "204",
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
       {
         id: ["L'Orme HÉNOUVILLE"],
         autoHide: true,
@@ -331,7 +331,7 @@ const scholarRoutes: Route[] = [
     name: "205",
     colors: { background: "#914C15", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
       {
         id: ["Le Paulu - Usine Oxford SAINT-PIERRE-DE-VARENGEVILLE"],
         autoHide: true,
@@ -345,7 +345,7 @@ const scholarRoutes: Route[] = [
     name: "206",
     colors: { background: "#009640", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
       {
         id: ["Le Conihout 543 LE-MESNIL-SOUS-JUMIÈGES"],
         autoHide: true,
@@ -359,7 +359,7 @@ const scholarRoutes: Route[] = [
     name: "207",
     colors: { background: "#C7D530", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
       {
         id: ["Abbaye JUMIÈGES"],
         autoHide: true,
@@ -374,7 +374,7 @@ const scholarRoutes: Route[] = [
     name: "208",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
       {
         id: ["Calumet BARDOUVILLE"],
         autoHide: true,
@@ -526,7 +526,7 @@ const scholarRoutes: Route[] = [
         city: "SAINT-PIERRE-DE-VARENGEVILLE",
       },
       {
-        id: ["Collège Flaubert DUCLAIR"],
+        id: ["Collège Gustave Flaubert DUCLAIR"],
         autoHide: true,
         name: "Collège Flaubert",
         city: "DUCLAIR",
