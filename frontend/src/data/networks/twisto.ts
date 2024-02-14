@@ -1088,7 +1088,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-100",
     name: "100",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1125,7 +1124,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-101",
     name: "101",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1218,7 +1216,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-102",
     name: "102",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1256,7 +1253,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-103",
     name: "103",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1307,7 +1303,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-104",
     name: "104",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1331,7 +1326,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-105",
     name: "105",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1369,7 +1363,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-106",
     name: "106",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1392,7 +1385,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-107",
     name: "107",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1430,7 +1422,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-109",
     name: "109",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1468,7 +1459,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-110",
     name: "110",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1506,7 +1496,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-111",
     name: "111",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1547,7 +1536,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-112",
     name: "112",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1585,7 +1573,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-113",
     name: "113",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1622,7 +1609,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-114",
     name: "114",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1645,7 +1631,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-115",
     name: "115",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1683,7 +1668,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-116",
     name: "116",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1720,7 +1704,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-118",
     name: "118",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1757,7 +1740,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-119",
     name: "119",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1781,7 +1763,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-120",
     name: "120",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1821,7 +1802,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-121",
     name: "121",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1890,7 +1870,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-123",
     name: "123",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1927,7 +1906,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-124",
     name: "124",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1965,7 +1943,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-125",
     name: "125",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -1989,7 +1966,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-126",
     name: "126",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2026,7 +2002,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-127",
     name: "127",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2049,7 +2024,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-130",
     name: "130",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2170,7 +2144,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-131",
     name: "131",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2235,7 +2208,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-133",
     name: "133",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2328,7 +2300,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-134",
     name: "134",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2379,7 +2350,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-135",
     name: "135",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2416,7 +2386,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-136",
     name: "136",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2467,7 +2436,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-137",
     name: "137",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2490,7 +2458,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-137A",
     name: "137A",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2527,7 +2494,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-137B",
     name: "137B",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2550,7 +2516,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-137C",
     name: "137C",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
@@ -2573,7 +2538,6 @@ const twistoRoutes: Route[] = [
     id: "TWISTO-137D",
     name: "137D",
     mapOnly: true,
-    noCartridge: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
