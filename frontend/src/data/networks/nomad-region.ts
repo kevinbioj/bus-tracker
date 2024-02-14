@@ -1,6 +1,6 @@
 import { Route } from "~/@types";
 
-const nomadRoutes: Route[] = [
+const nomadRegionRoutes: Route[] = [
   {
     id: "NOMAD-216",
     mapOnly: true,
@@ -138,4 +138,4 @@ const nomadRoutes: Route[] = [
   },
 ];
 
-export default nomadRoutes;
+export default nomadRegionRoutes;

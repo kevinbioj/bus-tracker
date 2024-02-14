@@ -1089,7 +1089,7 @@ const twistoRoutes: Route[] = [
     name: "100",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Place du Canada"],
@@ -1126,7 +1126,7 @@ const twistoRoutes: Route[] = [
     name: "101",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["OUISTREHAM Collège Monnet"],
@@ -1219,7 +1219,7 @@ const twistoRoutes: Route[] = [
     name: "102",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["BRETTEVILLE Koenig"],
@@ -1257,7 +1257,7 @@ const twistoRoutes: Route[] = [
     name: "103",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Calvaire Saint-Pierre"],
@@ -1308,7 +1308,7 @@ const twistoRoutes: Route[] = [
     name: "104",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Cité U Lebisey"],
@@ -1332,7 +1332,7 @@ const twistoRoutes: Route[] = [
     name: "105",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Gare SNCF"],
@@ -1370,7 +1370,7 @@ const twistoRoutes: Route[] = [
     name: "106",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["MONDEVILLE Paul Langevin"],
@@ -1393,7 +1393,7 @@ const twistoRoutes: Route[] = [
     name: "107",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Hôtel de Ville"],
@@ -1431,7 +1431,7 @@ const twistoRoutes: Route[] = [
     name: "109",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Lycée de Gaulle"],
@@ -1469,7 +1469,7 @@ const twistoRoutes: Route[] = [
     name: "110",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Colombelles Colombelles Mairie"],
@@ -1486,8 +1486,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Rostand Fresnel"],
-        name: "CAEN Rostand Fresnel",
+        id: ["Caen Rostand-Fresnel"],
+        name: "Rostand-Fresnel",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1496,7 +1497,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "110",
           },
-          pages: [{ text: "CAEN Rostand Fresnel" }],
+          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
         },
       },
     ],
@@ -1506,7 +1507,7 @@ const twistoRoutes: Route[] = [
     name: "111",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["COLOMBELLES Mandela"],
@@ -1547,7 +1548,7 @@ const twistoRoutes: Route[] = [
     name: "112",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CUVERVILLE Champ Picot"],
@@ -1585,7 +1586,7 @@ const twistoRoutes: Route[] = [
     name: "113",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["ETERVILLE le Rocreuil"],
@@ -1622,7 +1623,7 @@ const twistoRoutes: Route[] = [
     name: "114",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Rostand Fresnel"],
@@ -1645,7 +1646,7 @@ const twistoRoutes: Route[] = [
     name: "115",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CUVERVILLE Callouins"],
@@ -1683,7 +1684,7 @@ const twistoRoutes: Route[] = [
     name: "116",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["HEROUVILLE Lebisey"],
@@ -1720,7 +1721,7 @@ const twistoRoutes: Route[] = [
     name: "118",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["LOUVIGNY Mesnil"],
@@ -1757,7 +1758,7 @@ const twistoRoutes: Route[] = [
     name: "119",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Copernic"],
@@ -1781,7 +1782,7 @@ const twistoRoutes: Route[] = [
     name: "120",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Colombelles Place des Tilleuls"],
@@ -1821,7 +1822,7 @@ const twistoRoutes: Route[] = [
     name: "121",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["B - COLOMBELLES Mairie"],
@@ -1890,7 +1891,7 @@ const twistoRoutes: Route[] = [
     name: "123",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["BLAINVILLE Langevin Wallon"],
@@ -1927,7 +1928,7 @@ const twistoRoutes: Route[] = [
     name: "124",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Saint-Aubin-d&apos;Arquenay Saint-Aubin Eglise"],
@@ -1965,7 +1966,7 @@ const twistoRoutes: Route[] = [
     name: "125",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Cité U Lebisey"],
@@ -1989,7 +1990,7 @@ const twistoRoutes: Route[] = [
     name: "126",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["SAINT-CONTEST Vellerie"],
@@ -2026,7 +2027,7 @@ const twistoRoutes: Route[] = [
     name: "127",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Villons-les-Buissons Coopérative"],
@@ -2049,7 +2050,7 @@ const twistoRoutes: Route[] = [
     name: "130",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Gare SNCF"],
@@ -2170,7 +2171,7 @@ const twistoRoutes: Route[] = [
     name: "131",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["TROARN Collège"],
@@ -2235,7 +2236,7 @@ const twistoRoutes: Route[] = [
     name: "133",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Théâtre"],
@@ -2328,7 +2329,7 @@ const twistoRoutes: Route[] = [
     name: "134",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Gare SNCF"],
@@ -2379,7 +2380,7 @@ const twistoRoutes: Route[] = [
     name: "135",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Gare SNCF"],
@@ -2416,7 +2417,7 @@ const twistoRoutes: Route[] = [
     name: "136",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["HEROUVILLE Allende"],
@@ -2467,7 +2468,7 @@ const twistoRoutes: Route[] = [
     name: "137",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["IFS Collège Senghor"],
@@ -2490,7 +2491,7 @@ const twistoRoutes: Route[] = [
     name: "137A",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["SOLIERS Hameau du Four"],
@@ -2527,7 +2528,7 @@ const twistoRoutes: Route[] = [
     name: "137B",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["BOURGUEBUS La Hogue"],
@@ -2550,7 +2551,7 @@ const twistoRoutes: Route[] = [
     name: "137C",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["BOURGUEBUS Centre"],
@@ -2573,7 +2574,7 @@ const twistoRoutes: Route[] = [
     name: "137D",
     mapOnly: true,
     noCartridge: true,
-    colors: { background: "#702283", text: "#ffffff" },
+    colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["SOLIERS Hameau du Four"],
@@ -2587,6 +2588,82 @@ const twistoRoutes: Route[] = [
             text: "137D",
           },
           pages: [{ text: "SOLIERS Hameau du Four" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-B1",
+    name: "B1",
+    mapOnly: true,
+    colors: { background: "#23a638", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Ifs Jean Vilar"],
+        name: "IFS Jean Vilar",
+        girouette: {
+          routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "B1" },
+          pages: [{ text: ["PLAN B TRAM", "IFS JEAN VILAR"] }],
+        },
+      },
+      {
+        id: ["Hérouville-Saint-Clair Saint-Clair"],
+        name: "Saint-Clair",
+        city: "HÉROUVILLE-SAINT-CLAIR",
+        girouette: {
+          routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "B1" },
+          pages: [{ text: ["PLAN B TRAM", "HEROUVILLE ST-CLAIR"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-B2",
+    name: "Plan B - T2",
+    mapOnly: true,
+    colors: { background: "#e73132", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Caen Campus 2"],
+        name: "Campus 2",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
+          pages: [{ text: ["PLAN B TRAM", "CAEN CAMPUS 2"] }],
+        },
+      },
+      {
+        id: ["Caen Presqu&apos;ile"],
+        name: "CAEN Presqu'ile",
+        girouette: {
+          routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
+          pages: [{ text: ["PLAN B TRAM", "CAEN PRESQU'ILE"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO-B3",
+    name: "Plan B - T3",
+    mapOnly: true,
+    colors: { background: "#009adf", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Fleury-sur-Orne HAUTS DE L&apos;ORNE"],
+        name: "Hauts de l'Orne",
+        city: "FLEURY-SUR-ORNE",
+        girouette: {
+          routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
+          pages: [{ text: ["PLAN B TRAM", "FLEURY HAUTS DE L'ORNE"] }],
+        },
+      },
+      {
+        id: ["Caen Château-Quatrans"],
+        name: "Château Quatrans",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
+          pages: [{ text: ["PLAN B TRAM", "CAEN CHATEAU QUATRANS"] }],
         },
       },
     ],

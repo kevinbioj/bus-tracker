@@ -5,14 +5,14 @@ const sngoRoutes: Route[] = [
     id: "SNGO-21",
     mapOnly: true,
     name: "1",
-    colors: { background: "#330613", text: "#FFFFFF" },
+    colors: { background: "#e30613", text: "#FFFFFF" },
     destinations: [
       {
         id: ["VERNON République"],
         name: "République",
         city: "VERNON",
         girouette: {
-          routeNumber: { backgroundColor: "#330613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
+          routeNumber: { backgroundColor: "#e30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: "VERNON" }, { text: "REPUBLIQUE" }],
         },
       },
@@ -21,7 +21,7 @@ const sngoRoutes: Route[] = [
         name: "Sente du Bon Dieu",
         city: "VERNON",
         girouette: {
-          routeNumber: { backgroundColor: "#330613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
+          routeNumber: { backgroundColor: "#e30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: "VERNON" }, { font: "1508C2E1", text: "SENTE DU BON DIEU" }],
         },
       },
@@ -30,7 +30,7 @@ const sngoRoutes: Route[] = [
         name: "Saint-Adjutor",
         city: "VERNON",
         girouette: {
-          routeNumber: { backgroundColor: "#330613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
+          routeNumber: { backgroundColor: "#e30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: "VERNON" }, { text: "SAINT-ADJUTOR" }],
         },
       },
@@ -39,7 +39,7 @@ const sngoRoutes: Route[] = [
         name: "Auges",
         city: "VERNON",
         girouette: {
-          routeNumber: { backgroundColor: "#330613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
+          routeNumber: { backgroundColor: "#e30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: "VERNON" }, { text: "AUGES" }],
         },
       },

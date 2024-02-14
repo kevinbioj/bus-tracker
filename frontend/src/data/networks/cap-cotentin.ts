@@ -1,6 +1,6 @@
 import { Route } from "~/@types";
 
-const capcotRoutes: Route[] = [
+const capCotentinRoutes: Route[] = [
   {
     id: "CAPCOT-01",
     mapOnly: true,
@@ -985,4 +985,4 @@ const capcotRoutes: Route[] = [
   },
 ];
 
-export default capcotRoutes;
+export default capCotentinRoutes;
