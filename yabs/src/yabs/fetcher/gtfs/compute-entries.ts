@@ -156,6 +156,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           name: stopTime.stop.name,
           sequence: stopTime.sequence,
           distanceTraveled: stopTime.distanceTraveled,
+          scheduled: parseTime(stopTime.time).unix(),
         };
 
         if (typeof stopTimeUpdate === 'undefined') {
@@ -172,7 +173,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
 
         if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
           currentDelta = null;
-          return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), delta: null, isRealtime: false };
+          return { ...partialStopTime, timestamp: partialStopTime.scheduled, delta: null, isRealtime: false };
         }
 
         if (stopTimeUpdate.scheduleRelationship === 'SKIPPED') {
@@ -184,13 +185,14 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         if (typeof stopTimeEvent?.delay === 'number') {
           currentDelta = stopTimeEvent.delay;
         } else if (typeof stopTimeEvent?.time === 'string') {
-          currentDelta = dayjs.unix(+stopTimeEvent.time).diff(parseTime(stopTime.time), 'seconds');
+          currentDelta = dayjs.unix(+stopTimeEvent.time).diff(dayjs.unix(partialStopTime.scheduled), 'seconds');
         }
 
         const timestamp =
           typeof stopTimeEvent?.time === 'string'
             ? +stopTimeEvent.time
-            : parseTime(stopTime.time)
+            : dayjs
+                .unix(partialStopTime.scheduled)
                 .add(currentDelta ?? 0, 'seconds')
                 .unix();
         return { ...partialStopTime, timestamp, delta: currentDelta, isRealtime: true };
@@ -198,8 +200,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
 
       const currentStopTime =
         [...stopTimes].reverse().find((stopTime) => {
-          if (stopTime.timestamp === null) return false;
-          return dayjs().isAfter(dayjs.unix(stopTime.timestamp));
+          return dayjs().isAfter(dayjs.unix(stopTime.timestamp ?? stopTime.scheduled));
         }) ?? stopTimes[0];
       if (dayjs().diff(dayjs.unix(currentStopTime.timestamp!), 'minutes') > 10) return;
       const currentStopTimeIdx = stopTimes.indexOf(currentStopTime);
@@ -315,6 +316,8 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         id: stopTime.stop.id,
         name: stopTime.stop.name,
         sequence: stopTime.sequence,
+        distanceTraveled: stopTime.distanceTraveled,
+        scheduled: parseTime(stopTime.time).unix(),
       };
 
       if (typeof stopTimeUpdate === 'undefined') {
@@ -331,7 +334,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
 
       if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
         currentDelta = null;
-        return { ...partialStopTime, timestamp: parseTime(stopTime.time).unix(), delta: null, isRealtime: false };
+        return { ...partialStopTime, timestamp: partialStopTime.scheduled, delta: null, isRealtime: false };
       }
 
       if (stopTimeUpdate.scheduleRelationship === 'SKIPPED') {
@@ -343,13 +346,14 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       if (typeof stopTimeEvent?.delay === 'number') {
         currentDelta = stopTimeEvent.delay;
       } else if (typeof stopTimeEvent?.time === 'string') {
-        currentDelta = dayjs.unix(+stopTimeEvent.time).diff(parseTime(stopTime.time), 'seconds');
+        currentDelta = dayjs.unix(+stopTimeEvent.time).diff(dayjs.unix(partialStopTime.scheduled), 'seconds');
       }
 
       const timestamp =
         typeof stopTimeEvent?.time === 'string'
           ? +stopTimeEvent.time
-          : parseTime(stopTime.time)
+          : dayjs
+              .unix(partialStopTime.scheduled)
               .add(currentDelta ?? 0, 'seconds')
               .unix();
       return { ...partialStopTime, timestamp, delta: currentDelta, isRealtime: true };
@@ -376,9 +380,8 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         typeof vehiclePosition.vehicle.currentStopSequence === 'number'
           ? stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!)
           : stopTimes.filter((stopTime) => {
-              if (stopTime.timestamp === null) return false;
               return dayjs
-                .unix(stopTime.timestamp)
+                .unix(stopTime.timestamp ?? stopTime.scheduled)
                 .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minute');
             }),
       trip: {
