@@ -86,17 +86,24 @@ export async function computeSiriEntries(properties: SiriProperties) {
             : []),
           ...(calls
             .sort((a, b) => a.Order - b.Order)
-            .map((stopCall) => ({
-              id: stopCall.StopPointRef,
-              name: stopCall.StopPointName,
-              sequence: stopCall.Order,
-              timestamp: dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
-              delta: dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).diff(
-                stopCall.AimedDepartureTime ?? stopCall.AimedArrivalTime,
-                'seconds',
-              ),
-              isRealtime: true,
-            })) ?? []),
+            .map((stopCall) => {
+              const isCancelled = stopCall.ArrivalStatus === 'cancelled';
+              return {
+                id: stopCall.StopPointRef,
+                name: stopCall.StopPointName,
+                sequence: stopCall.Order,
+                timestamp: isCancelled
+                  ? null
+                  : dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
+                delta: isCancelled
+                  ? null
+                  : dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).diff(
+                      stopCall.AimedDepartureTime ?? stopCall.AimedArrivalTime,
+                      'seconds',
+                    ),
+                isRealtime: true,
+              };
+            }) ?? []),
         ],
         timestamp: timestamp,
       };

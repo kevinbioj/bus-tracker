@@ -27,9 +27,17 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
               <span className="overflow-hidden text-ellipsis whitespace-nowrap" title={stopTime.name}>
                 {stopTime.name}
               </span>
-              {stopTime.isRealtime ? <Rss className="ml-auto -rotate-90" color="green" size={8} /> : <div></div>}
+              {stopTime.timestamp !== null && stopTime.isRealtime ? (
+                <Rss className="ml-auto -rotate-90" color="green" size={8} />
+              ) : (
+                <div></div>
+              )}
               {match([stopTime.timestamp, stopTime.isRealtime])
-                .with([null, P.boolean], () => <X className="mx-auto -mt-0.5" color="red" size={18} strokeWidth={3} />)
+                .with([null, P.boolean], () => (
+                  <span title="Arrêt non desservi">
+                    <X className="mx-auto -mt-0.5" color="red" size={18} strokeWidth={3} />
+                  </span>
+                ))
                 .with([P.number, false], ([time]) => (
                   <span className="tabular-nums" title="Horaire théorique">
                     {dayjs.unix(time).format("HH:mm")}
