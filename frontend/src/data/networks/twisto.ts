@@ -1091,7 +1091,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["CAEN Place du Canada"],
+        id: ["Caen Place du Canada"],
         name: "CAEN Place du Canada",
         girouette: {
           routeNumber: {
@@ -1101,7 +1101,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "100",
           },
-          pages: [{ text: "CAEN Place du Canada" }],
+          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN PLACE DU CANADA" }],
         },
       },
       {
@@ -1366,7 +1366,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["MONDEVILLE Paul Langevin"],
+        id: ["Mondeville Paul Langevin"],
         name: "MONDEVILLE Paul Langevin",
         girouette: {
           routeNumber: {
@@ -1376,7 +1376,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "106",
           },
-          pages: [{ text: "MONDEVILLE Paul Langevin" }],
+          pages: [{ font: "1407SUPX", textSpacing: 1, text: "MONDEVILLE PAUL LANGEVIN" }],
         },
       },
     ],
@@ -1590,8 +1590,9 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["VERSON Collège Prévert"],
-        name: "VERSON Collège Prévert",
+        id: ["Verson Collège Prévert"],
+        name: "Collège Prévert",
+        city: "VERSON",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1600,7 +1601,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "113",
           },
-          pages: [{ text: "VERSON Collège Prévert" }],
+          pages: [{ font: "1407SUPX", textSpacing: 1, text: "VERSON COLLEGE PREVERT" }],
         },
       },
     ],
@@ -1983,7 +1984,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Collège Monod"],
+        id: ["Caen Collège Monod"],
         name: "CAEN Collège Monod",
         girouette: {
           routeNumber: {
@@ -1993,7 +1994,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "126",
           },
-          pages: [{ text: "CAEN Collège Monod" }],
+          pages: [{ font: "1507SUPX", text: "CAEN COLLEGE MONOD" }],
         },
       },
     ],
@@ -2439,8 +2440,9 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["IFS Collège Senghor"],
-        name: "IFS Collège Senghor",
+        id: ["Ifs COLLEGE SENGHOR QUAI A"],
+        name: "Collège Senghor",
+        city: "IFS",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -2449,7 +2451,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "137",
           },
-          pages: [{ text: "IFS Collège Senghor" }],
+          pages: [{ font: "1507SUPX", text: "IFS COLLEGE SENGHOR" }],
         },
       },
     ],
