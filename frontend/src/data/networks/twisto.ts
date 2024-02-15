@@ -67,6 +67,15 @@ const twistoRoutes: Route[] = [
         },
       },
       {
+        id: ["Caen Collège Hawking"],
+        name: "Collège Hawking",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "T3" },
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN COLLEGE HAWKING" }],
+        },
+      },
+      {
         id: ["Caen Château-Quatrans"],
         name: "Château Quatrans",
         city: "CAEN",
