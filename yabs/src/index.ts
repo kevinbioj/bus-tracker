@@ -16,7 +16,7 @@ import { getVehicles } from '~/yabs/vehicles/get-vehicles';
 import { insertActivity } from '~/yabs/vehicles/insert-activity';
 
 const waitFor = (time: number) => new Promise((r) => setTimeout(r, time));
-const DEFAULT_RETRY_COUNT = 5;
+const DEFAULT_RETRY_COUNT = 0;
 const DEFAULT_RETRY_INTERVAL = 10_000;
 
 const gtfsResources = new Map<string, GtfsResource>();
@@ -32,10 +32,14 @@ server.get('/history/:operator/:number', handleGetOperatorVehicle);
 server.listen({ port });
 
 console.log('YABS\tLoading resources into memory.');
-await Promise.all(sources.map((source) => updateResource(source)));
+for (const source of sources) await updateResource(source);
 
 console.log('YABS\tComputing first entries.');
-await Promise.allSettled(sources.map((source) => updateEntries(source)));
+for (const source of sources) {
+  try {
+    await updateEntries(source);
+  } catch {}
+}
 hasComputedFirstEntries = true;
 
 console.log('YABS\tRegistering scheduled tasks.');

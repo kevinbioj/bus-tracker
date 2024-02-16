@@ -15,7 +15,7 @@ const $ = (command: string) =>
 
 export async function downloadStaticResource(properties: GtfsProperties) {
   const tmpdir = await $('mktemp -d');
-  await $(`wget -O "${join(tmpdir, 'gtfs.zip')}" "${properties.staticResourceHref}"`);
+  await $(`wget -T 10 -O "${join(tmpdir, 'gtfs.zip')}" "${properties.staticResourceHref}"`);
   await $(`unzip -o ${join(tmpdir, 'gtfs.zip')} -d ${tmpdir}`);
   await $(`rm "${join(tmpdir, 'feed_info.txt')}"`).catch(() => void 0);
   if (properties.generateShapes) {

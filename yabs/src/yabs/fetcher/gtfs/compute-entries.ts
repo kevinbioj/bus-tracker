@@ -127,10 +127,13 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
 
   const entries = new Map<string, YabsEntry>();
 
-  const tripUpdate = await fetch(properties.tripUpdateHref)
+  const abortController = new AbortController();
+  const timeout = setTimeout(() => abortController.abort(), 10000);
+  const tripUpdate = await fetch(properties.tripUpdateHref, { signal: abortController.signal })
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeTripUpdate(buffer));
+  clearTimeout(timeout);
 
   tripUpdate.entity
     .sort((a, b) => +b.tripUpdate.timestamp - +a.tripUpdate.timestamp)
@@ -282,15 +285,18 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
 
   const entries = new Map<string, YabsEntry>();
 
-  const tripUpdates = await fetch(properties.tripUpdateHref)
+  const abortController = new AbortController();
+  const timeout = setTimeout(() => abortController.abort(), 10000);
+  const tripUpdates = await fetch(properties.tripUpdateHref, { signal: abortController.signal })
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeTripUpdate(buffer));
 
-  const vehiclePositions = await fetch(properties.vehiclePositionHref)
+  const vehiclePositions = await fetch(properties.vehiclePositionHref, { signal: abortController.signal })
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeVehiclePosition(buffer));
+  clearTimeout(timeout);
 
   vehiclePositions.entity.forEach((vehiclePosition) => {
     if (typeof vehiclePosition.vehicle.trip === 'undefined') return;

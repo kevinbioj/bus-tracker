@@ -15,6 +15,8 @@ const vehicleMonitoringRequestPayload = `<?xml version="1.0" encoding="utf-8"?>
 `;
 
 export async function computeSiriEntries(properties: SiriProperties) {
+  const abortController = new AbortController();
+  const timeout = setTimeout(() => abortController.abort(), 10000);
   const response = await fetch(properties.siriEndpoint, {
     body: vehicleMonitoringRequestPayload,
     headers: {
@@ -23,17 +25,24 @@ export async function computeSiriEntries(properties: SiriProperties) {
       'User-Agent': 'Bus-Tracker.xyz/1.0',
     },
     method: 'POST',
+    signal: abortController.signal,
   });
+  clearInterval(timeout);
   if (!response.ok) return null;
   const payload = await response.text();
   const data = parser.parse(payload);
-  const vehicles = data.Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity as SiriVehicleActivity[];
-  return vehicles
-    .sort(
-      (a, b) =>
-        dayjs(a.MonitoredVehicleJourney.OriginAimedDepartureTime).unix() -
-        dayjs(b.MonitoredVehicleJourney.OriginAimedDepartureTime).unix(),
-    )
+  const vehicles = data.Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity as
+    | SiriVehicleActivity[]
+    | SiriVehicleActivity;
+  return (
+    Array.isArray(vehicles)
+      ? vehicles.sort(
+          (a, b) =>
+            dayjs(a.MonitoredVehicleJourney.OriginAimedDepartureTime).unix() -
+            dayjs(b.MonitoredVehicleJourney.OriginAimedDepartureTime).unix(),
+        )
+      : [vehicles]
+  )
     .filter(
       (vehicle, index, vehicles) =>
         typeof vehicle.MonitoredVehicleJourney.VehicleLocation !== 'undefined' &&
