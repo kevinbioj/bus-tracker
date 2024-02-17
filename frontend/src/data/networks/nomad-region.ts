@@ -104,7 +104,7 @@ const nomadRegionRoutes: Route[] = [
         id: ["BOURG ACHARD"],
         autoHide: true,
         alternate: "Bourg-Achard",
-        name: "Pompiers",
+        name: "Champ de Foire",
         city: "BOURG-ACHARD",
         girouette: {
           routeNumber: {
@@ -118,7 +118,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUEN", "ROUEN"],
+        id: ["ROUEN"],
         autoHide: true,
         alternate: "Rouen",
         name: "Gare Routière",
@@ -139,7 +139,6 @@ const nomadRegionRoutes: Route[] = [
   {
     id: "NOMAD-423",
     mapOnly: true,
-    noCartridge: true,
     name: "423",
     colors: { background: "#5E8786", text: "#FFFFFF" },
     destinations: [
@@ -182,7 +181,6 @@ const nomadRegionRoutes: Route[] = [
   {
     id: "NOMAD-527",
     mapOnly: true,
-    noCartridge: true,
     name: "527",
     colors: { background: "#9E6A9A", text: "#FFFFFF" },
     destinations: [
