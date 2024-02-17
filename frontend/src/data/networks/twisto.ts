@@ -182,7 +182,7 @@ const twistoRoutes: Route[] = [
         city: "CARPIQUET",
         girouette: {
           routeNumber: { backgroundColor: "#c4ce10", textColor: "#000000", outlineColor: "#FFFFFF", text: "3" },
-          pages: [{ font: "1508C2E1", text: "CARPIQUET     AEROPORT" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CARPIQUET AEROPORT" }],
         },
       },
     ],
@@ -767,11 +767,11 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Tour Leroy"],
+        id: ["Caen Tour Leroy"],
         name: "CAEN Tour Leroy",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "CAEN Tour Leroy" }],
+          pages: [{ font: "1510N2E1", text: "CAEN TOUR LEROY" }],
         },
       },
       {
@@ -869,11 +869,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["TROARN Bures"],
-        name: "TROARN Bures",
+        id: ["Troarn Saline Bures"],
+        name: "Bures",
+        city: "TROARN",
         girouette: {
           routeNumber: { backgroundColor: "#969328", textColor: "#ffffff", outlineColor: "#000000", text: "31" },
-          pages: [{ text: "TROARN Bures" }],
+          pages: [{ text: "TROARN BURES" }],
         },
       },
       {
@@ -881,7 +882,7 @@ const twistoRoutes: Route[] = [
         name: "CAEN Gare SNCF",
         girouette: {
           routeNumber: { backgroundColor: "#969328", textColor: "#ffffff", outlineColor: "#000000", text: "31" },
-          pages: [{ text: "CAEN GARE SNCF" }],
+          pages: [{ font: "1510N2E1", text: "CAEN GARE SNCF" }],
         },
       },
     ],
@@ -1002,7 +1003,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ccb4c9", text: "#000000" },
     destinations: [
       {
-        id: ["Caen Théâtre"],
+        id: ["Caen Théâtre Quai 5"],
         name: "Théâtre",
         city: "CAEN",
         girouette: {
