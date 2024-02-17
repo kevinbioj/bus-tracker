@@ -136,6 +136,83 @@ const nomadRegionRoutes: Route[] = [
       },
     ],
   },
+  {
+    id: "NOMAD-527",
+    mapOnly: true,
+    noCartridge: true,
+    name: "527",
+    colors: { background: "#9E6A9A", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["GISORS"],
+        autoHide: true,
+        alternate: "Gisors",
+        name: "Gare SNCF",
+        city: "GISORS",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#9E6A9A",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "527",
+          },
+          pages: [{ font: "1508SUPX", text: "GISORS" }],
+        },
+      },
+      {
+        id: ["DIEPPE"],
+        autoHide: true,
+        alternate: "Dieppe",
+        name: "Gare SNCF",
+        city: "DIEPPE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#9E6A9A",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "527",
+          },
+          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
+        },
+      },
+      {
+        id: ["FORGES-LES-EAUX"],
+        autoHide: true,
+        alternate: "Forge-les-Eaux",
+        name: "Place Brévière",
+        city: "FORGE-LES-EAUX",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#9E6A9A",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "527",
+          },
+          pages: [{ font: "1508SUPX", text: "FORGE-LES-EAUX" }],
+        },
+      },
+      {
+        id: ["SERQUEUX"],
+        autoHide: true,
+        alternate: "Serqueux",
+        name: "Gare SNCF",
+        city: "SERQUEUX",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#9E6A9A",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "527",
+          },
+          pages: [{ font: "1508SUPX", text: "SERQUEUX" }],
+        },
+      },
+    ],
+  },
 ];
 
 export default nomadRegionRoutes;

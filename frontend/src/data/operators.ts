@@ -59,7 +59,7 @@ const operators: Operator[] = [
   },
   {
     id: "LNR",
-    name: "NOMAD - Transdev Normandie Interurbain",
+    name: "NOMAD - Lignes Routières de Normandie",
     hasHistory: true,
     logo: {
       href: "/assets/operators/nomad.svg",
