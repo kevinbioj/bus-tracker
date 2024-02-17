@@ -9,7 +9,8 @@ const twistoRoutes: Route[] = [
     destinations: [
       {
         id: ["Ifs Jean Vilar"],
-        name: "IFS Jean Vilar",
+        name: "Jean Vilar",
+        city: "IFS",
         girouette: {
           routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "T1" },
           pages: [{ text: "IFS JEAN VILAR" }],
@@ -1072,24 +1073,17 @@ const twistoRoutes: Route[] = [
   },
   {
     id: "TWISTO-NUIT",
-    name: "NUIT",
+    name: "Noctibus",
     mapOnly: true,
-    colors: { background: "#011337", text: "#ffffff" },
+    colors: { background: "#011337", text: "#FFFF99" },
     destinations: [
       {
-        id: ["Hérouville-Saint-Clair Portes de la Mer"],
-        name: "HÉROUVILLE Portes de la Mer",
+        id: ["Hérouville-Saint-Clair Portes de la Mer", "Noctibus"],
+        name: "Portes de la Mer",
+        city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
-          routeNumber: { backgroundColor: "#011337", textColor: "#ffffff", outlineColor: "#000000", text: "NUIT" },
-          pages: [{ text: "HÉROUVILLE Portes de la Mer" }],
-        },
-      },
-      {
-        id: ["Noctibus"],
-        name: "Noctibus",
-        girouette: {
-          routeNumber: { backgroundColor: "#011337", textColor: "#ffffff", outlineColor: "#000000", text: "NUIT" },
-          pages: [{ text: "Noctibus" }],
+          routeNumber: { backgroundColor: "#011337", textColor: "#FFFF99", outlineColor: "#000000", text: "€" },
+          pages: [{ text: "NOCTIBUS" }],
         },
       },
     ],
