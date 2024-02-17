@@ -137,6 +137,49 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
+    id: "NOMAD-423",
+    mapOnly: true,
+    noCartridge: true,
+    name: "423",
+    colors: { background: "#5E8786", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["BRIOUZE"],
+        autoHide: true,
+        alternate: "Briouze",
+        name: "Gare SNCF",
+        city: "BRIOUZE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#5E8786",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "423",
+          },
+          pages: [{ font: "1508SUPX", text: "BRIOUZE" }],
+        },
+      },
+      {
+        id: ["BAGNOLES DE L'ORNE"],
+        autoHide: true,
+        alternate: "Bagnoles de l'Orne",
+        name: "Sainte-Madeleine - Église",
+        city: "BAGNOLES DE L'ORNE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#5E8786",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "423",
+          },
+          pages: [{ font: "1507SUPX", text: "BAGNOLES DE L'ORNE" }],
+        },
+      },
+    ],
+  },
+  {
     id: "NOMAD-527",
     mapOnly: true,
     noCartridge: true,
