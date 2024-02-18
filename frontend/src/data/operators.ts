@@ -58,6 +58,26 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "CAPCOT",
+    name: "Cap Cotentin - Transdev Cotentin",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/capcotentin.svg",
+      size: [100, 100],
+    },
+    issues: [],
+  },
+  {
+    id: "TUD",
+    name: "DeepMob - Transdev Urbain Dieppe",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/deepmob.svg",
+      size: [595, 356],
+    },
+    issues: [],
+  },
+  {
     id: "LNR",
     name: "NOMAD - Lignes Routières de Normandie",
     hasHistory: true,
@@ -74,26 +94,6 @@ const operators: Operator[] = [
     logo: {
       href: "/assets/operators/sngo.jpg",
       size: [1280, 678],
-    },
-    issues: [],
-  },
-  {
-    id: "TUD",
-    name: "DeepMob - Transdev Urbain Dieppe",
-    hasHistory: true,
-    logo: {
-      href: "/assets/operators/deepmob.svg",
-      size: [595, 356],
-    },
-    issues: [],
-  },
-  {
-    id: "CAPCOT",
-    name: "Cap Cotentin - Transdev Cotentin",
-    hasHistory: true,
-    logo: {
-      href: "/assets/operators/capcotentin.svg",
-      size: [100, 100],
     },
     issues: [],
   },

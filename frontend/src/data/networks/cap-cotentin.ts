@@ -983,6 +983,47 @@ const capCotentinRoutes: Route[] = [
       },
     ],
   },
+  {
+    id: "CAPCOT-SCO6",
+    mapOnly: true,
+    name: "SCO6",
+    colors: { background: "#D34536", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["COLLEGE DIDEROT"],
+        name: "COLLEGE DIDEROT",
+        girouette: {
+          routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D6" },
+          pages: [{ font: "1510N2E1", text: "COLLEGE DIDEROT" }],
+        },
+      },
+      {
+        id: ["EGLANTINE CHATEAU VIA BECQUET"],
+        name: "EGLANTINE CHATEAU VIA BECQUET",
+        girouette: {
+          routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D6" },
+          pages: [{ text: ["EGLANTINE CHATEAU", "VIA BECQUET"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "CAPCOT-822",
+    mapOnly: true,
+    noCartridge: true,
+    name: "Cherbourg / Rennes",
+    colors: { background: "#FFFFFF", text: "#000000" },
+    destinations: [
+      {
+        id: [""],
+        name: "RENNES / CHERBOURG",
+        girouette: {
+          routeNumber: { font: "1510N2E1", textColor: "#FF6A00", text: "REN" },
+          pages: [{ font: "1510N2E1", text: "NES / CHERBOURG" }],
+        },
+      },
+    ],
+  },
 ];
 
 export default capCotentinRoutes;

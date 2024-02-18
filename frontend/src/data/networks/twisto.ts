@@ -2638,6 +2638,14 @@ const twistoRoutes: Route[] = [
       },
     ],
   },
+  {
+    id: "TWISTO-MP",
+    name: "Marco Polo",
+    mapOnly: true,
+    noCartridge: true,
+    colors: { background: "#FF0000", text: "#ffffff" },
+    destinations: [],
+  },
 ];
 
 export default twistoRoutes;
