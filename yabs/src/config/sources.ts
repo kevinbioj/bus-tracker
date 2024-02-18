@@ -70,11 +70,11 @@ const sources: Source[] = [
     },
   },
   {
-    id: 'KCM',
+    id: 'TWISTO',
     refreshCron: '15,45 * * * * *',
     type: 'SIRI-XML',
     siriProperties: {
-      id: 'KCM',
+      id: 'TWISTO',
       prefix: 'TWISTO',
       siriEndpoint: 'https://api.okina.fr/gateway/cae/realtime/anshar/services',
       getOperator: () => 'TWISTO',
@@ -85,16 +85,16 @@ const sources: Source[] = [
     },
   },
   {
-    id: 'LNR',
+    id: 'NOMAD',
     refreshCron: '15 * * * * * ',
     type: 'GTFS',
     gtfsProperties: {
-      id: 'LNR',
+      id: 'NOMAD',
       staticResourceHref: 'https://gtfs.kevinbioj.fr/nomad.zip',
       tripUpdateHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       filters: { scheduled: () => false },
-      getOperator: () => 'LNR',
+      getOperator: () => 'NOMAD',
     },
   },
   {
@@ -107,15 +107,15 @@ const sources: Source[] = [
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/71bf48f1-178e-4ce3-ba9d-361cc5be76a7',
       tripUpdateHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
-      getOperator: () => 'TNVS',
+      getOperator: () => 'SNGO',
     },
   },
   {
-    id: 'TUD',
+    id: 'DEEPMOB',
     refreshCron: '15 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
-      id: 'TUD',
+      id: 'DEEPMOB',
       routePrefix: 'DEEPMOB',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/62248658-0eba-4f4e-b367-aaea635ecd38',
       tripUpdateHref: 'https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
@@ -123,7 +123,7 @@ const sources: Source[] = [
       filters: {
         scheduled: (trip) => ['1', '2', '3', '97', '14'].includes(trip.route),
       },
-      getOperator: () => 'TUD',
+      getOperator: () => 'DEEPMOB',
     },
   },
   {

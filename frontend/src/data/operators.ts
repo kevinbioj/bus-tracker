@@ -48,7 +48,7 @@ const operators: Operator[] = [
     issues: [],
   },
   {
-    id: "KCM",
+    id: "TWISTO",
     name: "Twisto - Keolis Caen Mobilités",
     hasHistory: true,
     logo: {
@@ -68,7 +68,7 @@ const operators: Operator[] = [
     issues: [],
   },
   {
-    id: "TUD",
+    id: "DEEPMOB",
     name: "DeepMob - Transdev Urbain Dieppe",
     hasHistory: true,
     logo: {
@@ -78,8 +78,8 @@ const operators: Operator[] = [
     issues: [],
   },
   {
-    id: "LNR",
-    name: "NOMAD - Lignes Routières de Normandie",
+    id: "NOMAD",
+    name: "NOMAD",
     hasHistory: true,
     logo: {
       href: "/assets/operators/nomad.svg",
@@ -88,7 +88,7 @@ const operators: Operator[] = [
     issues: [],
   },
   {
-    id: "TNVS",
+    id: "SNGO",
     name: "SNgo! - Transdev Normandie Val de Seine",
     hasHistory: true,
     logo: {
