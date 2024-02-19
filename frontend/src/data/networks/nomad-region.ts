@@ -5,7 +5,7 @@ const nomadRegionRoutes: Route[] = [
     id: "NOMAD-216",
     mapOnly: true,
     name: "216",
-    colors: { background: "#4A2999", text: "#FAFAFA" },
+    colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
       {
         id: ["VERNEUIL D'AVRE ET D'ITON"],
@@ -174,6 +174,48 @@ const nomadRegionRoutes: Route[] = [
             text: "423",
           },
           pages: [{ font: "1507SUPX", text: "BAGNOLES DE L'ORNE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD-424",
+    mapOnly: true,
+    name: "424",
+    colors: { background: "#4A2999", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ARGENTAN"],
+        autoHide: true,
+        alternate: "Argentan",
+        name: "Gare SNCF",
+        city: "ARGENTAN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#4A2999",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "424",
+          },
+          pages: [{ font: "1508SUPX", text: "ARGENTAN" }],
+        },
+      },
+      {
+        id: ["FLERS"],
+        autoHide: true,
+        alternate: "Flers",
+        name: "Gare SNCF",
+        city: "FLERS",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#4A2999",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "424",
+          },
+          pages: [{ font: "1508SUPX", text: "FLERS" }],
         },
       },
     ],
