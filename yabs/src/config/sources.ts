@@ -91,6 +91,16 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'NOMAD',
       staticResourceHref: 'https://gtfs.kevinbioj.fr/nomad.zip',
+      getOperator: () => 'NOMAD',
+    },
+  },
+  {
+    id: 'NOMAD-GEO3D',
+    refreshCron: '15 * * * * * ',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'NOMAD-GEO3D',
+      staticResourceHref: 'https://gtfs.kevinbioj.fr/nomad-geo3d.zip',
       tripUpdateHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       filters: { scheduled: () => false },

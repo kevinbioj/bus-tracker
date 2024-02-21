@@ -30,6 +30,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
 
   const [showScheduledTrips] = useLocalStorage("show-scheduled-trips", true);
   const [showNextStops] = useLocalStorage("show-next-stops", true);
+  const [devMode] = useLocalStorage("dev-mode", false);
 
   const { width } = useViewport();
 
@@ -113,7 +114,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                         ]
                     : [
                         {
-                          text: [data.trip.headsign ?? "Destination inconnue", `COURSE:${data.id}`],
+                          text: [data.trip.headsign ?? "Destination inconnue", `${data.trip.id}`],
                         },
                       ]
                 }
@@ -135,6 +136,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                 {dayjs().diff(timestamp, "day") >= 1
                   ? timestamp.format("DD/MM à HH:mm:ss")
                   : timestamp.format("HH:mm:ss")}
+                {devMode && ` / ${data.trip.id}`}
               </span>
               <SatelliteIcon
                 className="h-5 w-5"
