@@ -3787,7 +3787,7 @@ const nomadRegionRoutes: Route[] = [
             text: "206",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -3829,7 +3829,7 @@ const nomadRegionRoutes: Route[] = [
             text: "206",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -3843,7 +3843,7 @@ const nomadRegionRoutes: Route[] = [
             text: "206",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
     ],
@@ -4061,7 +4061,7 @@ const nomadRegionRoutes: Route[] = [
             text: "210",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4089,7 +4089,7 @@ const nomadRegionRoutes: Route[] = [
             text: "210",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4154,7 +4154,7 @@ const nomadRegionRoutes: Route[] = [
             text: "211",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4168,7 +4168,7 @@ const nomadRegionRoutes: Route[] = [
             text: "211",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
     ],
@@ -4191,7 +4191,7 @@ const nomadRegionRoutes: Route[] = [
             text: "212",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4205,7 +4205,7 @@ const nomadRegionRoutes: Route[] = [
             text: "212",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4303,7 +4303,7 @@ const nomadRegionRoutes: Route[] = [
             text: "212",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
     ],
@@ -4340,7 +4340,7 @@ const nomadRegionRoutes: Route[] = [
             text: "213",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
     ],
@@ -4363,7 +4363,7 @@ const nomadRegionRoutes: Route[] = [
             text: "214",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4391,7 +4391,7 @@ const nomadRegionRoutes: Route[] = [
             text: "214",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4405,7 +4405,7 @@ const nomadRegionRoutes: Route[] = [
             text: "214",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4419,7 +4419,7 @@ const nomadRegionRoutes: Route[] = [
             text: "214",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4582,7 +4582,7 @@ const nomadRegionRoutes: Route[] = [
             text: "215",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4596,7 +4596,7 @@ const nomadRegionRoutes: Route[] = [
             text: "215",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -4624,7 +4624,7 @@ const nomadRegionRoutes: Route[] = [
             text: "215",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ÉVREUX" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
       },
       {
@@ -5363,7 +5363,7 @@ const nomadRegionRoutes: Route[] = [
             text: "225",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "BRÉVAL" }],
+          pages: [{ font: "1508SUPX", text: "BREVAL" }],
         },
       },
       {
@@ -6366,7 +6366,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
       {
@@ -6380,7 +6380,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6394,7 +6394,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6408,7 +6408,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6422,7 +6422,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
       {
@@ -6534,7 +6534,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
       {
@@ -6548,7 +6548,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
       {
@@ -6590,7 +6590,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6646,7 +6646,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6767,7 +6767,7 @@ const nomadRegionRoutes: Route[] = [
             text: "404",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6809,7 +6809,7 @@ const nomadRegionRoutes: Route[] = [
             text: "404",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6823,7 +6823,7 @@ const nomadRegionRoutes: Route[] = [
             text: "404",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
       {
@@ -6837,7 +6837,7 @@ const nomadRegionRoutes: Route[] = [
             text: "404",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6851,7 +6851,7 @@ const nomadRegionRoutes: Route[] = [
             text: "404",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6865,7 +6865,7 @@ const nomadRegionRoutes: Route[] = [
             text: "404",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
       {
@@ -6879,7 +6879,7 @@ const nomadRegionRoutes: Route[] = [
             text: "404",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
     ],
@@ -6944,7 +6944,7 @@ const nomadRegionRoutes: Route[] = [
             text: "405",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
     ],
@@ -7144,7 +7144,7 @@ const nomadRegionRoutes: Route[] = [
             text: "407",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
       {
@@ -7232,7 +7232,7 @@ const nomadRegionRoutes: Route[] = [
             text: "409",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "GACÉ" }],
+          pages: [{ font: "1508SUPX", text: "GACE" }],
         },
       },
       {
@@ -7246,7 +7246,7 @@ const nomadRegionRoutes: Route[] = [
             text: "409",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -7316,7 +7316,7 @@ const nomadRegionRoutes: Route[] = [
             text: "409",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "CHAILLOUÉ" }],
+          pages: [{ font: "1508SUPX", text: "CHAILLOUE" }],
         },
       },
       {
@@ -7474,7 +7474,7 @@ const nomadRegionRoutes: Route[] = [
             text: "411",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "GACÉ" }],
+          pages: [{ font: "1508SUPX", text: "GACE" }],
         },
       },
     ],
@@ -7567,7 +7567,7 @@ const nomadRegionRoutes: Route[] = [
             text: "412",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "GACÉ" }],
+          pages: [{ font: "1508SUPX", text: "GACE" }],
         },
       },
       {
@@ -7874,7 +7874,7 @@ const nomadRegionRoutes: Route[] = [
             text: "415",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -7902,7 +7902,7 @@ const nomadRegionRoutes: Route[] = [
             text: "415",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -7916,7 +7916,7 @@ const nomadRegionRoutes: Route[] = [
             text: "415",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
     ],
@@ -7976,7 +7976,7 @@ const nomadRegionRoutes: Route[] = [
             text: "417",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -7990,7 +7990,7 @@ const nomadRegionRoutes: Route[] = [
             text: "417",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -8046,7 +8046,7 @@ const nomadRegionRoutes: Route[] = [
             text: "417",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -8186,7 +8186,7 @@ const nomadRegionRoutes: Route[] = [
             text: "417",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
     ],
@@ -8209,7 +8209,7 @@ const nomadRegionRoutes: Route[] = [
             text: "418",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -8223,7 +8223,7 @@ const nomadRegionRoutes: Route[] = [
             text: "418",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -8237,7 +8237,7 @@ const nomadRegionRoutes: Route[] = [
             text: "418",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BELLÊME" }],
+          pages: [{ font: "1508SUPX", text: "BELLEME" }],
         },
       },
       {
@@ -8279,7 +8279,7 @@ const nomadRegionRoutes: Route[] = [
             text: "418",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ALENÇON" }],
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -8377,7 +8377,7 @@ const nomadRegionRoutes: Route[] = [
             text: "418",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BELLÊME" }],
+          pages: [{ font: "1508SUPX", text: "BELLEME" }],
         },
       },
     ],
@@ -8470,7 +8470,7 @@ const nomadRegionRoutes: Route[] = [
             text: "419",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "BELLÊME" }],
+          pages: [{ font: "1508SUPX", text: "BELLEME" }],
         },
       },
     ],
@@ -8493,7 +8493,7 @@ const nomadRegionRoutes: Route[] = [
             text: "420",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "BELLÊME" }],
+          pages: [{ font: "1508SUPX", text: "BELLEME" }],
         },
       },
       {
@@ -9018,7 +9018,7 @@ const nomadRegionRoutes: Route[] = [
             text: "504",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉTRETAT" }],
+          pages: [{ font: "1508SUPX", text: "ETRETAT" }],
         },
       },
       {
@@ -9227,7 +9227,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9241,7 +9241,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9255,7 +9255,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9269,7 +9269,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9395,7 +9395,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9409,7 +9409,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
     ],
@@ -9432,7 +9432,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉPREVILLE" }],
+          pages: [{ font: "1508SUPX", text: "EPREVILLE" }],
         },
       },
       {
@@ -9558,7 +9558,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9572,7 +9572,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9586,7 +9586,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9600,7 +9600,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9628,7 +9628,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9642,7 +9642,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9670,7 +9670,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9684,7 +9684,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9721,7 +9721,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9735,7 +9735,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9749,7 +9749,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9763,7 +9763,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9777,7 +9777,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9791,7 +9791,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9805,7 +9805,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9819,7 +9819,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9833,7 +9833,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9847,7 +9847,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9861,7 +9861,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9875,7 +9875,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9889,7 +9889,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9931,7 +9931,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
     ],
@@ -9954,7 +9954,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BÉNOUVILLE" }],
+          pages: [{ font: "1508SUPX", text: "BENOUVILLE" }],
         },
       },
       {
@@ -9982,7 +9982,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉCRAINVILLE" }],
+          pages: [{ font: "1508SUPX", text: "ECRAINVILLE" }],
         },
       },
       {
@@ -10145,7 +10145,7 @@ const nomadRegionRoutes: Route[] = [
             text: "510",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
     ],
@@ -10298,7 +10298,7 @@ const nomadRegionRoutes: Route[] = [
             text: "513",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -10661,7 +10661,7 @@ const nomadRegionRoutes: Route[] = [
             text: "516",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LONDINIÈRES" }],
+          pages: [{ font: "1508SUPX", text: "LONDINIERES" }],
         },
       },
       {
@@ -12049,7 +12049,7 @@ const nomadRegionRoutes: Route[] = [
             text: "524",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "VÉNESTANVILLE" }],
+          pages: [{ font: "1508SUPX", text: "VENESTANVILLE" }],
         },
       },
       {
@@ -12407,7 +12407,7 @@ const nomadRegionRoutes: Route[] = [
             text: "529",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "CLÈRES" }],
+          pages: [{ font: "1508SUPX", text: "CLERES" }],
         },
       },
       {
@@ -12686,7 +12686,7 @@ const nomadRegionRoutes: Route[] = [
             text: "532",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "YÉBLERON" }],
+          pages: [{ font: "1508SUPX", text: "YEBLERON" }],
         },
       },
     ],
@@ -13076,7 +13076,7 @@ const nomadRegionRoutes: Route[] = [
             text: "538",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BERNIÈRES" }],
+          pages: [{ font: "1508SUPX", text: "BERNIERES" }],
         },
       },
       {
@@ -13197,7 +13197,7 @@ const nomadRegionRoutes: Route[] = [
             text: "539",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "MÉNERVAL" }],
+          pages: [{ font: "1508SUPX", text: "MENERVAL" }],
         },
       },
       {
@@ -13397,7 +13397,7 @@ const nomadRegionRoutes: Route[] = [
             text: "541",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FÉCAMP" }],
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {

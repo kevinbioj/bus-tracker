@@ -19,10 +19,9 @@ const sources: Source[] = [
       tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
       vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       filters: {
-        scheduled: (trip) => (trip.calendar.id.startsWith('IST') && trip.route !== '06') || trip.route === '529',
+        scheduled: (trip) => trip.calendar.id.startsWith('IST') && trip.route !== '06',
       },
-      getOperator: (trip) =>
-        trip.route === '06' || trip.route === '529' || trip.calendar.id.startsWith('IST') ? 'TNI' : 'TCAR',
+      getOperator: (trip) => (trip.route === '06' || trip.calendar.id.startsWith('IST') ? 'TNI' : 'TCAR'),
       generateShapes: true,
       propagateDelays: true,
     },
@@ -91,6 +90,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'NOMAD',
       staticResourceHref: 'https://gtfs.kevinbioj.fr/nomad.zip',
+      filters: { scheduled: (trip) => trip.route !== '530' },
       getOperator: () => 'NOMAD',
     },
   },
