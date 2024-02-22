@@ -90,7 +90,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'NOMAD',
       staticResourceHref: 'https://gtfs.kevinbioj.fr/nomad.zip',
-      filters: { scheduled: (trip) => trip.route !== '530' },
+      filters: { scheduled: (trip) => trip.route !== 'NOMAD-530' },
       getOperator: () => 'NOMAD',
     },
   },
