@@ -96,7 +96,7 @@ const sources: Source[] = [
   },
   {
     id: 'NOMAD-GEO3D',
-    refreshCron: '15 * * * * * ',
+    refreshCron: '30 * * * * * ',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD-GEO3D',
