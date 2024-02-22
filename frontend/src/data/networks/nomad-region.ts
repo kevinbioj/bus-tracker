@@ -173,7 +173,7 @@ const nomadRegionRoutes: Route[] = [
             font: "1508SUPX",
             text: "423",
           },
-          pages: [{ font: "1507SUPX", text: "BAGNOLES DE L'ORNE" }],
+          pages: [{ font: "1508SUPX", text: "BAGNOLES DE L'ORNE" }],
         },
       },
     ],
@@ -307,7 +307,7 @@ const nomadRegionRoutes: Route[] = [
             font: "1508SUPX",
             text: "527",
           },
-          pages: [{ font: "1507SUPX", text: "MESNIERES-EN-BRAY" }],
+          pages: [{ font: "1508SUPX", text: "MESNIERES-EN-BRAY" }],
         },
       },
     ],
@@ -330,7 +330,7 @@ const nomadRegionRoutes: Route[] = [
             text: "101",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "COURSEULLES-SUR-MER" }],
+          pages: [{ font: "1508SUPX", text: "COURSEULLES-SUR-MER" }],
         },
       },
       {
@@ -386,7 +386,7 @@ const nomadRegionRoutes: Route[] = [
             text: "101",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "DOUVRES LA DELIVRANDE" }],
+          pages: [{ font: "1507SUPX", text: "DOUVRES-LA-DELIVRANDE" }],
         },
       },
       {
@@ -400,7 +400,7 @@ const nomadRegionRoutes: Route[] = [
             text: "101",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "BERNIERES SUR MER" }],
+          pages: [{ font: "1508SUPX", text: "BERNIERES-SUR-MER" }],
         },
       },
       {
@@ -763,7 +763,7 @@ const nomadRegionRoutes: Route[] = [
             text: "103",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "SAINTE CROIX SUR MER" }],
+          pages: [{ font: "1507SUPX", text: "SAINTE-CROIX-SUR-MER" }],
         },
       },
       {
@@ -870,7 +870,7 @@ const nomadRegionRoutes: Route[] = [
             text: "104",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "FONTAINE ETOUPEFOUR" }],
+          pages: [{ font: "1507SUPX", text: "FONTAINE-ETOUPEFOUR" }],
         },
       },
       {
@@ -1005,7 +1005,7 @@ const nomadRegionRoutes: Route[] = [
             text: "105",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "SAINTE HONORINE DU FAY" }],
+          pages: [{ font: "1407SUPX", text: "SAINTE-HONORINE-DU-FAY" }],
         },
       },
       {
@@ -1033,7 +1033,7 @@ const nomadRegionRoutes: Route[] = [
             text: "105",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "BANNEVILLE SUR AJON" }],
+          pages: [{ font: "1507SUPX", text: "BANNEVILLE-SUR-AJON" }],
         },
       },
       {
@@ -1047,7 +1047,7 @@ const nomadRegionRoutes: Route[] = [
             text: "105",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ESQUAY NOTRE DAME" }],
+          pages: [{ font: "1508SUPX", text: "ESQUAY-NOTRE-DAME" }],
         },
       },
       {
@@ -1452,7 +1452,7 @@ const nomadRegionRoutes: Route[] = [
             text: "108",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "CESNY BOIS HALBOUT" }],
+          pages: [{ font: "1508SUPX", text: "CESNY-BOIS-HALBOUT" }],
         },
       },
       {
@@ -1871,7 +1871,7 @@ const nomadRegionRoutes: Route[] = [
             text: "111",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LA RIVIERE SAINT SAUVEUR" }],
+          pages: [{ font: "1407SUPX", text: "LA RIVIERE SAINT-SAUVEUR" }],
         },
       },
       {
@@ -1941,7 +1941,7 @@ const nomadRegionRoutes: Route[] = [
             text: "111",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LA RIVIERE SAINT SAUVEUR" }],
+          pages: [{ font: "1407SUPX", text: "LA RIVIERE SAINT-SAUVEUR" }],
         },
       },
     ],
@@ -2285,7 +2285,7 @@ const nomadRegionRoutes: Route[] = [
             text: "114",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "BRETTEVILLE L'ORGUEILLEUSE" }],
+          pages: [{ font: "1508SUPX", text: "BRETTEVILLE" }],
         },
       },
     ],
@@ -2983,7 +2983,7 @@ const nomadRegionRoutes: Route[] = [
             text: "120",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "SAINTE HONORINE DES PERTES" }],
+          pages: [{ font: "1407SUPX", text: "ST-HONORINE-DES-PERTES" }],
         },
       },
       {
@@ -2997,7 +2997,7 @@ const nomadRegionRoutes: Route[] = [
             text: "120",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "PORT EN BESSIN HUPPAIN" }],
+          pages: [{ font: "1407SUPX", text: "PORT-EN-BESSIN-HUPPAIN" }],
         },
       },
       {
@@ -3011,7 +3011,7 @@ const nomadRegionRoutes: Route[] = [
             text: "120",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "COLLEVILLE SUR MER" }],
+          pages: [{ font: "1508SUPX", text: "COLLEVILLE-SUR-MER" }],
         },
       },
     ],
@@ -3076,7 +3076,7 @@ const nomadRegionRoutes: Route[] = [
             text: "121",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "COURSEULLES SUR MER" }],
+          pages: [{ font: "1507SUPX", text: "COURSEULLES-SUR-MER" }],
         },
       },
       {
@@ -3248,7 +3248,7 @@ const nomadRegionRoutes: Route[] = [
             text: "123",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA RIVIERE SAINT SAUVEUR" }],
+          pages: [{ font: "1407SUPX", text: "LA RIVIERE SAINT-SAUVEUR" }],
         },
       },
       {
@@ -3392,7 +3392,7 @@ const nomadRegionRoutes: Route[] = [
             text: "201",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "HONGUEMARE-GUENOUVILLE" }],
+          pages: [{ font: "1407SUPX", text: "HONGUEMARE-GUENOUVILLE" }],
         },
       },
       {
@@ -3545,7 +3545,7 @@ const nomadRegionRoutes: Route[] = [
             text: "204",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BOURGTHEROULDE-INFREVILLE" }],
+          pages: [{ font: "1508SUPX", text: "BOURGTHEROULDE" }],
         },
       },
       {
@@ -3573,7 +3573,7 @@ const nomadRegionRoutes: Route[] = [
             text: "204",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LE BOSC-ROGER-EN-ROUMOIS" }],
+          pages: [{ font: "1407SUPX", text: "LE BOSC-ROGER-EN-ROUMOIS" }],
         },
       },
       {
@@ -3643,7 +3643,7 @@ const nomadRegionRoutes: Route[] = [
             text: "204",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BOSGUERARD-DE-MARCOUVILLE" }],
+          pages: [{ font: "1508SUPX", text: "BOSGUERARD" }],
         },
       },
     ],
@@ -4117,7 +4117,7 @@ const nomadRegionRoutes: Route[] = [
             text: "210",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "CAILLOUET-ORGEVILLE" }],
+          pages: [{ font: "1507SUPX", text: "CAILLOUET-ORGEVILLE" }],
         },
       },
     ],
@@ -4833,7 +4833,7 @@ const nomadRegionRoutes: Route[] = [
             text: "219",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "SAUSSAY-LA-CAMPAGNE" }],
+          pages: [{ font: "1507SUPX", text: "SAUSSAY-LA-CAMPAGNE" }],
         },
       },
       {
@@ -5028,7 +5028,7 @@ const nomadRegionRoutes: Route[] = [
             text: "222",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LE BOSC-ROGER-EN-ROUMOIS" }],
+          pages: [{ font: "1407SUPX", text: "LE BOSC-ROGER-EN-ROUMOIS" }],
         },
       },
     ],
@@ -5065,7 +5065,7 @@ const nomadRegionRoutes: Route[] = [
             text: "223",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-OUEN-DE-THOUBERVILLE" }],
+          pages: [{ font: "1407SUPX", text: "ST-OUEN-DE-THOUBERVILLE" }],
         },
       },
       {
@@ -5093,7 +5093,7 @@ const nomadRegionRoutes: Route[] = [
             text: "223",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BARNEVILLE-SUR-SEINE" }],
+          pages: [{ font: "1507SUPX", text: "BARNEVILLE-SUR-SEINE" }],
         },
       },
       {
@@ -6204,7 +6204,7 @@ const nomadRegionRoutes: Route[] = [
             text: "309",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "SAINT-HILAIRE-DU-HARCOUET" }],
+          pages: [{ font: "1407SUPX", text: "ST-HILAIRE-DU-HARCOUET" }],
         },
       },
     ],
@@ -6506,7 +6506,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "SAINT-DENIS-SUR-SARTHON" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-DENIS-SUR-SARTHON" }],
         },
       },
       {
@@ -6604,7 +6604,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1507SUPX", text: "LA FERRIERE AUX ETANGS" }],
+          pages: [{ font: "1407SUPX", text: "LA FERRIERE AUX ETANGS" }],
         },
       },
       {
@@ -7065,7 +7065,7 @@ const nomadRegionRoutes: Route[] = [
             text: "406",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-BOMER-LES-FORGES" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-BOMER-LES-FORGES" }],
         },
       },
     ],
@@ -7088,7 +7088,7 @@ const nomadRegionRoutes: Route[] = [
             text: "407",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "SAINT-GEORGES-D'ANNEBECQ" }],
+          pages: [{ font: "1507SUPX", text: "ST-GEORGES-D'ANNEBECQ" }],
         },
       },
       {
@@ -7185,7 +7185,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ARGENTAN / OCCAGNES / FALAISE"],
+        id: ["ARGENTAN / OCCAGNES / FALAISE", "ARGENTANT-OCCAGNES-FALAISE"],
         name: "FALAISE",
         girouette: {
           routeNumber: {
@@ -7196,20 +7196,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "FALAISE" }],
-        },
-      },
-      {
-        id: ["ARGENTANT-OCCAGNES-FALAISE"],
-        name: "ARGENTANT-OCCAGNES-FALAISE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f87479",
-            textColor: "#000000",
-            text: "408",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ARGENTANT-OCCAGNES-FALAISE" }],
         },
       },
     ],
@@ -7581,7 +7567,7 @@ const nomadRegionRoutes: Route[] = [
             text: "412",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "SAINTE-GAUBURGE-SAINTE-COLOMBE" }],
+          pages: [{ text: ["SAINTE-GAUBURGE", "SAINTE-COLOMBE"] }],
         },
       },
     ],
@@ -7781,7 +7767,7 @@ const nomadRegionRoutes: Route[] = [
             text: "414",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "SAINT-LANGIS-LES-MORTAGNE" }],
+          pages: [{ font: "1407SUPX", text: "ST-LANGIS-LES-MORTAGNE" }],
         },
       },
     ],
@@ -8172,7 +8158,7 @@ const nomadRegionRoutes: Route[] = [
             text: "417",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LA CHAPELLE-MONTLIGEON" }],
+          pages: [{ font: "1407SUPX", text: "LA CHAPELLE-MONTLIGEON" }],
         },
       },
       {
@@ -8739,7 +8725,7 @@ const nomadRegionRoutes: Route[] = [
             text: "501",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "CRASVILLE-LA-R" }],
+          pages: [{ font: "1407SUPX", text: "CRASVILLE-LA-ROCQUEFORT" }],
         },
       },
       {
@@ -8837,7 +8823,7 @@ const nomadRegionRoutes: Route[] = [
             text: "501",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ST-PIERRE-LE-VIEUX" }],
+          pages: [{ font: "1507SUPX", text: "ST-PIERRE-LE-VIEUX" }],
         },
       },
       {
@@ -8911,7 +8897,7 @@ const nomadRegionRoutes: Route[] = [
             text: "503",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-CAUX" }],
         },
       },
       {
@@ -9092,7 +9078,7 @@ const nomadRegionRoutes: Route[] = [
             text: "506",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-CAUX" }],
         },
       },
       {
@@ -9120,7 +9106,7 @@ const nomadRegionRoutes: Route[] = [
             text: "506",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "NOTRE-DAME-DE-GRAVENCHON" }],
+          pages: [{ font: "1507SUPX", text: "N.-D.-DE-GRAVENCHON" }],
         },
       },
       {
@@ -9283,7 +9269,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "AUBERVILLE-LA-R" }],
+          pages: [{ font: "1407SUPX", text: "AUBERVILLE-LA-RENAULT" }],
         },
       },
       {
@@ -9325,7 +9311,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BRETTEVILLE-DU-GRAND-CAUX" }],
+          pages: [{ font: "1508SUPX", text: "BRETTEVILLE" }],
         },
       },
       {
@@ -9353,7 +9339,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "VATTETOT-SOUS-B" }],
+          pages: [{ font: "1407SUPX", text: "VATTETOT-SOUS-BEAUMONT" }],
         },
       },
       {
@@ -9698,7 +9684,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ANGERVILLE-L'ORCHER" }],
+          pages: [{ font: "1507SUPX", text: "ANGERVILLE-L'ORCHER" }],
         },
       },
     ],
@@ -9903,7 +9889,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "VATTETOT-SUR-M" }],
+          pages: [{ font: "1508SUPX", text: "VATTETOT-SUR-MER" }],
         },
       },
       {
@@ -9996,7 +9982,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "GONNEVILLE-LA-MALLET" }],
+          pages: [{ font: "1507SUPX", text: "GONNEVILLE-LA-MALLET" }],
         },
       },
       {
@@ -10052,7 +10038,7 @@ const nomadRegionRoutes: Route[] = [
             text: "509",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "VATTETOT-SUR-M" }],
+          pages: [{ font: "1508SUPX", text: "VATTETOT-SUR-MER" }],
         },
       },
       {
@@ -10233,7 +10219,7 @@ const nomadRegionRoutes: Route[] = [
             text: "512",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "PERRIERS-SUR-A" }],
+          pages: [{ font: "1507SUPX", text: "PERRIERS-SUR-ANDELLE" }],
         },
       },
       {
@@ -10261,7 +10247,7 @@ const nomadRegionRoutes: Route[] = [
             text: "512",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "PERRIERS-SUR-A" }],
+          pages: [{ font: "1507SUPX", text: "PERRIERS-SUR-ANDELLE" }],
         },
       },
       {
@@ -10275,7 +10261,7 @@ const nomadRegionRoutes: Route[] = [
             text: "512",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "FRANQUEVILLE-ST-PIERRE" }],
+          pages: [{ font: "1407SUPX", text: "FRANQUEVILLE-ST-PIERRE" }],
         },
       },
     ],
@@ -10312,7 +10298,7 @@ const nomadRegionRoutes: Route[] = [
             text: "513",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-VALERY-EN-CAUX" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
         },
       },
     ],
@@ -10335,7 +10321,7 @@ const nomadRegionRoutes: Route[] = [
             text: "514",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-VALERY-EN-CAUX" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
         },
       },
       {
@@ -10386,7 +10372,7 @@ const nomadRegionRoutes: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-AUBIN-SUR-S" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
       {
@@ -10400,7 +10386,7 @@ const nomadRegionRoutes: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA CHAPELLE-DU-BOURGAY" }],
+          pages: [{ font: "1407SUPX", text: "LA CHAPELLE-DU-BOURGAY" }],
         },
       },
       {
@@ -10456,7 +10442,7 @@ const nomadRegionRoutes: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA CHAPELLE-DU-BOURGAY" }],
+          pages: [{ font: "1407SUPX", text: "LA CHAPELLE-DU-BOURGAY" }],
         },
       },
       {
@@ -10470,7 +10456,7 @@ const nomadRegionRoutes: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-AUBIN-SUR-S" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
       {
@@ -10554,7 +10540,7 @@ const nomadRegionRoutes: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "TOURVILLE-SUR-ARQUES" }],
+          pages: [{ font: "1507SUPX", text: "TOURVILLE-SUR-ARQUES" }],
         },
       },
       {
@@ -10582,7 +10568,7 @@ const nomadRegionRoutes: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "MONTREUIL-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "MONTREUIL-EN-CAUX" }],
         },
       },
     ],
@@ -10605,7 +10591,7 @@ const nomadRegionRoutes: Route[] = [
             text: "516",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ST-OUEN-SOUS-BAILLY" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-OUEN-SOUS-BAILLY" }],
         },
       },
       {
@@ -10619,7 +10605,7 @@ const nomadRegionRoutes: Route[] = [
             text: "516",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "BAILLY-EN-R" }],
+          pages: [{ font: "1508SUPX", text: "BAILLY-EN-RIVIERE" }],
         },
       },
       {
@@ -10717,7 +10703,7 @@ const nomadRegionRoutes: Route[] = [
             text: "516",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ST-AUBIN-SUR-S" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
       {
@@ -10773,7 +10759,7 @@ const nomadRegionRoutes: Route[] = [
             text: "516",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ST-AUBIN-SUR-S" }],
+          pages: [{ font: "1508SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
     ],
@@ -10810,7 +10796,7 @@ const nomadRegionRoutes: Route[] = [
             text: "517",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BELLEVILLE-SUR-M" }],
+          pages: [{ font: "1508SUPX", text: "BELLEVILLE-SUR-MER" }],
         },
       },
       {
@@ -10866,7 +10852,7 @@ const nomadRegionRoutes: Route[] = [
             text: "517",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-MARTIN-EN-C" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-MARTIN-EN-CAUX" }],
         },
       },
       {
@@ -10964,7 +10950,7 @@ const nomadRegionRoutes: Route[] = [
             text: "517",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-AUBIN-SUR-S" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
     ],
@@ -11043,7 +11029,7 @@ const nomadRegionRoutes: Route[] = [
             text: "518",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-AUBIN-SUR-S" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
       {
@@ -11178,7 +11164,7 @@ const nomadRegionRoutes: Route[] = [
             text: "519",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BIVILLE-SUR-M" }],
+          pages: [{ font: "1508SUPX", text: "BIVILLE-SUR-MER" }],
         },
       },
       {
@@ -11206,7 +11192,7 @@ const nomadRegionRoutes: Route[] = [
             text: "519",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BIVILLE-SUR-M" }],
+          pages: [{ font: "1508SUPX", text: "BIVILLE-SUR-MER" }],
         },
       },
       {
@@ -11220,7 +11206,7 @@ const nomadRegionRoutes: Route[] = [
             text: "519",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "CRIEL-SUR-M" }],
+          pages: [{ font: "1508SUPX", text: "CRIEL-SUR-MER" }],
         },
       },
       {
@@ -11299,7 +11285,7 @@ const nomadRegionRoutes: Route[] = [
             text: "520",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1507SUPX", text: "NEUFCHATEL-EN-BRAY" }],
+          pages: [{ font: "1508SUPX", text: "NEUFCHATEL-EN-BRAY" }],
         },
       },
       {
@@ -11313,7 +11299,7 @@ const nomadRegionRoutes: Route[] = [
             text: "520",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-GEORGES-SUR-F" }],
+          pages: [{ font: "1407SUPX", text: "ST-GEORGES-SUR-FONTAINE" }],
         },
       },
       {
@@ -11425,7 +11411,7 @@ const nomadRegionRoutes: Route[] = [
             text: "520",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FONTAINE-LE-B" }],
+          pages: [{ font: "1508SUPX", text: "FONTAINE-LE-BOURG" }],
         },
       },
       {
@@ -11467,7 +11453,7 @@ const nomadRegionRoutes: Route[] = [
             text: "520",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-MARTIN-O" }],
+          pages: [{ font: "1507SUPX", text: "ST-MARTIN-OSMONVILLE" }],
         },
       },
       {
@@ -11569,7 +11555,7 @@ const nomadRegionRoutes: Route[] = [
             text: "522",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "MARTAINVILLE-E" }],
+          pages: [{ font: "1407SUPX", text: "MARTAINVILLE-EPREVILLE" }],
         },
       },
       {
@@ -11583,7 +11569,7 @@ const nomadRegionRoutes: Route[] = [
             text: "522",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "CROISY-SUR-A" }],
+          pages: [{ font: "1508SUPX", text: "CROISY-SUR-ANDELLE" }],
         },
       },
       {
@@ -11597,7 +11583,7 @@ const nomadRegionRoutes: Route[] = [
             text: "522",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-B" }],
+          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
         },
       },
       {
@@ -11611,7 +11597,7 @@ const nomadRegionRoutes: Route[] = [
             text: "522",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "SERVAVILLE-S" }],
+          pages: [{ font: "1407SUPX", text: "SERVAVILLE-SALMONVILLE" }],
         },
       },
       {
@@ -11625,7 +11611,7 @@ const nomadRegionRoutes: Route[] = [
             text: "522",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "SERVAVILLE-S" }],
+          pages: [{ font: "1407SUPX", text: "SERVAVILLE-SALMONVILLE" }],
         },
       },
       {
@@ -11639,7 +11625,7 @@ const nomadRegionRoutes: Route[] = [
             text: "522",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ELBEUF-SUR-A" }],
+          pages: [{ font: "1508SUPX", text: "ELBEUF-SUR-ANDELLE" }],
         },
       },
       {
@@ -11653,7 +11639,7 @@ const nomadRegionRoutes: Route[] = [
             text: "522",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "SERVAVILLE-S" }],
+          pages: [{ font: "1407SUPX", text: "SERVAVILLE-SALMONVILLE" }],
         },
       },
       {
@@ -11746,7 +11732,7 @@ const nomadRegionRoutes: Route[] = [
             text: "523",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-MACLOU-DE-FOLLEVILLE" }],
+          pages: [{ font: "1407SUPX", text: "ST-MACLOU-DE-FOLLEVILLE" }],
         },
       },
       {
@@ -11774,7 +11760,7 @@ const nomadRegionRoutes: Route[] = [
             text: "523",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-VICTOR l'ABBAYE" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-VICTOR-L'ABBAYE" }],
         },
       },
       {
@@ -11788,7 +11774,7 @@ const nomadRegionRoutes: Route[] = [
             text: "523",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST MACLOU DE FOLLEVILLE" }],
+          pages: [{ font: "1407SUPX", text: "ST-MACLOU-DE-FOLLEVILLE" }],
         },
       },
       {
@@ -11858,7 +11844,7 @@ const nomadRegionRoutes: Route[] = [
             text: "523",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-DENIS-SUR-S" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-DENIS-SUR-SCIE" }],
         },
       },
       {
@@ -11937,7 +11923,7 @@ const nomadRegionRoutes: Route[] = [
             text: "524",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BACQUEVILLE-EN-C" }],
+          pages: [{ font: "1507SUPX", text: "BACQUEVILLE-EN-CAUX" }],
         },
       },
       {
@@ -11965,7 +11951,7 @@ const nomadRegionRoutes: Route[] = [
             text: "524",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-AUBIN-SUR-S" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
       {
@@ -12086,7 +12072,7 @@ const nomadRegionRoutes: Route[] = [
             text: "525",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ST-VALERY-EN-CAUX" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
         },
       },
       {
@@ -12249,7 +12235,7 @@ const nomadRegionRoutes: Route[] = [
             text: "526",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-JEAN-DU-CARDONNAY" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-JEAN-DU-CARDONNAY" }],
         },
       },
       {
@@ -12393,7 +12379,7 @@ const nomadRegionRoutes: Route[] = [
             text: "529",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FONTAINE-LE-B" }],
+          pages: [{ font: "1508SUPX", text: "FONTAINE-LE-BOURG" }],
         },
       },
       {
@@ -12528,7 +12514,7 @@ const nomadRegionRoutes: Route[] = [
             text: "530",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-CAUX" }],
         },
       },
       {
@@ -12556,7 +12542,7 @@ const nomadRegionRoutes: Route[] = [
             text: "530",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-CAUX" }],
         },
       },
     ],
@@ -12658,7 +12644,7 @@ const nomadRegionRoutes: Route[] = [
             text: "532",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
         },
       },
       {
@@ -12746,7 +12732,7 @@ const nomadRegionRoutes: Route[] = [
             text: "534",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "TOUFFREVILLE-SUR-EU" }],
+          pages: [{ font: "1507SUPX", text: "TOUFFREVILLE-SUR-EU" }],
         },
       },
       {
@@ -12760,7 +12746,7 @@ const nomadRegionRoutes: Route[] = [
             text: "534",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "CRIEL-SUR-M" }],
+          pages: [{ font: "1508SUPX", text: "CRIEL-SUR-MER" }],
         },
       },
     ],
@@ -12811,7 +12797,7 @@ const nomadRegionRoutes: Route[] = [
             text: "535",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "TOUFFREVILLE-SUR-EU" }],
+          pages: [{ font: "1507SUPX", text: "TOUFFREVILLE-SUR-EU" }],
         },
       },
       {
@@ -12862,7 +12848,7 @@ const nomadRegionRoutes: Route[] = [
             text: "536",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
         },
       },
       {
@@ -12904,7 +12890,7 @@ const nomadRegionRoutes: Route[] = [
             text: "536",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
         },
       },
       {
@@ -12918,7 +12904,7 @@ const nomadRegionRoutes: Route[] = [
             text: "536",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
         },
       },
     ],
@@ -13090,7 +13076,7 @@ const nomadRegionRoutes: Route[] = [
             text: "538",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ANNOUVILLE-VILMESNIL" }],
+          pages: [{ font: "1507SUPX", text: "ANNOUVILLE-VILMESNIL" }],
         },
       },
       {
@@ -13239,7 +13225,7 @@ const nomadRegionRoutes: Route[] = [
             text: "539",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-B" }],
+          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
         },
       },
       {
@@ -13253,7 +13239,7 @@ const nomadRegionRoutes: Route[] = [
             text: "539",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-B" }],
+          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
         },
       },
       {
@@ -13267,7 +13253,7 @@ const nomadRegionRoutes: Route[] = [
             text: "539",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-B" }],
+          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
         },
       },
       {
@@ -13281,7 +13267,7 @@ const nomadRegionRoutes: Route[] = [
             text: "539",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-B" }],
+          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
         },
       },
     ],
@@ -13332,7 +13318,7 @@ const nomadRegionRoutes: Route[] = [
             text: "540",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
         },
       },
       {
@@ -13411,7 +13397,7 @@ const nomadRegionRoutes: Route[] = [
             text: "541",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-PIERRE-EN-PORT" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-PIERRE-EN-PORT" }],
         },
       },
     ],
