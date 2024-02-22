@@ -3973,7 +3973,7 @@ const nomadRegionRoutes: Route[] = [
             text: "208",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉTRÉPAGNY" }],
+          pages: [{ font: "1508SUPX", text: "ETREPAGNY" }],
         },
       },
       {
@@ -4219,7 +4219,7 @@ const nomadRegionRoutes: Route[] = [
             text: "212",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "CONDÉ-SUR-ITON" }],
+          pages: [{ font: "1508SUPX", text: "CONDE-SUR-ITON" }],
         },
       },
       {
@@ -4847,7 +4847,7 @@ const nomadRegionRoutes: Route[] = [
             text: "219",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉTRÉPAGNY" }],
+          pages: [{ font: "1508SUPX", text: "ETREPAGNY" }],
         },
       },
       {
@@ -6604,7 +6604,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERRIÈRE AUX ETANGS" }],
+          pages: [{ font: "1507SUPX", text: "LA FERRIERE AUX ETANGS" }],
         },
       },
       {
@@ -6660,7 +6660,7 @@ const nomadRegionRoutes: Route[] = [
             text: "403",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA SAUVAGÈRE" }],
+          pages: [{ font: "1508SUPX", text: "LA SAUVAGERE" }],
         },
       },
       {
@@ -6902,7 +6902,7 @@ const nomadRegionRoutes: Route[] = [
             text: "405",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ-MACÉ" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE-MACE" }],
         },
       },
       {
@@ -7130,7 +7130,7 @@ const nomadRegionRoutes: Route[] = [
             text: "407",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ÉCOUCHÉ" }],
+          pages: [{ font: "1508SUPX", text: "ECOUCHE" }],
         },
       },
       {
@@ -7618,7 +7618,7 @@ const nomadRegionRoutes: Route[] = [
             text: "413",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA FERTÉ-EN-OUCHE" }],
+          pages: [{ font: "1508SUPX", text: "LA FERTE-EN-OUCHE" }],
         },
       },
       {
@@ -7939,7 +7939,7 @@ const nomadRegionRoutes: Route[] = [
             text: "416",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "SAINT-MAURICE-LÈS-CHARENCEY" }],
+          pages: [{ text: ["SAINT-MAURICE", "LES-CHARENCEY"] }],
         },
       },
       {
@@ -8130,7 +8130,7 @@ const nomadRegionRoutes: Route[] = [
             text: "417",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LE MÊLE" }],
+          pages: [{ font: "1508SUPX", text: "LE MELE" }],
         },
       },
       {
@@ -8456,7 +8456,7 @@ const nomadRegionRoutes: Route[] = [
             text: "419",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LE GUÉ-DE-LA-CHÂINE" }],
+          pages: [{ font: "1508SUPX", text: "LE GUE-DE-LA-CHAINE" }],
         },
       },
       {
@@ -8874,7 +8874,7 @@ const nomadRegionRoutes: Route[] = [
             text: "502",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LE TRÉPORT" }],
+          pages: [{ font: "1508SUPX", text: "LE TREPORT" }],
         },
       },
     ],
@@ -9032,7 +9032,7 @@ const nomadRegionRoutes: Route[] = [
             text: "504",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BRÉAUTÉ" }],
+          pages: [{ font: "1508SUPX", text: "BREAUTE" }],
         },
       },
     ],
@@ -9148,7 +9148,7 @@ const nomadRegionRoutes: Route[] = [
             text: "506",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LA FRÉNAYE" }],
+          pages: [{ font: "1508SUPX", text: "LA FRENAYE" }],
         },
       },
       {
@@ -9311,7 +9311,7 @@ const nomadRegionRoutes: Route[] = [
             text: "507",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BRÉAUTÉ" }],
+          pages: [{ font: "1508SUPX", text: "BREAUTE" }],
         },
       },
       {
@@ -9656,7 +9656,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-SAUVEUR-D'ÉMALLEVILLE" }],
+          pages: [{ text: ["SAINT-SAUVEUR", "D'EMALLEVILLE"] }],
         },
       },
       {
@@ -10312,7 +10312,7 @@ const nomadRegionRoutes: Route[] = [
             text: "513",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-VALÉRY-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "ST-VALERY-EN-CAUX" }],
         },
       },
     ],
@@ -10335,7 +10335,7 @@ const nomadRegionRoutes: Route[] = [
             text: "514",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-VALÉRY-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "ST-VALERY-EN-CAUX" }],
         },
       },
       {
@@ -10512,7 +10512,7 @@ const nomadRegionRoutes: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-SAËNS" }],
+          pages: [{ font: "1508SUPX", text: "ST-SAENS" }],
         },
       },
       {
@@ -10568,7 +10568,7 @@ const nomadRegionRoutes: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LA CHAUSSÉE" }],
+          pages: [{ font: "1508SUPX", text: "LA CHAUSSEE" }],
         },
       },
       {
@@ -11122,7 +11122,7 @@ const nomadRegionRoutes: Route[] = [
             text: "519",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LE TRÉPORT" }],
+          pages: [{ font: "1508SUPX", text: "LE TREPORT" }],
         },
       },
       {
@@ -11136,7 +11136,7 @@ const nomadRegionRoutes: Route[] = [
             text: "519",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "LE TRÉPORT" }],
+          pages: [{ font: "1508SUPX", text: "LE TREPORT" }],
         },
       },
       {
@@ -11299,7 +11299,7 @@ const nomadRegionRoutes: Route[] = [
             text: "520",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "NEUFCHÂTEL-EN-B" }],
+          pages: [{ font: "1507SUPX", text: "NEUFCHATEL-EN-BRAY" }],
         },
       },
       {
@@ -11481,7 +11481,7 @@ const nomadRegionRoutes: Route[] = [
             text: "520",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "ST-SAËNS" }],
+          pages: [{ font: "1508SUPX", text: "ST-SAENS" }],
         },
       },
       {
@@ -11532,7 +11532,7 @@ const nomadRegionRoutes: Route[] = [
             text: "521",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "NEUFCHÂTEL-EN-B" }],
+          pages: [{ font: "1507SUPX", text: "NEUFCHATEL-EN-BRAY" }],
         },
       },
       {
@@ -11569,7 +11569,7 @@ const nomadRegionRoutes: Route[] = [
             text: "522",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "MARTAINVILLE-É" }],
+          pages: [{ font: "1508SUPX", text: "MARTAINVILLE-E" }],
         },
       },
       {
@@ -11872,7 +11872,7 @@ const nomadRegionRoutes: Route[] = [
             text: "523",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "VAL-DE-SAÂNE" }],
+          pages: [{ font: "1508SUPX", text: "VAL-DE-SAANE" }],
         },
       },
       {
@@ -12063,7 +12063,7 @@ const nomadRegionRoutes: Route[] = [
             text: "524",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "SAÂNE-ST-JUST" }],
+          pages: [{ font: "1508SUPX", text: "SAANE-SAINT-JUST" }],
         },
       },
     ],
@@ -12086,7 +12086,7 @@ const nomadRegionRoutes: Route[] = [
             text: "525",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ST-VALÉRY-EN-C" }],
+          pages: [{ font: "1508SUPX", text: "ST-VALERY-EN-CAUX" }],
         },
       },
       {
@@ -12286,7 +12286,7 @@ const nomadRegionRoutes: Route[] = [
             text: "528",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BRÉAUTÉ" }],
+          pages: [{ font: "1508SUPX", text: "BREAUTE" }],
         },
       },
       {
@@ -12328,7 +12328,7 @@ const nomadRegionRoutes: Route[] = [
             text: "528",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1508SUPX", text: "BRÉAUTÉ" }],
+          pages: [{ font: "1508SUPX", text: "BREAUTE" }],
         },
       },
       {
@@ -12955,7 +12955,7 @@ const nomadRegionRoutes: Route[] = [
             text: "537",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "FORGES-LES-E" }],
+          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
         },
       },
       {
@@ -12983,7 +12983,7 @@ const nomadRegionRoutes: Route[] = [
             text: "537",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "FORGES-LES-E" }],
+          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
         },
       },
       {
@@ -12997,7 +12997,7 @@ const nomadRegionRoutes: Route[] = [
             text: "537",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "LE FOSSÉ" }],
+          pages: [{ font: "1508SUPX", text: "LE FOSSE" }],
         },
       },
       {
@@ -13011,7 +13011,7 @@ const nomadRegionRoutes: Route[] = [
             text: "537",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "FORGES-LES-E" }],
+          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
         },
       },
     ],
@@ -13183,7 +13183,7 @@ const nomadRegionRoutes: Route[] = [
             text: "539",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "NEUF-MARCHÉ" }],
+          pages: [{ font: "1508SUPX", text: "NEUF-MARCHE" }],
         },
       },
       {
@@ -13211,7 +13211,7 @@ const nomadRegionRoutes: Route[] = [
             text: "539",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "FERRIÈRES-EN-B" }],
+          pages: [{ font: "1508SUPX", text: "FERRIERES-EN-BRAY" }],
         },
       },
       {
