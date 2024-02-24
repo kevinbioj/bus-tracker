@@ -8,7 +8,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#EB5D4D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["SCHUMAN-DELAVILLE", "SCHUMAN DELAVILLE"],
+        id: ["11", "17", "19"],
         name: "SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#EB5D4D", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
@@ -16,7 +16,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["LES FOURCHES"],
+        id: ["10", "16"],
         name: "LES FOURCHES",
         girouette: {
           routeNumber: { backgroundColor: "#EB5D4D", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
@@ -24,7 +24,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["AMONT QUENTIN"],
+        id: ["15"],
         name: "AMONT QUENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#EB5D4D", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
@@ -40,7 +40,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#E50063", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["COLLIGNON"],
+        id: ["23"],
         name: "COLLIGNON",
         girouette: {
           routeNumber: { backgroundColor: "#E50063", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
@@ -48,7 +48,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["DIGARD"],
+        id: ["21"],
         name: "DIGARD",
         girouette: {
           routeNumber: { backgroundColor: "#E50063", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
@@ -64,7 +64,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#9E5049", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["EGLANTINE CHATEAU"],
+        id: ["30"],
         name: "EGLANTINE CHATEAU",
         girouette: {
           routeNumber: { backgroundColor: "#9E5049", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
@@ -72,7 +72,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["BRECOURT"],
+        id: ["31"],
         name: "BRECOURT",
         girouette: {
           routeNumber: { backgroundColor: "#9E5049", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
@@ -88,7 +88,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#F39200", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["LA GLACERIE MARETTES"],
+        id: ["46"],
         name: "LA GLACERIE MARETTES",
         girouette: {
           routeNumber: { backgroundColor: "#F39200", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
@@ -96,7 +96,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["SCHUMAN"],
+        id: ["44"],
         name: "SCHUMAN",
         girouette: {
           routeNumber: { backgroundColor: "#F39200", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
@@ -104,7 +104,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["AMFREVILLE"],
+        id: ["42"],
         name: "AMFREVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#F39200", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
@@ -120,7 +120,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#F8DA41", text: "#000000" },
     destinations: [
       {
-        id: ["FLAMANDS"],
+        id: ["50"],
         name: "FLAMANDS",
         girouette: {
           routeNumber: { backgroundColor: "#F8DA41", textColor: "#000000", text: "5" },
@@ -128,7 +128,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["AMFREVILLE"],
+        id: ["52"],
         name: "AMFREVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#F8DA41", textColor: "#000000", text: "5" },
@@ -136,7 +136,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["QUERQUEVILLE MAIRIE"],
+        id: ["55"],
         name: "QUERQUEVILLE MAIRIE",
         girouette: {
           routeNumber: { backgroundColor: "#F8DA41", textColor: "#000000", text: "5" },
@@ -144,7 +144,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["CHANTIER-ARSENAL"],
+        id: ["51"],
         name: "CHANTIER-ARSENAL",
         girouette: {
           routeNumber: { backgroundColor: "#F8DA41", textColor: "#000000", text: "5" },
@@ -160,7 +160,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#F5A681", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["SAUXMARAIS"],
+        id: ["61"],
         name: "SAUXMARAIS",
         girouette: {
           routeNumber: { backgroundColor: "#F5A681", textColor: "#FFFFFF", outlineColor: "#000000", text: "6" },
@@ -168,7 +168,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["POLYCLINIQUE"],
+        id: ["60"],
         name: "POLYCLINIQUE",
         girouette: {
           routeNumber: { backgroundColor: "#F5A681", textColor: "#FFFFFF", outlineColor: "#000000", text: "6" },
@@ -184,7 +184,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#F195BF", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["SCHUMAN-DELAVILLE"],
+        id: ["70"],
         name: "SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#F195BF", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
@@ -192,7 +192,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["COLLEGE ZOLA"],
+        id: ["71"],
         name: "COLLEGE ZOLA",
         girouette: {
           routeNumber: { backgroundColor: "#F195BF", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
@@ -208,7 +208,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#58529E", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE"],
+        id: ["606"],
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#58529E", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
@@ -216,7 +216,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["CAP DE LA HAGUE"],
+        id: ["605"],
         name: "CAP DE LA HAGUE",
         girouette: {
           routeNumber: { backgroundColor: "#58529E", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
@@ -224,7 +224,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["LA HAGUE ORANO"],
+        id: ["603", "604"],
         name: "LA HAGUE ORANO",
         girouette: {
           routeNumber: { backgroundColor: "#58529E", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
@@ -240,7 +240,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#1EB8D1", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE"],
+        id: ["615", "616"],
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#1EB8D1", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
@@ -248,7 +248,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["SIOUVILLE PLACE DES TAMARIS"],
+        id: ["613"],
         name: "SIOUVILLE PLACE DES TAMARIS",
         girouette: {
           routeNumber: { backgroundColor: "#1EB8D1", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
@@ -256,7 +256,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["FLAMANVILLE EPR/CNPE ENTREE NORD"],
+        id: ["614"],
         name: "FLAMANVILLE EPR/CNPE ENTREE NORD",
         girouette: {
           routeNumber: { backgroundColor: "#1EB8D1", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
@@ -272,7 +272,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#86B5E2", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE"],
+        id: ["625"],
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#86B5E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C" },
@@ -280,7 +280,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["VALOGNES GARE SNCF"],
+        id: ["622"],
         name: "VALOGNES GARE SNCF",
         girouette: {
           routeNumber: { backgroundColor: "#86B5E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C" },
@@ -288,7 +288,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["BARFLEUR MAIRIE"],
+        id: ["624"],
         name: "BARFLEUR MAIRIE",
         girouette: {
           routeNumber: { backgroundColor: "#86B5E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C" },
@@ -296,7 +296,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["SAINT PIERRE EGLISE PLACE CENTRALE"],
+        id: ["623"],
         name: "SAINT PIERRE EGLISE PLACE CENTRALE",
         girouette: {
           routeNumber: { backgroundColor: "#86B5E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C" },
@@ -312,7 +312,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#107974", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE"],
+        id: ["633"],
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#107974", textColor: "#FFFFFF", outlineColor: "#000000", text: "D" },
@@ -320,7 +320,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["MONTEBOURG PLACE ALBERT PELERIN"],
+        id: ["634"],
         name: "MONTEBOURG PLACE ALBERT PELERIN",
         girouette: {
           routeNumber: { backgroundColor: "#107974", textColor: "#FFFFFF", outlineColor: "#000000", text: "D" },
@@ -336,7 +336,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#47B7A2", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE"],
+        id: ["643"],
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#47B7A2", textColor: "#FFFFFF", outlineColor: "#000000", text: "E" },
@@ -344,7 +344,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["BRICQUEBEC EN COTENTIN COLLEGE"],
+        id: ["644"],
         name: "BRICQUEBEC EN COTENTIN COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#47B7A2", textColor: "#FFFFFF", outlineColor: "#000000", text: "E" },
@@ -360,7 +360,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#9774B1", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["LES PIEUX PLACE DE LA LANDE"],
+        id: ["653"],
         name: "LES PIEUX PLACE DE LA LANDE",
         girouette: {
           routeNumber: { backgroundColor: "#9774B1", textColor: "#FFFFFF", outlineColor: "#000000", text: "F" },
@@ -368,7 +368,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["VALOGNES PLACE FELIX BUHOT"],
+        id: ["654"],
         name: "VALOGNES PLACE FELIX BUHOT",
         girouette: {
           routeNumber: { backgroundColor: "#9774B1", textColor: "#FFFFFF", outlineColor: "#000000", text: "F" },
@@ -376,11 +376,11 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["BARNEVILLE CARTERET MAIRIE"],
+        id: ["655"],
         name: "BARNEVILLE CARTERET MAIRIE",
         girouette: {
           routeNumber: { backgroundColor: "#9774B1", textColor: "#FFFFFF", outlineColor: "#000000", text: "F" },
-          pages: [{ text: "BARNEVILLE" }, { font: "1508C2E1", textSpacing: 3, text: "CARTERET MAIRIE" }],
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "BARNEVILLE-CARTERET MAIRIE" }],
         },
       },
     ],
@@ -392,7 +392,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#C2DDB3", text: "#000000" },
     destinations: [
       {
-        id: ["VALOGNES Z.A. ARMANVILLE"],
+        id: ["663"],
         name: "VALOGNES Z.A. ARMANVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#C2DDB3", textColor: "#000000", text: "G" },
@@ -400,7 +400,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["PORTBAIL RUE LECHEVALIER"],
+        id: ["664"],
         name: "PORTBAIL RUE LECHEVALIER",
         girouette: {
           routeNumber: { backgroundColor: "#C2DDB3", textColor: "#000000", text: "G" },
@@ -416,7 +416,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#29235C", text: "#FFDE00" },
     destinations: [
       {
-        id: ["EGLANTINE CHATEAU-LA GLACERIE"],
+        id: ["401"],
         name: "EGLANTINE CHATEAU-LA GLACERIE",
         girouette: {
           routeNumber: { backgroundColor: "#29235C", textColor: "#FFDE00", outlineColor: "#000000", text: "N1" },
@@ -424,11 +424,11 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["HOTEL DE VILLE"],
-        name: "HOTEL DE VILLE",
+        id: ["400"],
+        name: "SCHUMAN",
         girouette: {
           routeNumber: { backgroundColor: "#29235C", textColor: "#FFDE00", outlineColor: "#000000", text: "N1" },
-          pages: [{ text: "HOTEL DE VILLE" }],
+          pages: [{ text: "SCHUMAN" }],
         },
       },
     ],
@@ -440,7 +440,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#29235C", text: "#FFDE00" },
     destinations: [
       {
-        id: ["HOTEL DE VILLE"],
+        id: ["400"],
         name: "HOTEL DE VILLE",
         girouette: {
           routeNumber: { backgroundColor: "#29235C", textColor: "#FFDE00", outlineColor: "#000000", text: "N2" },
@@ -448,7 +448,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["LES MOURETS"],
+        id: ["402"],
         name: "LES MOURETS",
         girouette: {
           routeNumber: { backgroundColor: "#29235C", textColor: "#FFDE00", outlineColor: "#000000", text: "N2" },
@@ -464,15 +464,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["BARNEVILLE CARTERET"],
-        name: "BARNEVILLE CARTERET",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S1" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "BARNEVILLE-CARTERET" }],
-        },
-      },
-      {
-        id: ["BARNEVILLE CARTERET LE VALNOTTE"],
+        id: ["702"],
         name: "BARNEVILLE CARTERET LE VALNOTTE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S1" },
@@ -480,7 +472,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["VALOGNES PLACE FELIX BUHOT"],
+        id: ["701"],
         name: "VALOGNES PLACE FELIX BUHOT",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S1" },
@@ -496,7 +488,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["BRICQUEBEC EN COTENTIN COLLEGE"],
+        id: ["703"],
         name: "BRICQUEBEC EN COTENTIN COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S2" },
@@ -504,7 +496,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["SAINT SAUVEUR LE VICOMTE COLLEGE"],
+        id: ["704"],
         name: "SAINT SAUVEUR LE VICOMTE COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S2" },
@@ -520,7 +512,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["VALOGNES COLLEGE"],
+        id: ["705"],
         name: "VALOGNES COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S3" },
@@ -528,7 +520,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["EMONDEVILLE LE COUP DE FREIN"],
+        id: ["706"],
         name: "EMONDEVILLE LE COUP DE FREIN",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S3" },
@@ -536,7 +528,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["QUINEVILLE LA POSTE"],
+        id: ["707"],
         name: "QUINEVILLE LA POSTE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S3" },
@@ -552,7 +544,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN COLLEGE DIDEROT"],
+        id: ["708"],
         name: "CHERBOURG EN COTENTIN COLLEGE DIDEROT",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S4" },
@@ -560,7 +552,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["CRASVILLE LE BAS"],
+        id: ["709"],
         name: "CRASVILLE LE BAS",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S4" },
@@ -576,15 +568,15 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN IUT"],
-        name: "CHERBOURG EN COTENTIN IUT",
+        id: ["710"],
+        name: "CAMPUS-ARAGON",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S5" },
-          pages: [{ font: "1510N2E1", text: "CHERBOURG IUT" }],
+          pages: [{ text: "CHERBOURG" }, { text: "CAMPUS-ARAGON" }],
         },
       },
       {
-        id: ["MONTFARVILLE MAIRIE"],
+        id: ["714"],
         name: "MONTFARVILLE MAIRIE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S5" },
@@ -592,7 +584,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["REVILLE EGLISE"],
+        id: ["713"],
         name: "REVILLE EGLISE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S5" },
@@ -600,7 +592,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["SAINT PIERRE EGLISE PLACE CENTRALE"],
+        id: ["712"],
         name: "SAINT PIERRE EGLISE PLACE CENTRALE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S5" },
@@ -608,11 +600,11 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["CHERBOURG EN COTENTIN LYCEE DOUCET"],
-        name: "CHERBOURG EN COTENTIN LYCEE DOUCET",
+        id: ["711"],
+        name: "CHERBOURG EN COTENTIN HUIT MAI",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S5" },
-          pages: [{ text: "CHERBOURG" }, { text: "LYCEE DOUCET" }],
+          pages: [{ text: "CHERBOURG" }, { text: "HUIT MAI" }],
         },
       },
     ],
@@ -624,7 +616,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN QUAI COLLINS"],
+        id: ["715"],
         name: "CHERBOURG EN COTENTIN QUAI COLLINS",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S6" },
@@ -632,7 +624,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["GATTEVILLE LE PHARE RTE DU VAL DE SAIRE"],
+        id: ["716"],
         name: "GATTEVILLE LE PHARE RTE DU VAL DE SAIRE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S6" },
@@ -648,7 +640,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["SAINT PIERRE EGLISE ECOLE ELEMENTAIRE"],
+        id: ["717"],
         name: "SAINT PIERRE EGLISE ECOLE ELEMENTAIRE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S7" },
@@ -659,7 +651,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["CLITOURPS EGLISE"],
+        id: ["719"],
         name: "CLITOURPS EGLISE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S7" },
@@ -667,7 +659,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["SAINT PIERRE EGLISE COLLEGE"],
+        id: ["718"],
         name: "SAINT PIERRE EGLISE COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S7" },
@@ -683,7 +675,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["SAINT PIERRE EGLISE ECOLE ELEMENTAIRE"],
+        id: ["720"],
         name: "SAINT PIERRE EGLISE ECOLE ELEMENTAIRE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S8" },
@@ -694,7 +686,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["LE THEIL LES ECOLES"],
+        id: ["722"],
         name: "LE THEIL LES ECOLES",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S8" },
@@ -702,7 +694,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["SAINT PIERRE EGLISE COLLEGE"],
+        id: ["721"],
         name: "SAINT PIERRE EGLISE COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S8" },
@@ -718,7 +710,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["BRICQUEBEC EN COTENTIN COLLEGE"],
+        id: ["723"],
         name: "BRICQUEBEC EN COTENTIN COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S9" },
@@ -726,7 +718,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["FIERVILLE LES MINES LA PLACE"],
+        id: ["724"],
         name: "FIERVILLE LES MINES LA PLACE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S9" },
@@ -742,15 +734,15 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN LYCEE DOUCET"],
-        name: "CHERBOURG EN COTENTIN LYCEE DOUCET",
+        id: ["725"],
+        name: "CHERBOURG EN COTENTIN HUIT MAI",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S10" },
-          pages: [{ text: "CHERBOURG" }, { text: "LYCEE DOUCET" }],
+          pages: [{ text: "CHERBOURG" }, { text: "HUIT MAI" }],
         },
       },
       {
-        id: ["GROSVILLE MAIRIE"],
+        id: ["726"],
         name: "GROSVILLE MAIRIE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S10" },
@@ -766,7 +758,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["LA HAGUE COLLEGE"],
+        id: ["727"],
         name: "LA HAGUE COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S11" },
@@ -774,7 +766,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["BIVILLE LA CROIX FRIMOT"],
+        id: ["728"],
         name: "BIVILLE LA CROIX FRIMOT",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S11" },
@@ -790,7 +782,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["BRICQUEBEC EN COTENTIN COLLEGE"],
+        id: ["729"],
         name: "BRICQUEBEC EN COTENTIN COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S12" },
@@ -798,7 +790,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["HELLEVILLE ECOLE"],
+        id: ["730"],
         name: "HELLEVILLE ECOLE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S12" },
@@ -814,7 +806,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN SCHUMAN"],
+        id: ["731"],
         name: "CHERBOURG EN COTENTIN SCHUMAN",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S13" },
@@ -822,7 +814,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["PORTBAIL RUE LECHEVALIER"],
+        id: ["732"],
         name: "PORTBAIL RUE LECHEVALIER",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S13" },
@@ -838,7 +830,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
       {
-        id: ["CHERBOURG EN COTENTIN SCHUMAN"],
+        id: ["733"],
         name: "CHERBOURG EN COTENTIN SCHUMAN",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S14" },
@@ -846,7 +838,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["MONTEBOURG PLACE ALBERT PELERIN"],
+        id: ["734"],
         name: "MONTEBOURG PLACE ALBERT PELERIN",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S14" },
@@ -862,7 +854,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["TOCQUEVILLE/SAUXMARAIS"],
+        id: ["200", "201", "202", "204", "205"],
         name: "TOCQUEVILLE/SAUXMARAIS",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D1" },
@@ -870,7 +862,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["VINDITS VIA DIGARD"],
+        id: ["206"],
         name: "VINDITS VIA DIGARD",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D1" },
@@ -878,11 +870,11 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["BOCAGE"],
+        id: ["207"],
         name: "BOCAGE",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D1" },
-          pages: [{ text: "BOCAGE" }],
+          pages: [{ text: "LE BOCAGE" }],
         },
       },
     ],
@@ -894,7 +886,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["MILLET/IUT"],
+        id: ["210", "211", "213"],
         name: "MILLET/IUT",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D2" },
@@ -902,7 +894,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["QUERQUEVILLE MAIRIE PAR LA MARCHE"],
+        id: ["214"],
         name: "QUERQUEVILLE MAIRIE PAR LA MARCHE",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D2" },
@@ -910,11 +902,11 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["A. THOMAS"],
-        name: "A. THOMAS",
+        id: ["215"],
+        name: "ALBERT THOMAS",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D2" },
-          pages: [{ text: "A. THOMAS" }],
+          pages: [{ text: "ALBERT THOMAS" }],
         },
       },
     ],
@@ -926,7 +918,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["HAMEAU PHARES"],
+        id: ["223"],
         name: "HAMEAU PHARES",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D3" },
@@ -942,7 +934,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["COLLEGE FERRY"],
+        id: ["230"],
         name: "COLLEGE FERRY",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D4" },
@@ -950,7 +942,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["TERRASSES"],
+        id: ["231"],
         name: "TERRASSES",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D4" },
@@ -966,7 +958,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["COLLEGE DIDEROT"],
+        id: ["270"],
         name: "COLLEGE DIDEROT",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D6" },
@@ -974,52 +966,11 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["EGLANTINE CHATEAU VIA BECQUET"],
+        id: ["271"],
         name: "EGLANTINE CHATEAU VIA BECQUET",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D6" },
           pages: [{ text: ["EGLANTINE CHATEAU", "VIA BECQUET"] }],
-        },
-      },
-    ],
-  },
-  {
-    id: "CAPCOT-SCO6",
-    mapOnly: true,
-    name: "SCO6",
-    colors: { background: "#D34536", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["COLLEGE DIDEROT"],
-        name: "COLLEGE DIDEROT",
-        girouette: {
-          routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D6" },
-          pages: [{ font: "1510N2E1", text: "COLLEGE DIDEROT" }],
-        },
-      },
-      {
-        id: ["EGLANTINE CHATEAU VIA BECQUET"],
-        name: "EGLANTINE CHATEAU VIA BECQUET",
-        girouette: {
-          routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D6" },
-          pages: [{ text: ["EGLANTINE CHATEAU", "VIA BECQUET"] }],
-        },
-      },
-    ],
-  },
-  {
-    id: "CAPCOT-822",
-    mapOnly: true,
-    noCartridge: true,
-    name: "Cherbourg / Rennes",
-    colors: { background: "#FFFFFF", text: "#000000" },
-    destinations: [
-      {
-        id: [""],
-        name: "RENNES / CHERBOURG",
-        girouette: {
-          routeNumber: { font: "1510N2E1", textColor: "#FF6A00", text: "REN" },
-          pages: [{ font: "1510N2E1", text: "NES / CHERBOURG" }],
         },
       },
     ],

@@ -140,7 +140,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'CAPCOT',
       routePrefix: 'CAPCOT',
-      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/2e97c9b3-a59f-42dd-9b9e-a232fa771f21',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       getOperator: () => 'CAPCOT',
