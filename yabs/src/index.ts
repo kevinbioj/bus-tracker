@@ -60,7 +60,14 @@ function handleGetVehicles(_: FastifyRequest, reply: FastifyReply) {
       route: entry.trip.route,
       direction: entry.trip.direction,
       headsign: entry.trip.headsign,
-      stopTimes: entry.stopTimes,
+      stopTimes: entry.stopTimes.map((stopTime) => ({
+        id: stopTime.id,
+        name: stopTime.name,
+        sequence: stopTime.sequence,
+        timestamp: stopTime.timestamp,
+        delta: stopTime.delta,
+        isRealtime: stopTime.isRealtime,
+      })),
     },
     vehicle: {
       id: entry.vehicle.id,
