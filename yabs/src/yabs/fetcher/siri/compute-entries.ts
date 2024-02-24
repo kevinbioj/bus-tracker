@@ -62,7 +62,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
             : []),
       ];
       return {
-        id: `${properties.id}_VEHICLE_${vehicleLabel}`,
+        id: `${properties.id}:VEH:${vehicleLabel}`,
         source: properties.id,
         trip: {
           id: parseSiriRef(vehicle.MonitoredVehicleJourney.FramedVehicleJourneyRef.DatedVehicleJourneyRef),
@@ -70,7 +70,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
           direction: +vehicle.MonitoredVehicleJourney.DirectionName - 1,
           headsign: vehicle.MonitoredVehicleJourney.DestinationName,
           route: properties.prefix
-            ? `${properties.prefix}-${parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef)}`
+            ? `${properties.prefix}:${parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef)}`
             : parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef),
         },
         vehicle: {

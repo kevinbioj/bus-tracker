@@ -99,12 +99,12 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
     }
 
     return {
-      id: `${properties.id}_${trip.id}`,
+      id: `${properties.id}:JOU:${trip.block ?? trip.id}`,
       stopTimes: stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
       trip: {
         id: trip.id,
         calendar: trip.calendar.id,
-        route: properties.routePrefix ? `${properties.routePrefix}-${trip.route}` : trip.route,
+        route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
         direction: trip.direction,
         headsign: trip.headsign ?? stopTimes.at(-1)!.name,
       },
@@ -251,16 +251,16 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         }
       }
 
-      const id = vehicleId ? `VEHICLE_${vehicleId}` : `TRIP_${trip.block ?? trip.id}`;
+      const id = vehicleId ? `VEH:${vehicleId}` : `JOU:${trip.block ?? trip.id}`;
       entries.set(id, {
-        id: `${properties.id}_${id}`,
+        id: `${properties.id}:${id}`,
         stopTimes: dayjs.unix(currentStopTime.timestamp!).isAfter()
           ? stopTimes
           : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
         trip: {
           id: trip.id,
           calendar: trip.calendar.id,
-          route: properties.routePrefix ? `${properties.routePrefix}-${trip.route}` : trip.route,
+          route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
           direction: trip.direction,
           headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
         },
@@ -378,9 +378,9 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       ? properties.getVehicleNumber(vehicleDescriptor)
       : vehicleDescriptor.label ?? vehicleDescriptor.id;
 
-    const id = vehicleId ? `VEHICLE_${vehicleId}` : `TRIP_${trip.block ?? trip.id}`;
+    const id = vehicleId ? `VEH:${vehicleId}` : `JOU:${trip.block ?? trip.id}`;
     entries.set(id, {
-      id: `${properties.id}_${id}`,
+      id: `${properties.id}:${id}`,
       source: properties.getOperator?.(trip) ?? properties.id,
       stopTimes:
         typeof vehiclePosition.vehicle.currentStopSequence === 'number'
@@ -393,7 +393,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       trip: {
         id: trip.id,
         calendar: trip.calendar.id,
-        route: properties.routePrefix ? `${properties.routePrefix}-${trip.route}` : trip.route,
+        route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
         direction: trip.direction,
         headsign: trip.headsign,
       },

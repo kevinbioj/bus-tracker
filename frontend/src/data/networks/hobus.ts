@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const hobusRoutes: Route[] = [
   {
-    id: "HOBUS-zenbus:Line:363100001:LOC",
+    id: "HOBUS:zenbus:Line:363100001:LOC",
     mapOnly: true,
     noCartridge: true,
     name: "A",
@@ -35,7 +35,7 @@ const hobusRoutes: Route[] = [
     ],
   },
   {
-    id: "HOBUS-zenbus:Line:401040001:LOC",
+    id: "HOBUS:zenbus:Line:401040001:LOC",
     mapOnly: true,
     noCartridge: true,
     name: "B",

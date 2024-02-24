@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const rezobusRoutes: Route[] = [
   {
-    id: "REZOBUS-23",
+    id: "REZOBUS:23",
     mapOnly: true,
     noCartridge: true,
     name: "23",
@@ -19,7 +19,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-24",
+    id: "REZOBUS:24",
     mapOnly: true,
     noCartridge: true,
     name: "24",
@@ -36,7 +36,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-28",
+    id: "REZOBUS:28",
     mapOnly: true,
     noCartridge: true,
     name: "28",
@@ -53,7 +53,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-12",
+    id: "REZOBUS:12",
     mapOnly: true,
     noCartridge: true,
     name: "12",
@@ -70,7 +70,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-03",
+    id: "REZOBUS:03",
     mapOnly: true,
     noCartridge: true,
     name: "03",
@@ -87,7 +87,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-26",
+    id: "REZOBUS:26",
     mapOnly: true,
     noCartridge: true,
     name: "26",
@@ -104,7 +104,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-01",
+    id: "REZOBUS:01",
     mapOnly: true,
     noCartridge: true,
     name: "01",
@@ -121,7 +121,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-11",
+    id: "REZOBUS:11",
     mapOnly: true,
     noCartridge: true,
     name: "11",
@@ -138,7 +138,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-25",
+    id: "REZOBUS:25",
     mapOnly: true,
     noCartridge: true,
     name: "25",
@@ -155,7 +155,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-30",
+    id: "REZOBUS:30",
     mapOnly: true,
     noCartridge: true,
     name: "30",
@@ -172,7 +172,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-14",
+    id: "REZOBUS:14",
     mapOnly: true,
     noCartridge: true,
     name: "14",
@@ -189,7 +189,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-13",
+    id: "REZOBUS:13",
     mapOnly: true,
     noCartridge: true,
     name: "13",
@@ -206,7 +206,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-02",
+    id: "REZOBUS:02",
     mapOnly: true,
     noCartridge: true,
     name: "02",
@@ -223,7 +223,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-21",
+    id: "REZOBUS:21",
     mapOnly: true,
     noCartridge: true,
     name: "21",
@@ -240,7 +240,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-22",
+    id: "REZOBUS:22",
     mapOnly: true,
     noCartridge: true,
     name: "22",
@@ -257,7 +257,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-04",
+    id: "REZOBUS:04",
     mapOnly: true,
     noCartridge: true,
     name: "04",
@@ -274,7 +274,7 @@ const rezobusRoutes: Route[] = [
     ],
   },
   {
-    id: "REZOBUS-27",
+    id: "REZOBUS:27",
     mapOnly: true,
     noCartridge: true,
     name: "27",

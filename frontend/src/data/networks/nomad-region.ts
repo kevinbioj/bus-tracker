@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const nomadRegionRoutes: Route[] = [
   {
-    id: "NOMAD-216",
+    id: "NOMAD:216",
     mapOnly: true,
     name: "216",
     colors: { background: "#4A2999", text: "#FFFFFF" },
@@ -78,7 +78,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-228",
+    id: "NOMAD:228",
     mapOnly: true,
     name: "228",
     colors: { background: "#BA941C", text: "#FFFFFF" },
@@ -137,7 +137,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-423",
+    id: "NOMAD:423",
     mapOnly: true,
     name: "423",
     colors: { background: "#5E8786", text: "#FFFFFF" },
@@ -179,7 +179,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-424",
+    id: "NOMAD:424",
     mapOnly: true,
     name: "424",
     colors: { background: "#4A2999", text: "#FFFFFF" },
@@ -221,7 +221,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-527",
+    id: "NOMAD:527",
     mapOnly: true,
     name: "527",
     colors: { background: "#9E6A9A", text: "#FFFFFF" },
@@ -313,7 +313,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-101R",
+    id: "NOMAD:101R",
     mapOnly: true,
     noCartridge: true,
     name: "101",
@@ -448,7 +448,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-101A",
+    id: "NOMAD:101A",
     mapOnly: true,
     noCartridge: true,
     name: "101",
@@ -555,7 +555,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-102",
+    id: "NOMAD:102",
     mapOnly: true,
     noCartridge: true,
     name: "102",
@@ -634,7 +634,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-103",
+    id: "NOMAD:103",
     mapOnly: true,
     noCartridge: true,
     name: "103",
@@ -797,7 +797,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-104",
+    id: "NOMAD:104",
     mapOnly: true,
     noCartridge: true,
     name: "104",
@@ -918,7 +918,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-105",
+    id: "NOMAD:105",
     mapOnly: true,
     noCartridge: true,
     name: "105",
@@ -1081,7 +1081,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-106",
+    id: "NOMAD:106",
     mapOnly: true,
     noCartridge: true,
     name: "106",
@@ -1244,7 +1244,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-107",
+    id: "NOMAD:107",
     mapOnly: true,
     noCartridge: true,
     name: "107",
@@ -1365,7 +1365,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-108",
+    id: "NOMAD:108",
     mapOnly: true,
     noCartridge: true,
     name: "108",
@@ -1486,7 +1486,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-109",
+    id: "NOMAD:109",
     mapOnly: true,
     noCartridge: true,
     name: "109",
@@ -1551,7 +1551,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-110",
+    id: "NOMAD:110",
     mapOnly: true,
     noCartridge: true,
     name: "110",
@@ -1784,7 +1784,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-111R",
+    id: "NOMAD:111R",
     mapOnly: true,
     noCartridge: true,
     name: "111",
@@ -1947,7 +1947,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-111A",
+    id: "NOMAD:111A",
     mapOnly: true,
     noCartridge: true,
     name: "111",
@@ -2138,7 +2138,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-112",
+    id: "NOMAD:112",
     mapOnly: true,
     noCartridge: true,
     name: "112",
@@ -2175,7 +2175,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-113",
+    id: "NOMAD:113",
     mapOnly: true,
     noCartridge: true,
     name: "113",
@@ -2212,7 +2212,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-114",
+    id: "NOMAD:114",
     mapOnly: true,
     noCartridge: true,
     name: "114",
@@ -2291,7 +2291,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-115",
+    id: "NOMAD:115",
     mapOnly: true,
     noCartridge: true,
     name: "115",
@@ -2426,7 +2426,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-116",
+    id: "NOMAD:116",
     mapOnly: true,
     noCartridge: true,
     name: "116",
@@ -2561,7 +2561,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-117",
+    id: "NOMAD:117",
     mapOnly: true,
     noCartridge: true,
     name: "117",
@@ -2696,7 +2696,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-118",
+    id: "NOMAD:118",
     mapOnly: true,
     noCartridge: true,
     name: "118",
@@ -2747,7 +2747,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-119",
+    id: "NOMAD:119",
     mapOnly: true,
     noCartridge: true,
     name: "119",
@@ -2896,7 +2896,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-120",
+    id: "NOMAD:120",
     mapOnly: true,
     noCartridge: true,
     name: "120",
@@ -3017,7 +3017,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-121",
+    id: "NOMAD:121",
     mapOnly: true,
     noCartridge: true,
     name: "121",
@@ -3152,7 +3152,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-122",
+    id: "NOMAD:122",
     mapOnly: true,
     noCartridge: true,
     name: "122",
@@ -3189,7 +3189,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-123",
+    id: "NOMAD:123",
     mapOnly: true,
     noCartridge: true,
     name: "123",
@@ -3310,7 +3310,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-124",
+    id: "NOMAD:124",
     mapOnly: true,
     noCartridge: true,
     name: "124",
@@ -3361,7 +3361,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-201",
+    id: "NOMAD:201",
     mapOnly: true,
     noCartridge: true,
     name: "201",
@@ -3412,7 +3412,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-202",
+    id: "NOMAD:202",
     mapOnly: true,
     noCartridge: true,
     name: "202",
@@ -3449,7 +3449,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-203",
+    id: "NOMAD:203",
     mapOnly: true,
     noCartridge: true,
     name: "203",
@@ -3500,7 +3500,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-204",
+    id: "NOMAD:204",
     mapOnly: true,
     noCartridge: true,
     name: "204",
@@ -3649,7 +3649,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-205",
+    id: "NOMAD:205",
     mapOnly: true,
     noCartridge: true,
     name: "205",
@@ -3742,7 +3742,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-206",
+    id: "NOMAD:206",
     mapOnly: true,
     noCartridge: true,
     name: "206",
@@ -3849,7 +3849,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-207",
+    id: "NOMAD:207",
     mapOnly: true,
     noCartridge: true,
     name: "207",
@@ -3928,7 +3928,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-208",
+    id: "NOMAD:208",
     mapOnly: true,
     noCartridge: true,
     name: "208",
@@ -3993,7 +3993,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-209",
+    id: "NOMAD:209",
     mapOnly: true,
     noCartridge: true,
     name: "209",
@@ -4030,7 +4030,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-210",
+    id: "NOMAD:210",
     mapOnly: true,
     noCartridge: true,
     name: "210",
@@ -4123,7 +4123,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-211",
+    id: "NOMAD:211",
     mapOnly: true,
     noCartridge: true,
     name: "211",
@@ -4174,7 +4174,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-212",
+    id: "NOMAD:212",
     mapOnly: true,
     noCartridge: true,
     name: "212",
@@ -4309,7 +4309,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-213",
+    id: "NOMAD:213",
     mapOnly: true,
     noCartridge: true,
     name: "213",
@@ -4346,7 +4346,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-214",
+    id: "NOMAD:214",
     mapOnly: true,
     noCartridge: true,
     name: "214",
@@ -4481,7 +4481,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-215",
+    id: "NOMAD:215",
     mapOnly: true,
     noCartridge: true,
     name: "215",
@@ -4672,7 +4672,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-217",
+    id: "NOMAD:217",
     mapOnly: true,
     noCartridge: true,
     name: "217",
@@ -4709,7 +4709,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-218",
+    id: "NOMAD:218",
     mapOnly: true,
     noCartridge: true,
     name: "218",
@@ -4774,7 +4774,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-219",
+    id: "NOMAD:219",
     mapOnly: true,
     noCartridge: true,
     name: "219",
@@ -4923,7 +4923,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-220",
+    id: "NOMAD:220",
     mapOnly: true,
     noCartridge: true,
     name: "220",
@@ -4960,7 +4960,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-221",
+    id: "NOMAD:221",
     mapOnly: true,
     noCartridge: true,
     name: "221",
@@ -4997,7 +4997,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-222",
+    id: "NOMAD:222",
     mapOnly: true,
     noCartridge: true,
     name: "222",
@@ -5034,7 +5034,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-223",
+    id: "NOMAD:223",
     mapOnly: true,
     noCartridge: true,
     name: "223",
@@ -5183,7 +5183,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-224",
+    id: "NOMAD:224",
     mapOnly: true,
     noCartridge: true,
     name: "224",
@@ -5220,7 +5220,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-225",
+    id: "NOMAD:225",
     mapOnly: true,
     noCartridge: true,
     name: "225",
@@ -5397,7 +5397,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-226",
+    id: "NOMAD:226",
     mapOnly: true,
     noCartridge: true,
     name: "226",
@@ -5462,7 +5462,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-227",
+    id: "NOMAD:227",
     mapOnly: true,
     noCartridge: true,
     name: "227",
@@ -5499,7 +5499,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-301",
+    id: "NOMAD:301",
     mapOnly: true,
     noCartridge: true,
     name: "301",
@@ -5536,7 +5536,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-302",
+    id: "NOMAD:302",
     mapOnly: true,
     noCartridge: true,
     name: "302",
@@ -5573,7 +5573,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-303",
+    id: "NOMAD:303",
     mapOnly: true,
     noCartridge: true,
     name: "303",
@@ -5694,7 +5694,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-304",
+    id: "NOMAD:304",
     mapOnly: true,
     noCartridge: true,
     name: "304",
@@ -5731,7 +5731,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-305",
+    id: "NOMAD:305",
     mapOnly: true,
     noCartridge: true,
     name: "305",
@@ -5866,7 +5866,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-306",
+    id: "NOMAD:306",
     mapOnly: true,
     noCartridge: true,
     name: "306",
@@ -5945,7 +5945,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-307",
+    id: "NOMAD:307",
     mapOnly: true,
     noCartridge: true,
     name: "307",
@@ -5996,7 +5996,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-308",
+    id: "NOMAD:308",
     mapOnly: true,
     noCartridge: true,
     name: "308",
@@ -6061,7 +6061,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-309",
+    id: "NOMAD:309",
     mapOnly: true,
     noCartridge: true,
     name: "309",
@@ -6210,7 +6210,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-310",
+    id: "NOMAD:310",
     mapOnly: true,
     noCartridge: true,
     name: "310",
@@ -6233,7 +6233,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-401",
+    id: "NOMAD:401",
     mapOnly: true,
     noCartridge: true,
     name: "401",
@@ -6270,7 +6270,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-402",
+    id: "NOMAD:402",
     mapOnly: true,
     noCartridge: true,
     name: "402",
@@ -6349,7 +6349,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-403",
+    id: "NOMAD:403",
     mapOnly: true,
     noCartridge: true,
     name: "403",
@@ -6750,7 +6750,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-404",
+    id: "NOMAD:404",
     mapOnly: true,
     noCartridge: true,
     name: "404",
@@ -6885,7 +6885,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-405",
+    id: "NOMAD:405",
     mapOnly: true,
     noCartridge: true,
     name: "405",
@@ -6950,7 +6950,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-406",
+    id: "NOMAD:406",
     mapOnly: true,
     noCartridge: true,
     name: "406",
@@ -7071,7 +7071,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-407",
+    id: "NOMAD:407",
     mapOnly: true,
     noCartridge: true,
     name: "407",
@@ -7164,7 +7164,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-408",
+    id: "NOMAD:408",
     mapOnly: true,
     noCartridge: true,
     name: "408",
@@ -7201,7 +7201,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-409",
+    id: "NOMAD:409",
     mapOnly: true,
     noCartridge: true,
     name: "409",
@@ -7350,7 +7350,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-410",
+    id: "NOMAD:410",
     mapOnly: true,
     noCartridge: true,
     name: "410",
@@ -7429,7 +7429,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-411",
+    id: "NOMAD:411",
     mapOnly: true,
     noCartridge: true,
     name: "411",
@@ -7466,7 +7466,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-412",
+    id: "NOMAD:412",
     mapOnly: true,
     noCartridge: true,
     name: "412",
@@ -7573,7 +7573,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-413",
+    id: "NOMAD:413",
     mapOnly: true,
     noCartridge: true,
     name: "413",
@@ -7624,7 +7624,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-414",
+    id: "NOMAD:414",
     mapOnly: true,
     noCartridge: true,
     name: "414",
@@ -7773,7 +7773,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-415",
+    id: "NOMAD:415",
     mapOnly: true,
     noCartridge: true,
     name: "415",
@@ -7908,7 +7908,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-416",
+    id: "NOMAD:416",
     mapOnly: true,
     noCartridge: true,
     name: "416",
@@ -7945,7 +7945,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-417",
+    id: "NOMAD:417",
     mapOnly: true,
     noCartridge: true,
     name: "417",
@@ -8178,7 +8178,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-418",
+    id: "NOMAD:418",
     mapOnly: true,
     noCartridge: true,
     name: "418",
@@ -8369,7 +8369,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-419",
+    id: "NOMAD:419",
     mapOnly: true,
     noCartridge: true,
     name: "419",
@@ -8462,7 +8462,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-420",
+    id: "NOMAD:420",
     mapOnly: true,
     noCartridge: true,
     name: "420",
@@ -8499,7 +8499,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-421",
+    id: "NOMAD:421",
     mapOnly: true,
     noCartridge: true,
     name: "421",
@@ -8536,7 +8536,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-422",
+    id: "NOMAD:422",
     mapOnly: true,
     noCartridge: true,
     name: "422",
@@ -8629,7 +8629,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-425",
+    id: "NOMAD:425",
     mapOnly: true,
     noCartridge: true,
     name: "425",
@@ -8694,7 +8694,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-501",
+    id: "NOMAD:501",
     mapOnly: true,
     noCartridge: true,
     name: "501",
@@ -8843,7 +8843,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-502",
+    id: "NOMAD:502",
     mapOnly: true,
     noCartridge: true,
     name: "502",
@@ -8866,7 +8866,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-503",
+    id: "NOMAD:503",
     mapOnly: true,
     noCartridge: true,
     name: "503",
@@ -8987,7 +8987,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-504",
+    id: "NOMAD:504",
     mapOnly: true,
     noCartridge: true,
     name: "504",
@@ -9024,7 +9024,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-505",
+    id: "NOMAD:505",
     mapOnly: true,
     noCartridge: true,
     name: "505",
@@ -9061,7 +9061,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-506",
+    id: "NOMAD:506",
     mapOnly: true,
     noCartridge: true,
     name: "506",
@@ -9196,7 +9196,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-507",
+    id: "NOMAD:507",
     mapOnly: true,
     noCartridge: true,
     name: "507",
@@ -9401,7 +9401,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-508",
+    id: "NOMAD:508",
     mapOnly: true,
     noCartridge: true,
     name: "508",
@@ -9690,7 +9690,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-509R",
+    id: "NOMAD:509R",
     mapOnly: true,
     noCartridge: true,
     name: "509",
@@ -9923,7 +9923,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-509A",
+    id: "NOMAD:509A",
     mapOnly: true,
     noCartridge: true,
     name: "509",
@@ -10100,7 +10100,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-510",
+    id: "NOMAD:510",
     mapOnly: true,
     noCartridge: true,
     name: "510",
@@ -10137,7 +10137,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-511",
+    id: "NOMAD:511",
     mapOnly: true,
     noCartridge: true,
     name: "511",
@@ -10174,7 +10174,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-512",
+    id: "NOMAD:512",
     mapOnly: true,
     noCartridge: true,
     name: "512",
@@ -10267,7 +10267,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-513",
+    id: "NOMAD:513",
     mapOnly: true,
     noCartridge: true,
     name: "513",
@@ -10304,7 +10304,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-514",
+    id: "NOMAD:514",
     mapOnly: true,
     noCartridge: true,
     name: "514",
@@ -10341,7 +10341,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-515",
+    id: "NOMAD:515",
     mapOnly: true,
     noCartridge: true,
     name: "515",
@@ -10574,7 +10574,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-516",
+    id: "NOMAD:516",
     mapOnly: true,
     noCartridge: true,
     name: "516",
@@ -10765,7 +10765,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-517",
+    id: "NOMAD:517",
     mapOnly: true,
     noCartridge: true,
     name: "517",
@@ -10956,7 +10956,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-518",
+    id: "NOMAD:518",
     mapOnly: true,
     noCartridge: true,
     name: "518",
@@ -11077,7 +11077,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-519",
+    id: "NOMAD:519",
     mapOnly: true,
     noCartridge: true,
     name: "519",
@@ -11240,7 +11240,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-520",
+    id: "NOMAD:520",
     mapOnly: true,
     noCartridge: true,
     name: "520",
@@ -11487,7 +11487,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-521",
+    id: "NOMAD:521",
     mapOnly: true,
     noCartridge: true,
     name: "521",
@@ -11538,7 +11538,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-522",
+    id: "NOMAD:522",
     mapOnly: true,
     noCartridge: true,
     name: "522",
@@ -11715,7 +11715,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-523",
+    id: "NOMAD:523",
     mapOnly: true,
     noCartridge: true,
     name: "523",
@@ -11892,7 +11892,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-524",
+    id: "NOMAD:524",
     mapOnly: true,
     noCartridge: true,
     name: "524",
@@ -12055,7 +12055,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-525",
+    id: "NOMAD:525",
     mapOnly: true,
     noCartridge: true,
     name: "525",
@@ -12092,7 +12092,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-526",
+    id: "NOMAD:526",
     mapOnly: true,
     noCartridge: true,
     name: "526",
@@ -12255,7 +12255,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-528",
+    id: "NOMAD:528",
     mapOnly: true,
     noCartridge: true,
     name: "528",
@@ -12334,7 +12334,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-529",
+    id: "NOMAD:529",
     mapOnly: true,
     noCartridge: true,
     name: "529",
@@ -12497,7 +12497,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-530",
+    id: "NOMAD:530",
     mapOnly: true,
     noCartridge: true,
     name: "530",
@@ -12548,7 +12548,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-531",
+    id: "NOMAD:531",
     mapOnly: true,
     noCartridge: true,
     name: "531",
@@ -12599,7 +12599,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-532",
+    id: "NOMAD:532",
     mapOnly: true,
     noCartridge: true,
     name: "532",
@@ -12678,7 +12678,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-533",
+    id: "NOMAD:533",
     mapOnly: true,
     noCartridge: true,
     name: "533",
@@ -12715,7 +12715,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-534",
+    id: "NOMAD:534",
     mapOnly: true,
     noCartridge: true,
     name: "534",
@@ -12752,7 +12752,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-535",
+    id: "NOMAD:535",
     mapOnly: true,
     noCartridge: true,
     name: "535",
@@ -12817,7 +12817,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-536",
+    id: "NOMAD:536",
     mapOnly: true,
     noCartridge: true,
     name: "536",
@@ -12910,7 +12910,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-537",
+    id: "NOMAD:537",
     mapOnly: true,
     noCartridge: true,
     name: "537",
@@ -13003,7 +13003,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-538",
+    id: "NOMAD:538",
     mapOnly: true,
     noCartridge: true,
     name: "538",
@@ -13152,7 +13152,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-539",
+    id: "NOMAD:539",
     mapOnly: true,
     noCartridge: true,
     name: "539",
@@ -13273,7 +13273,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-540",
+    id: "NOMAD:540",
     mapOnly: true,
     noCartridge: true,
     name: "540",
@@ -13366,7 +13366,7 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD-541",
+    id: "NOMAD:541",
     mapOnly: true,
     noCartridge: true,
     name: "541",

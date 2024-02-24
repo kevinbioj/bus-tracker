@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const astrobusRoutes: Route[] = [
   {
-    id: "ASTROBUS-zenbus:Line:5131776580124672:LOC",
+    id: "ASTROBUS:zenbus:Line:5131776580124672:LOC",
     name: "1",
     mapOnly: true,
     noCartridge: true,
@@ -67,7 +67,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:5089173048393728:LOC",
+    id: "ASTROBUS:zenbus:Line:5089173048393728:LOC",
     name: "2",
     mapOnly: true,
     noCartridge: true,
@@ -108,7 +108,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:4841323284660224:LOC",
+    id: "ASTROBUS:zenbus:Line:4841323284660224:LOC",
     name: "3",
     mapOnly: true,
     noCartridge: true,
@@ -141,7 +141,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:5182404740251648:LOC",
+    id: "ASTROBUS:zenbus:Line:5182404740251648:LOC",
     name: "4",
     mapOnly: true,
     noCartridge: true,
@@ -166,7 +166,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:5118765622624256:LOC",
+    id: "ASTROBUS:zenbus:Line:5118765622624256:LOC",
     name: "5",
     mapOnly: true,
     noCartridge: true,
@@ -191,7 +191,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:5089804213551104:LOC",
+    id: "ASTROBUS:zenbus:Line:5089804213551104:LOC",
     name: "6",
     mapOnly: true,
     noCartridge: true,
@@ -216,7 +216,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:5102078626103296:LOC",
+    id: "ASTROBUS:zenbus:Line:5102078626103296:LOC",
     name: "10",
     mapOnly: true,
     noCartridge: true,
@@ -241,7 +241,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:5205031542325248:LOC",
+    id: "ASTROBUS:zenbus:Line:5205031542325248:LOC",
     name: "11",
     mapOnly: true,
     noCartridge: true,
@@ -266,7 +266,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:5151678110105600:LOC",
+    id: "ASTROBUS:zenbus:Line:5151678110105600:LOC",
     name: "12",
     mapOnly: true,
     noCartridge: true,
@@ -299,7 +299,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:5126752804274176:LOC",
+    id: "ASTROBUS:zenbus:Line:5126752804274176:LOC",
     name: "13",
     mapOnly: true,
     noCartridge: true,
@@ -332,7 +332,7 @@ const astrobusRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTROBUS-zenbus:Line:6325671926169600:LOC",
+    id: "ASTROBUS:zenbus:Line:6325671926169600:LOC",
     name: "14",
     mapOnly: true,
     noCartridge: true,

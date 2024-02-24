@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const nevaRoutes: Route[] = [
   {
-    id: "NEVA-zenbus:Line:350210009:LOC",
+    id: "NEVA:zenbus:Line:350210009:LOC",
     name: "1",
     mapOnly: true,
     noCartridge: true,
@@ -91,7 +91,7 @@ const nevaRoutes: Route[] = [
     ],
   },
   {
-    id: "NEVA-zenbus:Line:348940035:LOC",
+    id: "NEVA:zenbus:Line:348940035:LOC",
     name: "2",
     mapOnly: true,
     noCartridge: true,
@@ -180,7 +180,7 @@ const nevaRoutes: Route[] = [
     ],
   },
   {
-    id: "NEVA-zenbus:Line:761900004:LOC",
+    id: "NEVA:zenbus:Line:761900004:LOC",
     name: "3",
     mapOnly: true,
     noCartridge: true,
@@ -269,7 +269,7 @@ const nevaRoutes: Route[] = [
     ],
   },
   {
-    id: "NEVA-zenbus:Line:848310001:LOC",
+    id: "NEVA:zenbus:Line:848310001:LOC",
     name: "4",
     mapOnly: true,
     noCartridge: true,
@@ -358,7 +358,7 @@ const nevaRoutes: Route[] = [
     ],
   },
   {
-    id: "NEVA-zenbus:Line:5962875763949568:LOC",
+    id: "NEVA:zenbus:Line:5962875763949568:LOC",
     name: "7",
     mapOnly: true,
     noCartridge: true,

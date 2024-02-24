@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const lbusRoutes: Route[] = [
   {
-    id: "LBUS-zenbus:Line:30030155:LOC",
+    id: "LBUS:zenbus:Line:30030155:LOC",
     name: "L'Bus",
     mapOnly: true,
     noCartridge: true,

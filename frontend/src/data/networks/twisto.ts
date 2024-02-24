@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const twistoRoutes: Route[] = [
   {
-    id: "TWISTO-T1",
+    id: "TWISTO:T1",
     name: "T1",
     mapOnly: true,
     colors: { background: "#23a638", text: "#ffffff" },
@@ -28,7 +28,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-T2",
+    id: "TWISTO:T2",
     name: "T2",
     mapOnly: true,
     colors: { background: "#e73132", text: "#ffffff" },
@@ -53,7 +53,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-T3",
+    id: "TWISTO:T3",
     name: "T3",
     mapOnly: true,
     colors: { background: "#009adf", text: "#ffffff" },
@@ -88,7 +88,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-NVCV",
+    id: "TWISTO:NVCV",
     name: "NVCV",
     mapOnly: true,
     colors: { background: "#e4051f", text: "#ffffff" },
@@ -111,7 +111,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-1",
+    id: "TWISTO:1",
     name: "1",
     mapOnly: true,
     colors: { background: "#d8005b", text: "#ffffff" },
@@ -137,7 +137,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-2",
+    id: "TWISTO:2",
     name: "2",
     mapOnly: true,
     colors: { background: "#0975b8", text: "#ffffff" },
@@ -163,7 +163,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-3",
+    id: "TWISTO:3",
     name: "3",
     mapOnly: true,
     colors: { background: "#c4ce10", text: "#000000" },
@@ -189,7 +189,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-4",
+    id: "TWISTO:4",
     name: "4",
     mapOnly: true,
     colors: { background: "#da609f", text: "#ffffff" },
@@ -218,7 +218,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-5",
+    id: "TWISTO:5",
     name: "5",
     mapOnly: true,
     colors: { background: "#642580", text: "#ffffff" },
@@ -253,7 +253,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-6A",
+    id: "TWISTO:6A",
     name: "6A",
     mapOnly: true,
     colors: { background: "#fcdd19", text: "#000000" },
@@ -270,7 +270,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-6B",
+    id: "TWISTO:6B",
     name: "6B",
     mapOnly: true,
     colors: { background: "#fcdd19", text: "#000000" },
@@ -287,7 +287,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-7",
+    id: "TWISTO:7",
     name: "7",
     mapOnly: true,
     colors: { background: "#8d5e2a", text: "#ffffff" },
@@ -322,7 +322,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-8",
+    id: "TWISTO:8",
     name: "8",
     mapOnly: true,
     colors: { background: "#00804b", text: "#ffffff" },
@@ -348,7 +348,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-9",
+    id: "TWISTO:9",
     name: "9",
     mapOnly: true,
     colors: { background: "#86bce7", text: "#000000" },
@@ -374,7 +374,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-10",
+    id: "TWISTO:10",
     name: "10",
     mapOnly: true,
     colors: { background: "#b0368c", text: "#ffffff" },
@@ -412,7 +412,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-10EX",
+    id: "TWISTO:10EX",
     name: "10EX",
     mapOnly: true,
     colors: { background: "#f29fc5", text: "#000000" },
@@ -438,7 +438,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-11",
+    id: "TWISTO:11",
     name: "11",
     mapOnly: true,
     colors: { background: "#ea5b0c", text: "#ffffff" },
@@ -473,7 +473,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-11EX",
+    id: "TWISTO:11EX",
     name: "11EX",
     mapOnly: true,
     colors: { background: "#f39869", text: "#000000" },
@@ -498,7 +498,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-12",
+    id: "TWISTO:12",
     name: "12",
     mapOnly: true,
     colors: { background: "#009d99", text: "#ffffff" },
@@ -599,17 +599,18 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["LION Plage"],
-        name: "LION Plage",
+        id: ["Lion-sur-Mer Lion Plage"],
+        name: "Lion Plage",
+        city: "LION-SUR-MER",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "LION Plage" }],
+          pages: [{ text: "LION PLAGE" }],
         },
       },
     ],
   },
   {
-    id: "TWISTO-12EX",
+    id: "TWISTO:12EX",
     name: "12EX",
     mapOnly: true,
     colors: { background: "#a7c4af", text: "#000000" },
@@ -661,7 +662,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-20",
+    id: "TWISTO:20",
     name: "20",
     mapOnly: true,
     colors: { background: "#f59c00", text: "#000000" },
@@ -695,7 +696,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-21",
+    id: "TWISTO:21",
     name: "21",
     mapOnly: true,
     colors: { background: "#153f8d", text: "#ffffff" },
@@ -721,7 +722,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-22",
+    id: "TWISTO:22",
     name: "22",
     mapOnly: true,
     colors: { background: "#f3a3b9", text: "#000000" },
@@ -795,7 +796,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-23",
+    id: "TWISTO:23",
     name: "23",
     mapOnly: true,
     colors: { background: "#e94861", text: "#ffffff" },
@@ -830,7 +831,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-30",
+    id: "TWISTO:30",
     name: "30",
     mapOnly: true,
     colors: { background: "#d186b2", text: "#000000" },
@@ -856,7 +857,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-31",
+    id: "TWISTO:31",
     name: "31",
     mapOnly: true,
     colors: { background: "#969328", text: "#ffffff" },
@@ -889,7 +890,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-32",
+    id: "TWISTO:32",
     name: "32",
     mapOnly: true,
     colors: { background: "#82c491", text: "#000000" },
@@ -939,7 +940,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-33",
+    id: "TWISTO:33",
     name: "33",
     mapOnly: true,
     colors: { background: "#00698a", text: "#ffffff" },
@@ -973,7 +974,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-34",
+    id: "TWISTO:34",
     name: "34",
     mapOnly: true,
     colors: { background: "#7f2110", text: "#ffffff" },
@@ -998,7 +999,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-37",
+    id: "TWISTO:37",
     name: "37",
     mapOnly: true,
     colors: { background: "#ccb4c9", text: "#000000" },
@@ -1024,7 +1025,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-40",
+    id: "TWISTO:40",
     name: "40",
     mapOnly: true,
     colors: { background: "#7d6fa6", text: "#ffffff" },
@@ -1048,7 +1049,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-42",
+    id: "TWISTO:42",
     name: "42",
     mapOnly: true,
     colors: { background: "#7d6fa6", text: "#ffffff" },
@@ -1072,7 +1073,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-NUIT",
+    id: "TWISTO:NUIT",
     name: "Noctibus",
     mapOnly: true,
     colors: { background: "#011337", text: "#FFFF99" },
@@ -1089,7 +1090,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-100",
+    id: "TWISTO:100",
     name: "100",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1125,7 +1126,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-101",
+    id: "TWISTO:101",
     name: "101",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1217,7 +1218,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-102",
+    id: "TWISTO:102",
     name: "102",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1254,7 +1255,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-103",
+    id: "TWISTO:103",
     name: "103",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1304,7 +1305,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-104",
+    id: "TWISTO:104",
     name: "104",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1327,7 +1328,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-105",
+    id: "TWISTO:105",
     name: "105",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1364,7 +1365,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-106",
+    id: "TWISTO:106",
     name: "106",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1386,7 +1387,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-107",
+    id: "TWISTO:107",
     name: "107",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1423,7 +1424,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-109",
+    id: "TWISTO:109",
     name: "109",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1460,7 +1461,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-110",
+    id: "TWISTO:110",
     name: "110",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1497,7 +1498,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-111",
+    id: "TWISTO:111",
     name: "111",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1537,7 +1538,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-112",
+    id: "TWISTO:112",
     name: "112",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1574,7 +1575,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-113",
+    id: "TWISTO:113",
     name: "113",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1611,7 +1612,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-114",
+    id: "TWISTO:114",
     name: "114",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1633,7 +1634,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-115",
+    id: "TWISTO:115",
     name: "115",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1670,7 +1671,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-116",
+    id: "TWISTO:116",
     name: "116",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1706,7 +1707,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-118",
+    id: "TWISTO:118",
     name: "118",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1742,7 +1743,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-119",
+    id: "TWISTO:119",
     name: "119",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1765,7 +1766,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-120",
+    id: "TWISTO:120",
     name: "120",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1804,7 +1805,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-121",
+    id: "TWISTO:121",
     name: "121",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1872,7 +1873,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-123",
+    id: "TWISTO:123",
     name: "123",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1908,7 +1909,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-124",
+    id: "TWISTO:124",
     name: "124",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1945,7 +1946,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-125",
+    id: "TWISTO:125",
     name: "125",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -1968,7 +1969,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-126",
+    id: "TWISTO:126",
     name: "126",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2004,7 +2005,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-127",
+    id: "TWISTO:127",
     name: "127",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2026,7 +2027,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-130",
+    id: "TWISTO:130",
     name: "130",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2146,7 +2147,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-131",
+    id: "TWISTO:131",
     name: "131",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2210,7 +2211,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-133",
+    id: "TWISTO:133",
     name: "133",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2302,7 +2303,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-134",
+    id: "TWISTO:134",
     name: "134",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2352,7 +2353,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-135",
+    id: "TWISTO:135",
     name: "135",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2388,7 +2389,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-136",
+    id: "TWISTO:136",
     name: "136",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2438,7 +2439,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-137",
+    id: "TWISTO:137",
     name: "137",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2461,7 +2462,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-137A",
+    id: "TWISTO:137A",
     name: "137A",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2497,7 +2498,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-137B",
+    id: "TWISTO:137B",
     name: "137B",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2519,7 +2520,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-137C",
+    id: "TWISTO:137C",
     name: "137C",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2541,7 +2542,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-137D",
+    id: "TWISTO:137D",
     name: "137D",
     mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
@@ -2563,7 +2564,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-B1",
+    id: "TWISTO:B1",
     name: "B1",
     mapOnly: true,
     colors: { background: "#23a638", text: "#ffffff" },
@@ -2588,7 +2589,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-B2",
+    id: "TWISTO:B2",
     name: "Plan B - T2",
     mapOnly: true,
     colors: { background: "#e73132", text: "#ffffff" },
@@ -2613,7 +2614,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-B3",
+    id: "TWISTO:B3",
     name: "Plan B - T3",
     mapOnly: true,
     colors: { background: "#009adf", text: "#ffffff" },
@@ -2639,7 +2640,7 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
-    id: "TWISTO-MP",
+    id: "TWISTO:MP",
     name: "Marco Polo",
     mapOnly: true,
     noCartridge: true,

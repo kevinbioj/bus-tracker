@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const deepMobRoutes: Route[] = [
   {
-    id: "DEEPMOB-1",
+    id: "DEEPMOB:1",
     mapOnly: true,
     name: "1",
     colors: { background: "#E2001A", text: "#FFFFFF" },
@@ -26,7 +26,7 @@ const deepMobRoutes: Route[] = [
     ],
   },
   {
-    id: "DEEPMOB-2",
+    id: "DEEPMOB:2",
     mapOnly: true,
     name: "2",
     colors: { background: "#0077A9", text: "#FFFFFF" },
@@ -50,7 +50,7 @@ const deepMobRoutes: Route[] = [
     ],
   },
   {
-    id: "DEEPMOB-3",
+    id: "DEEPMOB:3",
     mapOnly: true,
     name: "3",
     colors: { background: "#7AB51D", text: "#FFFFFF" },
@@ -74,7 +74,7 @@ const deepMobRoutes: Route[] = [
     ],
   },
   {
-    id: "DEEPMOB-97",
+    id: "DEEPMOB:97",
     mapOnly: true,
     name: "N",
     colors: { background: "#DEDC1E", text: "#000000" },
@@ -90,7 +90,7 @@ const deepMobRoutes: Route[] = [
     ],
   },
   {
-    id: "DEEPMOB-14",
+    id: "DEEPMOB:14",
     mapOnly: true,
     name: "14",
     colors: { background: "#87856D", text: "#FFFFFF" },
@@ -114,7 +114,7 @@ const deepMobRoutes: Route[] = [
     ],
   },
   {
-    id: "DEEPMOB-500",
+    id: "DEEPMOB:500",
     name: "500",
     mapOnly: true,
     noCartridge: true,
@@ -137,7 +137,7 @@ const deepMobRoutes: Route[] = [
     ],
   },
   {
-    id: "DEEPMOB-700",
+    id: "DEEPMOB:700",
     name: "700",
     mapOnly: true,
     noCartridge: true,
@@ -160,7 +160,7 @@ const deepMobRoutes: Route[] = [
     ],
   },
   {
-    id: "DEEPMOB-900",
+    id: "DEEPMOB:900",
     name: "900",
     mapOnly: true,
     noCartridge: true,

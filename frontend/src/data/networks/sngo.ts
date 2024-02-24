@@ -2,7 +2,7 @@ import { Route } from "~/@types";
 
 const sngoRoutes: Route[] = [
   {
-    id: "SNGO-21",
+    id: "SNGO:21",
     mapOnly: true,
     name: "1",
     colors: { background: "#e30613", text: "#FFFFFF" },
@@ -46,7 +46,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-22",
+    id: "SNGO:22",
     mapOnly: true,
     name: "2",
     colors: { background: "#76B82A", text: "#FFFFFF" },
@@ -90,7 +90,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-23",
+    id: "SNGO:23",
     mapOnly: true,
     name: "3",
     colors: { background: "#FFDD00", text: "#000000" },
@@ -125,7 +125,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-24",
+    id: "SNGO:24",
     mapOnly: true,
     name: "4",
     colors: { background: "#00B1EB", text: "#FFFFFF" },
@@ -151,7 +151,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-25",
+    id: "SNGO:25",
     mapOnly: true,
     name: "5",
     colors: { background: "#164194", text: "#FFFFFF" },
@@ -177,7 +177,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-26",
+    id: "SNGO:26",
     mapOnly: true,
     name: "6",
     colors: { background: "#EA619F", text: "#FFFFFF" },
@@ -203,7 +203,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-38",
+    id: "SNGO:38",
     mapOnly: true,
     name: "8A",
     colors: { background: "#8C663A", text: "#FFFFFF" },
@@ -246,7 +246,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-48",
+    id: "SNGO:48",
     mapOnly: true,
     name: "8B",
     colors: { background: "#CDCC0B", text: "#FFFFFF" },
@@ -299,7 +299,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-29",
+    id: "SNGO:29",
     mapOnly: true,
     name: "9",
     colors: { background: "#7F5DA4", text: "#FFFFFF" },
@@ -325,7 +325,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-10",
+    id: "SNGO:10",
     mapOnly: true,
     name: "10",
     colors: { background: "#EF7D00", text: "#FFFFFF" },
@@ -360,7 +360,7 @@ const sngoRoutes: Route[] = [
     ],
   },
   {
-    id: "SNGO-31",
+    id: "SNGO:31",
     mapOnly: true,
     name: "11",
     colors: { background: "#252B5A", text: "#FFFFFF" },

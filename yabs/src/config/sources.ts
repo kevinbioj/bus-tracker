@@ -18,6 +18,7 @@ const sources: Source[] = [
         'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
       tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
       vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
+      routePrefix: 'ASTUCE',
       filters: {
         scheduled: (trip) => trip.calendar.id.startsWith('IST') && trip.route !== '06',
       },
@@ -34,6 +35,7 @@ const sources: Source[] = [
       id: 'TAE',
       staticResourceHref: 'https://gtfs.tae76.fr/gtfs/feed.zip',
       tripUpdateHref: 'https://gtfs.tae76.fr/gtfs-rt.bin',
+      routePrefix: 'ASTUCE',
       generateShapes: true,
       filters: {
         scheduled: () => false,
@@ -53,6 +55,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/e39d7fe1-8c0c-4273-9236-d7c458add7a0',
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/astuce-26-30-rouen-gtfs-rt-trip-update',
       vehiclePositionHref: 'https://proxy.transport.data.gouv.fr/resource/astuce-26-30-rouen-gtfs-rt-vehicle-position',
+      routePrefix: 'ASTUCE',
       generateShapes: true,
     },
   },
@@ -64,6 +67,7 @@ const sources: Source[] = [
       id: 'HANGA',
       staticResourceHref:
         'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:004',
+      routePrefix: 'ASTUCE',
       generateShapes: true,
       getOperator: (trip) => (trip.route === '214' ? 'TNI' : 'HANGA'),
     },
@@ -88,6 +92,7 @@ const sources: Source[] = [
       id: 'NOMAD',
       staticResourceHref: 'https://gtfs.kevinbioj.fr/nomad.zip',
       filters: { scheduled: (trip) => trip.route !== 'NOMAD-530' },
+      routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },
   },
@@ -101,6 +106,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       filters: { scheduled: () => false },
+      routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },
   },
@@ -144,6 +150,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       getOperator: () => 'CAPCOT',
+      filters: { scheduled: (trip) => trip.route !== '822' },
     },
   },
   {
