@@ -3,8 +3,7 @@ export type SiriProperties = {
   prefix?: string;
   siriEndpoint: string;
   getOperator: (vehicle: SiriVehicleActivity) => string;
-  getRouteId: (vehicle: SiriVehicleActivity) => string;
-  getVehicleLabel: (vehicle: SiriVehicleActivity) => number;
+  getVehicleLabel: (ref: string) => number;
 };
 
 //- SIRI Response

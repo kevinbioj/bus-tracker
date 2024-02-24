@@ -5,6 +5,8 @@ import { SiriProperties, SiriVehicleActivity } from '~/yabs/fetcher/siri/@types'
 
 const parser = new XMLParser();
 
+const parseSiriRef = (ref: string) => ref.split(':')[3];
+
 const vehicleMonitoringRequestPayload = `<?xml version="1.0" encoding="utf-8"?>
 <Siri xmlns="http://www.siri.org.uk/siri" version="2.0">
 <ServiceRequest>
@@ -50,7 +52,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
     )
     .map((vehicle) => {
       const timestamp = dayjs(vehicle.RecordedAtTime).unix();
-      const vehicleLabel = properties.getVehicleLabel(vehicle);
+      const vehicleLabel = properties.getVehicleLabel(parseSiriRef(vehicle.VehicleMonitoringRef));
       const calls = [
         vehicle.MonitoredVehicleJourney.MonitoredCall,
         ...(Array.isArray(vehicle.MonitoredVehicleJourney.OnwardCalls.OnwardCall)
@@ -63,13 +65,13 @@ export async function computeSiriEntries(properties: SiriProperties) {
         id: `${properties.id}_VEHICLE_${vehicleLabel}`,
         source: properties.id,
         trip: {
-          id: vehicle.MonitoredVehicleJourney.FramedVehicleJourneyRef.DatedVehicleJourneyRef,
+          id: parseSiriRef(vehicle.MonitoredVehicleJourney.FramedVehicleJourneyRef.DatedVehicleJourneyRef),
           calendar: 'N/A',
           direction: +vehicle.MonitoredVehicleJourney.DirectionName - 1,
           headsign: vehicle.MonitoredVehicleJourney.DestinationName,
           route: properties.prefix
-            ? `${properties.prefix}-${properties.getRouteId(vehicle)}`
-            : properties.getRouteId(vehicle),
+            ? `${properties.prefix}-${parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef)}`
+            : parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef),
         },
         vehicle: {
           id: vehicleLabel.toString(),
@@ -84,7 +86,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
           ...(dayjs().isBefore(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime)
             ? [
                 {
-                  id: vehicle.MonitoredVehicleJourney.OriginRef,
+                  id: parseSiriRef(vehicle.MonitoredVehicleJourney.OriginRef),
                   name: vehicle.MonitoredVehicleJourney.OriginName,
                   sequence: 1,
                   timestamp: dayjs(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime).unix(),
@@ -98,7 +100,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
             .map((stopCall) => {
               const isCancelled = stopCall.ArrivalStatus === 'cancelled';
               return {
-                id: stopCall.StopPointRef,
+                id: parseSiriRef(stopCall.StopPointRef),
                 name: stopCall.StopPointName,
                 sequence: stopCall.Order,
                 timestamp: isCancelled

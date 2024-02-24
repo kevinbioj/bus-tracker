@@ -77,10 +77,7 @@ const sources: Source[] = [
       prefix: 'TWISTO',
       siriEndpoint: 'https://api.okina.fr/gateway/cae/realtime/anshar/services',
       getOperator: () => 'TWISTO',
-      getRouteId: (vehicle) =>
-        vehicle.MonitoredVehicleJourney.LineRef.replace('SIRI_NVP_037:Line::', '').replace(':LOC', ''),
-      getVehicleLabel: (vehicle) =>
-        +vehicle.VehicleMonitoringRef.replace('SIRI_NVP_037:Vehicle::Keolis_', '').replace(':LOC', ''),
+      getVehicleLabel: (ref) => +ref.replace('Keolis_', ''),
     },
   },
   {
