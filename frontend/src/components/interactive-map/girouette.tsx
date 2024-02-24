@@ -151,9 +151,9 @@ export function Girouette({
             color: ledBackgroundColor,
             fontFamily: `"${currentPage?.font ?? "1513B3E1"}"`,
             fontSize: `${(height / dimensions.height) * getFontHeight(currentPage?.font ?? "1513B3E1")}px`,
-            letterSpacing: `${onePixel * (currentPage?.textSpacing ?? currentPage.font?.endsWith("SUPX") ? 1 : 2)}px`,
+            letterSpacing: `${onePixel * (currentPage?.textSpacing ?? (currentPage.font?.endsWith("SUPX") ? 1 : 2))}px`,
             lineHeight: `${(height / dimensions.height) * getFontHeight(currentPage?.font ?? "1513B3E1")}px`,
-            paddingLeft: `${onePixel * (currentPage?.textSpacing ?? currentPage.font?.endsWith("SUPX") ? 1 : 2)}px`,
+            paddingLeft: `${onePixel * (currentPage?.textSpacing ?? (currentPage.font?.endsWith("SUPX") ? 1 : 2))}px`,
             width: `${onePixel * dimensions.textWidth}px`,
             wordSpacing: `${onePixel * (currentPage?.wordSpacing ?? 0)}px`,
           }}
