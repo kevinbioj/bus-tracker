@@ -99,7 +99,7 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
     }
 
     return {
-      id: `${properties.id}:JOU:${trip.block ?? trip.id}`,
+      id: `${properties.id}:JOU:${trip.id}`,
       stopTimes: stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
       trip: {
         id: trip.id,
@@ -251,7 +251,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         }
       }
 
-      const id = vehicleId ? `VEH:${vehicleId}` : `JOU:${trip.block ?? trip.id}`;
+      const id = vehicleId ? `VEH:${vehicleId}` : trip.block ? `BLO:${trip.block}` : `JOU:${trip.id}`;
       entries.set(id, {
         id: `${properties.id}:${id}`,
         stopTimes: dayjs.unix(currentStopTime.timestamp!).isAfter()
@@ -378,7 +378,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       ? properties.getVehicleNumber(vehicleDescriptor)
       : vehicleDescriptor.label ?? vehicleDescriptor.id;
 
-    const id = vehicleId ? `VEH:${vehicleId}` : `JOU:${trip.block ?? trip.id}`;
+    const id = vehicleId ? `VEH:${vehicleId}` : trip.block ? `BLO:${trip.block}` : `JOU:${trip.id}`;
     entries.set(id, {
       id: `${properties.id}:${id}`,
       source: properties.getOperator?.(trip) ?? properties.id,
