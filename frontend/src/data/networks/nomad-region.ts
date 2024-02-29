@@ -274,7 +274,7 @@ const nomadRegionRoutes: Route[] = [
             font: "1508SUPX",
             text: "527",
           },
-          pages: [{ font: "1508SUPX", text: "FORGE-LES-EAUX" }],
+          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
         },
       },
       {
