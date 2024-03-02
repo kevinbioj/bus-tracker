@@ -330,7 +330,7 @@ const nomadRegionRoutes: Route[] = [
             text: "101",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "COURSEULLES-SUR-MER" }],
+          pages: [{ font: "1507SUPX", text: "COURSEULLES-SUR-MER" }],
         },
       },
       {
