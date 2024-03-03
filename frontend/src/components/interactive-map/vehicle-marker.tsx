@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import { LatLngExpression } from "leaflet";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { RefObject, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Popup } from "react-leaflet";
 import { Satellite as SatelliteIcon } from "tabler-icons-react";
 import { match } from "ts-pattern";
@@ -21,6 +21,8 @@ import { BusIcon } from "~/images/transport-modes/bus-icon";
 import ReactMoveableCircleMarker, { MoveableCircleMarker } from "~/util/moveable-circler-marker";
 
 const getNoise = () => (Math.random() - 0.5) * 0.000045;
+
+const isTouchScreen = window.matchMedia("(pointer: coarse)").matches;
 
 type VehicleMarkerProps = { data: VehicleData };
 
@@ -54,6 +56,14 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
 
   const [isHovered, setHovered] = useState(false);
 
+  const adjustPan = useCallback((ref: RefObject<MoveableCircleMarker>) => {
+    if (ref.current === null) return;
+    const { _popup } = ref.current as unknown as { _popup: { options: { autoPan: boolean }; _adjustPan: () => void } };
+    _popup.options.autoPan = true;
+    _popup._adjustPan();
+    _popup.options.autoPan = false;
+  }, []);
+
   if (!showScheduledTrips && data.vehicle.position.type === "SCHEDULED") return null;
 
   const timestamp = dayjs.unix(data.vehicle.position.timestamp);
@@ -67,12 +77,20 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
       duration={1000}
       bubblingMouseEvents={false}
       eventHandlers={{
-        click: () => setHovered(false),
+        click: () => {
+          setHovered(false);
+          if (!isTouchScreen) {
+            adjustPan(ref);
+          }
+        },
         mouseover: (e) => {
           const target = e.target as MoveableCircleMarker;
-          if (target.isPopupOpen()) return;
           setHovered(true);
+          if (target.isPopupOpen()) return;
           target.openPopup();
+          if (isTouchScreen) {
+            adjustPan(ref);
+          }
         },
         mouseout: (e) => {
           const target = e.target as MoveableCircleMarker;
@@ -91,7 +109,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
       radius={8}
       ref={ref}
     >
-      <Popup autoClose closeButton={false}>
+      <Popup autoClose autoPan={false} closeButton={false}>
         <div style={{ width: `${girouetteWidth + 1}px` }}>
           <div className="border-[1px] border-neutral-800">
             {destination?.girouette ? (
