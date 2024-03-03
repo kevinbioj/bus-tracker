@@ -89,7 +89,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
           if (target.isPopupOpen()) return;
           target.openPopup();
           if (isTouchScreen) {
-            adjustPan(ref);
+            setTimeout(() => adjustPan(ref), 100);
           }
         },
         mouseout: (e) => {
