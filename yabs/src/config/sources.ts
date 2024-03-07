@@ -22,7 +22,8 @@ const sources: Source[] = [
       filters: {
         scheduled: (trip) => trip.calendar.id.startsWith('IST') && trip.route !== '06',
       },
-      getOperator: (trip) => (trip.route === '06' || trip.calendar.id.startsWith('IST') ? 'TNI' : 'TCAR'),
+      getOperator: (trip) =>
+        trip.route === '06' || trip.route === '89' || trip.calendar.id.startsWith('IST') ? 'TNI' : 'TCAR',
       generateShapes: true,
       propagateDelays: true,
     },
