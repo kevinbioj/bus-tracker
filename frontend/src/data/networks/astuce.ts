@@ -63,12 +63,36 @@ const astuceRoutes: Route[] = [
       },
     ],
   },
-  // {
-  //   id: "ASTUCE:89",
-  //   name: "N",
-  //   colors: { background: "#E6007E", text: "#FFED00" },
-  //   destinations: [],
-  // },
+  {
+    id: "ASTUCE:89",
+    name: "N",
+    colors: { background: "#E6007E", text: "#FFED00" },
+    destinations: [
+      {
+        id: ["Boulingrin ROUEN"],
+        autoHide: true,
+        name: "Boulingrin",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
+          pages: [{ text: "BOULINGRIN" }, { text: "ROUEN" }],
+        },
+      },
+      {
+        id: ["Georges Braque GRAND QUEVILLY"],
+        autoHide: true,
+        name: "Georges Braque",
+        city: "GRAND-QUEVILLY",
+        girouette: {
+          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
+          pages: [
+            { font: "1510N2E1", text: "GEORGES BRAQUE" },
+            { font: "1510N2E1", text: "GRAND-QUEVILLY" },
+          ],
+        },
+      },
+    ],
+  },
   {
     id: "ASTUCE:90",
     name: "M",
