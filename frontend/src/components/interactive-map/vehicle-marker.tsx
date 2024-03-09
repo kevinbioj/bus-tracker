@@ -83,6 +83,12 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
             adjustPan(ref);
           }
         },
+        moveend: (e) => {
+          const target = e.target as MoveableCircleMarker;
+          if (target.isPopupOpen()) {
+            adjustPan(ref);
+          }
+        },
         mouseover: (e) => {
           const target = e.target as MoveableCircleMarker;
           setHovered(true);
