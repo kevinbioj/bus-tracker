@@ -87,7 +87,7 @@ const sources: Source[] = [
   },
   {
     id: 'NOMAD',
-    refreshCron: '15 * * * * * ',
+    refreshCron: '0,20,40 * * * * * ',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD',
