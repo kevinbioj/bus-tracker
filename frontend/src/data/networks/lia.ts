@@ -2,6 +2,74 @@ import { Route } from "~/@types";
 
 const liaRoutes: Route[] = [
   {
+    id: "LIA:T",
+    mapOnly: true,
+    noCartridge: true,
+    name: "T",
+    colors: { background: "#E30613", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Grand Hameau"],
+        name: "Grand Hameau",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "T",
+          },
+          pages: [{ font: "1508SUPX", text: "GRAND HAMEAU" }],
+        },
+      },
+      {
+        id: ["Pré Fleuri"],
+        name: "Pré Fleuri",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "T",
+          },
+          pages: [{ font: "1508SUPX", text: "PRE FLEURI" }],
+        },
+      },
+      {
+        id: ["La Plage"],
+        name: "La Plage",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "T",
+          },
+          pages: [{ font: "1508SUPX", text: "LA PLAGE" }],
+        },
+      },
+      {
+        id: ["Rond-Point"],
+        name: "Rond-Point",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "T",
+          },
+          pages: [{ font: "1508SUPX", text: "ROND-POINT" }],
+        },
+      },
+    ],
+  },
+  {
     id: "LIA:01",
     mapOnly: true,
     noCartridge: true,
@@ -51,6 +119,45 @@ const liaRoutes: Route[] = [
             text: "1",
           },
           pages: [{ font: "1507SUPX", text: "LE HAVRE LA PLAGE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "LIA:C2",
+    mapOnly: true,
+    noCartridge: true,
+    name: "NaN",
+    colors: { background: "#E30613", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Place d'Armes"],
+        name: "Place d'Armes",
+        city: "HARFLEUR",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "C2",
+          },
+          pages: [{ font: "1407SUPX", text: "HARFLEUR PLACE D'ARMES" }],
+        },
+      },
+      {
+        id: ["Grand Quai"],
+        name: "Grand Quai",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "C2",
+          },
+          pages: [{ font: "1508SUPX", text: "LE HAVRE GRAND QUAI" }],
         },
       },
     ],
@@ -842,22 +949,23 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "30",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Funiculaire / C.Monet / St Jo."],
-        name: "St Jo.",
+        name: "Lycée Claude Monet / Institution Saint-Joseph",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "30" },
-          pages: [{ font: "1508SUPX", text: "St Jo." }],
-        },
-      },
-      {
-        id: ["Funiculaire / C. Monet / St Jo."],
-        name: "St Jo.",
-        girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "30" },
-          pages: [{ font: "1508SUPX", text: "St Jo." }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "30",
+          },
+          pages: [
+            { font: "1507SUPX", text: "LYCEE CLAUDE MONET" },
+            { font: "1507SUPX", text: "INSTITUTION ST-JOSEPH" },
+          ],
         },
       },
     ],
@@ -867,22 +975,37 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "31",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Funiculaire / C.Monet / St Jo."],
-        name: "St Jo.",
+        name: "Lycée Claude Monet / Institution Saint-Joseph",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "31" },
-          pages: [{ font: "1508SUPX", text: "St Jo." }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "31",
+          },
+          pages: [
+            { font: "1507SUPX", text: "LYCEE CLAUDE MONET" },
+            { font: "1507SUPX", text: "INSTITUTION ST-JOSEPH" },
+          ],
         },
       },
       {
         id: ["Bigne a Fosse"],
-        name: "Bigne a Fosse",
+        name: "Bigne à Fosse",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "31" },
-          pages: [{ font: "1508SUPX", text: "Bigne a Fosse" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "31",
+          },
+          pages: [{ font: "1508SUPX", text: "BIGNE A FOSSE" }],
         },
       },
     ],
@@ -892,14 +1015,20 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "40",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["J. d'Arc"],
-        name: "J. d'Arc",
+        name: "Lycée Jeanne d'Arc",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "40" },
-          pages: [{ font: "1508SUPX", text: "J. d'Arc" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "40",
+          },
+          pages: [{ font: "1508SUPX", text: "LYCEE JEANNE D'ARC" }],
         },
       },
     ],
@@ -909,22 +1038,35 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "41",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Ignauval"],
         name: "Ignauval",
+        city: "SAINTE-ADRESSE",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "41" },
-          pages: [{ font: "1508SUPX", text: "Ignauval" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "41",
+          },
+          pages: [{ font: "1507SUPX", text: "STE-ADRESSE IGNAUVAL" }],
         },
       },
       {
         id: ["J. d'Arc"],
-        name: "J. d'Arc",
+        name: "Lycée Jeanne d'Arc",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "41" },
-          pages: [{ font: "1508SUPX", text: "J. d'Arc" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "41",
+          },
+          pages: [{ font: "1507SUPX", text: "LYCEE JEANNE D'ARC" }],
         },
       },
     ],
@@ -934,14 +1076,20 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "50",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Schuman"],
-        name: "Schuman",
+        name: "Lycée Schuman",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "50" },
-          pages: [{ font: "1508SUPX", text: "Schuman" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "50",
+          },
+          pages: [{ font: "1508SUPX", text: "LYCEE SCHUMAN" }],
         },
       },
     ],
@@ -951,22 +1099,35 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "60",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["La Breque"],
-        name: "La Breque",
+        name: "La Brèque",
+        city: "HARFLEUR",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "60" },
-          pages: [{ font: "1508SUPX", text: "La Breque" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "60",
+          },
+          pages: [{ font: "1507SUPX", text: "HARFLEUR LA BREQUE" }],
         },
       },
       {
         id: ["J. Prevost"],
-        name: "J. Prevost",
+        name: "Lycée Jean Prévost",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "60" },
-          pages: [{ font: "1508SUPX", text: "J. Prevost" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "60",
+          },
+          pages: [{ font: "1507SUPX", text: "LYCEE J. PREVOST" }],
         },
       },
     ],
@@ -976,22 +1137,34 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "70",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["G. Courbet"],
-        name: "G. Courbet",
+        name: "Collège G. Courbet",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "70" },
-          pages: [{ font: "1508SUPX", text: "G. Courbet" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "70",
+          },
+          pages: [{ font: "1507SUPX", text: "COLLEGE G. COURBET" }],
         },
       },
       {
         id: ["Pissotiere à Madame"],
         name: "Pissotiere à Madame",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "70" },
-          pages: [{ font: "1508SUPX", text: "Pissotiere à Madame" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "70",
+          },
+          pages: [{ font: "1507SUPX", text: "PISSOTIERE A MADAME" }],
         },
       },
     ],
@@ -1001,22 +1174,34 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "71",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["G. Courbet"],
-        name: "G. Courbet",
+        name: "Collège G. Courbet",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "71" },
-          pages: [{ font: "1508SUPX", text: "G. Courbet" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "71",
+          },
+          pages: [{ font: "1508SUPX", text: "COLLEGE G. COURBET" }],
         },
       },
       {
         id: ["F. Engels"],
         name: "F. Engels",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "71" },
-          pages: [{ font: "1508SUPX", text: "F. Engels" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "71",
+          },
+          pages: [{ font: "1508SUPX", text: "F. ENGELS" }],
         },
       },
     ],
@@ -1026,22 +1211,34 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "80",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["College J. Monod"],
-        name: "College J. Monod",
+        name: "Collège Jacques Monod",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "80" },
-          pages: [{ font: "1508SUPX", text: "College J. Monod" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "80",
+          },
+          pages: [{ font: "1507SUPX", text: "COLLEGE JACQUES MONOD" }],
         },
       },
       {
         id: ["A.Cazavan"],
-        name: "A.Cazavan",
+        name: "A. Cazavan",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "80" },
-          pages: [{ font: "1508SUPX", text: "A.Cazavan" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "80",
+          },
+          pages: [{ font: "1508SUPX", text: "A. CAZAVAN" }],
         },
       },
     ],
@@ -1051,13 +1248,19 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "90",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["P. Doumer / E.S.A.T."],
         name: "E.S.A.T.",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "90" },
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "90",
+          },
           pages: [{ font: "1508SUPX", text: "E.S.A.T." }],
         },
       },
@@ -1065,8 +1268,14 @@ const liaRoutes: Route[] = [
         id: ["Graville"],
         name: "Graville",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "90" },
-          pages: [{ font: "1508SUPX", text: "Graville" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "90",
+          },
+          pages: [{ font: "1507SUPX", text: "LE HAVRE GRAVILLE" }],
         },
       },
     ],
@@ -1076,123 +1285,36 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "91",
-    colors: { background: "#706F6F", text: "#" },
+    colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Montivilliers C.F.A."],
-        name: "Montivilliers C.F.A.",
+        name: "C.F.A.",
+        city: "MONTIVILLIERS",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "91" },
-          pages: [{ font: "1508SUPX", text: "Montivilliers C.F.A." }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#706F6F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "91",
+          },
+          pages: [{ font: "1508SUPX", text: "MONTIVILLIERS C.F.A." }],
         },
       },
       {
         id: ["Montivilliers Gare"],
-        name: "Montivilliers Gare",
-        girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#706F6F", textColor: "#", text: "91" },
-          pages: [{ font: "1508SUPX", text: "Montivilliers Gare" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "LIA:C2",
-    mapOnly: true,
-    noCartridge: true,
-    name: "NaN",
-    colors: { background: "#E30613", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Place d'Armes"],
-        name: "Place d'Armes",
-        city: "HARFLEUR",
+        name: "Gare",
+        city: "MONTIVILLIERS",
         girouette: {
           routeNumber: {
             font: "1513B3E1",
-            backgroundColor: "#E30613",
+            backgroundColor: "#706F6F",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "C2",
+            text: "91",
           },
-          pages: [{ font: "1407SUPX", text: "HARFLEUR PLACE D'ARMES" }],
-        },
-      },
-      {
-        id: ["Grand Quai"],
-        name: "Grand Quai",
-        city: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1513B3E1",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "C2",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE GRAND QUAI" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "LIA:T",
-    mapOnly: true,
-    noCartridge: true,
-    name: "T",
-    colors: { background: "#E30613", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Grand Hameau"],
-        name: "Grand Hameau",
-        city: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1513B3E1",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "T",
-          },
-          pages: [{ font: "1508SUPX", text: "GRAND HAMEAU" }],
-        },
-      },
-      {
-        id: ["Pré Fleuri"],
-        name: "Pré Fleuri",
-        city: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1513B3E1",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "T",
-          },
-          pages: [{ font: "1508SUPX", text: "PRE FLEURI" }],
-        },
-      },
-      {
-        id: ["La Plage"],
-        name: "La Plage",
-        city: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1513B3E1",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "T",
-          },
-          pages: [{ font: "1508SUPX", text: "LA PLAGE" }],
-        },
-      },
-      {
-        id: ["Rond-Point"],
-        name: "Rond-Point",
-        girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#E30613", textColor: "#", text: "NaN" },
-          pages: [{ font: "1508SUPX", text: "Rond-Point" }],
+          pages: [{ font: "1508SUPX", text: "MONTIVILLIERS GARE" }],
         },
       },
     ],
