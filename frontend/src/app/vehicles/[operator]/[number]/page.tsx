@@ -28,7 +28,7 @@ export function generateMetadata({ params, searchParams }: VehicleEntryPageProps
   const date = searchParams.period ? dayjs(searchParams.period, "YYYY-MM") : dayjs();
   return {
     title: `Véhicule n°${params.number} – ${operator.name} – Historique – Bus Tracker`,
-    description: `Historique des services du véhicule n°${params.number} de l'opérateur ${
+    description: `Historique des activités du véhicule n°${params.number} du réseau ${
       operator.name
     } du mois de ${date.format("MMMM YYYY")}.`,
   };

@@ -2,8 +2,18 @@ import { Operator } from "~/@types";
 
 const operators: Operator[] = [
   {
+    id: "NOMAD",
+    name: "NOMAD (Région Normandie)",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/nomad.svg",
+      size: [512, 144],
+    },
+    issues: [],
+  },
+  {
     id: "TCAR",
-    name: "Astuce – Transdev Rouen",
+    name: "Réseau Astuce (Rouen) | Transdev Rouen",
     hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-rouen.svg",
@@ -19,7 +29,7 @@ const operators: Operator[] = [
   },
   {
     id: "TAE",
-    name: "Astuce – Régie des Transports urbains de l'Agglomération Elbeuvienne",
+    name: "Réseau Astuce (Rouen) | Régie des Transports urbains de l'Agglomération Elbeuvienne",
     hasHistory: true,
     logo: {
       href: "/assets/operators/tae.svg",
@@ -29,7 +39,7 @@ const operators: Operator[] = [
   },
   {
     id: "TNI",
-    name: "Astuce – Transdev Normandie Interurbain",
+    name: "Réseau Astuce (Rouen) | Transdev Normandie Interurbain",
     hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-normandie.svg",
@@ -39,7 +49,7 @@ const operators: Operator[] = [
   },
   {
     id: "HANGA",
-    name: "Astuce – Cars Hangard",
+    name: "Réseau Astuce (Rouen) | Autocars Hangard",
     hasHistory: false,
     logo: {
       href: "/assets/operators/cars-hangard.png",
@@ -49,7 +59,7 @@ const operators: Operator[] = [
   },
   {
     id: "TWISTO",
-    name: "Twisto",
+    name: "Twisto (Caen)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/twisto.svg",
@@ -59,7 +69,7 @@ const operators: Operator[] = [
   },
   {
     id: "CAPCOT",
-    name: "Cap Cotentin",
+    name: "Cap Cotentin (Cherbourg-en-Cotentin)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/capcotentin.svg",
@@ -69,7 +79,7 @@ const operators: Operator[] = [
   },
   {
     id: "DEEPMOB",
-    name: "DeepMob",
+    name: "DeepMob (Dieppe)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/deepmob.svg",
@@ -78,38 +88,8 @@ const operators: Operator[] = [
     issues: [],
   },
   {
-    id: "NOMAD",
-    name: "NOMAD",
-    hasHistory: true,
-    logo: {
-      href: "/assets/operators/nomad.svg",
-      size: [512, 144],
-    },
-    issues: [],
-  },
-  {
-    id: "SNGO",
-    name: "SNgo!",
-    hasHistory: true,
-    logo: {
-      href: "/assets/operators/sngo.jpg",
-      size: [1280, 678],
-    },
-    issues: [],
-  },
-  {
-    id: "REZOBUS",
-    name: "Rezo'Bus",
-    hasHistory: true,
-    logo: {
-      href: "/assets/operators/rezobus.svg",
-      size: [222, 73],
-    },
-    issues: [],
-  },
-  {
     id: "ASTROBUS",
-    name: "Astrobus",
+    name: "Astrobus (Lisieux)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/astrobus.svg",
@@ -118,18 +98,18 @@ const operators: Operator[] = [
     issues: [],
   },
   {
-    id: "HOBUS",
-    name: "Hobus",
-    hasHistory: false,
+    id: "SNGO",
+    name: "SNgo! (Vernon-Giverny-Les Andelys)",
+    hasHistory: true,
     logo: {
-      href: "/assets/operators/hobus.png",
-      size: [1000, 327],
+      href: "/assets/operators/sngo.jpg",
+      size: [1280, 678],
     },
     issues: [],
   },
   {
     id: "NEVA",
-    name: "Néva",
+    name: "Néva (Granville)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/neva.png",
@@ -138,8 +118,28 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "HOBUS",
+    name: "Hobus (Honfleur)",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/hobus.png",
+      size: [1000, 327],
+    },
+    issues: [],
+  },
+  {
+    id: "REZOBUS",
+    name: "Rezo'Bus (Bolbec-Lillebonne-N.-D-de-Gravenchon)",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/rezobus.svg",
+      size: [222, 73],
+    },
+    issues: [],
+  },
+  {
     id: "LBUS",
-    name: "l'Bus",
+    name: "l'Bus (Bernay)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/lbus.png",

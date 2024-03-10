@@ -13,7 +13,7 @@ export function generateMetadata({ params }: VehicleListPageProps) {
   if (typeof operator === "undefined") return {};
   return {
     title: `${operator.name} – Historique – Bus Tracker`,
-    description: `Liste des véhicules appartenant à l'opérateur ${operator.name}, avec accès à l'historique de leurs services.`,
+    description: `Découvrez les véhicules du réseau ${operator.name} avec l'historique de leurs activités.`,
   };
 }
 
