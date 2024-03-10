@@ -142,6 +142,7 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Hôtel de Ville de Sotteville"],
+        autoHide: true,
         name: "Hôtel de Ville",
         city: "SOTTEVILLE-LÈS-ROUEN",
         girouette: {
