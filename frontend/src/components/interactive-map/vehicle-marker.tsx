@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { RefObject, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Popup } from "react-leaflet";
-import { Satellite as SatelliteIcon } from "tabler-icons-react";
+import { ExternalLink, Satellite as SatelliteIcon } from "tabler-icons-react";
 import { match } from "ts-pattern";
 import { useLocalStorage } from "usehooks-ts";
 
@@ -174,12 +174,12 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
             </div>
             {data.vehicle.id && (
               <Link
-                className="bg-brand flex items-center justify-center gap-2 pt-1 hover:bg-brand-hover"
+                className="bg-brand flex items-center justify-center gap-2 py-0.5 hover:bg-brand-hover"
                 href={`/vehicles/${data.source.toLowerCase()}/${data.vehicle.id}`}
                 target="_blank"
               >
                 <BusIcon className="fill-white h-4 w-4" />
-                <span className="font-[Achemine] font-bold text-sm text-white">Voir ce véhicule</span>
+                <span className="font-[Achemine] font-bold flex text-sm text-white">Détails du véhicule</span>
               </Link>
             )}
             {showNextStops && <NextStops stopTimes={data.trip.stopTimes} />}
