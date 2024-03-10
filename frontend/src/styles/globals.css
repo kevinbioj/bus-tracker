@@ -3,17 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Achemine';
-  src: url('../fonts/achemine-regular-webfont.woff2') format('woff2'),
-       url('../fonts/achemine-regular-webfont.woff') format('woff');
+  font-family: "Achemine";
+  src:
+    url("../fonts/achemine-regular-webfont.woff2") format("woff2"),
+    url("../fonts/achemine-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Achemine';
-  src: url('../fonts/achemine-bold-webfont.woff2') format('woff2'),
-       url('../fonts/achemine-bold-webfont.woff') format('woff');
+  font-family: "Achemine";
+  src:
+    url("../fonts/achemine-bold-webfont.woff2") format("woff2"),
+    url("../fonts/achemine-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-display: swap;
 }
@@ -38,8 +40,8 @@
 
 @font-face {
   font-display: block;
-  font-family: '14LUPLAN';
-  src: url('../fonts/girouette/14LUPLAN.ttf');
+  font-family: "14LUPLAN";
+  src: url("../fonts/girouette/14LUPLAN.ttf");
 }
 
 @font-face {
@@ -85,7 +87,7 @@
 }
 
 html {
-  font-family: 'Achemine', system-ui, sans-serif;
+  font-family: "Achemine", system-ui, sans-serif;
 }
 
 @layer base {

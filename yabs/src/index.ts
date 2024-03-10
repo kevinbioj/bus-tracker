@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import fastify, { FastifyReply, FastifyRequest } from 'fastify';
+import { Context, Hono } from 'hono';
 import { schedule } from 'node-cron';
 import { match } from 'ts-pattern';
 
@@ -24,12 +24,12 @@ const output = new Map<string, YabsEntry[]>();
 let hasComputedFirstEntries = false;
 
 console.log(`YABS\tListening on port ${port}.`);
-const server = fastify();
+const server = new Hono();
 server.get('/vehicles', handleGetVehicles);
 server.get('/history', handleGetVehicleList);
 server.get('/history/:operator', handleGetOperatorVehicleList);
 server.get('/history/:operator/:number', handleGetOperatorVehicle);
-server.listen({ port });
+export default { port, fetch: server.fetch };
 
 console.log('YABS\tLoading resources into memory.');
 for (const source of sources) await updateResource(source);
@@ -48,11 +48,11 @@ sources.map((source) => schedule(source.refreshCron, () => updateEntries(source)
 
 // --- ROUTE HANDLERS
 
-function handleGetVehicles(_: FastifyRequest, reply: FastifyReply) {
+function handleGetVehicles(c: Context) {
   if (!hasComputedFirstEntries) {
-    return reply.code(503).send();
+    return c.json({ error: 'Server is warming up, retry in a few moments.' }, 503);
   }
-  return [...output.values()].flat().map((entry) => ({
+  const vehicles = [...output.values()].flat().map((entry) => ({
     id: entry.id,
     source: entry.source,
     trip: {
@@ -80,31 +80,36 @@ function handleGetVehicles(_: FastifyRequest, reply: FastifyReply) {
     },
     timestamp: entry.timestamp,
   }));
+  return c.json(vehicles);
 }
 
-async function handleGetVehicleList(request: FastifyRequest) {
-  return getVehicles();
+async function handleGetVehicleList(c: Context) {
+  const vehicles = await getVehicles();
+  return c.json(vehicles);
 }
 
-async function handleGetOperatorVehicleList(request: FastifyRequest) {
-  const { operator } = request.params as { operator: string };
-  return getOperatorVehicles(operator);
+async function handleGetOperatorVehicleList(c: Context) {
+  const operator = c.req.param('operator');
+  const vehicles = await getOperatorVehicles(operator);
+  return c.json(vehicles);
 }
 
-async function handleGetOperatorVehicle(request: FastifyRequest, reply: FastifyReply) {
-  const { operator, number } = request.params as { operator: string; number: string };
-  const { period } = request.query as { period?: string };
-  if (Number.isNaN(number)) return reply.code(400).send();
+async function handleGetOperatorVehicle(c: Context) {
+  const { operator, number } = c.req.param();
+  const period = c.req.query('period');
+  if (Number.isNaN(number)) return c.json({ message: 'An invalid vehicle number was received' }, 400);
 
   try {
-    return getVehicle({ operator, number: +number }, period);
+    const vehicle = await getVehicle({ operator, number: +number }, period);
+    return c.json(vehicle);
   } catch (e) {
     if (e instanceof Error) {
-      if (e.message === 'INVALID_PERIOD') return reply.code(400).send();
-      if (e.message === 'VEHICLE_NOT_FOUND') return reply.code(404).send();
+      if (e.message === 'INVALID_PERIOD') return c.json({ message: 'Period must be in format YYYY-MM' }, 400);
+      if (e.message === 'VEHICLE_NOT_FOUND')
+        return c.json({ message: 'No vehicle was found with the supplied information' }, 404);
     }
     console.error(e);
-    return reply.code(500).send();
+    return c.json({ message: 'An unknown error occurred, please try again later' }, 500);
   }
 }
 
