@@ -174,7 +174,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
             </div>
             {data.vehicle.id && (
               <Link
-                className="bg-brand flex justify-center gap-2 pt-1 hover:bg-brand-hover"
+                className="bg-brand flex items-center justify-center gap-2 pt-1 hover:bg-brand-hover"
                 href={`/vehicles/${data.source.toLowerCase()}/${data.vehicle.id}`}
                 target="_blank"
               >
