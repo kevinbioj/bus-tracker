@@ -20,10 +20,10 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
   if (stopTimes.length === 0) return null;
   return (
     <div className="-mb-2 px-2">
-      <div className="font-[Rubik] max-h-24 min-w-44 mt-0.5 overflow-y-scroll w-full">
+      <div className="font-[Achemine] max-h-24 min-w-44 mt-0.5 overflow-y-scroll w-full">
         {stopTimes.map((stopTime) => {
           return (
-            <div className="grid grid-cols-[auto_1rem_2.35rem] font-medium mt-0.5" key={stopTime.id}>
+            <div className="grid grid-cols-[auto_1rem_2rem] font-bold mt-0.5" key={stopTime.id}>
               <span className="overflow-hidden text-ellipsis whitespace-nowrap" title={stopTime.name}>
                 {stopTime.name}
               </span>
@@ -46,7 +46,7 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
                 .with([P.number, true], ([time]) => {
                   return (
                     <span
-                      className="tabular-nums text-green-700"
+                      className="tabular-nums text-green-700 hover:cursor-default"
                       title={
                         stopTime.delta !== null
                           ? stopTime.delta === 0

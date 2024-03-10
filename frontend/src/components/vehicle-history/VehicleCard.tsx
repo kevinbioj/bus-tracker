@@ -39,7 +39,7 @@ export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
           className="border-l-[1px] border-black dark:border-white mx-2 my-1"
           style={route ? { borderColor: route.colors.text } : {}}
         />
-        <h3 className="flex font-medium gap-1.5 justify-center ml-1 tabular-nums text-2xl sm:my-auto sm:text-4xl sm:w-32">
+        <h3 className="flex font-bold gap-1.5 justify-center ml-1 tabular-nums text-2xl sm:my-auto sm:text-4xl sm:w-32">
           {vehicle.number}
         </h3>
       </div>
@@ -51,7 +51,7 @@ export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
         <div className="h-12 w-12 relative">
           {route ? (
             route.noCartridge ? (
-              <p className="flex justify-center items-center h-full font-semibold text-2xl">{route.name}</p>
+              <p className="flex justify-center items-center h-full font-bold text-2xl">{route.name}</p>
             ) : (
               <Image src={`/assets/routes/${route.id}.svg`} alt={route.name} fill />
             )
@@ -60,11 +60,11 @@ export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
           )}
         </div>
         <div className="flex flex-col justify-center">
-          {vehicle.name && <p className="font-medium">{vehicle.name}</p>}
+          {vehicle.name && <p className="font-bold">{vehicle.name}</p>}
           {vehicle.currentRouteId !== null ? (
             <p>
               En circulation depuis{" "}
-              <span className="font-medium tabular-nums">{dayjs(vehicle.sinceTime!).format("HH:mm")}</span>
+              <span className="font-bold tabular-nums">{dayjs(vehicle.sinceTime!).format("HH:mm")}</span>
             </p>
           ) : (
             <p>
@@ -72,10 +72,9 @@ export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
               {vehicle.sinceTime !== null && (
                 <>
                   {" "}
-                  depuis le <span className="font-medium tabular-nums">
+                  depuis le <span className="font-bold tabular-nums">
                     {dayjs(vehicle.sinceTime).format("DD/MM")}
-                  </span>{" "}
-                  à <span className="font-medium tabular-nums">{dayjs(vehicle.sinceTime).format("HH:mm")}</span>
+                  </span> à <span className="font-bold tabular-nums">{dayjs(vehicle.sinceTime).format("HH:mm")}</span>
                 </>
               )}
             </p>

@@ -1,5 +1,6 @@
 "use client";
 
+import { clsx } from "clsx";
 import dayjs from "dayjs";
 import { Refresh } from "tabler-icons-react";
 import { match } from "ts-pattern";
@@ -9,16 +10,16 @@ import { REFRESH_INTERVAL, useVehiclesQuery } from "~/hooks/useVehicles";
 export default function DataStatus() {
   const query = useVehiclesQuery();
   const canForceUpdate =
-    !query.isLoading && (query.isError || dayjs(query.dataUpdatedAt).diff(dayjs(), "seconds") > REFRESH_INTERVAL);
+    !query.isFetching && (query.isError || dayjs(query.dataUpdatedAt).diff(dayjs(), "seconds") > REFRESH_INTERVAL);
   return (
     <div className="flex items-center justify-center gap-2 mb-1 mt-1.5">
       <p>
         {match(query.status)
-          .with("error", () => <>Les dernières données n&apos;ont pas pu être obtenues.</>)
+          .with("error", () => <>Échec de la mise à jour des données.</>)
           .with("pending", () => <>Chargement des données en cours...</>)
           .with("success", () => (
             <>
-              Données obtenues à <span className="font-medium">{dayjs(query.dataUpdatedAt).format("HH:mm:ss")}</span>
+              Données obtenues à <span className="font-bold">{dayjs(query.dataUpdatedAt).format("HH:mm:ss")}</span>
             </>
           ))
           .exhaustive()}
@@ -33,7 +34,7 @@ export default function DataStatus() {
             : "Vous ne pouvez pas forcer la mise à jour des données."
         }
       >
-        <Refresh color="white" size={19} />
+        <Refresh className={clsx({ "animate-spin direction-reverse": query.isFetching })} color="white" size={19} />
       </button>
     </div>
   );

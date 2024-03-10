@@ -12,7 +12,7 @@ export function ActivityCard({ data }: { data: VehicleActivityDto }) {
       style={{ backgroundColor: route.colors.background, color: route.colors.text }}
     >
       {route.noCartridge ? (
-        <p className="font-medium my-auto pt-[1px] text-2xl text-center w-12">{route.name}</p>
+        <p className="font-bold my-auto pt-[1px] text-2xl text-center w-12">{route.name}</p>
       ) : (
         <Image alt={route.name} src={`/assets/routes/${route.id}.svg`} width={48} height={48} />
       )}
@@ -20,12 +20,12 @@ export function ActivityCard({ data }: { data: VehicleActivityDto }) {
       <p className="my-auto text-2xl">
         {data.endTime !== null ? (
           <>
-            <span className="font-medium tabular-nums">{dayjs(data.startTime).format("HH:mm")}</span> à{" "}
-            <span className="font-medium tabular-nums">{dayjs(data.endTime).format("HH:mm")}</span>
+            <span className="font-bold tabular-nums">{dayjs(data.startTime).format("HH:mm")}</span> à{" "}
+            <span className="font-bold tabular-nums">{dayjs(data.endTime).format("HH:mm")}</span>
           </>
         ) : (
           <>
-            depuis <span className="font-medium tabular-nums">{dayjs(data.startTime).format("HH:mm")}</span>
+            depuis <span className="font-bold tabular-nums">{dayjs(data.startTime).format("HH:mm")}</span>
           </>
         )}
       </p>

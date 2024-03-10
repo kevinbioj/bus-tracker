@@ -12,12 +12,12 @@ export default function OperatorIssues({ issues }: OperatorIssuesProps) {
         <li className="" key={index}>
           {match(issue.status)
             .with("ONGOING", () => (
-              <span className="font-medium text-orange-500">
+              <span className="font-bold text-orange-500">
                 <CloudStorm aria-label="Problème" className="inline-flex" /> En cours :
               </span>
             ))
             .with("RESOLVED", () => (
-              <span className="font-medium text-green-500">
+              <span className="font-bold text-green-500">
                 <SquareCheck aria-label="Problème" className="inline-flex" /> Résolu :
               </span>
             ))

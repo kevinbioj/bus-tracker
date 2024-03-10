@@ -19,7 +19,7 @@ export default function InteractiveMap({ center, className }: InteractiveMapProp
   const [lastLocation] = useLocalStorage<[number, number, number] | null>("last-location", null);
   return (
     <section>
-      <h2 className="font-medium sr-only text-2xl text-center">Carte interactive</h2>
+      <h2 className="font-bold sr-only text-2xl text-center">Carte interactive</h2>
       <MapContainer
         center={lastLocation ? [lastLocation[0], lastLocation[1]] : center}
         className={className}

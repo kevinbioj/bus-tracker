@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function OperatorsList() {
   return (
     <main className="max-w-screen-lg mt-4 mx-auto px-2">
-      <h2 className="font-medium text-center text-2xl">Historique des véhicules</h2>
+      <h2 className="font-bold text-center text-2xl">Historique des véhicules</h2>
       <p className="text-center text-muted-foreground">Sélectionnez un opérateur de transport ci-dessous.</p>
       <section className="grid grid-cols-2 gap-2 mt-3 sm:grid-cols-4">
         {operators

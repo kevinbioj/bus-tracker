@@ -3,7 +3,7 @@ import { Satellite as SatelliteIcon } from "tabler-icons-react";
 export default function Caption() {
   return (
     <section className="max-w-screen-xl mt-6 mx-auto px-2">
-      <h2 className="font-medium text-center text-2xl">Légende</h2>
+      <h2 className="font-bold text-center text-2xl">Légende</h2>
       <ul>
         <li className="flex gap-2 items-center mt-1">
           <div className="h-8 shrink-0 w-8">

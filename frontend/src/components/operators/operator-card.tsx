@@ -16,7 +16,7 @@ export default function OperatorCard({ operator }: OperatorCardProps) {
         <Image className="mx-auto" src={operator.logo.href} alt={operator.name} width={width} height={height} />
       </div>
       <div className="flex-1 text-center sm:text-left">
-        <h3 className="font-medium text-lg">{operator.name}</h3>
+        <h3 className="font-bold text-lg">{operator.name}</h3>
         <OperatorStatus id={operator.id} />
         <OperatorNote note={operator.note} />
         <OperatorIssues issues={operator.issues} />

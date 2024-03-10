@@ -42,7 +42,7 @@ export default function VehicleList({ operator, vehicles }: VehicleList) {
               <ArrowLeft className="h-8 w-8" />
             </Link>
             <div className="flex flex-col">
-              <h3 className="font-medium text-2xl">Liste des véhicules</h3>
+              <h3 className="font-bold text-2xl">Liste des véhicules</h3>
               {filtered.length > 1 && (
                 <p className="text-muted-foreground">
                   {match(activeCount)

@@ -79,7 +79,7 @@ export default async function VehicleEntryPage({ params, searchParams }: Vehicle
                     <TramwayIcon className="fill-black h-6 w-6 dark:fill-white" />
                   ))
                   .exhaustive()}
-                <span className="font-medium text-2xl">Véhicule n°{vehicle.number}</span>
+                <span className="font-bold text-2xl">Véhicule n°{vehicle.number}</span>
               </div>
               {vehicle.name && <span className="text-xl">{vehicle.name}</span>}
             </h3>
@@ -111,7 +111,7 @@ export default async function VehicleEntryPage({ params, searchParams }: Vehicle
               ) : (
                 <div></div>
               )}
-              <p className="font-medium my-auto select-none text-2xl text-center text-white">
+              <p className="font-bold my-auto select-none text-2xl text-center text-white">
                 {period.format("MMMM YYYY")}
               </p>
               {currentMonthIdx < vehicle.activeOn.length - 1 ? (

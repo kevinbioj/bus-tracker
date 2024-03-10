@@ -5,7 +5,7 @@ import * as React from "react";
 import { cn } from "~/util/merge";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors disabled:opacity-50 disabled:pointer-events-none",
+  "inline-flex items-center justify-center rounded-md text-sm font-bold transition-colors disabled:opacity-50 disabled:pointer-events-none",
   {
     variants: {
       variant: {

@@ -18,10 +18,10 @@ export default function RouteDestination({ destination, vehicles }: RouteDestina
         {destination.name}
         {destination.city && ` ${destination.city}`}
       </h4>
-      <div className="flex gap-1 font-[Rubik] leading-none text-lg">
+      <div className="flex gap-1 font-[Achemine] leading-none text-lg">
         <div>➜</div>
         <div className="flex flex-col gap-0.5">
-          <span className="font-medium">{destination.name}</span>
+          <span className="font-bold">{destination.name}</span>
           {destination.city && <span className="text-xs uppercase">{destination.city}</span>}
         </div>
       </div>

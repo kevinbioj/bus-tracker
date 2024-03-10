@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       <header className="bg-brand grid grid-cols-[4rem_auto_4rem] py-1 text-white" id="header">
-        <h1 className="col-start-2 font-[Rubik] font-medium select-none text-3xl text-center hover:cursor-default">
+        <h1 className="col-start-2 font-[Achemine] font-bold select-none text-3xl text-center hover:cursor-default">
           Bus Tracker
         </h1>
         <Preferences />
@@ -22,22 +22,22 @@ export default function Header() {
           <Link
             className={clsx(
               "hover:bg-brand-hover border-white flex gap-1 justify-center p-1 w-full sm:rounded-tl-md",
-              pathname.startsWith("/map") && "font-medium",
+              pathname.startsWith("/map") && "font-bold",
             )}
             href="/map"
           >
-            <Map2 width={20} height={20} />
+            <Map2 width={20} height={20} className="my-auto" />
             Carte temps-réel
           </Link>
           <div className="border-l-[1px] border-white" />
           <Link
             className={clsx(
               "hover:bg-brand-hover border-white flex gap-1 justify-center p-1 w-full sm:rounded-tr-md",
-              pathname.startsWith("/vehicles") && "font-medium",
+              pathname.startsWith("/vehicles") && "font-bold",
             )}
             href="/vehicles"
           >
-            <Table width={20} height={20} />
+            <Table width={20} height={20} className="my-auto" />
             Véhicules
           </Link>
         </div>

@@ -146,7 +146,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
               />
             )}
           </div>
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col font-[Achemine] w-full">
             <div className="flex items-center justify-between gap-2 px-2 py-[1px]">
               <Image
                 className="h-4 w-auto"
@@ -179,7 +179,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                 target="_blank"
               >
                 <BusIcon className="fill-white h-4 w-4" />
-                <span className="font-[Rubik] font-medium text-sm text-white">Voir ce véhicule</span>
+                <span className="font-[Achemine] font-bold text-sm text-white">Voir ce véhicule</span>
               </Link>
             )}
             {showNextStops && <NextStops stopTimes={data.trip.stopTimes} />}

@@ -103,7 +103,7 @@ const astuceRoutes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, textWidth: 96 },
+          dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
             { font: "14LUPLAN", textSpacing: 1, text: "BOULINGRIN" },
@@ -117,7 +117,7 @@ const astuceRoutes: Route[] = [
         name: "Georges Braque",
         city: "GRAND-QUEVILLY",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, textWidth: 96 },
+          dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
             { font: "14LUPLAN", textSpacing: 1, text: "G. BRAQUE" },
@@ -131,7 +131,7 @@ const astuceRoutes: Route[] = [
         name: "Technopôle",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, textWidth: 96 },
+          dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
             { font: "14LUPLAN", textSpacing: 1, text: "TECHNOPOLE" },
@@ -145,7 +145,7 @@ const astuceRoutes: Route[] = [
         name: "Hôtel de Ville",
         city: "SOTTEVILLE-LÈS-ROUEN",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, textWidth: 96 },
+          dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
             { font: "14LUPLAN", textSpacing: 1, text: "HOTEL DE VILLE" },

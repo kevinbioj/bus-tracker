@@ -41,7 +41,7 @@ type LayoutProps = { children: React.ReactNode };
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="fr">
-      <body className="bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white font-[Rubik] mb-12">
+      <body className="bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white font-[Achemine] mb-12">
         <NextTopLoader color="#FFFFFF" showSpinner={false} />
         <Header />
         <Providers>{children}</Providers>
