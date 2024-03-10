@@ -86,6 +86,16 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'LIA',
+    refreshCron: '25,55 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'LIA',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/1e666e24-58ee-46b9-8952-ea2755ba88f2',
+      routePrefix: 'LIA',
+    },
+  },
+  {
     id: 'NOMAD',
     refreshCron: '0,20,40 * * * * *',
     type: 'GTFS',

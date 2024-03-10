@@ -7,6 +7,7 @@ import capCotentinRoutes from "~/data/networks/cap-cotentin";
 import deepMobRoutes from "~/data/networks/deepmob";
 import hobusRoutes from "~/data/networks/hobus";
 import lbusRoutes from "~/data/networks/lbus";
+import liaRoutes from "~/data/networks/lia";
 import nevaRoutes from "~/data/networks/neva";
 import nomadRegionRoutes from "~/data/networks/nomad-region";
 import rezobusRoutes from "~/data/networks/rezobus";
@@ -20,6 +21,7 @@ const routes: Route[] = [
   ...deepMobRoutes,
   ...hobusRoutes,
   ...lbusRoutes,
+  ...liaRoutes,
   ...nevaRoutes,
   ...nomadRegionRoutes,
   ...rezobusRoutes,

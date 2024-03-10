@@ -68,6 +68,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "LIA",
+    name: "LiA (Le Havre)",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/lia.svg",
+      size: [120, 88],
+    },
+    issues: [],
+  },
+  {
     id: "CAPCOT",
     name: "Cap Cotentin (Cherbourg-en-Cotentin)",
     hasHistory: true,
