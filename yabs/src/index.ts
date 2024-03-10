@@ -1,6 +1,6 @@
+import { Cron } from 'croner';
 import dayjs from 'dayjs';
 import { Context, Hono } from 'hono';
-import { schedule } from 'node-cron';
 import { match } from 'ts-pattern';
 
 import { YabsEntry } from '~/@types';
@@ -43,8 +43,8 @@ for (const source of sources) {
 hasComputedFirstEntries = true;
 
 console.log('YABS\tRegistering scheduled tasks.');
-schedule('0 * * * *', () => sources.map((source) => updateResource(source)));
-sources.map((source) => schedule(source.refreshCron, () => updateEntries(source)));
+Cron('0 * * * *', () => sources.map((source) => updateResource(source)));
+sources.map((source) => Cron(source.refreshCron, () => updateEntries(source)));
 
 // --- ROUTE HANDLERS
 
