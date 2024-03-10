@@ -3,7 +3,7 @@ import { Operator } from "~/@types";
 const operators: Operator[] = [
   {
     id: "TCAR",
-    name: "Transdev Rouen",
+    name: "Astuce – Transdev Rouen",
     hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-rouen.svg",
@@ -19,7 +19,7 @@ const operators: Operator[] = [
   },
   {
     id: "TAE",
-    name: "Régie des Transports urbains de l'Agglomération Elbeuvienne",
+    name: "Astuce – Régie des Transports urbains de l'Agglomération Elbeuvienne",
     hasHistory: true,
     logo: {
       href: "/assets/operators/tae.svg",
@@ -29,7 +29,7 @@ const operators: Operator[] = [
   },
   {
     id: "TNI",
-    name: "Transdev Normandie Interurbain",
+    name: "Astuce – Transdev Normandie Interurbain",
     hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-normandie.svg",
@@ -39,7 +39,7 @@ const operators: Operator[] = [
   },
   {
     id: "HANGA",
-    name: "Cars Hangard",
+    name: "Astuce – Cars Hangard",
     hasHistory: false,
     logo: {
       href: "/assets/operators/cars-hangard.png",
@@ -49,7 +49,7 @@ const operators: Operator[] = [
   },
   {
     id: "TWISTO",
-    name: "Twisto - Keolis Caen Mobilités",
+    name: "Twisto",
     hasHistory: true,
     logo: {
       href: "/assets/operators/twisto.svg",
@@ -59,7 +59,7 @@ const operators: Operator[] = [
   },
   {
     id: "CAPCOT",
-    name: "Cap Cotentin - Transdev Cotentin",
+    name: "Cap Cotentin",
     hasHistory: true,
     logo: {
       href: "/assets/operators/capcotentin.svg",
@@ -69,7 +69,7 @@ const operators: Operator[] = [
   },
   {
     id: "DEEPMOB",
-    name: "DeepMob - Transdev Urbain Dieppe",
+    name: "DeepMob",
     hasHistory: true,
     logo: {
       href: "/assets/operators/deepmob.svg",
@@ -89,7 +89,7 @@ const operators: Operator[] = [
   },
   {
     id: "SNGO",
-    name: "SNgo! - Transdev Normandie Val de Seine",
+    name: "SNgo!",
     hasHistory: true,
     logo: {
       href: "/assets/operators/sngo.jpg",
@@ -99,7 +99,7 @@ const operators: Operator[] = [
   },
   {
     id: "REZOBUS",
-    name: "Rezo'Bus - Transdev Normandie Interurbain",
+    name: "Rezo'Bus",
     hasHistory: true,
     logo: {
       href: "/assets/operators/rezobus.svg",
@@ -109,7 +109,7 @@ const operators: Operator[] = [
   },
   {
     id: "ASTROBUS",
-    name: "Astrobus - Keolis Lisieux Normandie",
+    name: "Astrobus",
     hasHistory: false,
     logo: {
       href: "/assets/operators/astrobus.svg",
@@ -119,7 +119,7 @@ const operators: Operator[] = [
   },
   {
     id: "HOBUS",
-    name: "Hobus - Keolis Calvados",
+    name: "Hobus",
     hasHistory: false,
     logo: {
       href: "/assets/operators/hobus.png",
@@ -129,7 +129,7 @@ const operators: Operator[] = [
   },
   {
     id: "NEVA",
-    name: "Néva - Com. de Communes Granville Terre et Mer",
+    name: "Néva",
     hasHistory: false,
     logo: {
       href: "/assets/operators/neva.png",
@@ -139,7 +139,7 @@ const operators: Operator[] = [
   },
   {
     id: "LBUS",
-    name: "l'Bus - Keolis Normandie Seine",
+    name: "l'Bus",
     hasHistory: false,
     logo: {
       href: "/assets/operators/lbus.png",
