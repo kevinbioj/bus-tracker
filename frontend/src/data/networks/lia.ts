@@ -127,7 +127,7 @@ const liaRoutes: Route[] = [
     id: "LIA:C2",
     mapOnly: true,
     noCartridge: true,
-    name: "NaN",
+    name: "C2",
     colors: { background: "#E30613", text: "#FFFFFF" },
     destinations: [
       {
@@ -805,15 +805,21 @@ const liaRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "18",
-    colors: { background: "#56543C", text: "#" },
+    colors: { background: "#56543C", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Z.I. Portuaire"],
-        name: "Z.I. Portuaire",
+        name: "Les Neiges",
         city: "LE HAVRE",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#56543C", textColor: "#", text: "18" },
-          pages: [{ font: "1508SUPX", text: "Z.I. PORTUAIRE" }],
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#56543C",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "18",
+          },
+          pages: [{ font: "1508SUPX", text: "LES NEIGES" }],
         },
       },
       {
@@ -821,7 +827,13 @@ const liaRoutes: Route[] = [
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#56543C", textColor: "#", text: "18" },
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#56543C",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "18",
+          },
           pages: [{ font: "1508SUPX", text: "LE HAVRE GARES" }],
         },
       },
@@ -952,7 +964,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Funiculaire / C.Monet / St Jo."],
+        id: ["Funiculaire / C.Monet / St Jo.", "Funiculaire / C. Monet / St Jo."],
         name: "Lycée Claude Monet / Institution Saint-Joseph",
         girouette: {
           routeNumber: {
@@ -1127,7 +1139,7 @@ const liaRoutes: Route[] = [
             outlineColor: "#000000",
             text: "60",
           },
-          pages: [{ font: "1507SUPX", text: "LYCEE J. PREVOST" }],
+          pages: [{ font: "1508SUPX", text: "LYCEE J. PREVOST" }],
         },
       },
     ],
