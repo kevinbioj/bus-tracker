@@ -31,20 +31,24 @@ server.get('/history/:operator', handleGetOperatorVehicleList);
 server.get('/history/:operator/:number', handleGetOperatorVehicle);
 export default { port, fetch: server.fetch };
 
-console.log('YABS\tLoading resources into memory.');
-for (const source of sources) await updateResource(source);
+async function init() {
+  console.log('YABS\tLoading resources into memory.');
+  for (const source of sources) await updateResource(source);
 
-console.log('YABS\tComputing first entries.');
-for (const source of sources) {
-  try {
-    await updateEntries(source);
-  } catch {}
+  console.log('YABS\tComputing first entries.');
+  for (const source of sources) {
+    try {
+      await updateEntries(source);
+    } catch {}
+  }
+  hasComputedFirstEntries = true;
+
+  console.log('YABS\tRegistering scheduled tasks.');
+  Cron('0 * * * *', () => sources.map((source) => updateResource(source)));
+  sources.map((source) => Cron(source.refreshCron, () => updateEntries(source)));
 }
-hasComputedFirstEntries = true;
 
-console.log('YABS\tRegistering scheduled tasks.');
-Cron('0 * * * *', () => sources.map((source) => updateResource(source)));
-sources.map((source) => Cron(source.refreshCron, () => updateEntries(source)));
+init();
 
 // --- ROUTE HANDLERS
 
