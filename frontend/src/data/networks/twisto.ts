@@ -1101,8 +1101,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "100",
           },
@@ -1115,8 +1115,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "100",
           },
@@ -1137,8 +1137,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "101",
           },
@@ -1151,8 +1151,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "101",
           },
@@ -1165,8 +1165,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "101",
           },
@@ -1179,8 +1179,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "101",
           },
@@ -1193,8 +1193,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "101",
           },
@@ -1207,8 +1207,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "101",
           },
@@ -1229,8 +1229,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "102",
           },
@@ -1244,8 +1244,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "102",
           },
@@ -1266,8 +1266,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "103",
           },
@@ -1280,8 +1280,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "103",
           },
@@ -1294,8 +1294,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "103",
           },
@@ -1317,8 +1317,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "104",
           },
@@ -1339,8 +1339,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "105",
           },
@@ -1354,8 +1354,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "105",
           },
@@ -1376,8 +1376,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "106",
           },
@@ -1398,8 +1398,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "107",
           },
@@ -1413,8 +1413,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "107",
           },
@@ -1436,8 +1436,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "109",
           },
@@ -1450,8 +1450,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "109",
           },
@@ -1472,8 +1472,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "110",
           },
@@ -1487,8 +1487,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "110",
           },
@@ -1509,8 +1509,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "111",
           },
@@ -1524,8 +1524,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "111",
           },
@@ -1549,8 +1549,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "112",
           },
@@ -1564,8 +1564,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "112",
           },
@@ -1586,8 +1586,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "113",
           },
@@ -1601,8 +1601,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "113",
           },
@@ -1623,8 +1623,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "114",
           },
@@ -1645,8 +1645,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "115",
           },
@@ -1660,8 +1660,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "115",
           },
@@ -1682,8 +1682,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "116",
           },
@@ -1696,8 +1696,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "116",
           },
@@ -1718,8 +1718,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "118",
           },
@@ -1732,8 +1732,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "118",
           },
@@ -1755,8 +1755,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "119",
           },
@@ -1777,8 +1777,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "120",
           },
@@ -1794,8 +1794,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "120",
           },
@@ -1816,8 +1816,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "121",
           },
@@ -1830,8 +1830,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "121",
           },
@@ -1845,8 +1845,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "121",
           },
@@ -1862,8 +1862,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "121",
           },
@@ -1884,8 +1884,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "123",
           },
@@ -1898,8 +1898,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "123",
           },
@@ -1920,8 +1920,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "124",
           },
@@ -1935,8 +1935,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "124",
           },
@@ -1958,8 +1958,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "125",
           },
@@ -1980,8 +1980,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "126",
           },
@@ -1994,8 +1994,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "126",
           },
@@ -2016,8 +2016,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "127",
           },
@@ -2038,8 +2038,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "130",
           },
@@ -2052,8 +2052,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "130",
           },
@@ -2066,8 +2066,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "130",
           },
@@ -2080,8 +2080,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "130",
           },
@@ -2094,8 +2094,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "130",
           },
@@ -2108,8 +2108,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "130",
           },
@@ -2122,8 +2122,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "130",
           },
@@ -2136,8 +2136,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "130",
           },
@@ -2158,8 +2158,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "131",
           },
@@ -2172,8 +2172,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "131",
           },
@@ -2186,8 +2186,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "131",
           },
@@ -2200,8 +2200,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "131",
           },
@@ -2222,8 +2222,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "133",
           },
@@ -2236,8 +2236,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "133",
           },
@@ -2250,8 +2250,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "133",
           },
@@ -2264,8 +2264,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "133",
           },
@@ -2278,8 +2278,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "133",
           },
@@ -2292,8 +2292,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "133",
           },
@@ -2314,8 +2314,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "134",
           },
@@ -2328,8 +2328,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "134",
           },
@@ -2342,8 +2342,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "134",
           },
@@ -2364,8 +2364,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "135",
           },
@@ -2378,8 +2378,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "135",
           },
@@ -2400,8 +2400,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "136",
           },
@@ -2414,8 +2414,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "136",
           },
@@ -2428,8 +2428,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "136",
           },
@@ -2451,8 +2451,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "137",
           },
@@ -2473,8 +2473,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "137A",
           },
@@ -2487,8 +2487,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "137A",
           },
@@ -2509,8 +2509,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "137B",
           },
@@ -2531,8 +2531,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "137C",
           },
@@ -2553,8 +2553,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508SUPX",
-            backgroundColor: "#702283",
-            textColor: "#ffffff",
+            backgroundColor: "#ffffff",
+            textColor: "#702283",
             outlineColor: "#000000",
             text: "137D",
           },
