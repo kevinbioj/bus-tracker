@@ -138,6 +138,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "MOCA",
+    name: "MOCA (Barentin)",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/moca.png",
+      size: [743, 153],
+    },
+    issues: [],
+  },
+  {
     id: "REZOBUS",
     name: "Rezo'Bus (Bolbec-Lillebonne-N.-D-de-Gravenchon)",
     hasHistory: true,

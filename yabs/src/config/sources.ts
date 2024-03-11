@@ -179,6 +179,19 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'MOCA',
+    refreshCron: '25,55 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'MOCA',
+      routePrefix: 'MOCA',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/moca/gtfs/pub',
+      tripUpdateHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
+      vehiclePositionHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
+      filters: { scheduled: () => false },
+    },
+  },
+  {
     id: 'ASTROBUS',
     refreshCron: '15,45 * * * * *',
     type: 'GTFS',
