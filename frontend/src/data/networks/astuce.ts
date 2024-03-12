@@ -141,7 +141,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Hôtel de Ville de Sotteville"],
+        id: ["Hôtel de Ville de Sotteville", "Hôtel de Ville SOTTEVILLE-LES-ROUEN"],
         autoHide: true,
         name: "Hôtel de Ville",
         city: "SOTTEVILLE-LÈS-ROUEN",
