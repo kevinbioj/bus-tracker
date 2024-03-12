@@ -1,3 +1,5 @@
+import { P, match } from 'ts-pattern';
+
 import { GtfsProperties } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
@@ -93,6 +95,24 @@ const sources: Source[] = [
       id: 'LIA',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/1e666e24-58ee-46b9-8952-ea2755ba88f2',
       routePrefix: 'LIA',
+      afterInit: (resource) => {
+        for (const [_, trip] of resource.trips) {
+          if (trip.route !== 'T') continue;
+          const [first, last] = [trip.stops.at(0)!.stop, trip.stops.at(-1)!.stop];
+          trip.route = match([first.name, last.name])
+            .with(P.union(['La Plage', 'Grand Hameau'], ['Grand Hameau', 'La Plage']), () => 'A')
+            .with(
+              P.union(
+                ['La Plage', 'Pré Fleuri'],
+                ['Pré Fleuri', 'La Plage'],
+                ['Rond-Point', 'La Plage'],
+                ['Pré Fleuri', 'Rond-Point'],
+              ),
+              () => 'B',
+            )
+            .otherwise(() => 'T');
+        }
+      },
     },
   },
   {

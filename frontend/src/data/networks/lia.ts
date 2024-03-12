@@ -10,6 +10,7 @@ const liaRoutes: Route[] = [
     destinations: [
       {
         id: ["Grand Hameau"],
+        autoHide: true,
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -25,6 +26,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Pré Fleuri"],
+        autoHide: true,
         name: "Pré Fleuri",
         city: "LE HAVRE",
         girouette: {
@@ -40,6 +42,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["La Plage"],
+        autoHide: true,
         name: "La Plage",
         city: "LE HAVRE",
         girouette: {
@@ -55,6 +58,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Rond-Point"],
+        autoHide: true,
         name: "Rond-Point",
         girouette: {
           routeNumber: {
@@ -63,6 +67,99 @@ const liaRoutes: Route[] = [
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "T",
+          },
+          pages: [{ font: "1508SUPX", text: "ROND-POINT" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "LIA:A",
+    mapOnly: true,
+    noCartridge: true,
+    name: "A",
+    colors: { background: "#E30613", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Grand Hameau"],
+        name: "Grand Hameau",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "A",
+          },
+          pages: [{ font: "1508SUPX", text: "GRAND HAMEAU" }],
+        },
+      },
+      {
+        id: ["La Plage"],
+        name: "La Plage",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "A",
+          },
+          pages: [{ font: "1508SUPX", text: "LA PLAGE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "LIA:B",
+    mapOnly: true,
+    noCartridge: true,
+    name: "B",
+    colors: { background: "#00BB00", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Pré Fleuri"],
+        name: "Pré Fleuri",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#00BB00",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "B",
+          },
+          pages: [{ font: "1508SUPX", text: "PRE FLEURI" }],
+        },
+      },
+      {
+        id: ["La Plage"],
+        name: "La Plage",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#00BB00",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "B",
+          },
+          pages: [{ font: "1508SUPX", text: "LA PLAGE" }],
+        },
+      },
+      {
+        id: ["Rond-Point"],
+        autoHide: true,
+        name: "Rond-Point",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#00BB00",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "B",
           },
           pages: [{ font: "1508SUPX", text: "ROND-POINT" }],
         },

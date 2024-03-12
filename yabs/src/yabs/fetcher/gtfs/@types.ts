@@ -11,6 +11,7 @@ export type GtfsProperties = {
     tripUpdate?: (tripUpdate: TripUpdateEntity, index: number, array: TripUpdateEntity[]) => boolean;
     vehiclePosition?: (tripUpdate: VehiclePositionEntity, index: number, array: VehiclePositionEntity[]) => boolean;
   };
+  afterInit?: (resource: GtfsResource) => unknown;
   getOperator?: (trip: Trip) => string;
   getVehicleNumber?: (descriptor: VehicleDescriptor) => string | null;
   generateShapes?: boolean;

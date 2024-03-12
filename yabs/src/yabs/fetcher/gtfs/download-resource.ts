@@ -29,7 +29,9 @@ export async function downloadStaticResource(properties: GtfsProperties) {
   const [calendars, shapes, stops] = await Promise.all([loadCalendars(tmpdir), loadShapes(tmpdir), loadStops(tmpdir)]);
   const trips = await loadTrips(tmpdir, calendars, shapes, stops);
   await $(`rm -r "${tmpdir}"`);
-  return { calendars, stops, trips };
+  const resource = { calendars, stops, trips };
+  properties.afterInit?.(resource);
+  return resource;
 }
 
 // ---
