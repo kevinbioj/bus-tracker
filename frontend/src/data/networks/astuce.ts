@@ -21,7 +21,7 @@ const astuceRoutes: Route[] = [
             textSpacing: 3,
             text: "N™",
           },
-          pages: [{ text: "CATELIERS" }, { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
+          pages: [{ text: "CATELIERS" }, { font: "1508C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
         },
       },
       {
@@ -226,8 +226,8 @@ const astuceRoutes: Route[] = [
             text: "T2",
           },
           pages: [
-            { font: "1310C2E1", textSpacing: 1, text: "MAIRIE VICTOR SCHOELCHER" },
-            { font: "1310C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" },
+            { font: "1508C2E1", textSpacing: 1, text: "MAIRIE VICTOR SCHOELCHER" },
+            { font: "1508C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" },
           ],
         },
       },
@@ -497,7 +497,7 @@ const astuceRoutes: Route[] = [
         city: "FRANQUEVILLE-SAINT-PIERRE",
         girouette: {
           routeNumber: { backgroundColor: "#AFC900", textColor: "#000000", text: "F5" },
-          pages: [{ text: "LYCEE GALILEE" }, { font: "1310C2E1", textSpacing: 1, text: "FRANQUEVILLE-SAINT-PIERRE" }],
+          pages: [{ text: "LYCEE GALILEE" }, { font: "1508C2E1", textSpacing: 1, text: "FRANQUEVILLE-SAINT-PIERRE" }],
         },
       },
       {
@@ -562,7 +562,7 @@ const astuceRoutes: Route[] = [
 
             text: "F6",
           },
-          pages: [{ text: "GARE" }, { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
+          pages: [{ text: "GARE" }, { font: "1508C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
         },
       },
     ],
@@ -1085,7 +1085,7 @@ const astuceRoutes: Route[] = [
         city: "NOTRE-DAME-DE-BONDEVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "35" },
-          pages: [{ text: "ECOLE MOULIN" }, { font: "1310C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
+          pages: [{ text: "ECOLE MOULIN" }, { font: "1508C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
         },
       },
     ],
@@ -1191,7 +1191,7 @@ const astuceRoutes: Route[] = [
           routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
           pages: [
             { font: "1510N2E1", text: "VENTE OLIVIER" },
-            { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
+            { font: "1508C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
           ],
         },
       },
@@ -1270,7 +1270,7 @@ const astuceRoutes: Route[] = [
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
           routeNumber: { backgroundColor: "#A2559D", textColor: "#FFFFFF", outlineColor: "#000000", text: "42" },
-          pages: [{ text: "LA HOUSSIERE" }, { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
+          pages: [{ text: "LA HOUSSIERE" }, { font: "1508C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
         },
       },
     ],
@@ -1305,7 +1305,7 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             text: "43",
           },
-          pages: [{ text: "LONGS VALLONS" }, { font: "1310C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
+          pages: [{ text: "LONGS VALLONS" }, { font: "1508C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
         },
       },
     ],
