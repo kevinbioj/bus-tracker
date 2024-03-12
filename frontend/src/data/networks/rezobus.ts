@@ -63,7 +63,7 @@ const rezobusRoutes: Route[] = [
         id: ["Lillebonne"],
         name: "Lillebonne",
         girouette: {
-          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", text: "12" },
+          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", outlineColor: "#000000", text: "12" },
           pages: [{ text: "LILLEBONNE" }],
         },
       },
@@ -131,7 +131,7 @@ const rezobusRoutes: Route[] = [
         id: ["Lillebonne"],
         name: "Lillebonne",
         girouette: {
-          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", text: "11" },
+          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
           pages: [{ text: "LILLEBONNE" }],
         },
       },
@@ -165,7 +165,7 @@ const rezobusRoutes: Route[] = [
         id: ["PORT-JEROME-SUR-SEINE"],
         name: "PORT-JEROME-SUR-SEINE",
         girouette: {
-          routeNumber: { backgroundColor: "#808000", textColor: "#FFFFFF", text: "30" },
+          routeNumber: { backgroundColor: "#808000", textColor: "#FFFFFF", outlineColor: "#000000", text: "30" },
           pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
         },
       },
@@ -199,7 +199,7 @@ const rezobusRoutes: Route[] = [
         id: ["Lillebonne"],
         name: "Lillebonne",
         girouette: {
-          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", text: "13" },
+          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", outlineColor: "#000000", text: "13" },
           pages: [{ text: "LILLEBONNE" }],
         },
       },
