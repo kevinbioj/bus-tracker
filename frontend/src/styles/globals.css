@@ -4,18 +4,14 @@
 
 @font-face {
   font-family: "Achemine";
-  src:
-    url("../fonts/achemine-regular-webfont.woff2") format("woff2"),
-    url("../fonts/achemine-regular-webfont.woff") format("woff");
+  src: url('../fonts/Achemine.ttf');
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Achemine";
-  src:
-    url("../fonts/achemine-bold-webfont.woff2") format("woff2"),
-    url("../fonts/achemine-bold-webfont.woff") format("woff");
+  src: url('../fonts/Achemine-Bold.ttf');
   font-weight: bold;
   font-display: swap;
 }
