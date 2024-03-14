@@ -142,8 +142,8 @@ const operators: Operator[] = [
     name: "MOCA (Barentin)",
     hasHistory: true,
     logo: {
-      href: "/assets/operators/moca.png",
-      size: [743, 153],
+      href: "/assets/operators/moca.svg",
+      size: [1625, 335],
     },
     issues: [],
   },
