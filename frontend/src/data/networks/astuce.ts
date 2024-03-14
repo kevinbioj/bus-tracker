@@ -99,8 +99,8 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
           pages: [
-            { font: "1510N2E1", text: "TECHNOPOLE" },
-            { font: "1508C2E1", text: "SAINT-ETIENNE-DU-ROUVRAY" },
+            { font: "1513B3E1", text: "TECHNOPOLE" },
+            { font: "1508C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
           ],
         },
       },
@@ -112,7 +112,7 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
           pages: [
-            { font: "1510N2E1", text: "HOTEL DE VILLE" },
+            { font: "1513B3E1", text: "HOTEL DE VILLE" },
             { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" },
           ],
         },
