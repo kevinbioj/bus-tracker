@@ -91,6 +91,32 @@ const astuceRoutes: Route[] = [
           ],
         },
       },
+      {
+        id: ["Technopôle SAINT-ETIENNE-DU-ROUVRAY"],
+        autoHide: true,
+        name: "Technopôle",
+        city: "SAINT-ÉTIENNE-DU-ROUVRAY",
+        girouette: {
+          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
+          pages: [
+            { font: "1510N2E1", text: "TECHNOPOLE" },
+            { font: "1508C2E1", text: "SAINT-ETIENNE-DU-ROUVRAY" },
+          ],
+        },
+      },
+      {
+        id: ["Hôtel de Ville de SOTTEVILLE"],
+        autoHide: true,
+        name: "Hôtel de Ville",
+        city: "SOTTEVILLE-LÈS-ROUEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
+          pages: [
+            { font: "1510N2E1", text: "HOTEL DE VILLE" },
+            { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" },
+          ],
+        },
+      },
     ],
   },
   {
