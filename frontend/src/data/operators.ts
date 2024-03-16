@@ -13,7 +13,7 @@ const operators: Operator[] = [
   },
   {
     id: "TCAR",
-    name: "Réseau Astuce (Rouen) | Transdev Rouen",
+    name: "Réseau Astuce (Rouen Normandie) | Transdev Rouen",
     hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-rouen.svg",
@@ -29,7 +29,7 @@ const operators: Operator[] = [
   },
   {
     id: "TAE",
-    name: "Réseau Astuce (Rouen) | Régie des Transports urbains de l'Agglomération Elbeuvienne",
+    name: "Réseau Astuce (Rouen Normandie) | Régie des Transports urbains de l'Agglomération Elbeuvienne",
     hasHistory: true,
     logo: {
       href: "/assets/operators/tae.svg",
@@ -39,7 +39,7 @@ const operators: Operator[] = [
   },
   {
     id: "TNI",
-    name: "Réseau Astuce (Rouen) | Transdev Normandie Interurbain",
+    name: "Réseau Astuce (Rouen Normandie) | Transdev Normandie Interurbain",
     hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-normandie.svg",
@@ -49,7 +49,7 @@ const operators: Operator[] = [
   },
   {
     id: "HANGA",
-    name: "Réseau Astuce (Rouen) | Autocars Hangard",
+    name: "Réseau Astuce (Rouen Normandie) | Autocars Hangard",
     hasHistory: false,
     logo: {
       href: "/assets/operators/cars-hangard.png",
@@ -59,7 +59,7 @@ const operators: Operator[] = [
   },
   {
     id: "TWISTO",
-    name: "Twisto (Caen)",
+    name: "Twisto (Caen la Mer)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/twisto.svg",
@@ -69,7 +69,7 @@ const operators: Operator[] = [
   },
   {
     id: "LIA",
-    name: "LiA (Le Havre)",
+    name: "LiA (Le Havre Seine Métropole)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/lia.svg",
@@ -79,7 +79,7 @@ const operators: Operator[] = [
   },
   {
     id: "CAPCOT",
-    name: "Cap Cotentin (Cherbourg-en-Cotentin)",
+    name: "Cap Cotentin (le Cotentin)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/capcotentin.svg",
@@ -89,7 +89,7 @@ const operators: Operator[] = [
   },
   {
     id: "DEEPMOB",
-    name: "DeepMob (Dieppe)",
+    name: "DeepMob (Dieppe Maritime)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/deepmob.svg",
@@ -99,7 +99,7 @@ const operators: Operator[] = [
   },
   {
     id: "ASTROBUS",
-    name: "Astrobus (Lisieux)",
+    name: "Astrobus (Lisieux Normandie)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/astrobus.svg",
@@ -109,7 +109,7 @@ const operators: Operator[] = [
   },
   {
     id: "SNGO",
-    name: "SNgo! (Vernon-Giverny-Les Andelys)",
+    name: "SNgo! (Seine Normandie Agglomération)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/sngo.jpg",
@@ -119,7 +119,7 @@ const operators: Operator[] = [
   },
   {
     id: "NEVA",
-    name: "Néva (Granville)",
+    name: "Néva (Granville Terre et Mer)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/neva.png",
@@ -129,7 +129,7 @@ const operators: Operator[] = [
   },
   {
     id: "HOBUS",
-    name: "Hobus (Honfleur)",
+    name: "Hobus (Pays de Honfleur-Beuzeville)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/hobus.png",
@@ -139,7 +139,7 @@ const operators: Operator[] = [
   },
   {
     id: "MOCA",
-    name: "MOCA (Barentin)",
+    name: "MOCA (Caux-Austreberthe)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/moca.svg",
@@ -149,7 +149,7 @@ const operators: Operator[] = [
   },
   {
     id: "REZOBUS",
-    name: "Rezo'Bus (Bolbec-Lillebonne-N.-D-de-Gravenchon)",
+    name: "Rezo'Bus (Caux Seine Agglo)",
     hasHistory: true,
     logo: {
       href: "/assets/operators/rezobus.svg",
@@ -159,7 +159,7 @@ const operators: Operator[] = [
   },
   {
     id: "LBUS",
-    name: "l'Bus (Bernay)",
+    name: "l'Bus (Bernay Terres de Normandie)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/lbus.png",
