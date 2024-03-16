@@ -143,7 +143,7 @@ const operators: Operator[] = [
     hasHistory: true,
     logo: {
       href: "/assets/operators/moca.svg",
-      size: [1625, 335],
+      size: [1560, 320],
     },
     issues: [],
   },
