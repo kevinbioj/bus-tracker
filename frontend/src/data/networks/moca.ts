@@ -14,7 +14,7 @@ const mocaRoutes: Route[] = [
         city: "BARENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#745CA8", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ font: "1508SUPX", text: "BARENTIN" }, { text: ["ZONE COMMERCIALE", "DU MESNIL ROUX"] }],
+          pages: [{ text: ["BARENTIN", "ZC DU MESNIL ROUX"] }],
         },
       },
       {
@@ -23,10 +23,7 @@ const mocaRoutes: Route[] = [
         city: "PAVILLY",
         girouette: {
           routeNumber: { backgroundColor: "#745CA8", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [
-            { font: "1508SUPX", text: "PAVILLY" },
-            { font: "1508SUPX", text: "ROUGES GRANGES" },
-          ],
+          pages: [{ text: ["PAVILLY", "ROUGES GRANGES"] }],
         },
       },
     ],
@@ -44,7 +41,7 @@ const mocaRoutes: Route[] = [
         city: "BARENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#6EC6AE", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ font: "1508SUPX", text: "BARENTIN" }, { text: ["ZONE COMMERCIALE", "DU MESNIL ROUX"] }],
+          pages: [{ text: ["BARENTIN", "ZC DU MESNIL ROUX"] }],
         },
       },
       {
@@ -53,10 +50,7 @@ const mocaRoutes: Route[] = [
         city: "VILLERS-ÉCALLES",
         girouette: {
           routeNumber: { backgroundColor: "#6EC6AE", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [
-            { font: "1508SUPX", text: "VILLERS-ECALLES" },
-            { font: "1508SUPX", text: "PORTE DE LA VALLEE" },
-          ],
+          pages: [{ text: ["VILLERS-ECALLES", "PORTE DE LA VALLEE"] }],
         },
       },
     ],
