@@ -6,11 +6,12 @@ import { ComponentPropsWithoutRef, useEffect, useState } from "react";
 const getFontHeight = (font: string) => (font === "METRO" ? 16 : +font.substring(0, 2));
 
 const paneBackgroundColor = "#1D1D1B";
-const ledBackgroundColor = "#FF8000";
+
+const getLedColor = (ledColor?: GirouetteData["ledColor"]) => (ledColor === "WHITE" ? "#F2FBFF" : "#FF8000");
 
 const defaultRouteNumber = {
   backgroundColor: paneBackgroundColor,
-  color: ledBackgroundColor,
+  color: getLedColor(),
   size: "lg",
   text: "",
 } as const;
@@ -37,6 +38,7 @@ export type RouteNumber = {
 };
 
 export type GirouetteData = {
+  ledColor?: "YELLOW" | "WHITE";
   dimensions?: { height: number; rnWidth: number; textWidth: number };
   routeNumber?: RouteNumber;
   pages: Page[];
@@ -76,6 +78,7 @@ const defaultDimensions = { height: 17, rnWidth: 32, textWidth: 160 };
 export function Girouette({
   className,
   dimensions = defaultDimensions,
+  ledColor = "YELLOW",
   pages,
   routeNumber = defaultRouteNumber,
   width,
@@ -106,7 +109,7 @@ export function Girouette({
         dangerouslySetInnerHTML={{ __html: routeNumber.text.trimEnd().replaceAll(" ", "&nbsp;") }}
         style={{
           backgroundColor: routeNumber.backgroundColor ?? paneBackgroundColor,
-          color: routeNumber.textColor ?? ledBackgroundColor,
+          color: routeNumber.textColor ?? getLedColor(ledColor),
           fontFamily: `"${routeNumber.font ?? "1513B3E1"}"`,
           fontSize: `${(height / dimensions.height) * getFontHeight(routeNumber.font ?? "1513B3E1")}px`,
           letterSpacing: `${onePixel * (routeNumber.textSpacing ?? (widerRnSpacing ? 3 : 2))}px`,
@@ -130,7 +133,7 @@ export function Girouette({
         <div
           className="flex flex-col justify-between overflow-hidden text-center whitespace-nowrap"
           style={{
-            color: ledBackgroundColor,
+            color: getLedColor(ledColor),
             fontFamily: `"${currentPage.font ?? "0808B2E1"}"`,
             fontSize: `${(height / dimensions.height) * getFontHeight(currentPage.font ?? "0808B2E1")}px`,
             rowGap: `${onePixel}px`,
@@ -148,7 +151,7 @@ export function Girouette({
           className="flex items-center justify-center overflow-hidden text-center whitespace-nowrap"
           dangerouslySetInnerHTML={{ __html: currentPage?.text.trimEnd().replaceAll(" ", "&nbsp;") }}
           style={{
-            color: ledBackgroundColor,
+            color: getLedColor(ledColor),
             fontFamily: `"${currentPage?.font ?? "1513B3E1"}"`,
             fontSize: `${(height / dimensions.height) * getFontHeight(currentPage?.font ?? "1513B3E1")}px`,
             letterSpacing: `${onePixel * (currentPage?.textSpacing ?? (currentPage.font?.endsWith("SUPX") ? 1 : 2))}px`,

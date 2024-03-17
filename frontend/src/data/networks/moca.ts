@@ -13,6 +13,7 @@ const mocaRoutes: Route[] = [
         name: "Zone Commerciale du Mesnil Roux",
         city: "BARENTIN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#745CA8", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: ["BARENTIN", "ZC DU MESNIL ROUX"] }],
         },
@@ -22,6 +23,7 @@ const mocaRoutes: Route[] = [
         name: "Rouges Granges",
         city: "PAVILLY",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#745CA8", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: ["PAVILLY", "ROUGES GRANGES"] }],
         },
@@ -40,6 +42,7 @@ const mocaRoutes: Route[] = [
         name: "Zone Commerciale du Mesnil Roux",
         city: "BARENTIN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#6EC6AE", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: ["BARENTIN", "ZC DU MESNIL ROUX"] }],
         },
@@ -49,6 +52,7 @@ const mocaRoutes: Route[] = [
         name: "Porte de la Vallée",
         city: "VILLERS-ÉCALLES",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#6EC6AE", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: ["VILLERS-ECALLES", "PORTE DE LA VALLEE"] }],
         },
