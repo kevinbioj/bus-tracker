@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: "Achemine";
-  src: url('../fonts/Achemine.ttf');
+  src: url("../fonts/Achemine.ttf");
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Achemine";
-  src: url('../fonts/Achemine-Bold.ttf');
+  src: url("../fonts/Achemine-Bold.ttf");
   font-weight: bold;
   font-display: swap;
 }

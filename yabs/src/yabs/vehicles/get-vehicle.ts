@@ -1,22 +1,22 @@
-import dayjs from "dayjs";
-import { SQL, and, desc, eq, sql } from "drizzle-orm";
-import { ACTIVITY_TIMEOUT } from "~/yabs/vehicles/constants";
+import dayjs from 'dayjs';
+import { SQL, and, desc, eq, sql } from 'drizzle-orm';
 
-import { orm } from "~/yabs/vehicles/database";
-import { vehicles, vehicleActivities } from "~/yabs/vehicles/schema";
-import { VehicleIdentifier } from "~/yabs/vehicles/vehicle-identifier";
+import { ACTIVITY_TIMEOUT } from '~/yabs/vehicles/constants';
+import { orm } from '~/yabs/vehicles/database';
+import { vehicleActivities, vehicles } from '~/yabs/vehicles/schema';
+import { VehicleIdentifier } from '~/yabs/vehicles/vehicle-identifier';
 
 const ACTIVITY_MONTH_SELECT = (distinct: boolean) =>
   sql.raw(
-    `${distinct ? "DISTINCT " : ""}strftime('%Y-%m', datetime(${vehicleActivities.startTime.name}, 'unixepoch'))`,
+    `${distinct ? 'DISTINCT ' : ''}strftime('%Y-%m', datetime(${vehicleActivities.startTime.name}, 'unixepoch'))`,
   ) as SQL<string>;
 const PERIOD_REGEXP = /^(20[2-4][0-9])-(0[1-9]|1[0-2])$/;
 
 export async function getVehicle(identifier: VehicleIdentifier, period?: string) {
-  if (typeof period !== "undefined" && !PERIOD_REGEXP.test(period)) {
-    throw new Error("INVALID_PERIOD");
+  if (typeof period !== 'undefined' && !PERIOD_REGEXP.test(period)) {
+    throw new Error('INVALID_PERIOD');
   }
-  period ??= dayjs().format("YYYY-MM");
+  period ??= dayjs().format('YYYY-MM');
 
   const vehicle = await orm
     .select()
@@ -25,7 +25,7 @@ export async function getVehicle(identifier: VehicleIdentifier, period?: string)
     .then((rows) => (rows.length > 0 ? rows[0] : null));
 
   if (vehicle === null) {
-    throw new Error("VEHICLE_NOT_FOUND");
+    throw new Error('VEHICLE_NOT_FOUND');
   }
 
   const activeOn = await orm
@@ -50,7 +50,7 @@ export async function getVehicle(identifier: VehicleIdentifier, period?: string)
         routeId: activity.routeId,
         startTime: activity.startTime,
         endTime:
-          index === 0 && dayjs().diff(dayjs(activity.updatedTime), "seconds") < ACTIVITY_TIMEOUT
+          index === 0 && dayjs().diff(dayjs(activity.updatedTime), 'seconds') < ACTIVITY_TIMEOUT
             ? null
             : activity.updatedTime,
       })),

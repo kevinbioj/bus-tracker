@@ -1,8 +1,9 @@
-import dayjs from "dayjs";
-import { and, asc, desc, eq } from "drizzle-orm";
-import { orm } from "~/yabs/vehicles/database";
-import { vehicleActivities, vehicles } from "~/yabs/vehicles/schema";
-import { VehicleIdentifier } from "~/yabs/vehicles/vehicle-identifier";
+import dayjs from 'dayjs';
+import { and, asc, desc, eq } from 'drizzle-orm';
+
+import { orm } from '~/yabs/vehicles/database';
+import { vehicleActivities, vehicles } from '~/yabs/vehicles/schema';
+import { VehicleIdentifier } from '~/yabs/vehicles/vehicle-identifier';
 
 const ALLOWED_TIMEOUT = 7200; // 2 hours of allowed timeout on a same route
 
@@ -10,7 +11,7 @@ type ActivityData = { routeId: string; time: Date };
 
 const shouldUpdateActivity = (activity: { routeId: string; updatedTime: Date }, against: ActivityData) => {
   if (activity.routeId !== against.routeId) return false;
-  return dayjs(against.time).diff(dayjs(activity.updatedTime), "seconds") < ALLOWED_TIMEOUT;
+  return dayjs(against.time).diff(dayjs(activity.updatedTime), 'seconds') < ALLOWED_TIMEOUT;
 };
 
 export async function insertActivity(identifier: VehicleIdentifier, activity: ActivityData) {
@@ -56,7 +57,7 @@ async function getOrCreateVehicle(identifier: VehicleIdentifier) {
         {
           operator: identifier.operator,
           number: identifier.number,
-          type: "BUS",
+          type: 'BUS',
         },
       ])
       .returning()

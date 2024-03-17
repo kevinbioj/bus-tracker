@@ -21,6 +21,7 @@ const DEFAULT_RETRY_INTERVAL = 10_000;
 
 const gtfsResources = new Map<string, GtfsResource>();
 const output = new Map<string, YabsEntry[]>();
+const suppliedDatabase = !!Bun.env.DB_PATH;
 let hasComputedFirstEntries = false;
 
 console.log(`YABS\tListening on port ${port}.`);
@@ -88,17 +89,26 @@ function handleGetVehicles(c: Context) {
 }
 
 async function handleGetVehicleList(c: Context) {
+  if (!suppliedDatabase) {
+    return c.json({ error: 'History service is unavailable at this moment.' }, 503);
+  }
   const vehicles = await getVehicles();
   return c.json(vehicles);
 }
 
 async function handleGetOperatorVehicleList(c: Context) {
+  if (!suppliedDatabase) {
+    return c.json({ error: 'History service is unavailable at this moment.' }, 503);
+  }
   const operator = c.req.param('operator');
   const vehicles = await getOperatorVehicles(operator);
   return c.json(vehicles);
 }
 
 async function handleGetOperatorVehicle(c: Context) {
+  if (!suppliedDatabase) {
+    return c.json({ error: 'History service is unavailable at this moment.' }, 503);
+  }
   const { operator, number } = c.req.param();
   const period = c.req.query('period');
   if (Number.isNaN(number)) return c.json({ message: 'An invalid vehicle number was received' }, 400);
@@ -165,16 +175,18 @@ async function updateEntries(source: Source) {
 
     if (entries !== null) {
       output.set(source.id, entries);
-      await Promise.all(
-        entries
-          .filter((data) => data.vehicle.id !== null)
-          .map((data) =>
-            insertActivity(
-              { operator: data.source, number: +data.vehicle.id! },
-              { routeId: data.trip.route, time: dayjs.unix(data.timestamp).toDate() },
+      if (suppliedDatabase) {
+        await Promise.all(
+          entries
+            .filter((data) => data.vehicle.id !== null)
+            .map((data) =>
+              insertActivity(
+                { operator: data.source, number: +data.vehicle.id! },
+                { routeId: data.trip.route, time: dayjs.unix(data.timestamp).toDate() },
+              ),
             ),
-          ),
-      );
+        );
+      }
       console.log(`YABS\t${source.id}\tEntries were updated in ${Date.now() - then}ms.`);
     } else {
       console.log(`YABS\t${source.id}\tNo entries were returned, keeping old entries.`);

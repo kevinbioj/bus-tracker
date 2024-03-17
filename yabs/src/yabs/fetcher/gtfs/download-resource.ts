@@ -20,11 +20,12 @@ export async function downloadStaticResource(properties: GtfsProperties) {
   await $(`rm "${join(tmpdir, 'feed_info.txt')}"`).catch(() => void 0);
   if (properties.generateShapes) {
     if (typeof process.env.OSM_PATH === 'undefined') {
-      throw new Error("When generateShapes=true, the 'OSM_PATH' env variable must refer to a OSM file to use.");
+      console.warn(`YABS\t${properties.id}\tOSM_PATH environment variable is missing, skipping shapes generation.`);
+    } else {
+      await $(`pfaedle -D --inplace -x ${process.env.OSM_PATH} ${tmpdir}`).catch((e) =>
+        console.error(`YABS\t${properties.id}\tFailed to generate shapes:`, e),
+      );
     }
-    await $(`pfaedle -D --inplace -x ${process.env.OSM_PATH} ${tmpdir}`).catch((e) =>
-      console.error(`YABS\t${properties.id}\tFailed to generate shapes:`, e),
-    );
   }
   const [calendars, shapes, stops] = await Promise.all([loadCalendars(tmpdir), loadShapes(tmpdir), loadStops(tmpdir)]);
   const trips = await loadTrips(tmpdir, calendars, shapes, stops);

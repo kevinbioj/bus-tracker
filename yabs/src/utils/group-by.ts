@@ -4,7 +4,7 @@ export function groupBy<K, V>(data: V[], fn: (value: V, index: number) => K) {
     const item = data[i];
     const key = fn(item, i);
     const list = map.get(key);
-    if (typeof list !== "undefined") list.push(item);
+    if (typeof list !== 'undefined') list.push(item);
     else map.set(key, [item]);
   }
   return map;

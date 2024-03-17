@@ -1,34 +1,62 @@
 # Bus Tracker
 
-## C'est quoi ?
+**Bus Tracker** est une application web de visualisation des véhicules d'un ou plusieurs réseaux de transports en commun.  
+Elle exploite les données ouvertes des différentes autorités organisatrices ([au format GTFS ou via une API SIRI](https://doc.transport.data.gouv.fr/type-donnees/operateurs-de-transport-regulier-de-personnes/normes-et-standards-donnees-theoriques-et-temps-reel/transport-en-commun)) afin de pouvoir les agréger pour en permettre la visualisation sur une unique carte.
 
-**Bus Tracker** est une application reconstituant sur une carte les véhicules en circulation sur un réseau de transports en commun, ici _[Rouen](https://reseau-astuce.fr)_.  
-Elle repose sur l'utilisation des données ouvertes, au format GTFS, pour les données théoriques ainsi que les éventuels flux au format GTFS-RT pour les données temps-réel.
+## Réseaux disponibles
 
-Ce que vous voyez ici est ce qui tourne ici > [https://bus-tracker.xyz](https://bus-tracker.xyz).
+| Réseau                   | Type de données | Caractéristiques                                       |
+| ------------------------ | --------------- | ------------------------------------------------------ |
+| Nomad (Région Normandie) | GTFS + GTFS-RT  | Temps-réel partiel pour les lignes 216-228-423-424-527 |
+| Astuce (Rouen)           | GTFS + GTFS-RT  |
+| Twisto (Caen)            | SIRI VM         |
+| LiA (Le Havre)           | GTFS            | Temps-réel indisponible                                |
+| Cap Cotentin (Cherbourg) | GTFS + GTFS-RT  |
+| DeepMob (Dieppe)         | GTFS + GTFS-RT  |
+| Astrobus (Lisieux)       | GTFS + GTFS-RT  |
+| SNgo! (Vernon)           | GTFS + GTFS-RT  |
+| Néva (Granville)         | GTFS + GTFS-RT  |
+| Hobus (Honfleur)         | GTFS + GTFS-RT  |
+| MOCA (Barentin)          | GTFS + GTFS-RT  |
+| Rezo'Bus (Bolbec)        | GTFS + GTFS-RT  |
+| l'Bus (Bernay)           | GTFS + GTFS-RT  |
 
-## Pourquoi ça ?
+**À noter :** aucun réseau en dehors de la Normandie ne sera rajouté pour le moment – une (éventuelle) (future) refonte viendra permettre ceci.
 
-Au départ, curieux de savoir qu'est-ce qui pouvait être extrait d'une poignée de fichiers CSV et d'un fichier JSON.  
-Aujourd'hui, un terrain de jeu me permettant d'expérimenter les technos hype 🤪 tel que Bun ou Drizzle.
+## Stack technique
 
-## Comment ça marche ?
+### Serveur yabs
 
-`yabs` est le serveur qui effectue l'ensemble des traitements nécessaires pour obtenir le résultat souhaité :
+Le serveur est conçu pour s'exécuter dans un environnement Bun. Il nécessite également une base de données au format SQLite afin de conserver l'historique des activités des véhicules (lorsque celles-ci sont rendues disponibles par le biais de données temps-réel).
 
-- il synchronise les données statiques toutes les heures ;
-- détermine la carte instantanée à intervalle régulière (temps-réel si possible, autrement théorique) ;
-- conserve l'historique des services effectués (seulement si infos adéquates disponibles).
+La consommation mémoire varie selon le nombre de réseaux impliqués, mais tourne à titre indicatif aux alentours de 1.5Go sur l'instance officielle.
 
-`frontend` est celui qui génère le site web grâce aux données obtenues depuis `yabs`.
+Une API est proposée afin de récupérer une snapshot des véhicules en circulation à un instant T, ainsi que pour pouvoir rechercher des véhicules ayant été observés par le serveur.
 
-## Je veux tel ou tel réseau dessus
+### Front-end
 
-Sur l'instance officielle, c'est non. Si c'est sur une instance que vous hébergez, libre à vous de le faire.  
-Adaptez l'application à votre guise pour exploiter un autre jeu de données, attention ça n'est pas nécessairement simple.
+Le front-end est une application Next.js permettant la visualisation graphique des données calculées par le serveur.  
+Elle joue également le rôle de proxy entre l'utilisateur final et le serveur `yabs`.
 
-Je ne fournis pas d'assistance technique sur l'adaptation de l'application 😉.
+## Source de données
 
-## Coeur sur
+### GTFS
 
-- [ad-freiburg/pfaedle](https://github.com/ad-freiburg/pfaedle) : un superbe outil permettant d'obtenir des tracés de ligne lorsque l'AOM n'est pas en mesure de les fournir (wink wink).
+Chaque ressource statique GTFS est téléchargée une fois par heure puis est chargée en mémoire du serveur.  
+À intervalle régulière (en général toutes les 30 secondes), le serveur détermine les courses en cours en parcourant la ressource chargée.
+
+Lorsque un ou plusieurs flux GTFS-RT sont disponibles, alors ceux-ci sont mis à contribution afin d'améliorer la fiabilité des données présentées.
+
+### SIRI
+
+À intervalle régulière (en général toutes les 30 secondes), une requête est envoyée au serveur SIRI afin de récupérer la liste des véhicules en ligne circulant sur le réseau ciblé.
+
+Pour le moment, il n'existe pas de paliatif pour les véhicules hors-ligne : ceux-ci n'apparaissent donc pas contrairement au GTFS + GTFS-RT.
+
+**Remarque :** seul le service Vehicle Monitoring du [profil SIRI français](https://normes.transport.data.gouv.fr/posts/siri/profil-france/) est pris en charge pour le moment.
+
+## Comment je lance ça ?
+
+## Crédits
+
+- **pfaedle** : génération des tracés de ligne à l'aide d'une cartographie OpenStreetMap.

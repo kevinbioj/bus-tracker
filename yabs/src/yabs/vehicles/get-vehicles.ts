@@ -1,9 +1,9 @@
-import dayjs from "dayjs";
-import { desc, eq } from "drizzle-orm";
-import { ACTIVITY_TIMEOUT } from "~/yabs/vehicles/constants";
+import dayjs from 'dayjs';
+import { desc, eq } from 'drizzle-orm';
 
-import { orm } from "~/yabs/vehicles/database";
-import { vehicleActivities, vehicles as vehiclesSchema } from "~/yabs/vehicles/schema";
+import { ACTIVITY_TIMEOUT } from '~/yabs/vehicles/constants';
+import { orm } from '~/yabs/vehicles/database';
+import { vehicleActivities, vehicles as vehiclesSchema } from '~/yabs/vehicles/schema';
 
 export async function getVehicles() {
   const vehicles = await orm.select().from(vehiclesSchema).orderBy(vehiclesSchema.operator, vehiclesSchema.number);
@@ -17,7 +17,7 @@ export async function getVehicles() {
         .limit(1)
         .then((rows) => (rows.length > 0 ? rows[0] : null));
       const isActive = lastActivity
-        ? dayjs().diff(dayjs(lastActivity.updatedTime), "seconds") < ACTIVITY_TIMEOUT
+        ? dayjs().diff(dayjs(lastActivity.updatedTime), 'seconds') < ACTIVITY_TIMEOUT
         : false;
       return {
         ...vehicle,
