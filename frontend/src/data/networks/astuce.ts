@@ -514,6 +514,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:05",
+    routeIds: ["ASTUCE:F5", "ASTUCE-TGR:923"],
     name: "F5",
     colors: { background: "#AFCA0B", text: "#1D1D1B" },
     destinations: [
@@ -527,7 +528,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Théâtre des Arts ROUEN"],
+        id: ["Théâtre des Arts ROUEN", "Théâtre des Arts"],
         name: "Théâtre des Arts",
         city: "ROUEN",
         girouette: {
@@ -539,6 +540,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:06",
+    routeIds: ["ASTUCE:06", "ASTUCE-TGR:446"],
     name: "F6",
     colors: { background: "#00ACE5", text: "#FFFFFF" },
     destinations: [
@@ -576,7 +578,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Gare SAINT-ETIENNE-DU-ROUVRAY"],
+        id: ["Gare SAINT-ETIENNE-DU-ROUVRAY", "Gare de Saint-Etienne"],
         alternate: "Gare de Saint-Étienne",
         name: "Gare",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
@@ -775,11 +777,12 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:13",
+    routeIds: ["ASTUCE:13", "ASTUCE-TGR:852"],
     name: "13",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Martainville ROUEN"],
+        id: ["Martainville ROUEN", "Martainville"],
         name: "Martainville",
         city: "ROUEN",
         girouette: {
@@ -788,7 +791,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Ecole de Musique"],
+        id: ["Ecole de Musique", "École de Musique"],
         name: "École de Musique",
         city: "BOOS",
         girouette: {
@@ -800,11 +803,12 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:14",
+    routeIds: ["ASTUCE:14", "ASTUCE-TGR:490"],
     name: "14",
     colors: { background: "#00ACE5", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mont Pilon DARNÉTAL"],
+        id: ["Mont Pilon DARNÉTAL", "Mont Pilon"],
         name: "Mont Pilon",
         city: "DARNÉTAL",
         girouette: {
@@ -818,7 +822,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Mairie BELBEUF"],
+        id: ["Mairie BELBEUF", "Mairie de Belbeuf"],
         alternate: "Mairie de Belbeuf",
         name: "Mairie",
         city: "BELBEUF",
@@ -1022,11 +1026,12 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:28",
+    routeIds: ["ASTUCE:28", "ASTUCE-TGR:634"],
     name: "28",
     colors: { background: "#F4A3AF", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Bois Tison SAINT-JACQUES-SUR-DARNÉTAL"],
+        id: ["Bois Tison SAINT-JACQUES-SUR-DARNÉTAL", "Bois Tison"],
         name: "Bois Tison",
         city: "SAINT-JACQUES-SUR-DARNÉTAL",
         girouette: {
@@ -1035,7 +1040,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Louise Michel DARNÉTAL"],
+        id: ["Louise Michel DARNÉTAL", "Louise Michel"],
         name: "Louise Michel",
         city: "DARNÉTAL",
         girouette: {
@@ -1047,6 +1052,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:33",
+    routeIds: ["ASTUCE:33", "ASTUCE-TGR:450"],
     name: "33",
     colors: { background: "#00A983", text: "#FFFFFF" },
     destinations: [
@@ -1118,6 +1124,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:36",
+    routeIds: ["ASTUCE:36", "ASTUCE-TGR:652"],
     name: "36",
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
@@ -1143,6 +1150,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:37",
+    routeIds: ["ASTUCE:37", "ASTUCE-TGR:654"],
     name: "37",
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
@@ -1180,11 +1188,12 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:38",
+    routeIds: ["ASTUCE:38", "ASTUCE-TGR:452"],
     name: "38",
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Mairie MONTMAIN"],
+        id: ["Mairie MONTMAIN", "Mairie de Montmain"],
         alternate: "Mairie de Montmain",
         name: "Mairie",
         city: "MONTMAIN",
@@ -1194,7 +1203,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Coteaux Branly DARNÉTAL"],
+        id: ["Coteaux Branly DARNÉTAL", "Coteaux Branly"],
         name: "Coteaux Branly",
         city: "DARNÉTAL",
         girouette: {
@@ -1206,6 +1215,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:41",
+    routeIds: ["ASTUCE:41", "ASTUCE-TGR:454"],
     name: "41",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
@@ -1255,11 +1265,12 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:42",
+    routeIds: ["ASTUCE:42", "ASTUCE-TGR:455"],
     name: "42",
     colors: { background: "#A2559D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Lebon GRAND QUEVILLY"],
+        id: ["Lebon GRAND QUEVILLY", "Lebon"],
         name: "Lebon",
         city: "GRAND-QUEVILLY",
         girouette: {
@@ -1273,7 +1284,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Centre Routier GRAND QUEVILLY"],
+        id: ["Centre Routier GRAND QUEVILLY", "Centre Routier"],
         autoHide: true,
         name: "Centre Routier",
         city: "GRAND-QUEVILLY",
@@ -1291,7 +1302,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["La Houssière SAINT-ETIENNE-DU-ROUVRAY"],
+        id: ["La Houssière SAINT-ETIENNE-DU-ROUVRAY", "La Houssière"],
         name: "La Houssière",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
@@ -1338,6 +1349,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:44",
+    routeIds: ["ASTUCE:44", "ASTUCE-TGR:499"],
     name: "44",
     colors: { background: "#9BD4E3", text: "#1D1D1B" },
     destinations: [
@@ -1351,7 +1363,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Chapelle Saint-Siméon DÉVILLE-LÈS-ROUEN"],
+        id: ["Chapelle Saint-Siméon DÉVILLE-LÈS-ROUEN", "Chapelle Saint-Siméon"],
         name: "Chapelle Saint-Siméon",
         city: "DÉVILLE-LES-ROUEN",
         girouette: {
@@ -1360,44 +1372,6 @@ const astuceRoutes: Route[] = [
             { font: "1508C2E1", textSpacing: 1, text: "CHAPELLE SAINT-SIMEON" },
             { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LES-ROUEN" },
           ],
-        },
-      },
-    ],
-  },
-  {
-    id: "ASTUCE:529",
-    name: "529",
-    colors: { background: "#9BD4E3", text: "#1D1D1B" },
-    destinations: [
-      {
-        id: ["Route de Montville MALAUNAY"],
-        name: "Route de Montville",
-        city: "MALAUNAY",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#55AAFF",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            font: "1508SUPX",
-            text: "529",
-          },
-          pages: [{ font: "1508SUPX", textSpacing: 1, text: "ROUTE DE MONTVILLE" }],
-        },
-      },
-      {
-        id: ["Gare Routière ROUEN"],
-        alternate: "Gare Routière de Rouen",
-        name: "Gare Routière",
-        city: "ROUEN",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#55AAFF",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            font: "1508SUPX",
-            text: "529",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
         },
       },
     ],
@@ -2390,17 +2364,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:300",
+    routeIds: ["ASTUCE:300", "ASTUCE-TGR:815"],
     name: "300",
     colors: { background: "#CE1922", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Épinay SAINT-AUBIN-ÉPINAY"],
+        id: ["Épinay SAINT-AUBIN-ÉPINAY", "Épinay"],
         autoHide: true,
         name: "Épinay",
         city: "SAINT-AUBIN-ÉPINAY",
       },
       {
-        id: ["Lycée Flaubert ROUEN"],
+        id: ["Lycée Flaubert ROUEN", "Lycée Flaubert"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
@@ -2409,17 +2384,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:301",
+    routeIds: ["ASTUCE:301", "ASTUCE-TGR:816"],
     name: "301",
     colors: { background: "#81612D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Bois Breton RONCHEROLLES-SUR-LE-VIVIER"],
+        id: ["Bois Breton RONCHEROLLES-SUR-LE-VIVIER", "Bois Breton"],
         autoHide: true,
         name: "Bois Breton",
         city: "RONCHEROLLES-SUR-LE-VIVIER",
       },
       {
-        id: ["Lycée Flaubert ROUEN"],
+        id: ["Lycée Flaubert ROUEN", "Lycée Flaubert"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
@@ -2428,17 +2404,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:302",
+    routeIds: ["ASTUCE:302", "ASTUCE-TGR:817"],
     name: "302",
     colors: { background: "#8ACBC0", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Boulingrin ROUEN"],
+        id: ["Boulingrin ROUEN", "Boulingrin"],
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
       },
       {
-        id: ["Lycée Grieu ROUEN"],
+        id: ["Lycée Grieu ROUEN", "Lycée Grieu"],
         autoHide: true,
         name: "Lycée Grieu",
         city: "ROUEN",
@@ -2447,36 +2424,37 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:303",
+    routeIds: ["ASTUCE:303", "ASTUCE-TGR:639"],
     name: "303",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Route d'Isneauville FONTAINE-SOUS-PRÉAUX"],
+        id: ["Route d'Isneauville FONTAINE-SOUS-PRÉAUX", "Route d'Isneauville"],
         autoHide: true,
         name: "Route d'Isneauville",
         city: "FONTAINE-SOUS-PRÉAUX",
       },
       {
-        id: ["Collège Michelet BIHOREL"],
+        id: ["Collège Michelet BIHOREL", "Collège Michelet"],
         autoHide: true,
         name: "Collège Michelet",
         city: "BIHOREL",
       },
       {
-        id: ["Collège Saint-Victrice BIHOREL"],
+        id: ["Collège Saint-Victrice BIHOREL", "Collège Saint-Vitrice"],
         autoHide: true,
         name: "Collège Saint-Victrice",
         city: "BIHOREL",
       },
       {
-        id: ["Mairie SAINT-MARTIN-DU-VIVIER"],
+        id: ["Mairie SAINT-MARTIN-DU-VIVIER", "Mairie de Saint-Martin-du-Vivier"],
         autoHide: true,
         alternate: "Mairie de Saint-Martin-du-Vivier",
         name: "Mairie",
         city: "SAINT-MARTIN-DU-VIVIER",
       },
       {
-        id: ["Lycée Flaubert ROUEN"],
+        id: ["Lycée Flaubert ROUEN", "Lycée Flaubert"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
@@ -2485,24 +2463,25 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:305",
+    routeIds: ["ASTUCE:305", "ASTUCE-TGR:819"],
     name: "305",
     colors: { background: "#C19FCB", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Petit Pont ISNEAUVILLE"],
+        id: ["Petit Pont ISNEAUVILLE", "Petit Pont"],
         autoHide: true,
         name: "Petit Pont",
         city: "ISNEAUVILLE",
       },
       {
-        id: ["Hôtel de Ville ROUEN"],
+        id: ["Hôtel de Ville ROUEN", "Hôtel de Ville de Rouen"],
         alternate: "Hôtel de Ville de Rouen",
         autoHide: true,
         name: "Hôtel de Ville",
         city: "ROUEN",
       },
       {
-        id: ["Lycée Flaubert ROUEN"],
+        id: ["Lycée Flaubert ROUEN", "Lycée Flaubert - Texcier"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
@@ -2511,23 +2490,24 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:310",
+    routeIds: ["ASTUCE:310", "ASTUCE-TGR:642"],
     name: "310",
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Lycée des Bruyères PETIT-QUEVILLY"],
+        id: ["Lycée des Bruyères PETIT-QUEVILLY", "Lycée des Bruyères"],
         autoHide: true,
         name: "Lycée des Bruyères",
         city: "PETIT-QUEVILLY",
       },
       {
-        id: ["Lycée Elisa Lemonnier PETIT-QUEVILLY"],
+        id: ["Lycée Elisa Lemonnier PETIT-QUEVILLY", "Lycée Elisa Lemonnier"],
         autoHide: true,
         name: "Lycée Elisa Lemonnier",
         city: "PETIT-QUEVILLY",
       },
       {
-        id: ["Pôle Multimodal-Cotoni OISSEL"],
+        id: ["Pôle Multimodal-Cotoni OISSEL", "Pôle Multimodal-Cotoni"],
         autoHide: true,
         name: "Pôle Multimodal-Cotoni",
         city: "OISSEL",
@@ -2536,38 +2516,45 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:311",
+    routeIds: ["ASTUCE:311", "ASTUCE-TGR:643"],
     name: "311",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Lycée Val de Seine GRAND QUEVILLY", "LYCEE VAL DE SEINE"],
+        id: ["Lycée Val de Seine GRAND QUEVILLY", "LYCEE VAL DE SEINE", "Lycée Val de Seine"],
         autoHide: true,
         name: "Lycée Val de Seine",
         city: "GRAND-QUEVILLY",
       },
       {
-        id: ["Pont de la Chapelle SAINT-ETIENNE-DU-ROUVRAY"],
+        id: ["Pont de la Chapelle SAINT-ETIENNE-DU-ROUVRAY", "Pont de la Chapelle"],
         autoHide: true,
         name: "Pont de la Chapelle",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
       },
-      { id: ["Pôle Multimodal-Cotoni OISSEL"], autoHide: true, name: "Pôle Multimodal-Cotoni", city: "OISSEL" },
+      {
+        id: ["Pôle Multimodal-Cotoni OISSEL", "Pôle Multimodal-Cotoni"],
+        autoHide: true,
+        name: "Pôle Multimodal-Cotoni",
+        city: "OISSEL",
+      },
       { id: ["CHAMP DE FOIRE"], autoHide: true, name: "Champ de Foire", city: "ELBEUF-SUR-SEINE" },
     ],
   },
   {
     id: "ASTUCE:313",
+    routeIds: ["ASTUCE:313", "ASTUCE-TGR:820"],
     name: "313",
     colors: { background: "#E6007D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Collège Edouard Branly GRAND QUEVILLY"],
+        id: ["Collège Edouard Branly GRAND QUEVILLY", "Collège Edouard Branly"],
         autoHide: true,
         name: "Collège Edouard Branly",
         city: "GRAND-QUEVILLY",
       },
       {
-        id: ["Coopérateurs GRAND QUEVILLY"],
+        id: ["Coopérateurs GRAND QUEVILLY", "Coopérateurs"],
         autoHide: true,
         name: "Coopérateurs",
         city: "GRAND-QUEVILLY",
@@ -2576,6 +2563,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:314",
+    routeIds: ["ASTUCE:314", "ASTUCE-TGR:821"],
     name: "314",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
@@ -2595,17 +2583,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:315",
+    routeIds: ["ASTUCE:315", "ASTUCE-TGR:822"],
     name: "315",
     colors: { background: "#81612D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Stade Diochon PETIT-QUEVILLY"],
+        id: ["Stade Diochon PETIT-QUEVILLY", "Stade Diochon"],
         autoHide: true,
         name: "Stade Diochon ",
         city: "PETIT-QUEVILLY",
       },
       {
-        id: ["Lycée Val de Seine GRAND QUEVILLY"],
+        id: ["Lycée Val de Seine GRAND QUEVILLY", "Lycée Val de Seine"],
         autoHide: true,
         name: "Lycée Val de Seine",
         city: "GRAND-QUEVILLY",
@@ -2618,13 +2607,13 @@ const astuceRoutes: Route[] = [
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Siamoisiers RONCHEROLLES-SUR-LE-VIVIER"],
+        id: ["Siamoisiers RONCHEROLLES-SUR-LE-VIVIER", "Siamoisiers"],
         autoHide: true,
         name: "Siamoisiers",
         city: "RONCHEROLLES-SUR-LE-VIVIER",
       },
       {
-        id: ["Collège Lucie Aubrac ISNEAUVILLE"],
+        id: ["Collège Lucie Aubrac ISNEAUVILLE", "Collège Lucie Aubrac"],
         autoHide: true,
         name: "Collège Lucie Aubrac",
         city: "ISNEAUVILLE",
@@ -2633,17 +2622,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:330",
+    routeIds: ["ASTUCE:330", "ASTUCE-TGR:648"],
     name: "330",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE"],
+        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
       },
       {
-        id: ["Long Corbeil BONSECOURS"],
+        id: ["Long Corbeil BONSECOURS", "Long Corbeil"],
         autoHide: true,
         name: "Long Corbeil",
         city: "BONSECOURS",
@@ -2652,17 +2642,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:331",
+    routeIds: ["ASTUCE:331", "ASTUCE-TGR:824"],
     name: "331",
     colors: { background: "#E6007D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["La Providence MESNIL-ESNARD"],
+        id: ["La Providence MESNIL-ESNARD", "La Providence"],
         autoHide: true,
         name: "La Providence",
         city: "MESNIL-ESNARD",
       },
       {
-        id: ["Eauplet BONSECOURS"],
+        id: ["Eauplet BONSECOURS", "Eauplet"],
         autoHide: true,
         name: "Eauplet",
         city: "BONSECOURS",
@@ -2671,36 +2662,37 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:332",
+    routeIds: ["ASTUCE:332", "ASTUCE-TGR:825"],
     name: "332",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Mairie MONTMAIN"],
+        id: ["Mairie MONTMAIN", "Mairie"],
         autoHide: true,
         alternate: "Mairie de Montmain",
         name: "Mairie",
         city: "MONTMAIN",
       },
       {
-        id: ["Collège Abaquesne BOOS"],
+        id: ["Collège Abaquesne BOOS", "Collège Abaquesne"],
         autoHide: true,
         name: "Collège Abaquesne",
         city: "BOOS",
       },
       {
-        id: ["La Providence MESNIL-ESNARD"],
+        id: ["La Providence MESNIL-ESNARD", "La Providence"],
         autoHide: true,
         name: "La Providence",
         city: "MESNIL-ESNARD",
       },
       {
-        id: ["Collège Malot MESNIL-ESNARD"],
+        id: ["Collège Malot MESNIL-ESNARD", "Collège Malot"],
         autoHide: true,
         name: "Collège Malot",
         city: "MESNIL-ESNARD",
       },
       {
-        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE"],
+        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
@@ -2709,36 +2701,37 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:333",
+    routeIds: ["ASTUCE:333", "ASTUCE-TGR:649"],
     name: "333",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Château Anquetil LA NEUVILLE-CHANT-D'OISEL"],
+        id: ["Château Anquetil LA NEUVILLE-CHANT-D'OISEL", "Château Anquetil"],
         autoHide: true,
         name: "Château Anquetil",
         city: "LA NEUVILLE-CHANT-D'OISEL",
       },
       {
-        id: ["Collège Abaquesne BOOS"],
+        id: ["Collège Abaquesne BOOS", "Collège Abaquesne"],
         autoHide: true,
         name: "Collège Abaquesne",
         city: "BOOS",
       },
       {
-        id: ["Mairie LA NEUVILLE-CHANT-D'OISEL"],
+        id: ["Mairie LA NEUVILLE-CHANT-D'OISEL", "Mairie de La Neuville"],
         autoHide: true,
         alternate: "Mairie de La Neuville-Chant-d'Oisel",
         name: "Mairie",
         city: "LA NEUVILLE-CHANT-D'OISEL",
       },
       {
-        id: ["La Providence MESNIL-ESNARD"],
+        id: ["La Providence MESNIL-ESNARD", "La Providence"],
         autoHide: true,
         name: "La Providence",
         city: "MESNIL-ESNARD",
       },
       {
-        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE"],
+        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
@@ -2747,23 +2740,24 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:334",
+    routeIds: ["ASTUCE:334", "ASTUCE-TGR:826"],
     name: "334",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["École Mendès-France QUÉVREVILLE-LA-POTERIE"],
+        id: ["École Mendès-France QUÉVREVILLE-LA-POTERIE", "École Mendès-France"],
         autoHide: true,
         name: "École Mendès-France",
         city: "QUÉVREVILLE-LA-POTERIE",
       },
       {
-        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE"],
+        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
       },
       {
-        id: ["Collège Malot MESNIL-ESNARD"],
+        id: ["Collège Malot MESNIL-ESNARD", "Collège Malot"],
         autoHide: true,
         name: "Collège Malot",
         city: "MESNIL-ESNARD",
@@ -2772,29 +2766,30 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:335",
+    routeIds: ["ASTUCE:335", "ASTUCE-TGR:827"],
     name: "335",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Allée du Couvent LES AUTHIEUX-SUR-LE-PORT-ST-OUEN"],
+        id: ["Allée du Couvent LES AUTHIEUX-SUR-LE-PORT-ST-OUEN", "Allée du Couvent"],
         autoHide: true,
         name: "Allée du Couvent",
         city: "LES AUTHIEUX-SUR-LE-PORT-SAINTT-OUEN",
       },
       {
-        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE"],
+        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
       },
       {
-        id: ["La Providence MESNIL-ESNARD"],
+        id: ["La Providence MESNIL-ESNARD", "La Providence"],
         autoHide: true,
         name: "La Providence",
         city: "MESNIL-ESNARD",
       },
       {
-        id: ["Collège Malot MESNIL-ESNARD"],
+        id: ["Collège Malot MESNIL-ESNARD", "Collège Malot"],
         autoHide: true,
         name: "Collège Malot",
         city: "MESNIL-ESNARD",
@@ -2803,18 +2798,19 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:336",
+    routeIds: ["ASTUCE:336", "ASTUCE-TGR:828"],
     name: "336",
     colors: { background: "#008E5B", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mairie BELBEUF"],
+        id: ["Mairie BELBEUF", "Mairie de Belbeuf"],
         autoHide: true,
         alternate: "Mairie de Belbeuf",
         name: "Mairie",
         city: "BELBEUF",
       },
       {
-        id: ["Collège Verhaeren BONSECOURS"],
+        id: ["Collège Verhaeren BONSECOURS", "Collège Verhaeren"],
         autoHide: true,
         name: "Collège Verhaeren",
         city: "BONSECOURS",
@@ -2827,19 +2823,19 @@ const astuceRoutes: Route[] = [
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Boulingrin ROUEN"],
+        id: ["Boulingrin ROUEN", "Boulingrin"],
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
       },
       {
-        id: ["Forgettes SAINT-JACQUES-SUR-DARNÉTAL"],
+        id: ["Forgettes SAINT-JACQUES-SUR-DARNÉTAL", "Forgettes"],
         autoHide: true,
         name: "Forgettes",
         city: "SAINT-JACQUES-SUR-DARNÉTAL",
       },
       {
-        id: ["Collège Rousseau DARNÉTAL"],
+        id: ["Collège Rousseau DARNÉTAL", "Collège Rousseau"],
         autoHide: true,
         name: "Collège Rousseau",
         city: "DARNÉTAL",
@@ -2848,17 +2844,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:341",
+    routeIds: ["ASTUCE:341", "ASTUCE-TGR:830"],
     name: "341",
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Collège Rousseau DARNÉTAL"],
+        id: ["Collège Rousseau DARNÉTAL", "Collège Rousseau"],
         autoHide: true,
         name: "Collège Rousseau",
         city: "DARNÉTAL",
       },
       {
-        id: ["Épinay SAINT-AUBIN-ÉPINAY"],
+        id: ["Épinay SAINT-AUBIN-ÉPINAY", "Épinay"],
         autoHide: true,
         name: "Épinay",
         city: "SAINT-AUBIN-ÉPINAY",
@@ -2867,17 +2864,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:342",
+    routeIds: ["ASTUCE:342", "ASTUCE-TGR:831"],
     name: "342",
     colors: { background: "#CA98C5", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Collège Rousseau DARNÉTAL"],
+        id: ["Collège Rousseau DARNÉTAL", "Collège Rousseau"],
         autoHide: true,
         name: "Collège Rousseau",
         city: "DARNÉTAL",
       },
       {
-        id: ["Bois Breton RONCHEROLLES-SUR-LE-VIVIER"],
+        id: ["Bois Breton RONCHEROLLES-SUR-LE-VIVIER", "Bois Breton"],
         autoHide: true,
         name: "Bois Breton",
         city: "RONCHEROLLES-SUR-LE-VIVIER",
@@ -2886,17 +2884,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:343",
+    routeIds: ["ASTUCE:343", "ASTUCE-TGR:838"],
     name: "343",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Mont Pilon DARNÉTAL"],
+        id: ["Mont Pilon DARNÉTAL", "Mont Pilon"],
         autoHide: true,
         name: "Mont Pilon",
         city: "DARNÉTAL",
       },
       {
-        id: ["Collège Chartier DARNÉTAL"],
+        id: ["Collège Chartier DARNÉTAL", "Collège Chartier"],
         autoHide: true,
         name: "Collège Chartier",
         city: "DARNÉTAL",
@@ -2905,23 +2904,24 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:350",
+    routeIds: ["ASTUCE:350", "ASTUCE-TGR:651"],
     name: "350",
     colors: { background: "#008E5A", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Bac de Dieppedalle CANTELEU"],
+        id: ["Bac de Dieppedalle CANTELEU", "Bac de Dieppedalle"],
         autoHide: true,
         name: "Bac de Dieppedalle",
         city: "CANTELEU",
       },
       {
-        id: ["Place Alexandre SAHURS"],
+        id: ["Place Alexandre SAHURS", "Place Alexandre"],
         autoHide: true,
         name: "Place Alexandre",
         city: "SAHURS",
       },
       {
-        id: ["Collège Gounod CANTELEU"],
+        id: ["Collège Gounod CANTELEU", "Gounod"],
         autoHide: true,
         name: "Collège Gounod",
         city: "CANTELEU",
@@ -2930,17 +2930,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:351",
+    routeIds: ["ASTUCE:351", "ASTUCE-TGR:832"],
     name: "351",
     colors: { background: "#E6007D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["M.I.N. ROUEN"],
+        id: ["M.I.N. ROUEN", "MIN"],
         autoHide: true,
         name: "Marché d'Intérêt National",
         city: "ROUEN",
       },
       {
-        id: ["Collège Gounod CANTELEU"],
+        id: ["Collège Gounod CANTELEU", "Gounod"],
         autoHide: true,
         name: "Collège Gounod",
         city: "CANTELEU",
@@ -2949,17 +2950,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:360",
+    routeIds: ["ASTUCE:360", "ASTUCE-TGR:833"],
     name: "360",
     colors: { background: "#A2559D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Collège Jean Zay LE HOULME"],
+        id: ["Collège Jean Zay LE HOULME", "Collège Jean Zay"],
         autoHide: true,
         name: "Collège Jean Zay",
         city: "LE HOULME",
       },
       {
-        id: ["Place du Vivier HOUPPEVILLE"],
+        id: ["Place du Vivier HOUPPEVILLE", "Place du Vivier"],
         autoHide: true,
         name: "Place du Vivier",
         city: "HOUPPEVILLE",
@@ -2968,17 +2970,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:361",
+    routeIds: ["ASTUCE:361", "ASTUCE-TGR:834"],
     name: "361",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Hameau Saint-Maurice MALAUNAY"],
+        id: ["Hameau Saint-Maurice MALAUNAY", "Hameau Saint-Maurice"],
         autoHide: true,
         name: "Hameau Saint-Maurice",
         city: "MALAUNAY",
       },
       {
-        id: ["ollège Jean Zay LE HOULME"],
+        id: ["ollège Jean Zay LE HOULME", "Collège Jean Zay"],
         autoHide: true,
         name: "Collège Jean Zay",
         city: "Le HOULME",
@@ -2987,17 +2990,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:363",
+    routeIds: ["ASTUCE:363", "ASTUCE-TGR:836"],
     name: "363",
     colors: { background: "#A2559D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Maromme La Maine"],
+        id: ["Maromme La Maine", "La Maine"],
         autoHide: true,
         name: "Maromme La Maine",
         city: "MAROMME",
       },
       {
-        id: ["Lycée du Cailly DÉVILLE-LES-ROUEN"],
+        id: ["Lycée du Cailly DÉVILLE-LES-ROUEN", "Lycée du Cailly"],
         autoHide: true,
         name: "Lycée du Cailly",
         city: "DÉVILLE-LES-ROUEN",
@@ -3006,17 +3010,18 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:364",
+    routeIds: ["ASTUCE:364", "ASTUCE-TGR:653"],
     name: "364",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Place du Vivier HOUPPEVILLE"],
+        id: ["Place du Vivier HOUPPEVILLE", "Place du Vivier"],
         autoHide: true,
         name: "Place du Vivier",
         city: "HOUPPEVILLE",
       },
       {
-        id: ["Lycée du Cailly DÉVILLE-LES-ROUEN"],
+        id: ["Lycée du Cailly DÉVILLE-LES-ROUEN", "Lycée du Cailly"],
         autoHide: true,
         name: "Lycée du Cailly",
         city: "DÉVILLE-LES-ROUEN",

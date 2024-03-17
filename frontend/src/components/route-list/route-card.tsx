@@ -13,7 +13,7 @@ type RouteCardProps = { route: Route };
 export default function RouteCard({ route }: RouteCardProps) {
   const [showScheduledTrips] = useLocalStorage("show-scheduled-trips", true);
   const vehicles = useVehicles().filter((data) => {
-    if (data.trip.route !== route.id) return false;
+    if (!route.routeIds?.includes(data.trip.route) && data.trip.route !== route.id) return false;
     if (!showScheduledTrips && data.vehicle.position.type === "SCHEDULED") return false;
     return true;
   });

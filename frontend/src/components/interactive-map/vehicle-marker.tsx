@@ -27,7 +27,7 @@ const isTouchScreen = window.matchMedia("(pointer: coarse)").matches;
 type VehicleMarkerProps = { data: VehicleData };
 
 export default function VehicleMarker({ data }: VehicleMarkerProps) {
-  const route = routes.find((route) => route.id === data.trip.route);
+  const route = routes.find((route) => route.routeIds?.includes(data.trip.route) || route.id === data.trip.route);
   const destination = route?.destinations.find((destination) => destination.id.includes(data.trip.headsign ?? ""));
 
   const [showScheduledTrips] = useLocalStorage("show-scheduled-trips", true);
@@ -126,19 +126,24 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                   backgroundColor: route?.colors.background,
                   textColor: route?.colors.text,
                   font: "1508SUPX",
-                  text: route?.name ?? data.trip.route,
+                  text: route?.name ?? "?",
                 }}
                 pages={
-                  destination
-                    ? destination.alternate
-                      ? [{ font: "1407SUPX", text: destination.alternate }]
-                      : [
-                          { font: "1407SUPX", text: destination.name },
-                          ...(destination.city ? ([{ font: "1407SUPX", text: destination.city }] as const) : []),
-                        ]
+                  route
+                    ? destination
+                      ? destination.alternate
+                        ? [{ font: "1407SUPX", text: destination.alternate }]
+                        : [
+                            { font: "1407SUPX", text: destination.name },
+                            ...(destination.city ? ([{ font: "1407SUPX", text: destination.city }] as const) : []),
+                          ]
+                      : [{ font: "1407SUPX", text: data.trip.headsign ?? "Destination inconnue" }]
                     : [
                         {
-                          text: [data.trip.headsign ?? "Destination inconnue", `${data.trip.id}`],
+                          text: [data.trip.headsign ?? "Destination inconnue", `LIGNE ${data.trip.route}`],
+                        },
+                        {
+                          text: [data.trip.headsign ?? "Destination inconnue", `COURSE ${data.trip.id}`],
                         },
                       ]
                 }

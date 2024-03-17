@@ -22,12 +22,27 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       routePrefix: 'ASTUCE',
       filters: {
-        scheduled: (trip) => (trip.calendar.id.startsWith('IST') && trip.route !== '06') || trip.route === '89',
+        scheduled: (trip) => trip.route === '89',
       },
-      getOperator: (trip) =>
-        trip.route === '06' || trip.route === '89' || trip.calendar.id.startsWith('IST') ? 'TNI' : 'TCAR',
-      generateShapes: true,
+      getOperator: (trip) => (trip.route === '06' || trip.route === '89' ? 'TNI' : 'TCAR'),
       propagateDelays: true,
+    },
+  },
+  {
+    id: 'TCAR-TGR',
+    refreshCron: '0,30 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'TCAR-TGR',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/tcar/gtfs/pub',
+      tripUpdateHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
+      vehiclePositionHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
+      getOperator: () => 'TNI',
+      generateShapes: true,
+      routePrefix: 'ASTUCE-TGR',
+      filters: {
+        scheduled: (trip) => trip.route !== '446',
+      },
     },
   },
   {

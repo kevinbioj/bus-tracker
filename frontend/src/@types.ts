@@ -20,6 +20,7 @@ export type Operator = {
 
 export type Route = {
   id: string;
+  routeIds?: string[];
   mapOnly?: boolean;
   noCartridge?: boolean;
   name: string;
