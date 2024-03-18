@@ -1129,7 +1129,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Boulingrin ROUEN"],
+        id: ["Boulingrin ROUEN", "Boulingrin"],
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
@@ -1138,7 +1138,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Coteaux du Larmont ROUEN"],
+        id: ["Coteaux du Larmont ROUEN", "Coteaux du Larmont"],
         name: "Coteaux du Larmont",
         city: "ROUEN",
         girouette: {
@@ -1155,7 +1155,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Plaine de la Ronce ISNEAUVILLE"],
+        id: ["Plaine de la Ronce ISNEAUVILLE", "Plaine de la Ronce"],
         name: "Plaine de la Ronce",
         city: "ISNEAUVILLE",
         girouette: {
@@ -1167,7 +1167,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Hauts Poiriers ISNEAUVILLE"],
+        id: ["Hauts Poiriers ISNEAUVILLE", "Hauts Poiriers"],
         name: "Hauts Poiriers",
         city: "ISNEAUVILLE",
         girouette: {
@@ -1176,7 +1176,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Les Bosquets ISNEAUVILLE"],
+        id: ["Les Bosquets ISNEAUVILLE", "Les Bosquets"],
         name: "Les Bosquets",
         city: "ISNEAUVILLE",
         girouette: {
