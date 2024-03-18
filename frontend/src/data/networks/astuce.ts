@@ -1176,7 +1176,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Les Bosquets ISNEAUVILLE", "Les Bosquets"],
+        id: ["Les Bosquets ISNEAUVILLE", "Rue des Bosquets"],
         name: "Les Bosquets",
         city: "ISNEAUVILLE",
         girouette: {
@@ -1426,7 +1426,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "530",
           },
-          pages: [{ font: "1508SUPX", text: "CAUDEBEC" }],
+          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-CAUX" }],
         },
       },
     ],
@@ -2468,7 +2468,7 @@ const astuceRoutes: Route[] = [
             backgroundColor: "#8ACBC0",
             textColor: "#000000",
             outlineColor: "#FFFFFF",
-            text: "301",
+            text: "302",
           },
           pages: [
             { font: "1508SUPX", text: "BOULINGRIN" },
@@ -2487,7 +2487,7 @@ const astuceRoutes: Route[] = [
             backgroundColor: "#8ACBC0",
             textColor: "#000000",
             outlineColor: "#FFFFFF",
-            text: "301",
+            text: "302",
           },
           pages: [
             { font: "1508SUPX", text: "LYCEE GRIEU" },
@@ -2581,7 +2581,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Lycée Flaubert ROUEN", "Lycée Flaubert"],
+        id: ["Lycée Flaubert ROUEN", "Lycée Flaubert - Texcier"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
@@ -2594,7 +2594,7 @@ const astuceRoutes: Route[] = [
             text: "303",
           },
           pages: [
-            { font: "1508SUPX", text: "LYCEE FLAUBERT" },
+            { font: "1407SUPX", text: "LYCEE FLAUBERT - TEXCIER" },
             { font: "1508SUPX", text: "ROUEN" },
           ],
         },
@@ -2660,7 +2660,7 @@ const astuceRoutes: Route[] = [
             text: "305",
           },
           pages: [
-            { font: "1508SUPX", text: "LYCEE FLAUBERT" },
+            { font: "1407SUPX", text: "LYCEE FLAUBERT - TEXCIER" },
             { font: "1508SUPX", text: "ROUEN" },
           ],
         },
@@ -2712,7 +2712,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Pôle Multimodal-Cotoni OISSEL", "Pôle Multimodal-Cotoni"],
+        id: ["Pôle Multimodal-Cotoni OISSEL", "Pôle Multimodal - Cotoni"],
         autoHide: true,
         name: "Pôle Multimodal-Cotoni",
         city: "OISSEL",
@@ -2777,7 +2777,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Pôle Multimodal-Cotoni OISSEL", "Pôle Multimodal-Cotoni"],
+        id: ["Pôle Multimodal-Cotoni OISSEL", "Pôle Multimodal - Cotoni"],
         autoHide: true,
         name: "Pôle Multimodal-Cotoni",
         city: "OISSEL",
@@ -2833,7 +2833,7 @@ const astuceRoutes: Route[] = [
             backgroundColor: "#E6007D",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "314",
+            text: "313",
           },
           pages: [
             { font: "1407SUPX", text: "COLLEGE EDOUARD BRANLY" },
@@ -2852,7 +2852,7 @@ const astuceRoutes: Route[] = [
             backgroundColor: "#E6007D",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "314",
+            text: "313",
           },
           pages: [
             { font: "1508SUPX", text: "COOPERATEURS" },
@@ -2879,7 +2879,7 @@ const astuceRoutes: Route[] = [
             backgroundColor: "#74B95B",
             textColor: "#000000",
             outlineColor: "#FFFFFF",
-            text: "315",
+            text: "314",
           },
           pages: [
             { font: "1508SUPX", text: "LA HOUSSIERE" },
@@ -2898,7 +2898,7 @@ const astuceRoutes: Route[] = [
             backgroundColor: "#74B95B",
             textColor: "#000000",
             outlineColor: "#FFFFFF",
-            text: "315",
+            text: "314",
           },
           pages: [
             { font: "1508SUPX", text: "STADE DIOCHON" },
@@ -3095,7 +3095,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Mairie MONTMAIN", "Mairie"],
+        id: ["Mairie MONTMAIN", "Mairie de Montmain"],
         autoHide: true,
         alternate: "Mairie de Montmain",
         name: "Mairie",
