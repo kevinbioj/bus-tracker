@@ -514,7 +514,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:05",
-    routeIds: ["ASTUCE:F5", "ASTUCE-TGR:923"],
+    routeIds: ["ASTUCE:05", "ASTUCE-TGR:923"],
     name: "F5",
     colors: { background: "#AFCA0B", text: "#1D1D1B" },
     destinations: [
