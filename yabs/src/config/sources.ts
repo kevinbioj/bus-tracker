@@ -38,6 +38,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       getOperator: () => 'TNI',
+      getVehicleNumber: (descriptor) => descriptor.label ?? null,
       generateShapes: true,
       routePrefix: 'ASTUCE-TGR',
       filters: {
