@@ -1167,7 +1167,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Hauts Poiriers ISNEAUVILLE", "Hauts Poiriers"],
+        id: ["Hauts Poiriers ISNEAUVILLE", "Les Hauts Poiriers"],
         name: "Hauts Poiriers",
         city: "ISNEAUVILLE",
         girouette: {
