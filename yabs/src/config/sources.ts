@@ -22,9 +22,9 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       routePrefix: 'ASTUCE',
       filters: {
-        scheduled: (trip) => trip.route === '89',
+        scheduled: (trip) => ['35', '89', '322', '340'].includes(trip.route),
       },
-      getOperator: (trip) => (trip.route === '06' || trip.route === '89' ? 'TNI' : 'TCAR'),
+      getOperator: (trip) => (trip.calendar.id.startsWith('IST') || trip.route === '89' ? 'TNI' : 'TCAR'),
       propagateDelays: true,
     },
   },
