@@ -2441,7 +2441,7 @@ const astuceRoutes: Route[] = [
         city: "BIHOREL",
       },
       {
-        id: ["Collège Saint-Victrice BIHOREL", "Collège Saint-Vitrice"],
+        id: ["Collège Saint-Victrice BIHOREL", "Collège Saint-Victrice"],
         autoHide: true,
         name: "Collège Saint-Victrice",
         city: "BIHOREL",
