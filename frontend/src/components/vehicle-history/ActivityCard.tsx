@@ -5,7 +5,7 @@ import { VehicleActivityDto } from "~/@types";
 import routes, { unknownRoute } from "~/data/routes";
 
 export function ActivityCard({ data }: { data: VehicleActivityDto }) {
-  const route = routes.find((r) => r.id === data.routeId) ?? unknownRoute;
+  const route = routes.find((r) => r.routeIds?.includes(data.routeId) ?? r.id === data.routeId) ?? unknownRoute;
   return (
     <article
       className="flex min-h-12 px-2 py-1 rounded-md"

@@ -10,7 +10,10 @@ import { BusIcon } from "~/images/transport-modes/bus-icon";
 import { TramwayIcon } from "~/images/transport-modes/tramway-icon";
 
 export function VehicleCard({ vehicle }: { vehicle: LightVehicleDto }) {
-  const route = vehicle.currentRouteId ? routes.find((r) => r.id === vehicle.currentRouteId) ?? unknownRoute : null;
+  const route = vehicle.currentRouteId
+    ? routes.find((r) => r.routeIds?.includes(vehicle.currentRouteId!) ?? r.id === vehicle.currentRouteId) ??
+      unknownRoute
+    : null;
   return (
     <Link
       className={`flex flex-col sm:flex-row py-1 px-2 rounded-md hover:brightness-90 ${
