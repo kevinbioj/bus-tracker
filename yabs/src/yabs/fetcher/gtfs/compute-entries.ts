@@ -106,7 +106,7 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
         calendar: trip.calendar.id,
         route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
         direction: trip.direction,
-        headsign: trip.headsign ?? stopTimes.at(-1)!.name,
+        headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
       },
       vehicle: {
         id: null,
@@ -395,7 +395,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         calendar: trip.calendar.id,
         route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
         direction: trip.direction,
-        headsign: trip.headsign,
+        headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
       },
       vehicle: {
         id: vehicleId,
