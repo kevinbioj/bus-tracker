@@ -2373,12 +2373,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Épinay",
         city: "SAINT-AUBIN-ÉPINAY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#CE1922",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "300",
+          },
+          pages: [
+            { font: "1508SUPX", text: "EPINAY" },
+            { font: "1508SUPX", text: "SAINT-AUBIN-EPINAY" },
+          ],
+        },
       },
       {
         id: ["Lycée Flaubert ROUEN", "Lycée Flaubert"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#CE1922",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "300",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE FLAUBERT" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
     ],
   },
@@ -2393,12 +2419,35 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Bois Breton",
         city: "RONCHEROLLES-SUR-LE-VIVIER",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#81612D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "301",
+          },
+          pages: [{ font: "1508SUPX", text: "BOIS BRETON" }, { text: ["RONCHEROLLES", "-SUR-LE-VIVIER"] }],
+        },
       },
       {
         id: ["Lycée Flaubert ROUEN", "Lycée Flaubert"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#81612D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "301",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE FLAUBERT" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
     ],
   },
@@ -2413,12 +2462,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#8ACBC0",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "301",
+          },
+          pages: [
+            { font: "1508SUPX", text: "BOULINGRIN" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
       {
         id: ["Lycée Grieu ROUEN", "Lycée Grieu"],
         autoHide: true,
         name: "Lycée Grieu",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#8ACBC0",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "301",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE GRIEU" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
     ],
   },
@@ -2433,18 +2508,57 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Route d'Isneauville",
         city: "FONTAINE-SOUS-PRÉAUX",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "303",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ROUTE D'ISNEAUVILLE" },
+            { font: "1507SUPX", text: "FONTAINE-SOUS-PREAUX" },
+          ],
+        },
       },
       {
         id: ["Collège Michelet BIHOREL", "Collège Michelet"],
         autoHide: true,
         name: "Collège Michelet",
         city: "BIHOREL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "303",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE MICHELET" },
+            { font: "1508SUPX", text: "BIHOREL" },
+          ],
+        },
       },
       {
         id: ["Collège Saint-Victrice BIHOREL", "Collège Saint-Victrice"],
         autoHide: true,
         name: "Collège Saint-Victrice",
         city: "BIHOREL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "303",
+          },
+          pages: [
+            { font: "1407SUPX", text: "COLLEGE SAINT-VICTRICE" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
       {
         id: ["Mairie SAINT-MARTIN-DU-VIVIER", "Mairie de Saint-Martin-du-Vivier"],
@@ -2452,12 +2566,38 @@ const astuceRoutes: Route[] = [
         alternate: "Mairie de Saint-Martin-du-Vivier",
         name: "Mairie",
         city: "SAINT-MARTIN-DU-VIVIER",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "303",
+          },
+          pages: [
+            { font: "1508SUPX", text: "MAIRIE" },
+            { font: "1507SUPX", text: "SAINT-MARTIN-DU-VIVIER" },
+          ],
+        },
       },
       {
         id: ["Lycée Flaubert ROUEN", "Lycée Flaubert"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "303",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE FLAUBERT" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
     ],
   },
@@ -2472,6 +2612,19 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Petit Pont",
         city: "ISNEAUVILLE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#C19FCB",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "305",
+          },
+          pages: [
+            { font: "1508SUPX", text: "PETIT PONT" },
+            { font: "1508SUPX", text: "ISNEAUVILLE" },
+          ],
+        },
       },
       {
         id: ["Hôtel de Ville ROUEN", "Hôtel de Ville de Rouen"],
@@ -2479,12 +2632,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Hôtel de Ville",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#C19FCB",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "305",
+          },
+          pages: [
+            { font: "1508SUPX", text: "HOTEL DE VILLE" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
       {
         id: ["Lycée Flaubert ROUEN", "Lycée Flaubert - Texcier"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#C19FCB",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "305",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE FLAUBERT" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
     ],
   },
@@ -2499,18 +2678,57 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Lycée des Bruyères",
         city: "PETIT-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "310",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE DES BRUYERES" },
+            { font: "1508SUPX", text: "PETIT-QUEVILLY" },
+          ],
+        },
       },
       {
         id: ["Lycée Elisa Lemonnier PETIT-QUEVILLY", "Lycée Elisa Lemonnier"],
         autoHide: true,
         name: "Lycée Elisa Lemonnier",
         city: "PETIT-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "310",
+          },
+          pages: [
+            { font: "1507SUPX", text: "LYCEE ELISA LEMONNIER" },
+            { font: "1508SUPX", text: "PETIT-QUEVILLY" },
+          ],
+        },
       },
       {
         id: ["Pôle Multimodal-Cotoni OISSEL", "Pôle Multimodal-Cotoni"],
         autoHide: true,
         name: "Pôle Multimodal-Cotoni",
         city: "OISSEL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "310",
+          },
+          pages: [
+            { font: "1407SUPX", text: "POLE MULTIMODAL-COTONI" },
+            { font: "1508SUPX", text: "OISSEL" },
+          ],
+        },
       },
     ],
   },
@@ -2525,20 +2743,77 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Lycée Val de Seine",
         city: "GRAND-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "311",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE VAL DE SEINE" },
+            { font: "1508SUPX", text: "GRAND-QUEVILLY" },
+          ],
+        },
       },
       {
         id: ["Pont de la Chapelle SAINT-ETIENNE-DU-ROUVRAY", "Pont de la Chapelle"],
         autoHide: true,
         name: "Pont de la Chapelle",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "311",
+          },
+          pages: [
+            { font: "1508SUPX", text: "PONT DE LA CHAPELLE" },
+            { font: "1407SUPX", text: "ST-ETIENNE-DU-ROUVRAY" },
+          ],
+        },
       },
       {
         id: ["Pôle Multimodal-Cotoni OISSEL", "Pôle Multimodal-Cotoni"],
         autoHide: true,
         name: "Pôle Multimodal-Cotoni",
         city: "OISSEL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "311",
+          },
+          pages: [
+            { font: "1407SUPX", text: "POLE MULTIMODAL-COTONI" },
+            { font: "1508SUPX", text: "OISSEL" },
+          ],
+        },
       },
-      { id: ["CHAMP DE FOIRE"], autoHide: true, name: "Champ de Foire", city: "ELBEUF-SUR-SEINE" },
+      {
+        id: ["CHAMP DE FOIRE"],
+        autoHide: true,
+        name: "Champ de Foire",
+        city: "ELBEUF-SUR-SEINE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "311",
+          },
+          pages: [
+            { font: "1508SUPX", text: "CHAMP DE FOIRE" },
+            { font: "1508SUPX", text: "ELBEUF" },
+          ],
+        },
+      },
     ],
   },
   {
@@ -2552,12 +2827,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Collège Edouard Branly",
         city: "GRAND-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#E6007D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "314",
+          },
+          pages: [
+            { font: "1407SUPX", text: "COLLEGE EDOUARD BRANLY" },
+            { font: "1508SUPX", text: "GRAND-QUEVILLY" },
+          ],
+        },
       },
       {
         id: ["Coopérateurs GRAND QUEVILLY", "Coopérateurs"],
         autoHide: true,
         name: "Coopérateurs",
         city: "GRAND-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#E6007D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "314",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COOPERATEURS" },
+            { font: "1508SUPX", text: "GRAND-QUEVILLY" },
+          ],
+        },
       },
     ],
   },
@@ -2572,12 +2873,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "La Houssière",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "315",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LA HOUSSIERE" },
+            { font: "1407SUPX", text: "ST-ETIENNE-DU-ROUVRAY" },
+          ],
+        },
       },
       {
         id: ["Stade Diochon"],
         autoHide: true,
         name: "Stade Diochon",
         city: "PETIT-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "315",
+          },
+          pages: [
+            { font: "1508SUPX", text: "STADE DIOCHON" },
+            { font: "1508SUPX", text: "PETIT-QUEVILLY" },
+          ],
+        },
       },
     ],
   },
@@ -2590,14 +2917,40 @@ const astuceRoutes: Route[] = [
       {
         id: ["Stade Diochon PETIT-QUEVILLY", "Stade Diochon"],
         autoHide: true,
-        name: "Stade Diochon ",
+        name: "Stade Diochon",
         city: "PETIT-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#81612D",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "315",
+          },
+          pages: [
+            { font: "1508SUPX", text: "STADE DIOCHON" },
+            { font: "1508SUPX", text: "PETIT-QUEVILLY" },
+          ],
+        },
       },
       {
         id: ["Lycée Val de Seine GRAND QUEVILLY", "Lycée Val de Seine"],
         autoHide: true,
         name: "Lycée Val de Seine",
         city: "GRAND-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#81612D",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "315",
+          },
+          pages: [
+            { font: "1407SUPX", text: "LYCEE VAL DE SEINE" },
+            { font: "1508SUPX", text: "GRAND-QUEVILLY" },
+          ],
+        },
       },
     ],
   },
@@ -2611,12 +2964,35 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Siamoisiers",
         city: "RONCHEROLLES-SUR-LE-VIVIER",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "322",
+          },
+          pages: [{ font: "1508SUPX", text: "SIAMOISIERS" }, { text: ["RONCHEROLLES", "-SUR-LE-VIVIER"] }],
+        },
       },
       {
         id: ["Collège Lucie Aubrac ISNEAUVILLE", "Collège Lucie Aubrac"],
         autoHide: true,
         name: "Collège Lucie Aubrac",
         city: "ISNEAUVILLE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "322",
+          },
+          pages: [
+            { font: "1507SUPX", text: "COLLEGE LUCIE AUBRAC" },
+            { font: "1508SUPX", text: "ISNEAUVILLE" },
+          ],
+        },
       },
     ],
   },
@@ -2631,12 +3007,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "330",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE GALILEE" },
+            { font: "1407SUPX", text: "FRANQUEVILLE-ST-PIERRE" },
+          ],
+        },
       },
       {
         id: ["Long Corbeil BONSECOURS", "Long Corbeil"],
         autoHide: true,
         name: "Long Corbeil",
         city: "BONSECOURS",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "330",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LONG CORBEIL" },
+            { font: "1508SUPX", text: "BONSECOURS" },
+          ],
+        },
       },
     ],
   },
@@ -2651,12 +3053,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "La Providence",
         city: "MESNIL-ESNARD",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#E6007D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "331",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LA PROVIDENCE" },
+            { font: "1508SUPX", text: "MESNIL-ESNARD" },
+          ],
+        },
       },
       {
         id: ["Eauplet BONSECOURS", "Eauplet"],
         autoHide: true,
         name: "Eauplet",
         city: "BONSECOURS",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#E6007D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "331",
+          },
+          pages: [
+            { font: "1508SUPX", text: "EAUPLET" },
+            { font: "1508SUPX", text: "BONSECOURS" },
+          ],
+        },
       },
     ],
   },
@@ -2672,30 +3100,95 @@ const astuceRoutes: Route[] = [
         alternate: "Mairie de Montmain",
         name: "Mairie",
         city: "MONTMAIN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "332",
+          },
+          pages: [
+            { font: "1508SUPX", text: "MAIRIE" },
+            { font: "1508SUPX", text: "MONTMAIN" },
+          ],
+        },
       },
       {
         id: ["Collège Abaquesne BOOS", "Collège Abaquesne"],
         autoHide: true,
         name: "Collège Abaquesne",
         city: "BOOS",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "332",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE ABAQUESNE" },
+            { font: "1508SUPX", text: "BOOS" },
+          ],
+        },
       },
       {
         id: ["La Providence MESNIL-ESNARD", "La Providence"],
         autoHide: true,
         name: "La Providence",
         city: "MESNIL-ESNARD",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "332",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LA PROVIDENCE" },
+            { font: "1508SUPX", text: "MESNIL-ESNARD" },
+          ],
+        },
       },
       {
         id: ["Collège Malot MESNIL-ESNARD", "Collège Malot"],
         autoHide: true,
         name: "Collège Malot",
         city: "MESNIL-ESNARD",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "332",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE MALOT" },
+            { font: "1508SUPX", text: "MESNIL-ESNARD" },
+          ],
+        },
       },
       {
         id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "332",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE GALILEE" },
+            { font: "1407SUPX", text: "FRANQUEVILLE-ST-PIERRE" },
+          ],
+        },
       },
     ],
   },
@@ -2710,12 +3203,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Château Anquetil",
         city: "LA NEUVILLE-CHANT-D'OISEL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "333",
+          },
+          pages: [
+            { font: "1508SUPX", text: "CHATEAU ANQUETIL" },
+            { font: "1407SUPX", text: "LA NEUVILLE CHANT D'OISEL" },
+          ],
+        },
       },
       {
         id: ["Collège Abaquesne BOOS", "Collège Abaquesne"],
         autoHide: true,
         name: "Collège Abaquesne",
         city: "BOOS",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "333",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE ABAQUESNE" },
+            { font: "1508SUPX", text: "BOOS" },
+          ],
+        },
       },
       {
         id: ["Mairie LA NEUVILLE-CHANT-D'OISEL", "Mairie de La Neuville"],
@@ -2723,18 +3242,57 @@ const astuceRoutes: Route[] = [
         alternate: "Mairie de La Neuville-Chant-d'Oisel",
         name: "Mairie",
         city: "LA NEUVILLE-CHANT-D'OISEL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "333",
+          },
+          pages: [
+            { font: "1508SUPX", text: "MAIRIE" },
+            { font: "1407SUPX", text: "LA NEUVILLE CHANT D'OISEL" },
+          ],
+        },
       },
       {
         id: ["La Providence MESNIL-ESNARD", "La Providence"],
         autoHide: true,
         name: "La Providence",
         city: "MESNIL-ESNARD",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "333",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LA PROVIDENCE" },
+            { font: "1508SUPX", text: "MESNIL-ESNARD" },
+          ],
+        },
       },
       {
         id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "333",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE GALILEE" },
+            { font: "1508SUPX", text: "FRANQUEVILLE-ST-PIERRE" },
+          ],
+        },
       },
     ],
   },
@@ -2749,18 +3307,57 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "École Mendès-France",
         city: "QUÉVREVILLE-LA-POTERIE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "334",
+          },
+          pages: [
+            { font: "1507SUPX", text: "ECOLE MENDES-FRANCE" },
+            { font: "1407SUPX", text: "QUEVREVILLE-LA-POTERIE" },
+          ],
+        },
       },
       {
         id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "334",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE GALILEE" },
+            { font: "1407SUPX", text: "FRANQUEVILLE-ST-PIERRE" },
+          ],
+        },
       },
       {
         id: ["Collège Malot MESNIL-ESNARD", "Collège Malot"],
         autoHide: true,
         name: "Collège Malot",
         city: "MESNIL-ESNARD",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "334",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE MALOT" },
+            { font: "1508SUPX", text: "MESNIL-ESNARD" },
+          ],
+        },
       },
     ],
   },
@@ -2774,25 +3371,77 @@ const astuceRoutes: Route[] = [
         id: ["Allée du Couvent LES AUTHIEUX-SUR-LE-PORT-ST-OUEN", "Allée du Couvent"],
         autoHide: true,
         name: "Allée du Couvent",
-        city: "LES AUTHIEUX-SUR-LE-PORT-SAINTT-OUEN",
+        city: "LES AUTHIEUX-SUR-LE-PORT-SAINT-OUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "335",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ALLEE DU COUVENT" },
+            { text: ["LES AUTHIEUX-SUR-", "LE-PORT-SAINT-OUEN"] },
+          ],
+        },
       },
       {
         id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         autoHide: true,
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "335",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE GALILEE" },
+            { font: "1407SUPX", text: "FRANQUEVILLE-ST-PIERRE" },
+          ],
+        },
       },
       {
         id: ["La Providence MESNIL-ESNARD", "La Providence"],
         autoHide: true,
         name: "La Providence",
         city: "MESNIL-ESNARD",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "335",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LA PROVIDENCE" },
+            { font: "1508SUPX", text: "MESNIL-ESNARD" },
+          ],
+        },
       },
       {
         id: ["Collège Malot MESNIL-ESNARD", "Collège Malot"],
         autoHide: true,
         name: "Collège Malot",
         city: "MESNIL-ESNARD",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "335",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE MALOT" },
+            { font: "1508SUPX", text: "MESNIL-ESNARD" },
+          ],
+        },
       },
     ],
   },
@@ -2808,12 +3457,38 @@ const astuceRoutes: Route[] = [
         alternate: "Mairie de Belbeuf",
         name: "Mairie",
         city: "BELBEUF",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#008E5B",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "336",
+          },
+          pages: [
+            { font: "1508SUPX", text: "MAIRIE" },
+            { font: "1508SUPX", text: "BELBEUF" },
+          ],
+        },
       },
       {
         id: ["Collège Verhaeren BONSECOURS", "Collège Verhaeren"],
         autoHide: true,
         name: "Collège Verhaeren",
         city: "BONSECOURS",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#008E5B",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "336",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE VERHAEREN" },
+            { font: "1508SUPX", text: "BONSECOURS" },
+          ],
+        },
       },
     ],
   },
@@ -2827,18 +3502,57 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "340",
+          },
+          pages: [
+            { font: "1508SUPX", text: "BOULINGRIN" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
       {
         id: ["Forgettes SAINT-JACQUES-SUR-DARNÉTAL", "Forgettes"],
         autoHide: true,
         name: "Forgettes",
         city: "SAINT-JACQUES-SUR-DARNÉTAL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "340",
+          },
+          pages: [
+            { font: "1508SUPX", text: "FORGETTES" },
+            { font: "1407SUPX", text: "ST-JACQUES-SUR-DARNETAL" },
+          ],
+        },
       },
       {
         id: ["Collège Rousseau DARNÉTAL", "Collège Rousseau"],
         autoHide: true,
         name: "Collège Rousseau",
         city: "DARNÉTAL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "340",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE ROUSSEAU" },
+            { font: "1508SUPX", text: "DARNETAL" },
+          ],
+        },
       },
     ],
   },
@@ -2853,12 +3567,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Collège Rousseau",
         city: "DARNÉTAL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "341",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE ROUSSEAU" },
+            { font: "1508SUPX", text: "DARNETAL" },
+          ],
+        },
       },
       {
         id: ["Épinay SAINT-AUBIN-ÉPINAY", "Épinay"],
         autoHide: true,
         name: "Épinay",
         city: "SAINT-AUBIN-ÉPINAY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "341",
+          },
+          pages: [
+            { font: "1508SUPX", text: "EPINAY" },
+            { font: "1508SUPX", text: "SAINT-AUBIN-EPINAY" },
+          ],
+        },
       },
     ],
   },
@@ -2873,12 +3613,35 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Collège Rousseau",
         city: "DARNÉTAL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#CA98C5",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "342",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE ROUSSEAU" },
+            { font: "1508SUPX", text: "DARNETAL" },
+          ],
+        },
       },
       {
         id: ["Bois Breton RONCHEROLLES-SUR-LE-VIVIER", "Bois Breton"],
         autoHide: true,
         name: "Bois Breton",
         city: "RONCHEROLLES-SUR-LE-VIVIER",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#CA98C5",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "342",
+          },
+          pages: [{ font: "1508SUPX", text: "BOIS BRETON" }, { text: ["RONCHEROLLES", "-SUR-LE-VIVIER"] }],
+        },
       },
     ],
   },
@@ -2893,12 +3656,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Mont Pilon",
         city: "DARNÉTAL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "343",
+          },
+          pages: [
+            { font: "1508SUPX", text: "MONT-PILON" },
+            { font: "1508SUPX", text: "DARNETAL" },
+          ],
+        },
       },
       {
         id: ["Collège Chartier DARNÉTAL", "Collège Chartier"],
         autoHide: true,
         name: "Collège Chartier",
         city: "DARNÉTAL",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#D3D400",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "343",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE CHARTIER" },
+            { font: "1508SUPX", text: "DARNETAL" },
+          ],
+        },
       },
     ],
   },
@@ -2913,18 +3702,57 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Bac de Dieppedalle",
         city: "CANTELEU",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#008E5A",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "350",
+          },
+          pages: [
+            { font: "1508SUPX", text: "MONT-PILON" },
+            { font: "1508SUPX", text: "DARNETAL" },
+          ],
+        },
       },
       {
         id: ["Place Alexandre SAHURS", "Place Alexandre"],
         autoHide: true,
         name: "Place Alexandre",
         city: "SAHURS",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#008E5A",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "350",
+          },
+          pages: [
+            { font: "1508SUPX", text: "PLACE ALEXANDRE" },
+            { font: "1508SUPX", text: "SAHURS" },
+          ],
+        },
       },
       {
         id: ["Collège Gounod CANTELEU", "Gounod"],
         autoHide: true,
         name: "Collège Gounod",
         city: "CANTELEU",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#008E5A",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "350",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE GOUNOD" },
+            { font: "1508SUPX", text: "DARNETAL" },
+          ],
+        },
       },
     ],
   },
@@ -2939,12 +3767,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Marché d'Intérêt National",
         city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#E6007D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "351",
+          },
+          pages: [
+            { font: "1407SUPX", text: "MARCHE D'INTERET NATIONAL" },
+            { font: "1508SUPX", text: "ROUEN" },
+          ],
+        },
       },
       {
         id: ["Collège Gounod CANTELEU", "Gounod"],
         autoHide: true,
         name: "Collège Gounod",
         city: "CANTELEU",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#E6007D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "351",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE GOUNOD" },
+            { font: "1508SUPX", text: "DARNETAL" },
+          ],
+        },
       },
     ],
   },
@@ -2959,12 +3813,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Collège Jean Zay",
         city: "LE HOULME",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#A2559D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "360",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE JEAN ZAY" },
+            { font: "1508SUPX", text: "LE HOULME" },
+          ],
+        },
       },
       {
         id: ["Place du Vivier HOUPPEVILLE", "Place du Vivier"],
         autoHide: true,
         name: "Place du Vivier",
         city: "HOUPPEVILLE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#A2559D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "360",
+          },
+          pages: [
+            { font: "1508SUPX", text: "PLACE DU VIVIER" },
+            { font: "1508SUPX", text: "HOUPPEVILLE" },
+          ],
+        },
       },
     ],
   },
@@ -2979,12 +3859,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Hameau Saint-Maurice",
         city: "MALAUNAY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "361",
+          },
+          pages: [
+            { font: "1507SUPX", text: "HAMEAU SAINT-MAURICE" },
+            { font: "1508SUPX", text: "MALAUNAY" },
+          ],
+        },
       },
       {
         id: ["ollège Jean Zay LE HOULME", "Collège Jean Zay"],
         autoHide: true,
         name: "Collège Jean Zay",
         city: "Le HOULME",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "361",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE JEAN ZAY" },
+            { font: "1508SUPX", text: "LE HOULME" },
+          ],
+        },
       },
     ],
   },
@@ -2999,12 +3905,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Maromme La Maine",
         city: "MAROMME",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#A2559D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "363",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LA MAINE" },
+            { font: "1508SUPX", text: "MAROMME" },
+          ],
+        },
       },
       {
         id: ["Lycée du Cailly DÉVILLE-LES-ROUEN", "Lycée du Cailly"],
         autoHide: true,
         name: "Lycée du Cailly",
         city: "DÉVILLE-LES-ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#A2559D",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "363",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE DU CAILLY" },
+            { font: "1508SUPX", text: "DEVILLE-LES-ROUEN" },
+          ],
+        },
       },
     ],
   },
@@ -3019,12 +3951,38 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "Place du Vivier",
         city: "HOUPPEVILLE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "364",
+          },
+          pages: [
+            { font: "1508SUPX", text: "PLACE DU VIVIER" },
+            { font: "1508SUPX", text: "HOUPPEVILLE" },
+          ],
+        },
       },
       {
         id: ["Lycée du Cailly DÉVILLE-LES-ROUEN", "Lycée du Cailly"],
         autoHide: true,
         name: "Lycée du Cailly",
         city: "DÉVILLE-LES-ROUEN",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "364",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE DU CAILLY" },
+            { font: "1508SUPX", text: "DEVILLE-LES-ROUEN" },
+          ],
+        },
       },
     ],
   },
