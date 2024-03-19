@@ -2995,7 +2995,7 @@ const astuceRoutes: Route[] = [
             text: "315",
           },
           pages: [
-            { font: "1407SUPX", text: "LYCEE VAL DE SEINE" },
+            { font: "1508SUPX", text: "LYCEE VAL DE SEINE" },
             { font: "1508SUPX", text: "GRAND-QUEVILLY" },
           ],
         },
