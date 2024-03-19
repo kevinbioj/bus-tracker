@@ -34,7 +34,7 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR-TGR',
-      staticResourceHref: 'https://pysae.com/api/v2/groups/tcar/gtfs/pub',
+      staticResourceHref: 'https://gtfs.kevinbioj.fr/tcar-tgr.zip',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       getOperator: () => 'TNI',
@@ -193,7 +193,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'CAPCOT',
       routePrefix: 'CAPCOT',
-      staticResourceHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs/pub',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/2e97c9b3-a59f-42dd-9b9e-a232fa771f21',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       getOperator: () => 'CAPCOT',
@@ -207,7 +207,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'REZOBUS',
       routePrefix: 'REZOBUS',
-      staticResourceHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs/pub',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/777bdff5-01ee-4f45-aaed-177cbca9a087',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       getOperator: () => 'REZOBUS',
@@ -221,7 +221,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'MOCA',
       routePrefix: 'MOCA',
-      staticResourceHref: 'https://pysae.com/api/v2/groups/moca/gtfs/pub',
+      staticResourceHref: 'https://gtfs.kevinbioj.fr/moca.zip',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       filters: { scheduled: () => false },
