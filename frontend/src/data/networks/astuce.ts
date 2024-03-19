@@ -670,6 +670,24 @@ const astuceRoutes: Route[] = [
         },
       },
       {
+        id: ["Boulingrin ROUEN", "Boulingrin ROUE N"],
+        autoHide: true,
+        name: "Boulingrin",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#008F5B",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "F7",
+          },
+          pages: [
+            { textSpacing: 3, text: "BOULINGRIN" },
+            { textSpacing: 3, text: "ROUEN" },
+          ],
+        },
+      },
+      {
         id: ["La Pléiade MONT-SAINT-AIGNAN"],
         name: "La Pléiade",
         city: "MONT-SAINT-AIGNAN",
