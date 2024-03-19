@@ -208,7 +208,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'REZOBUS',
       routePrefix: 'REZOBUS',
-      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/777bdff5-01ee-4f45-aaed-177cbca9a087',
+      staticResourceHref: 'https://gtfs.kevinbioj.fr/caux-seine-agglo.zip',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       getOperator: () => 'REZOBUS',
