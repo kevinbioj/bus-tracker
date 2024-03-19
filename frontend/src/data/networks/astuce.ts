@@ -353,10 +353,45 @@ const astuceRoutes: Route[] = [
             backgroundColor: "#E6007E",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-
             text: "F1",
           },
           pages: [{ text: "STADE DIOCHON" }, { text: "PETIT-QUEVILLY" }],
+        },
+      },
+      {
+        id: ["Champlain ROUEN"],
+        autoHide: true,
+        name: "Champlain",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E6007E",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "F1",
+          },
+          pages: [
+            { textSpacing: 3, text: "CHAMPLAIN" },
+            { textSpacing: 3, text: "ROUEN" },
+          ],
+        },
+      },
+      {
+        id: ["Boulingrin ROUEN"],
+        autoHide: true,
+        name: "Boulingrin",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E6007E",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "F1",
+          },
+          pages: [
+            { textSpacing: 3, text: "BOULINGRIN" },
+            { textSpacing: 3, text: "ROUEN" },
+          ],
         },
       },
       {
@@ -1011,6 +1046,19 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
           pages: [{ text: "BEL AIR" }, { font: "1510N2E1", text: "PETIT-COURONNE" }],
+        },
+      },
+      {
+        id: ["Champlain ROUEN"],
+        autoHide: true,
+        name: "Champlain",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
+          pages: [
+            { textSpacing: 3, text: "CHAMPLAIN" },
+            { textSpacing: 3, text: "ROUEN" },
+          ],
         },
       },
       {
