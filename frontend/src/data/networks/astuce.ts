@@ -1150,7 +1150,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Mont-Riboudet"],
+        id: ["Mont-Riboudet", "Mont-Riboudet ROUEN"],
         autoHide: true,
         name: "Mont-Riboudet - Kindarena",
         city: "ROUEN",
