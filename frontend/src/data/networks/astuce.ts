@@ -377,7 +377,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Boulingrin ROUEN"],
+        id: ["Boulingrin ROUEN", "Boulingrin ROUE N"],
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
@@ -649,6 +649,24 @@ const astuceRoutes: Route[] = [
             text: "F7",
           },
           pages: [{ text: "HOTEL DE VILLE" }, { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" }],
+        },
+      },
+      {
+        id: ["Champlain ROUEN"],
+        autoHide: true,
+        name: "Champlain",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#008F5B",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "F7",
+          },
+          pages: [
+            { textSpacing: 3, text: "CHAMPLAIN" },
+            { textSpacing: 3, text: "ROUEN" },
+          ],
         },
       },
       {
