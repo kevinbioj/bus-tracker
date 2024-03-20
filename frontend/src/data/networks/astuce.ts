@@ -3374,7 +3374,7 @@ const astuceRoutes: Route[] = [
           },
           pages: [
             { font: "1508SUPX", text: "LYCEE GALILEE" },
-            { font: "1508SUPX", text: "FRANQUEVILLE-ST-PIERRE" },
+            { font: "1407SUPX", text: "FRANQUEVILLE-ST-PIERRE" },
           ],
         },
       },
