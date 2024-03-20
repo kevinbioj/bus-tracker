@@ -30,7 +30,7 @@ const sources: Source[] = [
   },
   {
     id: 'TCAR-TGR',
-    refreshCron: '0,30 * * * * *',
+    refreshCron: '0,10,20,30,40,50 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR-TGR',
