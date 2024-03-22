@@ -16,6 +16,8 @@ const vehicleMonitoringRequestPayload = `<?xml version="1.0" encoding="utf-8"?>
 </Siri>
 `;
 
+const unescape = (input: string) => input.replace('&apos;', "'");
+
 export async function computeSiriEntries(properties: SiriProperties) {
   const abortController = new AbortController();
   const timeout = setTimeout(() => abortController.abort(), 10000);
@@ -68,7 +70,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
           id: parseSiriRef(vehicle.MonitoredVehicleJourney.FramedVehicleJourneyRef.DatedVehicleJourneyRef),
           calendar: 'N/A',
           direction: +vehicle.MonitoredVehicleJourney.DirectionName - 1,
-          headsign: vehicle.MonitoredVehicleJourney.DestinationName,
+          headsign: unescape(vehicle.MonitoredVehicleJourney.DestinationName),
           route: properties.prefix
             ? `${properties.prefix}:${parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef)}`
             : parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef),
@@ -87,7 +89,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
             ? [
                 {
                   id: parseSiriRef(vehicle.MonitoredVehicleJourney.OriginRef),
-                  name: vehicle.MonitoredVehicleJourney.OriginName,
+                  name: unescape(vehicle.MonitoredVehicleJourney.OriginName),
                   sequence: 1,
                   timestamp: dayjs(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime).unix(),
                   delta: 0,
@@ -101,7 +103,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
               const isCancelled = stopCall.ArrivalStatus === 'cancelled';
               return {
                 id: parseSiriRef(stopCall.StopPointRef),
-                name: stopCall.StopPointName,
+                name: unescape(stopCall.StopPointName),
                 sequence: stopCall.Order,
                 timestamp: isCancelled
                   ? null

@@ -43,7 +43,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Caen Presqu&apos;ile"],
+        id: ["Caen Presqu'ile"],
         name: "CAEN Presqu'ile",
         girouette: {
           routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "T2" },
@@ -59,7 +59,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#009adf", text: "#ffffff" },
     destinations: [
       {
-        id: ["Fleury-sur-Orne HAUTS DE L&apos;ORNE"],
+        id: ["Fleury-sur-Orne HAUTS DE L'ORNE"],
         name: "Hauts de l'Orne",
         city: "FLEURY-SUR-ORNE",
         girouette: {
@@ -263,7 +263,7 @@ const twistoRoutes: Route[] = [
         name: "Saint-Clair",
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
-          routeNumber: { backgroundColor: "#fcdd19", textColor: "#000000", text: "6A" },
+          routeNumber: { backgroundColor: "#fcdd19", textColor: "#000000", text: "6a" },
           pages: [{ font: "1508C2E1", textSpacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
         },
       },
@@ -280,7 +280,7 @@ const twistoRoutes: Route[] = [
         name: "Saint-Clair",
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
-          routeNumber: { backgroundColor: "#fcdd19", textColor: "#000000", text: "6B" },
+          routeNumber: { backgroundColor: "#fcdd19", textColor: "#000000", text: "6b" },
           pages: [{ font: "1508C2E1", textSpacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
         },
       },
@@ -380,7 +380,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#b0368c", text: "#ffffff" },
     destinations: [
       {
-        id: ["Blainville-sur-Orne Terres d&apos;Avenir"],
+        id: ["Blainville-sur-Orne Terres d'Avenir"],
         name: "Terres d'Avenir",
         city: "BLAINVILLE-SUR-ORNE",
         girouette: {
@@ -913,7 +913,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Tourville-sur-Odon Val d&apos;Odon"],
+        id: ["Tourville-sur-Odon Val d'Odon"],
         name: "Val d'Odon",
         city: "TOURVILLE-SUR-ODON",
         girouette: {
@@ -1014,7 +1014,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Éterville Route d&apos;Aunay"],
+        id: ["Éterville Route d'Aunay"],
         name: "Route d'Aunay",
         city: "ÉTERVILLE",
         girouette: {
@@ -1870,7 +1870,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["Saint-Aubin-d&apos;Arquenay Saint-Aubin Eglise"],
+        id: ["Saint-Aubin-d'Arquenay Saint-Aubin Eglise"],
         name: "SAINT AUBIN Eglise",
         girouette: {
           routeNumber: {
@@ -2521,7 +2521,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Caen Presqu&apos;ile"],
+        id: ["Caen Presqu'ile"],
         name: "CAEN Presqu'ile",
         girouette: {
           routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
@@ -2537,7 +2537,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#009adf", text: "#ffffff" },
     destinations: [
       {
-        id: ["Fleury-sur-Orne HAUTS DE L&apos;ORNE"],
+        id: ["Fleury-sur-Orne HAUTS DE L'ORNE"],
         name: "Hauts de l'Orne",
         city: "FLEURY-SUR-ORNE",
         girouette: {
