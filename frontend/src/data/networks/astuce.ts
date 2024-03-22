@@ -139,6 +139,22 @@ const astuceRoutes: Route[] = [
         },
       },
       {
+        id: ["Place du 8-Mai LE PETIT-QUEVILLY"],
+        autoHide: true,
+        name: "Place du 8-Mai",
+        city: "PETIT-QUEVILLY",
+        girouette: {
+          dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
+          routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
+          pages: [
+            { font: "14LUPLAN", textSpacing: 1, text: "PLACE DU 8-MAI" },
+            { font: "14LUPLAN", textSpacing: 1, text: "PETIT-QUEVILLY" },
+          ],
+
+          width: 300,
+        },
+      },
+      {
         id: ["Georges Braque GRAND QUEVILLY"],
         name: "Georges Braque",
         city: "GRAND-QUEVILLY",
@@ -146,8 +162,8 @@ const astuceRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", textSpacing: 1, text: "G. BRAQUE" },
-            { font: "14LUPLAN", textSpacing: 1, text: "GD-QUEVILLY" },
+            { font: "14LUPLAN", textSpacing: 1, text: "GEORGES BRAQUE" },
+            { font: "14LUPLAN", textSpacing: 1, text: "GRAND-QUEVILLY" },
           ],
           width: 300,
         },
@@ -161,7 +177,7 @@ const astuceRoutes: Route[] = [
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
             { font: "14LUPLAN", textSpacing: 1, text: "TECHNOPOLE" },
-            { font: "14LUPLAN", textSpacing: 1, text: "ST-ETIENNE" },
+            { font: "14LUPLAN", textSpacing: 1, text: "SAINT-ETIENNE" },
           ],
           width: 300,
         },
