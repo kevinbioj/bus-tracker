@@ -132,6 +132,16 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'SEMO',
+    refreshCron: '0,20,40 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'SEMO',
+      routePrefix: 'SEMO',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/98bbbf7c-10ff-48a0-afc2-c5f7b3dda5af',
+    },
+  },
+  {
     id: 'NOMAD',
     refreshCron: '0,20,40 * * * * *',
     type: 'GTFS',

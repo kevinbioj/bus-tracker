@@ -14,6 +14,7 @@ import mocaRoutes from "~/data/networks/moca";
 import nevaRoutes from "~/data/networks/neva";
 import nomadRegionRoutes from "~/data/networks/nomad-region";
 import rezobusRoutes from "~/data/networks/rezobus";
+import semoRoutes from "~/data/networks/semo";
 import sngoRoutes from "~/data/networks/sngo";
 import twistoRoutes from "~/data/networks/twisto";
 
@@ -31,6 +32,7 @@ const routes: Route[] = [
   ...nevaRoutes,
   ...nomadRegionRoutes,
   ...rezobusRoutes,
+  ...semoRoutes,
   ...sngoRoutes,
   ...twistoRoutes,
 ];

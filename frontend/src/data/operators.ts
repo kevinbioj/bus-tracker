@@ -78,6 +78,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "SEMO",
+    name: "Semo (Seine-Eure)",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/semo.svg",
+      size: [823, 227],
+    },
+    issues: [],
+  },
+  {
     id: "CAPCOT",
     name: "Cap Cotentin (le Cotentin)",
     hasHistory: true,
