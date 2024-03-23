@@ -15,13 +15,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#2CC7E2",
-            textColor: "#FFFFFF",
-            text: "1",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
           pages: [{ font: "1508SUPX", text: "GARE DE BAYEUX" }],
         },
       },
@@ -32,13 +26,7 @@ const bybusRoutes: Route[] = [
         city: "BAEYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#2CC7E2",
-            textColor: "#FFFFFF",
-            text: "1",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
           pages: [{ text: ["GARE DE BAYEUX", "VIA SUPERMARCHE"] }],
         },
       },
@@ -48,13 +36,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#2CC7E2",
-            textColor: "#FFFFFF",
-            text: "1",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
           pages: [{ text: ["REINE MATHILDE", "VIA SUPERMARCHE"] }],
         },
       },
@@ -65,13 +47,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#2CC7E2",
-            textColor: "#FFFFFF",
-            text: "1",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
           pages: [{ text: ["GARE DE BAYEUX", "EXPRESS"] }],
         },
       },
@@ -81,13 +57,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#2CC7E2",
-            textColor: "#FFFFFF",
-            text: "1",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
           pages: [{ text: ["REINE MATHILDE", "EXPRESS"] }],
         },
       },
@@ -97,13 +67,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#2CC7E2",
-            textColor: "#FFFFFF",
-            text: "1",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
           pages: [{ text: ["REINE MATHILDE", "VIA BLERIOT"] }],
         },
       },
@@ -114,13 +78,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#2CC7E2",
-            textColor: "#FFFFFF",
-            text: "1",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
           pages: [{ font: "1508SUPX", text: "GARE DE BAYEUX" }],
         },
       },
@@ -140,13 +98,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#F1AAEB",
-            textColor: "#FFFFFF",
-            text: "2",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
           pages: [{ font: "1508SUPX", text: "GARE DE BAYEUX" }],
         },
       },
@@ -157,13 +109,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#F1AAEB",
-            textColor: "#FFFFFF",
-            text: "2",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
           pages: [{ text: ["GARE DE BAYEUX", "EXPRESS"] }],
         },
       },
@@ -173,13 +119,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#F1AAEB",
-            textColor: "#FFFFFF",
-            text: "2",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
           pages: [{ font: "1508SUPX", text: "RUE DE LA FEE" }],
         },
       },
@@ -189,13 +129,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#F1AAEB",
-            textColor: "#FFFFFF",
-            text: "2",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
           pages: [{ text: ["RUE DE LA FEE", "EXPRESS"] }],
         },
       },
@@ -214,13 +148,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#91C68B",
-            textColor: "#FFFFFF",
-            text: "3",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
           pages: [{ text: ["CONQUERANT", "VIA MEDIATHEQUE"] }],
         },
       },
@@ -230,13 +158,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#91C68B",
-            textColor: "#FFFFFF",
-            text: "3",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
           pages: [{ text: ["RUE COSTILS", "EXPRESS"] }],
         },
       },
@@ -246,13 +168,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#91C68B",
-            textColor: "#FFFFFF",
-            text: "3",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
           pages: [{ font: "1508SUPX", text: "SAINT-PATRICE" }],
         },
       },
@@ -263,13 +179,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#91C68B",
-            textColor: "#FFFFFF",
-            text: "3",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
           pages: [{ font: "1508SUPX", text: "GARE DE BAYEUX" }],
         },
       },
@@ -279,13 +189,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#91C68B",
-            textColor: "#FFFFFF",
-            text: "3",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
           pages: [{ font: "1508SUPX", text: "ARCISSE DE CAUMONT" }],
         },
       },
@@ -295,13 +199,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#91C68B",
-            textColor: "#FFFFFF",
-            text: "3",
-            outlineColor: "#000000",
-          },
+          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
           pages: [{ text: ["ARCISSE DE CAUMONT", "EXPRESS"] }],
         },
       },
@@ -320,13 +218,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f4ff10",
-            textColor: "#000000",
-            outlineColor: "#000000",
-            text: "4",
-          },
+          routeNumber: { backgroundColor: "#f4ff10", textColor: "#000000", text: "4" },
           pages: [{ font: "1508SUPX", text: "REINE MATHILDE" }],
         },
       },
@@ -337,13 +229,7 @@ const bybusRoutes: Route[] = [
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f4ff10",
-            textColor: "#000000",
-            outlineColor: "#000000",
-            text: "4",
-          },
+          routeNumber: { backgroundColor: "#f4ff10", textColor: "#000000", text: "4" },
           pages: [{ font: "1508SUPX", text: "GARE DE BAYEUX" }],
         },
       },

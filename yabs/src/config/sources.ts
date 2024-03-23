@@ -290,9 +290,9 @@ const sources: Source[] = [
       staticResourceHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs-rt',
-      filters: {
-        scheduled: () => false,
-      },
+      // filters: {
+      //   scheduled: () => false,
+      // },
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
     },
   },
