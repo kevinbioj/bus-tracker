@@ -2,6 +2,54 @@ import { Route } from "~/@types";
 
 const semoRoutes: Route[] = [
   {
+    id: "SEMO:C1",
+    mapOnly: true,
+    noCartridge: true,
+    name: "C1",
+    colors: { background: "#E85117", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["C1 LOUVIERS - Rendez-Vous Bus"],
+        name: "Rendez-Vous Bus",
+        city: "LOUVIERS",
+        girouette: {
+          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
+          pages: [{ text: "LOUVIERS" }, { font: "1510N2E1", text: "RENDEZ-VOUS BUS" }],
+        },
+      },
+      {
+        id: ["C1 VAL-DE-REUIL - Voie Babeurre"],
+        autoHide: true,
+        name: "Voie Babeurre",
+        city: "VAL-DE-REUIL",
+        girouette: {
+          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
+          pages: [{ text: "VAL-DE-REUIL" }, { text: "VOIE BABEURRE" }],
+        },
+      },
+      {
+        id: ["C1 VAL-DE-REUIL - Pasteur"],
+        autoHide: true,
+        name: "Pasteur",
+        city: "VAL-DE-REUIL",
+        girouette: {
+          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
+          pages: [{ text: "VAL-DE-REUIL" }, { text: "PASTEUR" }],
+        },
+      },
+      {
+        id: ["C1 VAL-DE-REUIL - Gare S.N.C.F."],
+        alternate: "Gare SNCF de Val-de-Reuil",
+        name: "Gare SNCF",
+        city: "VAL-DE-REUIL",
+        girouette: {
+          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
+          pages: [{ text: "VAL-DE-REUIL" }, { text: "GARE SNCF" }],
+        },
+      },
+    ],
+  },
+  {
     id: "SEMO:E1",
     mapOnly: true,
     noCartridge: true,
@@ -65,54 +113,6 @@ const semoRoutes: Route[] = [
             text: "E1",
           },
           pages: [{ text: "LE-VAL-D'HAZEY" }, { text: ["GARE SNCF", "GAILLON-AUBEVOYE"] }],
-        },
-      },
-    ],
-  },
-  {
-    id: "SEMO:C1",
-    mapOnly: true,
-    noCartridge: true,
-    name: "C1",
-    colors: { background: "#E85117", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["C1 LOUVIERS - Rendez-Vous Bus"],
-        name: "Rendez-Vous Bus",
-        city: "LOUVIERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
-          pages: [{ text: "LOUVIERS" }, { font: "1510N2E1", text: "RENDEZ-VOUS BUS" }],
-        },
-      },
-      {
-        id: ["C1 VAL-DE-REUIL - Voie Babeurre"],
-        autoHide: true,
-        name: "Voie Babeurre",
-        city: "VAL-DE-REUIL",
-        girouette: {
-          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
-          pages: [{ text: "VAL-DE-REUIL" }, { text: "VOIE BABEURRE" }],
-        },
-      },
-      {
-        id: ["C1 VAL-DE-REUIL - Pasteur"],
-        autoHide: true,
-        name: "Pasteur",
-        city: "VAL-DE-REUIL",
-        girouette: {
-          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
-          pages: [{ text: "VAL-DE-REUIL" }, { text: "PASTEUR" }],
-        },
-      },
-      {
-        id: ["C1 VAL-DE-REUIL - Gare S.N.C.F."],
-        alternate: "Gare SNCF de Val-de-Reuil",
-        name: "Gare SNCF",
-        city: "VAL-DE-REUIL",
-        girouette: {
-          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
-          pages: [{ text: "VAL-DE-REUIL" }, { text: "GARE SNCF" }],
         },
       },
     ],
@@ -395,14 +395,15 @@ const semoRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "7a",
-    colors: { background: "#A76F23", text: "#" },
+    colors: { background: "#A76F23", text: "#FFFFFF" },
     destinations: [
       {
         id: ["7a Circulaire Poses Sens Horaire"],
-        name: "7a Circulaire Poses Sens Horaire",
+        name: "Sens horaire",
+        city: "POSES",
         girouette: {
           routeNumber: { backgroundColor: "#A76F23", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
-          pages: [{ text: "7a Circulaire Poses Sens Horaire" }],
+          pages: [{ text: ["CIRCULAIRE DE POSES", "SENS HORAIRE"] }],
         },
       },
     ],
@@ -412,14 +413,15 @@ const semoRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     name: "7b",
-    colors: { background: "#A76F23", text: "#" },
+    colors: { background: "#A76F23", text: "#FFFFFF" },
     destinations: [
       {
         id: ["7b Circulaire Poses Sens Anti-Horaire"],
-        name: "7b Circulaire Poses Sens Anti-Horaire",
+        name: "Sens anti-horaire",
+        city: "POSES",
         girouette: {
           routeNumber: { backgroundColor: "#A76F23", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
-          pages: [{ text: "7b Circulaire Poses Sens Anti-Horaire" }],
+          pages: [{ text: ["CIRCULAIRE DE POSES", "SENS ANTI-HORAIRE"] }],
         },
       },
     ],
