@@ -458,7 +458,7 @@ const twistoRoutes: Route[] = [
         city: "BRETTEVILLE-SUR-ODON",
         girouette: {
           routeNumber: { backgroundColor: "#ea5b0c", textColor: "#ffffff", outlineColor: "#000000", text: "11" },
-          pages: [{ font: "1508C2E1", text: "BRETTEVILLE KOENING" }],
+          pages: [{ font: "1508C2E1", text: "BRETTEVILLE KOENIG" }],
         },
       },
       {
