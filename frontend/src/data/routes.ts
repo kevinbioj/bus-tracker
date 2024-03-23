@@ -3,6 +3,7 @@ import { brandColor } from "../../constants";
 import { Route } from "~/@types";
 import astrobusRoutes from "~/data/networks/astrobus";
 import astuceRoutes from "~/data/networks/astuce";
+import bybusRoutes from "~/data/networks/bybus";
 import capCotentinRoutes from "~/data/networks/cap-cotentin";
 import deepMobRoutes from "~/data/networks/deepmob";
 import hobusRoutes from "~/data/networks/hobus";
@@ -20,6 +21,7 @@ const routes: Route[] = [
   ...astrobusRoutes,
   ...astuceRoutes,
   ...capCotentinRoutes,
+  ...bybusRoutes,
   ...deepMobRoutes,
   ...hobusRoutes,
   ...lebusRoutes,

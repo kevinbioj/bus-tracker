@@ -281,6 +281,22 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'BYBUS',
+    refreshCron: '8,18,28,38,48,58 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'BYBUS',
+      routePrefix: 'BYBUS',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs/pub',
+      tripUpdateHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs-rt',
+      vehiclePositionHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs-rt',
+      filters: {
+        scheduled: () => false,
+      },
+      getVehicleNumber: (descriptor) => descriptor.label ?? null,
+    },
+  },
+  {
     id: 'LBUS',
     refreshCron: '45 * * * * *',
     type: 'GTFS',

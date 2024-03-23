@@ -158,6 +158,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "BYBUS",
+    name: "Bybus (Bayeux)",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/bybus.svg",
+      size: [245, 101],
+    },
+    issues: [],
+  },
+  {
     id: "LBUS",
     name: "l'Bus (Bernay Terres de Normandie)",
     hasHistory: false,
