@@ -34,7 +34,7 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR-TGR',
-      staticResourceHref: 'https://gtfs.kevinbioj.fr/tcar-tgr.zip',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/tcar/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       getOperator: () => 'TNI',
@@ -87,7 +87,6 @@ const sources: Source[] = [
       staticResourceHref:
         'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:004',
       routePrefix: 'ASTUCE',
-      generateShapes: true,
       getOperator: (trip) => (trip.route === '214' ? 'TNI' : 'HANGA'),
     },
   },
@@ -216,12 +215,12 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'CAPCOT',
       routePrefix: 'CAPCOT',
-      staticResourceHref: 'https://gtfs.kevinbioj.fr/cap-cotentin.zip',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       getOperator: () => 'CAPCOT',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
-      filters: { scheduled: (trip) => trip.route !== '822' },
+      filters: { scheduled: () => false },
     },
   },
   {
@@ -231,7 +230,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'REZOBUS',
       routePrefix: 'REZOBUS',
-      staticResourceHref: 'https://gtfs.kevinbioj.fr/caux-seine-agglo.zip',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       getOperator: () => 'REZOBUS',
@@ -245,7 +244,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'MOCA',
       routePrefix: 'MOCA',
-      staticResourceHref: 'https://gtfs.kevinbioj.fr/moca.zip',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/moca/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
@@ -344,7 +343,6 @@ const sources: Source[] = [
       id: 'LEBUS',
       routePrefix: 'LEBUS',
       staticResourceHref: 'http://exs.atm.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=LEBUS',
-      generateShapes: true,
     },
   },
 ];
