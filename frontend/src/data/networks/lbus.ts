@@ -16,6 +16,7 @@ const lbusRoutes: Route[] = [
         ],
         name: "ZA la Semaille > Centre hospitalier Anne de Ticheville",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#FFE264",
             textColor: "#000000",
@@ -29,6 +30,7 @@ const lbusRoutes: Route[] = [
         id: ["Centre hospitalier Anne de Ticheville > ZA du Bois du cours", "255"],
         name: "Z.A. du Bois du cours",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#FFE264",
             textColor: "#000000",

@@ -14,6 +14,7 @@ const bybusRoutes: Route[] = [
         name: "Gare",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#2CC7E2",
@@ -30,6 +31,7 @@ const bybusRoutes: Route[] = [
         name: "Gare (via Supermarché)",
         city: "BAEYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#2CC7E2",
@@ -45,6 +47,7 @@ const bybusRoutes: Route[] = [
         name: "Reine Mathilde (via Supermarché)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#2CC7E2",
@@ -61,6 +64,7 @@ const bybusRoutes: Route[] = [
         name: "Gare (Express)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#2CC7E2",
@@ -76,6 +80,7 @@ const bybusRoutes: Route[] = [
         name: "Reine Mathilde (Express)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#2CC7E2",
@@ -91,6 +96,7 @@ const bybusRoutes: Route[] = [
         name: "Reine Mathilde (via Blériot)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#2CC7E2",
@@ -107,6 +113,7 @@ const bybusRoutes: Route[] = [
         name: "Gare",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#2CC7E2",
@@ -132,6 +139,7 @@ const bybusRoutes: Route[] = [
         name: "Gare",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#F1AAEB",
@@ -148,6 +156,7 @@ const bybusRoutes: Route[] = [
         name: "Gare (Express)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#F1AAEB",
@@ -163,6 +172,7 @@ const bybusRoutes: Route[] = [
         name: "Rue de la Fée",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#F1AAEB",
@@ -178,6 +188,7 @@ const bybusRoutes: Route[] = [
         name: "Rue de la Fée (Express)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#F1AAEB",
@@ -202,6 +213,7 @@ const bybusRoutes: Route[] = [
         name: "Conquérant (via Médiathèque)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#91C68B",
@@ -217,6 +229,7 @@ const bybusRoutes: Route[] = [
         name: "Rue Costils (Express)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#91C68B",
@@ -232,6 +245,7 @@ const bybusRoutes: Route[] = [
         name: "Saint-Patrice",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#91C68B",
@@ -248,6 +262,7 @@ const bybusRoutes: Route[] = [
         name: "Gare",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#91C68B",
@@ -263,6 +278,7 @@ const bybusRoutes: Route[] = [
         name: "Arcisse de Caumont",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#91C68B",
@@ -278,6 +294,7 @@ const bybusRoutes: Route[] = [
         name: "Arcisse de Caumont (Express)",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#91C68B",
@@ -302,6 +319,7 @@ const bybusRoutes: Route[] = [
         name: "Reine Mathilde",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#f4ff10",
@@ -318,6 +336,7 @@ const bybusRoutes: Route[] = [
         name: "Gare",
         city: "BAYEUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#f4ff10",
