@@ -82,19 +82,21 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
         .find((point) => point.distance < estimatedTraveledDistance);
       if (currentShapePoint) {
         const nextShapePoint = trip.shape.points[trip.shape.points.indexOf(currentShapePoint) + 1];
-        const ratio =
-          (estimatedTraveledDistance - currentShapePoint.distance) /
-          (nextShapePoint.distance - currentShapePoint.distance);
+        if (nextShapePoint) {
+          const ratio =
+            (estimatedTraveledDistance - currentShapePoint.distance) /
+            (nextShapePoint.distance - currentShapePoint.distance);
 
-        estimatedPosition = {
-          latitude: nextShapePoint
-            ? currentShapePoint.lat + (nextShapePoint.lat - currentShapePoint.lat) * ratio
-            : currentShapePoint.lat,
-          longitude: nextShapePoint
-            ? currentShapePoint.lon + (nextShapePoint.lon - currentShapePoint.lon) * ratio
-            : currentShapePoint.lon,
-          timestamp: dayjs().unix(),
-        };
+          estimatedPosition = {
+            latitude: nextShapePoint
+              ? currentShapePoint.lat + (nextShapePoint.lat - currentShapePoint.lat) * ratio
+              : currentShapePoint.lat,
+            longitude: nextShapePoint
+              ? currentShapePoint.lon + (nextShapePoint.lon - currentShapePoint.lon) * ratio
+              : currentShapePoint.lon,
+            timestamp: dayjs().unix(),
+          };
+        }
       }
     }
 

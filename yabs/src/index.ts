@@ -34,14 +34,10 @@ export default { port, fetch: server.fetch };
 
 async function init() {
   console.log('YABS\tLoading resources into memory.');
-  for (const source of sources) await updateResource(source);
+  await Promise.allSettled(sources.map((source) => updateResource(source)));
 
   console.log('YABS\tComputing first entries.');
-  for (const source of sources) {
-    try {
-      await updateEntries(source);
-    } catch {}
-  }
+  await Promise.allSettled(sources.map((source) => updateEntries(source)));
   hasComputedFirstEntries = true;
 
   console.log('YABS\tRegistering scheduled tasks.');

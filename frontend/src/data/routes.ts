@@ -16,6 +16,7 @@ import nomadRegionRoutes from "~/data/networks/nomad-region";
 import rezobusRoutes from "~/data/networks/rezobus";
 import semoRoutes from "~/data/networks/semo";
 import sngoRoutes from "~/data/networks/sngo";
+import transurbainRoutes from "~/data/networks/transurbain";
 import twistoRoutes from "~/data/networks/twisto";
 
 const routes: Route[] = [
@@ -34,6 +35,7 @@ const routes: Route[] = [
   ...rezobusRoutes,
   ...semoRoutes,
   ...sngoRoutes,
+  ...transurbainRoutes,
   ...twistoRoutes,
 ];
 

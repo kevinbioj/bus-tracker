@@ -88,6 +88,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "TRANSURBAIN",
+    name: "TransUrbain (Évreux-Portes de Normandie)",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/transurbain.svg",
+      size: [363, 416],
+    },
+    issues: [],
+  },
+  {
     id: "CAPCOT",
     name: "Cap Cotentin (le Cotentin)",
     hasHistory: true,

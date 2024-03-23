@@ -145,6 +145,16 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'TRANSURBAIN',
+    refreshCron: '10,30,50 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'TRANSURBAIN',
+      routePrefix: 'TRANSURBAIN',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/ec78df83-2e60-4284-acc3-86a0baa76bf0',
+    },
+  },
+  {
     id: 'NOMAD',
     refreshCron: '0,20,40 * * * * *',
     type: 'GTFS',
