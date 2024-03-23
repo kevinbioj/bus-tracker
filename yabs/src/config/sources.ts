@@ -297,6 +297,17 @@ const sources: Source[] = [
       getVehicleNumber: () => null,
     },
   },
+  {
+    id: 'LEBUS',
+    refreshCron: '5,20,35,50 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'LEBUS',
+      routePrefix: 'LEBUS',
+      staticResourceHref: 'http://exs.atm.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=LEBUS',
+      generateShapes: true,
+    },
+  },
 ];
 
 export default sources;

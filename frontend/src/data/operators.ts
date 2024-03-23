@@ -167,6 +167,16 @@ const operators: Operator[] = [
     },
     issues: [],
   },
+  {
+    id: "LEBUS",
+    name: "Le Bus (Pont-Audemer Val de Risle)",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/lebus.png",
+      size: [349, 175],
+    },
+    issues: [],
+  },
 ];
 
 export default operators;

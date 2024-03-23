@@ -12,6 +12,7 @@ const lbusRoutes: Route[] = [
         id: [
           "ZA la Semaille > Centre hospitalier Anne de Ticheville",
           "ZA du Bois du cours > Centre hospitalier Anne de Ticheville",
+          "254",
         ],
         name: "ZA la Semaille > Centre hospitalier Anne de Ticheville",
         girouette: {
@@ -25,7 +26,7 @@ const lbusRoutes: Route[] = [
         },
       },
       {
-        id: ["Centre hospitalier Anne de Ticheville > ZA du Bois du cours"],
+        id: ["Centre hospitalier Anne de Ticheville > ZA du Bois du cours", "255"],
         name: "Z.A. du Bois du cours",
         girouette: {
           routeNumber: {
