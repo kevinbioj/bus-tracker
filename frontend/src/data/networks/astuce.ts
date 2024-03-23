@@ -3023,8 +3023,8 @@ const astuceRoutes: Route[] = [
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#81612D",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
             text: "315",
           },
           pages: [
@@ -3042,8 +3042,8 @@ const astuceRoutes: Route[] = [
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#81612D",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
             text: "315",
           },
           pages: [
