@@ -139,6 +139,9 @@ const sources: Source[] = [
       id: 'SEMO',
       routePrefix: 'SEMO',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/98bbbf7c-10ff-48a0-afc2-c5f7b3dda5af',
+      filters: {
+        scheduled: (trip) => !trip.route.startsWith('S'),
+      },
     },
   },
   {
