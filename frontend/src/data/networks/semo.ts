@@ -13,6 +13,7 @@ const semoRoutes: Route[] = [
         name: "Rendez-Vous Bus",
         city: "LOUVIERS",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
           pages: [{ text: "LOUVIERS" }, { font: "1510N2E1", text: "RENDEZ-VOUS BUS" }],
         },
@@ -23,6 +24,7 @@ const semoRoutes: Route[] = [
         name: "Voie Babeurre",
         city: "VAL-DE-REUIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
           pages: [{ text: "VAL-DE-REUIL" }, { text: "VOIE BABEURRE" }],
         },
@@ -33,6 +35,7 @@ const semoRoutes: Route[] = [
         name: "Pasteur",
         city: "VAL-DE-REUIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
           pages: [{ text: "VAL-DE-REUIL" }, { text: "PASTEUR" }],
         },
@@ -43,6 +46,7 @@ const semoRoutes: Route[] = [
         name: "Gare SNCF",
         city: "VAL-DE-REUIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
           pages: [{ text: "VAL-DE-REUIL" }, { text: "GARE SNCF" }],
         },
@@ -62,6 +66,7 @@ const semoRoutes: Route[] = [
         name: "Hôpital",
         city: "SAINT-AUBIN-LÈS-ELBEUF",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#F5C626",
             textColor: "#000000",
@@ -77,6 +82,7 @@ const semoRoutes: Route[] = [
         name: "Pasteur",
         city: "VAL-DE-REUIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#F5C626",
             textColor: "#000000",
@@ -92,6 +98,7 @@ const semoRoutes: Route[] = [
         name: "Voie Babeurre",
         city: "VAL-DE-REUIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#F5C626",
             textColor: "#000000",
@@ -106,6 +113,7 @@ const semoRoutes: Route[] = [
         name: "Gare de Gaillon-Aubevoye",
         city: "LE-VAL-D'HAZEY",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#F5C626",
             textColor: "#000000",
@@ -129,6 +137,7 @@ const semoRoutes: Route[] = [
         name: "Lycée Les Fontenelles",
         city: "LOUVIERS",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F39207", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: "LOUVIERS" }, { font: "1508C2E1", text: "LYCEE LES FONTENELLES" }],
         },
@@ -139,6 +148,7 @@ const semoRoutes: Route[] = [
         name: "La Source",
         city: "INCARVILLE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F39207", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: "INCARVILLE" }, { text: "LA SOURCE" }],
         },
@@ -150,6 +160,7 @@ const semoRoutes: Route[] = [
         name: "Gare SNCF",
         city: "VAL-DE-REUIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F39207", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: "VAL-DE-REUIL" }, { text: "GARE SNCF" }],
         },
@@ -161,6 +172,7 @@ const semoRoutes: Route[] = [
         name: "Mairie",
         city: "INCARVILLE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F39207", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: "INCARVILLE" }, { text: "MAIRIE" }],
         },
@@ -170,6 +182,7 @@ const semoRoutes: Route[] = [
         name: "Rendez-Vous Bus",
         city: "LOUVIERS",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F39207", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: "LOUVIERS" }, { font: "1510N2E1", text: "RENDEZ-VOUS BUS" }],
         },
@@ -188,6 +201,7 @@ const semoRoutes: Route[] = [
         name: "Sens horaire",
         city: "LOUVIERS",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#A1DAF8",
             textColor: "#000000",
@@ -211,6 +225,7 @@ const semoRoutes: Route[] = [
         name: "Sens anti-horaire",
         city: "LOUVIERS",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#A1DAF8",
             textColor: "#000000",
@@ -233,6 +248,7 @@ const semoRoutes: Route[] = [
         id: ["4a Circulaire Val-de-Reuil Sens Horaire"],
         name: "Sens horaire",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#954B97", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
           pages: [{ text: ["CIRCULAIRE VAL-DE-REUIL", "SENS HORAIRE"] }],
         },
@@ -250,6 +266,7 @@ const semoRoutes: Route[] = [
         id: ["4a Circulaire Val-de-Reuil Sens Horaire"],
         name: "Sens anti-horaire",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#954B97", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
           pages: [{ text: ["CIRCULAIRE VAL-DE-REUIL", "SENS ANTI-HORAIRE"] }],
         },
@@ -269,6 +286,7 @@ const semoRoutes: Route[] = [
         name: "Gare SNCF",
         city: "VAL-DE-REUIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#63BBE4", textColor: "#FFFFFF", outlineColor: "#000000", text: "5" },
           pages: [{ text: "VAL-DE-REUIL" }, { text: "GARE SNCF" }],
         },
@@ -279,6 +297,7 @@ const semoRoutes: Route[] = [
         name: "Aristide Briand",
         city: "PONT-DE-L'ARCHE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#63BBE4", textColor: "#FFFFFF", outlineColor: "#000000", text: "5" },
           pages: [
             { font: "1510N2E1", text: "PONT-DE-L'ARCHE" },
@@ -292,6 +311,7 @@ const semoRoutes: Route[] = [
         name: "Espace des Deux-Rives",
         city: "PITRES",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#63BBE4", textColor: "#FFFFFF", outlineColor: "#000000", text: "5" },
           pages: [{ text: "PITRES" }, { font: "1508C2E1", textSpacing: 1, text: "ESPACE DES DEUX-RIVES" }],
         },
@@ -302,6 +322,7 @@ const semoRoutes: Route[] = [
         name: "Mairie",
         city: "PONT-DE-L'ARCHE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#63BBE4", textColor: "#FFFFFF", outlineColor: "#000000", text: "5" },
           pages: [{ font: "1510N2E1", text: "PONT-DE-L'ARCHE" }, { text: "MAIRIE" }],
         },
@@ -320,6 +341,7 @@ const semoRoutes: Route[] = [
         name: "Sens horaire",
         city: "GAILLON",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#83BC2A",
             textColor: "#000000",
@@ -335,6 +357,7 @@ const semoRoutes: Route[] = [
         name: "Sens horaire (dessert le marché)",
         city: "GAILLON",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#83BC2A",
             textColor: "#000000",
@@ -361,6 +384,7 @@ const semoRoutes: Route[] = [
         name: "Sens anti-horaire",
         city: "GAILLON",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#83BC2A",
             textColor: "#000000",
@@ -376,6 +400,7 @@ const semoRoutes: Route[] = [
         name: "Sens anti-horaire (dessert le marché)",
         city: "GAILLON",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#83BC2A",
             textColor: "#000000",
@@ -402,6 +427,7 @@ const semoRoutes: Route[] = [
         name: "Sens horaire",
         city: "POSES",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#A76F23", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
           pages: [{ text: ["CIRCULAIRE DE POSES", "SENS HORAIRE"] }],
         },
@@ -420,6 +446,7 @@ const semoRoutes: Route[] = [
         name: "Sens anti-horaire",
         city: "POSES",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#A76F23", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
           pages: [{ text: ["CIRCULAIRE DE POSES", "SENS ANTI-HORAIRE"] }],
         },
@@ -438,6 +465,7 @@ const semoRoutes: Route[] = [
         name: "Gare SNCF",
         city: "VAL-DE-REUIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#114184", textColor: "#FFFFFF", outlineColor: "#000000", text: "8" },
           pages: [{ text: "VAL-DE-REUIL" }, { text: "GARE SNCF" }],
         },
@@ -447,6 +475,7 @@ const semoRoutes: Route[] = [
         name: "Le Moulin",
         city: "ANDE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#114184", textColor: "#FFFFFF", outlineColor: "#000000", text: "8" },
           pages: [{ text: "ANDE" }, { text: "LE MOULIN" }],
         },
@@ -465,6 +494,7 @@ const semoRoutes: Route[] = [
         name: "Clos Desruets",
         city: "HEUDEBOUVILLE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#277632", textColor: "#FFFFFF", outlineColor: "#000000", text: "9" },
           pages: [{ text: "HEUDEBOUVILLE" }, { text: "CLOS DESRUETS" }],
         },
@@ -474,6 +504,7 @@ const semoRoutes: Route[] = [
         name: "Rendez-Vous Bus",
         city: "LOUVIERS",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#277632", textColor: "#FFFFFF", outlineColor: "#000000", text: "9" },
           pages: [{ text: "LOUVIERS" }, { font: "1510N2E1", text: "RENDEZ-VOUS BUS" }],
         },
@@ -492,6 +523,7 @@ const semoRoutes: Route[] = [
         name: "Gare SNCF de Gaillon-Aubevoye",
         city: "LE-VAL-D'HAZEY",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#EA4E6E", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
           pages: [{ text: "LE-VAL-D'HAZEY" }, { text: ["GARE SNCF", "GAILLON-AUBEVOYE"] }],
         },
@@ -501,6 +533,7 @@ const semoRoutes: Route[] = [
         name: "Coiffeur",
         city: "COURCELLES-SUR-SEINE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#EA4E6E", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
           pages: [{ font: "1508C2E1", text: "COURCELLES-SUR-SEINE" }, { text: "COIFFEUR" }],
         },
@@ -519,6 +552,7 @@ const semoRoutes: Route[] = [
         name: "Les Fontenelles",
         city: "LOUVIERS",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#848484", textColor: "#FFFFFF", outlineColor: "#000000", text: "D1" },
           pages: [{ text: "LOUVIERS" }, { text: "LES FONTENELLES" }],
         },
@@ -529,6 +563,7 @@ const semoRoutes: Route[] = [
         name: "Gare SNCF",
         city: "VAL-DE-RUEIL",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#848484", textColor: "#FFFFFF", outlineColor: "#000000", text: "D1" },
           pages: [{ text: "VAL-DE-REUIL" }, { text: "GARE SNCF" }],
         },
