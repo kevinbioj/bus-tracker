@@ -1,4 +1,4 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const rezobusRoutes: Route[] = [
   {
@@ -292,4 +292,12 @@ const rezobusRoutes: Route[] = [
   },
 ];
 
-export default rezobusRoutes;
+const network: Network = {
+  slug: "rezobus",
+  name: "Rezo'Bus – Caux-Seine Agglo",
+  routes: rezobusRoutes,
+  color: "#de005d",
+  textColor: "#ffffff",
+};
+
+export default network;

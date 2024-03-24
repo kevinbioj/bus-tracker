@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const capCotentinRoutes: Route[] = [
   {
     id: "CAPCOT:01",
-    mapOnly: true,
     name: "1",
     colors: { background: "#EB5D4D", text: "#FFFFFF" },
     destinations: [
@@ -35,7 +34,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:02",
-    mapOnly: true,
     name: "2",
     colors: { background: "#E50063", text: "#FFFFFF" },
     destinations: [
@@ -59,7 +57,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:03",
-    mapOnly: true,
     name: "3",
     colors: { background: "#9E5049", text: "#FFFFFF" },
     destinations: [
@@ -83,7 +80,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:04",
-    mapOnly: true,
     name: "4",
     colors: { background: "#F39200", text: "#FFFFFF" },
     destinations: [
@@ -115,7 +111,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:05",
-    mapOnly: true,
     name: "5",
     colors: { background: "#F8DA41", text: "#000000" },
     destinations: [
@@ -155,7 +150,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:06",
-    mapOnly: true,
     name: "6",
     colors: { background: "#F5A681", text: "#FFFFFF" },
     destinations: [
@@ -179,7 +173,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:07",
-    mapOnly: true,
     name: "7",
     colors: { background: "#F195BF", text: "#FFFFFF" },
     destinations: [
@@ -203,7 +196,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:A",
-    mapOnly: true,
     name: "A",
     colors: { background: "#58529E", text: "#FFFFFF" },
     destinations: [
@@ -235,7 +227,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:B",
-    mapOnly: true,
     name: "B",
     colors: { background: "#1EB8D1", text: "#FFFFFF" },
     destinations: [
@@ -267,7 +258,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:C",
-    mapOnly: true,
     name: "C",
     colors: { background: "#86B5E2", text: "#FFFFFF" },
     destinations: [
@@ -307,7 +297,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:D",
-    mapOnly: true,
     name: "D",
     colors: { background: "#107974", text: "#FFFFFF" },
     destinations: [
@@ -331,7 +320,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:E",
-    mapOnly: true,
     name: "E",
     colors: { background: "#47B7A2", text: "#FFFFFF" },
     destinations: [
@@ -355,7 +343,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:F",
-    mapOnly: true,
     name: "F",
     colors: { background: "#9774B1", text: "#FFFFFF" },
     destinations: [
@@ -387,7 +374,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:G",
-    mapOnly: true,
     name: "G",
     colors: { background: "#C2DDB3", text: "#000000" },
     destinations: [
@@ -411,7 +397,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:N1",
-    mapOnly: true,
     name: "N1",
     colors: { background: "#29235C", text: "#FFDE00" },
     destinations: [
@@ -435,7 +420,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:N2",
-    mapOnly: true,
     name: "N2",
     colors: { background: "#29235C", text: "#FFDE00" },
     destinations: [
@@ -459,7 +443,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S1",
-    mapOnly: true,
     name: "S1",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -483,7 +466,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S2",
-    mapOnly: true,
     name: "S2",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -507,7 +489,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S3",
-    mapOnly: true,
     name: "S3",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -539,7 +520,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S4",
-    mapOnly: true,
     name: "S4",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -563,7 +543,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S5",
-    mapOnly: true,
     name: "S5",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -611,7 +590,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S6",
-    mapOnly: true,
     name: "S6",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -635,7 +613,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S7",
-    mapOnly: true,
     name: "S7",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -670,7 +647,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S8",
-    mapOnly: true,
     name: "S8",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -705,7 +681,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S9",
-    mapOnly: true,
     name: "S9",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -729,7 +704,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S10",
-    mapOnly: true,
     name: "S10",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -753,7 +727,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S11",
-    mapOnly: true,
     name: "S11",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -777,7 +750,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S12",
-    mapOnly: true,
     name: "S12",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -801,7 +773,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S13",
-    mapOnly: true,
     name: "S13",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -825,7 +796,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:S14",
-    mapOnly: true,
     name: "S14",
     colors: { background: "#FFFFFF", text: "#000000" },
     destinations: [
@@ -849,7 +819,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:SCO1",
-    mapOnly: true,
     name: "D1",
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
@@ -881,7 +850,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:SCO2",
-    mapOnly: true,
     name: "D2",
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
@@ -913,7 +881,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:SCO3",
-    mapOnly: true,
     name: "D3",
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
@@ -929,7 +896,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:SCO4",
-    mapOnly: true,
     name: "D4",
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
@@ -953,7 +919,6 @@ const capCotentinRoutes: Route[] = [
   },
   {
     id: "CAPCOT:SCO6",
-    mapOnly: true,
     name: "SCO6",
     colors: { background: "#D34536", text: "#FFFFFF" },
     destinations: [
@@ -977,4 +942,12 @@ const capCotentinRoutes: Route[] = [
   },
 ];
 
-export default capCotentinRoutes;
+const network: Network = {
+  slug: "cap-cotentin",
+  name: "Cap Cotentin – le Cotentin",
+  routes: capCotentinRoutes,
+  color: "#eb5c4a",
+  textColor: "#ffffff",
+};
+
+export default network;

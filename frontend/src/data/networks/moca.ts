@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const mocaRoutes: Route[] = [
   {
     id: "MOCA:1",
-    mapOnly: true,
     noCartridge: true,
     name: "1",
     colors: { background: "#745CA8", text: "#FFFFFF" },
@@ -32,7 +31,6 @@ const mocaRoutes: Route[] = [
   },
   {
     id: "MOCA:2",
-    mapOnly: true,
     noCartridge: true,
     name: "2",
     colors: { background: "#6EC6AE", text: "#FFFFFF" },
@@ -61,4 +59,12 @@ const mocaRoutes: Route[] = [
   },
 ];
 
-export default mocaRoutes;
+const network: Network = {
+  slug: "moca",
+  name: "MOCA – Communauté Caux-Austreberthe",
+  routes: mocaRoutes,
+  color: "#7a5a9e",
+  textColor: "#ffffff",
+};
+
+export default network;

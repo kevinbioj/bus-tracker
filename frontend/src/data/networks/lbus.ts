@@ -1,10 +1,9 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const lbusRoutes: Route[] = [
   {
     id: "LBUS:zenbus:Line:30030155:LOC",
-    name: "L'Bus",
-    mapOnly: true,
+    name: "",
     noCartridge: true,
     colors: { background: "#FFE264", text: "#000000" },
     destinations: [
@@ -14,7 +13,7 @@ const lbusRoutes: Route[] = [
           "ZA du Bois du cours > Centre hospitalier Anne de Ticheville",
           "254",
         ],
-        name: "ZA la Semaille > Centre hospitalier Anne de Ticheville",
+        name: "Centre Hospitalier Anne de Ticheville",
         girouette: {
           ledColor: "WHITE",
           routeNumber: {
@@ -44,4 +43,12 @@ const lbusRoutes: Route[] = [
   },
 ];
 
-export default lbusRoutes;
+const network: Network = {
+  slug: "lbus",
+  name: "l'Bus – Bernay Terres de Normandie",
+  routes: lbusRoutes,
+  color: "#284568",
+  textColor: "#ffffff",
+};
+
+export default network;

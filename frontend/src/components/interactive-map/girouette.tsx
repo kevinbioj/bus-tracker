@@ -90,7 +90,7 @@ export function Girouette({
     const interval = setInterval(updateCount, 3000);
     return () => clearInterval(interval);
   }, [pages]);
-  const currentPage = pages[count % pages.length];
+  const currentPage = pages[count % pages.length] ?? null;
   const height = (dimensions.height * width) / (dimensions.rnWidth + dimensions.textWidth);
   const onePixel = width / (dimensions.rnWidth + dimensions.textWidth);
   const widerRnSpacing = routeNumber.font?.endsWith("SUPX") && typeof routeNumber.outlineColor !== "undefined";
@@ -154,9 +154,9 @@ export function Girouette({
             color: getLedColor(ledColor),
             fontFamily: `"${currentPage?.font ?? "1513B3E1"}"`,
             fontSize: `${(height / dimensions.height) * getFontHeight(currentPage?.font ?? "1513B3E1")}px`,
-            letterSpacing: `${onePixel * (currentPage?.textSpacing ?? (currentPage.font?.endsWith("SUPX") ? 1 : 2))}px`,
+            letterSpacing: `${onePixel * (currentPage?.textSpacing ?? (currentPage?.font?.endsWith("SUPX") ? 1 : 2))}px`,
             lineHeight: `${(height / dimensions.height) * getFontHeight(currentPage?.font ?? "1513B3E1")}px`,
-            paddingLeft: `${onePixel * (currentPage?.textSpacing ?? (currentPage.font?.endsWith("SUPX") ? 1 : 2))}px`,
+            paddingLeft: `${onePixel * (currentPage?.textSpacing ?? (currentPage?.font?.endsWith("SUPX") ? 1 : 2))}px`,
             width: `${onePixel * dimensions.textWidth}px`,
             wordSpacing: `${onePixel * (currentPage?.wordSpacing ?? 0)}px`,
           }}

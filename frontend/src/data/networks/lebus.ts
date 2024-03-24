@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const lebusRoutes: Route[] = [
   {
     id: "LEBUS:1",
-    mapOnly: true,
     noCartridge: true,
     name: "1",
     colors: { background: "#4e9dcd", text: "#ffffff" },
@@ -22,7 +21,6 @@ const lebusRoutes: Route[] = [
   },
   {
     id: "LEBUS:2",
-    mapOnly: true,
     noCartridge: true,
     name: "2",
     colors: { background: "#8db74f", text: "#ffffff" },
@@ -41,7 +39,6 @@ const lebusRoutes: Route[] = [
   },
   {
     id: "LEBUS:3",
-    mapOnly: true,
     noCartridge: true,
     name: "3",
     colors: { background: "#cc483b", text: "#ffffff" },
@@ -60,4 +57,12 @@ const lebusRoutes: Route[] = [
   },
 ];
 
-export default lebusRoutes;
+const network: Network = {
+  slug: "lebus",
+  name: "Le Bus – Pont-Audemer Val de Risle",
+  routes: lebusRoutes,
+  color: "#f0b848",
+  textColor: "#000000",
+};
+
+export default network;

@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const transurbainRoutes: Route[] = [
   {
     id: "TRANSURBAIN:2",
-    mapOnly: true,
     noCartridge: true,
     name: "T5",
     colors: { background: "#FF9317", text: "#000000" },
@@ -147,7 +146,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:21",
-    mapOnly: true,
     noCartridge: true,
     name: "T9",
     colors: { background: "#0073B0", text: "#FFFFFF" },
@@ -186,7 +184,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:50",
-    mapOnly: true,
     noCartridge: true,
     name: "T6",
     colors: { background: "#FF77AF", text: "#FFFFFF" },
@@ -240,7 +237,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:52",
-    mapOnly: true,
     noCartridge: true,
     name: "T7",
     colors: { background: "#89C800", text: "#FFFFFF" },
@@ -354,7 +350,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:7",
-    mapOnly: true,
     noCartridge: true,
     name: "T3",
     colors: { background: "#930098", text: "#FFFFFF" },
@@ -498,7 +493,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:91",
-    mapOnly: true,
     noCartridge: true,
     name: "T8",
     colors: { background: "#414141", text: "#FFFFFF" },
@@ -552,7 +546,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:92",
-    mapOnly: true,
     noCartridge: true,
     name: "T1",
     colors: { background: "#F00043", text: "#FFFFFF" },
@@ -636,7 +629,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:93",
-    mapOnly: true,
     noCartridge: true,
     name: "T2",
     colors: { background: "#00B4C0", text: "#FFFFFF" },
@@ -720,7 +712,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:95",
-    mapOnly: true,
     noCartridge: true,
     name: "T4",
     colors: { background: "#FFD22F", text: "#000000" },
@@ -804,7 +795,6 @@ const transurbainRoutes: Route[] = [
   },
   {
     id: "TRANSURBAIN:97",
-    mapOnly: true,
     noCartridge: true,
     name: "T10",
     colors: { background: "#B0B000", text: "#FFFFFF" },
@@ -888,4 +878,12 @@ const transurbainRoutes: Route[] = [
   },
 ];
 
-export default transurbainRoutes;
+const network: Network = {
+  slug: "transurbain",
+  name: "Transurbain – Évreux Portes de Normandie",
+  routes: transurbainRoutes,
+  color: "#064895",
+  textColor: "#ffffff",
+};
+
+export default network;

@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const nomadRegionRoutes: Route[] = [
   {
     id: "NOMAD:216",
-    mapOnly: true,
     name: "216",
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
@@ -26,7 +25,6 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["ÉVREUX", "ROUEN / ÉVREUX", "MONT-SAINT-AIGNAN / ÉVREUX", "VERNEUIL-SUR-AVRE / ÉVREUX"],
-        autoHide: true,
         alternate: "Évreux",
         name: "Gare Routière",
         city: "ÉVREUX",
@@ -43,7 +41,6 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["ROUEN", "LOUVIERS / ROUEN", "ÉVREUX / ROUEN"],
-        autoHide: true,
         alternate: "Rouen",
         name: "Gare Routière",
         city: "ROUEN",
@@ -79,13 +76,11 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:228",
-    mapOnly: true,
     name: "228",
     colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
       {
         id: ["PONT-AUDEMER", "ROUEN / PONT-AUDEMER"],
-        autoHide: true,
         alternate: "Pont-Audemer",
         name: "Gare Routière",
         city: "PONT-AUDEMER",
@@ -119,7 +114,6 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["ROUEN", "ROUTOT / ROUEN", "PONT-AUDEMER / ROUEN"],
-        autoHide: true,
         alternate: "Rouen",
         name: "Gare Routière",
         city: "ROUEN",
@@ -138,13 +132,11 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:423",
-    mapOnly: true,
     name: "423",
     colors: { background: "#5E8786", text: "#FFFFFF" },
     destinations: [
       {
         id: ["BRIOUZE", "BAGNOLES DE L'ORNE / BRIOUZE"],
-        autoHide: true,
         alternate: "Briouze",
         name: "Gare SNCF",
         city: "BRIOUZE",
@@ -161,7 +153,6 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["BAGNOLES DE L'ORNE", "BRIOUZE / BAGNOLES DE L'ORNE"],
-        autoHide: true,
         alternate: "Bagnoles de l'Orne",
         name: "Sainte-Madeleine - Église",
         city: "BAGNOLES DE L'ORNE",
@@ -180,13 +171,11 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:424",
-    mapOnly: true,
     name: "424",
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
       {
         id: ["ARGENTAN", "FLERS / ARGENTAN"],
-        autoHide: true,
         alternate: "Argentan",
         name: "Gare SNCF",
         city: "ARGENTAN",
@@ -203,7 +192,6 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["FLERS", "ARGENTAN / FLERS"],
-        autoHide: true,
         alternate: "Flers",
         name: "Gare SNCF",
         city: "FLERS",
@@ -222,13 +210,11 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:527",
-    mapOnly: true,
     name: "527",
     colors: { background: "#9E6A9A", text: "#FFFFFF" },
     destinations: [
       {
         id: ["GISORS", "MESNIÈRES-EN-B / GISORS", "SERQUEUX / GISORS"],
-        autoHide: true,
         alternate: "Gisors",
         name: "Gare SNCF",
         city: "GISORS",
@@ -245,7 +231,6 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["DIEPPE", "SERQUEUX / DIEPPE", "FORGES-LES-E / DIEPPE"],
-        autoHide: true,
         alternate: "Dieppe",
         name: "Gare SNCF",
         city: "DIEPPE",
@@ -314,7 +299,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:101R",
-    mapOnly: true,
     noCartridge: true,
     name: "101",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -449,7 +433,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:101A",
-    mapOnly: true,
     noCartridge: true,
     name: "101",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -556,7 +539,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:102",
-    mapOnly: true,
     noCartridge: true,
     name: "102",
     colors: { background: "#f7941d", text: "#000000" },
@@ -635,7 +617,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:103",
-    mapOnly: true,
     noCartridge: true,
     name: "103",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -798,7 +779,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:104",
-    mapOnly: true,
     noCartridge: true,
     name: "104",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -919,7 +899,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:105",
-    mapOnly: true,
     noCartridge: true,
     name: "105",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -1082,7 +1061,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:106",
-    mapOnly: true,
     noCartridge: true,
     name: "106",
     colors: { background: "#f7941d", text: "#000000" },
@@ -1245,7 +1223,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:107",
-    mapOnly: true,
     noCartridge: true,
     name: "107",
     colors: { background: "#007dc5", text: "#ffffff" },
@@ -1366,7 +1343,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:108",
-    mapOnly: true,
     noCartridge: true,
     name: "108",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -1487,7 +1463,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:109",
-    mapOnly: true,
     noCartridge: true,
     name: "109",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -1552,7 +1527,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:110",
-    mapOnly: true,
     noCartridge: true,
     name: "110",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -1785,7 +1759,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:111R",
-    mapOnly: true,
     noCartridge: true,
     name: "111",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -1948,7 +1921,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:111A",
-    mapOnly: true,
     noCartridge: true,
     name: "111",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -2139,7 +2111,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:112",
-    mapOnly: true,
     noCartridge: true,
     name: "112",
     colors: { background: "#0080c5", text: "#ffffff" },
@@ -2176,7 +2147,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:113",
-    mapOnly: true,
     noCartridge: true,
     name: "113",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -2213,7 +2183,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:114",
-    mapOnly: true,
     noCartridge: true,
     name: "114",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -2292,7 +2261,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:115",
-    mapOnly: true,
     noCartridge: true,
     name: "115",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -2427,7 +2395,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:116",
-    mapOnly: true,
     noCartridge: true,
     name: "116",
     colors: { background: "#007dc5", text: "#ffffff" },
@@ -2562,7 +2529,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:117",
-    mapOnly: true,
     noCartridge: true,
     name: "117",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -2697,7 +2663,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:118",
-    mapOnly: true,
     noCartridge: true,
     name: "118",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -2748,7 +2713,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:119",
-    mapOnly: true,
     noCartridge: true,
     name: "119",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -2897,7 +2861,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:120",
-    mapOnly: true,
     noCartridge: true,
     name: "120",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -3018,7 +2981,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:121",
-    mapOnly: true,
     noCartridge: true,
     name: "121",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -3153,7 +3115,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:122",
-    mapOnly: true,
     noCartridge: true,
     name: "122",
     colors: { background: "#007dc5", text: "#ffffff" },
@@ -3190,7 +3151,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:123",
-    mapOnly: true,
     noCartridge: true,
     name: "123",
     colors: { background: "#f7941d", text: "#000000" },
@@ -3311,7 +3271,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:124",
-    mapOnly: true,
     noCartridge: true,
     name: "124",
     colors: { background: "#808080", text: "#ffffff" },
@@ -3362,7 +3321,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:201",
-    mapOnly: true,
     noCartridge: true,
     name: "201",
     colors: { background: "#df1614", text: "#ffffff" },
@@ -3413,7 +3371,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:202",
-    mapOnly: true,
     noCartridge: true,
     name: "202",
     colors: { background: "#32b5b0", text: "#000000" },
@@ -3450,7 +3407,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:203",
-    mapOnly: true,
     noCartridge: true,
     name: "203",
     colors: { background: "#31a8df", text: "#000000" },
@@ -3501,7 +3457,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:204",
-    mapOnly: true,
     noCartridge: true,
     name: "204",
     colors: { background: "#e6ce08", text: "#000000" },
@@ -3650,7 +3605,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:205",
-    mapOnly: true,
     noCartridge: true,
     name: "205",
     colors: { background: "#a31968", text: "#ffffff" },
@@ -3743,7 +3697,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:206",
-    mapOnly: true,
     noCartridge: true,
     name: "206",
     colors: { background: "#835f34", text: "#ffffff" },
@@ -3850,7 +3803,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:207",
-    mapOnly: true,
     noCartridge: true,
     name: "207",
     colors: { background: "#e9a255", text: "#000000" },
@@ -3929,7 +3881,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:208",
-    mapOnly: true,
     noCartridge: true,
     name: "208",
     colors: { background: "#afca17", text: "#000000" },
@@ -3994,7 +3945,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:209",
-    mapOnly: true,
     noCartridge: true,
     name: "209",
     colors: { background: "#122e68", text: "#ffffff" },
@@ -4031,7 +3981,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:210",
-    mapOnly: true,
     noCartridge: true,
     name: "210",
     colors: { background: "#eb3a4c", text: "#000000" },
@@ -4124,7 +4073,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:211",
-    mapOnly: true,
     noCartridge: true,
     name: "211",
     colors: { background: "#722f82", text: "#ffffff" },
@@ -4175,7 +4123,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:212",
-    mapOnly: true,
     noCartridge: true,
     name: "212",
     colors: { background: "#83d4ed", text: "#000000" },
@@ -4310,7 +4257,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:213",
-    mapOnly: true,
     noCartridge: true,
     name: "213",
     colors: { background: "#ef8464", text: "#000000" },
@@ -4347,7 +4293,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:214",
-    mapOnly: true,
     noCartridge: true,
     name: "214",
     colors: { background: "#e7adcf", text: "#000000" },
@@ -4482,7 +4427,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:215",
-    mapOnly: true,
     noCartridge: true,
     name: "215",
     colors: { background: "#719152", text: "#ffffff" },
@@ -4673,7 +4617,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:217",
-    mapOnly: true,
     noCartridge: true,
     name: "217",
     colors: { background: "#b72a41", text: "#ffffff" },
@@ -4710,7 +4653,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:218",
-    mapOnly: true,
     noCartridge: true,
     name: "218",
     colors: { background: "#b26bc1", text: "#000000" },
@@ -4775,7 +4717,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:219",
-    mapOnly: true,
     noCartridge: true,
     name: "219",
     colors: { background: "#7a79b6", text: "#000000" },
@@ -4924,7 +4865,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:220",
-    mapOnly: true,
     noCartridge: true,
     name: "220",
     colors: { background: "#fdcb36", text: "#000000" },
@@ -4961,7 +4901,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:221",
-    mapOnly: true,
     noCartridge: true,
     name: "221",
     colors: { background: "#ed1d8a", text: "#000000" },
@@ -4998,7 +4937,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:222",
-    mapOnly: true,
     noCartridge: true,
     name: "222",
     colors: { background: "#33a739", text: "#ffffff" },
@@ -5035,7 +4973,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:223",
-    mapOnly: true,
     noCartridge: true,
     name: "223",
     colors: { background: "#5688c6", text: "#000000" },
@@ -5184,7 +5121,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:224",
-    mapOnly: true,
     noCartridge: true,
     name: "224",
     colors: { background: "#a9b76a", text: "#000000" },
@@ -5221,7 +5157,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:225",
-    mapOnly: true,
     noCartridge: true,
     name: "225",
     colors: { background: "#512b0f", text: "#ffffff" },
@@ -5398,7 +5333,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:226",
-    mapOnly: true,
     noCartridge: true,
     name: "226",
     colors: { background: "#b75858", text: "#ffffff" },
@@ -5463,7 +5397,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:227",
-    mapOnly: true,
     noCartridge: true,
     name: "227",
     colors: { background: "#b3549a", text: "#000000" },
@@ -5500,7 +5433,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:301",
-    mapOnly: true,
     noCartridge: true,
     name: "301",
     colors: { background: "#7ab929", text: "#ffffff" },
@@ -5537,7 +5469,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:302",
-    mapOnly: true,
     noCartridge: true,
     name: "302",
     colors: { background: "#ecce00", text: "#000000" },
@@ -5574,7 +5505,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:303",
-    mapOnly: true,
     noCartridge: true,
     name: "303",
     colors: { background: "#ff0009", text: "#000000" },
@@ -5695,7 +5625,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:304",
-    mapOnly: true,
     noCartridge: true,
     name: "304",
     colors: { background: "#209645", text: "#ffffff" },
@@ -5732,7 +5661,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:305",
-    mapOnly: true,
     noCartridge: true,
     name: "305",
     colors: { background: "#f39200", text: "#000000" },
@@ -5867,7 +5795,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:306",
-    mapOnly: true,
     noCartridge: true,
     name: "306",
     colors: { background: "#a0519a", text: "#ffffff" },
@@ -5946,7 +5873,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:307",
-    mapOnly: true,
     noCartridge: true,
     name: "307",
     colors: { background: "#e52725", text: "#ffffff" },
@@ -5997,7 +5923,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:308",
-    mapOnly: true,
     noCartridge: true,
     name: "308",
     colors: { background: "#907d24", text: "#ffffff" },
@@ -6062,7 +5987,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:309",
-    mapOnly: true,
     noCartridge: true,
     name: "309",
     colors: { background: "#c44e23", text: "#ffffff" },
@@ -6211,7 +6135,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:310",
-    mapOnly: true,
     noCartridge: true,
     name: "310",
     colors: { background: "#8cc4d1", text: "#000000" },
@@ -6234,7 +6157,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:401",
-    mapOnly: true,
     noCartridge: true,
     name: "401",
     colors: { background: "#f18665", text: "#000000" },
@@ -6271,7 +6193,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:402",
-    mapOnly: true,
     noCartridge: true,
     name: "402",
     colors: { background: "#d1b706", text: "#000000" },
@@ -6350,7 +6271,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:403",
-    mapOnly: true,
     noCartridge: true,
     name: "403",
     colors: { background: "#e8afd0", text: "#000000" },
@@ -6751,7 +6671,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:404",
-    mapOnly: true,
     noCartridge: true,
     name: "404",
     colors: { background: "#845f34", text: "#ffffff" },
@@ -6886,7 +6805,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:405",
-    mapOnly: true,
     noCartridge: true,
     name: "405",
     colors: { background: "#abb96b", text: "#000000" },
@@ -6951,7 +6869,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:406",
-    mapOnly: true,
     noCartridge: true,
     name: "406",
     colors: { background: "#7a7ab8", text: "#000000" },
@@ -7072,7 +6989,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:407",
-    mapOnly: true,
     noCartridge: true,
     name: "407",
     colors: { background: "#c69615", text: "#000000" },
@@ -7165,7 +7081,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:408",
-    mapOnly: true,
     noCartridge: true,
     name: "408",
     colors: { background: "#f87479", text: "#000000" },
@@ -7202,7 +7117,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:409",
-    mapOnly: true,
     noCartridge: true,
     name: "409",
     colors: { background: "#b0cb1d", text: "#000000" },
@@ -7351,7 +7265,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:410",
-    mapOnly: true,
     noCartridge: true,
     name: "410",
     colors: { background: "#eba457", text: "#000000" },
@@ -7430,7 +7343,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:411",
-    mapOnly: true,
     noCartridge: true,
     name: "411",
     colors: { background: "#fecd38", text: "#000000" },
@@ -7467,7 +7379,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:412",
-    mapOnly: true,
     noCartridge: true,
     name: "412",
     colors: { background: "#b4569b", text: "#000000" },
@@ -7574,7 +7485,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:413",
-    mapOnly: true,
     noCartridge: true,
     name: "413",
     colors: { background: "#ea5984", text: "#000000" },
@@ -7625,7 +7535,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:414",
-    mapOnly: true,
     noCartridge: true,
     name: "414",
     colors: { background: "#e96c0f", text: "#000000" },
@@ -7774,7 +7683,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:415",
-    mapOnly: true,
     noCartridge: true,
     name: "415",
     colors: { background: "#588ac7", text: "#000000" },
@@ -7909,7 +7817,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:416",
-    mapOnly: true,
     noCartridge: true,
     name: "416",
     colors: { background: "#33a8e0", text: "#000000" },
@@ -7946,7 +7853,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:417",
-    mapOnly: true,
     noCartridge: true,
     name: "417",
     colors: { background: "#7bb92d", text: "#ffffff" },
@@ -8179,7 +8085,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:418",
-    mapOnly: true,
     noCartridge: true,
     name: "418",
     colors: { background: "#e5d461", text: "#000000" },
@@ -8370,7 +8275,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:419",
-    mapOnly: true,
     noCartridge: true,
     name: "419",
     colors: { background: "#147684", text: "#ffffff" },
@@ -8463,7 +8367,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:420",
-    mapOnly: true,
     noCartridge: true,
     name: "420",
     colors: { background: "#b82b41", text: "#ffffff" },
@@ -8500,7 +8403,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:421",
-    mapOnly: true,
     noCartridge: true,
     name: "421",
     colors: { background: "#35b6b2", text: "#000000" },
@@ -8537,7 +8439,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:422",
-    mapOnly: true,
     noCartridge: true,
     name: "422",
     colors: { background: "#164194", text: "#ffffff" },
@@ -8630,7 +8531,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:425",
-    mapOnly: true,
     noCartridge: true,
     name: "425",
     colors: { background: "#f87479", text: "#000000" },
@@ -8695,7 +8595,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:501",
-    mapOnly: true,
     noCartridge: true,
     name: "501",
     colors: { background: "#42539e", text: "#ffffff" },
@@ -8844,7 +8743,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:502",
-    mapOnly: true,
     noCartridge: true,
     name: "502",
     colors: { background: "#e4ca12", text: "#000000" },
@@ -8867,7 +8765,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:503",
-    mapOnly: true,
     noCartridge: true,
     name: "503",
     colors: { background: "#cab100", text: "#000000" },
@@ -8988,7 +8885,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:504",
-    mapOnly: true,
     noCartridge: true,
     name: "504",
     colors: { background: "#dcadcd", text: "#000000" },
@@ -9025,7 +8921,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:505",
-    mapOnly: true,
     noCartridge: true,
     name: "505",
     colors: { background: "#f58966", text: "#000000" },
@@ -9062,7 +8957,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:506",
-    mapOnly: true,
     noCartridge: true,
     name: "506",
     colors: { background: "#5665ab", text: "#ffffff" },
@@ -9197,7 +9091,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:507",
-    mapOnly: true,
     noCartridge: true,
     name: "507",
     colors: { background: "#9ab36c", text: "#000000" },
@@ -9402,7 +9295,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:508",
-    mapOnly: true,
     noCartridge: true,
     name: "508",
     colors: { background: "#ec413d", text: "#000000" },
@@ -9691,7 +9583,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:509R",
-    mapOnly: true,
     noCartridge: true,
     name: "509",
     colors: { background: "#bf922a", text: "#000000" },
@@ -9924,7 +9815,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:509A",
-    mapOnly: true,
     noCartridge: true,
     name: "509",
     colors: { background: "#bf922a", text: "#000000" },
@@ -10101,7 +9991,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:510",
-    mapOnly: true,
     noCartridge: true,
     name: "510",
     colors: { background: "#864595", text: "#ffffff" },
@@ -10138,7 +10027,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:511",
-    mapOnly: true,
     noCartridge: true,
     name: "511",
     colors: { background: "#ba4d95", text: "#000000" },
@@ -10175,7 +10063,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:512",
-    mapOnly: true,
     noCartridge: true,
     name: "512",
     colors: { background: "#5665ab", text: "#ffffff" },
@@ -10268,7 +10155,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:513",
-    mapOnly: true,
     noCartridge: true,
     name: "513",
     colors: { background: "#9ac63f", text: "#000000" },
@@ -10305,7 +10191,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:514",
-    mapOnly: true,
     noCartridge: true,
     name: "514",
     colors: { background: "#ea5284", text: "#000000" },
@@ -10342,7 +10227,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:515",
-    mapOnly: true,
     noCartridge: true,
     name: "515",
     colors: { background: "#ec7223", text: "#000000" },
@@ -10575,7 +10459,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:516",
-    mapOnly: true,
     noCartridge: true,
     name: "516",
     colors: { background: "#73bb45", text: "#ffffff" },
@@ -10766,7 +10649,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:517",
-    mapOnly: true,
     noCartridge: true,
     name: "517",
     colors: { background: "#e9d461", text: "#000000" },
@@ -10957,7 +10839,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:518",
-    mapOnly: true,
     noCartridge: true,
     name: "518",
     colors: { background: "#e7accc", text: "#000000" },
@@ -11078,7 +10959,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:519",
-    mapOnly: true,
     noCartridge: true,
     name: "519",
     colors: { background: "#af599e", text: "#000000" },
@@ -11241,7 +11121,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:520",
-    mapOnly: true,
     noCartridge: true,
     name: "520",
     colors: { background: "#5187c2", text: "#000000" },
@@ -11488,7 +11367,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:521",
-    mapOnly: true,
     noCartridge: true,
     name: "521",
     colors: { background: "#c895bf", text: "#000000" },
@@ -11539,7 +11417,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:522",
-    mapOnly: true,
     noCartridge: true,
     name: "522",
     colors: { background: "#e52227", text: "#ffffff" },
@@ -11716,7 +11593,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:523",
-    mapOnly: true,
     noCartridge: true,
     name: "523",
     colors: { background: "#9ac63d", text: "#000000" },
@@ -11893,7 +11769,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:524",
-    mapOnly: true,
     noCartridge: true,
     name: "524",
     colors: { background: "#fbc134", text: "#000000" },
@@ -12056,7 +11931,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:525",
-    mapOnly: true,
     noCartridge: true,
     name: "525",
     colors: { background: "#292f6a", text: "#ffffff" },
@@ -12093,7 +11967,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:526",
-    mapOnly: true,
     noCartridge: true,
     name: "526",
     colors: { background: "#a6cc3a", text: "#000000" },
@@ -12256,7 +12129,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:528",
-    mapOnly: true,
     noCartridge: true,
     name: "528",
     colors: { background: "#78bbe1", text: "#000000" },
@@ -12335,7 +12207,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:529",
-    mapOnly: true,
     noCartridge: true,
     name: "529",
     colors: { background: "#f4a94e", text: "#000000" },
@@ -12498,7 +12369,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:530",
-    mapOnly: true,
     noCartridge: true,
     name: "530",
     colors: { background: "#e30613", text: "#ffffff" },
@@ -12549,7 +12419,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:531",
-    mapOnly: true,
     noCartridge: true,
     name: "531",
     colors: { background: "#c56927", text: "#ffffff" },
@@ -12600,7 +12469,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:532",
-    mapOnly: true,
     noCartridge: true,
     name: "532",
     colors: { background: "#b5c069", text: "#000000" },
@@ -12679,7 +12547,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:533",
-    mapOnly: true,
     noCartridge: true,
     name: "533",
     colors: { background: "#3eacdd", text: "#000000" },
@@ -12716,7 +12583,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:534",
-    mapOnly: true,
     noCartridge: true,
     name: "534",
     colors: { background: "#af599e", text: "#000000" },
@@ -12753,7 +12619,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:535",
-    mapOnly: true,
     noCartridge: true,
     name: "535",
     colors: { background: "#af599e", text: "#000000" },
@@ -12818,7 +12683,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:536",
-    mapOnly: true,
     noCartridge: true,
     name: "536",
     colors: { background: "#b5c069", text: "#000000" },
@@ -12911,7 +12775,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:537",
-    mapOnly: true,
     noCartridge: true,
     name: "537",
     colors: { background: "#e61e28", text: "#ffffff" },
@@ -13004,7 +12867,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:538",
-    mapOnly: true,
     noCartridge: true,
     name: "538",
     colors: { background: "#9ab36c", text: "#000000" },
@@ -13153,7 +13015,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:539",
-    mapOnly: true,
     noCartridge: true,
     name: "539",
     colors: { background: "#e61e28", text: "#ffffff" },
@@ -13274,7 +13135,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:540",
-    mapOnly: true,
     noCartridge: true,
     name: "540",
     colors: { background: "#cab100", text: "#000000" },
@@ -13367,7 +13227,6 @@ const nomadRegionRoutes: Route[] = [
   },
   {
     id: "NOMAD:541",
-    mapOnly: true,
     noCartridge: true,
     name: "541",
     colors: { background: "#9ac36f", text: "#000000" },
@@ -13404,4 +13263,12 @@ const nomadRegionRoutes: Route[] = [
   },
 ];
 
-export default nomadRegionRoutes;
+const network: Network = {
+  slug: "nomad",
+  name: "Nomad – Région Normandie",
+  routes: nomadRegionRoutes,
+  color: "#ef434d",
+  textColor: "#ffffff",
+};
+
+export default network;

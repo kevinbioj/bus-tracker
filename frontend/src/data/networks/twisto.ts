@@ -1,10 +1,9 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const twistoRoutes: Route[] = [
   {
     id: "TWISTO:T1",
     name: "T1",
-    mapOnly: true,
     colors: { background: "#23a638", text: "#ffffff" },
     destinations: [
       {
@@ -30,7 +29,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:T2",
     name: "T2",
-    mapOnly: true,
     colors: { background: "#e73132", text: "#ffffff" },
     destinations: [
       {
@@ -55,7 +53,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:T3",
     name: "T3",
-    mapOnly: true,
     colors: { background: "#009adf", text: "#ffffff" },
     destinations: [
       {
@@ -69,6 +66,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Collège Hawking"],
+        autoHide: true,
         name: "Collège Hawking",
         city: "CAEN",
         girouette: {
@@ -90,7 +88,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:NVCV",
     name: "NVCV",
-    mapOnly: true,
     colors: { background: "#e4051f", text: "#ffffff" },
     destinations: [
       {
@@ -113,7 +110,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:1",
     name: "1",
-    mapOnly: true,
     colors: { background: "#d8005b", text: "#ffffff" },
     destinations: [
       {
@@ -139,7 +135,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:2",
     name: "2",
-    mapOnly: true,
     colors: { background: "#0975b8", text: "#ffffff" },
     destinations: [
       {
@@ -165,7 +160,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:3",
     name: "3",
-    mapOnly: true,
     colors: { background: "#c4ce10", text: "#000000" },
     destinations: [
       {
@@ -191,7 +185,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:4",
     name: "4",
-    mapOnly: true,
     colors: { background: "#da609f", text: "#ffffff" },
     destinations: [
       {
@@ -220,7 +213,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:5",
     name: "5",
-    mapOnly: true,
     colors: { background: "#642580", text: "#ffffff" },
     destinations: [
       {
@@ -255,7 +247,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:6A",
     name: "6A",
-    mapOnly: true,
     colors: { background: "#fcdd19", text: "#000000" },
     destinations: [
       {
@@ -272,7 +263,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:6B",
     name: "6B",
-    mapOnly: true,
     colors: { background: "#fcdd19", text: "#000000" },
     destinations: [
       {
@@ -289,7 +279,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:7",
     name: "7",
-    mapOnly: true,
     colors: { background: "#8d5e2a", text: "#ffffff" },
     destinations: [
       {
@@ -324,7 +313,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:8",
     name: "8",
-    mapOnly: true,
     colors: { background: "#00804b", text: "#ffffff" },
     destinations: [
       {
@@ -350,7 +338,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:9",
     name: "9",
-    mapOnly: true,
     colors: { background: "#86bce7", text: "#000000" },
     destinations: [
       {
@@ -376,7 +363,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:10",
     name: "10",
-    mapOnly: true,
     colors: { background: "#b0368c", text: "#ffffff" },
     destinations: [
       {
@@ -414,7 +400,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:10EX",
     name: "10EX",
-    mapOnly: true,
     colors: { background: "#f29fc5", text: "#000000" },
     destinations: [
       {
@@ -440,7 +425,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:11",
     name: "11",
-    mapOnly: true,
     colors: { background: "#ea5b0c", text: "#ffffff" },
     destinations: [
       {
@@ -475,7 +459,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:11EX",
     name: "11EX",
-    mapOnly: true,
     colors: { background: "#f39869", text: "#000000" },
     destinations: [
       {
@@ -500,7 +483,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:12",
     name: "12",
-    mapOnly: true,
     colors: { background: "#009d99", text: "#ffffff" },
     destinations: [
       {
@@ -612,7 +594,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:12EX",
     name: "12EX",
-    mapOnly: true,
     colors: { background: "#a7c4af", text: "#000000" },
     destinations: [
       {
@@ -664,7 +645,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:20",
     name: "20",
-    mapOnly: true,
     colors: { background: "#f59c00", text: "#000000" },
     destinations: [
       {
@@ -698,7 +678,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:21",
     name: "21",
-    mapOnly: true,
     colors: { background: "#153f8d", text: "#ffffff" },
     destinations: [
       {
@@ -724,7 +703,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:22",
     name: "22",
-    mapOnly: true,
     colors: { background: "#f3a3b9", text: "#000000" },
     destinations: [
       {
@@ -798,7 +776,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:23",
     name: "23",
-    mapOnly: true,
     colors: { background: "#e94861", text: "#ffffff" },
     destinations: [
       {
@@ -833,7 +810,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:30",
     name: "30",
-    mapOnly: true,
     colors: { background: "#d186b2", text: "#000000" },
     destinations: [
       {
@@ -859,7 +835,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:31",
     name: "31",
-    mapOnly: true,
     colors: { background: "#969328", text: "#ffffff" },
     destinations: [
       {
@@ -892,7 +867,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:32",
     name: "32",
-    mapOnly: true,
     colors: { background: "#82c491", text: "#000000" },
     destinations: [
       {
@@ -942,7 +916,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:33",
     name: "33",
-    mapOnly: true,
     colors: { background: "#00698a", text: "#ffffff" },
     destinations: [
       {
@@ -976,7 +949,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:34",
     name: "34",
-    mapOnly: true,
     colors: { background: "#7f2110", text: "#ffffff" },
     destinations: [
       {
@@ -1001,7 +973,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:37",
     name: "37",
-    mapOnly: true,
     colors: { background: "#ccb4c9", text: "#000000" },
     destinations: [
       {
@@ -1027,7 +998,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:40",
     name: "40",
-    mapOnly: true,
     colors: { background: "#7d6fa6", text: "#ffffff" },
     destinations: [
       {
@@ -1051,7 +1021,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:42",
     name: "42",
-    mapOnly: true,
     colors: { background: "#7d6fa6", text: "#ffffff" },
     destinations: [
       {
@@ -1075,7 +1044,6 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:NUIT",
     name: "Noctibus",
-    mapOnly: true,
     colors: { background: "#011337", text: "#FFFF99" },
     destinations: [
       {
@@ -1092,11 +1060,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:100",
     name: "100",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Place du Canada"],
+        autoHide: true,
         name: "CAEN Place du Canada",
         girouette: {
           routeNumber: {
@@ -1110,6 +1078,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["AUTHIE Jacques Cartier"],
+        autoHide: true,
         name: "AUTHIE Jacques Cartier",
         girouette: {
           routeNumber: {
@@ -1126,11 +1095,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:101",
     name: "101",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["OUISTREHAM Collège Monnet"],
+        autoHide: true,
         name: "OUISTREHAM Collège Monnet",
         girouette: {
           routeNumber: {
@@ -1144,6 +1113,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["BLAINVILLE Parc"],
+        autoHide: true,
         name: "BLAINVILLE Parc",
         girouette: {
           routeNumber: {
@@ -1157,6 +1127,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["LION SUR MER Plage"],
+        autoHide: true,
         name: "LION SUR MER Plage",
         girouette: {
           routeNumber: {
@@ -1170,6 +1141,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["LION SUR MER Bas Lion"],
+        autoHide: true,
         name: "LION SUR MER Bas Lion",
         girouette: {
           routeNumber: {
@@ -1183,6 +1155,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["HERMANVILLE La Marque"],
+        autoHide: true,
         name: "HERMANVILLE La Marque",
         girouette: {
           routeNumber: {
@@ -1196,6 +1169,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["COLLEVILLE Piéplu"],
+        autoHide: true,
         name: "COLLEVILLE Piéplu",
         girouette: {
           routeNumber: {
@@ -1212,11 +1186,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:102",
     name: "102",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["BRETTEVILLE Koenig"],
+        autoHide: true,
         name: "BRETTEVILLE Koenig",
         girouette: {
           routeNumber: {
@@ -1230,6 +1204,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Collège Moulin"],
+        autoHide: true,
         name: "Collège Moulin",
         city: "CAEN",
         girouette: {
@@ -1247,11 +1222,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:103",
     name: "103",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Calvaire Saint-Pierre"],
+        autoHide: true,
         name: "CAEN Calvaire Saint-Pierre",
         girouette: {
           routeNumber: {
@@ -1265,6 +1240,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["SAINTE-CROIX Hôtel Fortuné"],
+        autoHide: true,
         name: "SAINTE-CROIX Hôtel Fortuné",
         girouette: {
           routeNumber: {
@@ -1278,6 +1254,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["THAON Mairie"],
+        autoHide: true,
         name: "THAON Mairie",
         girouette: {
           routeNumber: {
@@ -1294,11 +1271,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:104",
     name: "104",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Cité U Lebisey"],
+        autoHide: true,
         name: "Cité U Lebisey",
         city: "CAEN",
         girouette: {
@@ -1316,11 +1293,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:105",
     name: "105",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Gare SNCF"],
+        autoHide: true,
         name: "CAEN Gare SNCF",
         girouette: {
           routeNumber: {
@@ -1334,6 +1311,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Institut Lemonnier"],
+        autoHide: true,
         name: "Institut Lemonnier",
         city: "CAEN",
         girouette: {
@@ -1351,11 +1329,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:106",
     name: "106",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Mondeville Paul Langevin"],
+        autoHide: true,
         name: "MONDEVILLE Paul Langevin",
         girouette: {
           routeNumber: {
@@ -1372,11 +1350,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:107",
     name: "107",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Hôtel de Ville"],
+        autoHide: true,
         name: "CAEN Hôtel de Ville",
         girouette: {
           routeNumber: {
@@ -1390,6 +1368,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Lycée Sainte-Ursule"],
+        autoHide: true,
         name: "Lycée Sainte-Ursule",
         city: "CAEN",
         girouette: {
@@ -1407,11 +1386,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:109",
     name: "109",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Lycée de Gaulle"],
+        autoHide: true,
         name: "Lycée de Gaulle",
         city: "CAEN",
         girouette: {
@@ -1426,6 +1405,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CARPIQUET Aéroport"],
+        autoHide: true,
         name: "CARPIQUET Aéroport",
         girouette: {
           routeNumber: {
@@ -1442,11 +1422,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:110",
     name: "110",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Colombelles Colombelles Mairie"],
+        autoHide: true,
         name: "COLOMBELLES Mairie",
         girouette: {
           routeNumber: {
@@ -1460,6 +1440,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Rostand-Fresnel"],
+        autoHide: true,
         name: "Rostand-Fresnel",
         city: "CAEN",
         girouette: {
@@ -1477,11 +1458,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:111",
     name: "111",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["COLOMBELLES Mandela"],
+        autoHide: true,
         name: "COLOMBELLES Mandela",
         girouette: {
           routeNumber: {
@@ -1495,6 +1476,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Mondeville Collège Guillemot"],
+        autoHide: true,
         name: "Collège Guillemot",
         city: "MONDEVILLE",
         girouette: {
@@ -1515,11 +1497,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:112",
     name: "112",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CUVERVILLE Champ Picot"],
+        autoHide: true,
         name: "CUVERVILLE Champ Picot",
         girouette: {
           routeNumber: {
@@ -1533,6 +1515,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Rostand-Fresnel"],
+        autoHide: true,
         name: "Rostand-Fresnel",
         city: "CAEN",
         girouette: {
@@ -1550,11 +1533,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:113",
     name: "113",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["ETERVILLE le Rocreuil"],
+        autoHide: true,
         name: "ETERVILLE le Rocreuil",
         girouette: {
           routeNumber: {
@@ -1568,6 +1551,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Verson Collège Prévert"],
+        autoHide: true,
         name: "Collège Prévert",
         city: "VERSON",
         girouette: {
@@ -1585,11 +1569,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:114",
     name: "114",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Rostand Fresnel"],
+        autoHide: true,
         name: "CAEN Rostand Fresnel",
         girouette: {
           routeNumber: {
@@ -1606,11 +1590,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:115",
     name: "115",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CUVERVILLE Callouins"],
+        autoHide: true,
         name: "CUVERVILLE Callouins",
         girouette: {
           routeNumber: {
@@ -1624,6 +1608,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Rostand-Fresnel"],
+        autoHide: true,
         name: "Rostand-Fresnel",
         city: "CAEN",
         girouette: {
@@ -1641,11 +1626,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:116",
     name: "116",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["HEROUVILLE Lebisey"],
+        autoHide: true,
         name: "HEROUVILLE Lebisey",
         girouette: {
           routeNumber: {
@@ -1659,6 +1644,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["HÉROUVILLE Collège Mandela"],
+        autoHide: true,
         name: "HÉROUVILLE Collège Mandela",
         girouette: {
           routeNumber: {
@@ -1675,11 +1661,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:118",
     name: "118",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["LOUVIGNY Mesnil"],
+        autoHide: true,
         name: "LOUVIGNY Mesnil",
         girouette: {
           routeNumber: {
@@ -1693,6 +1679,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["FLEURY Collège Hawking"],
+        autoHide: true,
         name: "FLEURY Collège Hawking",
         girouette: {
           routeNumber: {
@@ -1709,11 +1696,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:119",
     name: "119",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Copernic"],
+        autoHide: true,
         name: "Copernic",
         city: "CAEN",
         girouette: {
@@ -1731,11 +1718,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:120",
     name: "120",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Colombelles Place des Tilleuls"],
+        autoHide: true,
         name: "COLOMBELLES Place des Tilleuls",
         girouette: {
           routeNumber: {
@@ -1752,6 +1739,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["HEROUVILLE Allende"],
+        autoHide: true,
         name: "HEROUVILLE Allende",
         girouette: {
           routeNumber: {
@@ -1768,11 +1756,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:121",
     name: "121",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["B - COLOMBELLES Mairie"],
+        autoHide: true,
         name: "B - COLOMBELLES Mairie",
         girouette: {
           routeNumber: {
@@ -1786,6 +1774,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["A - COLOMBELLES Lazzaro"],
+        autoHide: true,
         name: "A - COLOMBELLES Lazzaro",
         girouette: {
           routeNumber: {
@@ -1799,6 +1788,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Mondeville Collège Guillemot"],
+        autoHide: true,
         name: "Collège Guillemot",
         city: "MONDEVILLE",
         girouette: {
@@ -1816,6 +1806,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["A - MONDEVILLE Collège Guillemot"],
+        autoHide: true,
         name: "A - MONDEVILLE Collège Guillemot",
         girouette: {
           routeNumber: {
@@ -1832,11 +1823,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:123",
     name: "123",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["BLAINVILLE Langevin Wallon"],
+        autoHide: true,
         name: "BLAINVILLE Langevin Wallon",
         girouette: {
           routeNumber: {
@@ -1850,6 +1841,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["SAINT AUBIN Eglise"],
+        autoHide: true,
         name: "SAINT AUBIN Eglise",
         girouette: {
           routeNumber: {
@@ -1866,11 +1858,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:124",
     name: "124",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Saint-Aubin-d'Arquenay Saint-Aubin Eglise"],
+        autoHide: true,
         name: "SAINT AUBIN Eglise",
         girouette: {
           routeNumber: {
@@ -1884,6 +1876,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Croix Guérin"],
+        autoHide: true,
         name: "Croix Guérin",
         city: "CAEN",
         girouette: {
@@ -1901,11 +1894,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:125",
     name: "125",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Caen Cité U Lebisey"],
+        autoHide: true,
         name: "Cité U Lebisey",
         city: "CAEN",
         girouette: {
@@ -1923,11 +1916,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:126",
     name: "126",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["SAINT-CONTEST Vellerie"],
+        autoHide: true,
         name: "SAINT-CONTEST Vellerie",
         girouette: {
           routeNumber: {
@@ -1941,6 +1934,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Collège Monod"],
+        autoHide: true,
         name: "CAEN Collège Monod",
         girouette: {
           routeNumber: {
@@ -1957,11 +1951,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:127",
     name: "127",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Villons-les-Buissons Coopérative"],
+        autoHide: true,
         name: "VILLONS Coopérative",
         girouette: {
           routeNumber: {
@@ -1978,11 +1972,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:130",
     name: "130",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Gare SNCF"],
+        autoHide: true,
         name: "CAEN Gare SNCF",
         girouette: {
           routeNumber: {
@@ -1996,6 +1990,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["THUE ET MUE Primevères"],
+        autoHide: true,
         name: "THUE ET MUE Primevères",
         girouette: {
           routeNumber: {
@@ -2009,6 +2004,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CAEN Cité U Lebisey"],
+        autoHide: true,
         name: "CAEN Cité U Lebisey",
         girouette: {
           routeNumber: {
@@ -2022,6 +2018,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CAEN Théâtre"],
+        autoHide: true,
         name: "CAEN Théâtre",
         girouette: {
           routeNumber: {
@@ -2035,6 +2032,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CAEN T"],
+        autoHide: true,
         name: "CAEN T",
         girouette: {
           routeNumber: {
@@ -2048,6 +2046,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["BROUAY Mairie"],
+        autoHide: true,
         name: "BROUAY Mairie",
         girouette: {
           routeNumber: {
@@ -2061,6 +2060,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["BRETTEVILLE Bessin"],
+        autoHide: true,
         name: "BRETTEVILLE Bessin",
         girouette: {
           routeNumber: {
@@ -2074,6 +2074,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["ROTS Bourg"],
+        autoHide: true,
         name: "ROTS Bourg",
         girouette: {
           routeNumber: {
@@ -2090,11 +2091,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:131",
     name: "131",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["TROARN Collège"],
+        autoHide: true,
         name: "TROARN Collège",
         girouette: {
           routeNumber: {
@@ -2108,6 +2109,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["BURES-SUR-DIVES Lavoir"],
+        autoHide: true,
         name: "BURES-SUR-DIVES Lavoir",
         girouette: {
           routeNumber: {
@@ -2121,6 +2123,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["SANNERVILLE Libération"],
+        autoHide: true,
         name: "SANNERVILLE Libération",
         girouette: {
           routeNumber: {
@@ -2134,6 +2137,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["SANNERVILLE Bourg"],
+        autoHide: true,
         name: "SANNERVILLE Bourg",
         girouette: {
           routeNumber: {
@@ -2150,11 +2154,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:133",
     name: "133",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Théâtre"],
+        autoHide: true,
         name: "CAEN Théâtre",
         girouette: {
           routeNumber: {
@@ -2168,6 +2172,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CAEN Lycée Malherbe"],
+        autoHide: true,
         name: "CAEN Lycée Malherbe",
         girouette: {
           routeNumber: {
@@ -2181,6 +2186,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CHEUX Le Bosq"],
+        autoHide: true,
         name: "CHEUX Le Bosq",
         girouette: {
           routeNumber: {
@@ -2194,6 +2200,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CHEUX Bourg"],
+        autoHide: true,
         name: "CHEUX Bourg",
         girouette: {
           routeNumber: {
@@ -2207,6 +2214,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CAEN Collège Moulin"],
+        autoHide: true,
         name: "CAEN Collège Moulin",
         girouette: {
           routeNumber: {
@@ -2220,6 +2228,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["THUE ET MUE Mesnil Patry"],
+        autoHide: true,
         name: "THUE ET MUE Mesnil Patry",
         girouette: {
           routeNumber: {
@@ -2236,11 +2245,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:134",
     name: "134",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Gare SNCF"],
+        autoHide: true,
         name: "CAEN Gare SNCF",
         girouette: {
           routeNumber: {
@@ -2254,6 +2263,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["CAEN Aviation"],
+        autoHide: true,
         name: "CAEN Aviation",
         girouette: {
           routeNumber: {
@@ -2267,6 +2277,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["SOLIERS Tageret"],
+        autoHide: true,
         name: "SOLIERS Tageret",
         girouette: {
           routeNumber: {
@@ -2283,11 +2294,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:135",
     name: "135",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["CAEN Gare SNCF"],
+        autoHide: true,
         name: "CAEN Gare SNCF",
         girouette: {
           routeNumber: {
@@ -2301,6 +2312,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["SAINT AIGNAN Mairie"],
+        autoHide: true,
         name: "SAINT AIGNAN Mairie",
         girouette: {
           routeNumber: {
@@ -2317,11 +2329,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:136",
     name: "136",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["HEROUVILLE Allende"],
+        autoHide: true,
         name: "HEROUVILLE Allende",
         girouette: {
           routeNumber: {
@@ -2335,6 +2347,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["TROARN Stade"],
+        autoHide: true,
         name: "TROARN Stade",
         girouette: {
           routeNumber: {
@@ -2348,6 +2361,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["MESNIL 2ème Arrêt"],
+        autoHide: true,
         name: "MESNIL 2ème Arrêt",
         girouette: {
           routeNumber: {
@@ -2364,11 +2378,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:137",
     name: "137",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["Ifs COLLEGE SENGHOR QUAI A"],
+        autoHide: true,
         name: "Collège Senghor",
         city: "IFS",
         girouette: {
@@ -2386,11 +2400,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:137A",
     name: "137A",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["SOLIERS Hameau du Four"],
+        autoHide: true,
         name: "SOLIERS Hameau du Four",
         girouette: {
           routeNumber: {
@@ -2404,6 +2418,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["GRENTHEVILLE Le Hameau"],
+        autoHide: true,
         name: "GRENTHEVILLE Le Hameau",
         girouette: {
           routeNumber: {
@@ -2420,11 +2435,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:137B",
     name: "137B",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["BOURGUEBUS La Hogue"],
+        autoHide: true,
         name: "BOURGUEBUS La Hogue",
         girouette: {
           routeNumber: {
@@ -2441,11 +2456,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:137C",
     name: "137C",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["BOURGUEBUS Centre"],
+        autoHide: true,
         name: "BOURGUEBUS Centre",
         girouette: {
           routeNumber: {
@@ -2462,11 +2477,11 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:137D",
     name: "137D",
-    mapOnly: true,
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
         id: ["SOLIERS Hameau du Four"],
+        autoHide: true,
         name: "SOLIERS Hameau du Four",
         girouette: {
           routeNumber: {
@@ -2482,8 +2497,8 @@ const twistoRoutes: Route[] = [
   },
   {
     id: "TWISTO:B1",
-    name: "B1",
     mapOnly: true,
+    name: "B1",
     colors: { background: "#23a638", text: "#ffffff" },
     destinations: [
       {
@@ -2507,8 +2522,8 @@ const twistoRoutes: Route[] = [
   },
   {
     id: "TWISTO:B2",
-    name: "Plan B - T2",
     mapOnly: true,
+    name: "Plan B - T2",
     colors: { background: "#e73132", text: "#ffffff" },
     destinations: [
       {
@@ -2532,8 +2547,8 @@ const twistoRoutes: Route[] = [
   },
   {
     id: "TWISTO:B3",
-    name: "Plan B - T3",
     mapOnly: true,
+    name: "Plan B - T3",
     colors: { background: "#009adf", text: "#ffffff" },
     destinations: [
       {
@@ -2566,4 +2581,12 @@ const twistoRoutes: Route[] = [
   },
 ];
 
-export default twistoRoutes;
+const network: Network = {
+  slug: "twisto",
+  name: "Twisto – Caen la Mer",
+  routes: twistoRoutes,
+  color: "#0072bc",
+  textColor: "#ffffff",
+};
+
+export default network;

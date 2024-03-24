@@ -1,15 +1,14 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const bybusRoutes: Route[] = [
   {
     id: "BYBUS:L1",
-    mapOnly: true,
     noCartridge: true,
     name: "1",
     colors: { background: "#2CC7E2", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Gare"],
+        id: ["1- Gare", "Gare"],
         alternate: "Gare de Bayeux",
         name: "Gare",
         city: "BAYEUX",
@@ -20,7 +19,20 @@ const bybusRoutes: Route[] = [
         },
       },
       {
+        id: ["1- Gare (Express)"],
+        autoHide: true,
+        alternate: "Gare de Bayeux (Express)",
+        name: "Gare (Express)",
+        city: "BAYEUX",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
+          pages: [{ text: ["GARE DE BAYEUX", "EXPRESS"] }],
+        },
+      },
+      {
         id: ["1- Gare (via Supermarché)"],
+        autoHide: true,
         alternate: "Gare de Bayeux (via Supermarché)",
         name: "Gare (via Supermarché)",
         city: "BAEYEUX",
@@ -32,6 +44,7 @@ const bybusRoutes: Route[] = [
       },
       {
         id: ["1- Reine Mathilde (Via Supermarché)"],
+        autoHide: true,
         name: "Reine Mathilde (via Supermarché)",
         city: "BAYEUX",
         girouette: {
@@ -41,18 +54,8 @@ const bybusRoutes: Route[] = [
         },
       },
       {
-        id: ["1- Gare (Express)"],
-        alternate: "Gare de Bayeux (Express)",
-        name: "Gare (Express)",
-        city: "BAYEUX",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
-          pages: [{ text: ["GARE DE BAYEUX", "EXPRESS"] }],
-        },
-      },
-      {
         id: ["1- Reine Mathilde (Express)"],
+        autoHide: true,
         name: "Reine Mathilde (Express)",
         city: "BAYEUX",
         girouette: {
@@ -63,7 +66,7 @@ const bybusRoutes: Route[] = [
       },
       {
         id: ["1- Reine Mathilde (via Blériot)"],
-        name: "Reine Mathilde (via Blériot)",
+        name: "Reine Mathilde",
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
@@ -71,22 +74,10 @@ const bybusRoutes: Route[] = [
           pages: [{ text: ["REINE MATHILDE", "VIA BLERIOT"] }],
         },
       },
-      {
-        id: ["1- Gare"],
-        alternate: "Gare de Bayeux",
-        name: "Gare",
-        city: "BAYEUX",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
-          pages: [{ font: "1508SUPX", text: "GARE DE BAYEUX" }],
-        },
-      },
     ],
   },
   {
     id: "BYBUS:L2",
-    mapOnly: true,
     noCartridge: true,
     name: "2",
     colors: { background: "#F1AAEB", text: "#FFFFFF" },
@@ -104,6 +95,7 @@ const bybusRoutes: Route[] = [
       },
       {
         id: ["2- Gare (Express)"],
+        autoHide: true,
         alternate: "Gare de Bayeux (Express)",
         name: "Gare (Express)",
         city: "BAYEUX",
@@ -111,6 +103,17 @@ const bybusRoutes: Route[] = [
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
           pages: [{ text: ["GARE DE BAYEUX", "EXPRESS"] }],
+        },
+      },
+      {
+        id: ["2- Rue de la Fée (Express)"],
+        autoHide: true,
+        name: "Rue de la Fée (Express)",
+        city: "BAYEUX",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
+          pages: [{ text: ["RUE DE LA FEE", "EXPRESS"] }],
         },
       },
       {
@@ -123,35 +126,14 @@ const bybusRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "RUE DE LA FEE" }],
         },
       },
-      {
-        id: ["2- Rue de la Fée (Express)"],
-        name: "Rue de la Fée (Express)",
-        city: "BAYEUX",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
-          pages: [{ text: ["RUE DE LA FEE", "EXPRESS"] }],
-        },
-      },
     ],
   },
   {
     id: "BYBUS:L3",
-    mapOnly: true,
     noCartridge: true,
     name: "3",
     colors: { background: "#91C68B", text: "#FFFFFF" },
     destinations: [
-      {
-        id: ["3- Conquérant (Via Médiathèque)"],
-        name: "Conquérant (via Médiathèque)",
-        city: "BAYEUX",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
-          pages: [{ text: ["CONQUERANT", "VIA MEDIATHEQUE"] }],
-        },
-      },
       {
         id: ["3- Rue Costils (Express)"],
         name: "Rue Costils (Express)",
@@ -163,7 +145,31 @@ const bybusRoutes: Route[] = [
         },
       },
       {
+        id: ["3- Conquérant (Via Médiathèque)"],
+        autoHide: true,
+        name: "Conquérant (via Médiathèque)",
+        city: "BAYEUX",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
+          pages: [{ text: ["CONQUERANT", "VIA MEDIATHEQUE"] }],
+        },
+      },
+      {
+        id: ["3- Gare"],
+        autoHide: true,
+        alternate: "Gare de Bayeux",
+        name: "Gare",
+        city: "BAYEUX",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
+          pages: [{ font: "1508SUPX", text: "GARE DE BAYEUX" }],
+        },
+      },
+      {
         id: ["3- Saint Patrice"],
+        autoHide: true,
         name: "Saint-Patrice",
         city: "BAYEUX",
         girouette: {
@@ -173,14 +179,14 @@ const bybusRoutes: Route[] = [
         },
       },
       {
-        id: ["3- Gare"],
-        alternate: "Gare de Bayeux",
-        name: "Gare",
+        id: ["3- Arcisse de Caumont  (Express)"],
+        autoHide: true,
+        name: "Arcisse de Caumont (Express)",
         city: "BAYEUX",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
-          pages: [{ font: "1508SUPX", text: "GARE DE BAYEUX" }],
+          pages: [{ text: ["ARCISSE DE CAUMONT", "EXPRESS"] }],
         },
       },
       {
@@ -193,21 +199,10 @@ const bybusRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "ARCISSE DE CAUMONT" }],
         },
       },
-      {
-        id: ["3- Arcisse de Caumont  (Express)"],
-        name: "Arcisse de Caumont (Express)",
-        city: "BAYEUX",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
-          pages: [{ text: ["ARCISSE DE CAUMONT", "EXPRESS"] }],
-        },
-      },
     ],
   },
   {
     id: "BYBUS:L4",
-    mapOnly: true,
     noCartridge: true,
     name: "4",
     colors: { background: "#f4ff10", text: "#000000" },
@@ -237,4 +232,12 @@ const bybusRoutes: Route[] = [
   },
 ];
 
-export default bybusRoutes;
+const network: Network = {
+  slug: "bybus",
+  name: "Bybus – Bayeux",
+  routes: bybusRoutes,
+  color: "#760b5a",
+  textColor: "#ffffff",
+};
+
+export default network;

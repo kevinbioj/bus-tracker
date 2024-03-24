@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const liaRoutes: Route[] = [
   {
     id: "LIA:T",
-    mapOnly: true,
     noCartridge: true,
     name: "T",
     colors: { background: "#E30613", text: "#FFFFFF" },
@@ -75,7 +74,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:A",
-    mapOnly: true,
     noCartridge: true,
     name: "A",
     colors: { background: "#E30613", text: "#FFFFFF" },
@@ -114,7 +112,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:B",
-    mapOnly: true,
     noCartridge: true,
     name: "B",
     colors: { background: "#00BB00", text: "#FFFFFF" },
@@ -168,7 +165,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:01",
-    mapOnly: true,
     noCartridge: true,
     name: "1",
     colors: { background: "#009FE3", text: "#FFFFFF" },
@@ -189,6 +185,22 @@ const liaRoutes: Route[] = [
         },
       },
       {
+        id: ["La Plage"],
+        autoHide: true,
+        name: "La Plage",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#009FE3",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "1",
+          },
+          pages: [{ font: "1507SUPX", text: "LE HAVRE LA PLAGE" }],
+        },
+      },
+      {
         id: ["Ste-Adresse La Heve"],
         name: "La Hève",
         city: "SAINTE-ADRESSE",
@@ -203,26 +215,10 @@ const liaRoutes: Route[] = [
           pages: [{ font: "1507SUPX", text: "STE-ADRESSE LA HEVE" }],
         },
       },
-      {
-        id: ["La Plage"],
-        name: "La Plage",
-        city: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1513B3E1",
-            backgroundColor: "#009FE3",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "1",
-          },
-          pages: [{ font: "1507SUPX", text: "LE HAVRE LA PLAGE" }],
-        },
-      },
     ],
   },
   {
     id: "LIA:C2",
-    mapOnly: true,
     noCartridge: true,
     name: "C2",
     colors: { background: "#E30613", text: "#FFFFFF" },
@@ -261,7 +257,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:03",
-    mapOnly: true,
     noCartridge: true,
     name: "3",
     colors: { background: "#13A538", text: "#FFFFFF" },
@@ -300,7 +295,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:04",
-    mapOnly: true,
     noCartridge: true,
     name: "4",
     colors: { background: "#F7A823", text: "#FFFFFF" },
@@ -339,7 +333,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:05",
-    mapOnly: true,
     noCartridge: true,
     name: "5",
     colors: { background: "#E6007E", text: "#FFFFFF" },
@@ -378,20 +371,10 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:06",
-    mapOnly: true,
     noCartridge: true,
     name: "6",
     colors: { background: "#FFE500", text: "#000000" },
     destinations: [
-      {
-        id: ["Place Jenner"],
-        name: "Place Jenner",
-        city: "LE HAVRE",
-        girouette: {
-          routeNumber: { font: "1513B3E1", backgroundColor: "#FFE500", textColor: "#000000", text: "6" },
-          pages: [{ font: "1508SUPX", text: "PLACE JENNER" }],
-        },
-      },
       {
         id: ["O. Niemeyer"],
         name: "Oscar Niemeyer",
@@ -399,6 +382,16 @@ const liaRoutes: Route[] = [
         girouette: {
           routeNumber: { font: "1513B3E1", backgroundColor: "#FFE500", textColor: "#000000", text: "6" },
           pages: [{ font: "1508SUPX", text: "OSCAR NIEMEYER" }],
+        },
+      },
+      {
+        id: ["Place Jenner"],
+        autoHide: true,
+        name: "Place Jenner",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: { font: "1513B3E1", backgroundColor: "#FFE500", textColor: "#000000", text: "6" },
+          pages: [{ font: "1508SUPX", text: "PLACE JENNER" }],
         },
       },
       {
@@ -414,7 +407,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:07",
-    mapOnly: true,
     noCartridge: true,
     name: "7",
     colors: { background: "#0069B4", text: "#FFFFFF" },
@@ -453,7 +445,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:08",
-    mapOnly: true,
     noCartridge: true,
     name: "8",
     colors: { background: "#E67900", text: "#FFFFFF" },
@@ -492,7 +483,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:09",
-    mapOnly: true,
     noCartridge: true,
     name: "9",
     colors: { background: "#BEBD00", text: "#000000" },
@@ -531,7 +521,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:10",
-    mapOnly: true,
     noCartridge: true,
     name: "10",
     colors: { background: "#95C11F", text: "#000000" },
@@ -552,6 +541,22 @@ const liaRoutes: Route[] = [
         },
       },
       {
+        id: ["Grand Hameau"],
+        autoHide: true,
+        name: "Grand Hameau",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#95C11F",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "10",
+          },
+          pages: [{ font: "1507SUPX", text: "LE HAVRE GD HAMEAU" }],
+        },
+      },
+      {
         id: ["Octeville S/ Mer Littoral"],
         name: "Mer Littoral",
         city: "OCTEVILLE-SUR-MER",
@@ -566,26 +571,10 @@ const liaRoutes: Route[] = [
           pages: [{ font: "1407SUPX", text: "OCTEVILLE LITTORAL" }],
         },
       },
-      {
-        id: ["Grand Hameau"],
-        name: "Grand Hameau",
-        city: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1513B3E1",
-            backgroundColor: "#95C11F",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            text: "10",
-          },
-          pages: [{ font: "1507SUPX", text: "LE HAVRE GD HAMEAU" }],
-        },
-      },
     ],
   },
   {
     id: "LIA:11",
-    mapOnly: true,
     noCartridge: true,
     name: "11",
     colors: { background: "#E63312", text: "#FFFFFF" },
@@ -607,7 +596,8 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Etainhus - St Romain"],
-        name: "Etainhus - St Romain",
+        name: "Gare d'Étainhus - Saint-Romain",
+        city: "ÉTAINHUS",
         girouette: {
           routeNumber: {
             font: "1513B3E1",
@@ -623,25 +613,10 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:12",
-    mapOnly: true,
     noCartridge: true,
     name: "12",
     colors: { background: "#FFE500", text: "#000000" },
     destinations: [
-      {
-        id: ["Etainhus - St Romain"],
-        name: "Etainhus - St Romain",
-        girouette: {
-          routeNumber: {
-            font: "1513B3E1",
-            backgroundColor: "#FFE500",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            text: "12",
-          },
-          pages: [{ font: "1508SUPX", text: "Etainhus - St Romain" }],
-        },
-      },
       {
         id: ["Le Havre Gares"],
         name: "Gares",
@@ -659,8 +634,9 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["La Breque"],
+        autoHide: true,
         name: "La Brèque",
-        city: "LE HAVRE ?",
+        city: "HARFLEUR",
         girouette: {
           routeNumber: {
             font: "1513B3E1",
@@ -670,6 +646,22 @@ const liaRoutes: Route[] = [
             text: "12",
           },
           pages: [{ font: "1508SUPX", text: "LA BREQUE" }],
+        },
+      },
+      {
+        id: ["Etainhus - St Romain"],
+        autoHide: true,
+        name: "Gare d'Étainhus - Saint-Romain",
+        city: "ÉTAINHUS",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#FFE500",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "12",
+          },
+          pages: [{ font: "1508SUPX", text: "ETAINHUS ST-ROMAIN" }],
         },
       },
       {
@@ -690,7 +682,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:13",
-    mapOnly: true,
     noCartridge: true,
     name: "13",
     colors: { background: "#FAC075", text: "#000000" },
@@ -712,6 +703,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Grand Hameau"],
+        autoHide: true,
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -744,7 +736,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:14",
-    mapOnly: true,
     noCartridge: true,
     name: "14",
     colors: { background: "#009640", text: "#FFFFFF" },
@@ -783,7 +774,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:15",
-    mapOnly: true,
     noCartridge: true,
     name: "15",
     colors: { background: "#DB679B", text: "#FFFFFF" },
@@ -821,7 +811,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:16",
-    mapOnly: true,
     noCartridge: true,
     name: "16",
     colors: { background: "#5B358C", text: "#FFFFFF" },
@@ -860,7 +849,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:17",
-    mapOnly: true,
     noCartridge: true,
     name: "17",
     colors: { background: "#83D0F5", text: "#000000" },
@@ -899,7 +887,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:18",
-    mapOnly: true,
     noCartridge: true,
     name: "18",
     colors: { background: "#56543C", text: "#FFFFFF" },
@@ -938,7 +925,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:19",
-    mapOnly: true,
     noCartridge: true,
     name: "19",
     colors: { background: "#82368C", text: "#FFFFFF" },
@@ -977,7 +963,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:21",
-    mapOnly: true,
     noCartridge: true,
     name: "21",
     colors: { background: "#4E55A1", text: "#FFFFFF" },
@@ -1016,7 +1001,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:22",
-    mapOnly: true,
     noCartridge: true,
     name: "22",
     colors: { background: "#104C77", text: "#FFFFFF" },
@@ -1055,13 +1039,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:30",
-    mapOnly: true,
     noCartridge: true,
     name: "30",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Funiculaire / C.Monet / St Jo.", "Funiculaire / C. Monet / St Jo."],
+        autoHide: true,
         name: "Lycée Claude Monet / Institution Saint-Joseph",
         girouette: {
           routeNumber: {
@@ -1081,13 +1065,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:31",
-    mapOnly: true,
     noCartridge: true,
     name: "31",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Funiculaire / C.Monet / St Jo."],
+        autoHide: true,
         name: "Lycée Claude Monet / Institution Saint-Joseph",
         girouette: {
           routeNumber: {
@@ -1105,6 +1089,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Bigne a Fosse"],
+        autoHide: true,
         name: "Bigne à Fosse",
         girouette: {
           routeNumber: {
@@ -1121,13 +1106,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:40",
-    mapOnly: true,
     noCartridge: true,
     name: "40",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["J. d'Arc"],
+        autoHide: true,
         name: "Lycée Jeanne d'Arc",
         girouette: {
           routeNumber: {
@@ -1144,13 +1129,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:41",
-    mapOnly: true,
     noCartridge: true,
     name: "41",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Ignauval"],
+        autoHide: true,
         name: "Ignauval",
         city: "SAINTE-ADRESSE",
         girouette: {
@@ -1166,6 +1151,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["J. d'Arc"],
+        autoHide: true,
         name: "Lycée Jeanne d'Arc",
         girouette: {
           routeNumber: {
@@ -1182,13 +1168,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:50",
-    mapOnly: true,
     noCartridge: true,
     name: "50",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Schuman"],
+        autoHide: true,
         name: "Lycée Schuman",
         girouette: {
           routeNumber: {
@@ -1205,13 +1191,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:60",
-    mapOnly: true,
     noCartridge: true,
     name: "60",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["La Breque"],
+        autoHide: true,
         name: "La Brèque",
         city: "HARFLEUR",
         girouette: {
@@ -1227,6 +1213,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["J. Prevost"],
+        autoHide: true,
         name: "Lycée Jean Prévost",
         girouette: {
           routeNumber: {
@@ -1243,13 +1230,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:70",
-    mapOnly: true,
     noCartridge: true,
     name: "70",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["G. Courbet"],
+        autoHide: true,
         name: "Collège G. Courbet",
         girouette: {
           routeNumber: {
@@ -1264,6 +1251,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Pissotiere à Madame"],
+        autoHide: true,
         name: "Pissotiere à Madame",
         girouette: {
           routeNumber: {
@@ -1280,13 +1268,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:71",
-    mapOnly: true,
     noCartridge: true,
     name: "71",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["G. Courbet"],
+        autoHide: true,
         name: "Collège G. Courbet",
         girouette: {
           routeNumber: {
@@ -1301,6 +1289,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["F. Engels"],
+        autoHide: true,
         name: "F. Engels",
         girouette: {
           routeNumber: {
@@ -1317,13 +1306,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:80",
-    mapOnly: true,
     noCartridge: true,
     name: "80",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["College J. Monod"],
+        autoHide: true,
         name: "Collège Jacques Monod",
         girouette: {
           routeNumber: {
@@ -1338,6 +1327,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["A.Cazavan"],
+        autoHide: true,
         name: "A. Cazavan",
         girouette: {
           routeNumber: {
@@ -1354,13 +1344,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:90",
-    mapOnly: true,
     noCartridge: true,
     name: "90",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["P. Doumer / E.S.A.T."],
+        autoHide: true,
         name: "E.S.A.T.",
         girouette: {
           routeNumber: {
@@ -1375,6 +1365,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Graville"],
+        autoHide: true,
         name: "Graville",
         girouette: {
           routeNumber: {
@@ -1391,13 +1382,13 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:91",
-    mapOnly: true,
     noCartridge: true,
     name: "91",
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Montivilliers C.F.A."],
+        autoHide: true,
         name: "C.F.A.",
         city: "MONTIVILLIERS",
         girouette: {
@@ -1413,6 +1404,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Montivilliers Gare"],
+        autoHide: true,
         name: "Gare",
         city: "MONTIVILLIERS",
         girouette: {
@@ -1430,4 +1422,12 @@ const liaRoutes: Route[] = [
   },
 ];
 
-export default liaRoutes;
+const network: Network = {
+  slug: "lia",
+  name: "LiA – Le Havre Seine Métropole",
+  routes: liaRoutes,
+  color: "#a99887",
+  textColor: "#ffffff",
+};
+
+export default network;

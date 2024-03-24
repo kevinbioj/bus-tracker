@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Map2, Table } from "tabler-icons-react";
 
+import NetworkSelector from "~/components/network-selector";
 import Preferences from "~/components/preferences/preferences";
 
 export default function Header() {
@@ -12,6 +13,7 @@ export default function Header() {
   return (
     <>
       <header className="bg-brand grid grid-cols-[4rem_auto_4rem] py-1 text-white" id="header">
+        <NetworkSelector />
         <h1 className="col-start-2 font-[Achemine] font-bold select-none text-3xl text-center hover:cursor-default">
           Bus Tracker
         </h1>

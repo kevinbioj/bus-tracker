@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const sngoRoutes: Route[] = [
   {
     id: "SNGO:21",
-    mapOnly: true,
     name: "1",
     colors: { background: "#e30613", text: "#FFFFFF" },
     destinations: [
@@ -18,11 +17,23 @@ const sngoRoutes: Route[] = [
       },
       {
         id: ["Sente du Bon Dieu"],
+        autoHide: true,
         name: "Sente du Bon Dieu",
         city: "VERNON",
         girouette: {
           routeNumber: { backgroundColor: "#e30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: "VERNON" }, { font: "1508C2E1", text: "SENTE DU BON DIEU" }],
+        },
+      },
+
+      {
+        id: ["VERNON Auges"],
+        autoHide: true,
+        name: "Auges",
+        city: "VERNON",
+        girouette: {
+          routeNumber: { backgroundColor: "#e30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
+          pages: [{ text: "VERNON" }, { text: "AUGES" }],
         },
       },
       {
@@ -34,20 +45,10 @@ const sngoRoutes: Route[] = [
           pages: [{ text: "VERNON" }, { text: "SAINT-ADJUTOR" }],
         },
       },
-      {
-        id: ["VERNON Auges"],
-        name: "Auges",
-        city: "VERNON",
-        girouette: {
-          routeNumber: { backgroundColor: "#e30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: "VERNON" }, { text: "AUGES" }],
-        },
-      },
     ],
   },
   {
     id: "SNGO:22",
-    mapOnly: true,
     name: "2",
     colors: { background: "#76B82A", text: "#FFFFFF" },
     destinations: [
@@ -62,6 +63,7 @@ const sngoRoutes: Route[] = [
       },
       {
         id: ["Lycée Dumézil"],
+        autoHide: true,
         name: "Lycée Dumézil",
         city: "VERNON",
         girouette: {
@@ -71,6 +73,7 @@ const sngoRoutes: Route[] = [
       },
       {
         id: ["Blanchères"],
+        autoHide: true,
         name: "Blanchères",
         city: "VERNON",
         girouette: {
@@ -91,7 +94,6 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:23",
-    mapOnly: true,
     name: "3",
     colors: { background: "#FFDD00", text: "#000000" },
     destinations: [
@@ -106,6 +108,7 @@ const sngoRoutes: Route[] = [
       },
       {
         id: ["Clermont"],
+        autoHide: true,
         name: "Clermont",
         city: "VERNON",
         girouette: {
@@ -126,7 +129,6 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:24",
-    mapOnly: true,
     name: "4",
     colors: { background: "#00B1EB", text: "#FFFFFF" },
     destinations: [
@@ -152,7 +154,6 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:25",
-    mapOnly: true,
     name: "5",
     colors: { background: "#164194", text: "#FFFFFF" },
     destinations: [
@@ -178,7 +179,6 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:26",
-    mapOnly: true,
     name: "6",
     colors: { background: "#EA619F", text: "#FFFFFF" },
     destinations: [
@@ -204,7 +204,6 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:38",
-    mapOnly: true,
     name: "8A",
     colors: { background: "#8C663A", text: "#FFFFFF" },
     destinations: [
@@ -219,6 +218,7 @@ const sngoRoutes: Route[] = [
       },
       {
         id: ["Radeval"],
+        autoHide: true,
         name: "Radeval",
         girouette: {
           routeNumber: { backgroundColor: "#8C663A", textColor: "#FFFFFF", outlineColor: "#000000", text: "8A" },
@@ -227,6 +227,7 @@ const sngoRoutes: Route[] = [
       },
       {
         id: ["Gare Routière"],
+        autoHide: true,
         name: "Gare Routière",
         city: "LES ANDELYS",
         girouette: {
@@ -247,7 +248,6 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:48",
-    mapOnly: true,
     name: "8B",
     colors: { background: "#CDCC0B", text: "#FFFFFF" },
     destinations: [
@@ -261,16 +261,8 @@ const sngoRoutes: Route[] = [
         },
       },
       {
-        id: ["Gare Routière"],
-        name: "Gare Routière",
-        city: "LES ANDELYS",
-        girouette: {
-          routeNumber: { backgroundColor: "#CDCC0B", textColor: "#FFFFFF", outlineColor: "#000000", text: "8B" },
-          pages: [{ text: "LES ANDELYS" }, { text: "GARE ROUTIERE" }],
-        },
-      },
-      {
         id: ["Longuemare"],
+        autoHide: true,
         name: "Longuemare",
         city: "LES ANDELYS",
         girouette: {
@@ -280,6 +272,7 @@ const sngoRoutes: Route[] = [
       },
       {
         id: ["Lycée Jean Moulin"],
+        autoHide: true,
         name: "Lycée Jean Moulin",
         city: "LES ANDELYS",
         girouette: {
@@ -289,6 +282,7 @@ const sngoRoutes: Route[] = [
       },
       {
         id: ["ST-JEAN DE FRENELLES Rond Point"],
+        autoHide: true,
         name: "Rond Point",
         city: "Saint-Jean de Frenelles",
         girouette: {
@@ -296,11 +290,19 @@ const sngoRoutes: Route[] = [
           pages: [{ text: ["SAINT-JEAN", "DE FRENELLES"] }, { text: "ROND POINT" }],
         },
       },
+      {
+        id: ["Gare Routière"],
+        name: "Gare Routière",
+        city: "LES ANDELYS",
+        girouette: {
+          routeNumber: { backgroundColor: "#CDCC0B", textColor: "#FFFFFF", outlineColor: "#000000", text: "8B" },
+          pages: [{ text: "LES ANDELYS" }, { text: "GARE ROUTIERE" }],
+        },
+      },
     ],
   },
   {
     id: "SNGO:29",
-    mapOnly: true,
     name: "9",
     colors: { background: "#7F5DA4", text: "#FFFFFF" },
     destinations: [
@@ -326,19 +328,9 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:10",
-    mapOnly: true,
     name: "10",
     colors: { background: "#EF7D00", text: "#FFFFFF" },
     destinations: [
-      {
-        id: ["VERNON Lycée Dumézil"],
-        name: "Lycée Dumézil",
-        city: "VERNON",
-        girouette: {
-          routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
-          pages: [{ text: "VERNON" }, { text: "LYCEE DUMEZIL" }],
-        },
-      },
       {
         id: ["VERNON République"],
         name: "République",
@@ -346,6 +338,16 @@ const sngoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
           pages: [{ text: "VERNON" }, { text: "REPUBLIQUE" }],
+        },
+      },
+      {
+        id: ["VERNON Lycée Dumézil"],
+        autoHide: true,
+        name: "Lycée Dumézil",
+        city: "VERNON",
+        girouette: {
+          routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
+          pages: [{ text: "VERNON" }, { text: "LYCEE DUMEZIL" }],
         },
       },
       {
@@ -361,12 +363,12 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:31",
-    mapOnly: true,
     name: "11",
     colors: { background: "#252B5A", text: "#FFFFFF" },
     destinations: [
       {
         id: ["DOUAINS Normandie Parc Nord"],
+        autoHide: true,
         name: "Normandie Parc Nord",
         city: "DOUAINS",
         girouette: {
@@ -396,4 +398,12 @@ const sngoRoutes: Route[] = [
   },
 ];
 
-export default sngoRoutes;
+const network: Network = {
+  slug: "sngo",
+  name: "SNgo! – Seine Normandie Agglomération",
+  routes: sngoRoutes,
+  color: "#17a2b8",
+  textColor: "#ffffff",
+};
+
+export default network;

@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import Image from "next/image";
 
 import { VehicleActivityDto } from "~/@types";
-import routes, { unknownRoute } from "~/data/routes";
+import { routes, unknownRoute } from "~/data/dataset";
 
 export function ActivityCard({ data }: { data: VehicleActivityDto }) {
   const route = routes.find((r) => r.routeIds?.includes(data.routeId) ?? r.id === data.routeId) ?? unknownRoute;

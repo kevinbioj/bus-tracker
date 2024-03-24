@@ -1,6 +1,14 @@
 //- OPERATORS
 import { GirouetteData } from "~/components/interactive-map/girouette";
 
+export type Network = {
+  slug: string;
+  name: string;
+  routes: Route[];
+  color?: string;
+  textColor?: string;
+};
+
 export type Operator = {
   id: string;
   name: string;

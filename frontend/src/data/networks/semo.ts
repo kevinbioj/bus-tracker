@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const semoRoutes: Route[] = [
   {
     id: "SEMO:C1",
-    mapOnly: true,
     noCartridge: true,
     name: "C1",
     colors: { background: "#E85117", text: "#FFFFFF" },
@@ -55,7 +54,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:E1",
-    mapOnly: true,
     noCartridge: true,
     name: "E1",
     colors: { background: "#F5C626", text: "#000000" },
@@ -127,7 +125,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:2",
-    mapOnly: true,
     noCartridge: true,
     name: "2",
     colors: { background: "#F39207", text: "#FFFFFF" },
@@ -191,7 +188,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:3a",
-    mapOnly: true,
     noCartridge: true,
     name: "3a",
     colors: { background: "#A1DAF8", text: "#000000" },
@@ -215,7 +211,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:3b",
-    mapOnly: true,
     noCartridge: true,
     name: "3b",
     colors: { background: "#A1DAF8", text: "#000000" },
@@ -239,7 +234,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:4a",
-    mapOnly: true,
     noCartridge: true,
     name: "4a",
     colors: { background: "#954B97", text: "#FFFFFF" },
@@ -247,6 +241,7 @@ const semoRoutes: Route[] = [
       {
         id: ["4a Circulaire Val-de-Reuil Sens Horaire"],
         name: "Sens horaire",
+        city: "VAL-DE-REUIL",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#954B97", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
@@ -257,7 +252,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:4b",
-    mapOnly: true,
     noCartridge: true,
     name: "4b",
     colors: { background: "#954B97", text: "#FFFFFF" },
@@ -265,6 +259,7 @@ const semoRoutes: Route[] = [
       {
         id: ["4a Circulaire Val-de-Reuil Sens Horaire"],
         name: "Sens anti-horaire",
+        city: "VAL-DE-REUIL",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#954B97", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
@@ -275,7 +270,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:5",
-    mapOnly: true,
     noCartridge: true,
     name: "5",
     colors: { background: "#63BBE4", text: "#FFFFFF" },
@@ -331,7 +325,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:6a",
-    mapOnly: true,
     noCartridge: true,
     name: "6a",
     colors: { background: "#83BC2A", text: "#000000" },
@@ -374,7 +367,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:6b",
-    mapOnly: true,
     noCartridge: true,
     name: "6b",
     colors: { background: "#83BC2A", text: "#000000" },
@@ -417,7 +409,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:7a",
-    mapOnly: true,
     noCartridge: true,
     name: "7a",
     colors: { background: "#A76F23", text: "#FFFFFF" },
@@ -436,7 +427,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:7b",
-    mapOnly: true,
     noCartridge: true,
     name: "7b",
     colors: { background: "#A76F23", text: "#FFFFFF" },
@@ -455,7 +445,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:8",
-    mapOnly: true,
     noCartridge: true,
     name: "8",
     colors: { background: "#114184", text: "#FFFFFF" },
@@ -484,7 +473,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:9",
-    mapOnly: true,
     noCartridge: true,
     name: "9",
     colors: { background: "#277632", text: "#FFFFFF" },
@@ -513,7 +501,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:10",
-    mapOnly: true,
     noCartridge: true,
     name: "10",
     colors: { background: "#EA4E6E", text: "#" },
@@ -542,7 +529,6 @@ const semoRoutes: Route[] = [
   },
   {
     id: "SEMO:D1",
-    mapOnly: true,
     noCartridge: true,
     name: "D1",
     colors: { background: "#848484", text: "#FFFFFF" },
@@ -572,4 +558,12 @@ const semoRoutes: Route[] = [
   },
 ];
 
-export default semoRoutes;
+const network: Network = {
+  slug: "semo",
+  name: "Semo – Agglo Seine-Eure",
+  routes: semoRoutes,
+  color: "#007bff",
+  textColor: "#ffffff",
+};
+
+export default network;

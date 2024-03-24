@@ -1,9 +1,8 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const hobusRoutes: Route[] = [
   {
     id: "HOBUS:zenbus:Line:363100001:LOC",
-    mapOnly: true,
     noCartridge: true,
     name: "A",
     colors: { background: "#71BF44", text: "#FFFFFF" },
@@ -11,32 +10,35 @@ const hobusRoutes: Route[] = [
       {
         id: ["CHAMPLAIN"],
         name: "Champlain",
+        city: "HONFLEUR",
         girouette: {
           routeNumber: { backgroundColor: "#71BF44", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
           pages: [{ text: "CHAMPLAIN" }],
         },
       },
       {
-        id: ["LA CLAIRE"],
-        name: "La Claire",
-        girouette: {
-          routeNumber: { backgroundColor: "#71BF44", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
-          pages: [{ text: "LA CLAIRE" }],
-        },
-      },
-      {
         id: ["GARE"],
+        autoHide: true,
         name: "Gare Routière",
+        city: "HONFLEUR",
         girouette: {
           routeNumber: { backgroundColor: "#71BF44", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
           pages: [{ text: "GARE ROUTIERE" }],
+        },
+      },
+      {
+        id: ["LA CLAIRE"],
+        name: "La Claire",
+        city: "HONFLEUR",
+        girouette: {
+          routeNumber: { backgroundColor: "#71BF44", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
+          pages: [{ text: "LA CLAIRE" }],
         },
       },
     ],
   },
   {
     id: "HOBUS:zenbus:Line:401040001:LOC",
-    mapOnly: true,
     noCartridge: true,
     name: "B",
     colors: { background: "#00A0E3", text: "#FFFFFF" },
@@ -44,6 +46,7 @@ const hobusRoutes: Route[] = [
       {
         id: ["EIDER"],
         name: "Eider",
+        city: "HONFLEUR",
         girouette: {
           routeNumber: { backgroundColor: "#00A0E3", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
           pages: [{ text: "EIDER" }],
@@ -51,7 +54,9 @@ const hobusRoutes: Route[] = [
       },
       {
         id: ["PHARE NATUROSPACE"],
+        autoHide: true,
         name: "Phare – Naturospace",
+        city: "HONFLEUR",
         girouette: {
           routeNumber: { backgroundColor: "#00A0E3", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
           pages: [{ font: "1508C2E1", text: "PHARE-NATUROSPACE" }],
@@ -60,6 +65,7 @@ const hobusRoutes: Route[] = [
       {
         id: ["GARE"],
         name: "Gare Routière",
+        city: "HONFLEUR",
         girouette: {
           routeNumber: { backgroundColor: "#00A0E3", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
           pages: [{ text: "GARE ROUTIERE" }],
@@ -69,4 +75,12 @@ const hobusRoutes: Route[] = [
   },
 ];
 
-export default hobusRoutes;
+const network: Network = {
+  slug: "hobus",
+  name: "Hobus – Pays de Honfleur-Beuzeville",
+  routes: hobusRoutes,
+  color: "#d15946",
+  textColor: "#ffffff",
+};
+
+export default network;

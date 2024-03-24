@@ -1,4 +1,4 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const nevaRoutes: Route[] = [
   {
@@ -448,4 +448,12 @@ const nevaRoutes: Route[] = [
   },
 ];
 
-export default nevaRoutes;
+const network: Network = {
+  slug: "neva",
+  name: "Néva – Granville Terre & Mer",
+  routes: nevaRoutes,
+  color: "#b1c633",
+  textColor: "#000000",
+};
+
+export default network;

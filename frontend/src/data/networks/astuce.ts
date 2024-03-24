@@ -1,4 +1,4 @@
-import { Route } from "~/@types";
+import { Network, Route } from "~/@types";
 
 const astuceRoutes: Route[] = [
   {
@@ -4088,4 +4088,12 @@ const astuceRoutes: Route[] = [
   },
 ];
 
-export default astuceRoutes;
+const network: Network = {
+  slug: "reseau-astuce",
+  name: "Réseau Astuce – Métropole Rouen Normandie",
+  routes: astuceRoutes,
+  color: "#B0105F",
+  textColor: "#ffffff",
+};
+
+export default network;
