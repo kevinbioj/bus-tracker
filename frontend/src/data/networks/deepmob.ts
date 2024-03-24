@@ -9,7 +9,9 @@ const deepMobRoutes: Route[] = [
       {
         id: ["Clinique Mégival"],
         name: "Clinique Mégival",
+        city: "SAINT-AUBIN-SUR-SCIE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E2001A", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ font: "1510N2E1", text: "CLINIQUE MEGIVAL" }],
         },
@@ -17,7 +19,9 @@ const deepMobRoutes: Route[] = [
       {
         id: ["Caravelle"],
         name: "Caravelle",
+        city: "DIEPPE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E2001A", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: "CARAVELLE" }],
         },
@@ -32,7 +36,9 @@ const deepMobRoutes: Route[] = [
       {
         id: ["Beau Soleil"],
         name: "Beau Soleil",
+        city: "DIEPPE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#0077A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: "BEAU SOLEIL" }],
         },
@@ -40,7 +46,9 @@ const deepMobRoutes: Route[] = [
       {
         id: ["Val Druel"],
         name: "Val Druel",
+        city: "DIEPPE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#0077A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: "VAL DRUEL" }],
         },
@@ -55,7 +63,9 @@ const deepMobRoutes: Route[] = [
       {
         id: ["Edf-Gdf"],
         name: "EDF - GDF",
+        city: "DIEPPE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#7AB51D", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
           pages: [{ text: "EDF - GDF" }],
         },
@@ -63,7 +73,9 @@ const deepMobRoutes: Route[] = [
       {
         id: ["Pont Ango"],
         name: "Pont Ango",
+        city: "DIEPPE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#7AB51D", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
           pages: [{ text: "PONT ANGO" }],
         },
@@ -77,10 +89,12 @@ const deepMobRoutes: Route[] = [
     destinations: [
       {
         id: ["Gare SNCF"],
-        name: "Gare SNCF",
+        name: "Navette centre-ville",
+        city: "DIEPPE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#DEDC1E", textColor: "#000000", outlineColor: "#FFFFFF", text: "N" },
-          pages: [{ text: "GARE SNCF" }],
+          pages: [{ text: ["NAVETTE CENTRE-VILLE", "GARE SNCF"] }],
         },
       },
     ],
@@ -93,7 +107,9 @@ const deepMobRoutes: Route[] = [
       {
         id: ["Beau Soleil"],
         name: "Beau Soleil",
+        city: "DIEPPE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#87856D", textColor: "#FFFFFF", outlineColor: "#000000", text: "14" },
           pages: [{ text: "BEAU SOLEIL" }],
         },
@@ -101,7 +117,9 @@ const deepMobRoutes: Route[] = [
       {
         id: ["Val Druel"],
         name: "Val Druel",
+        city: "DIEPPE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#87856D", textColor: "#FFFFFF", outlineColor: "#000000", text: "14" },
           pages: [{ text: "VAL DRUEL" }],
         },
@@ -119,6 +137,7 @@ const deepMobRoutes: Route[] = [
         autoHide: true,
         name: "Collège Braque",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#00B1D5",
@@ -142,6 +161,7 @@ const deepMobRoutes: Route[] = [
         autoHide: true,
         name: "Thibermont",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#00B1D5",
@@ -165,6 +185,7 @@ const deepMobRoutes: Route[] = [
         autoHide: true,
         name: "Lycée du Golf",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#00B1D5",
