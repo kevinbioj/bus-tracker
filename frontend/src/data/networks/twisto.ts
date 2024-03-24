@@ -2,6 +2,23 @@ import { Network, Route } from "~/@types";
 
 const twistoRoutes: Route[] = [
   {
+    id: "TWISTO:NUIT",
+    name: "Noctibus",
+    colors: { background: "#011337", text: "#FFFF99" },
+    destinations: [
+      {
+        id: ["Hérouville-Saint-Clair Portes de la Mer", "Noctibus"],
+        autoHide: true,
+        name: "Portes de la Mer",
+        city: "HÉROUVILLE-SAINT-CLAIR",
+        girouette: {
+          routeNumber: { backgroundColor: "#011337", textColor: "#FFFF99", outlineColor: "#000000", text: "€" },
+          pages: [{ text: "NOCTIBUS" }],
+        },
+      },
+    ],
+  },
+  {
     id: "TWISTO:T1",
     name: "T1",
     colors: { background: "#23a638", text: "#ffffff" },
@@ -88,7 +105,7 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:NVCV",
     name: "NVCV",
-    colors: { background: "#e4051f", text: "#ffffff" },
+    colors: { background: "#e84133", text: "#ffffff" },
     destinations: [
       {
         id: ["Caen Palais des Sports"],
@@ -97,7 +114,7 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: {
             font: "1508C2E1",
-            backgroundColor: "#e4051f",
+            backgroundColor: "#e84133",
             textColor: "#ffffff",
             outlineColor: "#000000",
             text: "NAV",
@@ -226,6 +243,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Hérouville-Saint-Clair Lebisey"],
+        autoHide: true,
         name: "Lebisey",
         city: "HÉROUVILLE SAINT-CLAIR",
         girouette: {
@@ -282,6 +300,15 @@ const twistoRoutes: Route[] = [
     colors: { background: "#8d5e2a", text: "#ffffff" },
     destinations: [
       {
+        id: ["Cambes-en-Plaine Le Parc"],
+        name: "Le Parc",
+        city: "CAMBES-EN-PLAINE",
+        girouette: {
+          routeNumber: { backgroundColor: "#8d5e2a", textColor: "#ffffff", outlineColor: "#000000", text: "7" },
+          pages: [{ font: "1510N2E1", text: "CAMBES LE PARC" }],
+        },
+      },
+      {
         id: ["Biéville-Beuville ZA au Village"],
         name: "Z.A. au Village",
         city: "BIÉVILLE-BEUVILLE",
@@ -297,15 +324,6 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#8d5e2a", textColor: "#ffffff", outlineColor: "#000000", text: "7" },
           pages: [{ text: "CAEN THEATRE" }],
-        },
-      },
-      {
-        id: ["Cambes-en-Plaine Le Parc"],
-        name: "Le Parc",
-        city: "CAMBES-EN-PLAINE",
-        girouette: {
-          routeNumber: { backgroundColor: "#8d5e2a", textColor: "#ffffff", outlineColor: "#000000", text: "7" },
-          pages: [{ font: "1510N2E1", text: "CAMBES LE PARC" }],
         },
       },
     ],
@@ -366,7 +384,17 @@ const twistoRoutes: Route[] = [
     colors: { background: "#b0368c", text: "#ffffff" },
     destinations: [
       {
+        id: ["Blainville-sur-Orne Blainville Parc"],
+        name: "Parc",
+        city: "BLAINVILLE-SUR-ORNE",
+        girouette: {
+          routeNumber: { backgroundColor: "#b0368c", textColor: "#ffffff", outlineColor: "#000000", text: "10" },
+          pages: [{ font: "1510N2E1", text: "BLAINVILLE PARC" }],
+        },
+      },
+      {
         id: ["Blainville-sur-Orne Terres d'Avenir"],
+        autoHide: true,
         name: "Terres d'Avenir",
         city: "BLAINVILLE-SUR-ORNE",
         girouette: {
@@ -375,15 +403,6 @@ const twistoRoutes: Route[] = [
             { font: "1508C2E1", text: "BLAINVILLE-SUR-ORNE" },
             { font: "1510N2E1", text: "TERRES D'AVENIR" },
           ],
-        },
-      },
-      {
-        id: ["Blainville-sur-Orne Blainville Parc"],
-        name: "Parc",
-        city: "BLAINVILLE-SUR-ORNE",
-        girouette: {
-          routeNumber: { backgroundColor: "#b0368c", textColor: "#ffffff", outlineColor: "#000000", text: "10" },
-          pages: [{ font: "1510N2E1", text: "BLAINVILLE PARC" }],
         },
       },
       {
@@ -437,21 +456,22 @@ const twistoRoutes: Route[] = [
         },
       },
       {
+        id: ["Caen Hôtel de Ville Quai 1"],
+        autoHide: true,
+        name: "Hôtel de Ville",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#ea5b0c", textColor: "#ffffff", outlineColor: "#000000", text: "11" },
+          pages: [{ font: "1508C2E1", text: "CAEN HOTEL DE VILLE" }],
+        },
+      },
+      {
         id: ["Bretteville-sur-Odon BRETTEVILLE Koenig"],
         name: "Koenig",
         city: "BRETTEVILLE-SUR-ODON",
         girouette: {
           routeNumber: { backgroundColor: "#ea5b0c", textColor: "#ffffff", outlineColor: "#000000", text: "11" },
           pages: [{ font: "1508C2E1", text: "BRETTEVILLE KOENIG" }],
-        },
-      },
-      {
-        id: ["Caen Hôtel de Ville Quai 1"],
-        name: "Hôtel de Ville",
-        city: "CAEN",
-        girouette: {
-          routeNumber: { backgroundColor: "#ea5b0c", textColor: "#ffffff", outlineColor: "#000000", text: "11" },
-          pages: [{ font: "1508C2E1", text: "CAEN HOTEL DE VILLE" }],
         },
       },
     ],
@@ -472,10 +492,11 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Cuverville Champ Picot"],
-        name: "CUVERVILLE Champ Picot",
+        name: "Champ Picot",
+        city: "CUVERVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#f39869", textColor: "#000000", outlineColor: "#FFFFFF", text: "11" },
-          pages: [{ font: "1508C2E1", text: "CUVERVILLE EXPRESS" }],
+          pages: [{ font: "1508C2E1", text: "CUVERVILLE  EXPRESS" }],
         },
       },
     ],
@@ -486,25 +507,17 @@ const twistoRoutes: Route[] = [
     colors: { background: "#009d99", text: "#ffffff" },
     destinations: [
       {
-        id: ["Caen Gare SNCF"],
-        name: "Gare SNCF",
-        city: "CAEN",
+        id: ["Lion-sur-Mer Lion Plage"],
+        name: "Lion Plage",
+        city: "LION-SUR-MER",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1510N2E1", text: "CAEN GARE SNCF" }],
-        },
-      },
-      {
-        id: ["Caen Calvaire Saint-Pierre"],
-        name: "Calvaire Saint-Pierre",
-        city: "CAEN",
-        girouette: {
-          routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN CALVAIRE ST-PIERRE" }],
+          pages: [{ text: "LION PLAGE" }],
         },
       },
       {
         id: ["Lion-sur-Mer Haut-Lion"],
+        autoHide: true,
         name: "Haut-Lion",
         city: "LION-SUR-MER",
         girouette: {
@@ -513,7 +526,48 @@ const twistoRoutes: Route[] = [
         },
       },
       {
+        id: ["Hermanville-sur-Mer Isaville"],
+        autoHide: true,
+        name: "Isaville",
+        city: "HERMANVILLE-SUR-MER",
+        girouette: {
+          routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
+          pages: [{ font: "1508C2E1", text: "HERMANVILLE ISAVILLE" }],
+        },
+      },
+      {
+        id: ["Ouistreham RIVA Sacré Coeur"],
+        autoHide: true,
+        name: "Sacré Coeur",
+        city: "OUISTREHAM",
+        girouette: {
+          routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM SACRE COEUR" }],
+        },
+      },
+      {
+        id: ["Ouistreham RIVA CHARMETTES"],
+        autoHide: true,
+        name: "Charmettes",
+        city: "OUISTREHAM",
+        girouette: {
+          routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM CHARMETTES" }],
+        },
+      },
+      {
+        id: ["Colleville Becquet"],
+        autoHide: true,
+        name: "Becquet",
+        city: "COLLEVILLE",
+        girouette: {
+          routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
+          pages: [{ font: "1508C2E1", text: "COLLEVILLE BECQUET" }],
+        },
+      },
+      {
         id: ["Hérouville-Saint-Clair Allende"],
+        autoHide: true,
         name: "Allende",
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
@@ -522,24 +576,8 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Caen Croix Guérin"],
-        name: "Croix Guérin",
-        city: "CAEN",
-        girouette: {
-          routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CAEN CROIX GUERIN" }],
-        },
-      },
-      {
-        id: ["OUISTREHAM Sacré Coeur"],
-        name: "OUISTREHAM Sacré Coeur",
-        girouette: {
-          routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "OUISTREHAM Sacré Coeur" }],
-        },
-      },
-      {
         id: ["Caen Cité U Lebisey"],
+        autoHide: true,
         name: "Cité U Lebisey",
         city: "CAEN",
         girouette: {
@@ -548,31 +586,28 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Hermanville-sur-Mer Isaville"],
-        name: "HERMANVILLE Isaville",
+        id: ["Caen Calvaire Saint-Pierre"],
+        autoHide: true,
+        name: "Calvaire Saint-Pierre",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", text: "HERMANVILLE ISAVILLE" }],
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN CALVAIRE ST-PIERRE" }],
         },
       },
       {
-        id: ["Ouistreham RIVA CHARMETTES"],
-        name: "OUISTREHAM Charmettes",
+        id: ["Caen Croix Guérin"],
+        autoHide: true,
+        name: "Croix Guérin",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM CHARMETTES" }],
-        },
-      },
-      {
-        id: ["COLLEVILLE Becquet"],
-        name: "COLLEVILLE Becquet",
-        girouette: {
-          routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "COLLEVILLE Becquet" }],
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CAEN CROIX GUERIN" }],
         },
       },
       {
         id: ["Caen Tour Leroy"],
+        autoHide: true,
         name: "Tour Leroy",
         city: "CAEN",
         girouette: {
@@ -581,12 +616,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Lion-sur-Mer Lion Plage"],
-        name: "Lion Plage",
-        city: "LION-SUR-MER",
+        id: ["Caen Gare SNCF"],
+        name: "Gare SNCF",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "LION PLAGE" }],
+          pages: [{ font: "1510N2E1", text: "CAEN GARE SNCF" }],
         },
       },
     ],
@@ -606,16 +641,18 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Caen Gare SNCF"],
-        name: "Gare SNCF",
-        city: "CAEN",
+        id: ["Ouistreham Riva Charmettes"],
+        autoHide: true,
+        name: "Riva Charmettes",
+        city: "OUISTREHAM",
         girouette: {
           routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
-          pages: [{ font: "1513B3E1", text: "CAEN EXPRESS" }],
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM CHARMETTES" }],
         },
       },
       {
         id: ["Ouistreham Riva Centre"],
+        autoHide: true,
         name: "Riva Centre",
         city: "OUISTREHAM",
         girouette: {
@@ -625,6 +662,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Tour Leroy"],
+        autoHide: true,
         name: "Tour Leroy",
         city: "CAEN",
         girouette: {
@@ -633,11 +671,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["OUISTREHAM Riva Charmettes"],
-        name: "OUISTREHAM Riva Charmettes",
+        id: ["Caen Gare SNCF"],
+        name: "Gare SNCF",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
-          pages: [{ text: "OUISTREHAM Riva Charmettes" }],
+          pages: [{ font: "1513B3E1", text: "CAEN EXPRESS" }],
         },
       },
     ],
@@ -649,7 +688,8 @@ const twistoRoutes: Route[] = [
     destinations: [
       {
         id: ["Caen Calvaire Saint-Pierre"],
-        name: "CAEN Calvaire Saint-Pierre",
+        name: "Calvaire Saint-Pierre",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#f59c00", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
           pages: [{ text: "CAEN" }, { font: "1508C2E1", text: "CALVAIRE SAINT-PIERRE" }],
@@ -657,6 +697,7 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Authie Jacques Cartier"],
+        autoHide: true,
         name: "Jacques Cartier",
         city: "AUTHIE",
         girouette: {
@@ -706,19 +747,52 @@ const twistoRoutes: Route[] = [
     colors: { background: "#f3a3b9", text: "#000000" },
     destinations: [
       {
-        id: ["CAEN Théâtre"],
-        name: "CAEN Théâtre",
-        girouette: {
-          routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "CAEN Théâtre" }],
-        },
-      },
-      {
         id: ["Lion-sur-Mer Lion Plage"],
-        name: "LION SUR MER Plage",
+        name: "Plage",
+        city: "LION-SUR-MER",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
           pages: [{ font: "1508C2E1", textSpacing: 3, text: "LION-SUR-MER PLAGE" }],
+        },
+      },
+      {
+        id: ["Périers Mairie"],
+        autoHide: true,
+        name: "Mairie",
+        city: "PÉRIERS",
+        girouette: {
+          routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
+          pages: [{ text: "PERIERS MAIRIE" }],
+        },
+      },
+      {
+        id: ["Biéville Rue du Home"],
+        autoHide: true,
+        name: "Rue du Home",
+        city: "BIÉVILLE",
+        girouette: {
+          routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "BIEVILLE RUE DU HOME" }],
+        },
+      },
+      {
+        id: ["Biéville Château"],
+        autoHide: true,
+        name: "Château",
+        city: "BIÉVILLE",
+        girouette: {
+          routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
+          pages: [{ text: "BIEVILLE CHATEAU" }],
+        },
+      },
+      {
+        id: ["Hérouville-Saint-Clair Allende"],
+        autoHide: true,
+        name: "Allende",
+        city: "HÉROUVILLE-SAINT-CLAIR",
+        girouette: {
+          routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HEROUVILLE ALLENDE" }],
         },
       },
       {
@@ -731,44 +805,23 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["BIEVILLE Rue du Home"],
-        name: "BIEVILLE Rue du Home",
-        girouette: {
-          routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "BIEVILLE Rue du Home" }],
-        },
-      },
-      {
-        id: ["PERIERS Mairie"],
-        name: "PERIERS Mairie",
-        girouette: {
-          routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "PERIERS Mairie" }],
-        },
-      },
-      {
         id: ["Caen Tour Leroy"],
-        name: "CAEN Tour Leroy",
+        autoHide: true,
+        name: "Tour Leroy",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
           pages: [{ font: "1510N2E1", text: "CAEN TOUR LEROY" }],
         },
       },
       {
-        id: ["BIEVILLE Château"],
-        name: "BIEVILLE Château",
+        id: ["Caen Théâtre Quai 1"],
+        autoHide: true,
+        name: "Théâtre",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "BIEVILLE Château" }],
-        },
-      },
-      {
-        id: ["Hérouville-Saint-Clair Allende"],
-        name: "Allende",
-        city: "HÉROUVILLE-SAINT-CLAIR",
-        girouette: {
-          routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HEROUVILLE ALLENDE" }],
+          pages: [{ text: "CAEN THEATRE" }],
         },
       },
     ],
@@ -779,21 +832,22 @@ const twistoRoutes: Route[] = [
     colors: { background: "#e94861", text: "#ffffff" },
     destinations: [
       {
-        id: ["Cairon Cairon Château"],
-        name: "Château",
-        city: "CAIRON",
-        girouette: {
-          routeNumber: { backgroundColor: "#e94861", textColor: "#ffffff", outlineColor: "#000000", text: "23" },
-          pages: [{ font: "1510N2E1", text: "CAIRON CHATEAU" }],
-        },
-      },
-      {
         id: ["Villons-les-Buissons Norvège"],
         name: "Norvège",
         city: "VILLONS-LES-BUISSONS",
         girouette: {
           routeNumber: { backgroundColor: "#e94861", textColor: "#ffffff", outlineColor: "#000000", text: "23" },
           pages: [{ font: "1510N2E1", text: "VILLONS NORVEGE" }],
+        },
+      },
+      {
+        id: ["Cairon Cairon Château"],
+        autoHide: true,
+        name: "Château",
+        city: "CAIRON",
+        girouette: {
+          routeNumber: { backgroundColor: "#e94861", textColor: "#ffffff", outlineColor: "#000000", text: "23" },
+          pages: [{ font: "1510N2E1", text: "CAIRON CHATEAU" }],
         },
       },
       {
@@ -838,11 +892,22 @@ const twistoRoutes: Route[] = [
     colors: { background: "#969328", text: "#ffffff" },
     destinations: [
       {
-        id: ["CAEN Théâtre"],
-        name: "CAEN Théâtre",
+        id: ["Caen Gare SNCF"],
+        name: "Gare SNCF",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#969328", textColor: "#ffffff", outlineColor: "#000000", text: "31" },
-          pages: [{ text: "CAEN Théâtre" }],
+          pages: [{ font: "1510N2E1", text: "CAEN GARE SNCF" }],
+        },
+      },
+      {
+        id: ["Caen Théâtre Quai 1"],
+        autoHide: true,
+        name: "Théâtre",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#969328", textColor: "#ffffff", outlineColor: "#000000", text: "31" },
+          pages: [{ text: "CAEN THEATRE" }],
         },
       },
       {
@@ -854,14 +919,6 @@ const twistoRoutes: Route[] = [
           pages: [{ text: "TROARN BURES" }],
         },
       },
-      {
-        id: ["Caen Gare SNCF"],
-        name: "CAEN Gare SNCF",
-        girouette: {
-          routeNumber: { backgroundColor: "#969328", textColor: "#ffffff", outlineColor: "#000000", text: "31" },
-          pages: [{ font: "1510N2E1", text: "CAEN GARE SNCF" }],
-        },
-      },
     ],
   },
   {
@@ -869,14 +926,6 @@ const twistoRoutes: Route[] = [
     name: "32",
     colors: { background: "#82c491", text: "#000000" },
     destinations: [
-      {
-        id: ["Verson Grand Bois"],
-        name: "VERSON Grand bois",
-        girouette: {
-          routeNumber: { backgroundColor: "#82c491", textColor: "#000000", outlineColor: "#FFFFFF", text: "32" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "VERSON GRAND BOIS" }],
-        },
-      },
       {
         id: ["Caen Tour Leroy"],
         name: "Tour Leroy",
@@ -887,28 +936,32 @@ const twistoRoutes: Route[] = [
         },
       },
       {
+        id: ["Caen Gambetta"],
+        autoHide: true,
+        name: "Gambetta",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#82c491", textColor: "#000000", outlineColor: "#FFFFFF", text: "32" },
+          pages: [{ text: "CAEN GAMBETTA" }],
+        },
+      },
+      {
+        id: ["Verson Grand Bois"],
+        autoHide: true,
+        name: "Grand Bois",
+        city: "VERSON",
+        girouette: {
+          routeNumber: { backgroundColor: "#82c491", textColor: "#000000", outlineColor: "#FFFFFF", text: "32" },
+          pages: [{ font: "1508C2E1", textSpacing: 3, text: "VERSON GRAND BOIS" }],
+        },
+      },
+      {
         id: ["Tourville-sur-Odon Val d'Odon"],
         name: "Val d'Odon",
         city: "TOURVILLE-SUR-ODON",
         girouette: {
           routeNumber: { backgroundColor: "#82c491", textColor: "#000000", outlineColor: "#FFFFFF", text: "32" },
           pages: [{ font: "1508C2E1", text: "TOURVILLE-SUR-ODON" }, { text: "VAL D'ODON" }],
-        },
-      },
-      {
-        id: ["CAEN Gambetta"],
-        name: "CAEN Gambetta",
-        girouette: {
-          routeNumber: { backgroundColor: "#82c491", textColor: "#000000", outlineColor: "#FFFFFF", text: "32" },
-          pages: [{ text: "CAEN Gambetta" }],
-        },
-      },
-      {
-        id: ["TOURVILLE Val d Odon"],
-        name: "TOURVILLE Val d Odon",
-        girouette: {
-          routeNumber: { backgroundColor: "#82c491", textColor: "#000000", outlineColor: "#FFFFFF", text: "32" },
-          pages: [{ text: "TOURVILLE Val d Odon" }],
         },
       },
     ],
@@ -937,11 +990,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["MATHIEU Le Londel"],
-        name: "MATHIEU Le Londel",
+        id: ["Mathieu Le Londel"],
+        name: "Le Londel",
+        city: "MATHIEU",
         girouette: {
           routeNumber: { backgroundColor: "#00698a", textColor: "#ffffff", outlineColor: "#000000", text: "33" },
-          pages: [{ text: "MATHIEU Le Londel" }],
+          pages: [{ font: "1510N2E1", text: "MATHIEU LE LONDEL" }],
         },
       },
     ],
@@ -973,14 +1027,14 @@ const twistoRoutes: Route[] = [
   {
     id: "TWISTO:37",
     name: "37",
-    colors: { background: "#ccb4c9", text: "#000000" },
+    colors: { background: "#c3a3c3", text: "#000000" },
     destinations: [
       {
         id: ["Caen Théâtre Quai 5"],
         name: "Théâtre",
         city: "CAEN",
         girouette: {
-          routeNumber: { backgroundColor: "#ccb4c9", textColor: "#000000", outlineColor: "#FFFFFF", text: "37" },
+          routeNumber: { backgroundColor: "#c3a3c3", textColor: "#000000", outlineColor: "#FFFFFF", text: "37" },
           pages: [{ text: "CAEN THEATRE" }],
         },
       },
@@ -989,7 +1043,7 @@ const twistoRoutes: Route[] = [
         name: "Route d'Aunay",
         city: "ÉTERVILLE",
         girouette: {
-          routeNumber: { backgroundColor: "#ccb4c9", textColor: "#000000", outlineColor: "#FFFFFF", text: "37" },
+          routeNumber: { backgroundColor: "#c3a3c3", textColor: "#000000", outlineColor: "#FFFFFF", text: "37" },
           pages: [{ text: "ETERVILLE" }, { text: "ROUTE D'AUNAY" }],
         },
       },
@@ -1001,16 +1055,18 @@ const twistoRoutes: Route[] = [
     colors: { background: "#7d6fa6", text: "#ffffff" },
     destinations: [
       {
-        id: ["GRENTHEVILLE Zone d Activites"],
-        name: "GRENTHEVILLE Zone d Activites",
+        id: ["Grentheville Zone d'Activités"],
+        name: "Zone d'Activités",
+        city: "GRENTHEVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#7d6fa6", textColor: "#ffffff", outlineColor: "#000000", text: "40" },
-          pages: [{ text: "GRENTHEVILLE Zone d Activites" }],
+          pages: [{ text: "GRENTHEVILLE ZA" }],
         },
       },
       {
         id: ["Caen Poincaré"],
-        name: "CAEN Poincare",
+        name: "Poincaré",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#7d6fa6", textColor: "#ffffff", outlineColor: "#000000", text: "40" },
           pages: [{ text: "CAEN POINCARE" }],
@@ -1024,35 +1080,21 @@ const twistoRoutes: Route[] = [
     colors: { background: "#7d6fa6", text: "#ffffff" },
     destinations: [
       {
-        id: ["COLOMBELLES Zone d'Activités"],
-        name: "COLOMBELLES Zone d'Activités",
+        id: ["Colombelles Zone d'Activités"],
+        name: "Zone d'Activités",
+        city: "COLOMBELLES",
         girouette: {
           routeNumber: { backgroundColor: "#7d6fa6", textColor: "#ffffff", outlineColor: "#000000", text: "42" },
-          pages: [{ text: "COLOMBELLES Zone d'Activités" }],
+          pages: [{ text: "COLOMBELLES ZA" }],
         },
       },
       {
-        id: ["HEROUVILLE Saint-Clair"],
-        name: "HEROUVILLE Saint-Clair",
-        girouette: {
-          routeNumber: { backgroundColor: "#7d6fa6", textColor: "#ffffff", outlineColor: "#000000", text: "42" },
-          pages: [{ text: "HEROUVILLE Saint-Clair" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "TWISTO:NUIT",
-    name: "Noctibus",
-    colors: { background: "#011337", text: "#FFFF99" },
-    destinations: [
-      {
-        id: ["Hérouville-Saint-Clair Portes de la Mer", "Noctibus"],
-        name: "Portes de la Mer",
+        id: ["Hérouville Saint-Clair"],
+        name: "Saint-Clair",
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
-          routeNumber: { backgroundColor: "#011337", textColor: "#FFFF99", outlineColor: "#000000", text: "€" },
-          pages: [{ text: "NOCTIBUS" }],
+          routeNumber: { backgroundColor: "#7d6fa6", textColor: "#ffffff", outlineColor: "#000000", text: "42" },
+          pages: [{ font: "1508C2E1", textSpacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
         },
       },
     ],
