@@ -18,8 +18,8 @@ export default function NetworkSelector() {
   return (
     <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
       <DialogTrigger asChild>
-        <Button aria-label="Sélectionner un réseau" variant="brand">
-          <Route2Icon color="white" size={32} />
+        <Button aria-label="Sélectionner un réseau" variant="inherit">
+          <Route2Icon size={32} />
         </Button>
       </DialogTrigger>
       <DialogContent className="overflow-y-scroll max-h-[100dvh]">

@@ -10,6 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         brand: "bg-brand hover:bg-brand-hover",
+        inherit: "hover:brightness-90",
       },
       size: {
         default: "h-10 py-2 px-4",

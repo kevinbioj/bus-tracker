@@ -12,8 +12,8 @@ export default function Preferences() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button aria-label="Ouvrir les préférences" variant="brand">
-          <SettingsIcon color="white" size={32} />
+        <Button aria-label="Ouvrir les préférences" variant="inherit">
+          <SettingsIcon size={32} />
         </Button>
       </DialogTrigger>
       <DialogContent>
