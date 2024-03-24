@@ -554,7 +554,7 @@ const semoRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#848484", textColor: "#FFFFFF", outlineColor: "#000000", text: "D1" },
-          pages: [{ text: "LOUVIERS" }, { text: "LES FONTENELLES" }],
+          pages: [{ text: "LOUVIERS" }, { font: "1508C2E1", text: "LYCEE LES FONTENELLES" }],
         },
       },
       {
