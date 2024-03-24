@@ -4,16 +4,14 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Map2, Table } from "tabler-icons-react";
-import { useLocalStorage } from "usehooks-ts";
 
 import NetworkSelector from "~/components/network-selector";
 import Preferences from "~/components/preferences/preferences";
-import { networks } from "~/data/dataset";
+import { useActiveNetwork } from "~/hooks/useActiveNetwork";
 
 export default function Header() {
-  const [activeNetwork] = useLocalStorage("active-network", null, { initializeWithValue: false });
+  const [network] = useActiveNetwork();
   const pathname = usePathname();
-  const network = networks.find((n) => n.slug === activeNetwork);
   return (
     <>
       <header

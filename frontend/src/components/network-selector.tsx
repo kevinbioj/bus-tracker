@@ -26,10 +26,10 @@ export default function NetworkSelector() {
         <DialogHeader>
           <DialogTitle>Sélection du réseau</DialogTitle>
         </DialogHeader>
-        <ul className="flex flex-col gap-1">
+        <ul className="flex flex-col gap-2">
           {networks.map((network) => (
             <li
-              className="flex justify-between px-2 py-2 rounded-md hover:cursor-pointer"
+              className="flex justify-between px-2 py-2 rounded-md transition hover:cursor-pointer hover:brightness-90"
               onClick={() => switchNetwork(network.slug)}
               key={network.slug}
               style={{ backgroundColor: network.color, color: network.textColor }}
