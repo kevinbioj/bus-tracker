@@ -78,8 +78,18 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "CAPCOT",
+    name: "Cap Cotentin (le Cotentin)",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/capcotentin.svg",
+      size: [100, 100],
+    },
+    issues: [],
+  },
+  {
     id: "SEMO",
-    name: "Semo (Seine-Eure)",
+    name: "Semo (Agglo Seine-Eure)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/semo.svg",
@@ -89,21 +99,11 @@ const operators: Operator[] = [
   },
   {
     id: "TRANSURBAIN",
-    name: "TransUrbain (Évreux-Portes de Normandie)",
+    name: "Transurbain (Évreux Portes de Normandie)",
     hasHistory: false,
     logo: {
       href: "/assets/operators/transurbain.svg",
       size: [363, 416],
-    },
-    issues: [],
-  },
-  {
-    id: "CAPCOT",
-    name: "Cap Cotentin (le Cotentin)",
-    hasHistory: true,
-    logo: {
-      href: "/assets/operators/capcotentin.svg",
-      size: [100, 100],
     },
     issues: [],
   },
@@ -142,8 +142,8 @@ const operators: Operator[] = [
     name: "Néva (Granville Terre et Mer)",
     hasHistory: false,
     logo: {
-      href: "/assets/operators/neva.png",
-      size: [2774, 1244],
+      href: "/assets/operators/neva.svg",
+      size: [1387, 622],
     },
     issues: [],
   },
@@ -192,8 +192,8 @@ const operators: Operator[] = [
     name: "l'Bus (Bernay Terres de Normandie)",
     hasHistory: false,
     logo: {
-      href: "/assets/operators/lbus.png",
-      size: [1020, 208],
+      href: "/assets/operators/lbus.svg",
+      size: [185, 92],
     },
     issues: [],
   },

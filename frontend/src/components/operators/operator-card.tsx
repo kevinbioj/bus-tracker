@@ -9,11 +9,10 @@ import OperatorStatus from "./operator-status";
 type OperatorCardProps = { operator: Operator };
 
 export default function OperatorCard({ operator }: OperatorCardProps) {
-  const [width, height] = operator.logo.size;
   return (
     <article className="flex flex-col sm:flex-row gap-x-6 gap-y-2">
-      <div className="mx-auto w-52 relative">
-        <Image className="mx-auto" src={operator.logo.href} alt={operator.name} width={width} height={height} />
+      <div className="min-h-20 mx-auto w-52 relative">
+        <Image className="object-contain mx-auto" src={operator.logo.href} alt={operator.name} fill />
       </div>
       <div className="flex-1 text-center sm:text-left">
         <h3 className="font-bold text-lg">{operator.name}</h3>
