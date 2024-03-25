@@ -42,7 +42,7 @@ const sources: Source[] = [
       generateShapes: true,
       routePrefix: 'ASTUCE-TGR',
       filters: {
-        scheduled: (trip) => trip.route !== '446',
+        scheduled: (trip) => trip.route !== 'F6',
       },
     },
   },

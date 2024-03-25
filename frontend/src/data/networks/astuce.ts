@@ -565,7 +565,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:05",
-    routeIds: ["ASTUCE:05", "ASTUCE-TGR:923"],
+    routeIds: ["ASTUCE:05", "ASTUCE-TGR:05"],
     name: "F5",
     colors: { background: "#AFCA0B", text: "#1D1D1B" },
     destinations: [
@@ -591,7 +591,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:06",
-    routeIds: ["ASTUCE:06", "ASTUCE-TGR:446"],
+    routeIds: ["ASTUCE:06", "ASTUCE-TGR:06"],
     name: "F6",
     colors: { background: "#00ACE5", text: "#FFFFFF" },
     destinations: [
@@ -864,7 +864,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:13",
-    routeIds: ["ASTUCE:13", "ASTUCE-TGR:852"],
+    routeIds: ["ASTUCE:13", "ASTUCE-TGR:13"],
     name: "13",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
@@ -890,7 +890,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:14",
-    routeIds: ["ASTUCE:14", "ASTUCE-TGR:490"],
+    routeIds: ["ASTUCE:14", "ASTUCE-TGR:14"],
     name: "14",
     colors: { background: "#00ACE5", text: "#FFFFFF" },
     destinations: [
@@ -1126,7 +1126,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:28",
-    routeIds: ["ASTUCE:28", "ASTUCE-TGR:634"],
+    routeIds: ["ASTUCE:28", "ASTUCE-TGR:28"],
     name: "28",
     colors: { background: "#F4A3AF", text: "#1D1D1B" },
     destinations: [
@@ -1152,7 +1152,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:33",
-    routeIds: ["ASTUCE:33", "ASTUCE-TGR:450"],
+    routeIds: ["ASTUCE:33", "ASTUCE-TGR:33"],
     name: "33",
     colors: { background: "#00A983", text: "#FFFFFF" },
     destinations: [
@@ -1224,7 +1224,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:36",
-    routeIds: ["ASTUCE:36", "ASTUCE-TGR:652"],
+    routeIds: ["ASTUCE:36", "ASTUCE-TGR:36"],
     name: "36",
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
@@ -1250,7 +1250,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:37",
-    routeIds: ["ASTUCE:37", "ASTUCE-TGR:654"],
+    routeIds: ["ASTUCE:37", "ASTUCE-TGR:37"],
     name: "37",
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
@@ -1288,7 +1288,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:38",
-    routeIds: ["ASTUCE:38", "ASTUCE-TGR:452"],
+    routeIds: ["ASTUCE:38", "ASTUCE-TGR:38"],
     name: "38",
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
@@ -1315,7 +1315,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:41",
-    routeIds: ["ASTUCE:41", "ASTUCE-TGR:454"],
+    routeIds: ["ASTUCE:41", "ASTUCE-TGR:41"],
     name: "41",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
@@ -1365,7 +1365,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:42",
-    routeIds: ["ASTUCE:42", "ASTUCE-TGR:455"],
+    routeIds: ["ASTUCE:42", "ASTUCE-TGR:42"],
     name: "42",
     colors: { background: "#A2559D", text: "#FFFFFF" },
     destinations: [
@@ -1449,7 +1449,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:44",
-    routeIds: ["ASTUCE:44", "ASTUCE-TGR:499"],
+    routeIds: ["ASTUCE:44", "ASTUCE-TGR:44"],
     name: "44",
     colors: { background: "#9BD4E3", text: "#1D1D1B" },
     destinations: [
@@ -2464,7 +2464,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:300",
-    routeIds: ["ASTUCE:300", "ASTUCE-TGR:815"],
+    routeIds: ["ASTUCE:300", "ASTUCE-TGR:300"],
     name: "300",
     colors: { background: "#CE1922", text: "#FFFFFF" },
     destinations: [
@@ -2510,7 +2510,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:301",
-    routeIds: ["ASTUCE:301", "ASTUCE-TGR:816"],
+    routeIds: ["ASTUCE:301", "ASTUCE-TGR:301"],
     name: "301",
     colors: { background: "#81612D", text: "#FFFFFF" },
     destinations: [
@@ -2553,7 +2553,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:302",
-    routeIds: ["ASTUCE:302", "ASTUCE-TGR:817"],
+    routeIds: ["ASTUCE:302", "ASTUCE-TGR:302"],
     name: "302",
     colors: { background: "#8ACBC0", text: "#1D1D1B" },
     destinations: [
@@ -2599,7 +2599,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:303",
-    routeIds: ["ASTUCE:303", "ASTUCE-TGR:639"],
+    routeIds: ["ASTUCE:303", "ASTUCE-TGR:303"],
     name: "303",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
@@ -2703,7 +2703,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:305",
-    routeIds: ["ASTUCE:305", "ASTUCE-TGR:819"],
+    routeIds: ["ASTUCE:305", "ASTUCE-TGR:305"],
     name: "305",
     colors: { background: "#C19FCB", text: "#1D1D1B" },
     destinations: [
@@ -2769,7 +2769,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:310",
-    routeIds: ["ASTUCE:310", "ASTUCE-TGR:642"],
+    routeIds: ["ASTUCE:310", "ASTUCE-TGR:310"],
     name: "310",
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
@@ -2834,7 +2834,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:311",
-    routeIds: ["ASTUCE:311", "ASTUCE-TGR:643"],
+    routeIds: ["ASTUCE:311", "ASTUCE-TGR:311"],
     name: "311",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
@@ -2918,7 +2918,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:313",
-    routeIds: ["ASTUCE:313", "ASTUCE-TGR:820"],
+    routeIds: ["ASTUCE:313", "ASTUCE-TGR:313"],
     name: "313",
     colors: { background: "#E6007D", text: "#FFFFFF" },
     destinations: [
@@ -2964,7 +2964,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:314",
-    routeIds: ["ASTUCE:314", "ASTUCE-TGR:821"],
+    routeIds: ["ASTUCE:314", "ASTUCE-TGR:314"],
     name: "314",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
@@ -3010,7 +3010,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:315",
-    routeIds: ["ASTUCE:315", "ASTUCE-TGR:822"],
+    routeIds: ["ASTUCE:315", "ASTUCE-TGR:315"],
     name: "315",
     colors: { background: "#81612D", text: "#FFFFFF" },
     destinations: [
@@ -3098,7 +3098,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:330",
-    routeIds: ["ASTUCE:330", "ASTUCE-TGR:648"],
+    routeIds: ["ASTUCE:330", "ASTUCE-TGR:330"],
     name: "330",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
@@ -3144,7 +3144,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:331",
-    routeIds: ["ASTUCE:331", "ASTUCE-TGR:824"],
+    routeIds: ["ASTUCE:331", "ASTUCE-TGR:331"],
     name: "331",
     colors: { background: "#E6007D", text: "#FFFFFF" },
     destinations: [
@@ -3190,7 +3190,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:332",
-    routeIds: ["ASTUCE:332", "ASTUCE-TGR:825"],
+    routeIds: ["ASTUCE:332", "ASTUCE-TGR:332"],
     name: "332",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
@@ -3294,7 +3294,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:333",
-    routeIds: ["ASTUCE:333", "ASTUCE-TGR:649"],
+    routeIds: ["ASTUCE:333", "ASTUCE-TGR:333"],
     name: "333",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
@@ -3398,7 +3398,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:334",
-    routeIds: ["ASTUCE:334", "ASTUCE-TGR:826"],
+    routeIds: ["ASTUCE:334", "ASTUCE-TGR:334"],
     name: "334",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
@@ -3463,7 +3463,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:335",
-    routeIds: ["ASTUCE:335", "ASTUCE-TGR:827"],
+    routeIds: ["ASTUCE:335", "ASTUCE-TGR:335"],
     name: "335",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
@@ -3547,7 +3547,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:336",
-    routeIds: ["ASTUCE:336", "ASTUCE-TGR:828"],
+    routeIds: ["ASTUCE:336", "ASTUCE-TGR:336"],
     name: "336",
     colors: { background: "#008E5B", text: "#FFFFFF" },
     destinations: [
@@ -3658,7 +3658,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:341",
-    routeIds: ["ASTUCE:341", "ASTUCE-TGR:830"],
+    routeIds: ["ASTUCE:341", "ASTUCE-TGR:341"],
     name: "341",
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
@@ -3704,7 +3704,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:342",
-    routeIds: ["ASTUCE:342", "ASTUCE-TGR:831"],
+    routeIds: ["ASTUCE:342", "ASTUCE-TGR:342"],
     name: "342",
     colors: { background: "#CA98C5", text: "#1D1D1B" },
     destinations: [
@@ -3747,7 +3747,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:343",
-    routeIds: ["ASTUCE:343", "ASTUCE-TGR:838"],
+    routeIds: ["ASTUCE:343", "ASTUCE-TGR:343"],
     name: "343",
     colors: { background: "#D3D400", text: "#1D1D1B" },
     destinations: [
@@ -3793,7 +3793,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:350",
-    routeIds: ["ASTUCE:350", "ASTUCE-TGR:651"],
+    routeIds: ["ASTUCE:350", "ASTUCE-TGR:350"],
     name: "350",
     colors: { background: "#008E5A", text: "#FFFFFF" },
     destinations: [
@@ -3858,7 +3858,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:351",
-    routeIds: ["ASTUCE:351", "ASTUCE-TGR:832"],
+    routeIds: ["ASTUCE:351", "ASTUCE-TGR:351"],
     name: "351",
     colors: { background: "#E6007D", text: "#FFFFFF" },
     destinations: [
@@ -3904,7 +3904,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:360",
-    routeIds: ["ASTUCE:360", "ASTUCE-TGR:833"],
+    routeIds: ["ASTUCE:360", "ASTUCE-TGR:360"],
     name: "360",
     colors: { background: "#A2559D", text: "#FFFFFF" },
     destinations: [
@@ -3950,7 +3950,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:361",
-    routeIds: ["ASTUCE:361", "ASTUCE-TGR:834"],
+    routeIds: ["ASTUCE:361", "ASTUCE-TGR:361"],
     name: "361",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
@@ -3996,7 +3996,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:363",
-    routeIds: ["ASTUCE:363", "ASTUCE-TGR:836"],
+    routeIds: ["ASTUCE:363", "ASTUCE-TGR:363"],
     name: "363",
     colors: { background: "#A2559D", text: "#FFFFFF" },
     destinations: [
@@ -4042,7 +4042,7 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:364",
-    routeIds: ["ASTUCE:364", "ASTUCE-TGR:653"],
+    routeIds: ["ASTUCE:364", "ASTUCE-TGR:364"],
     name: "364",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
