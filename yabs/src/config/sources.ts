@@ -3,6 +3,8 @@ import { P, match } from 'ts-pattern';
 import { GtfsProperties } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
+const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
+
 export type Source = {
   id: string;
   refreshCron: string;
@@ -219,7 +221,10 @@ const sources: Source[] = [
       tripUpdateHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt',
       getOperator: () => 'CAPCOT',
-      getVehicleNumber: (descriptor) => descriptor.label ?? null,
+      getVehicleNumber: (descriptor) => {
+        if (typeof descriptor.label === 'string') return descriptor.label;
+        return capCotentinDevices.get(descriptor.id) ?? null;
+      },
       filters: { scheduled: () => false },
     },
   },
