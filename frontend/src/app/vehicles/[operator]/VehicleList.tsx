@@ -27,9 +27,8 @@ export default function VehicleList({ operator, vehicles }: VehicleList) {
         if (sort === "number") {
           return a.number - b.number;
         } else if (sort === "activity") {
-          return (
-            (b.sinceTime ? new Date(b.sinceTime).getTime() : 0) - (a.sinceTime ? new Date(a.sinceTime).getTime() : 0)
-          );
+          if (a.currentRouteId !== null && b.currentRouteId !== null) return a.number - b.number;
+          return new Date(b.sinceTime ?? 0).getTime() - new Date(a.sinceTime ?? 0).getTime();
         }
         return 0;
       });
