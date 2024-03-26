@@ -558,7 +558,7 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Octeville S/ Mer Littoral"],
-        name: "Mer Littoral",
+        name: "Littoral",
         city: "OCTEVILLE-SUR-MER",
         girouette: {
           routeNumber: {
@@ -649,8 +649,22 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Etainhus - St Romain"],
+        id: ["St Romain de Colbosc"],
         autoHide: true,
+        name: "Saint-Romain-de-Colbosc",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#FFE500",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "12",
+          },
+          pages: [{ font: "1507SUPX", text: "ST-ROMAIN-DE-COLBOSC" }],
+        },
+      },
+      {
+        id: ["Etainhus - St Romain"],
         name: "Gare d'Étainhus - Saint-Romain",
         city: "ÉTAINHUS",
         girouette: {
@@ -662,20 +676,6 @@ const liaRoutes: Route[] = [
             text: "12",
           },
           pages: [{ font: "1508SUPX", text: "ETAINHUS ST-ROMAIN" }],
-        },
-      },
-      {
-        id: ["St Romain de Colbosc"],
-        name: "Saint-Romain-de-Colbosc",
-        girouette: {
-          routeNumber: {
-            font: "1513B3E1",
-            backgroundColor: "#FFE500",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            text: "12",
-          },
-          pages: [{ font: "1507SUPX", text: "ST-ROMAIN-DE-COLBOSC" }],
         },
       },
     ],
