@@ -1,9 +1,10 @@
 "use client";
 
+import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { ArrowBounce, ArrowLeft, ArrowLeftRight, ArrowsSort, Filter, Sort09 } from "tabler-icons-react";
+import { ArrowLeft, ArrowsSort, Filter } from "tabler-icons-react";
 import { match } from "ts-pattern";
 
 import { LightVehicleDto, Operator } from "~/@types";
@@ -27,8 +28,11 @@ export default function VehicleList({ operator, vehicles }: VehicleList) {
         if (sort === "number") {
           return a.number - b.number;
         } else if (sort === "activity") {
-          if (a.currentRouteId !== null && b.currentRouteId !== null) return a.number - b.number;
-          return new Date(b.sinceTime ?? 0).getTime() - new Date(a.sinceTime ?? 0).getTime();
+          const aTime = new Date(a.sinceTime ?? 0).getTime();
+          const bTime = new Date(b.sinceTime ?? 0).getTime();
+          if (a.currentRouteId !== null) return -1;
+          if (b.currentRouteId !== null) return 1;
+          return bTime - aTime;
         }
         return 0;
       });
