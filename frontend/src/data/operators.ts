@@ -180,7 +180,7 @@ const operators: Operator[] = [
   {
     id: "BYBUS",
     name: "Bybus (Bayeux)",
-    hasHistory: false,
+    hasHistory: true,
     logo: {
       href: "/assets/operators/bybus.svg",
       size: [245, 101],
