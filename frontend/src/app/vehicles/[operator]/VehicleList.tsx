@@ -28,10 +28,10 @@ export default function VehicleList({ operator, vehicles }: VehicleList) {
         if (sort === "number") {
           return a.number - b.number;
         } else if (sort === "activity") {
-          const aTime = new Date(a.sinceTime ?? 0).getTime();
-          const bTime = new Date(b.sinceTime ?? 0).getTime();
           if (a.currentRouteId !== null && b.currentRouteId !== null) return a.number - b.number;
-          return bTime - aTime;
+          if (a.currentRouteId !== null) return -1;
+          if (b.currentRouteId !== null) return 1;
+          return new Date(b.sinceTime ?? 0).getTime() - new Date(a.sinceTime ?? 0).getTime();
         }
         return 0;
       });
