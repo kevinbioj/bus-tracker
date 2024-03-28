@@ -30,8 +30,7 @@ export default function VehicleList({ operator, vehicles }: VehicleList) {
         } else if (sort === "activity") {
           const aTime = new Date(a.sinceTime ?? 0).getTime();
           const bTime = new Date(b.sinceTime ?? 0).getTime();
-          if (a.currentRouteId !== null) return -1;
-          if (b.currentRouteId !== null) return 1;
+          if (a.currentRouteId !== null && b.currentRouteId !== null) return a.number - b.number;
           return bTime - aTime;
         }
         return 0;
