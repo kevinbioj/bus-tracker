@@ -999,7 +999,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Boulingrin ROUEN"],
+        id: ["Boulingrin ROUEN", "Boulingrin"],
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
