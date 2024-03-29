@@ -24,7 +24,14 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       routePrefix: 'ASTUCE',
       filters: {
-        scheduled: (trip) => ['35', '89', '322', '340'].includes(trip.route),
+        scheduled: (trip) => {
+          if (['35', '89', '322', '340'].includes(trip.route)) return true;
+          if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Champlain ROUEN'].includes(trip.headsign))
+            return true;
+          if (trip.route === '07' && ['Hôtel de Ville SOTTEVILLE-LÈS-ROUEN', 'Champlain ROUEN'].includes(trip.headsign))
+            return true;
+          return false;
+        },
       },
       getOperator: (trip) => (trip.calendar.id.startsWith('IST') || trip.route === '89' ? 'TNI' : 'TCAR'),
       propagateDelays: true,
