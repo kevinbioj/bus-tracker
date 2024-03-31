@@ -78,7 +78,7 @@ const twistoRoutes: Route[] = [
         city: "FLEURY-SUR-ORNE",
         girouette: {
           routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "T3" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "FLEURY HAUTS DE L'ORNE" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "FLEURY HAUTS DE L'ORNE" }],
         },
       },
       {
@@ -88,7 +88,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "T3" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN COLLEGE HAWKING" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "CAEN COLLEGE HAWKING" }],
         },
       },
       {
@@ -97,7 +97,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "T3" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN CHATEAU QUATRANS" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "CAEN CHATEAU QUATRANS" }],
         },
       },
     ],
@@ -119,7 +119,7 @@ const twistoRoutes: Route[] = [
             outlineColor: "#000000",
             text: "NAV",
           },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "PALAIS DES SPORTS" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "PALAIS DES SPORTS" }],
         },
       },
     ],
@@ -135,7 +135,7 @@ const twistoRoutes: Route[] = [
         city: "MONDEVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#d8005b", textColor: "#ffffff", outlineColor: "#000000", text: "1" },
-          pages: [{ text: "MONDEVILLE" }, { font: "1508C2E1", textSpacing: 3, text: "CENTRE COMMERCIAL" }],
+          pages: [{ text: "MONDEVILLE" }, { font: "1508C2E1", spacing: 3, text: "CENTRE COMMERCIAL" }],
         },
       },
       {
@@ -144,7 +144,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#d8005b", textColor: "#ffffff", outlineColor: "#000000", text: "1" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CAEN CHEMIN VERT" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "CAEN CHEMIN VERT" }],
         },
       },
     ],
@@ -194,7 +194,7 @@ const twistoRoutes: Route[] = [
         city: "CARPIQUET",
         girouette: {
           routeNumber: { backgroundColor: "#c4ce10", textColor: "#000000", outlineColor: "#FFFFFF", text: "3" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CARPIQUET AEROPORT" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "CARPIQUET AEROPORT" }],
         },
       },
     ],
@@ -211,8 +211,8 @@ const twistoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#da609f", textColor: "#ffffff", outlineColor: "#000000", text: "4" },
           pages: [
-            { font: "1508C2E1", textSpacing: 1, text: "HEROUVILLE-SAINT-CLAIR" },
-            { font: "1508C2E1", textSpacing: 3, text: "CENTRE COMMERCIAL" },
+            { font: "1508C2E1", spacing: 1, text: "HEROUVILLE-SAINT-CLAIR" },
+            { font: "1508C2E1", spacing: 3, text: "CENTRE COMMERCIAL" },
           ],
         },
       },
@@ -238,7 +238,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#642580", textColor: "#ffffff", outlineColor: "#000000", text: "5" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HEROUVILLE SPHERE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "HEROUVILLE SPHERE" }],
         },
       },
       {
@@ -248,7 +248,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#642580", textColor: "#ffffff", outlineColor: "#000000", text: "5" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HEROUVILLE Lebisey" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "HEROUVILLE Lebisey" }],
         },
       },
       {
@@ -273,7 +273,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#fcdd19", textColor: "#000000", text: "6a" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
         },
       },
     ],
@@ -289,7 +289,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#fcdd19", textColor: "#000000", text: "6b" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
         },
       },
     ],
@@ -314,7 +314,7 @@ const twistoRoutes: Route[] = [
         city: "BIÉVILLE-BEUVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#8d5e2a", textColor: "#ffffff", outlineColor: "#000000", text: "7" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "BIEVILLE-BEUVILLE" }, { text: "Z.A. AU VILLAGE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "BIEVILLE-BEUVILLE" }, { text: "Z.A. AU VILLAGE" }],
         },
       },
       {
@@ -364,7 +364,7 @@ const twistoRoutes: Route[] = [
         city: "COLOMBELLES",
         girouette: {
           routeNumber: { backgroundColor: "#86bce7", textColor: "#000000", outlineColor: "#FFFFFF", text: "9" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "COLOMBELLES MAIRIE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "COLOMBELLES MAIRIE" }],
         },
       },
       {
@@ -411,7 +411,7 @@ const twistoRoutes: Route[] = [
         city: "MONDEVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#b0368c", textColor: "#ffffff", outlineColor: "#000000", text: "10" },
-          pages: [{ text: "MONDEVILLE" }, { font: "1508C2E1", textSpacing: 3, text: "CHARLOTTE CORDAY" }],
+          pages: [{ text: "MONDEVILLE" }, { font: "1508C2E1", spacing: 3, text: "CHARLOTTE CORDAY" }],
         },
       },
     ],
@@ -427,7 +427,7 @@ const twistoRoutes: Route[] = [
         city: "BLAINVILLE-SUR-ORNE",
         girouette: {
           routeNumber: { backgroundColor: "#f29fc5", textColor: "#000000", outlineColor: "#FFFFFF", text: "10" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "BLAINVILLE EXPRESS" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "BLAINVILLE EXPRESS" }],
         },
       },
       {
@@ -542,7 +542,7 @@ const twistoRoutes: Route[] = [
         city: "OUISTREHAM",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM SACRE COEUR" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "OUISTREHAM SACRE COEUR" }],
         },
       },
       {
@@ -552,7 +552,7 @@ const twistoRoutes: Route[] = [
         city: "OUISTREHAM",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM CHARMETTES" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "OUISTREHAM CHARMETTES" }],
         },
       },
       {
@@ -572,7 +572,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HEROUVILLE ALLENDE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "HEROUVILLE ALLENDE" }],
         },
       },
       {
@@ -592,7 +592,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN CALVAIRE ST-PIERRE" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "CAEN CALVAIRE ST-PIERRE" }],
         },
       },
       {
@@ -602,7 +602,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CAEN CROIX GUERIN" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "CAEN CROIX GUERIN" }],
         },
       },
       {
@@ -612,7 +612,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009d99", textColor: "#ffffff", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CAEN TOUR LEROY" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "CAEN TOUR LEROY" }],
         },
       },
       {
@@ -647,7 +647,7 @@ const twistoRoutes: Route[] = [
         city: "OUISTREHAM",
         girouette: {
           routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM CHARMETTES" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "OUISTREHAM CHARMETTES" }],
         },
       },
       {
@@ -657,7 +657,7 @@ const twistoRoutes: Route[] = [
         city: "OUISTREHAM",
         girouette: {
           routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "OUISTREHAM RIVA CENTRE" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "OUISTREHAM RIVA CENTRE" }],
         },
       },
       {
@@ -702,7 +702,7 @@ const twistoRoutes: Route[] = [
         city: "AUTHIE",
         girouette: {
           routeNumber: { backgroundColor: "#f59c00", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "AUTHIE JACQUES CARTIER" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "AUTHIE JACQUES CARTIER" }],
         },
       },
       {
@@ -752,7 +752,7 @@ const twistoRoutes: Route[] = [
         city: "LION-SUR-MER",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "LION-SUR-MER PLAGE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "LION-SUR-MER PLAGE" }],
         },
       },
       {
@@ -772,7 +772,7 @@ const twistoRoutes: Route[] = [
         city: "BIÉVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "BIEVILLE RUE DU HOME" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "BIEVILLE RUE DU HOME" }],
         },
       },
       {
@@ -792,7 +792,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "HEROUVILLE ALLENDE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "HEROUVILLE ALLENDE" }],
         },
       },
       {
@@ -801,7 +801,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "CAEN CALVAIRE ST-PIERRE" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "CAEN CALVAIRE ST-PIERRE" }],
         },
       },
       {
@@ -856,7 +856,7 @@ const twistoRoutes: Route[] = [
         city: "LOUVIGNY",
         girouette: {
           routeNumber: { backgroundColor: "#e94861", textColor: "#ffffff", outlineColor: "#000000", text: "23" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "LOUVIGNY MICHELET" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "LOUVIGNY MICHELET" }],
         },
       },
     ],
@@ -881,7 +881,7 @@ const twistoRoutes: Route[] = [
         city: "MONDEVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#d186b2", textColor: "#000000", outlineColor: "#FFFFFF", text: "30" },
-          pages: [{ text: "MONDEVILLE" }, { font: "1508C2E1", textSpacing: 3, text: "CENTRE COMMERCIAL" }],
+          pages: [{ text: "MONDEVILLE" }, { font: "1508C2E1", spacing: 3, text: "CENTRE COMMERCIAL" }],
         },
       },
     ],
@@ -952,7 +952,7 @@ const twistoRoutes: Route[] = [
         city: "VERSON",
         girouette: {
           routeNumber: { backgroundColor: "#82c491", textColor: "#000000", outlineColor: "#FFFFFF", text: "32" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "VERSON GRAND BOIS" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "VERSON GRAND BOIS" }],
         },
       },
       {
@@ -1011,7 +1011,7 @@ const twistoRoutes: Route[] = [
         city: "SAINT-ANDRÉ-SUR-ORNE",
         girouette: {
           routeNumber: { backgroundColor: "#7f2110", textColor: "#ffffff", outlineColor: "#000000", text: "34" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "SAINT-ANDRE LUXEMBOURG" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "SAINT-ANDRE LUXEMBOURG" }],
         },
       },
       {
@@ -1094,7 +1094,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#7d6fa6", textColor: "#ffffff", outlineColor: "#000000", text: "42" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "HEROUVILLE SAINT-CLAIR" }],
         },
       },
     ],
@@ -1115,7 +1115,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "100",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN PLACE DU CANADA" }],
+          pages: [{ font: "1507SUPX", spacing: 1, text: "CAEN PLACE DU CANADA" }],
         },
       },
       {
@@ -1363,7 +1363,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "105",
           },
-          pages: [{ font: "1407SUPX", textSpacing: 1, text: "CAEN INSTITUT LEMONNIER" }],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "CAEN INSTITUT LEMONNIER" }],
         },
       },
     ],
@@ -1384,7 +1384,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "106",
           },
-          pages: [{ font: "1407SUPX", textSpacing: 1, text: "MONDEVILLE PAUL LANGEVIN" }],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "MONDEVILLE PAUL LANGEVIN" }],
         },
       },
     ],
@@ -1420,7 +1420,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "107",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN LYCEE ST-URSULE" }],
+          pages: [{ font: "1507SUPX", spacing: 1, text: "CAEN LYCEE ST-URSULE" }],
         },
       },
     ],
@@ -1442,7 +1442,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "109",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN LYCEE DE GAULE" }],
+          pages: [{ font: "1507SUPX", spacing: 1, text: "CAEN LYCEE DE GAULE" }],
         },
       },
       {
@@ -1492,7 +1492,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "110",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
+          pages: [{ font: "1507SUPX", spacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
         },
       },
     ],
@@ -1567,7 +1567,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "112",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
+          pages: [{ font: "1507SUPX", spacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
         },
       },
     ],
@@ -1603,7 +1603,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "113",
           },
-          pages: [{ font: "1407SUPX", textSpacing: 1, text: "VERSON COLLEGE PREVERT" }],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "VERSON COLLEGE PREVERT" }],
         },
       },
     ],
@@ -1660,7 +1660,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "115",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
+          pages: [{ font: "1507SUPX", spacing: 1, text: "CAEN ROSTAND-FRESNEL" }],
         },
       },
     ],

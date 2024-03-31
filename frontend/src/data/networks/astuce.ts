@@ -18,10 +18,10 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             paddingLeft: 2,
             font: "1513B3E1",
-            textSpacing: 3,
+            spacing: 3,
             text: "N™",
           },
-          pages: [{ text: "CATELIERS" }, { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
+          pages: [{ text: "CATELIERS" }, { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
         },
       },
       {
@@ -37,7 +37,7 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             paddingLeft: 2,
             font: "1513B3E1",
-            textSpacing: 3,
+            spacing: 3,
             text: "N™",
           },
           pages: [{ text: "HOTEL DE VILLE" }, { text: "ROUEN" }],
@@ -55,7 +55,7 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             paddingLeft: 2,
             font: "1513B3E1",
-            textSpacing: 3,
+            spacing: 3,
             text: "N™",
           },
           pages: [{ text: "LA PLEIADE" }, { font: "1508C2E1", text: "MONT-SAINT-AIGNAN" }],
@@ -100,7 +100,7 @@ const astuceRoutes: Route[] = [
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
           pages: [
             { font: "1513B3E1", text: "TECHNOPOLE" },
-            { font: "1508C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
+            { font: "1508C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
           ],
         },
       },
@@ -132,8 +132,8 @@ const astuceRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", textSpacing: 1, text: "BOULINGRIN" },
-            { font: "14LUPLAN", textSpacing: 1, text: "ROUEN" },
+            { font: "14LUPLAN", spacing: 1, text: "BOULINGRIN" },
+            { font: "14LUPLAN", spacing: 1, text: "ROUEN" },
           ],
           width: 300,
         },
@@ -147,8 +147,8 @@ const astuceRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", textSpacing: 1, text: "PLACE DU 8-MAI" },
-            { font: "14LUPLAN", textSpacing: 1, text: "PETIT-QUEVILLY" },
+            { font: "14LUPLAN", spacing: 1, text: "PLACE DU 8-MAI" },
+            { font: "14LUPLAN", spacing: 1, text: "PETIT-QUEVILLY" },
           ],
 
           width: 300,
@@ -162,8 +162,8 @@ const astuceRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", textSpacing: 1, text: "GEORGES BRAQUE" },
-            { font: "14LUPLAN", textSpacing: 1, text: "GRAND-QUEVILLY" },
+            { font: "14LUPLAN", spacing: 1, text: "GEORGES BRAQUE" },
+            { font: "14LUPLAN", spacing: 1, text: "GRAND-QUEVILLY" },
           ],
           width: 300,
         },
@@ -176,8 +176,8 @@ const astuceRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", textSpacing: 1, text: "TECHNOPOLE" },
-            { font: "14LUPLAN", textSpacing: 1, text: "SAINT-ETIENNE" },
+            { font: "14LUPLAN", spacing: 1, text: "TECHNOPOLE" },
+            { font: "14LUPLAN", spacing: 1, text: "SAINT-ETIENNE" },
           ],
           width: 300,
         },
@@ -191,8 +191,8 @@ const astuceRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, textWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", textSpacing: 1, text: "HOTEL DE VILLE" },
-            { font: "14LUPLAN", textSpacing: 1, text: "SOTTEVILLE" },
+            { font: "14LUPLAN", spacing: 1, text: "HOTEL DE VILLE" },
+            { font: "14LUPLAN", spacing: 1, text: "SOTTEVILLE" },
           ],
           width: 300,
         },
@@ -216,8 +216,8 @@ const astuceRoutes: Route[] = [
             text: "T1",
           },
           pages: [
-            { font: "1508C2E1", textSpacing: 3, text: "MONT-AUX-MALADES" },
-            { font: "1508C2E1", textSpacing: 3, text: "MONT-SAINT-AIGNAN" },
+            { font: "1508C2E1", spacing: 3, text: "MONT-AUX-MALADES" },
+            { font: "1508C2E1", spacing: 3, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
@@ -268,8 +268,8 @@ const astuceRoutes: Route[] = [
             text: "T2",
           },
           pages: [
-            { font: "1310C2E1", textSpacing: 1, text: "MAIRIE VICTOR SCHOELCHER" },
-            { font: "1310C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" },
+            { font: "1310C2E1", spacing: 1, text: "MAIRIE VICTOR SCHOELCHER" },
+            { font: "1310C2E1", spacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" },
           ],
         },
       },
@@ -291,7 +291,7 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             text: "T3",
           },
-          pages: [{ font: "1510N2E1", textSpacing: 1, text: "DURECU-LAVOISIER" }, { text: "DARNETAL" }],
+          pages: [{ font: "1510N2E1", spacing: 1, text: "DURECU-LAVOISIER" }, { text: "DARNETAL" }],
         },
       },
       {
@@ -322,7 +322,7 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#F5C500", textColor: "#000000", text: "T4" },
           pages: [
-            { font: "1510N2E1", textSpacing: 1, text: "ZENITH-PARC EXPO" },
+            { font: "1510N2E1", spacing: 1, text: "ZENITH-PARC EXPO" },
             { font: "1510N2E1", text: "GRAND-QUEVILLY" },
           ],
         },
@@ -333,7 +333,7 @@ const astuceRoutes: Route[] = [
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#F5C500", textColor: "#000000", text: "T4" },
-          pages: [{ textSpacing: 1, text: "MARIE CURIE-MTC" }, { text: "ROUEN" }],
+          pages: [{ spacing: 1, text: "MARIE CURIE-MTC" }, { text: "ROUEN" }],
         },
       },
     ],
@@ -387,8 +387,8 @@ const astuceRoutes: Route[] = [
             text: "F1",
           },
           pages: [
-            { textSpacing: 3, text: "CHAMPLAIN" },
-            { textSpacing: 3, text: "ROUEN" },
+            { spacing: 3, text: "CHAMPLAIN" },
+            { spacing: 3, text: "ROUEN" },
           ],
         },
       },
@@ -405,8 +405,8 @@ const astuceRoutes: Route[] = [
             text: "F1",
           },
           pages: [
-            { textSpacing: 3, text: "BOULINGRIN" },
-            { textSpacing: 3, text: "ROUEN" },
+            { spacing: 3, text: "BOULINGRIN" },
+            { spacing: 3, text: "ROUEN" },
           ],
         },
       },
@@ -422,8 +422,8 @@ const astuceRoutes: Route[] = [
             text: "F1",
           },
           pages: [
-            { font: "1508C2E1", textSpacing: 3, text: "PLAINE DE LA RONCE" },
-            { textSpacing: 3, text: "ISNEAUVILLE" },
+            { font: "1508C2E1", spacing: 3, text: "PLAINE DE LA RONCE" },
+            { spacing: 3, text: "ISNEAUVILLE" },
           ],
         },
       },
@@ -476,8 +476,8 @@ const astuceRoutes: Route[] = [
             text: "F2",
           },
           pages: [
-            { textSpacing: 3, text: ["CENTRE COMMERCIAL", "LA VATINE"] },
-            { font: "1508C2E1", textSpacing: 3, text: "MONT-SAINT-AIGNAN" },
+            { spacing: 3, text: ["CENTRE COMMERCIAL", "LA VATINE"] },
+            { font: "1508C2E1", spacing: 3, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
@@ -496,7 +496,7 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#FFDD00", textColor: "#000000", text: "F3" },
           pages: [
-            { font: "1508C2E1", textSpacing: 3, text: "CENTRE COMMERCIAL" },
+            { font: "1508C2E1", spacing: 3, text: "CENTRE COMMERCIAL" },
             { font: "1508C2E1", text: "TOURVILLE-LA-RIVIERE" },
           ],
         },
@@ -556,8 +556,8 @@ const astuceRoutes: Route[] = [
             text: "F4",
           },
           pages: [
-            { font: "1508C2E1", textSpacing: 3, text: "HAMEAU DE FREVAUX" },
-            { textSpacing: 5, text: "MALAUNAY" },
+            { font: "1508C2E1", spacing: 3, text: "HAMEAU DE FREVAUX" },
+            { spacing: 5, text: "MALAUNAY" },
           ],
         },
       },
@@ -575,7 +575,7 @@ const astuceRoutes: Route[] = [
         city: "FRANQUEVILLE-SAINT-PIERRE",
         girouette: {
           routeNumber: { backgroundColor: "#AFC900", textColor: "#000000", text: "F5" },
-          pages: [{ text: "LYCEE GALILEE" }, { font: "1310C2E1", textSpacing: 1, text: "FRANQUEVILLE-SAINT-PIERRE" }],
+          pages: [{ text: "LYCEE GALILEE" }, { font: "1310C2E1", spacing: 1, text: "FRANQUEVILLE-SAINT-PIERRE" }],
         },
       },
       {
@@ -584,7 +584,7 @@ const astuceRoutes: Route[] = [
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#AFC900", textColor: "#000000", text: "F5" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "THEATRE DES ARTS" }, { text: "ROUEN" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "THEATRE DES ARTS" }, { text: "ROUEN" }],
         },
       },
     ],
@@ -641,7 +641,7 @@ const astuceRoutes: Route[] = [
 
             text: "F6",
           },
-          pages: [{ text: "GARE" }, { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
+          pages: [{ text: "GARE" }, { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
         },
       },
     ],
@@ -680,8 +680,8 @@ const astuceRoutes: Route[] = [
             text: "F7",
           },
           pages: [
-            { textSpacing: 3, text: "CHAMPLAIN" },
-            { textSpacing: 3, text: "ROUEN" },
+            { spacing: 3, text: "CHAMPLAIN" },
+            { spacing: 3, text: "ROUEN" },
           ],
         },
       },
@@ -698,8 +698,8 @@ const astuceRoutes: Route[] = [
             text: "F7",
           },
           pages: [
-            { textSpacing: 3, text: "BOULINGRIN" },
-            { textSpacing: 3, text: "ROUEN" },
+            { spacing: 3, text: "BOULINGRIN" },
+            { spacing: 3, text: "ROUEN" },
           ],
         },
       },
@@ -715,7 +715,7 @@ const astuceRoutes: Route[] = [
 
             text: "F7",
           },
-          pages: [{ text: "LA PLEIADE" }, { font: "1508C2E1", textSpacing: 3, text: "MONT-SAINT-AIGNAN" }],
+          pages: [{ text: "LA PLEIADE" }, { font: "1508C2E1", spacing: 3, text: "MONT-SAINT-AIGNAN" }],
         },
       },
     ],
@@ -754,7 +754,7 @@ const astuceRoutes: Route[] = [
           },
           pages: [
             { font: "1510N2E1", text: "LYCEE DU CAILLY" },
-            { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LES-ROUEN" },
+            { font: "1508C2E1", spacing: 3, text: "DEVILLE-LES-ROUEN" },
           ],
         },
       },
@@ -777,7 +777,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "F9",
           },
-          pages: [{ font: "1407SUPX", textSpacing: 1, text: "THEATRE DES ARTS - ROUEN" }],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "THEATRE DES ARTS - ROUEN" }],
         },
       },
       // { id: ["GAREROUT1"], alternate: "Gare Routière de Rouen", name: "Gare Routière", city: "ROUEN" },
@@ -793,7 +793,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "F9",
           },
-          pages: [{ font: "1407SUPX", textSpacing: 1, text: "CHAMP DE FOIRE - ELBEUF" }],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "CHAMP DE FOIRE - ELBEUF" }],
         },
       },
     ],
@@ -855,7 +855,7 @@ const astuceRoutes: Route[] = [
             text: "11",
           },
           pages: [
-            { font: "1508C2E1", textSpacing: 1, text: "COLLEGE LEONARD DE VINCI" },
+            { font: "1508C2E1", spacing: 1, text: "COLLEGE LEONARD DE VINCI" },
             { font: "1510N2E1", text: "BOIS-GUILLAUME" },
           ],
         },
@@ -956,7 +956,7 @@ const astuceRoutes: Route[] = [
         city: "DÉVILLE-LÈS-ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "15" },
-          pages: [{ text: "JULES VERNE" }, { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LES-ROUEN" }],
+          pages: [{ text: "JULES VERNE" }, { font: "1508C2E1", spacing: 3, text: "DEVILLE-LES-ROUEN" }],
         },
       },
     ],
@@ -1040,8 +1040,8 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#F56278", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
           pages: [
-            { font: "1508C2E1", textSpacing: 3, text: "PARC DE LA VATINE" },
-            { font: "1508C2E1", textSpacing: 3, text: "MONT-SAINT-AIGNAN" },
+            { font: "1508C2E1", spacing: 3, text: "PARC DE LA VATINE" },
+            { font: "1508C2E1", spacing: 3, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
@@ -1109,8 +1109,8 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
           pages: [
-            { textSpacing: 3, text: "CHAMPLAIN" },
-            { textSpacing: 3, text: "ROUEN" },
+            { spacing: 3, text: "CHAMPLAIN" },
+            { spacing: 3, text: "ROUEN" },
           ],
         },
       },
@@ -1120,7 +1120,7 @@ const astuceRoutes: Route[] = [
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "THEATRE DES ARTS" }, { text: "ROUEN" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "THEATRE DES ARTS" }, { text: "ROUEN" }],
         },
       },
     ],
@@ -1218,7 +1218,7 @@ const astuceRoutes: Route[] = [
         city: "NOTRE-DAME-DE-BONDEVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "35" },
-          pages: [{ text: "ECOLE MOULIN" }, { font: "1310C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
+          pages: [{ text: "ECOLE MOULIN" }, { font: "1310C2E1", spacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
         },
       },
     ],
@@ -1262,8 +1262,8 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "37" },
           pages: [
-            { font: "1508C2E1", textSpacing: 3, text: "PLAINE DE LA RONCE" },
-            { textSpacing: 3, text: "ISNEAUVILLE" },
+            { font: "1508C2E1", spacing: 3, text: "PLAINE DE LA RONCE" },
+            { spacing: 3, text: "ISNEAUVILLE" },
           ],
         },
       },
@@ -1273,7 +1273,7 @@ const astuceRoutes: Route[] = [
         city: "ISNEAUVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "37" },
-          pages: [{ text: "HAUTS-POIRIERS" }, { textSpacing: 3, text: "ISNEAUVILLE" }],
+          pages: [{ text: "HAUTS-POIRIERS" }, { spacing: 3, text: "ISNEAUVILLE" }],
         },
       },
       {
@@ -1282,7 +1282,7 @@ const astuceRoutes: Route[] = [
         city: "ISNEAUVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#D3D800", textColor: "#000000", text: "37" },
-          pages: [{ text: "LES BOSQUETS" }, { textSpacing: 3, text: "ISNEAUVILLE" }],
+          pages: [{ text: "LES BOSQUETS" }, { spacing: 3, text: "ISNEAUVILLE" }],
         },
       },
     ],
@@ -1328,7 +1328,7 @@ const astuceRoutes: Route[] = [
           routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
           pages: [
             { font: "1510N2E1", text: "VENTE OLIVIER" },
-            { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
+            { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
           ],
         },
       },
@@ -1408,7 +1408,7 @@ const astuceRoutes: Route[] = [
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
           routeNumber: { backgroundColor: "#A2559D", textColor: "#FFFFFF", outlineColor: "#000000", text: "42" },
-          pages: [{ text: "LA HOUSSIERE" }, { font: "1310C2E1", textSpacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
+          pages: [{ text: "LA HOUSSIERE" }, { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
         },
       },
     ],
@@ -1443,7 +1443,7 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             text: "43",
           },
-          pages: [{ text: "LONGS VALLONS" }, { font: "1310C2E1", textSpacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
+          pages: [{ text: "LONGS VALLONS" }, { font: "1310C2E1", spacing: 1, text: "NOTRE-DAME-DE-BONDEVILLE" }],
         },
       },
     ],
@@ -1470,8 +1470,8 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#55AAFF", textColor: "#000000", outlineColor: "#FFFFFF", text: "44" },
           pages: [
-            { font: "1508C2E1", textSpacing: 1, text: "CHAPELLE SAINT-SIMEON" },
-            { font: "1508C2E1", textSpacing: 3, text: "DEVILLE-LES-ROUEN" },
+            { font: "1508C2E1", spacing: 1, text: "CHAPELLE SAINT-SIMEON" },
+            { font: "1508C2E1", spacing: 3, text: "DEVILLE-LES-ROUEN" },
           ],
         },
       },
@@ -1550,7 +1550,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "A",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "MAIRIE DE SAINT-PIERRE" }],
+          pages: [{ font: "1507SUPX", spacing: 1, text: "MAIRIE DE SAINT-PIERRE" }],
         },
       },
       {
@@ -1588,7 +1588,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "B",
           },
-          pages: [{ font: "1508SUPX", textSpacing: 1, text: "ECOLE DE LA LONDE" }],
+          pages: [{ font: "1508SUPX", spacing: 1, text: "ECOLE DE LA LONDE" }],
         },
       },
       {
@@ -1678,7 +1678,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "E",
           },
-          pages: [{ font: "1507SUPX", textSpacing: 1, text: "MOULIN SAINT-ETIENNE" }],
+          pages: [{ font: "1507SUPX", spacing: 1, text: "MOULIN SAINT-ETIENNE" }],
         },
       },
       {
@@ -1717,7 +1717,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "F",
           },
-          pages: [{ font: "1407SUPX", textSpacing: 1, text: "POLE MULTIMODAL D'OISSEL" }],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "POLE MULTIMODAL D'OISSEL" }],
         },
       },
       {
@@ -1830,7 +1830,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "D2",
           },
-          pages: [{ font: "1407SUPX", textSpacing: 1, text: "POLE MULTIMODAL D'OISSEL" }],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "POLE MULTIMODAL D'OISSEL" }],
         },
       },
       {
@@ -1846,7 +1846,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "D2",
           },
-          pages: [{ font: "1407SUPX", textSpacing: 1, text: "MAIRIE DE SAINT-PIERRE" }],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "MAIRIE DE SAINT-PIERRE" }],
         },
       },
     ],

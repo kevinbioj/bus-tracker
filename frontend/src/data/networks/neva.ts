@@ -99,7 +99,7 @@ const nevaRoutes: Route[] = [
         name: "CÉRENCES - Square de la Gare",
         girouette: {
           routeNumber: { backgroundColor: "#FF6D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: "CÉRENCES" }, { font: "1508C2E1", textSpacing: 3, text: "SQUARE DE LA GARE" }],
+          pages: [{ text: "CÉRENCES" }, { font: "1508C2E1", spacing: 3, text: "SQUARE DE LA GARE" }],
         },
       },
       {
@@ -188,7 +188,7 @@ const nevaRoutes: Route[] = [
         name: "CÉRENCES - Square de la Gare",
         girouette: {
           routeNumber: { backgroundColor: "#388E3C", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
-          pages: [{ text: "CÉRENCES" }, { font: "1508C2E1", textSpacing: 3, text: "SQUARE DE LA GARE" }],
+          pages: [{ text: "CÉRENCES" }, { font: "1508C2E1", spacing: 3, text: "SQUARE DE LA GARE" }],
         },
       },
       {

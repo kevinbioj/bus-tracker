@@ -1,167 +1,213 @@
 "use client";
 
-import { clsx } from "clsx";
-import { ComponentPropsWithoutRef, useEffect, useState } from "react";
+const defaultBgColor = "#1D1D1B";
 
-const getFontHeight = (font: string) => (font === "METRO" ? 16 : +font.substring(0, 2));
-
-const paneBackgroundColor = "#1D1D1B";
-
-const getLedColor = (ledColor?: GirouetteData["ledColor"]) => (ledColor === "WHITE" ? "#F2FBFF" : "#FF8000");
-
-const defaultRouteNumber = {
-  backgroundColor: paneBackgroundColor,
-  color: getLedColor(),
-  size: "lg",
-  text: "",
+const hanoverFonts = {
+  "1513B3E1": {
+    id: "1513B3E1",
+    fontFamily: "Hanover 1513B3E1",
+    height: 15,
+    spacing: 2,
+  },
+  "1510N2E1": {
+    id: "1510N2E1",
+    fontFamily: "Hanover 1510N2E1",
+    height: 15,
+    spacing: 2,
+  },
+  "1508C2E1": {
+    id: "1508C2E1",
+    fontFamily: "Hanover 1508C2E1",
+    height: 15,
+    spacing: 2,
+  },
+  "1310C2E1": {
+    id: "1310C2E1",
+    fontFamily: "Hanover 1310C2E1",
+    height: 13,
+    spacing: 2,
+  },
+  "0808B2E1": {
+    id: "0808B2E1",
+    fontFamily: "Hanover 0808B2E1",
+    height: 8,
+    spacing: 1,
+  },
+  "SX-17-NORMAL": {
+    id: "17-N",
+    fontFamily: "Hanover SX-17-NORMAL",
+    height: 17,
+    spacing: 2,
+  },
+  "SX-15-NORMAL": {
+    id: "15-N",
+    fontFamily: "Hanover SX-15-NORMAL",
+    height: 15,
+    spacing: 1,
+  },
+  "SX-15-CONDENSED": {
+    id: "15-C",
+    fontFamily: "Hanover SX-15-CONDENSED",
+    height: 15,
+    spacing: 1,
+  },
+  "SX-14-CONDENSED": {
+    id: "14-C",
+    fontFamily: "Hanover SX-14-CONDENSED",
+    height: 15,
+    spacing: 1,
+  },
 } as const;
 
-export type RouteNumber = {
-  backgroundColor?: string;
-  outlineColor?: string;
-  textColor?: string;
-  paddingLeft?: number;
-  font?:
-    | "1310C2E1"
-    | "1407SUPX"
-    | "14LUPLAN"
-    | "1507SUPX"
-    | "1508C2E1"
-    | "1508SUPX"
-    | "1510N2E1"
-    | "1513B3E1"
-    | "1710SUPX"
-    | "METRO";
-  textSpacing?: TextSpacing;
-  wordSpacing?: WordSpacing;
-  text: string;
+const lumiplanFonts = {
+  "2": {
+    id: "2",
+    fontFamily: "Lumiplan 2",
+    height: 8,
+    spacing: 1,
+  },
+  A: {
+    id: "A",
+    fontFamily: "Lumiplan A",
+    height: 16,
+    spacing: 1,
+  },
+  G: {
+    id: "G",
+    fontFamily: "Lumiplan G",
+    height: 22,
+    spacing: 1,
+  },
+} as const;
+
+const metroFonts = {
+  M: {
+    id: "M",
+    fontFamily: "Metro M",
+    height: 16,
+    spacing: 0,
+  },
+  T: {
+    id: "T",
+    fontFamily: "Metro T",
+    height: 16,
+    spacing: 1,
+  },
+} as const;
+
+const ledColors = {
+  YELLOW: "#FF8000",
+  WHITE: "#F2FBFF",
+} as const;
+
+export const models = {
+  "HANOVER-192x17-RNCOLOR-YELLOW-GRM": {
+    height: 17,
+    ledColor: ledColors.YELLOW,
+    fonts: [
+      hanoverFonts["0808B2E1"],
+      hanoverFonts["1310C2E1"],
+      hanoverFonts["1508C2E1"],
+      hanoverFonts["1510N2E1"],
+      hanoverFonts["1513B3E1"],
+    ],
+    routeNumber: { extraOutline: true, width: 32 },
+    destination: { width: 160 },
+  },
+  "HANOVER-192x17-RNCOLOR-YELLOW-SXM": {
+    height: 17,
+    ledColor: ledColors.YELLOW,
+    fonts: [
+      hanoverFonts["SX-14-CONDENSED"],
+      hanoverFonts["SX-15-CONDENSED"],
+      hanoverFonts["SX-15-NORMAL"],
+      hanoverFonts["SX-17-NORMAL"],
+    ],
+    routeNumber: { extraOutline: true, width: 32 },
+    destination: { width: 160 },
+  },
+  "HANOVER-192x17-RNCOLOR-WHITE-GRM": {
+    height: 17,
+    ledColor: ledColors.WHITE,
+    fonts: [
+      hanoverFonts["0808B2E1"],
+      hanoverFonts["1310C2E1"],
+      hanoverFonts["1508C2E1"],
+      hanoverFonts["1510N2E1"],
+      hanoverFonts["1513B3E1"],
+    ],
+    routeNumber: { extraOutline: true, width: 32 },
+    destination: { width: 160 },
+  },
+  "LUMIPLAN-24x180": {
+    height: 24,
+    ledColor: ledColors.WHITE,
+    fonts: [lumiplanFonts["2"], lumiplanFonts.A, lumiplanFonts.G],
+    routeNumber: { extraOutline: true, width: 40 },
+    destination: { width: 140 },
+  },
+  "ROUEN-METRO": {
+    height: 16,
+    ledColor: ledColors.YELLOW,
+    fonts: [metroFonts.M, metroFonts.T],
+    routeNumber: { extraOutline: true, width: 16 },
+    destination: { width: 98 },
+  },
+} as const;
+
+type Model = (typeof models)[keyof typeof models];
+
+type TextData<M extends Model> = { font: M["fonts"][number]["id"]; spacing?: number; text: string };
+
+type RouteNumberData<M extends Model> = TextData<M> & { bgColor?: string; fgColor?: string; olColor?: string };
+
+type PageData<M extends Model> = TextData<M> | [TextData<M>, TextData<M>];
+
+type GirouetteData<M extends Model> = {
+  model: M;
+  routeNumber: RouteNumberData<M>;
+  pages: PageData<M>[];
 };
 
-export type GirouetteData = {
-  ledColor?: "YELLOW" | "WHITE";
-  dimensions?: { height: number; rnWidth: number; textWidth: number };
-  routeNumber?: RouteNumber;
-  pages: Page[];
-  width?: number;
+type GirouetteProps<M extends Model> = {
+  girouette: GirouetteData<M>;
+  width: number;
 };
 
-type Page = {
-  textSpacing?: TextSpacing;
-  wordSpacing?: WordSpacing;
-} & (
-  | {
-      font?:
-        | "1310C2E1"
-        | "1407SUPX"
-        | "14LUPLAN"
-        | "1507SUPX"
-        | "1508C2E1"
-        | "1508SUPX"
-        | "1510N2E1"
-        | "1513B3E1"
-        | "1710SUPX";
-      text: string;
-    }
-  | { font?: "0808B2E1"; text: [string, string] }
-);
+export function Girouette<M extends Model>({ girouette, width }: GirouetteProps<M>) {
+  return null;
+}
 
-export type TextSpacing = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
-export type WordSpacing = -1 | 0 | 1;
+// ---
 
-type GirouetteProps = ComponentPropsWithoutRef<"div"> &
-  GirouetteData & {
-    width: number;
-  };
+type RouteNumberProps<M extends Model> = {
+  model: M;
+  routeNumber: RouteNumberData<M>;
+  width: number;
+};
 
-const defaultDimensions = { height: 17, rnWidth: 32, textWidth: 160 };
-
-export function Girouette({
-  className,
-  dimensions = defaultDimensions,
-  ledColor = "YELLOW",
-  pages,
-  routeNumber = defaultRouteNumber,
-  width,
-  ...props
-}: GirouetteProps) {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    const updateCount = () => setCount((c) => (c >= pages.length - 1 ? 0 : c + 1));
-    const interval = setInterval(updateCount, 3000);
-    return () => clearInterval(interval);
-  }, [pages]);
-  const currentPage = pages[count % pages.length] ?? null;
-  const height = (dimensions.height * width) / (dimensions.rnWidth + dimensions.textWidth);
-  const onePixel = width / (dimensions.rnWidth + dimensions.textWidth);
-  const widerRnSpacing = routeNumber.font?.endsWith("SUPX") && typeof routeNumber.outlineColor !== "undefined";
+function RouteNumber<M extends Model>({ model, routeNumber, width }: RouteNumberProps<M>) {
+  const font = model.fonts.find((f) => f.id === routeNumber.font)!;
+  const onePixel = width / (model.routeNumber.width + model.destination.width);
+  const spacing =
+    (routeNumber.spacing ?? font.spacing) + (model.routeNumber.extraOutline && routeNumber.olColor ? 1 : 0);
   return (
     <div
-      className={clsx("border-white flex", className)}
+      className="flex items-center justify-center"
+      dangerouslySetInnerHTML={{ __html: routeNumber.text }}
       style={{
-        backgroundColor: paneBackgroundColor,
-        height: `${height}px`,
-        width: `${width}px`,
+        //- General properties
+        fontFamily: font.fontFamily,
+        width: `${model.routeNumber.width}px`,
+        //- Define correct character size & position
+        fontSize: `${onePixel * font.height}px`,
+        lineHeight: `${onePixel * font.height}px`,
+        letterSpacing: `${onePixel * spacing}px`,
+        paddingLeft: `${onePixel * spacing}px`,
+        //- Apply color properties
+        color: routeNumber.fgColor ?? model.ledColor,
+        backgroundColor: routeNumber.bgColor ?? defaultBgColor,
       }}
-      {...props}
-    >
-      <div
-        className="flex items-center justify-center overflow-hidden whitespace-nowrap"
-        dangerouslySetInnerHTML={{ __html: routeNumber.text.trimEnd().replaceAll(" ", "&nbsp;") }}
-        style={{
-          backgroundColor: routeNumber.backgroundColor ?? paneBackgroundColor,
-          color: routeNumber.textColor ?? getLedColor(ledColor),
-          fontFamily: `"${routeNumber.font ?? "1513B3E1"}"`,
-          fontSize: `${(height / dimensions.height) * getFontHeight(routeNumber.font ?? "1513B3E1")}px`,
-          letterSpacing: `${onePixel * (routeNumber.textSpacing ?? (widerRnSpacing ? 3 : 2))}px`,
-          lineHeight: `${(height / dimensions.height) * getFontHeight(routeNumber.font ?? "1513B3E1")}px`,
-          paddingLeft: `${
-            onePixel * (routeNumber.textSpacing ?? widerRnSpacing ? 3 : 2) + onePixel * (routeNumber.paddingLeft ?? 0)
-          }px`,
-          width: `${onePixel * dimensions.rnWidth}px`,
-          ...(routeNumber.outlineColor
-            ? {
-                textShadow: `
-                  ${onePixel}px 0px 0 ${routeNumber.outlineColor},
-                  -${onePixel}px 0px 0 ${routeNumber.outlineColor},
-                  0px ${onePixel}px 0 ${routeNumber.outlineColor},
-                  0px -${onePixel}px 0 ${routeNumber.outlineColor}`,
-              }
-            : {}),
-        }}
-      />
-      {Array.isArray(currentPage?.text) ? (
-        <div
-          className="flex flex-col justify-between overflow-hidden text-center whitespace-nowrap"
-          style={{
-            color: getLedColor(ledColor),
-            fontFamily: `"${currentPage.font ?? "0808B2E1"}"`,
-            fontSize: `${(height / dimensions.height) * getFontHeight(currentPage.font ?? "0808B2E1")}px`,
-            rowGap: `${onePixel}px`,
-            letterSpacing: `${onePixel * (currentPage.textSpacing ?? 1)}px`,
-            lineHeight: `${(height / dimensions.height) * getFontHeight(currentPage.font ?? "0808B2E1")}px`,
-            paddingLeft: `${onePixel * (currentPage.textSpacing ?? 1)}px`,
-            width: `${onePixel * dimensions.textWidth}px`,
-          }}
-        >
-          <span dangerouslySetInnerHTML={{ __html: currentPage.text[0].trimEnd().replaceAll(" ", "&nbsp;") }} />
-          <span dangerouslySetInnerHTML={{ __html: currentPage.text[1].trimEnd().replaceAll(" ", "&nbsp;") }} />
-        </div>
-      ) : (
-        <div
-          className="flex items-center justify-center overflow-hidden text-center whitespace-nowrap"
-          dangerouslySetInnerHTML={{ __html: currentPage?.text.trimEnd().replaceAll(" ", "&nbsp;") }}
-          style={{
-            color: getLedColor(ledColor),
-            fontFamily: `"${currentPage?.font ?? "1513B3E1"}"`,
-            fontSize: `${(height / dimensions.height) * getFontHeight(currentPage?.font ?? "1513B3E1")}px`,
-            letterSpacing: `${onePixel * (currentPage?.textSpacing ?? (currentPage?.font?.endsWith("SUPX") ? 1 : 2))}px`,
-            lineHeight: `${(height / dimensions.height) * getFontHeight(currentPage?.font ?? "1513B3E1")}px`,
-            paddingLeft: `${onePixel * (currentPage?.textSpacing ?? (currentPage?.font?.endsWith("SUPX") ? 1 : 2))}px`,
-            width: `${onePixel * dimensions.textWidth}px`,
-            wordSpacing: `${onePixel * (currentPage?.wordSpacing ?? 0)}px`,
-          }}
-        />
-      )}
-    </div>
+    />
   );
 }
