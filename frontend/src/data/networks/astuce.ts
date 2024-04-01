@@ -7,7 +7,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#29235C", text: "#FFDE00" },
     destinations: [
       {
-        id: ["Cateliers SAINT-ÉTIENNE-DU-ROUVRAY"],
+        id: ["Cateliers SAINT-ÉTIENNE-DU-ROUVRAY", "Cateliers"],
         autoHide: true,
         name: "Cateliers",
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
@@ -25,7 +25,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Hôtel de Ville ROUEN"],
+        id: ["Hôtel de Ville ROUEN", "Hôtel de Ville"],
         autoHide: true,
         alternate: "Hôtel de Ville de Rouen",
         name: "Hôtel de Ville",
@@ -44,7 +44,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["La Pléiade MONT-SAINT-AIGNAN"],
+        id: ["La Pléiade MONT-SAINT-AIGNAN", "La Pléiade"],
         autoHide: true,
         name: "La Pléiade",
         city: "MONT-SAINT-AIGNAN",
