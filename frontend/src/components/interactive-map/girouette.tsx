@@ -110,7 +110,7 @@ function RouteNumber({ dimensions, ledColor, routeNumber, width }: RouteNumberPr
   const virtualHeight = (height / dimensions.height) * fontProperties[fontFamily].height;
   return (
     <div
-      className="flex items-center justify-center"
+      className="flex items-center justify-center overflow-hidden whitespace-nowrap"
       dangerouslySetInnerHTML={{ __html: routeNumber.text.trimEnd().replaceAll(" ", "&nbsp;") }}
       style={{
         width: `${onePixel * dimensions.rnWidth}px`,
@@ -184,7 +184,11 @@ function Pages({ dimensions, ledColor, pages, width }: PagesProps) {
       }}
     >
       {lines.map((line) => (
-        <span dangerouslySetInnerHTML={{ __html: line.trimEnd().replaceAll(" ", "&nbsp;") }} key={line} />
+        <span
+          className="overflow-hidden whitespace-nowrap"
+          dangerouslySetInnerHTML={{ __html: line.trimEnd().replaceAll(" ", "&nbsp;") }}
+          key={line}
+        />
       ))}
     </div>
   );
