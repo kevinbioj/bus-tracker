@@ -247,6 +247,16 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       getOperator: () => 'REZOBUS',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
+      filters: {
+        scheduled: (trip) => !['14', '30'].includes(trip.route),
+      },
+      afterInit: (resource) => {
+        resource.trips.forEach((trip) => {
+          const lastStopTime = trip.stops.at(-1);
+          if (typeof lastStopTime === 'undefined') return;
+          trip.headsign = lastStopTime.stop.name;
+        });
+      },
     },
   },
   {
@@ -355,6 +365,12 @@ const sources: Source[] = [
       id: 'LEBUS',
       routePrefix: 'LEBUS',
       staticResourceHref: 'http://exs.atm.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=LEBUS',
+      generateShapes: true,
+      afterInit: (resource) => {
+        resource.stops.forEach((stop) => {
+          stop.name = stop.name.replace('Pont-audemer : ', '');
+        });
+      },
     },
   },
 ];

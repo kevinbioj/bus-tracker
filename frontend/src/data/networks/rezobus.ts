@@ -1,291 +1,416 @@
 import { Network, Route } from "~/@types";
 
 const rezobusRoutes: Route[] = [
-  {
-    id: "REZOBUS:23",
-    mapOnly: true,
-    noCartridge: true,
-    name: "23",
-    colors: { background: "#808000", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
-        girouette: {
-          routeNumber: { backgroundColor: "#808000", textColor: "#FFFFFF", outlineColor: "#000000", text: "23" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:24",
-    mapOnly: true,
-    noCartridge: true,
-    name: "24",
-    colors: { background: "#800080", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
-        girouette: {
-          routeNumber: { backgroundColor: "#800080", textColor: "#FFFFFF", outlineColor: "#000000", text: "24" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:28",
-    mapOnly: true,
-    noCartridge: true,
-    name: "28",
-    colors: { background: "#800080", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
-        girouette: {
-          routeNumber: { backgroundColor: "#800080", textColor: "#FFFFFF", outlineColor: "#000000", text: "28" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:12",
-    mapOnly: true,
-    noCartridge: true,
-    name: "12",
-    colors: { background: "#008080", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Lillebonne"],
-        name: "Lillebonne",
-        girouette: {
-          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "LILLEBONNE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:03",
-    mapOnly: true,
-    noCartridge: true,
-    name: "03",
-    colors: { background: "#FF6600", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["BOLBEC"],
-        name: "BOLBEC",
-        girouette: {
-          routeNumber: { backgroundColor: "#FF6600", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
-          pages: [{ text: "BOLBEC" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:26",
-    mapOnly: true,
-    noCartridge: true,
-    name: "26",
-    colors: { background: "#800080", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
-        girouette: {
-          routeNumber: { backgroundColor: "#800080", textColor: "#FFFFFF", outlineColor: "#000000", text: "26" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
-        },
-      },
-    ],
-  },
+  //- Secteur de Bolbec
   {
     id: "REZOBUS:01",
-    mapOnly: true,
     noCartridge: true,
-    name: "01",
-    colors: { background: "#FF6600", text: "#FFFFFF" },
+    name: "1",
+    colors: { background: "#ee1d23", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["BOLBEC"],
-        name: "BOLBEC",
+        id: ["BOLBEC Mairie"],
+        alternate: "Mairie de Bolbec",
+        name: "Mairie",
+        city: "BOLBEC",
         girouette: {
-          routeNumber: { backgroundColor: "#FF6600", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: "BOLBEC" }],
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#ee1d23", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
+          pages: [{ text: ["BOLBEC", "MAIRIE"] }],
         },
       },
-    ],
-  },
-  {
-    id: "REZOBUS:11",
-    mapOnly: true,
-    noCartridge: true,
-    name: "11",
-    colors: { background: "#008080", text: "#FFFFFF" },
-    destinations: [
       {
-        id: ["Lillebonne"],
-        name: "Lillebonne",
+        id: ["BOLBEC Marches Curie"],
+        name: "Marches Curie",
+        city: "BOLBEC",
         girouette: {
-          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
-          pages: [{ text: "LILLEBONNE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:25",
-    mapOnly: true,
-    noCartridge: true,
-    name: "25",
-    colors: { background: "#800080", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
-        girouette: {
-          routeNumber: { backgroundColor: "#800080", textColor: "#FFFFFF", outlineColor: "#000000", text: "25" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:30",
-    mapOnly: true,
-    noCartridge: true,
-    name: "30",
-    colors: { background: "#808000", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
-        girouette: {
-          routeNumber: { backgroundColor: "#808000", textColor: "#FFFFFF", outlineColor: "#000000", text: "30" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:14",
-    mapOnly: true,
-    noCartridge: true,
-    name: "14",
-    colors: { background: "#008080", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Lillebonne"],
-        name: "Lillebonne",
-        girouette: {
-          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", outlineColor: "#000000", text: "14" },
-          pages: [{ text: "LILLEBONNE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "REZOBUS:13",
-    mapOnly: true,
-    noCartridge: true,
-    name: "13",
-    colors: { background: "#008080", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Lillebonne"],
-        name: "Lillebonne",
-        girouette: {
-          routeNumber: { backgroundColor: "#008080", textColor: "#FFFFFF", outlineColor: "#000000", text: "13" },
-          pages: [{ text: "LILLEBONNE" }],
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#ee1d23", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
+          pages: [{ text: ["BOLBEC", "MARCHES CURIE"] }],
         },
       },
     ],
   },
   {
     id: "REZOBUS:02",
-    mapOnly: true,
     noCartridge: true,
-    name: "02",
-    colors: { background: "#FF6600", text: "#FFFFFF" },
+    name: "2",
+    colors: { background: "#005d9c", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["BOLBEC"],
-        name: "BOLBEC",
+        id: ["BOLBEC Mairie"],
+        alternate: "Mairie de Bolbec",
+        name: "Mairie",
+        city: "BOLBEC",
         girouette: {
-          routeNumber: { backgroundColor: "#FF6600", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: "BOLBEC" }],
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#005d9c", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
+          pages: [{ text: ["BOLBEC", "MAIRIE"] }],
+        },
+      },
+      {
+        id: ["BOLBEC Vivier"],
+        name: "Vivier",
+        city: "BOLBEC",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#005d9c", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
+          pages: [{ text: ["BOLBEC", "VIVIER"] }],
         },
       },
     ],
   },
   {
-    id: "REZOBUS:21",
-    mapOnly: true,
+    id: "REZOBUS:03",
     noCartridge: true,
-    name: "21",
-    colors: { background: "#808000", text: "#FFFFFF" },
+    name: "3",
+    colors: { background: "#009f4f", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
+        id: ["BOLBEC Mairie"],
+        alternate: "Mairie de Bolbec",
+        name: "Mairie",
+        city: "BOLBEC",
         girouette: {
-          routeNumber: { backgroundColor: "#808000", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#009f4f", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
+          pages: [{ text: ["BOLBEC", "MAIRIE"] }],
         },
       },
-    ],
-  },
-  {
-    id: "REZOBUS:22",
-    mapOnly: true,
-    noCartridge: true,
-    name: "22",
-    colors: { background: "#808000", text: "#FFFFFF" },
-    destinations: [
       {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
+        id: ["BOLBEC Henri Fleury"],
+        name: "Henri Fleury",
+        city: "BOLBEC",
         girouette: {
-          routeNumber: { backgroundColor: "#808000", textColor: "#FFFFFF", outlineColor: "#000000", text: "22" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#009f4f", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
+          pages: [{ text: ["BOLBEC", "HENRI FLEURY"] }],
         },
       },
     ],
   },
   {
     id: "REZOBUS:04",
-    mapOnly: true,
     noCartridge: true,
-    name: "04",
-    colors: { background: "#FF6600", text: "#FFFFFF" },
+    name: "4",
+    colors: { background: "#f7952e", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["BOLBEC"],
-        name: "BOLBEC",
+        id: ["BOLBEC Mairie"],
+        alternate: "Mairie de Bolbec",
+        name: "Mairie",
+        city: "BOLBEC",
         girouette: {
-          routeNumber: { backgroundColor: "#FF6600", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: "BOLBEC" }],
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#f7952e", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
+          pages: [{ text: ["BOLBEC", "MAIRIE"] }],
+        },
+      },
+      {
+        id: ["BOLBEC Val Du Moulin"],
+        name: "Val du Moulin",
+        city: "BOLBEC",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#f7952e", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
+          pages: [{ text: ["BOLBEC", "VAL DU MOULIN"] }],
+        },
+      },
+    ],
+  },
+  //- Secteur de Lillebonne
+  {
+    id: "REZOBUS:11",
+    noCartridge: true,
+    name: "11",
+    colors: { background: "#ed028c", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["LILLEBONNE Rivière du Commerce"],
+        name: "Rivière du Commerce",
+        city: "LILLEBONNE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#ed028c", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
+          pages: [{ text: ["LILLEBONNE", "RIVIERE DU COMMERCE"] }],
+        },
+      },
+      {
+        id: ["LILLEBONNE Puits Maillé"],
+        name: "Puits Maillé",
+        city: "LILLEBONNE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#ed028c", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
+          pages: [{ text: ["LILLEBONNE", "PUITS MAILLE"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "REZOBUS:12",
+    noCartridge: true,
+    name: "12",
+    colors: { background: "#b7d436", text: "#000000" },
+    destinations: [
+      {
+        id: ["LILLEBONNE Rivière du Commerce"],
+        name: "Rivière du Commerce",
+        city: "LILLEBONNE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#b7d436", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
+          pages: [{ text: ["LILLEBONNE", "RIVIERE DU COMMERCE"] }],
+        },
+      },
+      {
+        id: ["LILLEBONNE Hôpital"],
+        alternate: "Hôpital de Lillebonne",
+        name: "Hôpital",
+        city: "LILLEBONNE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#b7d436", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
+          pages: [{ text: ["LILLEBONNE", "HOPITAL"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "REZOBUS:13",
+    noCartridge: true,
+    name: "13",
+    colors: { background: "#89c2bf", text: "#000000" },
+    destinations: [
+      {
+        id: ["LILLEBONNE Médiathèque"],
+        alternate: "Médiathèque de Lillebonne",
+        name: "Médiathèque",
+        city: "LILLEBONNE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#89c2bf", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
+          pages: [{ text: ["LILLEBONNE", "MEDIATHEQUE"] }],
+        },
+      },
+      {
+        id: ["LILLEBONNE A l'Eau"],
+        name: "À l'eau",
+        city: "LILLEBONNE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#89c2bf", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
+          pages: [{ text: ["LILLEBONNE", "A L'EAU"] }],
+        },
+      },
+    ],
+  },
+  //- Secteur de Port-Jérôme-sur-Seine
+  {
+    id: "REZOBUS:21",
+    noCartridge: true,
+    name: "21",
+    colors: { background: "#808000", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ND GRAVENCHON Sortie Nord"],
+        name: "Sortie Nord",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#e787b8", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "SORTIE NORD"] }],
+        },
+      },
+      {
+        id: ["ND GRAVENCHON Hotel de Ville"],
+        alternate: "Hôtel de Ville de Notre-Dame",
+        name: "Hôtel de Ville",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#e787b8", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "REZOBUS:22",
+    noCartridge: true,
+    name: "22",
+    colors: { background: "#0aaabd", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ND GRAVENCHON Hotel de Ville"],
+        alternate: "Hôtel de Ville de Notre-Dame",
+        name: "Hôtel de Ville",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#0aaabd", textColor: "#FFFFFF", outlineColor: "#000000", text: "22" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+        },
+      },
+      {
+        id: ["ND GRAVENCHON Conservatoire"],
+        name: "Conservatoire",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#0aaabd", textColor: "#FFFFFF", outlineColor: "#000000", text: "22" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "CONSERVATOIRE"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "REZOBUS:23",
+    noCartridge: true,
+    name: "23",
+    colors: { background: "#813375", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ND GRAVENCHON Hotel de Ville"],
+        alternate: "Hôtel de Ville de Notre-Dame",
+        name: "Hôtel de Ville",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#813375", textColor: "#FFFFFF", outlineColor: "#000000", text: "23" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+        },
+      },
+      {
+        id: ["ND GRAVENCHON Cèdres"],
+        name: "Les Cèdres",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#813375", textColor: "#FFFFFF", outlineColor: "#000000", text: "23" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "LES CEDRES"] }],
+        },
+      },
+    ],
+  },
+  //
+  //
+
+  {
+    id: "REZOBUS:24",
+    noCartridge: true,
+    name: "24",
+    colors: { background: "#9f824d", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ND GRAVENCHON Cèdres"],
+        name: "Bois du Parc",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#9f824d", textColor: "#FFFFFF", outlineColor: "#000000", text: "24" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "BOIS DU PARC"] }],
+        },
+      },
+      {
+        id: ["ND GRAVENCHON Hotel de Ville"],
+        alternate: "Hôtel de Ville de Port-Jérôme",
+        name: "Hôtel de Ville",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#9f824d", textColor: "#FFFFFF", outlineColor: "#000000", text: "24" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "REZOBUS:25",
+    noCartridge: true,
+    name: "25",
+    colors: { background: "#0099d1", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ND GRAVENCHON Hotel de Ville"],
+        alternate: "Hôtel de Ville de Port-Jérôme",
+        name: "Hôtel de Ville",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#0099d1", textColor: "#FFFFFF", outlineColor: "#000000", text: "25" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "REZOBUS:26",
+    noCartridge: true,
+    name: "26",
+    colors: { background: "#507822", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ND GRAVENCHON Hotel de Ville"],
+        alternate: "Hôtel de Ville de Port-Jérôme",
+        name: "Hôtel de Ville",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#507822", textColor: "#FFFFFF", outlineColor: "#000000", text: "26" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+        },
+      },
+      {
+        id: ["ND GRAVENCHON Conservatoire"],
+        name: "Conservatoire",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#507822", textColor: "#FFFFFF", outlineColor: "#000000", text: "26" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "CONSERVATOIRE"] }],
         },
       },
     ],
   },
   {
     id: "REZOBUS:27",
-    mapOnly: true,
     noCartridge: true,
     name: "27",
-    colors: { background: "#800080", text: "#FFFFFF" },
+    colors: { background: "#b46533", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["PORT-JEROME-SUR-SEINE"],
-        name: "PORT-JEROME-SUR-SEINE",
+        id: ["ND GRAVENCHON Hotel de Ville"],
+        alternate: "Hôtel de Ville de Port-Jérôme",
+        name: "Hôtel de Ville",
+        city: "PORT-JÉRÔME-SUR-SEINE",
         girouette: {
-          routeNumber: { backgroundColor: "#800080", textColor: "#FFFFFF", outlineColor: "#000000", text: "27" },
-          pages: [{ font: "1310C2E1", text: "PORT-JEROME-SUR-SEINE" }],
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#b46533", textColor: "#FFFFFF", outlineColor: "#000000", text: "27" },
+          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+        },
+      },
+    ],
+  },
+  {
+    id: "REZOBUS:28",
+    noCartridge: true,
+    name: "28",
+    colors: { background: "#292780", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ND GRAVENCHON Conservatoire"],
+        name: "Conservatoire",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#292780", textColor: "#FFFFFF", outlineColor: "#000000", text: "28" },
+          pages: [
+            { text: ["PORT-JEROME-SUR-SEINE", "CONSERVATOIRE"] },
+            { text: ["CONSERVATOIRE", "via TRIQUERVILLE"] },
+            { text: ["CONSERVATOIRE", "TOUFFREVILLE-LA-CABLE"] },
+            { text: ["CONSERVATOIRE", "ET AUBERVILLE-LA-CPGNE"] },
+          ],
         },
       },
     ],

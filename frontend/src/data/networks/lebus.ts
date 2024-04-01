@@ -13,7 +13,13 @@ const lebusRoutes: Route[] = [
         city: "PONT-AUDEMER",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#4e9dcd", textColor: "#ffffff", outlineColor: "#000000", text: "R1" },
+          routeNumber: {
+            backgroundColor: "#f0b848",
+            textColor: "#000000",
+            textSpacing: 1,
+            font: "1510N2E1",
+            text: "BUS",
+          },
           pages: [{ text: ["LE BUS DE PONT-AUDEMER", "BOUCLE DES BAQUETS"] }],
         },
       },
@@ -31,7 +37,13 @@ const lebusRoutes: Route[] = [
         city: "PONT-AUDEMER",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#8db74f", textColor: "#ffffff", outlineColor: "#000000", text: "R2" },
+          routeNumber: {
+            backgroundColor: "#f0b848",
+            textColor: "#000000",
+            textSpacing: 1,
+            font: "1510N2E1",
+            text: "BUS",
+          },
           pages: [{ text: ["LE BUS DE PONT-AUDEMER", "BOUCLE COMPLETE"] }],
         },
       },
@@ -49,7 +61,13 @@ const lebusRoutes: Route[] = [
         city: "PONT-AUDEMER",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#cc483b", textColor: "#ffffff", outlineColor: "#000000", text: "R3" },
+          routeNumber: {
+            backgroundColor: "#f0b848",
+            textColor: "#000000",
+            textSpacing: 1,
+            font: "1510N2E1",
+            text: "BUS",
+          },
           pages: [{ text: ["LE BUS DE PONT-AUDEMER", "BOUCLE DE SAINT-GERMAIN"] }],
         },
       },
