@@ -78,6 +78,7 @@ function handleGetVehicles(c: Context) {
         type: entry.vehicle.position.type,
         timestamp: entry.vehicle.position.timestamp,
       },
+      ledColor: entry.vehicle.ledColor,
     },
     timestamp: entry.timestamp,
   }));
