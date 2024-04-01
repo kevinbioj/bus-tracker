@@ -70,6 +70,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
   const operator = operators.find((operator) => operator.id === data.source)!;
 
   const girouetteWidth = Math.min(width - 50, destination?.girouette?.width ?? 384);
+  const ledColor = data.vehicle.ledColor ?? destination?.girouette?.ledColor ?? "YELLOW";
 
   return (
     <ReactMoveableCircleMarker
@@ -119,9 +120,10 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
         <div style={{ width: `${girouetteWidth + 1}px` }}>
           <div className="border-[1px] border-neutral-800">
             {destination?.girouette ? (
-              <Girouette {...destination.girouette} width={girouetteWidth} />
+              <Girouette {...destination.girouette} ledColor={ledColor} width={girouetteWidth} />
             ) : (
               <Girouette
+                ledColor={ledColor}
                 routeNumber={{
                   backgroundColor: route?.colors.background,
                   textColor: route?.colors.text,

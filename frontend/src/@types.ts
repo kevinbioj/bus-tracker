@@ -95,6 +95,7 @@ export type VehicleData = {
       timestamp: number;
       type: "GPS" | "REALTIME" | "SCHEDULED";
     };
+    ledColor: "YELLOW" | "WHITE" | null;
   };
   timestamp: number;
 };

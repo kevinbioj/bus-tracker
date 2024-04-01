@@ -16,7 +16,7 @@ const lebusRoutes: Route[] = [
           routeNumber: {
             backgroundColor: "#f0b848",
             textColor: "#000000",
-            textSpacing: 1,
+            spacing: 1,
             font: "1510N2E1",
             text: "BUS",
           },
@@ -40,7 +40,7 @@ const lebusRoutes: Route[] = [
           routeNumber: {
             backgroundColor: "#f0b848",
             textColor: "#000000",
-            textSpacing: 1,
+            spacing: 1,
             font: "1510N2E1",
             text: "BUS",
           },
@@ -64,7 +64,7 @@ const lebusRoutes: Route[] = [
           routeNumber: {
             backgroundColor: "#f0b848",
             textColor: "#000000",
-            textSpacing: 1,
+            spacing: 1,
             font: "1510N2E1",
             text: "BUS",
           },

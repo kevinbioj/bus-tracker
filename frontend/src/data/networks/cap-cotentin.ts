@@ -11,7 +11,7 @@ const capCotentinRoutes: Route[] = [
         name: "SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#EB5D4D", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "SCHUMAN-DELAVILLE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "SCHUMAN-DELAVILLE" }],
         },
       },
       {
@@ -65,7 +65,7 @@ const capCotentinRoutes: Route[] = [
         name: "EGLANTINE CHATEAU",
         girouette: {
           routeNumber: { backgroundColor: "#9E5049", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "EGLANTINE CHATEAU" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "EGLANTINE CHATEAU" }],
         },
       },
       {
@@ -181,7 +181,7 @@ const capCotentinRoutes: Route[] = [
         name: "SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#F195BF", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "SCHUMAN-DELAVILLE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "SCHUMAN-DELAVILLE" }],
         },
       },
       {
@@ -204,7 +204,7 @@ const capCotentinRoutes: Route[] = [
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#58529E", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "SCHUMAN-DELAVILLE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "SCHUMAN-DELAVILLE" }],
         },
       },
       {
@@ -212,7 +212,7 @@ const capCotentinRoutes: Route[] = [
         name: "CAP DE LA HAGUE",
         girouette: {
           routeNumber: { backgroundColor: "#58529E", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "CAP DE LA HAGUE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "CAP DE LA HAGUE" }],
         },
       },
       {
@@ -235,7 +235,7 @@ const capCotentinRoutes: Route[] = [
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#1EB8D1", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "SCHUMAN-DELAVILLE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "SCHUMAN-DELAVILLE" }],
         },
       },
       {
@@ -243,7 +243,7 @@ const capCotentinRoutes: Route[] = [
         name: "SIOUVILLE PLACE DES TAMARIS",
         girouette: {
           routeNumber: { backgroundColor: "#1EB8D1", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
-          pages: [{ text: "SIOUVILLE" }, { font: "1508C2E1", textSpacing: 3, text: "PLACE DES TAMARIS" }],
+          pages: [{ text: "SIOUVILLE" }, { font: "1508C2E1", spacing: 3, text: "PLACE DES TAMARIS" }],
         },
       },
       {
@@ -266,7 +266,7 @@ const capCotentinRoutes: Route[] = [
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#86B5E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "SCHUMAN-DELAVILLE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "SCHUMAN-DELAVILLE" }],
         },
       },
       {
@@ -274,7 +274,7 @@ const capCotentinRoutes: Route[] = [
         name: "VALOGNES GARE SNCF",
         girouette: {
           routeNumber: { backgroundColor: "#86B5E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "VALOGNES GARE SNCF" }],
+          pages: [{ text: "VALOGNES" }, { text: "GARE SNCF" }],
         },
       },
       {
@@ -282,7 +282,7 @@ const capCotentinRoutes: Route[] = [
         name: "BARFLEUR MAIRIE",
         girouette: {
           routeNumber: { backgroundColor: "#86B5E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "BARFLEUR MAIRIE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "BARFLEUR MAIRIE" }],
         },
       },
       {
@@ -305,7 +305,7 @@ const capCotentinRoutes: Route[] = [
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#107974", textColor: "#FFFFFF", outlineColor: "#000000", text: "D" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "SCHUMAN-DELAVILLE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "SCHUMAN-DELAVILLE" }],
         },
       },
       {
@@ -328,7 +328,7 @@ const capCotentinRoutes: Route[] = [
         name: "CHERBOURG EN COTENTIN SCHUMAN-DELAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#47B7A2", textColor: "#FFFFFF", outlineColor: "#000000", text: "E" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "SCHUMAN-DELAVILLE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "SCHUMAN-DELAVILLE" }],
         },
       },
       {
@@ -351,7 +351,7 @@ const capCotentinRoutes: Route[] = [
         name: "LES PIEUX PLACE DE LA LANDE",
         girouette: {
           routeNumber: { backgroundColor: "#9774B1", textColor: "#FFFFFF", outlineColor: "#000000", text: "F" },
-          pages: [{ text: "LES PIEUX" }, { font: "1508C2E1", textSpacing: 3, text: "PLACE DE LA LANDE" }],
+          pages: [{ text: "LES PIEUX" }, { font: "1508C2E1", spacing: 3, text: "PLACE DE LA LANDE" }],
         },
       },
       {
@@ -359,7 +359,7 @@ const capCotentinRoutes: Route[] = [
         name: "VALOGNES PLACE FELIX BUHOT",
         girouette: {
           routeNumber: { backgroundColor: "#9774B1", textColor: "#FFFFFF", outlineColor: "#000000", text: "F" },
-          pages: [{ text: "VALOGNES" }, { font: "1508C2E1", textSpacing: 3, text: "PLACE FELIX BUHOT" }],
+          pages: [{ text: "VALOGNES" }, { font: "1508C2E1", spacing: 3, text: "PLACE FELIX BUHOT" }],
         },
       },
       {
@@ -367,7 +367,7 @@ const capCotentinRoutes: Route[] = [
         name: "BARNEVILLE CARTERET MAIRIE",
         girouette: {
           routeNumber: { backgroundColor: "#9774B1", textColor: "#FFFFFF", outlineColor: "#000000", text: "F" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "BARNEVILLE-CARTERET MAIRIE" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "BARNEVILLE-CARTERET MAIRIE" }],
         },
       },
     ],
@@ -382,7 +382,7 @@ const capCotentinRoutes: Route[] = [
         name: "VALOGNES Z.A. ARMANVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#C2DDB3", textColor: "#000000", text: "G" },
-          pages: [{ text: "VALOGNES" }, { font: "1508C2E1", textSpacing: 3, text: "Z.A. ARMANVILLE" }],
+          pages: [{ text: "VALOGNES" }, { font: "1508C2E1", spacing: 3, text: "Z.A. ARMANVILLE" }],
         },
       },
       {
@@ -451,7 +451,7 @@ const capCotentinRoutes: Route[] = [
         name: "BARNEVILLE CARTERET LE VALNOTTE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S1" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "BARNEVILLE-CARTERET" }, { text: "LE VALNOTTE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "BARNEVILLE-CARTERET" }, { text: "LE VALNOTTE" }],
         },
       },
       {
@@ -459,7 +459,7 @@ const capCotentinRoutes: Route[] = [
         name: "VALOGNES PLACE FELIX BUHOT",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S1" },
-          pages: [{ text: "VALOGNES" }, { font: "1508C2E1", textSpacing: 3, text: "PLACE FELIX BUHOT" }],
+          pages: [{ text: "VALOGNES" }, { font: "1508C2E1", spacing: 3, text: "PLACE FELIX BUHOT" }],
         },
       },
     ],
@@ -497,7 +497,7 @@ const capCotentinRoutes: Route[] = [
         name: "VALOGNES COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S3" },
-          pages: [{ font: "1508C2E1", textSpacing: 3, text: "VALOGNES COLLEGE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "VALOGNES COLLEGE" }],
         },
       },
       {
@@ -623,7 +623,7 @@ const capCotentinRoutes: Route[] = [
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S7" },
           pages: [
             { font: "1508C2E1", text: "SAINT-PIERRE-EGLISE" },
-            { font: "1508C2E1", textSpacing: 3, text: "ECOLE ELEMENTAIRE" },
+            { font: "1508C2E1", spacing: 3, text: "ECOLE ELEMENTAIRE" },
           ],
         },
       },
@@ -657,7 +657,7 @@ const capCotentinRoutes: Route[] = [
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S8" },
           pages: [
             { font: "1508C2E1", text: "SAINT-PIERRE-EGLISE" },
-            { font: "1508C2E1", textSpacing: 3, text: "ECOLE ELEMENTAIRE" },
+            { font: "1508C2E1", spacing: 3, text: "ECOLE ELEMENTAIRE" },
           ],
         },
       },
@@ -743,7 +743,7 @@ const capCotentinRoutes: Route[] = [
         name: "BIVILLE LA CROIX FRIMOT",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S11" },
-          pages: [{ text: "BIVILLE" }, { font: "1508C2E1", textSpacing: 3, text: "LA CROIX FRIMOT" }],
+          pages: [{ text: "BIVILLE" }, { font: "1508C2E1", spacing: 3, text: "LA CROIX FRIMOT" }],
         },
       },
     ],

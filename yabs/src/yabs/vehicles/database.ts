@@ -8,3 +8,4 @@ if (typeof DB_PATH === 'undefined') {
 
 const database = new Database(DB_PATH ?? ':memory:');
 export const orm = drizzle(database);
+export const databaseActivated = typeof DB_PATH === 'string';

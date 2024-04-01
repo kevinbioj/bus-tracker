@@ -321,7 +321,7 @@ const sngoRoutes: Route[] = [
         city: "PACY-SUR-EURE",
         girouette: {
           routeNumber: { backgroundColor: "#7F5DA4", textColor: "#FFFFFF", outlineColor: "#000000", text: "9" },
-          pages: [{ text: "PACY-SUR-EURE" }, { font: "1508C2E1", textSpacing: 3, text: "ZONE ARTISANALE" }],
+          pages: [{ text: "PACY-SUR-EURE" }, { font: "1508C2E1", spacing: 3, text: "ZONE ARTISANALE" }],
         },
       },
     ],
@@ -356,7 +356,7 @@ const sngoRoutes: Route[] = [
         city: "ECOS",
         girouette: {
           routeNumber: { backgroundColor: "#EF7D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
-          pages: [{ text: "ECOS" }, { font: "1510N2E1", textSpacing: 1, text: "PLACE DE L'EGLISE" }],
+          pages: [{ text: "ECOS" }, { font: "1510N2E1", spacing: 1, text: "PLACE DE L'EGLISE" }],
         },
       },
     ],

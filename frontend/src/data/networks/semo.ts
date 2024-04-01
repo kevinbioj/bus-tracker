@@ -71,7 +71,7 @@ const semoRoutes: Route[] = [
             outlineColor: "#FFFFFF",
             text: "E1",
           },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "SAINT-AUBIN-LES-ELBEUF" }, { text: "HOPITAL" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "SAINT-AUBIN-LES-ELBEUF" }, { text: "HOPITAL" }],
         },
       },
       {
@@ -307,7 +307,7 @@ const semoRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#63BBE4", textColor: "#FFFFFF", outlineColor: "#000000", text: "5" },
-          pages: [{ text: "PITRES" }, { font: "1508C2E1", textSpacing: 1, text: "ESPACE DES DEUX-RIVES" }],
+          pages: [{ text: "PITRES" }, { font: "1508C2E1", spacing: 1, text: "ESPACE DES DEUX-RIVES" }],
         },
       },
       {

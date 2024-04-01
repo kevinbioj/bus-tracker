@@ -137,7 +137,7 @@ const astrobusRoutes: Route[] = [
         name: "Saint-Pierre-sur-Dives",
         girouette: {
           routeNumber: { backgroundColor: "#E83279", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ font: "1508C2E1", textSpacing: 1, text: "SAINT-PIERRE-SUR-DIVES" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "SAINT-PIERRE-SUR-DIVES" }],
         },
       },
     ],

@@ -24,6 +24,7 @@ export type YabsEntry = {
       timestamp: number;
       type: 'GPS' | 'REALTIME' | 'SCHEDULED';
     };
+    ledColor: 'YELLOW' | 'WHITE' | null;
   };
   timestamp: number;
 };

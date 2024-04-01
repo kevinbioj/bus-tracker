@@ -9,6 +9,7 @@ export const vehicles = sqliteTable(
     type: text('type', { enum: ['BUS', 'SUBWAY', 'TRAMWAY'] }).notNull(),
     name: text('name'),
     tcId: integer('tc_id'),
+    ledColor: text('led_color', { enum: ['YELLOW', 'WHITE'] }),
   },
   (table) => ({
     operatorIndex: index('operator_index').on(table.operator),
