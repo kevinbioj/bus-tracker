@@ -136,7 +136,7 @@ const rezobusRoutes: Route[] = [
         },
       },
       {
-        id: ["LILLEBONNE Puits Maillé"],
+        id: ["LILLEBONNE Puit Maillé"],
         name: "Puits Maillé",
         city: "LILLEBONNE",
         girouette: {
