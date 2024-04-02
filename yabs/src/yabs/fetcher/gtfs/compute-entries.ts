@@ -264,7 +264,9 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           id: `${properties.id}:${id}`,
           stopTimes: dayjs.unix(currentStopTime.timestamp!).isAfter()
             ? stopTimes
-            : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
+            : properties.timeSlice === 'FIRST_REALTIME'
+              ? stopTimes.filter((s) => s.timestamp !== null && s.timestamp >= Date.now())
+              : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
           trip: {
             id: trip.id,
             calendar: trip.calendar.id,

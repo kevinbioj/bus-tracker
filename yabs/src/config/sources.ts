@@ -34,6 +34,7 @@ const sources: Source[] = [
         },
       },
       getOperator: (trip) => (trip.calendar.id.startsWith('IST') || trip.route === '89' ? 'TNI' : 'TCAR'),
+      timeSlice: 'FIRST_REALTIME',
       propagateDelays: true,
     },
   },
