@@ -264,9 +264,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           id: `${properties.id}:${id}`,
           stopTimes: dayjs.unix(currentStopTime.timestamp!).isAfter()
             ? stopTimes
-            : properties.timeSlice === 'FIRST_REALTIME'
-              ? stopTimes.filter((s) => s.timestamp !== null && s.timestamp >= Date.now())
-              : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
+            : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
           trip: {
             id: trip.id,
             calendar: trip.calendar.id,
@@ -398,13 +396,13 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         id: `${properties.id}:${id}`,
         source,
         stopTimes:
-          typeof vehiclePosition.vehicle.currentStopSequence === 'number'
-            ? stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!)
-            : stopTimes.filter((stopTime) => {
+          typeof vehiclePosition.vehicle.currentStopSequence !== 'number' || properties.timeSlice === 'FIRST_REALTIME'
+            ? stopTimes.filter((stopTime) => {
                 return dayjs
                   .unix(stopTime.timestamp ?? stopTime.scheduled)
                   .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minute');
-              }),
+              })
+            : stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!),
         trip: {
           id: trip.id,
           calendar: trip.calendar.id,
