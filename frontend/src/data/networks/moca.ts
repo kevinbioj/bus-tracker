@@ -19,12 +19,12 @@ const mocaRoutes: Route[] = [
       },
       {
         id: ["Pavilly"],
-        name: "Rouges Granges",
+        name: "Freckenhorst",
         city: "PAVILLY",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#745CA8", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: ["PAVILLY", "ROUGES GRANGES"] }],
+          pages: [{ text: ["PAVILLY", "FRECKENHORST"] }],
         },
       },
     ],
