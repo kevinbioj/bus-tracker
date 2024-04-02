@@ -378,9 +378,9 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Champlain ROUEN"],
+        id: ["Lafayette ROUEN"],
         autoHide: true,
-        name: "Champlain",
+        name: "Lafayette",
         city: "ROUEN",
         girouette: {
           routeNumber: {
@@ -390,7 +390,7 @@ const astuceRoutes: Route[] = [
             text: "F1",
           },
           pages: [
-            { spacing: 3, text: "CHAMPLAIN" },
+            { spacing: 3, text: "LAFAYETTE" },
             { spacing: 3, text: "ROUEN" },
           ],
         },
@@ -674,9 +674,9 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Champlain ROUEN"],
+        id: ["Lafayette ROUEN"],
         autoHide: true,
-        name: "Champlain",
+        name: "Lafayette",
         city: "ROUEN",
         girouette: {
           ledColor: "WHITE",
@@ -687,7 +687,7 @@ const astuceRoutes: Route[] = [
             text: "F7",
           },
           pages: [
-            { spacing: 3, text: "CHAMPLAIN" },
+            { spacing: 3, text: "LAFAYETTE" },
             { spacing: 3, text: "ROUEN" },
           ],
         },
@@ -1113,14 +1113,14 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Champlain ROUEN"],
+        id: ["Lafayette ROUEN"],
         autoHide: true,
-        name: "Champlain",
+        name: "Lafayette",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
           pages: [
-            { spacing: 3, text: "CHAMPLAIN" },
+            { spacing: 3, text: "LAFAYETTE" },
             { spacing: 3, text: "ROUEN" },
           ],
         },
