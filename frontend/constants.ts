@@ -1,4 +1,4 @@
 export const brandColor = {
-  DEFAULT: "#B0105F",
-  hover: "#8D0D4C",
+  DEFAULT: "#ce007c",
+  hover: "#B90070",
 };
