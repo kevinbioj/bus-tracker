@@ -1068,17 +1068,14 @@ const astuceRoutes: Route[] = [
         name: "Mont-Riboudet - Kindarena",
         city: "ROUEN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#0069B3",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            font: "1508SUPX",
             text: "26",
           },
-          pages: [
-            { font: "1508SUPX", text: "MONT-RIBOUDET" },
-            { font: "1508SUPX", text: "ROUEN" },
-          ],
+          pages: [{ text: "MONT-RIBOUDET" }, { spacing: 4, text: "ROUEN" }],
         },
       },
       {
@@ -1086,14 +1083,14 @@ const astuceRoutes: Route[] = [
         name: "Salle des Fêtes",
         city: "SAINT-PIERRE-DE-VARENGEVILLE",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#0069B3",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            font: "1508SUPX",
             text: "26",
           },
-          pages: [{ font: "1508SUPX", text: "SALLE DES FETES" }, { text: ["SAINT-PIERRE", "DE-VARENGEVILLE"] }],
+          pages: [{ font: "1510N2E1", text: "SALLE DES FETES" }, { text: ["SAINT-PIERRE", "DE-VARENGEVILLE"] }],
         },
       },
     ],
@@ -1505,6 +1502,7 @@ const astuceRoutes: Route[] = [
         name: "Gare Routière",
         city: "ROUEN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#D20A11",
             textColor: "#FFFFFF",
@@ -1512,7 +1510,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "530",
           },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+          pages: [{ text: ["ROUEN", "GARE ROUTIERE"] }],
         },
       },
       {
@@ -1521,6 +1519,7 @@ const astuceRoutes: Route[] = [
         name: "Mairie",
         city: "LE TRAIT",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#D20A11",
             textColor: "#FFFFFF",
@@ -1528,7 +1527,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "530",
           },
-          pages: [{ font: "1508SUPX", text: "LE TRAIT" }],
+          pages: [{ text: ["LE TRAIT", "MAIRIE"] }, { text: ["LE TRAIT", "VIA JUMIEGES"] }],
         },
       },
       {
@@ -1537,6 +1536,7 @@ const astuceRoutes: Route[] = [
         name: "Quai",
         city: "CAUDEBEC-EN-CAUX",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#D20A11",
             textColor: "#FFFFFF",
@@ -1544,7 +1544,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "530",
           },
-          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-CAUX" }],
+          pages: [{ text: ["CAUDEBEC-EN-CAUX", "QUAI"] }],
         },
       },
     ],
@@ -2140,12 +2140,40 @@ const astuceRoutes: Route[] = [
     name: "201",
     colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      {
+        id: ["Collège Gustave Flaubert DUCLAIR"],
+        autoHide: true,
+        name: "Collège Flaubert",
+        city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "201",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
+      },
       {
         id: ["Les Mailles SAINT-PIERRE-DE-VARENGEVILLE"],
         autoHide: true,
         name: "Les Mailles",
         city: "SAINT-PIERRE-DE-VARENGEVILLE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "201",
+          },
+          pages: [{ font: "1508SUPX", text: "LES MAILLES" }, { text: ["SAINT-PIERRE", "DE-VARENGEVILLE"] }],
+        },
       },
     ],
   },
@@ -2154,13 +2182,44 @@ const astuceRoutes: Route[] = [
     name: "202",
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      {
+        id: ["Collège Gustave Flaubert DUCLAIR"],
+        autoHide: true,
+        name: "Collège Flaubert",
+        city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "202",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
+      },
       {
         id: ["Église SAINT-PAËR"],
         autoHide: true,
         alternate: "Église de Saint-Paër",
         name: "Église",
         city: "SAINT-PAËR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#74B95B",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "202",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ECOLE" },
+            { font: "1508SUPX", text: "SAINT-PAER" },
+          ],
+        },
       },
     ],
   },
@@ -2169,13 +2228,41 @@ const astuceRoutes: Route[] = [
     name: "203",
     colors: { background: "#F4A3AF", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      {
+        id: ["Collège Gustave Flaubert DUCLAIR"],
+        autoHide: true,
+        name: "Collège Flaubert",
+        city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F4A3AF",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "203",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
+      },
       {
         id: ["Mairie SAINTE-MARGUERITE-SUR-DUCLAIR"],
         autoHide: true,
         alternate: "Mairie de Saint-Marguerite",
         name: "Mairie",
         city: "SAINT-MARGUERITE-SUR-DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F4A3AF",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "203",
+          },
+          pages: [{ font: "1508SUPX", text: "MAIRIE" }, { text: ["SAINT-MARGERITE", "SUR-DUCLAIR"] }],
+        },
       },
     ],
   },
@@ -2184,12 +2271,43 @@ const astuceRoutes: Route[] = [
     name: "204",
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      {
+        id: ["Collège Gustave Flaubert DUCLAIR"],
+        autoHide: true,
+        name: "Collège Flaubert",
+        city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "204",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
+      },
       {
         id: ["L'Orme HÉNOUVILLE"],
         autoHide: true,
         name: "L'Orme",
         city: "HÉNOUVILLE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "204",
+          },
+          pages: [
+            { font: "1508SUPX", text: "L'ORME" },
+            { font: "1508SUPX", text: "HENOUVILLE" },
+          ],
+        },
       },
     ],
   },
@@ -2198,12 +2316,40 @@ const astuceRoutes: Route[] = [
     name: "205",
     colors: { background: "#914C15", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      {
+        id: ["Collège Gustave Flaubert DUCLAIR"],
+        autoHide: true,
+        name: "Collège Flaubert",
+        city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#914C15",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "205",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
+      },
       {
         id: ["Le Paulu - Usine Oxford SAINT-PIERRE-DE-VARENGEVILLE"],
         autoHide: true,
         name: "Le Paulu - Usine Oxford",
         city: "SAINT-PIERRE-DE-VARENGEVILLE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#914C15",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "205",
+          },
+          pages: [{ font: "1507SUPX", text: "LE PAULU-USINE OXFORD" }, { text: ["SAINT-PIERRE", "DE-VARENGEVILLE"] }],
+        },
       },
     ],
   },
@@ -2212,12 +2358,43 @@ const astuceRoutes: Route[] = [
     name: "206",
     colors: { background: "#009640", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      {
+        id: ["Collège Gustave Flaubert DUCLAIR"],
+        autoHide: true,
+        name: "Collège Flaubert",
+        city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#009640",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "206",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
+      },
       {
         id: ["Le Conihout 543 LE-MESNIL-SOUS-JUMIÈGES"],
         autoHide: true,
         name: "Le Conihout 543",
         city: "LE-MESNIL-SOUS-JUMIÈGES",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#009640",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "206",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LE CONIHOUT 543" },
+            { font: "1407SUPX", text: "LE-MESNIL-SOUS-JUMIEGES" },
+          ],
+        },
       },
     ],
   },
@@ -2226,27 +2403,89 @@ const astuceRoutes: Route[] = [
     name: "207",
     colors: { background: "#C7D530", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      {
+        id: ["Collège Gustave Flaubert DUCLAIR"],
+        autoHide: true,
+        name: "Collège Flaubert",
+        city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#C7D530",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "208",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
+      },
       {
         id: ["Abbaye JUMIÈGES"],
         autoHide: true,
         alternate: "Abbaye de Jumièges",
         name: "Abbaye",
         city: "JUMIÈGES",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#C7D530",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "208",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ABBAYE" },
+            { font: "1508SUPX", text: "JUMIEGES" },
+          ],
+        },
       },
     ],
   },
   {
     id: "ASTUCE:208",
     name: "208",
-    colors: { background: "#F8AE4C", text: "#1D1D1B" },
+    colors: { background: "#C7D530", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Gustave Flaubert DUCLAIR"], autoHide: true, name: "Collège Flaubert", city: "DUCLAIR" },
+      {
+        id: ["Collège Gustave Flaubert DUCLAIR"],
+        autoHide: true,
+        name: "Collège Flaubert",
+        city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "208",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
+      },
       {
         id: ["Calumet BARDOUVILLE"],
         autoHide: true,
         name: "Calumet",
         city: "BARDOUVILLE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "208",
+          },
+          pages: [
+            { font: "1508SUPX", text: "CALUMET" },
+            { font: "1508SUPX", text: "BARDOUVILLE" },
+          ],
+        },
       },
       {
         id: ["Bac de Berville"],
@@ -2254,6 +2493,19 @@ const astuceRoutes: Route[] = [
         alternate: "Bac de Berville",
         name: "Bac",
         city: "BERVILLE-SUR-SEINE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F8AE4C",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "208",
+          },
+          pages: [
+            { font: "1508SUPX", text: "BAC" },
+            { font: "1508SUPX", text: "BERVILLE-SUR-SEINE" },
+          ],
+        },
       },
     ],
   },
@@ -2262,12 +2514,40 @@ const astuceRoutes: Route[] = [
     name: "210",
     colors: { background: "#00A984", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Charcot LE TRAIT"], autoHide: true, name: "Collège Charcot", city: "LE TRAIT" },
+      {
+        id: ["Collège Charcot LE TRAIT"],
+        autoHide: true,
+        name: "Collège Charcot",
+        city: "LE TRAIT",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#00A984",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "210",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE CHARCOT" },
+            { font: "1508SUPX", text: "LE TRAIT" },
+          ],
+        },
+      },
       {
         id: ["Ronceray SAINTE-MARGUERITE-SUR-DUCLAIR"],
         autoHide: true,
         name: "Ronceray",
         city: "SAINTE-MARGUERITE-SUR-DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#00A984",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "210",
+          },
+          pages: [{ font: "1508SUPX", text: "RONCERAY" }, { text: ["SAINT-MARGERITE", "SUR-DUCLAIR"] }],
+        },
       },
     ],
   },
@@ -2276,12 +2556,40 @@ const astuceRoutes: Route[] = [
     name: "211",
     colors: { background: "#F4A3B0", text: "#1D1D1B" },
     destinations: [
-      { id: ["Collège Charcot LE TRAIT"], autoHide: true, name: "Collège Charcot", city: "LE TRAIT" },
+      {
+        id: ["Collège Charcot LE TRAIT"],
+        autoHide: true,
+        name: "Collège Charcot",
+        city: "LE TRAIT",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F4A3B0",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "211",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE CHARCOT" },
+            { font: "1508SUPX", text: "LE TRAIT" },
+          ],
+        },
+      },
       {
         id: ["Le Beauquesnay SAINT-MARGUERITE-SUR-DUCLAIR"],
         autoHide: true,
         name: "Le Beauquesnay",
         city: "SAINTE-MARGUERITE-SUR-DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F4A3B0",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "211",
+          },
+          pages: [{ font: "1508SUPX", text: "LE BEAUQUESNAY" }, { text: ["SAINT-MARGERITE", "SUR-DUCLAIR"] }],
+        },
       },
     ],
   },
@@ -2290,13 +2598,44 @@ const astuceRoutes: Route[] = [
     name: "212",
     colors: { background: "#E83278", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Charcot LE TRAIT"], autoHide: true, name: "Collège Charcot", city: "LE TRAIT" },
+      {
+        id: ["Collège Charcot LE TRAIT"],
+        autoHide: true,
+        name: "Collège Charcot",
+        city: "LE TRAIT",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E83278",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "212",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LA MAISON BLANCHE" },
+            { font: "1508SUPX", text: "LE TRAIT" },
+          ],
+        },
+      },
       {
         id: ["Terrain de Pétanque YAINVILLE"],
         autoHide: true,
         alternate: "Terrain de Pétanque de Yainville",
         name: "Terrain de Pétanque",
         city: "YAINVILLE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E83278",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "212",
+          },
+          pages: [
+            { font: "1507SUPX", text: "TERRAIN DE PETANQUE" },
+            { font: "1508SUPX", text: "YAINVILLE" },
+          ],
+        },
       },
     ],
   },
@@ -2305,12 +2644,43 @@ const astuceRoutes: Route[] = [
     name: "213",
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
-      { id: ["Collège Charcot LE TRAIT"], autoHide: true, name: "Collège Charcot", city: "LE TRAIT" },
+      {
+        id: ["Collège Charcot LE TRAIT"],
+        autoHide: true,
+        name: "Collège Charcot",
+        city: "LE TRAIT",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "213",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE CHARCOT" },
+            { font: "1508SUPX", text: "LE TRAIT" },
+          ],
+        },
+      },
       {
         id: ["La Maison Blanche LE TRAIT"],
         autoHide: true,
         name: "La Maison Blanche",
         city: "LE TRAIT",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "213",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LA MAISON BLANCHE" },
+            { font: "1508SUPX", text: "LE TRAIT" },
+          ],
+        },
       },
     ],
   },
@@ -2319,18 +2689,62 @@ const astuceRoutes: Route[] = [
     name: "214",
     colors: { background: "#C7D530", text: "#1D1D1B" },
     destinations: [
-      { id: ["Lycée du Cailly DÉVILLE-LÈS-ROUEN"], autoHide: true, name: "Lycée du Cailly", city: "DÉVILLE-LÈS-ROUEN" },
+      {
+        id: ["Lycée du Cailly DÉVILLE-LÈS-ROUEN"],
+        autoHide: true,
+        name: "Lycée du Cailly",
+        city: "DÉVILLE-LÈS-ROUEN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#C7D530",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "214",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE DU CAILLY" },
+            { font: "1508SUPX", text: "DEVILLE-LES-ROUEN" },
+          ],
+        },
+      },
       {
         id: ["Collège Le Cèdre CANTELEU"],
         autoHide: true,
         name: "Collège Le Cèdre",
         city: "CANTELEU",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#C7D530",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "214",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE LE CEDRE" },
+            { font: "1508SUPX", text: "CANTELEU" },
+          ],
+        },
       },
       {
         id: ["Val Phénix QUEVILLON"],
         autoHide: true,
         name: "Val Phénix",
         city: "QUEVILLON",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#C7D530",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "214",
+          },
+          pages: [
+            { font: "1508SUPX", text: "VAL PHENIX" },
+            { font: "1508SUPX", text: "QUEVILLON" },
+          ],
+        },
       },
     ],
   },
@@ -2344,6 +2758,16 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "École Cousteau",
         city: "SAINTE-MARGUERITE-SUR-DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#FFDD00",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "220",
+          },
+          pages: [{ font: "1508SUPX", text: "ECOLE COUSTEAU" }, { text: ["SAINT-MARGERITE", "SUR-DUCLAIR"] }],
+        },
       },
     ],
   },
@@ -2358,6 +2782,19 @@ const astuceRoutes: Route[] = [
         alternate: "École d'Épinay",
         name: "École",
         city: "ÉPINAY-SUR-DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#0090D7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "221",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ECOLE" },
+            { font: "1508SUPX", text: "EPINAY-SUR-DUCLAIR" },
+          ],
+        },
       },
     ],
   },
@@ -2372,12 +2809,38 @@ const astuceRoutes: Route[] = [
         alternate: "École de Jumièges",
         name: "École",
         city: "JUMIÈGES",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E83278",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "222",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ECOLE" },
+            { font: "1508SUPX", text: "JUMIEGES" },
+          ],
+        },
       },
       {
         id: ["Guillaume Le Conquérant JUMIÈGES"],
         autoHide: true,
         name: "Guillaume Le Conquérant",
         city: "JUMIÈGES",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E83278",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "222",
+          },
+          pages: [
+            { font: "1407SUPX", text: "GUILLAUME LE CONQUERANT" },
+            { font: "1508SUPX", text: "JUMIEGES" },
+          ],
+        },
       },
     ],
   },
@@ -2391,12 +2854,35 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "École Jacques Prévert",
         city: "SAINT-PIERRE-DE-VARENGEVILLE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#00A984",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "223",
+          },
+          pages: [{ font: "1407SUPX", text: "ECOLE JACQUES PREVERT" }, { text: ["SAINT-PIERRE", "DE-VARENGEVILLE"] }],
+        },
       },
       {
         id: ["Collège Gustave Flaubert DUCLAIR"],
         autoHide: true,
         name: "Collège Flaubert",
         city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#00A984",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "223",
+          },
+          pages: [
+            { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
       },
     ],
   },
@@ -2411,12 +2897,38 @@ const astuceRoutes: Route[] = [
         alternate: "École Primaire de Saint-Paër",
         name: "École Primaire",
         city: "SAINT-PAËR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "224",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ECOLE PRIMAIRE" },
+            { font: "1508SUPX", text: "SAINT-PAER" },
+          ],
+        },
       },
       {
         id: ["Le Bas Aulnay SAINT-PAËR"],
         autoHide: true,
         name: "Le Bas Aulnay",
         city: "SAINT-PAËR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "224",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LE BAS AULNAY" },
+            { font: "1508SUPX", text: "SAINT-PAER" },
+          ],
+        },
       },
     ],
   },
@@ -2431,6 +2943,19 @@ const astuceRoutes: Route[] = [
         alternate: "Mairie d'Yville-sur-Seine",
         name: "Mairie",
         city: "YVILLE-SUR-SEINE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E83278",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "225",
+          },
+          pages: [
+            { font: "1508SUPX", text: "MAIRIE" },
+            { font: "1508SUPX", text: "YVILLE-SUR-SEINE" },
+          ],
+        },
       },
     ],
   },
@@ -2444,6 +2969,19 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "École Malraux",
         city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#007D62",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "227",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ECOLE MALRAUX" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
       },
     ],
   },
@@ -2457,6 +2995,19 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "École Malraux",
         city: "DUCLAIR",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F2E500",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "228",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ECOLE MALRAUX" },
+            { font: "1508SUPX", text: "DUCLAIR" },
+          ],
+        },
       },
     ],
   },
@@ -2470,6 +3021,19 @@ const astuceRoutes: Route[] = [
         autoHide: true,
         name: "École Maupassant",
         city: "LE TRAIT",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#f7ae4c",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "229",
+          },
+          pages: [
+            { font: "1508SUPX", text: "ECOLE MAUPASSANT" },
+            { font: "1508SUPX", text: "LE TRAIT" },
+          ],
+        },
       },
       {
         id: ["Église du Trait LE TRAIT"],
@@ -2477,6 +3041,19 @@ const astuceRoutes: Route[] = [
         alternate: "Église du Trait",
         name: "Église",
         city: "LE TRAIT",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#f7ae4c",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "229",
+          },
+          pages: [
+            { font: "1508SUPX", text: "EGLISE" },
+            { font: "1508SUPX", text: "LE TRAIT" },
+          ],
+        },
       },
     ],
   },

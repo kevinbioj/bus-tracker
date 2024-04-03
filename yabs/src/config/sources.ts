@@ -97,7 +97,7 @@ const sources: Source[] = [
       staticResourceHref:
         'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:004',
       routePrefix: 'ASTUCE',
-      getOperator: (trip) => (trip.route === '214' ? 'TNI' : 'HANGA'),
+      getOperator: (trip) => (['204', '214'].includes(trip.route) ? 'TNI' : 'HANGA'),
     },
   },
   {
