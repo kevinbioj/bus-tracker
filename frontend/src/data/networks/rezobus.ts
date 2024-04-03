@@ -107,6 +107,17 @@ const rezobusRoutes: Route[] = [
         },
       },
       {
+        id: ["BOLBEC Paul Belhache"],
+        autoHide: true,
+        name: "Paul Belhache",
+        city: "BOLBEC",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#f7952e", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
+          pages: [{ text: ["BOLBEC", "PAUL BELHACHE"] }],
+        },
+      },
+      {
         id: ["BOLBEC Val Du Moulin"],
         name: "Val du Moulin",
         city: "BOLBEC",
