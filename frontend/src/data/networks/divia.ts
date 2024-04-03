@@ -1375,7 +1375,7 @@ const diviaRoutes: Route[] = [
       {
         id: ["ST-APOLLINAIRE Pré Thomas"],
         autoHide: true,
-        name: "ST-APOLLINAIRE Pré Thomas",
+        name: "Bus Class' ST-APOLLINAIRE Pré Thomas",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "74", outlineColor: "#000000" },
@@ -1402,21 +1402,21 @@ const diviaRoutes: Route[] = [
       {
         id: ["FLAVIGNEROT"],
         autoHide: true,
-        name: "FLAVIGNEROT",
+        name: "Bus Class' FLAVIGNEROT",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "75", outlineColor: "#000000" },
-          pages: [{ text: "FLAVIGNEROT" }],
+          pages: [{ text: ["BUS CLASS'", "FLAVIGNEROT"] }],
         },
       },
       {
         id: ["Collège Dunant"],
         autoHide: true,
-        name: "Collège Dunant",
+        name: "Bus Class' Collège Dunant",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "75", outlineColor: "#000000" },
-          pages: [{ text: "COLLÈGE DUNANT" }],
+          pages: [{ text: ["BUS CLASS'", "COLLÈGE DUNANT"] }],
         },
       },
     ],
