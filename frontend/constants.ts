@@ -5,4 +5,4 @@ export const brandColor = {
   hover: "#B90070",
 };
 
-export const mapCenter = [49.443232, 1.099971] satisfies LatLngTuple;
+export const mapCenter = [47.316667, 5.016667] satisfies LatLngTuple;
