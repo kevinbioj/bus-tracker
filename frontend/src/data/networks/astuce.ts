@@ -1340,10 +1340,7 @@ const astuceRoutes: Route[] = [
         city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
           routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "41" },
-          pages: [
-            { font: "1510N2E1", text: "VENTE OLIVIER" },
-            { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
-          ],
+          pages: [{ text: "VENTE OLIVIER" }, { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
         },
       },
       {
