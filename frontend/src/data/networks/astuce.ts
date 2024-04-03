@@ -2216,7 +2216,7 @@ const astuceRoutes: Route[] = [
             text: "202",
           },
           pages: [
-            { font: "1508SUPX", text: "ECOLE" },
+            { font: "1508SUPX", text: "EGLISE" },
             { font: "1508SUPX", text: "SAINT-PAER" },
           ],
         },
@@ -2414,7 +2414,7 @@ const astuceRoutes: Route[] = [
             textColor: "#000000",
             outlineColor: "#FFFFFF",
             font: "1508SUPX",
-            text: "208",
+            text: "207",
           },
           pages: [
             { font: "1508SUPX", text: "COLLEGE FLAUBERT" },
@@ -2434,7 +2434,7 @@ const astuceRoutes: Route[] = [
             textColor: "#000000",
             outlineColor: "#FFFFFF",
             font: "1508SUPX",
-            text: "208",
+            text: "207",
           },
           pages: [
             { font: "1508SUPX", text: "ABBAYE" },
@@ -2447,7 +2447,7 @@ const astuceRoutes: Route[] = [
   {
     id: "ASTUCE:208",
     name: "208",
-    colors: { background: "#C7D530", text: "#1D1D1B" },
+    colors: { background: "#F8AE4C", text: "#1D1D1B" },
     destinations: [
       {
         id: ["Collège Gustave Flaubert DUCLAIR"],
