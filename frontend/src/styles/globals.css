@@ -82,6 +82,24 @@
   src: url("../fonts/girouette/METRO.ttf");
 }
 
+@font-face {
+  font-display: block;
+  font-family: "DUHAMEL-24-22-2";
+  src: url("../fonts/girouette/DUHAMEL-24-22-2.ttf");
+}
+
+@font-face {
+  font-display: block;
+  font-family: "LUMIPLAN-A";
+  src: url("../fonts/girouette/LUMIPLAN-A.ttf");
+}
+
+@font-face {
+  font-display: block;
+  font-family: "LUMIPLAN-2";
+  src: url("../fonts/girouette/LUMIPLAN-2.ttf");
+}
+
 html {
   font-family: "Achemine", system-ui, sans-serif;
 }
