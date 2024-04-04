@@ -186,7 +186,8 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                spacing: 2,
+                text: "PAR  LE  HAVRE  CENTRE",
               },
             ],
           ],
@@ -249,7 +250,8 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                spacing: 2,
+                text: "PAR  LE  HAVRE  CENTRE",
               },
             ],
           ],
