@@ -13,13 +13,15 @@ const liaRoutes: Route[] = [
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#E30613",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "T",
           },
-          pages: [{ font: "1508SUPX", text: "GRAND HAMEAU" }],
+          pages: [{ font: "14LUPLAN", text: "GRAND HAMEAU" }],
         },
       },
       {
@@ -28,13 +30,15 @@ const liaRoutes: Route[] = [
         name: "Pré Fleuri",
         city: "LE HAVRE",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#E30613",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "T",
           },
-          pages: [{ font: "1508SUPX", text: "PRE FLEURI" }],
+          pages: [{ font: "14LUPLAN", text: "PRE FLEURI" }],
         },
       },
       {
@@ -43,13 +47,15 @@ const liaRoutes: Route[] = [
         name: "La Plage",
         city: "LE HAVRE",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#E30613",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "T",
           },
-          pages: [{ font: "1508SUPX", text: "LA PLAGE" }],
+          pages: [{ font: "14LUPLAN", text: "LA PLAGE" }],
         },
       },
       {
@@ -57,13 +63,15 @@ const liaRoutes: Route[] = [
         autoHide: true,
         name: "Rond-Point",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#E30613",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "T",
           },
-          pages: [{ font: "1508SUPX", text: "ROND-POINT" }],
+          pages: [{ font: "14LUPLAN", text: "ROND-POINT" }],
         },
       },
     ],
@@ -79,13 +87,15 @@ const liaRoutes: Route[] = [
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 96 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#E30613",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "A",
           },
-          pages: [{ font: "1508SUPX", text: "GRAND HAMEAU" }],
+          pages: [{ font: "14LUPLAN", text: "GRAND HAMEAU" }],
         },
       },
       {
@@ -93,13 +103,15 @@ const liaRoutes: Route[] = [
         name: "La Plage",
         city: "LE HAVRE",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 96 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#E30613",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "A",
           },
-          pages: [{ font: "1508SUPX", text: "LA PLAGE" }],
+          pages: [{ font: "14LUPLAN", text: "LA PLAGE" }],
         },
       },
     ],
@@ -115,13 +127,15 @@ const liaRoutes: Route[] = [
         name: "Pré Fleuri",
         city: "LE HAVRE",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#00BB00",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "B",
           },
-          pages: [{ font: "1508SUPX", text: "PRE FLEURI" }],
+          pages: [{ font: "14LUPLAN", text: "PRE FLEURI" }],
         },
       },
       {
@@ -130,13 +144,15 @@ const liaRoutes: Route[] = [
         name: "Rond-Point",
         city: "LE HAVRE",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#00BB00",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "B",
           },
-          pages: [{ font: "1508SUPX", text: "ROND-POINT" }],
+          pages: [{ font: "14LUPLAN", text: "ROND-POINT" }],
         },
       },
       {
@@ -144,13 +160,15 @@ const liaRoutes: Route[] = [
         name: "La Plage",
         city: "LE HAVRE",
         girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
           routeNumber: {
+            font: "14LUPLAN",
             backgroundColor: "#00BB00",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "B",
           },
-          pages: [{ font: "1508SUPX", text: "LA PLAGE" }],
+          pages: [{ font: "14LUPLAN", text: "LA PLAGE" }],
         },
       },
     ],
