@@ -962,7 +962,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ee8250", textColor: "#ffffff", text: "43", outlineColor: "#000000" },
-          pages: [{ font: "1508C2E1", text: "ECOPARC DIJON BOURGOGNE" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "ECOPARC DIJON BOURGOGNE" }],
         },
       },
       {
