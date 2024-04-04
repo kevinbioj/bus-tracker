@@ -2615,7 +2615,7 @@ const twistoRoutes: Route[] = [
   },
   {
     id: "TWISTO:MP",
-    name: "Marco Polo",
+    name: "MP",
     mapOnly: true,
     noCartridge: true,
     colors: { background: "#FF0000", text: "#ffffff" },
