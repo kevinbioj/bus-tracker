@@ -141,12 +141,18 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                           ]
                       : [{ font: "1407SUPX", text: data.trip.headsign ?? "Destination inconnue" }]
                     : [
-                        {
-                          text: [data.trip.headsign ?? "Destination inconnue", `LIGNE ${data.trip.route}`],
-                        },
-                        {
-                          text: [data.trip.headsign ?? "Destination inconnue", `COURSE ${data.trip.id}`],
-                        },
+                        [
+                          {
+                            text: data.trip.headsign ?? "Destination inconnue",
+                          },
+                          { text: `LIGNE ${data.trip.route}` },
+                        ],
+                        [
+                          {
+                            text: data.trip.headsign ?? "Destination inconnue",
+                          },
+                          { text: `COURSE ${data.trip.id}` },
+                        ],
                       ]
                 }
                 width={girouetteWidth}
