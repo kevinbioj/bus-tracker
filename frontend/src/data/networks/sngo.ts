@@ -287,7 +287,7 @@ const sngoRoutes: Route[] = [
         city: "Saint-Jean de Frenelles",
         girouette: {
           routeNumber: { backgroundColor: "#CDCC0B", textColor: "#FFFFFF", outlineColor: "#000000", text: "8B" },
-          pages: [{ text: ["SAINT-JEAN", "DE FRENELLES"] }, { text: "ROND POINT" }],
+          pages: [[{ text: "SAINT-JEAN" }, { text: "DE FRENELLES" }], { text: "ROND POINT" }],
         },
       },
       {

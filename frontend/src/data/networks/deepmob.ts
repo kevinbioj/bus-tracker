@@ -94,7 +94,7 @@ const deepMobRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#DEDC1E", textColor: "#000000", outlineColor: "#FFFFFF", text: "N" },
-          pages: [{ text: ["NAVETTE CENTRE-VILLE", "GARE SNCF"] }],
+          pages: [[{ text: "NAVETTE CENTRE-VILLE" }, { text: "GARE SNCF" }]],
         },
       },
     ],

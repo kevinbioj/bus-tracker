@@ -19,6 +19,9 @@ const fontProperties = {
   "1710SUPX": { height: 17, spacing: 2, extraSpacing: true },
   // Lumiplan/Duhamel fonts
   "14LUPLAN": { height: 14, spacing: 1, extraSpacing: false },
+  "LUMIPLAN-2": { height: 8, spacing: 1, extraSpacing: false },
+  "LUMIPLAN-A": { height: 16, spacing: 1, extraSpacing: false },
+  "DUHAMEL-24-22-2": { height: 22, spacing: 2, extraSpacing: false },
   // Special fonts
   METRO: { height: 16, spacing: 0, extraSpacing: false },
 } as const;
@@ -46,12 +49,13 @@ export type RouteNumberData = {
   textColor?: string;
 };
 
-type PagesData = {
-  text: string | [string] | [string, string];
-  //- Font & spacing
+type PageLine = {
   font?: Font;
-  spacing?: TextSpacing;
+  spacing?: number;
+  text: string;
 };
+
+type PagesData = PageLine | [PageLine, PageLine];
 
 export type GirouetteData = {
   dimensions?: GirouetteDimensions;
@@ -159,13 +163,11 @@ function Pages({ dimensions, ledColor, pages, width }: PagesProps) {
 
   const activePage = pages[currentPageIndex];
 
-  const lines = Array.isArray(activePage.text) ? activePage.text : [activePage.text];
+  const lines = Array.isArray(activePage) ? activePage : [activePage];
+  const oneLine = lines.length === 1;
 
-  const fontFamily = activePage?.font ?? (lines.length === 1 ? "1513B3E1" : "0808B2E1");
   const height = (dimensions.height * width) / (dimensions.rnWidth + dimensions.destinationWidth);
   const onePixel = width / (dimensions.rnWidth + dimensions.destinationWidth);
-  const spacing = onePixel * (activePage?.spacing ?? fontProperties[fontFamily].spacing);
-  const virtualHeight = (height / dimensions.height) * fontProperties[fontFamily].height;
 
   return (
     <div
@@ -173,23 +175,30 @@ function Pages({ dimensions, ledColor, pages, width }: PagesProps) {
       style={{
         color: ledColors[ledColor],
         width: `${onePixel * dimensions.destinationWidth}px`,
-        //- Font, placement & spacing
-        fontFamily: `"${fontFamily}"`,
-        fontSize: `${virtualHeight}px`,
-        letterSpacing: `${spacing}px`,
-        lineHeight: `${virtualHeight}px`,
-        paddingLeft: `${spacing}px`,
         //- Lines alignment
         justifyContent: lines.length === 1 ? "center" : "space-between",
       }}
     >
-      {lines.map((line) => (
-        <span
-          className="overflow-hidden whitespace-nowrap"
-          dangerouslySetInnerHTML={{ __html: line.trimEnd().replaceAll(" ", "&nbsp;") }}
-          key={line}
-        />
-      ))}
+      {lines.map((line) => {
+        const fontFamily = line.font ?? (oneLine ? "1513B3E1" : "0808B2E1");
+        const spacing = onePixel * (line.spacing ?? fontProperties[fontFamily].spacing);
+        const virtualHeight = (height / dimensions.height) * fontProperties[fontFamily].height;
+        return (
+          <span
+            className="overflow-hidden whitespace-nowrap"
+            dangerouslySetInnerHTML={{ __html: line.text.trimEnd().replaceAll(" ", "&nbsp;") }}
+            key={line.text}
+            style={{
+              //- Font, placement & spacing
+              fontFamily: `"${fontFamily}"`,
+              fontSize: `${virtualHeight}px`,
+              letterSpacing: `${spacing}px`,
+              lineHeight: `${virtualHeight}px`,
+              paddingLeft: `${spacing}px`,
+            }}
+          />
+        );
+      })}
     </div>
   );
 }

@@ -27,7 +27,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
-          pages: [{ text: ["GARE DE BAYEUX", "EXPRESS"] }],
+          pages: [[{ text: "GARE DE BAYEUX" }, { text: "EXPRESS" }]],
         },
       },
       {
@@ -39,7 +39,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
-          pages: [{ text: ["GARE DE BAYEUX", "VIA SUPERMARCHE"] }],
+          pages: [[{ text: "GARE DE BAYEUX" }, { text: "VIA SUPERMARCHE" }]],
         },
       },
       {
@@ -50,7 +50,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
-          pages: [{ text: ["REINE MATHILDE", "VIA SUPERMARCHE"] }],
+          pages: [[{ text: "REINE MATHILDE" }, { text: "VIA SUPERMARCHE" }]],
         },
       },
       {
@@ -61,7 +61,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
-          pages: [{ text: ["REINE MATHILDE", "EXPRESS"] }],
+          pages: [[{ text: "REINE MATHILDE" }, { text: "EXPRESS" }]],
         },
       },
       {
@@ -71,7 +71,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#2CC7E2", textColor: "#FFFFFF", text: "1", outlineColor: "#000000" },
-          pages: [{ text: ["REINE MATHILDE", "VIA BLERIOT"] }],
+          pages: [[{ text: "REINE MATHILDE" }, { text: "VIA BLERIOT" }]],
         },
       },
     ],
@@ -102,7 +102,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
-          pages: [{ text: ["GARE DE BAYEUX", "EXPRESS"] }],
+          pages: [[{ text: "GARE DE BAYEUX" }, { text: "EXPRESS" }]],
         },
       },
       {
@@ -113,7 +113,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F1AAEB", textColor: "#FFFFFF", text: "2", outlineColor: "#000000" },
-          pages: [{ text: ["RUE DE LA FEE", "EXPRESS"] }],
+          pages: [[{ text: "RUE DE LA FEE" }, { text: "EXPRESS" }]],
         },
       },
       {
@@ -141,7 +141,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
-          pages: [{ text: ["RUE COSTILS", "EXPRESS"] }],
+          pages: [[{ text: "RUE COSTILS" }, { text: "EXPRESS" }]],
         },
       },
       {
@@ -152,7 +152,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
-          pages: [{ text: ["CONQUERANT", "VIA MEDIATHEQUE"] }],
+          pages: [[{ text: "CONQUERANT" }, { text: "VIA MEDIATHEQUE" }]],
         },
       },
       {
@@ -186,7 +186,7 @@ const bybusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#91C68B", textColor: "#FFFFFF", text: "3", outlineColor: "#000000" },
-          pages: [{ text: ["ARCISSE DE CAUMONT", "EXPRESS"] }],
+          pages: [[{ text: "ARCISSE DE CAUMONT" }, { text: "EXPRESS" }]],
         },
       },
       {

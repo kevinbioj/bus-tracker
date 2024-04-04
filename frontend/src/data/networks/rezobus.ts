@@ -16,7 +16,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ee1d23", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: ["BOLBEC", "MAIRIE"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "MAIRIE" }]],
         },
       },
       {
@@ -26,7 +26,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ee1d23", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: ["BOLBEC", "MARCHES CURIE"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "MARCHES CURIE" }]],
         },
       },
     ],
@@ -45,7 +45,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#005d9c", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: ["BOLBEC", "MAIRIE"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "MAIRIE" }]],
         },
       },
       {
@@ -55,7 +55,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#005d9c", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: ["BOLBEC", "VIVIER"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "VIVIER" }]],
         },
       },
     ],
@@ -74,7 +74,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#009f4f", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
-          pages: [{ text: ["BOLBEC", "MAIRIE"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "MAIRIE" }]],
         },
       },
       {
@@ -84,7 +84,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#009f4f", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
-          pages: [{ text: ["BOLBEC", "HENRI FLEURY"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "HENRI FLEURY" }]],
         },
       },
     ],
@@ -103,7 +103,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#f7952e", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: ["BOLBEC", "MAIRIE"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "MAIRIE" }]],
         },
       },
       {
@@ -114,7 +114,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#f7952e", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: ["BOLBEC", "PAUL BELHACHE"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "PAUL BELHACHE" }]],
         },
       },
       {
@@ -124,7 +124,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#f7952e", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: ["BOLBEC", "VAL DU MOULIN"] }],
+          pages: [[{ text: "BOLBEC" }, { text: "VAL DU MOULIN" }]],
         },
       },
     ],
@@ -143,7 +143,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ed028c", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
-          pages: [{ text: ["LILLEBONNE", "RIVIERE DU COMMERCE"] }],
+          pages: [[{ text: "LILLEBONNE" }, { text: "RIVIERE DU COMMERCE" }]],
         },
       },
       {
@@ -153,7 +153,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ed028c", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
-          pages: [{ text: ["LILLEBONNE", "PUITS MAILLE"] }],
+          pages: [[{ text: "LILLEBONNE" }, { text: "PUITS MAILLE" }]],
         },
       },
     ],
@@ -171,7 +171,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#b7d436", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
-          pages: [{ text: ["LILLEBONNE", "RIVIERE DU COMMERCE"] }],
+          pages: [[{ text: "LILLEBONNE" }, { text: "RIVIERE DU COMMERCE" }]],
         },
       },
       {
@@ -182,7 +182,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#b7d436", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
-          pages: [{ text: ["LILLEBONNE", "HOPITAL"] }],
+          pages: [[{ text: "LILLEBONNE" }, { text: "HOPITAL" }]],
         },
       },
     ],
@@ -201,7 +201,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#89c2bf", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
-          pages: [{ text: ["LILLEBONNE", "MEDIATHEQUE"] }],
+          pages: [[{ text: "LILLEBONNE" }, { text: "MEDIATHEQUE" }]],
         },
       },
       {
@@ -211,7 +211,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#89c2bf", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
-          pages: [{ text: ["LILLEBONNE", "A L'EAU"] }],
+          pages: [[{ text: "LILLEBONNE" }, { text: "A L'EAU" }]],
         },
       },
     ],
@@ -230,7 +230,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#e787b8", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "SORTIE NORD"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "SORTIE NORD" }]],
         },
       },
       {
@@ -241,7 +241,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#e787b8", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "HOTEL DE VILLE" }]],
         },
       },
     ],
@@ -260,7 +260,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#0aaabd", textColor: "#FFFFFF", outlineColor: "#000000", text: "22" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "HOTEL DE VILLE" }]],
         },
       },
       {
@@ -270,7 +270,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#0aaabd", textColor: "#FFFFFF", outlineColor: "#000000", text: "22" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "CONSERVATOIRE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "CONSERVATOIRE" }]],
         },
       },
     ],
@@ -289,7 +289,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#813375", textColor: "#FFFFFF", outlineColor: "#000000", text: "23" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "HOTEL DE VILLE" }]],
         },
       },
       {
@@ -299,7 +299,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#813375", textColor: "#FFFFFF", outlineColor: "#000000", text: "23" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "LES CEDRES"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "LES CEDRES" }]],
         },
       },
     ],
@@ -320,7 +320,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#9f824d", textColor: "#FFFFFF", outlineColor: "#000000", text: "24" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "BOIS DU PARC"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "BOIS DU PARC" }]],
         },
       },
       {
@@ -331,7 +331,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#9f824d", textColor: "#FFFFFF", outlineColor: "#000000", text: "24" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "HOTEL DE VILLE" }]],
         },
       },
     ],
@@ -350,7 +350,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#0099d1", textColor: "#FFFFFF", outlineColor: "#000000", text: "25" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "HOTEL DE VILLE" }]],
         },
       },
     ],
@@ -369,7 +369,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#507822", textColor: "#FFFFFF", outlineColor: "#000000", text: "26" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "HOTEL DE VILLE" }]],
         },
       },
       {
@@ -379,7 +379,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#507822", textColor: "#FFFFFF", outlineColor: "#000000", text: "26" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "CONSERVATOIRE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "CONSERVATOIRE" }]],
         },
       },
     ],
@@ -398,7 +398,7 @@ const rezobusRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#b46533", textColor: "#FFFFFF", outlineColor: "#000000", text: "27" },
-          pages: [{ text: ["PORT-JEROME-SUR-SEINE", "HOTEL DE VILLE"] }],
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "HOTEL DE VILLE" }]],
         },
       },
     ],
@@ -417,10 +417,10 @@ const rezobusRoutes: Route[] = [
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#292780", textColor: "#FFFFFF", outlineColor: "#000000", text: "28" },
           pages: [
-            { text: ["PORT-JEROME-SUR-SEINE", "CONSERVATOIRE"] },
-            { text: ["CONSERVATOIRE", "via TRIQUERVILLE"] },
-            { text: ["CONSERVATOIRE", "TOUFFREVILLE-LA-CABLE"] },
-            { text: ["CONSERVATOIRE", "ET AUBERVILLE-LA-CPGNE"] },
+            [{ text: "PORT-JEROME-SUR-SEINE" }, { text: "CONSERVATOIRE" }],
+            [{ text: "CONSERVATOIRE" }, { text: "via TRIQUERVILLE" }],
+            [{ text: "CONSERVATOIRE" }, { text: "TOUFFREVILLE-LA-CABLE" }],
+            [{ text: "CONSERVATOIRE" }, { text: "ET AUBERVILLE-LA-CPGNE" }],
           ],
         },
       },

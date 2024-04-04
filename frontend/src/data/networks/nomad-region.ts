@@ -7478,7 +7478,7 @@ const nomadRegionRoutes: Route[] = [
             text: "412",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ text: ["SAINTE-GAUBURGE", "SAINTE-COLOMBE"] }],
+          pages: [[{ text: "SAINTE-GAUBURGE" }, { text: "SAINTE-COLOMBE" }]],
         },
       },
     ],
@@ -7832,7 +7832,7 @@ const nomadRegionRoutes: Route[] = [
             text: "416",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ text: ["SAINT-MAURICE", "LES-CHARENCEY"] }],
+          pages: [[{ text: "SAINT-MAURICE" }, { text: "LES-CHARENCEY" }]],
         },
       },
       {
@@ -9534,7 +9534,7 @@ const nomadRegionRoutes: Route[] = [
             text: "508",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ text: ["SAINT-SAUVEUR", "D'EMALLEVILLE"] }],
+          pages: [[{ text: "SAINT-SAUVEUR" }, { text: "D'EMALLEVILLE" }]],
         },
       },
       {

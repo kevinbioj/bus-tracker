@@ -118,7 +118,7 @@ const semoRoutes: Route[] = [
             outlineColor: "#FFFFFF",
             text: "E1",
           },
-          pages: [{ text: "LE-VAL-D'HAZEY" }, { text: ["GARE SNCF", "GAILLON-AUBEVOYE"] }],
+          pages: [{ text: "LE-VAL-D'HAZEY" }, [{ text: "GARE SNCF" }, { text: "GAILLON-AUBEVOYE" }]],
         },
       },
     ],
@@ -204,7 +204,7 @@ const semoRoutes: Route[] = [
             outlineColor: "#FFFFFF",
             text: "3",
           },
-          pages: [{ text: ["CIRCULAIRE DE LOUVIERS", "SENS HORAIRE"] }],
+          pages: [[{ text: "CIRCULAIRE DE LOUVIERS" }, { text: "SENS HORAIRE" }]],
         },
       },
     ],
@@ -227,7 +227,7 @@ const semoRoutes: Route[] = [
             text: "3",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ text: ["CIRCULAIRE DE LOUVIERS", "SENS ANTI-HORAIRE"] }],
+          pages: [[{ text: "CIRCULAIRE DE LOUVIERS" }, { text: "SENS ANTI-HORAIRE" }]],
         },
       },
     ],
@@ -245,7 +245,7 @@ const semoRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#954B97", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: ["CIRCULAIRE VAL-DE-REUIL", "SENS HORAIRE"] }],
+          pages: [[{ text: "CIRCULAIRE VAL-DE-REUIL" }, { text: "SENS HORAIRE" }]],
         },
       },
     ],
@@ -263,7 +263,7 @@ const semoRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#954B97", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: ["CIRCULAIRE VAL-DE-REUIL", "SENS ANTI-HORAIRE"] }],
+          pages: [[{ text: "CIRCULAIRE VAL-DE-REUIL" }, { text: "SENS ANTI-HORAIRE" }]],
         },
       },
     ],
@@ -341,7 +341,7 @@ const semoRoutes: Route[] = [
             outlineColor: "#FFFFFF",
             text: "6",
           },
-          pages: [{ text: ["CIRCULAIRE DE GAILLON", "SENS HORAIRE"] }],
+          pages: [[{ text: "CIRCULAIRE DE GAILLON" }, { text: "SENS HORAIRE" }]],
         },
       },
       {
@@ -358,8 +358,8 @@ const semoRoutes: Route[] = [
             text: "6",
           },
           pages: [
-            { text: ["CIRCULAIRE DE GAILLON", "SENS HORAIRE"] },
-            { text: ["CIRCULAIRE DE GAILLON", "DESSERTE DU MARCHE"] },
+            [{ text: "CIRCULAIRE DE GAILLON" }, { text: "SENS HORAIRE" }],
+            [{ text: "CIRCULAIRE DE GAILLON" }, { text: "DESSERTE DU MARCHE" }],
           ],
         },
       },
@@ -383,7 +383,7 @@ const semoRoutes: Route[] = [
             outlineColor: "#FFFFFF",
             text: "6",
           },
-          pages: [{ text: ["CIRCULAIRE DE GAILLON", "SENS ANTI-HORAIRE"] }],
+          pages: [[{ text: "CIRCULAIRE DE GAILLON" }, { text: "SENS ANTI-HORAIRE" }]],
         },
       },
       {
@@ -400,8 +400,8 @@ const semoRoutes: Route[] = [
             text: "6",
           },
           pages: [
-            { text: ["CIRCULAIRE DE GAILLON", "SENS ANTI-HORAIRE"] },
-            { text: ["CIRCULAIRE DE GAILLON", "DESSERTE DU MARCHE"] },
+            [{ text: "CIRCULAIRE DE GAILLON" }, { text: "SENS ANTI-HORAIRE" }],
+            [{ text: "CIRCULAIRE DE GAILLON" }, { text: "DESSERTE DU MARCHE" }],
           ],
         },
       },
@@ -420,7 +420,7 @@ const semoRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#A76F23", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
-          pages: [{ text: ["CIRCULAIRE DE POSES", "SENS HORAIRE"] }],
+          pages: [[{ text: "CIRCULAIRE DE POSES" }, { text: "SENS HORAIRE" }]],
         },
       },
     ],
@@ -438,7 +438,7 @@ const semoRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#A76F23", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
-          pages: [{ text: ["CIRCULAIRE DE POSES", "SENS ANTI-HORAIRE"] }],
+          pages: [[{ text: "CIRCULAIRE DE POSES" }, { text: "SENS ANTI-HORAIRE" }]],
         },
       },
     ],
@@ -512,7 +512,7 @@ const semoRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#EA4E6E", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
-          pages: [{ text: "LE-VAL-D'HAZEY" }, { text: ["GARE SNCF", "GAILLON-AUBEVOYE"] }],
+          pages: [{ text: "LE-VAL-D'HAZEY" }, [{ text: "GARE SNCF" }, { text: "GAILLON-AUBEVOYE" }]],
         },
       },
       {

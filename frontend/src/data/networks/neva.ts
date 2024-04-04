@@ -155,7 +155,7 @@ const nevaRoutes: Route[] = [
         name: "La Haye-Pesnel - COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FF6D00", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: ["LA HAYE-PESNEL", "COLLEGE"] }],
+          pages: [[{ text: "LA HAYE-PESNEL" }, { text: "COLLEGE" }]],
         },
       },
       {
@@ -244,7 +244,7 @@ const nevaRoutes: Route[] = [
         name: "La Haye-Pesnel - COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#388E3C", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
-          pages: [{ text: ["LA HAYE-PESNEL", "COLLEGE"] }],
+          pages: [[{ text: "LA HAYE-PESNEL" }, { text: "COLLEGE" }]],
         },
       },
       {

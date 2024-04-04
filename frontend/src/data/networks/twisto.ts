@@ -2553,7 +2553,7 @@ const twistoRoutes: Route[] = [
         name: "IFS Jean Vilar",
         girouette: {
           routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "B1" },
-          pages: [{ text: ["PLAN B TRAM", "IFS JEAN VILAR"] }],
+          pages: [[{ text: "PLAN B TRAM T1" }, { text: "IFS JEAN VILAR" }]],
         },
       },
       {
@@ -2562,7 +2562,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "B1" },
-          pages: [{ text: ["PLAN B TRAM", "HEROUVILLE ST-CLAIR"] }],
+          pages: [[{ text: "PLAN B TRAM T1" }, { text: "HEROUVILLE ST-CLAIR" }]],
         },
       },
     ],
@@ -2579,7 +2579,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
-          pages: [{ text: ["PLAN B TRAM", "CAEN CAMPUS 2"] }],
+          pages: [[{ text: "PLAN B TRAM T2" }, { text: "CAEN CAMPUS 2" }]],
         },
       },
       {
@@ -2587,7 +2587,7 @@ const twistoRoutes: Route[] = [
         name: "CAEN Presqu'ile",
         girouette: {
           routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
-          pages: [{ text: ["PLAN B TRAM", "CAEN PRESQU'ILE"] }],
+          pages: [[{ text: "PLAN B TRAM T2" }, { text: "CAEN PRESQU'ILE" }]],
         },
       },
     ],
@@ -2604,7 +2604,7 @@ const twistoRoutes: Route[] = [
         city: "FLEURY-SUR-ORNE",
         girouette: {
           routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
-          pages: [{ text: ["PLAN B TRAM", "FLEURY HAUTS DE L'ORNE"] }],
+          pages: [[{ text: "PLAN B TRAM T3" }, { text: "FLEURY HAUTS DE L'ORNE" }]],
         },
       },
       {
@@ -2613,7 +2613,7 @@ const twistoRoutes: Route[] = [
         city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
-          pages: [{ text: ["PLAN B TRAM", "CAEN CHATEAU QUATRANS"] }],
+          pages: [[{ text: "PLAN B TRAM T3" }, { text: "CAEN CHATEAU QUATRANS" }]],
         },
       },
     ],

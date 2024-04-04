@@ -22,7 +22,7 @@ const lbusRoutes: Route[] = [
             font: "1508C2E1",
             text: "l'Bus",
           },
-          pages: [{ text: ["CENTRE HOSPITALIER", "ANNE DE TICHEVILLE"] }],
+          pages: [[{ text: "CENTRE HOSPITALIER" }, { text: "ANNE DE TICHEVILLE" }]],
         },
       },
       {

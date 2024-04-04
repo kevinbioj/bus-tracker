@@ -336,7 +336,7 @@ const capCotentinRoutes: Route[] = [
         name: "BRICQUEBEC EN COTENTIN COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#47B7A2", textColor: "#FFFFFF", outlineColor: "#000000", text: "E" },
-          pages: [{ text: ["BRICQUEBEC EN COTENTIN", "COLLEGE"] }],
+          pages: [[{ text: "BRICQUEBEC EN COTENTIN" }, { text: "COLLEGE" }]],
         },
       },
     ],
@@ -474,7 +474,7 @@ const capCotentinRoutes: Route[] = [
         name: "BRICQUEBEC EN COTENTIN COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S2" },
-          pages: [{ text: ["BRICQUEBEC EN COTENTIN", "COLLEGE"] }],
+          pages: [[{ text: "BRICQUEBEC EN COTENTIN" }, { text: "COLLEGE" }]],
         },
       },
       {
@@ -482,7 +482,7 @@ const capCotentinRoutes: Route[] = [
         name: "SAINT SAUVEUR LE VICOMTE COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S2" },
-          pages: [{ text: ["SAINT SAUVEUR LE VICOMTE", "COLLEGE"] }],
+          pages: [[{ text: "SAINT SAUVEUR LE VICOMTE" }, { text: "COLLEGE" }]],
         },
       },
     ],
@@ -606,7 +606,7 @@ const capCotentinRoutes: Route[] = [
         name: "GATTEVILLE LE PHARE RTE DU VAL DE SAIRE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S6" },
-          pages: [{ font: "1508C2E1", text: "GATTEVILLE LE PHARE" }, { text: ["ROUTE DU", "VAL DE SAIRE"] }],
+          pages: [{ font: "1508C2E1", text: "GATTEVILLE LE PHARE" }, [{ text: "ROUTE DU" }, { text: "VAL DE SAIRE" }]],
         },
       },
     ],
@@ -689,7 +689,7 @@ const capCotentinRoutes: Route[] = [
         name: "BRICQUEBEC EN COTENTIN COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S9" },
-          pages: [{ text: ["BRICQUEBEC EN COTENTIN", "COLLEGE"] }],
+          pages: [[{ text: "BRICQUEBEC EN COTENTIN" }, { text: "COLLEGE" }]],
         },
       },
       {
@@ -758,7 +758,7 @@ const capCotentinRoutes: Route[] = [
         name: "BRICQUEBEC EN COTENTIN COLLEGE",
         girouette: {
           routeNumber: { backgroundColor: "#FFFFFF", textColor: "#000000", text: "S12" },
-          pages: [{ text: ["BRICQUEBEC EN COTENTIN", "COLLEGE"] }],
+          pages: [[{ text: "BRICQUEBEC EN COTENTIN" }, { text: "COLLEGE" }]],
         },
       },
       {
@@ -935,7 +935,7 @@ const capCotentinRoutes: Route[] = [
         name: "EGLANTINE CHATEAU VIA BECQUET",
         girouette: {
           routeNumber: { backgroundColor: "#D34536", textColor: "#FFFFFF", outlineColor: "#000000", text: "D6" },
-          pages: [{ text: ["EGLANTINE CHATEAU", "VIA BECQUET"] }],
+          pages: [[{ text: "EGLANTINE CHATEAU" }, { text: "VIA BECQUET" }]],
         },
       },
     ],

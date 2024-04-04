@@ -14,7 +14,7 @@ const mocaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#745CA8", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: ["BARENTIN", "ZC DU MESNIL ROUX"] }],
+          pages: [[{ text: "BARENTIN" }, { text: "ZC DU MESNIL ROUX" }]],
         },
       },
       {
@@ -24,7 +24,7 @@ const mocaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#745CA8", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: ["PAVILLY", "FRECKENHORST"] }],
+          pages: [[{ text: "PAVILLY" }, { text: "FRECKENHORST" }]],
         },
       },
     ],
@@ -42,7 +42,7 @@ const mocaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#6EC6AE", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: ["BARENTIN", "ZC DU MESNIL ROUX"] }],
+          pages: [[{ text: "BARENTIN" }, { text: "ZC DU MESNIL ROUX" }]],
         },
       },
       {
@@ -52,7 +52,7 @@ const mocaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#6EC6AE", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: ["VILLERS-ECALLES", "PORTE DE LA VALLEE"] }],
+          pages: [[{ text: "VILLERS-ECALLES" }, { text: "PORTE DE LA VALLEE" }]],
         },
       },
     ],

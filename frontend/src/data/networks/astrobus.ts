@@ -60,7 +60,7 @@ const astrobusRoutes: Route[] = [
         city: "LISIEUX",
         girouette: {
           routeNumber: { backgroundColor: "#009640", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: ["MITTERRAND", "VIA CAMP FRANC"] }, { text: "LISIEUX" }],
+          pages: [[{ text: "MITTERRAND" }, { text: "VIA CAMP FRANC" }], { text: "LISIEUX" }],
         },
       },
       {
@@ -70,7 +70,7 @@ const astrobusRoutes: Route[] = [
         city: "LISIEUX",
         girouette: {
           routeNumber: { backgroundColor: "#009640", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: ["QUEBEC", "VIA CAMP FRANC"] }, { text: "LISIEUX" }],
+          pages: [[{ text: "QUEBEC" }, { text: "VIA CAMP FRANC" }], { text: "LISIEUX" }],
         },
       },
       {
