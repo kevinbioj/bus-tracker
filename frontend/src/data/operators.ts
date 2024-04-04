@@ -70,7 +70,7 @@ const operators: Operator[] = [
   {
     id: "LIA",
     name: "LiA (Le Havre Seine Métropole)",
-    hasHistory: false,
+    hasHistory: true,
     logo: {
       href: "/assets/operators/lia.svg",
       size: [120, 88],
