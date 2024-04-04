@@ -503,7 +503,7 @@ const semoRoutes: Route[] = [
     id: "SEMO:10",
     noCartridge: true,
     name: "10",
-    colors: { background: "#EA4E6E", text: "#" },
+    colors: { background: "#EA4E6E", text: "#FFFFFF" },
     destinations: [
       {
         id: ["10 LE-VAL-D'HAZEY - Gaillon-Abvye SNCF"],
