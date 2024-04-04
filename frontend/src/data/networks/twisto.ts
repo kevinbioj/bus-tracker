@@ -1107,7 +1107,8 @@ const twistoRoutes: Route[] = [
       {
         id: ["Caen Place du Canada"],
         autoHide: true,
-        name: "CAEN Place du Canada",
+        name: "Place du Canada",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1119,9 +1120,10 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["AUTHIE Jacques Cartier"],
+        id: ["Authie Jacques Cartier"],
         autoHide: true,
-        name: "AUTHIE Jacques Cartier",
+        name: "Jacques Cartier",
+        city: "AUTHIE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1129,7 +1131,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "100",
           },
-          pages: [{ text: "AUTHIE Jacques Cartier" }],
+          pages: [{ font: "1507SUPX", text: "AUTHIE JACQUES CARTIER" }],
         },
       },
     ],
@@ -1140,9 +1142,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["OUISTREHAM Collège Monnet"],
+        id: ["Ouistreham Collège Monnet"],
         autoHide: true,
-        name: "OUISTREHAM Collège Monnet",
+        name: "Collège Monnet",
+        city: "OUISTREHAM",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1150,13 +1153,14 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "101",
           },
-          pages: [{ text: "OUISTREHAM Collège Monnet" }],
+          pages: [{ font: "1507SUPX", text: "OUISTREHAM COLLEGE MONNET" }],
         },
       },
       {
-        id: ["BLAINVILLE Parc"],
+        id: ["Blainville Parc"],
         autoHide: true,
-        name: "BLAINVILLE Parc",
+        name: "Parc",
+        city: "BLAINVILLE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1164,13 +1168,14 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "101",
           },
-          pages: [{ text: "BLAINVILLE Parc" }],
+          pages: [{ font: "1508SUPX", text: "BLAINVILLE PARC" }],
         },
       },
       {
-        id: ["LION SUR MER Plage"],
+        id: ["Lion-sur-Mer Lion Plage"],
         autoHide: true,
-        name: "LION SUR MER Plage",
+        name: "Plage",
+        city: "LION-SUR-MER",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1178,7 +1183,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "101",
           },
-          pages: [{ text: "LION SUR MER Plage" }],
+          pages: [{ font: "1508SUPX", text: "LION PLAGE" }],
         },
       },
       {
