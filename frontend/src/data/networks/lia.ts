@@ -870,8 +870,8 @@ const liaRoutes: Route[] = [
           routeNumber: {
             font: "DUHAMEL-24-22-2",
             backgroundColor: "#BEBD00",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
             text: "9",
           },
           pages: [
