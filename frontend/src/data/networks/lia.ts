@@ -385,22 +385,35 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Place Jenner"],
+        id: ["Funiculaire / C. Monet / St Jo."],
         autoHide: true,
-        name: "Place Jenner",
+        name: "Institution Saint-Joseph",
         city: "LE HAVRE",
         girouette: {
           routeNumber: { font: "1513B3E1", backgroundColor: "#FFE500", textColor: "#000000", text: "6" },
-          pages: [{ font: "1508SUPX", text: "PLACE JENNER" }],
+          pages: [
+            { font: "1507SUPX", text: "LYCEE CLAUDE MONET" },
+            { font: "1507SUPX", text: "INSTITUTION ST-JOSEPH" },
+          ],
         },
       },
       {
         id: ["Mont Gaillard"],
+        autoHide: true,
         name: "Mont Gaillard",
         city: "LE HAVRE",
         girouette: {
           routeNumber: { font: "1513B3E1", backgroundColor: "#FFE500", textColor: "#000000", text: "6" },
           pages: [{ font: "1508SUPX", text: "MONT-GAILLARD" }],
+        },
+      },
+      {
+        id: ["Place Jenner"],
+        name: "Place Jenner",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: { font: "1513B3E1", backgroundColor: "#FFE500", textColor: "#000000", text: "6" },
+          pages: [{ font: "1508SUPX", text: "PLACE JENNER" }],
         },
       },
     ],
@@ -424,6 +437,25 @@ const liaRoutes: Route[] = [
             text: "7",
           },
           pages: [{ font: "1508SUPX", text: "CAUCRIAUVILLE" }],
+        },
+      },
+      {
+        id: ["Funiculaire C.Monet / St Jo."],
+        autoHide: true,
+        name: "Institution Saint-Joseph",
+        city: "LE HAVRE",
+        girouette: {
+          routeNumber: {
+            font: "1513B3E1",
+            backgroundColor: "#0069B4",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "7",
+          },
+          pages: [
+            { font: "1507SUPX", text: "LYCEE CLAUDE MONET" },
+            { font: "1507SUPX", text: "INSTITUTION ST-JOSEPH" },
+          ],
         },
       },
       {
@@ -568,7 +600,7 @@ const liaRoutes: Route[] = [
             outlineColor: "#FFFFFF",
             text: "10",
           },
-          pages: [{ font: "1407SUPX", text: "OCTEVILLE LITTORAL" }],
+          pages: [{ font: "1508SUPX", text: "OCTEVILLE LITTORAL" }],
         },
       },
     ],
