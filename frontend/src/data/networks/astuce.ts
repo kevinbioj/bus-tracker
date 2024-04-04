@@ -1524,7 +1524,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "530",
           },
-          pages: [{ text: ["LE TRAIT", "MAIRIE"] }, { text: ["LE TRAIT", "VIA JUMIEGES"] }],
+          pages: [{ text: ["LE TRAIT", "MAIRIE"] }],
         },
       },
       {
