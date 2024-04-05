@@ -324,6 +324,17 @@ const rezobusRoutes: Route[] = [
         },
       },
       {
+        id: ["ND GRAVENCHON Sortie Nord"],
+        autoHide: true,
+        name: "Sortie Nord",
+        city: "PORT-JÉRÔME-SUR-SEINE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#9f824d", textColor: "#FFFFFF", outlineColor: "#000000", text: "24" },
+          pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "SORTIE NORD" }]],
+        },
+      },
+      {
         id: ["ND GRAVENCHON Hotel de Ville"],
         alternate: "Hôtel de Ville de Port-Jérôme",
         name: "Hôtel de Ville",
