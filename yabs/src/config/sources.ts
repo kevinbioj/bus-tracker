@@ -154,6 +154,37 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'LIA-LER',
+    refreshCron: '30 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'LIA-LER',
+      staticResourceHref: 'https://gtfs.kevinbioj.fr/sncf-ler.zip',
+      tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/sncf-ter-gtfs-rt-trip-updates',
+      routePrefix: 'LIA',
+      registerActivity: false,
+      filters: {
+        scheduled: () => false,
+        tripUpdate: (tripUpdate, _, __, resource) => {
+          const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
+          if (typeof trip !== 'undefined') {
+            // @ts-expect-error Just for this ressource 🙏
+            tripUpdate.tripUpdate.vehicle = { id: trip.trainNumber ?? null };
+          }
+          return true;
+        },
+      },
+      afterInit: (resource) => {
+        resource.trips.forEach((trip) => {
+          // @ts-expect-error Just for this ressource 🙏
+          trip.trainNumber = trip.headsign;
+          trip.headsign = trip.stops.at(-1)!.stop.name;
+        });
+      },
+      getOperator: () => 'LIA',
+    },
+  },
+  {
     id: 'SEMO',
     refreshCron: '0,20,40 * * * * *',
     type: 'GTFS',

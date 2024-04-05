@@ -2,6 +2,61 @@ import { Network, Route } from "~/@types";
 
 const liaRoutes: Route[] = [
   {
+    id: "LIA:LER",
+    noCartridge: true,
+    routeIds: ["LIA:FR:Line::325702f0-8067-4665-a0d8-5ebce7e59d0a:"],
+    name: "LER",
+    colors: { background: "#0749FF", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Le Havre"],
+        name: "Le Havre",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#0749FF",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "LER",
+          },
+          pages: [[{ text: "LIGNE EXPRESS REGIONALE" }, { spacing: 3, text: "LE HAVRE" }]],
+        },
+      },
+      {
+        id: ["Montivilliers"],
+        name: "Montivilliers",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#0749FF",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "LER",
+          },
+          pages: [[{ text: "LIGNE EXPRESS REGIONALE" }, { spacing: 3, text: "MONTIVILLIERS" }]],
+        },
+      },
+      {
+        id: ["Rolleville"],
+        autoHide: true,
+        name: "Rolleville",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#0749FF",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "LER",
+          },
+          pages: [[{ text: "LIGNE EXPRESS REGIONALE" }, { spacing: 3, text: "ROLLEVILLE" }]],
+        },
+      },
+    ],
+  },
+  {
     id: "LIA:T",
     noCartridge: true,
     name: "T",
