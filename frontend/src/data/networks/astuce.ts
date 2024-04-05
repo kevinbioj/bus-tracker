@@ -701,33 +701,18 @@ const astuceRoutes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
-            backgroundColor: "#BA941C",
+            backgroundColor: "#008F5B",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "228",
+            text: "F7",
           },
           pages: [
-            [
-              { font: "1107SUPX", spacing: 3, text: "PONT-AUDEMER" },
-              { font: "0505SUPX", spacing: 3, text: "OMNIBUS" },
-            ],
+            { spacing: 3, text: "BOULINGRIN" },
+            { spacing: 3, text: "ROUEN" },
           ],
         },
-        // girouette: {
-        //   ledColor: "WHITE",
-        //   routeNumber: {
-        //     backgroundColor: "#008F5B",
-        //     textColor: "#FFFFFF",
-        //     outlineColor: "#000000",
-        //     text: "F7",
-        //   },
-        //   pages: [
-        //     { spacing: 3, text: "BOULINGRIN" },
-        //     { spacing: 3, text: "ROUEN" },
-        //   ],
-        // },
       },
       {
         id: ["La Pléiade MONT-SAINT-AIGNAN"],
