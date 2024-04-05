@@ -30,6 +30,18 @@
 
 @font-face {
   font-display: block;
+  font-family: "0505SUPX";
+  src: url("../fonts/girouette/0505SUPX.ttf");
+}
+
+@font-face {
+  font-display: block;
+  font-family: "1107SUPX";
+  src: url("../fonts/girouette/1107SUPX.ttf");
+}
+
+@font-face {
+  font-display: block;
   font-family: "1407SUPX";
   src: url("../fonts/girouette/1407SUPX.ttf");
 }

@@ -13,6 +13,8 @@ const fontProperties = {
   "1510N2E1": { height: 15, spacing: 2, extraSpacing: false },
   "1513B3E1": { height: 15, spacing: 2, extraSpacing: false },
   // Hanover Super-X fonts
+  "0505SUPX": { height: 5, spacing: 1, extraSpacing: true },
+  "1107SUPX": { height: 11, spacing: 1, extraSpacing: true },
   "1407SUPX": { height: 14, spacing: 1, extraSpacing: true },
   "1507SUPX": { height: 15, spacing: 1, extraSpacing: true },
   "1508SUPX": { height: 15, spacing: 1, extraSpacing: true },
