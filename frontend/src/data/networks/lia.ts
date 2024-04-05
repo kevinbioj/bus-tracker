@@ -931,7 +931,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                text: "PAR HARFLEUR/W. CHURCHILL",
               },
             ],
           ],
@@ -1028,12 +1028,12 @@ const liaRoutes: Route[] = [
           pages: [
             [
               {
-                font: "LUMIPLAN-2",
-                text: "OCTEVILLE-S/-MER",
+                font: "LUMIPLAN-A",
+                text: "OCTEVILLE S/ MER",
               },
               {
-                font: "LUMIPLAN-A",
-                text: "LITTORAL",
+                font: "LUMIPLAN-2",
+                text: "L I T T O R A L",
               },
             ],
           ],
@@ -1403,12 +1403,12 @@ const liaRoutes: Route[] = [
           pages: [
             [
               {
-                font: "LUMIPLAN-A",
-                text: "HOPITAL J. MONOD",
+                font: "LUMIPLAN-2",
+                text: "M O N T I V I L L I E R S",
               },
               {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                font: "LUMIPLAN-A",
+                text: "HOPITAL J. MONOD",
               },
             ],
           ],
@@ -1509,14 +1509,16 @@ const liaRoutes: Route[] = [
             text: "16",
           },
           pages: [
-            {
-              font: "LUMIPLAN-2",
-              text: "L E  H A V R E",
-            },
-            {
-              font: "LUMIPLAN-A",
-              text: "MONT-GAILLARD",
-            },
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "L E  H A V R E",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "MONT-GAILLARD",
+              },
+            ],
           ],
         },
       },
