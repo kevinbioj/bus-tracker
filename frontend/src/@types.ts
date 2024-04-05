@@ -98,6 +98,7 @@ export type VehicleData = {
     ledColor: "YELLOW" | "WHITE" | null;
   };
   timestamp: number;
+  activityRegistered: boolean;
 };
 
 //- HISTORY

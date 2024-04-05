@@ -7,9 +7,19 @@ export type GtfsProperties = {
   tripUpdateHref?: string;
   vehiclePositionHref?: string;
   filters?: {
-    scheduled?: (trip: Trip, index: number, array: Trip[]) => boolean;
-    tripUpdate?: (tripUpdate: TripUpdateEntity, index: number, array: TripUpdateEntity[]) => boolean;
-    vehiclePosition?: (tripUpdate: VehiclePositionEntity, index: number, array: VehiclePositionEntity[]) => boolean;
+    scheduled?: (trip: Trip, index: number, array: Trip[], resource: GtfsResource) => boolean;
+    tripUpdate?: (
+      tripUpdate: TripUpdateEntity,
+      index: number,
+      array: TripUpdateEntity[],
+      resource: GtfsResource,
+    ) => boolean;
+    vehiclePosition?: (
+      tripUpdate: VehiclePositionEntity,
+      index: number,
+      array: VehiclePositionEntity[],
+      resource: GtfsResource,
+    ) => boolean;
   };
   afterInit?: (resource: GtfsResource) => unknown;
   getOperator?: (trip: Trip) => string;
@@ -17,6 +27,7 @@ export type GtfsProperties = {
   timeSlice?: 'VEHICLE_POSITION' | 'FIRST_REALTIME';
   generateShapes?: boolean;
   propagateDelays?: boolean;
+  registerActivity?: boolean;
 };
 
 //- GTFS Static

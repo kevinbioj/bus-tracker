@@ -42,7 +42,7 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
 
   const ongoingTrips = [...resource.trips.values()].filter((trip, index, array) => {
     // 1. We run through the custom filter first.
-    if (typeof filter !== 'undefined' && !filter(trip, index, array)) return false;
+    if (typeof filter !== 'undefined' && !filter(trip, index, array, resource)) return false;
     // 2. If the trip was already seen in realtime data, we skip it.
     if (processedTrips.includes(trip.id)) return false;
     // 3. If a trip with the same block (if available) was processed, we skip it.
@@ -122,6 +122,7 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
       },
       source: properties.getOperator?.(trip) ?? properties.id,
       timestamp: dayjs().unix(),
+      activityRegistered: false,
     } as const;
   });
 }
@@ -145,7 +146,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
       .sort((a, b) => +b.tripUpdate.timestamp - +a.tripUpdate.timestamp)
       .filter((trip, index, array) => {
         const filter = properties.filters?.tripUpdate;
-        return filter ? filter(trip, index, array) : true;
+        return filter ? filter(trip, index, array, resource) : true;
       })
       .map(async (tripUpdate) => {
         // if (dayjs().diff(dayjs.unix(+tripUpdate.tripUpdate.timestamp), "minutes") >= 10) return;
@@ -213,6 +214,12 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           }) ?? stopTimes[0];
         if (dayjs().diff(dayjs.unix(currentStopTime.timestamp!), 'minutes') > 10) return;
         const currentStopTimeIdx = stopTimes.indexOf(currentStopTime);
+
+        const firstTimestamp = stopTimes.find((st) => st.timestamp !== null)?.timestamp;
+        if (firstTimestamp) {
+          const whenBegins = dayjs.unix(firstTimestamp);
+          if (dayjs().isBefore(whenBegins) && Math.abs(dayjs().diff(whenBegins, 'minutes')) > 15) return;
+        }
 
         const source = properties.getOperator?.(trip) ?? properties.id;
         const vehicleDescriptor = tripUpdate.tripUpdate.vehicle;
@@ -282,6 +289,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           },
           source,
           timestamp: +tripUpdate.tripUpdate.timestamp,
+          activityRegistered: properties.registerActivity ?? true,
         });
       }),
   );
@@ -421,6 +429,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
           ledColor,
         },
         timestamp: +vehiclePosition.vehicle.timestamp,
+        activityRegistered: properties.registerActivity ?? true,
       });
     }),
   );

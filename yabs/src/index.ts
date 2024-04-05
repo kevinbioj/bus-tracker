@@ -81,6 +81,7 @@ function handleGetVehicles(c: Context) {
       ledColor: entry.vehicle.ledColor,
     },
     timestamp: entry.timestamp,
+    activityRegistered: entry.activityRegistered,
   }));
   return c.json(vehicles);
 }
@@ -175,7 +176,7 @@ async function updateEntries(source: Source) {
       if (suppliedDatabase) {
         await Promise.all(
           entries
-            .filter((data) => data.vehicle.id !== null)
+            .filter((data) => data.vehicle.id !== null && data.activityRegistered)
             .map((data) =>
               insertActivity(
                 { operator: data.source, number: +data.vehicle.id! },
