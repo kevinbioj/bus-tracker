@@ -105,6 +105,7 @@ type RouteNumberProps = {
 };
 
 function RouteNumber({ dimensions, ledColor, routeNumber, width }: RouteNumberProps) {
+  if (typeof routeNumber === "undefined") return null;
   const fontFamily = routeNumber.font ?? "1513B3E1";
   const height = (dimensions.height * width) / (dimensions.rnWidth + dimensions.destinationWidth);
   const onePixel = width / (dimensions.rnWidth + dimensions.destinationWidth);
@@ -162,6 +163,7 @@ function Pages({ dimensions, ledColor, pages, width }: PagesProps) {
   }, [pages]);
 
   const activePage = pages[currentPageIndex];
+  if (typeof activePage === "undefined") return null;
 
   const lines = Array.isArray(activePage) ? activePage : [activePage];
   const oneLine = lines.length === 1;
@@ -179,7 +181,7 @@ function Pages({ dimensions, ledColor, pages, width }: PagesProps) {
         justifyContent: lines.length === 1 ? "center" : "space-between",
       }}
     >
-      {lines.map((line) => {
+      {lines.filter(Boolean).map((line) => {
         const fontFamily = line.font ?? (oneLine ? "1513B3E1" : "0808B2E1");
         const spacing = onePixel * (line.spacing ?? fontProperties[fontFamily].spacing);
         const virtualHeight = (height / dimensions.height) * fontProperties[fontFamily].height;
