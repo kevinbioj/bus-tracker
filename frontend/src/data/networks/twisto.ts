@@ -782,7 +782,7 @@ const twistoRoutes: Route[] = [
         city: "BIÉVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#f3a3b9", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
-          pages: [{ text: "BIEVILLE CHATEAU" }],
+          pages: [{ font: "1510N2E1", text: "BIEVILLE CHATEAU" }],
         },
       },
       {
@@ -1016,7 +1016,8 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Lycée Fresnel"],
-        name: "CAEN Lycée Fresnel",
+        name: "Lycée Fresnel",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#7f2110", textColor: "#ffffff", outlineColor: "#000000", text: "34" },
           pages: [{ font: "1508C2E1", text: "CAEN LYCEE FRESNEL" }],
