@@ -60,7 +60,7 @@ const diviaRoutes: Route[] = [
             text: "CITY",
             outlineColor: "#000000",
           },
-          pages: [{ text: ["MONGE", "CITE DE LA GASTRONOMIE"] }],
+          pages: [[{ text: "MONGE" }, { text: "CITE DE LA GASTRONOMIE" }]],
         },
       },
     ],
@@ -171,7 +171,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#e7619c", textColor: "#ffffff", text: "L4", outlineColor: "#000000" },
-          pages: [{ text: ["MONGE", "CITE DE LA GASTRONOMIE"] }],
+          pages: [[{ text: "MONGE" }, { text: "CITE DE LA GASTRONOMIE" }]],
         },
       },
       {
@@ -296,7 +296,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#e7619c", textColor: "#ffffff", text: "L9", outlineColor: "#000000" },
-          pages: [{ text: ["MONGE", "CITE DE LA GASTRONOMIE"] }],
+          pages: [[{ text: "MONGE" }, { text: "CITE DE LA GASTRONOMIE" }]],
         },
       },
       {
@@ -665,7 +665,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ee8250", textColor: "#ffffff", text: "33", outlineColor: "#000000" },
-          pages: [{ text: ["MONGE", "CITE DE LA GASTRONOMIE"] }],
+          pages: [[{ text: "MONGE" }, { text: "CITE DE LA GASTRONOMIE" }]],
         },
       },
       {
@@ -699,7 +699,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ee8250", textColor: "#ffffff", text: "34", outlineColor: "#000000" },
-          pages: [{ text: ["MONGE", "CITE DE LA GASTRONOMIE"] }],
+          pages: [[{ text: "MONGE" }, { text: "CITE DE LA GASTRONOMIE" }]],
         },
       },
     ],
@@ -724,7 +724,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ee8250", textColor: "#ffffff", text: "35", outlineColor: "#000000" },
-          pages: [{ text: ["MONGE", "CITE DE LA GASTRONOMIE"] }],
+          pages: [[{ text: "MONGE" }, { text: "CITE DE LA GASTRONOMIE" }]],
         },
       },
     ],
@@ -759,7 +759,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ee8250", textColor: "#ffffff", text: "36", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "ROSTAND BOIVIN"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "ROSTAND BOIVIN" }]],
         },
       },
     ],
@@ -1038,7 +1038,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "61", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "FENAY"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "FENAY" }]],
         },
       },
       {
@@ -1048,7 +1048,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "61", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "COLLEGE DORGELES"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "COLLEGE DORGELES" }]],
         },
       },
     ],
@@ -1065,7 +1065,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "62", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "FENAY"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "FENAY" }]],
         },
       },
       {
@@ -1075,7 +1075,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "62", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "LYCÉE H. FONTAINE"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "LYCÉE H. FONTAINE" }]],
         },
       },
     ],
@@ -1092,7 +1092,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "63", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "BRETENIERE"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "BRETENIERE" }]],
         },
       },
       {
@@ -1102,7 +1102,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "63", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "COLLEGE DORGELES"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "COLLEGE DORGELES" }]],
         },
       },
     ],
@@ -1119,7 +1119,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "64", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "BRESSEY"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "BRESSEY" }]],
         },
       },
       {
@@ -1129,7 +1129,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { text: "" },
-          pages: [{ text: ["CE VEHICULE NE PREND", "PAS DE VOYAGEUR"] }],
+          pages: [[{ text: "CE VEHICULE NE PREND" }, { text: "PAS DE VOYAGEUR" }]],
         },
       },
     ],
@@ -1146,7 +1146,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "65", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "HAUTEVILLE"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "HAUTEVILLE" }]],
         },
       },
       {
@@ -1156,7 +1156,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "65", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "COLLEGE VIAN"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "COLLEGE VIAN" }]],
         },
       },
     ],
@@ -1173,7 +1173,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "66", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "NEUILLY CRI"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "NEUILLY CRI" }]],
         },
       },
       {
@@ -1183,7 +1183,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "66", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "COLLEGE DORGELES"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "COLLEGE DORGELES" }]],
         },
       },
     ],
@@ -1200,7 +1200,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "67", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "NEUILLY CRI"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "NEUILLY CRI" }]],
         },
       },
       {
@@ -1210,7 +1210,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "67", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "30 OCTOBRE"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "30 OCTOBRE" }]],
         },
       },
     ],
@@ -1227,7 +1227,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "68", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "BRETENIERE"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "BRETENIERE" }]],
         },
       },
       {
@@ -1237,7 +1237,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "68", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "LYCEE H. FONTAINE"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "LYCEE H. FONTAINE" }]],
         },
       },
     ],
@@ -1254,7 +1254,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "69", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "NEUILLY CRI"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "NEUILLY CRI" }]],
         },
       },
       {
@@ -1264,7 +1264,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "69", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "LYCEE BOIVIN"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "LYCEE BOIVIN" }]],
         },
       },
     ],
@@ -1281,7 +1281,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "70", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "PLOMBIERES"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "PLOMBIERES" }]],
         },
       },
       {
@@ -1291,7 +1291,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "70", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "COLLEGE RAMEAU"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "COLLEGE RAMEAU" }]],
         },
       },
     ],
@@ -1308,7 +1308,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "71", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "ROOSEVELT"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "ROOSEVELT" }]],
         },
       },
       {
@@ -1318,7 +1318,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "71", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "COLLEGE MALRAUX"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "COLLEGE MALRAUX" }]],
         },
       },
     ],
@@ -1335,7 +1335,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "72", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "MAGNY"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "MAGNY" }]],
         },
       },
       {
@@ -1345,7 +1345,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "72", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "LYCEE BOIVIN"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "LYCEE BOIVIN" }]],
         },
       },
     ],
@@ -1362,7 +1362,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "73", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "LYCEE BOIVIN"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "LYCEE BOIVIN" }]],
         },
       },
     ],
@@ -1379,7 +1379,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "74", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "ST-APO. PRE THOMAS"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "ST-APO. PRE THOMAS" }]],
         },
       },
       {
@@ -1389,7 +1389,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "74", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "LYCEE LE CASTEL"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "LYCEE LE CASTEL" }]],
         },
       },
     ],
@@ -1406,7 +1406,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "75", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "FLAVIGNEROT"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "FLAVIGNEROT" }]],
         },
       },
       {
@@ -1416,7 +1416,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3793ac", textColor: "#ffffff", text: "75", outlineColor: "#000000" },
-          pages: [{ text: ["BUS CLASS'", "COLLÈGE DUNANT"] }],
+          pages: [[{ text: "BUS CLASS'" }, { text: "COLLÈGE DUNANT" }]],
         },
       },
     ],
@@ -1440,7 +1440,7 @@ const diviaRoutes: Route[] = [
             text: "NAVC",
             outlineColor: "#000000",
           },
-          pages: [{ text: ["NAVETTE DU DIMANCHE", "DIRECTION> CARRAZ"] }],
+          pages: [[{ text: "NAVETTE DU DIMANCHE" }, { text: "DIRECTION> CARRAZ" }]],
         },
       },
       {
@@ -1456,7 +1456,7 @@ const diviaRoutes: Route[] = [
             text: "NAVC",
             outlineColor: "#000000",
           },
-          pages: [{ text: ["NAVETTE DU DIMANCHE", "DIRECTION> LES ATELIERS"] }],
+          pages: [[{ text: "NAVETTE DU DIMANCHE" }, { text: "DIRECTION> LES ATELIERS" }]],
         },
       },
     ],
@@ -1475,7 +1475,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#000000", textColor: "#ffffff", text: "93", outlineColor: "#000000" },
-          pages: [{ text: ["NAVETTE PERSONNEL", "DIRECTION> DEPOT"] }],
+          pages: [[{ text: "NAVETTE PERSONNEL" }, { text: "DIRECTION> DEPOT" }]],
         },
       },
     ],
