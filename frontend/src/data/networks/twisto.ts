@@ -766,7 +766,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Biéville Rue du Home"],
+        id: ["Biéville-Beuville Rue du Home"],
         autoHide: true,
         name: "Rue du Home",
         city: "BIÉVILLE",
@@ -776,7 +776,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Biéville Château"],
+        id: ["Biéville-Beuville Biéville Château"],
         autoHide: true,
         name: "Château",
         city: "BIÉVILLE",
