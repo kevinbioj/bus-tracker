@@ -185,7 +185,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                 size={20}
               />
             </div>
-            {data.vehicle.id && (
+            {data.vehicle.id && data.activityRegistered && (
               <Link
                 className="bg-brand flex items-center justify-center gap-2 py-0.5 hover:bg-brand-hover"
                 href={`/vehicles/${data.source.toLowerCase()}/${data.vehicle.id}`}

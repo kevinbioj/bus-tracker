@@ -27,4 +27,5 @@ export type YabsEntry = {
     ledColor: 'YELLOW' | 'WHITE' | null;
   };
   timestamp: number;
+  activityRegistered?: boolean;
 };

@@ -123,6 +123,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
               }) ?? []),
           ],
           timestamp: timestamp,
+          activityRegistered: true,
         };
       }),
   );
