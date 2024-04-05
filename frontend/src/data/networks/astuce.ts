@@ -701,18 +701,33 @@ const astuceRoutes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
-          ledColor: "WHITE",
           routeNumber: {
-            backgroundColor: "#008F5B",
+            backgroundColor: "#BA941C",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "F7",
+            font: "1508SUPX",
+            text: "228",
           },
           pages: [
-            { spacing: 3, text: "BOULINGRIN" },
-            { spacing: 3, text: "ROUEN" },
+            [
+              { font: "1107SUPX", spacing: 3, text: "PONT-AUDEMER" },
+              { font: "0505SUPX", spacing: 3, text: "OMNIBUS" },
+            ],
           ],
         },
+        // girouette: {
+        //   ledColor: "WHITE",
+        //   routeNumber: {
+        //     backgroundColor: "#008F5B",
+        //     textColor: "#FFFFFF",
+        //     outlineColor: "#000000",
+        //     text: "F7",
+        //   },
+        //   pages: [
+        //     { spacing: 3, text: "BOULINGRIN" },
+        //     { spacing: 3, text: "ROUEN" },
+        //   ],
+        // },
       },
       {
         id: ["La Pléiade MONT-SAINT-AIGNAN"],
@@ -1016,7 +1031,16 @@ const astuceRoutes: Route[] = [
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#B762CC", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
-          pages: [{ text: "BOULINGRIN" }, { spacing: 4, text: "ROUEN" }],
+          pages: [
+            [
+              { font: "1107SUPX", spacing: 3, text: "BOULINGRIN" },
+              { font: "0505SUPX", text: "VIA CONSERVATOIRE" },
+            ],
+            [
+              { font: "1107SUPX", spacing: 3, text: "ROUEN" },
+              { font: "0505SUPX", text: "BOULINGRIN" },
+            ],
+          ],
         },
       },
       {
