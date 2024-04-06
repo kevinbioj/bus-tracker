@@ -3,10 +3,9 @@ import { Network, Route } from "~/@types";
 const liaRoutes: Route[] = [
   {
     id: "LIA:LER",
-    noCartridge: true,
     routeIds: ["LIA:FR:Line::325702f0-8067-4665-a0d8-5ebce7e59d0a:"],
     name: "LER",
-    colors: { background: "#0749FF", text: "#FFFFFF" },
+    colors: { background: "#ed6ea7", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Le Havre"],
@@ -14,13 +13,13 @@ const liaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: {
-            backgroundColor: "#0749FF",
+            backgroundColor: "#ED6EA7",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             font: "1510N2E1",
             text: "LER",
           },
-          pages: [[{ text: "LIGNE EXPRESS REGIONALE" }, { spacing: 3, text: "LE HAVRE" }]],
+          pages: [{ spacing: 3, text: "LE HAVRE" }],
         },
       },
       {
@@ -29,13 +28,13 @@ const liaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: {
-            backgroundColor: "#0749FF",
+            backgroundColor: "#ED6EA7",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             font: "1510N2E1",
             text: "LER",
           },
-          pages: [[{ text: "LIGNE EXPRESS REGIONALE" }, { spacing: 3, text: "MONTIVILLIERS" }]],
+          pages: [{ text: "MONTIVILLIERS" }],
         },
       },
       {
@@ -45,13 +44,13 @@ const liaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: {
-            backgroundColor: "#0749FF",
+            backgroundColor: "#ED6EA7",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             font: "1510N2E1",
             text: "LER",
           },
-          pages: [[{ text: "LIGNE EXPRESS REGIONALE" }, { spacing: 3, text: "ROLLEVILLE" }]],
+          pages: [{ spacing: 3, text: "ROLLEVILLE" }],
         },
       },
     ],
@@ -68,7 +67,7 @@ const liaRoutes: Route[] = [
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#E30613",
@@ -85,7 +84,7 @@ const liaRoutes: Route[] = [
         name: "Pré Fleuri",
         city: "LE HAVRE",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#E30613",
@@ -102,7 +101,7 @@ const liaRoutes: Route[] = [
         name: "La Plage",
         city: "LE HAVRE",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#E30613",
@@ -118,7 +117,7 @@ const liaRoutes: Route[] = [
         autoHide: true,
         name: "Rond-Point",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#E30613",
@@ -133,7 +132,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:A",
-    noCartridge: true,
     name: "A",
     colors: { background: "#E30613", text: "#FFFFFF" },
     destinations: [
@@ -142,7 +140,7 @@ const liaRoutes: Route[] = [
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 96 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#E30613",
@@ -158,7 +156,7 @@ const liaRoutes: Route[] = [
         name: "La Plage",
         city: "LE HAVRE",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 96 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#E30613",
@@ -173,7 +171,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:B",
-    noCartridge: true,
     name: "B",
     colors: { background: "#00BB00", text: "#FFFFFF" },
     destinations: [
@@ -182,7 +179,7 @@ const liaRoutes: Route[] = [
         name: "Pré Fleuri",
         city: "LE HAVRE",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#00BB00",
@@ -199,7 +196,7 @@ const liaRoutes: Route[] = [
         name: "Rond-Point",
         city: "LE HAVRE",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#00BB00",
@@ -215,7 +212,7 @@ const liaRoutes: Route[] = [
         name: "La Plage",
         city: "LE HAVRE",
         girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 114 },
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
             backgroundColor: "#00BB00",
@@ -230,7 +227,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:01",
-    noCartridge: true,
     name: "1",
     colors: { background: "#009FE3", text: "#FFFFFF" },
     destinations: [
@@ -334,7 +330,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:C2",
-    noCartridge: true,
     name: "C2",
     colors: { background: "#E30613", text: "#FFFFFF" },
     destinations: [
@@ -404,7 +399,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:03",
-    noCartridge: true,
     name: "3",
     colors: { background: "#13A538", text: "#FFFFFF" },
     destinations: [
@@ -474,7 +468,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:04",
-    noCartridge: true,
     name: "4",
     colors: { background: "#F7A823", text: "#FFFFFF" },
     destinations: [
@@ -544,7 +537,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:05",
-    noCartridge: true,
     name: "5",
     colors: { background: "#E6007E", text: "#FFFFFF" },
     destinations: [
@@ -614,7 +606,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:06",
-    noCartridge: true,
     name: "6",
     colors: { background: "#FFE500", text: "#000000" },
     destinations: [
@@ -744,7 +735,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:07",
-    noCartridge: true,
     name: "7",
     colors: { background: "#0069B4", text: "#FFFFFF" },
     destinations: [
@@ -846,7 +836,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:08",
-    noCartridge: true,
     name: "8",
     colors: { background: "#E67900", text: "#FFFFFF" },
     destinations: [
@@ -926,7 +915,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:09",
-    noCartridge: true,
     name: "9",
     colors: { background: "#BEBD00", text: "#000000" },
     destinations: [
@@ -996,7 +984,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:10",
-    noCartridge: true,
     name: "10",
     colors: { background: "#95C11F", text: "#000000" },
     destinations: [
@@ -1098,7 +1085,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:11",
-    noCartridge: true,
     name: "11",
     colors: { background: "#E63312", text: "#FFFFFF" },
     destinations: [
@@ -1168,7 +1154,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:12",
-    noCartridge: true,
     name: "12",
     colors: { background: "#FFE500", text: "#000000" },
     destinations: [
@@ -1301,7 +1286,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:13",
-    noCartridge: true,
     name: "13",
     colors: { background: "#FAC075", text: "#000000" },
     destinations: [
@@ -1403,7 +1387,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:14",
-    noCartridge: true,
     name: "14",
     colors: { background: "#009640", text: "#FFFFFF" },
     destinations: [
@@ -1473,7 +1456,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:15",
-    noCartridge: true,
     name: "15",
     colors: { background: "#DB679B", text: "#FFFFFF" },
     destinations: [
@@ -1542,7 +1524,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:16",
-    noCartridge: true,
     name: "16",
     colors: { background: "#5B358C", text: "#FFFFFF" },
     destinations: [
@@ -1612,7 +1593,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:17",
-    noCartridge: true,
     name: "17",
     colors: { background: "#83D0F5", text: "#000000" },
     destinations: [
@@ -1682,7 +1662,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:18",
-    noCartridge: true,
     name: "18",
     colors: { background: "#56543C", text: "#FFFFFF" },
     destinations: [
@@ -1752,7 +1731,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:19",
-    noCartridge: true,
     name: "19",
     colors: { background: "#82368C", text: "#FFFFFF" },
     destinations: [
@@ -1822,7 +1800,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:21",
-    noCartridge: true,
     name: "21",
     colors: { background: "#4E55A1", text: "#FFFFFF" },
     destinations: [
@@ -1892,7 +1869,6 @@ const liaRoutes: Route[] = [
   },
   {
     id: "LIA:22",
-    noCartridge: true,
     name: "22",
     colors: { background: "#104C77", text: "#FFFFFF" },
     destinations: [
