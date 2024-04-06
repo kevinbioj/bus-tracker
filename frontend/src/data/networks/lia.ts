@@ -256,7 +256,7 @@ const liaRoutes: Route[] = [
               {
                 font: "LUMIPLAN-2",
                 spacing: 2,
-                text: "PAR  LE  HAVRE  CENTRE",
+                text: "PAR LE HAVRE CENTRE",
               },
             ],
           ],
@@ -320,7 +320,7 @@ const liaRoutes: Route[] = [
               {
                 font: "LUMIPLAN-2",
                 spacing: 2,
-                text: "PAR  LE  HAVRE  CENTRE",
+                text: "PAR LE HAVRE CENTRE",
               },
             ],
           ],
@@ -385,7 +385,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -423,7 +423,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -454,7 +454,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -492,7 +492,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -592,7 +592,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -629,7 +629,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -660,7 +660,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -691,7 +691,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -721,7 +721,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -759,7 +759,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -822,7 +822,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -891,7 +891,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -1040,7 +1040,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -1182,7 +1182,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                text: "PAR ST-ROMAIN-DE-COLBOSC",
               },
             ],
           ],
@@ -1276,7 +1276,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                text: "PAR ST-ROMAIN-DE-COLBOSC",
               },
             ],
           ],
@@ -1342,7 +1342,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -1479,7 +1479,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -1548,7 +1548,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -1579,7 +1579,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -1648,7 +1648,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -1686,7 +1686,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -1755,7 +1755,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
@@ -2192,7 +2192,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-2",
@@ -2543,7 +2543,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E  H A V R E",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
