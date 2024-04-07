@@ -77,6 +77,7 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Joffre-Mutualité"],
+        autoHide: true,
         name: "Joffre-Mutualité",
         city: "ROUEN",
         girouette: {
@@ -108,6 +109,7 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Joffre-Mutualité ROUEN"],
+        autoHide: true,
         name: "Joffre-Mutualité",
         city: "ROUEN",
         girouette: {
