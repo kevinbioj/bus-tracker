@@ -100,7 +100,7 @@ const astuceRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", spacing: 1, text: "JOFFRE-MUTUALITE" },
+            { font: "14LUPLAN", spacing: 1, text: "BOULINGRIN" },
             { font: "14LUPLAN", spacing: 1, text: "ROUEN" },
           ],
           width: 300,
