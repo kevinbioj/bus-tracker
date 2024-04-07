@@ -66,7 +66,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#E6007E", text: "#FFED00" },
     destinations: [
       {
-        id: ["Boulingrin ROUEN"],
+        id: ["Boulingrin ROUEN", "Boulingrin"],
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
@@ -76,42 +76,13 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Georges Braque GRAND QUEVILLY"],
-        autoHide: true,
-        name: "Georges Braque",
-        city: "GRAND-QUEVILLY",
+        id: ["Joffre-Mutualité"],
+        name: "Joffre-Mutualité",
+        city: "ROUEN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
-          pages: [
-            { font: "1510N2E1", text: "GEORGES BRAQUE" },
-            { font: "1510N2E1", text: "GRAND-QUEVILLY" },
-          ],
-        },
-      },
-      {
-        id: ["Technopôle SAINT-ETIENNE-DU-ROUVRAY"],
-        autoHide: true,
-        name: "Technopôle",
-        city: "SAINT-ÉTIENNE-DU-ROUVRAY",
-        girouette: {
-          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
-          pages: [
-            { font: "1513B3E1", text: "TECHNOPOLE" },
-            { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
-          ],
-        },
-      },
-      {
-        id: ["Hôtel de Ville de SOTTEVILLE", "Hôtel de Ville de Sotteville"],
-        autoHide: true,
-        name: "Hôtel de Ville",
-        city: "SOTTEVILLE-LÈS-ROUEN",
-        girouette: {
-          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
-          pages: [
-            { font: "1513B3E1", text: "HOTEL DE VILLE" },
-            { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" },
-          ],
+          pages: [{ text: "JOFFRE-MUTUALITE" }, { spacing: 4, text: "ROUEN" }],
         },
       },
     ],
@@ -129,30 +100,28 @@ const astuceRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", spacing: 1, text: "BOULINGRIN" },
+            { font: "14LUPLAN", spacing: 1, text: "JOFFRE-MUTUALITE" },
             { font: "14LUPLAN", spacing: 1, text: "ROUEN" },
           ],
           width: 300,
         },
       },
       {
-        id: ["Place du 8-Mai LE PETIT-QUEVILLY"],
-        autoHide: true,
-        name: "Place du 8-Mai",
-        city: "PETIT-QUEVILLY",
+        id: ["Joffre-Mutualité ROUEN"],
+        name: "Joffre-Mutualité",
+        city: "ROUEN",
         girouette: {
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", spacing: 1, text: "PLACE DU 8-MAI" },
-            { font: "14LUPLAN", spacing: 1, text: "PETIT-QUEVILLY" },
+            { font: "14LUPLAN", spacing: 1, text: "JOFFRE-MUTUALITE" },
+            { font: "14LUPLAN", spacing: 1, text: "ROUEN" },
           ],
-
           width: 300,
         },
       },
       {
-        id: ["Georges Braque GRAND QUEVILLY"],
+        id: ["Georges Braque GRAND QUEVILLY", "Georges Braque GD QUEVILLY"],
         name: "Georges Braque",
         city: "GRAND-QUEVILLY",
         girouette: {
@@ -175,21 +144,6 @@ const astuceRoutes: Route[] = [
           pages: [
             { font: "14LUPLAN", spacing: 1, text: "TECHNOPOLE" },
             { font: "14LUPLAN", spacing: 1, text: "SAINT-ETIENNE" },
-          ],
-          width: 300,
-        },
-      },
-      {
-        id: ["Hôtel de Ville de Sotteville", "Hôtel de Ville SOTTEVILLE-LES-ROUEN"],
-        autoHide: true,
-        name: "Hôtel de Ville",
-        city: "SOTTEVILLE-LÈS-ROUEN",
-        girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
-          routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
-          pages: [
-            { font: "14LUPLAN", spacing: 1, text: "HOTEL DE VILLE" },
-            { font: "14LUPLAN", spacing: 1, text: "SOTTEVILLE" },
           ],
           width: 300,
         },
