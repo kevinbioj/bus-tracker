@@ -1,6 +1,6 @@
 import { P, match } from 'ts-pattern';
 
-import { GtfsProperties } from '~/yabs/fetcher/gtfs/@types';
+import { GtfsProperties, Trip } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
@@ -177,12 +177,16 @@ const sources: Source[] = [
         },
       },
       afterInit: (resource) => {
-        resource.trips.forEach((trip) => {
-          trip.id = trip.id.split(':')[0];
-          // @ts-expect-error Just for this ressource 🙏
-          trip.trainNumber = trip.headsign;
-          trip.headsign = trip.stops.at(-1)!.stop.name;
+        const transformedTrips: Trip[] = [...resource.trips.values()].map((trip) => {
+          return {
+            ...trip,
+            id: trip.id.split(':')[0],
+            headsign: trip.stops.at(-1)!.stop.name,
+            trainNumber: trip.headsign,
+          };
         });
+        resource.trips.clear();
+        transformedTrips.forEach((trip) => resource.trips.set(trip.id, trip));
       },
       getOperator: () => 'LIA',
     },
