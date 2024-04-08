@@ -190,6 +190,10 @@ async function updateEntries(source: Source) {
       console.log(`YABS\t${source.id}\tNo entries were returned, keeping old entries.`);
     }
   } catch (e) {
-    console.error(`YABS\t${source.id}\tFailed to update entries:\n`, e);
+    if (e instanceof DOMException) {
+      console.error(`YABS\t${source.id}\tRequest was aborted due to timeout being reached.`);
+    } else {
+      console.error(`YABS\t${source.id}\tFailed to update entries:\n`, e);
+    }
   }
 }

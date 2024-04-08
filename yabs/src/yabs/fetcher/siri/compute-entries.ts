@@ -21,7 +21,7 @@ const unescape = (input: string) => input.replace('&apos;', "'");
 
 export async function computeSiriEntries(properties: SiriProperties) {
   const abortController = new AbortController();
-  const timeout = setTimeout(() => abortController.abort(), 10000);
+  const timeout = setTimeout(() => abortController.abort(), 5000);
   const response = await fetch(properties.siriEndpoint, {
     body: vehicleMonitoringRequestPayload,
     headers: {
