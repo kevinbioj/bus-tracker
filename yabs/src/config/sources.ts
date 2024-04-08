@@ -166,8 +166,10 @@ const sources: Source[] = [
       filters: {
         scheduled: () => false,
         tripUpdate: (tripUpdate, _, __, resource) => {
-          const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
+          const tripId = tripUpdate.tripUpdate.trip.tripId.split(':')[0];
+          const trip = resource.trips.get(tripId);
           if (typeof trip !== 'undefined') {
+            tripUpdate.tripUpdate.trip.tripId = tripId;
             // @ts-expect-error Just for this ressource 🙏
             tripUpdate.tripUpdate.vehicle = { id: trip.trainNumber ?? null };
           }
@@ -176,6 +178,7 @@ const sources: Source[] = [
       },
       afterInit: (resource) => {
         resource.trips.forEach((trip) => {
+          trip.id = trip.id.split(':')[0];
           // @ts-expect-error Just for this ressource 🙏
           trip.trainNumber = trip.headsign;
           trip.headsign = trip.stops.at(-1)!.stop.name;
