@@ -1824,11 +1824,11 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-A",
-                text: "MONTIVILLIERS  GARE",
+                text: "MONTIVILLIERS GARE",
               },
               {
                 font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                text: "PAR GONNEVILLE / CRIQUETOT",
               },
             ],
           ],
@@ -1855,11 +1855,11 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-A",
-                text: "ETRETAT GRANDVAL",
+                text: "ETRETAT GRAND VAL",
               },
               {
                 font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                text: "PAR GONNEVILLE / CRIQUETOT",
               },
             ],
           ],
