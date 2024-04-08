@@ -1117,7 +1117,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "100",
           },
-          pages: [{ font: "1507SUPX", spacing: 1, text: "CAEN PLACE DU CANADA" }],
+          pages: [{ font: "1507SUPX", text: "CAEN PLACE DU CANADA" }],
         },
       },
       {
@@ -1132,7 +1132,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "100",
           },
-          pages: [{ font: "1507SUPX", text: "AUTHIE JACQUES CARTIER" }],
+          pages: [{ font: "1407SUPX", text: "AUTHIE JACQUES CARTIER" }],
         },
       },
     ],
@@ -1401,9 +1401,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["CAEN Hôtel de Ville"],
+        id: ["Caen Hôtel de Ville Quai 2"],
         autoHide: true,
-        name: "CAEN Hôtel de Ville",
+        name: "Hôtel de Ville",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1411,7 +1412,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "107",
           },
-          pages: [{ text: "CAEN Hôtel de Ville" }],
+          pages: [{ text: "CAEN HOTEL DE VILLE" }],
         },
       },
       {
@@ -1712,9 +1713,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["LOUVIGNY Mesnil"],
+        id: ["Louvigny Louvigny Mesnil"],
         autoHide: true,
-        name: "LOUVIGNY Mesnil",
+        name: "Mesnil",
+        city: "LOUVIGNY",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1722,13 +1724,14 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "118",
           },
-          pages: [{ text: "LOUVIGNY Mesnil" }],
+          pages: [{ text: "LOUVIGNY MESNIL" }],
         },
       },
       {
         id: ["FLEURY Collège Hawking"],
         autoHide: true,
-        name: "FLEURY Collège Hawking",
+        name: "Collège Hawking",
+        city: "FLEURY-SUR-ORNE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1736,7 +1739,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "118",
           },
-          pages: [{ text: "FLEURY Collège Hawking" }],
+          pages: [{ font: "1507SUPX", text: "FLEURY COLLEGE HAWKING" }],
         },
       },
     ],
@@ -1911,7 +1914,9 @@ const twistoRoutes: Route[] = [
       {
         id: ["Saint-Aubin-d'Arquenay Saint-Aubin Eglise"],
         autoHide: true,
-        name: "SAINT AUBIN Eglise",
+        alternate: "Église de Saint-Aubin-d'Arquenay",
+        name: "Église",
+        city: "SAINT-AUBIN-D'ARQUENAY",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1919,7 +1924,7 @@ const twistoRoutes: Route[] = [
             textColor: "#702283",
             text: "124",
           },
-          pages: [{ font: "1507SUPX", text: "SAINT-AUBIN EGLISE" }],
+          pages: [{ font: "1508SUPX", text: "SAINT-AUBIN EGLISE" }],
         },
       },
       {
