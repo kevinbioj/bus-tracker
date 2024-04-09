@@ -39,7 +39,7 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
                   </span>
                 ))
                 .with([P.number, false], ([time]) => (
-                  <span className="tabular-nums" title="Horaire théorique">
+                  <span className="tabular-nums hover:cursor-default" title="Horaire théorique">
                     {dayjs.unix(time).format("HH:mm")}
                   </span>
                 ))
