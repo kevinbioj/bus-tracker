@@ -11,6 +11,7 @@ import lbusNetwork from "~/data/networks/lbus";
 import lebusNetwork from "~/data/networks/lebus";
 import liaNetwork from "~/data/networks/lia";
 import mocaNetwork from "~/data/networks/moca";
+import nemusNetwork from "~/data/networks/nemus";
 import nevaNetwork from "~/data/networks/neva";
 import nomadRegionNetwork from "~/data/networks/nomad-region";
 import rezobusNetwork from "~/data/networks/rezobus";
@@ -32,6 +33,7 @@ export const networks: Network[] = [
   astrobusNetwork,
   rezobusNetwork,
   nevaNetwork,
+  nemusNetwork,
   bybusNetwork,
   mocaNetwork,
   hobusNetwork,

@@ -148,6 +148,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "NEMUS",
+    name: "Némus (Flers Agglo)",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/nemus.svg",
+      size: [233, 67],
+    },
+    issues: [],
+  },
+  {
     id: "HOBUS",
     name: "Hobus (Pays de Honfleur-Beuzeville)",
     hasHistory: false,

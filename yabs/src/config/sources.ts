@@ -377,6 +377,23 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'NEMUS',
+    refreshCron: '15 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'NEMUS',
+      routePrefix: 'NEMUS',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/821cfc05-c8db-48a5-a830-9358054bee95',
+      tripUpdateHref: 'https://nemus-rt.bus-tracker.xyz/gtfs-rt/trip-updates',
+      vehiclePositionHref: 'https://nemus-rt.bus-tracker.xyz/gtfs-rt/vehicle-positions',
+      filters: {
+        scheduled: () => false,
+      },
+      getOperator: () => 'NEMUS',
+      getVehicleNumber: () => null,
+    },
+  },
+  {
     id: 'BYBUS',
     refreshCron: '8,18,28,38,48,58 * * * * *',
     type: 'GTFS',
