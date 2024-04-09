@@ -536,7 +536,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Ouistreham RIVA Sacré Coeur"],
+        id: ["Ouistreham Sacré Coeur"],
         autoHide: true,
         name: "Sacré Coeur",
         city: "OUISTREHAM",
@@ -641,7 +641,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Ouistreham Riva Charmettes"],
+        id: ["Ouistreham RIVA CHARMETTES"],
         autoHide: true,
         name: "Riva Charmettes",
         city: "OUISTREHAM",
@@ -1164,7 +1164,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Blainville Parc"],
+        id: ["Blainville-sur-Orne Blainville Parc"],
         autoHide: true,
         name: "Parc",
         city: "BLAINVILLE",
@@ -1211,9 +1211,10 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["HERMANVILLE La Marque"],
+        id: ["Hermanville-sur-Mer La Marque"],
         autoHide: true,
-        name: "HERMANVILLE La Marque",
+        name: "La Marque",
+        city: "HERMANVILLE-SUR-MER",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1222,7 +1223,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "101",
           },
-          pages: [{ text: "HERMANVILLE La Marque" }],
+          pages: [{ font: "1507SUPX", text: "HERMANVILLE LA MARQUE" }],
         },
       },
       {
@@ -1248,9 +1249,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["BRETTEVILLE Koenig"],
+        id: ["Bretteville-sur-Odon BRETTEVILLE Koenig"],
         autoHide: true,
-        name: "BRETTEVILLE Koenig",
+        name: "Koenig",
+        city: "BRETTEVILLE-SUR-ODON",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1259,7 +1261,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "102",
           },
-          pages: [{ text: "BRETTEVILLE Koenig" }],
+          pages: [{ font: "1508SUPX", text: "BRETTEVILLE KOENIG" }],
         },
       },
       {
@@ -1361,9 +1363,11 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["CAEN Gare SNCF"],
+        id: ["Caen Gare SNCF"],
         autoHide: true,
-        name: "CAEN Gare SNCF",
+        alternate: "Gare SNCF de Caen",
+        name: "Gare SNCF",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1372,7 +1376,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "105",
           },
-          pages: [{ text: "CAEN Gare SNCF" }],
+          pages: [{ font: "1508SUPX", text: "CAEN GARE SNCF" }],
         },
       },
       {
@@ -1401,7 +1405,8 @@ const twistoRoutes: Route[] = [
       {
         id: ["Mondeville Paul Langevin"],
         autoHide: true,
-        name: "MONDEVILLE Paul Langevin",
+        name: "Paul Langevin",
+        city: "MONDEVILLE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1433,7 +1438,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "107",
           },
-          pages: [{ text: "CAEN HOTEL DE VILLE" }],
+          pages: [{ font: "1508SUPX", text: "CAEN HOTEL DE VILLE" }],
         },
       },
       {
@@ -1476,9 +1481,10 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CARPIQUET Aéroport"],
+        id: ["Carpiquet Aéroport"],
         autoHide: true,
-        name: "CARPIQUET Aéroport",
+        name: "Aéroport",
+        city: "CARPIQUET",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1487,7 +1493,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "109",
           },
-          pages: [{ text: "CARPIQUET Aéroport" }],
+          pages: [{ font: "1508SUPX", text: "CARPIQUET AEROPORT" }],
         },
       },
     ],
@@ -1536,9 +1542,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["COLOMBELLES Mandela"],
+        id: ["Giberville Mandela"],
         autoHide: true,
-        name: "COLOMBELLES Mandela",
+        name: "Mandela",
+        city: "GIBERVILLE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1547,7 +1554,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "111",
           },
-          pages: [{ text: "COLOMBELLES Mandela" }],
+          pages: [{ font: "1508SUPX", text: "GIBERVILLE MANDELA" }],
         },
       },
       {
@@ -1577,9 +1584,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["CUVERVILLE Champ Picot"],
+        id: ["Cuverville Champ Picot"],
         autoHide: true,
-        name: "CUVERVILLE Champ Picot",
+        name: "Champ Picot",
+        city: "CUVERVILLE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1588,7 +1596,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "112",
           },
-          pages: [{ text: "CUVERVILLE Champ Picot" }],
+          pages: [{ font: "1407SUPX", text: "CUVERVILLE CHAMP PICOT" }],
         },
       },
       {
@@ -1615,9 +1623,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["ETERVILLE le Rocreuil"],
+        id: ["Éterville Le Rocreuil"],
         autoHide: true,
-        name: "ETERVILLE le Rocreuil",
+        name: "Le Rocreuil",
+        city: "ÉTERVILLE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1626,7 +1635,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "113",
           },
-          pages: [{ text: "ETERVILLE le Rocreuil" }],
+          pages: [{ font: "1507SUPX", text: "ETERVILLE LE ROCREUIL" }],
         },
       },
       {
@@ -1653,9 +1662,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["CAEN Rostand Fresnel"],
+        id: ["Caen Rostand-Fresnel"],
         autoHide: true,
-        name: "CAEN Rostand Fresnel",
+        name: "Rostand-Fresnel",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1664,7 +1674,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "114",
           },
-          pages: [{ text: "CAEN Rostand Fresnel" }],
+          pages: [{ font: "1507SUPX", text: "CAEN ROSTAND-FRESNEL" }],
         },
       },
     ],
@@ -1675,7 +1685,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["CUVERVILLE Callouins"],
+        id: ["Cuverville Callouins"],
         autoHide: true,
         name: "CUVERVILLE Callouins",
         girouette: {
@@ -1814,7 +1824,8 @@ const twistoRoutes: Route[] = [
       {
         id: ["Colombelles Place des Tilleuls"],
         autoHide: true,
-        name: "COLOMBELLES Place des Tilleuls",
+        name: "Place des Tilleuls",
+        city: "COLOMBELLES",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1852,9 +1863,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["B - COLOMBELLES Mairie"],
+        id: ["Colombelles Colombelles Mairie"],
         autoHide: true,
-        name: "B - COLOMBELLES Mairie",
+        name: "Mairie",
+        city: "COLOMBELLES",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1863,13 +1875,14 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "121",
           },
-          pages: [{ text: "B - COLOMBELLES Mairie" }],
+          pages: [{ font: "1508SUPX", text: "COLOMBELLES MAIRIE" }],
         },
       },
       {
-        id: ["A - COLOMBELLES Lazzaro"],
+        id: ["Colombelles Lazzaro"],
         autoHide: true,
-        name: "A - COLOMBELLES Lazzaro",
+        name: "Lazzaro",
+        city: "COLOMBELLES",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1878,7 +1891,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "121",
           },
-          pages: [{ text: "A - COLOMBELLES Lazzaro" }],
+          pages: [{ font: "1507SUPX", text: "COLOMBELLES LAZZARO" }],
         },
       },
       {
@@ -1898,21 +1911,6 @@ const twistoRoutes: Route[] = [
             { font: "1508SUPX", text: "MONDEVILLE" },
             { font: "1508SUPX", text: "COLLEGE GUILLEMOT" },
           ],
-        },
-      },
-      {
-        id: ["A - MONDEVILLE Collège Guillemot"],
-        autoHide: true,
-        name: "A - MONDEVILLE Collège Guillemot",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ffffff",
-            textColor: "#702283",
-            spacing: 2,
-            text: "121",
-          },
-          pages: [{ text: "A - MONDEVILLE Collège Guillemot" }],
         },
       },
     ],
@@ -2023,9 +2021,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["SAINT-CONTEST Vellerie"],
+        id: ["Saint-Contest Vellerie"],
         autoHide: true,
-        name: "SAINT-CONTEST Vellerie",
+        name: "Vellerie",
+        city: "SAINT-CONTEST",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -2034,7 +2033,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "126",
           },
-          pages: [{ text: "SAINT-CONTEST Vellerie" }],
+          pages: [{ font: "1407SUPX", text: "SAINT-CONTEST VELLERIE" }],
         },
       },
       {
@@ -2062,7 +2061,8 @@ const twistoRoutes: Route[] = [
       {
         id: ["Villons-les-Buissons Coopérative"],
         autoHide: true,
-        name: "VILLONS Coopérative",
+        name: "Coopérative",
+        city: "VILLONS-LES-BUISSONS",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -2071,7 +2071,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "127",
           },
-          pages: [{ font: "1508C2E1", text: "VILLONS COOPERATIVE" }],
+          pages: [{ font: "1507SUPX", text: "VILLONS COOPERATIVE" }],
         },
       },
     ],
@@ -2082,7 +2082,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["CAEN Gare SNCF"],
+        id: ["Caen Gare SNCF"],
         autoHide: true,
         name: "CAEN Gare SNCF",
         girouette: {
@@ -2093,7 +2093,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "130",
           },
-          pages: [{ text: "CAEN Gare SNCF" }],
+          pages: [{ font: "1508SUPX", text: "CAEN GARE SNCF" }],
         },
       },
       {
@@ -2139,21 +2139,6 @@ const twistoRoutes: Route[] = [
             text: "130",
           },
           pages: [{ text: "CAEN Théâtre" }],
-        },
-      },
-      {
-        id: ["CAEN T"],
-        autoHide: true,
-        name: "CAEN T",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ffffff",
-            textColor: "#702283",
-            spacing: 2,
-            text: "130",
-          },
-          pages: [{ text: "CAEN T" }],
         },
       },
       {
