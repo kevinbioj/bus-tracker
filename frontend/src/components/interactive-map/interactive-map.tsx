@@ -30,7 +30,7 @@ export default function InteractiveMap({ center, className }: InteractiveMapProp
         {darkMode ? (
           <TileLayer
             attribution='&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+            url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=2fe3ce6a-fb74-4ce7-bf3d-48419d25b1eb"
           />
         ) : (
           <TileLayer
