@@ -28,14 +28,14 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
                 {stopTime.name}
               </span>
               {stopTime.timestamp !== null && stopTime.isRealtime ? (
-                <Rss className="ml-auto -rotate-90" color="green" size={8} />
+                <Rss className="ml-auto -rotate-90 stroke-green-700 dark:stroke-green-500" size={8} />
               ) : (
                 <div></div>
               )}
               {match([stopTime.timestamp, stopTime.isRealtime])
                 .with([null, P.boolean], () => (
                   <span title="Arrêt non desservi">
-                    <X className="mx-auto -mt-0.5" color="red" size={18} strokeWidth={3} />
+                    <X className="mx-auto -mt-0.5 stroke-red-500" size={18} strokeWidth={3} />
                   </span>
                 ))
                 .with([P.number, false], ([time]) => (
@@ -46,7 +46,7 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
                 .with([P.number, true], ([time]) => {
                   return (
                     <span
-                      className="tabular-nums text-green-700 hover:cursor-default"
+                      className="tabular-nums text-green-700 dark:text-green-500 hover:cursor-default"
                       title={
                         stopTime.delta !== null
                           ? stopTime.delta === 0
