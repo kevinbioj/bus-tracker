@@ -69,12 +69,12 @@ const nevaRoutes: Route[] = [
         },
       },
       {
-        id: ["Haute-Lande (1)"],
-        name: "Haute-Lande",
+        id: ["Hauteville (2)"],
+        name: "Haute Ville",
         city: "GRANVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#536DFE", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
-          pages: [{ text: "HAUTE-LANDE" }],
+          pages: [{ text: "HAUTE VILLE" }],
         },
       },
     ],
