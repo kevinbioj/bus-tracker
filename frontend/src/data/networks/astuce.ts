@@ -247,7 +247,10 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             text: "T3",
           },
-          pages: [{ font: "1510N2E1", spacing: 1, text: "DURECU-LAVOISIER" }, { text: "DARNETAL" }],
+          pages: [
+            { font: "1510N2E1", spacing: 1, text: "DURECU-LAVOISIER" },
+            { spacing: 4, text: "DARNETAL" },
+          ],
         },
       },
       {
@@ -261,7 +264,10 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             text: "T3",
           },
-          pages: [{ text: "MONET" }, { text: "CANTELEU" }],
+          pages: [
+            { spacing: 4, text: "MONET" },
+            { spacing: 4, text: "CANTELEU" },
+          ],
         },
       },
     ],
