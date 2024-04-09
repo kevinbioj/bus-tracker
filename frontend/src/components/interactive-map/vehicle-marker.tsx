@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import dayjs from "dayjs";
 import { LatLngExpression } from "leaflet";
 import Image from "next/image";

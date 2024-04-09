@@ -183,6 +183,22 @@ html {
 
       --radius: 0.5rem;
     }
+
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out {
+      background-color: rgb(23, 23, 23) !important;
+    }
+
+    .leaflet-control-zoom-in:hover,
+    .leaflet-control-zoom-out:hover {
+      background-color: rgb(50, 50, 50) !important;
+    }
+
+    .leaflet-popup-content-wrapper,
+    .leaflet-popup-tip {
+      background-color: rgb(23, 23, 23) !important;
+      color: white !important;
+    }
   }
 }
 
