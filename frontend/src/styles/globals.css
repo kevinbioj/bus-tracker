@@ -197,9 +197,23 @@ html {
     .leaflet-popup-content-wrapper,
     .leaflet-popup-tip {
       background-color: rgb(23, 23, 23) !important;
+      border-color: rgb(128, 128, 128);
       color: white !important;
     }
+
+    .leaflet-bar {
+      border-color: white !important;
+    }
   }
+}
+
+.leaflet-bar {
+  border-width: 1px !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  border-width: 1px;
 }
 
 .leaflet-fade-anim .leaflet-popup {
@@ -217,6 +231,8 @@ html {
 }
 
 .leaflet-popup-content-wrapper {
-  border-radius: 6px !important;
+  border-radius: 0px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
   padding: 0 !important;
 }
