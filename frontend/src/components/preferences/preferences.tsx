@@ -25,6 +25,19 @@ export default function Preferences() {
           <ScheduledTripsPreference />
           <NextStopsPreference />
         </div>
+        <hr className="my-2" />
+        <DialogTitle>Besoin de me contacter ?</DialogTitle>
+        <p>
+          Un bug ? Une suggestion ? Une remarque ou une question ?<br />
+          Envoyez-moi un e-mail à{" "}
+          <a
+            className="text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300 transition-colors"
+            href="mailto:contact@bus-tracker.xyz?subject=Bus Tracker - ?"
+          >
+            contact@bus-tracker.xyz
+          </a>{" "}
+          😉
+        </p>
       </DialogContent>
     </Dialog>
   );
