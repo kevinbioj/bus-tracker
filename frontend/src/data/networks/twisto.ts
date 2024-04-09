@@ -248,7 +248,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#642580", textColor: "#ffffff", outlineColor: "#000000", text: "5" },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "HEROUVILLE Lebisey" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "HEROUVILLE LEBISEY" }],
         },
       },
       {
@@ -990,12 +990,12 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Mathieu Le Londel"],
+        id: ["Biéville-Beuville Le Londel"],
         name: "Le Londel",
-        city: "MATHIEU",
+        city: "BIÉVILLE-BEUVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#00698a", textColor: "#ffffff", outlineColor: "#000000", text: "33" },
-          pages: [{ font: "1510N2E1", text: "MATHIEU LE LONDEL" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "BIEVILLE LE LONDEL" }],
         },
       },
     ],
@@ -1506,7 +1506,9 @@ const twistoRoutes: Route[] = [
       {
         id: ["Colombelles Colombelles Mairie"],
         autoHide: true,
-        name: "COLOMBELLES Mairie",
+        alternate: "Mairie de Colombelles",
+        name: "Mairie",
+        city: "COLOMBELLES",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1515,7 +1517,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "110",
           },
-          pages: [{ font: "1507SUPX", text: "COLOMBELLES MAIRIE" }],
+          pages: [{ font: "1508SUPX", text: "COLOMBELLES MAIRIE" }],
         },
       },
       {
@@ -1723,9 +1725,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["HEROUVILLE Lebisey"],
+        id: ["Hérouville-Saint-Clair Lebisey"],
         autoHide: true,
-        name: "HEROUVILLE Lebisey",
+        name: "Lebisey",
+        city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1734,7 +1737,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "116",
           },
-          pages: [{ text: "HEROUVILLE Lebisey" }],
+          pages: [{ text: "HEROUVILLE LEBISEY" }],
         },
       },
       {
@@ -1772,7 +1775,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "118",
           },
-          pages: [{ text: "LOUVIGNY MESNIL" }],
+          pages: [{ font: "1508SUPX", text: "LOUVIGNY MESNIL" }],
         },
       },
       {
