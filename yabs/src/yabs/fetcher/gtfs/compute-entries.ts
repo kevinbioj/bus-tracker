@@ -134,7 +134,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
   const entries = new Map<string, YabsEntry>();
 
   const abortController = new AbortController();
-  const timeout = setTimeout(() => abortController.abort(), 5000);
+  const timeout = setTimeout(() => abortController.abort(), 10000);
   const tripUpdate = await fetch(properties.tripUpdateHref, { signal: abortController.signal })
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
@@ -304,7 +304,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
   const entries = new Map<string, YabsEntry>();
 
   const abortController = new AbortController();
-  const timeout = setTimeout(() => abortController.abort(), 5000);
+  const timeout = setTimeout(() => abortController.abort(), 10000);
   const tripUpdates = await fetch(properties.tripUpdateHref, { signal: abortController.signal })
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
