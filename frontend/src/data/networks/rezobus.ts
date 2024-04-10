@@ -205,6 +205,17 @@ const rezobusRoutes: Route[] = [
         },
       },
       {
+        id: ["LILLEBONNE Tourbière"],
+        autoHide: true,
+        name: "Tourbière",
+        city: "LILLEBONNE",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#89c2bf", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
+          pages: [[{ text: "LILLEBONNE" }, { text: "TOURBIERE" }]],
+        },
+      },
+      {
         id: ["LILLEBONNE A l'Eau"],
         name: "À l'eau",
         city: "LILLEBONNE",
