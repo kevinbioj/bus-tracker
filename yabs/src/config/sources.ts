@@ -53,6 +53,19 @@ const sources: Source[] = [
       routePrefix: 'ASTUCE-TGR',
       filters: {
         scheduled: (trip) => trip.route !== 'F6',
+        vehiclePosition: (_, index, array) => {
+          if (index > 0) return true;
+          const seenVehicles: string[] = [];
+          array.forEach((vp) => {
+            if (typeof vp.vehicle.vehicle.label === 'undefined') return;
+            if (seenVehicles.includes(vp.vehicle.vehicle.label)) {
+              vp.vehicle.vehicle.label = undefined;
+            } else {
+              seenVehicles.push(vp.vehicle.vehicle.label);
+            }
+          });
+          return true;
+        },
       },
     },
   },
@@ -403,9 +416,9 @@ const sources: Source[] = [
       staticResourceHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs-rt',
-      // filters: {
-      //   scheduled: () => false,
-      // },
+      filters: {
+        scheduled: (trip) => trip.route !== 'TAD 1',
+      },
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
     },
   },
