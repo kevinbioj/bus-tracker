@@ -1,13 +1,13 @@
 import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
-import { GtfsProperties, Trip, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
+import { GtfsProperties, Trip, TripUpdateEntity, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
 
-const zenbusFilter = (vehiclePosition: VehiclePositionEntity) =>
-  dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minutes') < 10;
+const zenbusFilter = (entity: VehiclePositionEntity) =>
+  dayjs().diff(dayjs.unix(+entity.vehicle.timestamp), 'minutes') < 1000;
 
 export type Source = {
   id: string;
