@@ -33,7 +33,10 @@ const sources: Source[] = [
           return false;
         },
       },
-      getOperator: (trip) => (trip.calendar.id.startsWith('IST') || trip.route === '89' ? 'TNI' : 'TCAR'),
+      getOperator: (trip) =>
+        trip.calendar.id.startsWith('IST') || trip.calendar.id.startsWith('INT') || trip.route === '89'
+          ? 'TNI'
+          : 'TCAR',
       timeSlice: 'FIRST_REALTIME',
       propagateDelays: true,
     },
