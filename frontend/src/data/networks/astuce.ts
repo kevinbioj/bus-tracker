@@ -71,6 +71,7 @@ const astuceRoutes: Route[] = [
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
           pages: [{ text: "BOULINGRIN" }, { spacing: 4, text: "ROUEN" }],
         },
