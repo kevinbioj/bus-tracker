@@ -7,7 +7,7 @@ import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
 
 const zenbusFilter = (entity: VehiclePositionEntity) =>
-  dayjs().diff(dayjs.unix(+entity.vehicle.timestamp), 'minutes') < 1000;
+  dayjs().diff(dayjs.unix(+entity.vehicle.timestamp), 'minutes') < 10;
 
 export type Source = {
   id: string;
