@@ -1844,9 +1844,10 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["HEROUVILLE Allende"],
+        id: ["Hérouville-Saint-Clair Allende"],
         autoHide: true,
-        name: "HEROUVILLE Allende",
+        name: "Allende",
+        city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1855,7 +1856,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "120",
           },
-          pages: [{ text: "HEROUVILLE Allende" }],
+          pages: [{ font: "1508C2E1", text: "HEROUVILLE ALLENDE" }],
         },
       },
     ],
@@ -1924,9 +1925,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["BLAINVILLE Langevin Wallon"],
+        id: ["Blainville-sur-Orne Blainville Langevin Wallon"],
         autoHide: true,
-        name: "BLAINVILLE Langevin Wallon",
+        name: "Langevin Wallon",
+        city: "BLAINVILLE-SUR-ONE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1935,13 +1937,15 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "123",
           },
-          pages: [{ text: "BLAINVILLE Langevin Wallon" }],
+          pages: [{ font: "1407SUPX", text: "BLAINVILLE LANGEVIN WALLON" }],
         },
       },
       {
-        id: ["SAINT AUBIN Eglise"],
+        id: ["Saint-Aubin-d'Arquenay Saint-Aubin Eglise"],
         autoHide: true,
-        name: "SAINT AUBIN Eglise",
+        alternate: "Église de Saint-Aubin-d'Arquenay",
+        name: "Église",
+        city: "SAINT-AUBIN-D'ARQUENAY",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -1950,7 +1954,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "123",
           },
-          pages: [{ text: "SAINT AUBIN Eglise" }],
+          pages: [{ text: "SAINT-AUBIN EGLISE" }],
         },
       },
     ],
@@ -2115,9 +2119,10 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN Cité U Lebisey"],
+        id: ["Caen Cité U Lebisey"],
         autoHide: true,
-        name: "CAEN Cité U Lebisey",
+        name: "Cité U Lebisey",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -2126,7 +2131,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "130",
           },
-          pages: [{ text: "CAEN Cité U Lebisey" }],
+          pages: [{ font: "1507SUPX", text: "CAEN CITE U LEBISEY" }],
         },
       },
       {
@@ -2197,9 +2202,11 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["TROARN Collège"],
+        id: ["Troarn Collège"],
         autoHide: true,
-        name: "TROARN Collège",
+        alternate: "Collège de Troarn",
+        name: "Collège",
+        city: "TROARN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -2208,7 +2215,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "131",
           },
-          pages: [{ text: "TROARN Collège" }],
+          pages: [{ font: "1508SUPX", text: "TROARN COLLEGE" }],
         },
       },
       {
@@ -2450,9 +2457,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["HEROUVILLE Allende"],
+        id: ["Hérouville-Saint-Clair Allende"],
         autoHide: true,
-        name: "HEROUVILLE Allende",
+        name: "Allende",
+        city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -2461,7 +2469,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "136",
           },
-          pages: [{ text: "HEROUVILLE Allende" }],
+          pages: [{ font: "1508SUPX", text: "HEROUVILLE ALLENDE" }],
         },
       },
       {
