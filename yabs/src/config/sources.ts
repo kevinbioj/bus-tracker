@@ -1,9 +1,13 @@
+import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
-import { GtfsProperties, Trip } from '~/yabs/fetcher/gtfs/@types';
+import { GtfsProperties, Trip, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
+
+const zenbusFilter = (vehiclePosition: VehiclePositionEntity) =>
+  dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minutes') < 10;
 
 export type Source = {
   id: string;
@@ -353,6 +357,7 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=astrobus',
       filters: {
         scheduled: () => false,
+        vehiclePosition: zenbusFilter,
       },
       getOperator: () => 'ASTROBUS',
       getVehicleNumber: () => null,
@@ -370,6 +375,7 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=hobus',
       filters: {
         scheduled: () => false,
+        vehiclePosition: zenbusFilter,
       },
       getOperator: () => 'HOBUS',
       getVehicleNumber: () => null,
@@ -387,6 +393,7 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=granville',
       filters: {
         scheduled: () => false,
+        vehiclePosition: zenbusFilter,
       },
       getOperator: () => 'NEVA',
       getVehicleNumber: () => null,
@@ -437,6 +444,7 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=bernay',
       filters: {
         scheduled: () => false,
+        vehiclePosition: zenbusFilter,
       },
       getOperator: () => 'LBUS',
       getVehicleNumber: () => null,
