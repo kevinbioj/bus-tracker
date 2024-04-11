@@ -83,7 +83,10 @@ const astuceRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
-          pages: [{ text: "JOFFRE-MUTUALITE" }, { spacing: 4, text: "ROUEN" }],
+          pages: [
+            { font: "1510N2E1", spacing: 1, text: "JOFFRE-MUTUALITE" },
+            { spacing: 4, text: "ROUEN" },
+          ],
         },
       },
     ],

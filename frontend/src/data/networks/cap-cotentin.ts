@@ -487,7 +487,7 @@ const capCotentinRoutes: Route[] = [
         city: "VALOGNES",
         girouette: {
           routeNumber: { backgroundColor: "#C2DDB3", textColor: "#000000", text: "G" },
-          pages: [{ text: "VALOGNES" }, { font: "1508C2E1", spacing: 3, text: "Z.A. ARMANVILLE" }],
+          pages: [[{ text: "VALOGNES" }, { text: "Z.A. ARMANVILLE" }]],
         },
       },
       {
