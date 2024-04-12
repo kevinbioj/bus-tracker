@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 import { Map2, Table } from "tabler-icons-react";
 
 import NetworkSelector from "~/components/network-selector";
@@ -12,6 +13,17 @@ import { useActiveNetwork } from "~/hooks/useActiveNetwork";
 export default function Header() {
   const [network] = useActiveNetwork();
   const pathname = usePathname();
+  useEffect(() => {
+    const themeColor = document.head.querySelector('meta[name="theme-color"]');
+    if (themeColor !== null) {
+      themeColor.setAttribute("content", network?.color ?? "#FFFFFF");
+    } else {
+      const meta = document.createElement("meta");
+      meta.setAttribute("name", "theme-color");
+      meta.setAttribute("content", network?.color ?? "#FFFFFF");
+      document.head.appendChild(meta);
+    }
+  }, [network]);
   return (
     <>
       <header
