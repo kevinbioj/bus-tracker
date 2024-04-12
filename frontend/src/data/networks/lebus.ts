@@ -2,7 +2,7 @@ import { Network, Route } from "~/@types";
 
 const lebusRoutes: Route[] = [
   {
-    id: "LEBUS:1",
+    id: "LEBUS:ATOUMOD013:Line:1:LOC",
     noCartridge: true,
     name: "1",
     colors: { background: "#4e9dcd", text: "#ffffff" },
@@ -26,7 +26,7 @@ const lebusRoutes: Route[] = [
     ],
   },
   {
-    id: "LEBUS:2",
+    id: "LEBUS:ATOUMOD013:Line:2:LOC",
     noCartridge: true,
     name: "2",
     colors: { background: "#8db74f", text: "#ffffff" },
@@ -50,7 +50,7 @@ const lebusRoutes: Route[] = [
     ],
   },
   {
-    id: "LEBUS:3",
+    id: "LEBUS:ATOUMOD013:Line:3:LOC",
     noCartridge: true,
     name: "3",
     colors: { background: "#cc483b", text: "#ffffff" },
