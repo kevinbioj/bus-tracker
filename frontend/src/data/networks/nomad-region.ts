@@ -80,7 +80,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["PONT-AUDEMER", "ROUEN / PONT-AUDEMER"],
+        id: ["PONT-AUDEMER", "ROUEN / PONT-AUDEMER", "PONT-AUDEMER EXPRESS", "PONT-AUDEMER VIA GRAND-COURONNE"],
         alternate: "Pont-Audemer",
         name: "Gare Routière",
         city: "PONT-AUDEMER",
@@ -113,7 +113,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUEN", "ROUTOT / ROUEN", "PONT-AUDEMER / ROUEN"],
+        id: ["ROUEN", "ROUTOT / ROUEN", "PONT-AUDEMER / ROUEN", "ROUEN EXPRESS", "ROUEN VIA GRAND-COURONNE"],
         alternate: "Rouen",
         name: "Gare Routière",
         city: "ROUEN",
