@@ -139,11 +139,25 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'LIA',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/1e666e24-58ee-46b9-8952-ea2755ba88f2',
-      tripUpdateHref: 'https://lia-rt.bus-tracker.xyz/gtfs-rt/trip-updates',
-      vehiclePositionHref: 'https://lia-rt.bus-tracker.xyz/gtfs-rt/vehicle-positions',
+      tripUpdateHref: 'https://lia-gtfsrt.bus-tracker.xyz/trip-updates',
+      vehiclePositionHref: 'https://lia-gtfsrt.bus-tracker.xyz/vehicle-positions',
       routePrefix: 'LIA',
       filters: {
         scheduled: (trip) => ['12', '13', '21'].includes(trip.route),
+        tripUpdate: (tripUpdate, _, __, resource) => {
+          const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
+          if (typeof trip !== 'undefined') {
+            tripUpdate.tripUpdate.trip.routeId = trip.route;
+          }
+          return true;
+        },
+        vehiclePosition: (vehiclePosition, _, __, resource) => {
+          const trip = resource.trips.get(vehiclePosition.vehicle.trip.tripId);
+          if (typeof trip !== 'undefined') {
+            vehiclePosition.vehicle.trip.routeId = trip.route;
+          }
+          return true;
+        },
       },
       afterInit: (resource) => {
         for (const [_, trip] of resource.trips) {
