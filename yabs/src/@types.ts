@@ -15,7 +15,7 @@ export type YabsEntry = {
     route: string;
     direction: number;
     headsign: string | null;
-  };
+  } | null;
   vehicle: {
     id: string | null;
     position: {

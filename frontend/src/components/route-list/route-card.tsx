@@ -13,7 +13,7 @@ type RouteCardProps = { route: Route };
 export default function RouteCard({ route }: RouteCardProps) {
   const [showScheduledTrips] = useLocalStorage("show-scheduled-trips", true);
   const vehicles = useVehicles().filter((data) => {
-    if (!route.routeIds?.includes(data.trip.route) && data.trip.route !== route.id) return false;
+    if (!route.routeIds?.includes(data.trip?.route ?? "") && data.trip?.route !== route.id) return false;
     if (!showScheduledTrips && data.vehicle.position.type === "SCHEDULED") return false;
     return true;
   });
@@ -22,7 +22,7 @@ export default function RouteCard({ route }: RouteCardProps) {
 
   const destinations = route.destinations.map((destination) => destination.id).flat();
   const unknownVehicles = vehicles.filter((data) =>
-    destinations.every((destination) => destination !== data.trip.headsign),
+    destinations.every((destination) => destination !== data.trip?.headsign),
   );
 
   return (
@@ -38,7 +38,7 @@ export default function RouteCard({ route }: RouteCardProps) {
       </div>
       <div className="flex flex-col gap-y-2 mt-1.5">
         {route.destinations.map((destination, index) => {
-          const targetVehicles = vehicles.filter((data) => destination.id.some((id) => data.trip.headsign === id));
+          const targetVehicles = vehicles.filter((data) => destination.id.some((id) => data.trip?.headsign === id));
           if (targetVehicles.length === 0 && destination.autoHide) return null;
           return <RouteDestination destination={destination} key={index} vehicles={targetVehicles} />;
         })}

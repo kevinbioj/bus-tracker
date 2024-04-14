@@ -22,7 +22,7 @@ export type GtfsProperties = {
     ) => boolean;
   };
   afterInit?: (resource: GtfsResource) => unknown;
-  getOperator?: (trip: Trip) => string;
+  getOperator?: (trip: Trip | null) => string;
   getVehicleNumber?: (descriptor: VehicleDescriptor) => string | null;
   timeSlice?: 'VEHICLE_POSITION' | 'FIRST_REALTIME';
   generateShapes?: boolean;
@@ -125,7 +125,7 @@ export type VehiclePositionEntity = {
       longitude: number;
     };
     timestamp: string;
-    trip: {
+    trip?: {
       tripId: string;
       routeId?: string;
     };

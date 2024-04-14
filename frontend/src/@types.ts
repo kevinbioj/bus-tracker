@@ -7,6 +7,7 @@ export type Network = {
   routes: Route[];
   color?: string;
   textColor?: string;
+  girouetteHlp?: GirouetteData;
 };
 
 export type Operator = {
@@ -86,7 +87,7 @@ export type VehicleData = {
     direction: number;
     headsign: string | null;
     stopTimes: StopTime[];
-  };
+  } | null;
   vehicle: {
     id: string | null;
     position: {

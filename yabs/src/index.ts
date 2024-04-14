@@ -56,20 +56,22 @@ function handleGetVehicles(c: Context) {
   const vehicles = [...output.values()].flat().map((entry) => ({
     id: entry.id,
     source: entry.source,
-    trip: {
-      id: entry.trip.id,
-      route: entry.trip.route,
-      direction: entry.trip.direction,
-      headsign: entry.trip.headsign,
-      stopTimes: entry.stopTimes.map((stopTime) => ({
-        id: stopTime.id,
-        name: stopTime.name,
-        sequence: stopTime.sequence,
-        timestamp: stopTime.timestamp,
-        delta: stopTime.delta,
-        isRealtime: stopTime.isRealtime,
-      })),
-    },
+    trip: entry.trip
+      ? {
+          id: entry.trip.id,
+          route: entry.trip.route,
+          direction: entry.trip.direction,
+          headsign: entry.trip.headsign,
+          stopTimes: entry.stopTimes.map((stopTime) => ({
+            id: stopTime.id,
+            name: stopTime.name,
+            sequence: stopTime.sequence,
+            timestamp: stopTime.timestamp,
+            delta: stopTime.delta,
+            isRealtime: stopTime.isRealtime,
+          })),
+        }
+      : null,
     vehicle: {
       id: entry.vehicle.id,
       position: {
@@ -176,11 +178,11 @@ async function updateEntries(source: Source) {
       if (suppliedDatabase) {
         await Promise.all(
           entries
-            .filter((data) => data.vehicle.id !== null && data.activityRegistered)
+            .filter((data) => data.vehicle.id !== null && data.trip && data.activityRegistered)
             .map((data) =>
               insertActivity(
                 { operator: data.source, number: +data.vehicle.id! },
-                { routeId: data.trip.route, time: dayjs.unix(data.timestamp).toDate() },
+                { routeId: data.trip!.route, time: dayjs.unix(data.timestamp).toDate() },
               ),
             ),
         );

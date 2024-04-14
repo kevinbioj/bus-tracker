@@ -15,7 +15,7 @@ import { brandColor } from "~/../constants";
 import { VehicleData } from "~/@types";
 import { Girouette } from "~/components/interactive-map/girouette";
 import NextStops from "~/components/interactive-map/next-stops";
-import { routes } from "~/data/dataset";
+import { networks, routes } from "~/data/dataset";
 import operators from "~/data/operators";
 import { useViewport } from "~/hooks/useViewport";
 import { BusIcon } from "~/images/transport-modes/bus-icon";
@@ -28,8 +28,10 @@ const isTouchScreen = window.matchMedia("(pointer: coarse)").matches;
 type VehicleMarkerProps = { data: VehicleData };
 
 export default function VehicleMarker({ data }: VehicleMarkerProps) {
-  const route = routes.find((route) => route.routeIds?.includes(data.trip.route) || route.id === data.trip.route);
-  const destination = route?.destinations.find((destination) => destination.id.includes(data.trip.headsign ?? ""));
+  const route = routes.find(
+    (route) => route.routeIds?.includes(data.trip?.route ?? "") || route.id === data.trip?.route,
+  );
+  const destination = route?.destinations.find((destination) => destination.id.includes(data.trip?.headsign ?? ""));
 
   const [showScheduledTrips] = useLocalStorage("show-scheduled-trips", true);
   const [showNextStops] = useLocalStorage("show-next-stops", true);
@@ -38,7 +40,11 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
   const { width } = useViewport();
 
   const position = useMemo(() => {
-    const applyNoise = data.trip.stopTimes.length === 0 || data.trip.stopTimes[0].sequence === 1 ? false : true;
+    const applyNoise = data.trip
+      ? data.trip.stopTimes.length === 0 || data.trip.stopTimes[0].sequence === 1
+        ? false
+        : true
+      : false;
     const { latitude, longitude, type } = data.vehicle.position;
     if (type === "GPS") return [latitude, longitude];
     return applyNoise ? [latitude, longitude] : [latitude + getNoise(), longitude + getNoise()];
@@ -69,6 +75,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
 
   const timestamp = dayjs.unix(data.vehicle.position.timestamp);
   const operator = operators.find((operator) => operator.id === data.source)!;
+  const network = networks.find((n) => n.slug === operator.id)!;
 
   const girouetteWidth = Math.min(width - 50, destination?.girouette?.width ?? 384);
   const ledColor = data.vehicle.ledColor ?? destination?.girouette?.ledColor ?? "YELLOW";
@@ -120,42 +127,52 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
       <Popup autoClose autoPan={false} closeButton={false}>
         <div style={{ width: `${girouetteWidth + 1}px` }}>
           <div className="border-[1px] border-neutral-800">
-            {destination?.girouette ? (
-              <Girouette {...destination.girouette} ledColor={ledColor} width={girouetteWidth} />
+            {destination ? (
+              destination.girouette ? (
+                <Girouette {...destination.girouette} ledColor={ledColor} width={girouetteWidth} />
+              ) : (
+                <Girouette
+                  ledColor={ledColor}
+                  routeNumber={{
+                    backgroundColor: route?.colors.background,
+                    textColor: route?.colors.text,
+                    font: "1508SUPX",
+                    text: route?.name ?? "?",
+                  }}
+                  pages={
+                    route
+                      ? destination
+                        ? destination.alternate
+                          ? [{ font: "1407SUPX", text: destination.alternate }]
+                          : [
+                              { font: "1407SUPX", text: destination.name },
+                              ...(destination.city ? ([{ font: "1407SUPX", text: destination.city }] as const) : []),
+                            ]
+                        : [{ font: "1407SUPX", text: data.trip?.headsign ?? "Destination inconnue" }]
+                      : [
+                          [
+                            {
+                              text: data.trip?.headsign ?? "Destination inconnue",
+                            },
+                            { text: `LIGNE ${data.trip?.route}` },
+                          ],
+                          [
+                            {
+                              text: data.trip?.headsign ?? "Destination inconnue",
+                            },
+                            { text: `COURSE ${data.trip?.id}` },
+                          ],
+                        ]
+                  }
+                  width={girouetteWidth}
+                />
+              )
             ) : (
               <Girouette
+                {...(network?.girouetteHlp ?? {
+                  pages: [[{ text: "CE VEHICULE NE PREND" }, { text: "PAS DE VOYAGEUR" }]],
+                })}
                 ledColor={ledColor}
-                routeNumber={{
-                  backgroundColor: route?.colors.background,
-                  textColor: route?.colors.text,
-                  font: "1508SUPX",
-                  text: route?.name ?? "?",
-                }}
-                pages={
-                  route
-                    ? destination
-                      ? destination.alternate
-                        ? [{ font: "1407SUPX", text: destination.alternate }]
-                        : [
-                            { font: "1407SUPX", text: destination.name },
-                            ...(destination.city ? ([{ font: "1407SUPX", text: destination.city }] as const) : []),
-                          ]
-                      : [{ font: "1407SUPX", text: data.trip.headsign ?? "Destination inconnue" }]
-                    : [
-                        [
-                          {
-                            text: data.trip.headsign ?? "Destination inconnue",
-                          },
-                          { text: `LIGNE ${data.trip.route}` },
-                        ],
-                        [
-                          {
-                            text: data.trip.headsign ?? "Destination inconnue",
-                          },
-                          { text: `COURSE ${data.trip.id}` },
-                        ],
-                      ]
-                }
                 width={girouetteWidth}
               />
             )}
@@ -174,7 +191,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                 {dayjs().diff(timestamp, "day") >= 1
                   ? timestamp.format("DD/MM à HH:mm:ss")
                   : timestamp.format("HH:mm:ss")}
-                {devMode && ` / ${data.trip.id}`}
+                {devMode && ` / ${data.trip?.id}`}
               </span>
               <SatelliteIcon
                 className="h-5 w-5"
@@ -196,7 +213,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                 <span className="font-[Achemine] font-bold flex text-sm text-white">Détails du véhicule</span>
               </Link>
             )}
-            {showNextStops && <NextStops stopTimes={data.trip.stopTimes} />}
+            {showNextStops && <NextStops stopTimes={data.trip?.stopTimes ?? []} />}
           </div>
         </div>
       </Popup>
