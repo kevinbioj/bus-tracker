@@ -164,6 +164,7 @@ const sources: Source[] = [
               P.union(
                 ['La Plage', 'Pré Fleuri'],
                 ['Pré Fleuri', 'La Plage'],
+                ['Rond-Point', 'Pré Fleuri'],
                 ['Rond-Point', 'La Plage'],
                 ['Pré Fleuri', 'Rond-Point'],
               ),
