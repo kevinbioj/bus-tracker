@@ -126,8 +126,8 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'LIA',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/1e666e24-58ee-46b9-8952-ea2755ba88f2',
-      tripUpdateHref: 'https://lia-gtfsrt.bus-tracker.xyz/trip-updates',
-      vehiclePositionHref: 'https://lia-gtfsrt.bus-tracker.xyz/vehicle-positions',
+      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/lia/trip-updates',
+      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/lia/vehicle-positions',
       routePrefix: 'LIA',
       filters: {
         scheduled: (trip) => ['12', '13', '21'].includes(trip.route),
@@ -181,7 +181,7 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'LIA-LER',
-      staticResourceHref: 'https://gtfs.kevinbioj.fr/sncf-ler.zip',
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/sncf-ler.zip',
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/sncf-ter-gtfs-rt-trip-updates',
       routePrefix: 'LIA',
       registerActivity: false,
@@ -242,7 +242,7 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD',
-      staticResourceHref: 'https://gtfs.kevinbioj.fr/nomad.zip',
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad.zip',
       filters: { scheduled: (trip) => trip.route !== '530' },
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
@@ -254,7 +254,7 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD-GEO3D',
-      staticResourceHref: 'https://gtfs.kevinbioj.fr/nomad-geo3d.zip',
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad-geo3d.zip',
       tripUpdateHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       filters: { scheduled: () => false },
@@ -409,8 +409,8 @@ const sources: Source[] = [
       id: 'NEMUS',
       routePrefix: 'NEMUS',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/821cfc05-c8db-48a5-a830-9358054bee95',
-      tripUpdateHref: 'https://nemus-rt.bus-tracker.xyz/gtfs-rt/trip-updates',
-      vehiclePositionHref: 'https://nemus-rt.bus-tracker.xyz/gtfs-rt/vehicle-positions',
+      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/trip-updates',
+      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/vehicle-positions',
       filters: {
         scheduled: () => false,
       },
