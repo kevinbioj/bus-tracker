@@ -1925,10 +1925,10 @@ const twistoRoutes: Route[] = [
     colors: { background: "#ffffff", text: "#702283" },
     destinations: [
       {
-        id: ["Blainville-sur-Orne Blainville Langevin Wallon"],
+        id: ["Blainville-sur-Orne Langevin Wallon"],
         autoHide: true,
         name: "Langevin Wallon",
-        city: "BLAINVILLE-SUR-ONE",
+        city: "BLAINVILLE-SUR-ORNE",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -2046,7 +2046,8 @@ const twistoRoutes: Route[] = [
       {
         id: ["Caen Collège Monod"],
         autoHide: true,
-        name: "CAEN Collège Monod",
+        name: "Collège Monod",
+        city: "CAEN",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
