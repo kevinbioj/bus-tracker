@@ -66,7 +66,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#E6007E", text: "#FFED00" },
     destinations: [
       {
-        id: ["Boulingrin ROUEN", "Boulingrin"],
+        id: ["Boulingrin ROUEN"],
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
@@ -77,16 +77,16 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Joffre-Mutualité"],
+        id: ["Technopôle SAINT-ETIENNE-DU-ROUVRAY"],
         autoHide: true,
-        name: "Joffre-Mutualité",
-        city: "ROUEN",
+        name: "Technopôle",
+        city: "SAINT-ÉTIENNE-DU-ROUVRAY",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
           pages: [
-            { font: "1510N2E1", spacing: 1, text: "JOFFRE-MUTUALITE" },
-            { spacing: 4, text: "ROUEN" },
+            { spacing: 4, text: "TECHNOPOLE" },
+            { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" },
           ],
         },
       },
