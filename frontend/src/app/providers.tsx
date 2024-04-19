@@ -11,8 +11,8 @@ export default function Providers({ children }: ProvidersProps) {
   const [queryClient] = useState(() => new QueryClient());
   return (
     <PlausibleProvider
-      customDomain="https://plausible.bus-tracker.xyz"
-      domain="bus-tracker.xyz"
+      customDomain="https://plausible.bus-tracker.fr"
+      domain="bus-tracker.fr"
       enabled
       selfHosted
       trackOutboundLinks
