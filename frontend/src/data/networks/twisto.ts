@@ -1157,10 +1157,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "101",
           },
-          pages: [
-            { font: "1508SUPX", text: "OUISTREHAM" },
-            { font: "1508SUPX", text: "COLLEGE MONNET" },
-          ],
+          pages: [[{ text: "OUISTREHAM" }, { text: "COLLEGE MONNET" }]],
         },
       },
       {
@@ -1572,10 +1569,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "111",
           },
-          pages: [
-            { font: "1508SUPX", text: "MONDEVILLE" },
-            { font: "1508SUPX", text: "COLLEGE GUILLEMOT" },
-          ],
+          pages: [[{ text: "MONDEVILLE" }, { font: "1508SUPX", text: "COLLEGE GUILLEMOT" }]],
         },
       },
     ],
@@ -1741,7 +1735,7 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["HÉROUVILLE Collège Mandela"],
+        id: ["Hérouville-Saint-Clair Collège Mandela"],
         autoHide: true,
         name: "HÉROUVILLE Collège Mandela",
         girouette: {
@@ -1752,7 +1746,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "116",
           },
-          pages: [{ text: "HÉROUVILLE Collège Mandela" }],
+          pages: [[{ text: "HEROUVILLE-SAINT-CLAIR" }, { text: "COLLEGE MANDELA" }]],
         },
       },
     ],
@@ -1911,10 +1905,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "121",
           },
-          pages: [
-            { font: "1508SUPX", text: "MONDEVILLE" },
-            { font: "1508SUPX", text: "COLLEGE GUILLEMOT" },
-          ],
+          pages: [[{ text: "MONDEVILLE" }, { text: "COLLEGE GUILLEMOT" }]],
         },
       },
     ],
@@ -1937,7 +1928,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "123",
           },
-          pages: [{ font: "1407SUPX", text: "BLAINVILLE LANGEVIN WALLON" }],
+          pages: [[{ text: "BLAINVILLE-SUR-ORNE" }, { text: "LANGEVIN WALLON" }]],
         },
       },
       {
