@@ -8,7 +8,7 @@ import Header from "~/layout/header";
 import "~/styles/globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.bus-tracker.xyz"),
+  metadataBase: new URL("https://www.bus-tracker.fr"),
   title: "Bus Tracker",
   description: "Application de suivi des véhicules de transports en commun.",
   icons: { apple: logoSmall.src, icon: logoSmall.src },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     locale: "fr-FR",
     countryName: "France",
     images: [logoSmall.src],
-    url: "https://www.bus-tracker.xyz",
+    url: "https://www.bus-tracker.fr",
   },
 };
 
