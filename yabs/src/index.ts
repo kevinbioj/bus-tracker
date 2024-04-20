@@ -193,7 +193,7 @@ async function updateEntries(source: Source) {
     if (e instanceof DOMException) {
       console.error(`YABS\t${source.id}\tRequest was aborted due to timeout being reached.`);
     } else {
-      console.error(`YABS\t${source.id}\tFailed to update entries:\n`, e);
+      console.error(`YABS\t${source.id}\tFailed to update entries:\n`, e instanceof Error ? e.stack : e);
     }
   }
 }
