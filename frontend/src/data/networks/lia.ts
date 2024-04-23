@@ -1755,11 +1755,11 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
+                text: "S A N D O U V I L L E",
               },
               {
                 font: "LUMIPLAN-A",
-                text: "SANDOUVILLE RENAULT",
+                text: "RENAULT USINE",
               },
             ],
           ],
