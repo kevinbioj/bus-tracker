@@ -16,7 +16,7 @@ type InteractiveMapProps = {
 };
 
 export default function InteractiveMap({ center, className }: InteractiveMapProps) {
-  const darkMode = useMediaQuery("(prefers-color-scheme: dark)", { defaultValue: false });
+  const darkMode = false; /*useMediaQuery("(prefers-color-scheme: dark)", { defaultValue: false });*/
   const [lastLocation] = useLocalStorage<[number, number, number] | null>("last-location", null);
   return (
     <section>
