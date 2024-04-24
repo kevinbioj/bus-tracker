@@ -1182,7 +1182,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "PAR ST-ROMAIN-DE-COLBOSC",
+                text: "P A R  H A R F L E U R",
               },
             ],
           ],
@@ -1276,7 +1276,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "PAR ST-ROMAIN-DE-COLBOSC",
+                text: "P A R  H A R F L E U R",
               },
             ],
           ],
@@ -1755,7 +1755,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "S A N D O U V I L L E",
+                text: "SANDOUVILLE",
               },
               {
                 font: "LUMIPLAN-A",
