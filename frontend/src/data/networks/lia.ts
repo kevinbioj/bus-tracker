@@ -1461,7 +1461,8 @@ const liaRoutes: Route[] = [
     destinations: [
       {
         id: ["Z.I. Portuaire"],
-        name: "Z.I. Portuaire",
+        name: "Total Raffinage",
+        city: "GONFREVILLE-L'ORCHER",
         girouette: {
           dimensions: {
             height: 24,
@@ -1479,11 +1480,21 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
+                text: "GONFREVILLE L'ORCHER",
               },
               {
                 font: "LUMIPLAN-A",
-                text: "Z.I. PORTUAIRE",
+                text: "TOTAL RAFFINAGE",
+              },
+            ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "TOTAL RAFFINAGE",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR HARFLEUR PL. D'ARMES",
               },
             ],
           ],
@@ -1736,7 +1747,7 @@ const liaRoutes: Route[] = [
     destinations: [
       {
         id: ["Z.I. Portuaire"],
-        name: "Z.I. Portuaire",
+        name: "Renault Usine",
         city: "SANDOUVILLE",
         girouette: {
           dimensions: {
