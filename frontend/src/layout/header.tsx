@@ -14,10 +14,12 @@ import { useActiveNetwork } from "~/hooks/useActiveNetwork";
 export default function Header() {
   const [network] = useActiveNetwork();
   const pathname = usePathname();
-  const [alertSeen, setAlertSeen] = useLocalStorage("alertSeen", typeof window === "undefined" ? true : false, {
-    initializeWithValue: false,
-  });
+  const [alertSeen, setAlertSeen] = useState(true);
   const [alertBlink, setAlertBlink] = useState(true);
+  useEffect(() => {
+    const value = localStorage.getItem("alertSeen");
+    if (value === null) setAlertSeen(false);
+  }, []);
   useEffect(() => {
     const stopBlink = () => setAlertBlink(false);
     const timeout = setTimeout(stopBlink, 5000);
@@ -57,6 +59,7 @@ export default function Header() {
             <button
               onClick={() => {
                 setAlertSeen(true);
+                localStorage.setItem("alertSeen", "true");
                 alert(
                   "bus-tracker.xyz devient définitivement bus-tracker.fr à partir du 22 mai 2024\n\nEn Normandie sur normandie.bus-tracker.fr\nÀ Dijon sur dijon.bus-tracker.fr\n\nBien que vous ayez été automatiquement redirigé•e vers la nouvelle adresse, pensez à mettre vos favoris à jour 😉",
                 );
