@@ -2,16 +2,1070 @@ import { Network, Route } from "~/@types";
 
 const nomadRegionRoutes: Route[] = [
   {
+    id: "NOMAD:112",
+    noCartridge: true,
+    name: "112",
+    colors: { background: "#0080c5", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["TOUQUES / DEAUVILLE"],
+        name: "Deauville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0080c5",
+            textColor: "#ffffff",
+            text: "112",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
+        },
+      },
+      {
+        id: ["DEAUVILLE / TOUQUES"],
+        name: "Touques",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#0080c5",
+            textColor: "#ffffff",
+            text: "112",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "TOUQUES" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:113",
+    noCartridge: true,
+    name: "113",
+    colors: { background: "#20b14a", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["TOUQUES / DEAUVILLE"],
+        name: "Deauville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#20b14a",
+            textColor: "#ffffff",
+            text: "113",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
+        },
+      },
+      {
+        id: ["DEAUVILLE / TOUQUES"],
+        name: "Touques",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#20b14a",
+            textColor: "#ffffff",
+            text: "113",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "TOUQUES" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:114",
+    noCartridge: true,
+    name: "114",
+    colors: { background: "#e41e27", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CAEN / BAYEUX"],
+        name: "Bayeux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e41e27",
+            textColor: "#ffffff",
+            text: "114",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
+        },
+      },
+      {
+        id: ["CAEN / PUTOT EN BESSIN"],
+        autoHide: true,
+        name: "Putot-en-Bessin",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e41e27",
+            textColor: "#ffffff",
+            text: "114",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "PUTOT EN BESSIN" }],
+        },
+      },
+      {
+        id: ["CAEN / BRETTEVILLE L'ORGUEILLEUSE"],
+        autoHide: true,
+        name: "Bretteville l'Orgueilleuse",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e41e27",
+            textColor: "#ffffff",
+            text: "114",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BRETTEVILLE" }],
+        },
+      },
+      {
+        id: ["BAYEUX / CAEN", "PUTOT EN BESSIN / CAEN"],
+        name: "Caen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e41e27",
+            textColor: "#ffffff",
+            text: "114",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "CAEN" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:122",
+    noCartridge: true,
+    name: "122",
+    colors: { background: "#007dc5", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["LE HAVRE / CAEN EXPRESS"],
+        name: "Caen (Express)",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#007dc5",
+            textColor: "#ffffff",
+            text: "122",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "CAEN EXPRESS" }],
+        },
+      },
+      {
+        id: ["CAEN / LE HAVRE EXPRESS"],
+        name: "Le Havre (Express)",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#007dc5",
+            textColor: "#ffffff",
+            text: "122",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LE HAVRE EXPRESS" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:124",
+    noCartridge: true,
+    name: "124",
+    colors: { background: "#808080", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["DEAUVILLE / DIVES-SUR-MER"],
+        name: "Dives-sur-Mer",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#808080",
+            textColor: "#ffffff",
+            text: "124",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "DIVES-SUR-MER" }],
+        },
+      },
+      {
+        id: ["LISIEUX / DEAUVILLE", "DIVES-SUR-MER / DEAUVILLE"],
+        name: "Deauville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#808080",
+            textColor: "#ffffff",
+            text: "124",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:201",
+    noCartridge: true,
+    name: "201",
+    colors: { background: "#df1614", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SAINT-OUEN-DE-THOUBERVILLE / ELBEUF", "HONGUEMARE-GUENOUVILLE / ELBEUF"],
+        name: "Elbeuf-sur-Seine",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#df1614",
+            textColor: "#ffffff",
+            text: "201",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
+        },
+      },
+      {
+        id: ["ELBEUF / HONGUEMARE-GUENOUVILLE"],
+        name: "Honguemare-Guenouville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#df1614",
+            textColor: "#ffffff",
+            text: "201",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1407SUPX", text: "HONGUEMARE-GUENOUVILLE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:202",
+    noCartridge: true,
+    name: "202",
+    colors: { background: "#32b5b0", text: "#000000" },
+    destinations: [
+      {
+        id: ["LOUVIERS / VERNON"],
+        name: "Vernon",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#32b5b0",
+            textColor: "#000000",
+            text: "202",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "VERNON" }],
+        },
+      },
+      {
+        id: ["VERNON / LOUVIERS"],
+        name: "Louviers",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#32b5b0",
+            textColor: "#000000",
+            text: "202",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LOUVIERS" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:203",
+    noCartridge: true,
+    name: "203",
+    colors: { background: "#31a8df", text: "#000000" },
+    destinations: [
+      {
+        id: ["LOUVIERS / ELBEUF"],
+        name: "Elbeuf-sur-Seine",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#31a8df",
+            textColor: "#000000",
+            text: "203",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
+        },
+      },
+      {
+        id: ["SAINT-PIERRE-LÈS-ELBEUF / MARTOT"],
+        autoHide: true,
+        name: "Martot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#31a8df",
+            textColor: "#000000",
+            text: "203",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "MARTOT" }],
+        },
+      },
+      {
+        id: ["ELBEUF / LOUVIERS"],
+        name: "Louviers",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#31a8df",
+            textColor: "#000000",
+            text: "203",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LOUVIERS" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:204",
+    noCartridge: true,
+    name: "204",
+    colors: { background: "#e6ce08", text: "#000000" },
+    destinations: [
+      {
+        id: [
+          "BOURGTHEROULDE-INFREVILLE / ELBEUF",
+          "LE BOSC-ROGER-EN-ROUMOIS / ELBEUF",
+          "BOSGUERARD-DE-MARCOUVILLE / ELBEUF",
+          "THENOUVILLE / ELBEUF",
+          "BOISSEY-LE-CHATEL / ELBEUF",
+        ],
+        name: "Elbeuf-sur-Seine",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e6ce08",
+            textColor: "#000000",
+            text: "204",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
+        },
+      },
+      {
+        id: ["ELBEUF / THENOUVILLE"],
+        autoHide: true,
+        name: "Thénouville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e6ce08",
+            textColor: "#000000",
+            text: "204",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "THENOUVILLE" }],
+        },
+      },
+      {
+        id: ["ELBEUF / LE BOSC-ROGER-EN-ROUMOIS"],
+        autoHide: true,
+        name: "Le Bosc-Roger-en-Roumois",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e6ce08",
+            textColor: "#000000",
+            text: "204",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1407SUPX", text: "LE BOSC-ROGER-EN-ROUMOIS" }],
+        },
+      },
+      {
+        id: ["ELBEUF / BOSGUERARD-DE-MARCOUVILLE"],
+        autoHide: true,
+        name: "Bosguérard-de-Marcouville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e6ce08",
+            textColor: "#000000",
+            text: "204",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "BOSGUERARD" }],
+        },
+      },
+      {
+        id: ["ELBEUF / BOURGTHEROULDE-INFREVILLE"],
+        autoHide: true,
+        name: "Bourgtheroulde-Infreville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e6ce08",
+            textColor: "#000000",
+            text: "204",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "BOURGTHEROULDE" }],
+        },
+      },
+      {
+        id: ["ELBEUF / BOISSEY-LE-CHATEL"],
+        name: "Boissey-le-Châtel",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e6ce08",
+            textColor: "#000000",
+            text: "204",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "BOISSEY-LE-CHATEL" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:205",
+    noCartridge: true,
+    name: "205",
+    colors: { background: "#a31968", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["BEAUMONT-LE-ROGER / VAL-DE-REUIL", "LE NEUBOURG / VAL-DE-REUIL"],
+        name: "Val-de-Reuil",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a31968",
+            textColor: "#ffffff",
+            text: "205",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "VAL-DE-REUIL" }],
+        },
+      },
+      {
+        id: ["VAL-DE-REUIL / LE NEUBOURG", "BEAUMONT-LE-ROGER / LE NEUBOURG"],
+        autoHide: true,
+        name: "Le Neubourg",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a31968",
+            textColor: "#ffffff",
+            text: "205",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LE NEUBOURG" }],
+        },
+      },
+      {
+        id: ["LE NEUBOURG / BEAUMONT-LE-ROGER", "VAL-DE-REUIL / BEAUMONT-LE-ROGER"],
+        name: "Beaumont-le-Roger",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a31968",
+            textColor: "#ffffff",
+            text: "205",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BEAUMONT-LE-ROGER" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:206",
+    noCartridge: true,
+    name: "206",
+    colors: { background: "#835f34", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["ÉVREUX / GISORS", "LES ANDELYS / GISORS"],
+        name: "Gisors",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#835f34",
+            textColor: "#ffffff",
+            text: "206",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "GISORS" }],
+        },
+      },
+      {
+        id: ["ÉVREUX / LES ANDELYS", "GISORS / LES ANDELYS"],
+        autoHide: true,
+        name: "Les Andelys",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#835f34",
+            textColor: "#ffffff",
+            text: "206",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
+        },
+      },
+      {
+        id: ["LES ANDELYS / ÉVREUX", "AUBEVOYE / ÉVREUX", "GISORS / ÉVREUX"],
+        name: "Évreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#835f34",
+            textColor: "#ffffff",
+            text: "206",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:207",
+    noCartridge: true,
+    name: "207",
+    colors: { background: "#e9a255", text: "#000000" },
+    destinations: [
+      {
+        id: ["TOURNY / VERNON", "LES ANDELYS / VERNON"],
+        name: "Vernon",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e9a255",
+            textColor: "#000000",
+            text: "207",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "VERNON" }],
+        },
+      },
+      {
+        id: ["VERNON / GAILLON"],
+        autoHide: true,
+        name: "Gaillon",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e9a255",
+            textColor: "#000000",
+            text: "207",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "GAILLON" }],
+        },
+      },
+      {
+        id: ["VERNON / LES ANDELYS"],
+        autoHide: true,
+        name: "Les Andelys",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e9a255",
+            textColor: "#000000",
+            text: "207",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
+        },
+      },
+      {
+        id: ["VERNON / TOURNY"],
+        name: "Tourny",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e9a255",
+            textColor: "#000000",
+            text: "207",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "TOURNY" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:208",
+    noCartridge: true,
+    name: "208",
+    colors: { background: "#afca17", text: "#000000" },
+    destinations: [
+      {
+        id: ["ÉTRÉPAGNY / VERNON", "GISORS / VERNON"],
+        name: "Vernon",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#afca17",
+            textColor: "#000000",
+            text: "208",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "VERNON" }],
+        },
+      },
+      {
+        id: ["VERNON / GISORS"],
+        autoHide: true,
+        name: "Gisors",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#afca17",
+            textColor: "#000000",
+            text: "208",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "GISORS" }],
+        },
+      },
+      {
+        id: ["VERNON / ÉTRÉPAGNY"],
+        name: "Étrépagny",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#afca17",
+            textColor: "#000000",
+            text: "208",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "ETREPAGNY" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:209",
+    noCartridge: true,
+    name: "209",
+    colors: { background: "#122e68", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["LES ANDELYS / AUBEVOYE"],
+        name: "Aubevoye",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#122e68",
+            textColor: "#ffffff",
+            text: "209",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "AUBEVOYE" }],
+        },
+      },
+      {
+        id: ["AUBEVOYE / LES ANDELYS"],
+        name: "Les Andelys",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#122e68",
+            textColor: "#ffffff",
+            text: "209",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:210",
+    noCartridge: true,
+    name: "210",
+    colors: { background: "#eb3a4c", text: "#000000" },
+    destinations: [
+      {
+        id: ["ÉVREUX / GISORS"],
+        name: "Gisors",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#eb3a4c",
+            textColor: "#000000",
+            text: "210",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "GISORS" }],
+        },
+      },
+      {
+        id: ["ÉVREUX / VERNON"],
+        autoHide: true,
+        name: "Vernon",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#eb3a4c",
+            textColor: "#000000",
+            text: "210",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "VERNON" }],
+        },
+      },
+      {
+        id: ["ÉVREUX / CAILLOUET-ORGEVILLE"],
+        autoHide: true,
+        name: "Caillouet-Orgeville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#eb3a4c",
+            textColor: "#000000",
+            text: "210",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1507SUPX", text: "CAILLOUET-ORGEVILLE" }],
+        },
+      },
+      {
+        id: ["VERNON / ÉVREUX", "GISORS / ÉVREUX", "CAILLOUET-ORGEVILLE / EVREUX"],
+        name: "Évreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#eb3a4c",
+            textColor: "#000000",
+            text: "210",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:211",
+    noCartridge: true,
+    name: "211",
+    colors: { background: "#722f82", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["ÉVREUX / DREUX"],
+        autoHide: true,
+        name: "Dreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#722f82",
+            textColor: "#ffffff",
+            text: "211",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "DREUX" }],
+        },
+      },
+      {
+        id: ["DREUX / ÉVREUX", "MESNIL-SUR-L'ESTRÉE / ÉVREUX"],
+        autoHide: true,
+        name: "Évreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#722f82",
+            textColor: "#ffffff",
+            text: "211",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:212",
+    noCartridge: true,
+    name: "212",
+    colors: { background: "#83d4ed", text: "#000000" },
+    destinations: [
+      {
+        id: ["VERNEUIL-SUR-AVRE / ÉVREUX", "DAMVILLE / ÉVREUX", "BRETEUIL-SUR-ITON / ÉVREUX"],
+        name: "Évreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#83d4ed",
+            textColor: "#000000",
+            text: "212",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+        },
+      },
+      {
+        id: ["VERNEUIL-SUR-AVRE / CONDÉ-SUR-ITON"],
+        autoHide: true,
+        name: "Condé-sur-Iton",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#83d4ed",
+            textColor: "#000000",
+            text: "212",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "CONDE-SUR-ITON" }],
+        },
+      },
+      {
+        id: ["VERNEUIL-SUR-AVRE / DAMVILLE", "ÉVREUX / DAMVILLE"],
+        autoHide: true,
+        name: "Damville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#83d4ed",
+            textColor: "#000000",
+            text: "212",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "DAMVILLE" }],
+        },
+      },
+      {
+        id: ["DAMVILLE / VERNEUIL-SUR-AVRE", "CONDÉ-SUR-ITON / VERNEUIL-SUR-AVRE", "ÉVREUX / VERNEUIL-SUR-AVRE"],
+        name: "VERNEUIL-SUR-AVRE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#83d4ed",
+            textColor: "#000000",
+            text: "212",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "VERNEUIL-SUR-AVRE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:213",
+    noCartridge: true,
+    name: "213",
+    colors: { background: "#ef8464", text: "#000000" },
+    destinations: [
+      {
+        id: ["ÉVREUX / L'AIGLE"],
+        name: "L'Aigle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ef8464",
+            textColor: "#000000",
+            text: "213",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
+        },
+      },
+      {
+        id: ["L'AIGLE / ÉVREUX"],
+        name: "Évreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ef8464",
+            textColor: "#000000",
+            text: "213",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:214",
+    noCartridge: true,
+    name: "214",
+    colors: { background: "#e7adcf", text: "#000000" },
+    destinations: [
+      {
+        id: ["LE NEUBOURG / ÉVREUX", "HONFLEUR / ÉVREUX", "BRIONNE / ÉVREUX", "PONT-AUDEMER / ÉVREUX"],
+        name: "Évreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e7adcf",
+            textColor: "#000000",
+            text: "214",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+        },
+      },
+      {
+        id: ["ÉVREUX / LE NEUBOURG"],
+        autoHide: true,
+        name: "Le Neubourg",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e7adcf",
+            textColor: "#000000",
+            text: "214",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LE NEUBOURG" }],
+        },
+      },
+      {
+        id: ["HONFLEUR / PONT-AUDEMER", "ÉVREUX / PONT-AUDEMER"],
+        name: "Pont-Audemer",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e7adcf",
+            textColor: "#000000",
+            text: "214",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
+        },
+      },
+      {
+        id: ["PONT-AUDEMER / HONFLEUR", "ÉVREUX / HONFLEUR"],
+        name: "Honfleur",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e7adcf",
+            textColor: "#000000",
+            text: "214",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "HONFLEUR" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:215",
+    noCartridge: true,
+    name: "215",
+    colors: { background: "#719152", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["ÉVREUX / ROUEN", "LOUVIERS / ROUEN"],
+        name: "Rouen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#719152",
+            textColor: "#ffffff",
+            text: "215",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+        },
+      },
+      {
+        id: ["ÉVREUX / ELBEUF", "VAL-DE-REUIL / ELBEUF", "PONT-DE-L'ARCHE / ELBEUF"],
+        autoHide: true,
+        name: "Elbeuf-sur-Seine",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#719152",
+            textColor: "#ffffff",
+            text: "215",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
+        },
+      },
+      {
+        id: ["ELBEUF / PONT-DE-L'ARCHE"],
+        autoHide: true,
+        name: "Pont-de-l'Arche",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#719152",
+            textColor: "#ffffff",
+            text: "215",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "PONT-DE-L'ARCHE" }],
+        },
+      },
+      {
+        id: ["ÉVREUX / LOUVIERS", "ELBEUF / LOUVIERS", "ROUEN / LOUVIERS"],
+        autoHide: true,
+        name: "Louviers",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#719152",
+            textColor: "#ffffff",
+            text: "215",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LOUVIERS" }],
+        },
+      },
+      {
+        id: ["ELBEUF / ÉVREUX", "ROUEN / ÉVREUX", "LOUVIERS / ÉVREUX"],
+        name: "Évreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#719152",
+            textColor: "#ffffff",
+            text: "215",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+        },
+      },
+      {
+        id: ["ROUEN / EVREUX"],
+        name: "Évreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#719152",
+            textColor: "#ffffff",
+            text: "215",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+        },
+      },
+    ],
+  },
+  {
     id: "NOMAD:216",
     name: "216",
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["VERNEUIL D'AVRE ET D'ITON", "ROUEN / VERNEUIL-SUR-AVRE"],
+        id: ["ROUEN / VERNEUIL-SUR-AVRE"],
         autoHide: true,
-        alternate: "Verneuil-sur-Avre",
-        name: "Gare SNCF",
-        city: "VERNEUIL-SUR-AVRE",
+        name: "Verneuil-sur-Avre",
         girouette: {
           routeNumber: {
             backgroundColor: "#4A2999",
@@ -24,10 +1078,8 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ÉVREUX", "ROUEN / ÉVREUX", "MONT-SAINT-AIGNAN / ÉVREUX", "VERNEUIL-SUR-AVRE / ÉVREUX"],
-        alternate: "Évreux",
-        name: "Gare Routière",
-        city: "ÉVREUX",
+        id: ["ROUEN / ÉVREUX", "MONT-SAINT-AIGNAN / ÉVREUX", "VERNEUIL-SUR-AVRE / ÉVREUX"],
+        name: "Évreux",
         girouette: {
           routeNumber: {
             backgroundColor: "#4A2999",
@@ -40,10 +1092,8 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUEN", "LOUVIERS / ROUEN", "ÉVREUX / ROUEN"],
-        alternate: "Rouen",
-        name: "Gare Routière",
-        city: "ROUEN",
+        id: ["LOUVIERS / ROUEN", "ÉVREUX / ROUEN"],
+        name: "Rouen",
         girouette: {
           routeNumber: {
             backgroundColor: "#4A2999",
@@ -56,11 +1106,9 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["MONT-SAINT-AIGNAN", "ROUEN / MONT-SAINT-AIGNAN"],
+        id: ["ROUEN / MONT-SAINT-AIGNAN"],
         autoHide: true,
-        alternate: "Mont-Saint-Aignan",
-        name: "Campus",
-        city: "MONT-SAINT-AIGNAN",
+        name: "Mont-Saint-Aignan",
         girouette: {
           routeNumber: {
             backgroundColor: "#4A2999",
@@ -75,15 +1123,620 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
+    id: "NOMAD:217",
+    noCartridge: true,
+    name: "217",
+    colors: { background: "#b72a41", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["BERNAY / PONT-AUDEMER"],
+        name: "Pont-Audemer",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b72a41",
+            textColor: "#ffffff",
+            text: "217",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
+        },
+      },
+      {
+        id: ["PONT-AUDEMER / BERNAY"],
+        name: "Bernay",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b72a41",
+            textColor: "#ffffff",
+            text: "217",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BERNAY" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:218",
+    noCartridge: true,
+    name: "218",
+    colors: { background: "#b26bc1", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["ROUEN / CHARLEVAL"],
+        name: "Charleval",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b26bc1",
+            textColor: "#ffffff",
+            text: "218",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "CHARLEVAL" }],
+        },
+      },
+      {
+        id: ["ROUEN / VASCOEUIL"],
+        autoHide: true,
+        name: "Vascœuil",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b26bc1",
+            textColor: "#ffffff",
+            text: "218",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "VASCOEUIL" }],
+        },
+      },
+      {
+        id: ["VASCOEUIL / ROUEN", "CHARLEVAL / ROUEN"],
+        name: "Rouen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b26bc1",
+            textColor: "#ffffff",
+            text: "218",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:219",
+    noCartridge: true,
+    name: "219",
+    colors: { background: "#7a79b6", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["GISORS / ROUEN", "SAUSSAY-LA-CAMPAGNE / ROUEN"],
+        name: "Rouen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#7a79b6",
+            textColor: "#ffffff",
+            text: "219",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+        },
+      },
+      {
+        id: ["GISORS / FLEURY-SUR-ANDELLE", "ROUEN / FLEURY-SUR-ANDELLE"],
+        autoHide: true,
+        name: "Fleury-sur-Andelle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#7a79b6",
+            textColor: "#ffffff",
+            text: "219",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "FLEURY-SUR-ANDELLE" }],
+        },
+      },
+      {
+        id: ["GISORS / SAUSSAY-LA-CAMPAGNE"],
+        autoHide: true,
+        name: "Saussay-la-Campagne",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#7a79b6",
+            textColor: "#ffffff",
+            text: "219",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1507SUPX", text: "SAUSSAY-LA-CAMPAGNE" }],
+        },
+      },
+      {
+        id: ["GISORS / ÉTRÉPAGNY"],
+        autoHide: true,
+        name: "Étrépagny",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#7a79b6",
+            textColor: "#ffffff",
+            text: "219",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ETREPAGNY" }],
+        },
+      },
+      {
+        id: [
+          "SAUSSAY-LA-CAMPAGNE / GISORS",
+          "FLEURY-SUR-ANDELLE / GISORS",
+          "ROUEN / GISORS",
+          "LE MESNIL-ESNARD / GISORS",
+        ],
+        name: "Gisors",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#7a79b6",
+            textColor: "#ffffff",
+            text: "219",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "GISORS" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:220",
+    noCartridge: true,
+    name: "220",
+    colors: { background: "#fdcb36", text: "#000000" },
+    destinations: [
+      {
+        id: ["LES ANDELYS / ROUEN"],
+        name: "Rouen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#fdcb36",
+            textColor: "#000000",
+            text: "220",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+        },
+      },
+      {
+        id: ["ROUEN / LES ANDELYS"],
+        name: "Les Andelys",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#fdcb36",
+            textColor: "#000000",
+            text: "220",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:221",
+    noCartridge: true,
+    name: "221",
+    colors: { background: "#ed1d8a", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ROUEN / ALIZAY"],
+        name: "Alizay",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ed1d8a",
+            textColor: "#FFFFFF",
+            text: "221",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ALIZAY" }],
+        },
+      },
+      {
+        id: ["ALIZAY / ROUEN"],
+        name: "Rouen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ed1d8a",
+            textColor: "#FFFFFF",
+            text: "221",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:222",
+    noCartridge: true,
+    name: "222",
+    colors: { background: "#33a739", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["LE BOSC-ROGER-EN-ROUMOIS / ROUEN"],
+        name: "Rouen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#33a739",
+            textColor: "#ffffff",
+            text: "222",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+        },
+      },
+      {
+        id: ["ROUEN / LE BOSC-ROGER-EN-ROUMOIS"],
+        name: "Le Bosc-Roger-en-Roumois",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#33a739",
+            textColor: "#ffffff",
+            text: "222",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1407SUPX", text: "LE BOSC-ROGER-EN-ROUMOIS" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:223",
+    noCartridge: true,
+    name: "223",
+    colors: { background: "#5688c6", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: [
+          "ROUTOT / PONT-AUDEMER",
+          "BARNEVILLE-SUR-SEINE / PONT-AUDEMER",
+          "BOURG-ACHARD / PONT-AUDEMER",
+          "LA HAYE-DE-ROUTOT / PONT-AUDEMER",
+          "ST-OUEN-DE-THOUBERVILLE / PONT-AUDEMER",
+        ],
+        name: "Pont-Audemer",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5688c6",
+            textColor: "#FFFFFF",
+            text: "223",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
+        },
+      },
+      {
+        id: ["PONT-AUDEMER / LA HAYE-DE-ROUTOT"],
+        autoHide: true,
+        name: "La Haye-de-Routot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5688c6",
+            textColor: "#FFFFFF",
+            text: "223",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LA HAYE-DE-ROUTOT" }],
+        },
+      },
+      {
+        id: ["PONT-AUDEMER / BOUQUETOT"],
+        autoHide: true,
+        name: "Bouquetot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5688c6",
+            textColor: "#FFFFFF",
+            text: "223",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BOUQUETOT" }],
+        },
+      },
+      {
+        id: ["PONT-AUDEMER / BOURG-ACHARD"],
+        autoHide: true,
+        name: "Bourg-Achard",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5688c6",
+            textColor: "#FFFFFF",
+            text: "223",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BOURG-ACHARD" }],
+        },
+      },
+      {
+        id: ["PONT-AUDEMER / BARNEVILLE-SUR-SEINE"],
+        autoHide: true,
+        name: "Barneville-sur-Seine",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5688c6",
+            textColor: "#FFFFFF",
+            text: "223",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1507SUPX", text: "BARNEVILLE-SUR-SEINE" }],
+        },
+      },
+      {
+        id: ["PONT-AUDEMER / ST-OUEN-DE-THOUBERVILLE"],
+        name: "Saint-Ouen-de-Thouberville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5688c6",
+            textColor: "#FFFFFF",
+            text: "223",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1407SUPX", text: "ST-OUEN-DE-THOUBERVILLE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:224",
+    noCartridge: true,
+    name: "224",
+    colors: { background: "#a9b76a", text: "#000000" },
+    destinations: [
+      {
+        id: ["LISIEUX / PONT-AUDEMER"],
+        name: "Pont-Audemer",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a9b76a",
+            textColor: "#000000",
+            text: "224",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
+        },
+      },
+      {
+        id: ["PONT-AUDEMER / LISIEUX"],
+        name: "Lisieux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a9b76a",
+            textColor: "#000000",
+            text: "224",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LISIEUX" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:225",
+    noCartridge: true,
+    name: "225",
+    colors: { background: "#512b0f", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["BREVAL / MARCILLY-SUR-EURE", "BUEIL / MARCILLY-SUR-EURE", "EZY-SUR-EURE / MARCILLY-SUR-EURE"],
+        name: "Marcilly-sur-Eure",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#512b0f",
+            textColor: "#ffffff",
+            text: "225",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "MARCILLY-SUR-EURE" }],
+        },
+      },
+      {
+        id: ["MARCILLY-SUR-EURE / EZY-SUR-EURE", "BUEIL / EZY-SUR-EURE"],
+        autoHide: true,
+        name: "Ezy-sur-Eure",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#512b0f",
+            textColor: "#ffffff",
+            text: "225",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "EZY-SUR-EURE" }],
+        },
+      },
+      {
+        id: ["BUEIL / IVRY-LA-BATAILLE"],
+        autoHide: true,
+        name: "Ivry-la-Bataille",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#512b0f",
+            textColor: "#ffffff",
+            text: "225",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "IVRY-LA-BATAILLE" }],
+        },
+      },
+      {
+        id: ["BUEIL / GARENNES-SUR-EURE"],
+        autoHide: true,
+        name: "Garennes-sur-Eure",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#512b0f",
+            textColor: "#ffffff",
+            text: "225",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "GARENNES-SUR-EURE" }],
+        },
+      },
+      {
+        id: [
+          "EZY-SUR-EURE / BUEIL",
+          "MARCILLY-SUR-EURE / BUEIL",
+          "IVRY-LA-BATAILLE / BUEIL",
+          "GARENNES-SUR-EURE / BUEIL",
+        ],
+        autoHide: true,
+        name: "Bueil",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#512b0f",
+            textColor: "#ffffff",
+            text: "225",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BUEIL" }],
+        },
+      },
+      {
+        id: ["MARCILLY-SUR-EURE / BRÉVAL"],
+        name: "Bréval",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#512b0f",
+            textColor: "#ffffff",
+            text: "225",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BREVAL" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:226",
+    noCartridge: true,
+    name: "226",
+    colors: { background: "#b75858", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["BOURTH / L'AIGLE", "VERNEUIL-SUR-AVRE / L'AIGLE"],
+        name: "L'Aigle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b75858",
+            textColor: "#ffffff",
+            text: "226",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
+        },
+      },
+      {
+        id: ["L'AIGLE / CHANDAI"],
+        autoHide: true,
+        name: "Chandai",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b75858",
+            textColor: "#ffffff",
+            text: "226",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "CHANDAI" }],
+        },
+      },
+      {
+        id: ["L'AIGLE / VERNEUIL-SUR-AVRE"],
+        name: "Verneuil-sur-Avre",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b75858",
+            textColor: "#ffffff",
+            text: "226",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "VERNEUIL-SUR-AVRE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:227",
+    noCartridge: true,
+    name: "227",
+    colors: { background: "#b3549a", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["PONT-AUDEMER / LE HAVRE"],
+        name: "Le Havre",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b3549a",
+            textColor: "#FFFFFF",
+            text: "227",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
+        },
+      },
+      {
+        id: ["LE HAVRE / PONT-AUDEMER"],
+        name: "Pont-Audemer",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b3549a",
+            textColor: "#FFFFFF",
+            text: "227",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
+        },
+      },
+    ],
+  },
+  {
     id: "NOMAD:228",
     name: "228",
     colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["PONT-AUDEMER", "ROUEN / PONT-AUDEMER", "PONT-AUDEMER EXPRESS", "PONT-AUDEMER VIA GRAND-COURONNE"],
-        alternate: "Pont-Audemer",
-        name: "Gare Routière",
-        city: "PONT-AUDEMER",
+        id: ["ROUEN / PONT-AUDEMER"],
+        name: "Pont-Audemer",
         girouette: {
           routeNumber: {
             backgroundColor: "#BA941C",
@@ -96,11 +1749,9 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BOURG ACHARD", "PONT-AUDEMER / BOURG-ACHARD"],
+        id: ["PONT-AUDEMER / BOURG-ACHARD"],
         autoHide: true,
-        alternate: "Bourg-Achard",
-        name: "Champ de Foire",
-        city: "BOURG-ACHARD",
+        name: "Bourg-Achard",
         girouette: {
           routeNumber: {
             backgroundColor: "#BA941C",
@@ -113,10 +1764,8 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUEN", "ROUTOT / ROUEN", "PONT-AUDEMER / ROUEN", "ROUEN EXPRESS", "ROUEN VIA GRAND-COURONNE"],
-        alternate: "Rouen",
-        name: "Gare Routière",
-        city: "ROUEN",
+        id: ["ROUTOT / ROUEN", "PONT-AUDEMER / ROUEN"],
+        name: "Rouen",
         girouette: {
           routeNumber: {
             backgroundColor: "#BA941C",
@@ -131,15 +1780,885 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
+    id: "NOMAD:301",
+    noCartridge: true,
+    name: "301",
+    colors: { background: "#7ab929", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["CARENTAN / CHERBOURG"],
+        name: "Cherbourg-en-Cotentin",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#7ab929",
+            textColor: "#ffffff",
+            text: "301",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "CHERBOURG" }],
+        },
+      },
+      {
+        id: ["CHERBOURG / CARENTAN"],
+        name: "Carentan",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#7ab929",
+            textColor: "#ffffff",
+            text: "301",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "CARENTAN" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:302",
+    noCartridge: true,
+    name: "302",
+    colors: { background: "#ecce00", text: "#000000" },
+    destinations: [
+      {
+        id: ["SANT-LO / CARENTAN"],
+        name: "Carentan",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ecce00",
+            textColor: "#000000",
+            text: "302",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "CARENTAN" }],
+        },
+      },
+      {
+        id: ["CARENTAN / SAINT-LO"],
+        name: "Saint-Lô",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ecce00",
+            textColor: "#000000",
+            text: "302",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:303",
+    noCartridge: true,
+    name: "303",
+    colors: { background: "#ff0009", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SAINT-SAUVEUR / COUTANCES", "LA HAYE-DU-PUITS / COUTANCES", "VALOGNES / COUTANCES"],
+        name: "Coutances",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ff0009",
+            textColor: "#ffffff",
+            text: "303",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
+        },
+      },
+      {
+        id: ["COUTANCES (SNCF) / LESSAY"],
+        autoHide: true,
+        name: "Lessay",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ff0009",
+            textColor: "#ffffff",
+            text: "303",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LESSAY" }],
+        },
+      },
+      {
+        id: ["COUTANCES (WOOD) / LA HAYE"],
+        autoHide: true,
+        name: "La Haye",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ff0009",
+            textColor: "#ffffff",
+            text: "303",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LA HAYE" }],
+        },
+      },
+      {
+        id: ["COUTANCES / SAINT-SAUVEUR"],
+        autoHide: true,
+        name: "Saint-Sauveur-le-Vicomte",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ff0009",
+            textColor: "#ffffff",
+            text: "303",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "SAINT-SAUVEUR" }],
+        },
+      },
+      {
+        id: ["COUTANCES / VALOGNES", "LA HAYE-DU-PUITS / VALOGNES"],
+        name: "Valognes",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ff0009",
+            textColor: "#ffffff",
+            text: "303",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "VALOGNES" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:304",
+    noCartridge: true,
+    name: "304",
+    colors: { background: "#209645", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SAINT-LO / VIRE"],
+        name: "Vire",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#209645",
+            textColor: "#ffffff",
+            text: "304",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "VIRE" }],
+        },
+      },
+      {
+        id: ["VIRE / SAINT-LO"],
+        name: "Saint-Lô",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#209645",
+            textColor: "#ffffff",
+            text: "304",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:305",
+    noCartridge: true,
+    name: "305",
+    colors: { background: "#f39200", text: "#000000" },
+    destinations: [
+      {
+        id: ["GRANVILLE / LISON", "COUTANCES / LISON"],
+        name: "Lison",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f39200",
+            textColor: "#000000",
+            text: "305",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LISON" }],
+        },
+      },
+      {
+        id: ["GRANVILLE / SAINT-LO"],
+        autoHide: true,
+        name: "Saint-Lô",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f39200",
+            textColor: "#000000",
+            text: "305",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
+        },
+      },
+      {
+        id: ["GRANVILLE / SAINT-LO [MDD]"],
+        autoHide: true,
+        name: "Saint-Lô",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f39200",
+            textColor: "#000000",
+            text: "305",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
+        },
+      },
+      {
+        id: ["GRANVILLE / COUTANCES", "LISON / COUTANCES"],
+        autoHide: true,
+        name: "Coutances",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f39200",
+            textColor: "#000000",
+            text: "305",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
+        },
+      },
+      {
+        id: ["COUTANCES / GRANVILLE", "LISON / GRANVILLE", "SAINT-LO / GRANVILLE"],
+        name: "Granville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f39200",
+            textColor: "#000000",
+            text: "305",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:306",
+    noCartridge: true,
+    name: "306",
+    colors: { background: "#a0519a", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SAINT-LO / AVRANCHES"],
+        name: "Avranches",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a0519a",
+            textColor: "#ffffff",
+            text: "306",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
+        },
+      },
+      {
+        id: ["SAINT-LO / PERCY"],
+        autoHide: true,
+        name: "Percy",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a0519a",
+            textColor: "#ffffff",
+            text: "306",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "PERCY" }],
+        },
+      },
+      {
+        id: ["AVRANCHES / SAINT-LO"],
+        name: "Saint-Lô",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a0519a",
+            textColor: "#ffffff",
+            text: "306",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
+        },
+      },
+      {
+        id: ["VILLEDIEU-LES-POELES / SAINT-LO [MDD]", "AVRANCHES / SAINT-LO [MDD]"],
+        name: "Saint-Lô",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#a0519a",
+            textColor: "#ffffff",
+            text: "306",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:307",
+    noCartridge: true,
+    name: "307",
+    colors: { background: "#e52725", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SARTILLY / AVRANCHES", "GRANVILLE / AVRANCHES"],
+        name: "Avranches",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e52725",
+            textColor: "#ffffff",
+            text: "307",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
+        },
+      },
+      {
+        id: ["AVRANCHES / GRANVILLE"],
+        name: "Granville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e52725",
+            textColor: "#ffffff",
+            text: "307",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:308",
+    noCartridge: true,
+    name: "308",
+    colors: { background: "#907d24", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["GRANVILLE / AVRANCHES"],
+        name: "Avranches",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#907d24",
+            textColor: "#ffffff",
+            text: "308",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
+        },
+      },
+      {
+        id: ["AVRANCHES / GRANVILLE", "BEAUVOIR / GRANVILLE"],
+        autoHide: true,
+        name: "Granville",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#907d24",
+            textColor: "#ffffff",
+            text: "308",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
+        },
+      },
+      {
+        id: ["GRANVILLE / BEAUVOIR"],
+        name: "Beauvoir – le Mont-Saint-Michel",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#907d24",
+            textColor: "#ffffff",
+            text: "308",
+            outlineColor: "#000000",
+          },
+          pages: [[{ text: "BEAUVOIR" }, { text: "MONT-SAINT-MICHEL" }]],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:309",
+    noCartridge: true,
+    name: "309",
+    colors: { background: "#c44e23", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["SAINT-HILAIRE-DU-HARCOUET / VIRE", "AVRANCHES / VIRE"],
+        name: "Vire",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c44e23",
+            textColor: "#ffffff",
+            text: "309",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "VIRE" }],
+        },
+      },
+      {
+        id: ["AVRANCHES / MORTAIN"],
+        autoHide: true,
+        name: "Mortain-Bocage",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c44e23",
+            textColor: "#ffffff",
+            text: "309",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "MORTAIN" }],
+        },
+      },
+      {
+        id: ["VIRE / SAINT-HILAIRE-DU-HARCOUET"],
+        autoHide: true,
+        name: "Saint-Hilaire-du-Harcouët",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c44e23",
+            textColor: "#ffffff",
+            text: "309",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1407SUPX", text: "ST-HILAIRE-DU-HARCOUET" }],
+        },
+      },
+      {
+        id: ["AVRANCHES / DUCEY"],
+        autoHide: true,
+        name: "Ducey-les-Chéris",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c44e23",
+            textColor: "#ffffff",
+            text: "309",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "DUCEY-LES-CHERIS" }],
+        },
+      },
+      {
+        id: ["AVRANCHES / PONTAUBAULT"],
+        autoHide: true,
+        name: "Pontaubault",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c44e23",
+            textColor: "#ffffff",
+            text: "309",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "PONTAUBAULT" }],
+        },
+      },
+      {
+        id: ["VIRE / AVRANCHES", "MORTAIN / AVRANCHES", "DUCEY / AVRANCHES", "SAINT-HILAIRE-DU-HARCOUET / AVRANCHES"],
+        name: "Avranches",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c44e23",
+            textColor: "#ffffff",
+            text: "309",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:401",
+    noCartridge: true,
+    name: "401",
+    colors: { background: "#f18665", text: "#000000" },
+    destinations: [
+      {
+        id: ["PUTANGES / BRIOUZE / FLERS"],
+        name: "Flers",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f18665",
+            textColor: "#000000",
+            text: "401",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "FLERS" }],
+        },
+      },
+      {
+        id: ["FLERS / BRIOUZE / PUTANGES"],
+        name: "Putanges",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f18665",
+            textColor: "#000000",
+            text: "401",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "PUTANGES" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:402",
+    noCartridge: true,
+    name: "402",
+    colors: { background: "#d1b706", text: "#000000" },
+    destinations: [
+      {
+        id: ["LANDISACQ / FLERS", "TINCHEBRAY / FLERS"],
+        name: "Flers",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#d1b706",
+            textColor: "#000000",
+            text: "402",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "FLERS" }],
+        },
+      },
+      {
+        id: ["FLERS / LANDISACQ", "TINCHEBRAY / LANDISACQ"],
+        autoHide: true,
+        name: "Landisacq",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#d1b706",
+            textColor: "#000000",
+            text: "402",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LANDISACQ" }],
+        },
+      },
+      {
+        id: ["LANDISACQ / TINCHEBRAY"],
+        name: "Tinchebray",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#d1b706",
+            textColor: "#000000",
+            text: "402",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "TINCHEBRAY" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:408",
+    noCartridge: true,
+    name: "408",
+    colors: { background: "#f87479", text: "#000000" },
+    destinations: [
+      {
+        id: ["FALAISE / OCCAGNES / ARGENTAN"],
+        name: "Argentan",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f87479",
+            textColor: "#000000",
+            text: "408",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "ARGENTAN" }],
+        },
+      },
+      {
+        id: ["ARGENTAN / OCCAGNES / FALAISE"],
+        name: "Falaise",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f87479",
+            textColor: "#000000",
+            text: "408",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "FALAISE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:411",
+    noCartridge: true,
+    name: "411",
+    colors: { background: "#fecd38", text: "#000000" },
+    destinations: [
+      {
+        id: ["GACÉ / EXMES / ARGENTAN"],
+        name: "Argentan",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#fecd38",
+            textColor: "#000000",
+            text: "411",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "ARGENTAN" }],
+        },
+      },
+      {
+        id: ["ARGENTAN / EXMES / GACÉ"],
+        name: "Gacé",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#fecd38",
+            textColor: "#000000",
+            text: "411",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "GACE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:413",
+    noCartridge: true,
+    name: "413",
+    colors: { background: "#ea5984", text: "#000000" },
+    destinations: [
+      {
+        id: ["LA FERTÉ-EN-OUCHE / L'AIGLE", "VIMOUTIERS / LA FERTÉ-EN-OUCHE / L'AIGLE"],
+        name: "L'Aigle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ea5984",
+            textColor: "#000000",
+            text: "413",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
+        },
+      },
+      {
+        id: ["L'AIGLE / LA FERTÉ-EN-OUCHE"],
+        name: "La Ferté-en-Ouche",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ea5984",
+            textColor: "#000000",
+            text: "413",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LA FERTE-EN-OUCHE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:416",
+    noCartridge: true,
+    name: "416",
+    colors: { background: "#33a8e0", text: "#000000" },
+    destinations: [
+      {
+        id: ["L'AIGLE / SAINT-MAURICE-LÈS-CHARENCEY"],
+        name: "Saint-Maurice-lès-Charencey",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#33a8e0",
+            textColor: "#000000",
+            text: "416",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [[{ text: "SAINT-MAURICE" }, { text: "LES-CHARENCEY" }]],
+        },
+      },
+      {
+        id: ["SAINT-MAURICE-LÈS-CHARENCEY / L'AIGLE"],
+        name: "L'Aigle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#33a8e0",
+            textColor: "#000000",
+            text: "416",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:420",
+    noCartridge: true,
+    name: "420",
+    colors: { background: "#b82b41", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["IGE / BELLÊME"],
+        name: "Bellême",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b82b41",
+            textColor: "#ffffff",
+            text: "420",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "BELLEME" }],
+        },
+      },
+      {
+        id: ["BELLÊME / IGE"],
+        name: "Ige",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b82b41",
+            textColor: "#ffffff",
+            text: "420",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "IGE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:421",
+    noCartridge: true,
+    name: "421",
+    colors: { background: "#35b6b2", text: "#000000" },
+    destinations: [
+      {
+        id: ["SERIGNY / MAMERS"],
+        name: "Mamers",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#35b6b2",
+            textColor: "#000000",
+            text: "421",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "MAMERS" }],
+        },
+      },
+      {
+        id: ["MAMERS / SERIGNY"],
+        name: "Serigny",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#35b6b2",
+            textColor: "#000000",
+            text: "421",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "SERIGNY" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:422",
+    noCartridge: true,
+    name: "422",
+    colors: { background: "#164194", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["LONGNY-AU-PERCHE / MORTAGNE-AU-PERCHE", "LA LOUPE / LONGNY / MORTAGNE-AU-PERCHE"],
+        name: "Mortagne-au-Perche",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#164194",
+            textColor: "#ffffff",
+            text: "422",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
+        },
+      },
+      {
+        id: ["LA LOUPE / LONGNY-AU-PERCHE", "MORTAGNE-AU-PERCHE / LONGNY-AU-PERCHE"],
+        autoHide: true,
+        name: "Longny-au-Perche",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#164194",
+            textColor: "#ffffff",
+            text: "422",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LONGNY-AU-PERCHE" }],
+        },
+      },
+      {
+        id: ["MORTAGNE-AU-PERCHE / LA LOUPE", "LONGNY-AU-PERCHE / LA LOUPE"],
+        name: "La Loupe",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#164194",
+            textColor: "#ffffff",
+            text: "422",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LA LOUPE" }],
+        },
+      },
+    ],
+  },
+  {
     id: "NOMAD:423",
     name: "423",
     colors: { background: "#5E8786", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["BRIOUZE", "BAGNOLES DE L'ORNE / BRIOUZE"],
-        alternate: "Briouze",
-        name: "Gare SNCF",
-        city: "BRIOUZE",
+        id: ["BAGNOLES DE L'ORNE / BRIOUZE", "BRIOUZE"],
+        name: "Briouze",
         girouette: {
           routeNumber: {
             backgroundColor: "#5E8786",
@@ -152,10 +2671,8 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BAGNOLES DE L'ORNE", "BRIOUZE / BAGNOLES DE L'ORNE"],
-        alternate: "Bagnoles de l'Orne",
-        name: "Sainte-Madeleine - Église",
-        city: "BAGNOLES DE L'ORNE",
+        id: ["BRIOUZE / BAGNOLES DE L'ORNE", "BAGNOLES DE L'ORNE"],
+        name: "Bagnoles de l'Orne",
         girouette: {
           routeNumber: {
             backgroundColor: "#5E8786",
@@ -175,10 +2692,8 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["ARGENTAN", "FLERS / ARGENTAN"],
-        alternate: "Argentan",
-        name: "Gare SNCF",
-        city: "ARGENTAN",
+        id: ["FLERS / ARGENTAN", "ARGENTAN"],
+        name: "Argentan",
         girouette: {
           routeNumber: {
             backgroundColor: "#4A2999",
@@ -191,10 +2706,8 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["FLERS", "ARGENTAN / FLERS"],
-        alternate: "Flers",
-        name: "Gare SNCF",
-        city: "FLERS",
+        id: ["ARGENTAN / FLERS", "FLERS"],
+        name: "Flers",
         girouette: {
           routeNumber: {
             backgroundColor: "#4A2999",
@@ -209,31 +2722,419 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
+    id: "NOMAD:425",
+    noCartridge: true,
+    name: "425",
+    colors: { background: "#f87479", text: "#000000" },
+    destinations: [
+      {
+        id: ["L'AIGLE / DREUX"],
+        name: "Dreux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f87479",
+            textColor: "#000000",
+            text: "425",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "DREUX" }],
+        },
+      },
+      {
+        id: ["L'AIGLE / SURDON", "ALENCON / SURDON"],
+        autoHide: true,
+        name: "Surdon",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f87479",
+            textColor: "#000000",
+            text: "425",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "SURDON" }],
+        },
+      },
+      {
+        id: ["SURDON / ALENCON"],
+        name: "Alençon",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f87479",
+            textColor: "#000000",
+            text: "425",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "ALENCON" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:502",
+    noCartridge: true,
+    name: "502",
+    colors: { background: "#e4ca12", text: "#000000" },
+    destinations: [
+      {
+        id: ["LE TRÉPORT / LE TRÉPORT"],
+        name: "Le Tréport",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#e4ca12",
+            textColor: "#000000",
+            text: "502",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "LE TREPORT" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:505",
+    noCartridge: true,
+    name: "505",
+    colors: { background: "#f58966", text: "#000000" },
+    destinations: [
+      {
+        id: ["ROUEN / BOISSAY"],
+        name: "Boissay",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f58966",
+            textColor: "#000000",
+            text: "505",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "BOISSAY" }],
+        },
+      },
+      {
+        id: ["BOISSAY / ROUEN"],
+        name: "Rouen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#f58966",
+            textColor: "#000000",
+            text: "505",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:510",
+    noCartridge: true,
+    name: "510",
+    colors: { background: "#864595", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["FÉCAMP / YVETOT"],
+        name: "Yvetot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#864595",
+            textColor: "#ffffff",
+            text: "510",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "YVETOT" }],
+        },
+      },
+      {
+        id: ["YVETOT / FÉCAMP"],
+        name: "Fécamp",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#864595",
+            textColor: "#ffffff",
+            text: "510",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:511",
+    noCartridge: true,
+    name: "511",
+    colors: { background: "#ba4d95", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["ROUEN / ROUMARE"],
+        name: "Roumare",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ba4d95",
+            textColor: "#ffffff",
+            text: "511",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUMARE" }],
+        },
+      },
+      {
+        id: ["ROUMARE / ROUEN"],
+        name: "Rouen",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ba4d95",
+            textColor: "#ffffff",
+            text: "511",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:512",
+    noCartridge: true,
+    name: "512",
+    colors: { background: "#5665ab", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["FRESNE-LE-PLAN / LE MESNIL-ESNARD", "PERRIERS-SUR-A / LE MESNIL-ESNARD"],
+        name: "Mesnil-Esnard",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5665ab",
+            textColor: "#ffffff",
+            text: "512",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LE MESNIL-ESNARD" }],
+        },
+      },
+      {
+        id: ["PERRIERS-SUR-A / FRANQUEVILLE-ST-PIERRE"],
+        autoHide: true,
+        name: "Franqueville-Saint-Pierre",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5665ab",
+            textColor: "#ffffff",
+            text: "512",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1407SUPX", text: "FRANQUEVILLE-ST-PIERRE" }],
+        },
+      },
+      {
+        id: ["LE MESNIL-ESNARD / MESNIL-RAOUL"],
+        autoHide: true,
+        name: "Mesnil-Raoul",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5665ab",
+            textColor: "#ffffff",
+            text: "512",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "MESNIL-RAOUL" }],
+        },
+      },
+      {
+        id: ["LE MESNIL-ESNARD / PERRIERS-SUR-A", "FRANQUEVILLE-ST-PIERRE / PERRIERS-SUR-A"],
+        name: "Perriers-sur-Andelle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#5665ab",
+            textColor: "#ffffff",
+            text: "512",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1507SUPX", text: "PERRIERS-SUR-ANDELLE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:513",
+    noCartridge: true,
+    name: "513",
+    colors: { background: "#9ac63f", text: "#000000" },
+    destinations: [
+      {
+        id: ["ST-VALÉRY-EN-C / FÉCAMP"],
+        name: "Fécamp",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#9ac63f",
+            textColor: "#000000",
+            text: "513",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "FECAMP" }],
+        },
+      },
+      {
+        id: ["FÉCAMP / ST-VALÉRY-EN-C"],
+        name: "Saint-Valéry-en-Caux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#9ac63f",
+            textColor: "#000000",
+            text: "513",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:514",
+    noCartridge: true,
+    name: "514",
+    colors: { background: "#ea5284", text: "#000000" },
+    destinations: [
+      {
+        id: ["DIEPPE / ST-VALÉRY-EN-C"],
+        name: "Saint-Valéry-en-Caux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ea5284",
+            textColor: "#000000",
+            text: "514",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
+        },
+      },
+      {
+        id: ["ST-VALÉRY-EN-C / DIEPPE"],
+        name: "Dieppe",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ea5284",
+            textColor: "#000000",
+            text: "514",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:521",
+    noCartridge: true,
+    name: "521",
+    colors: { background: "#c895bf", text: "#000000" },
+    destinations: [
+      {
+        id: ["NEUFCHÂTEL-EN-B / GAMACHES"],
+        name: "Gamaches",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c895bf",
+            textColor: "#000000",
+            text: "521",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "GAMACHES" }],
+        },
+      },
+      {
+        id: ["NEUFCHÂTEL-EN-B / BLANGY-SUR-BRESLE"],
+        autoHide: true,
+        name: "Bangy-sur-Bresle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c895bf",
+            textColor: "#000000",
+            text: "521",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "BLANGY-SUR-BRESLE" }],
+        },
+      },
+      {
+        id: ["GAMACHES / NEUFCHÂTEL-EN-B"],
+        name: "Neufchâtel-en-Bray",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#c895bf",
+            textColor: "#000000",
+            text: "521",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1507SUPX", text: "NEUFCHATEL-EN-BRAY" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NOMAD:525",
+    noCartridge: true,
+    name: "525",
+    colors: { background: "#292f6a", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["YVETOT / ST-VALÉRY-EN-C"],
+        name: "Saint-Valéry-en-Caux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#292f6a",
+            textColor: "#ffffff",
+            text: "525",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
+        },
+      },
+      {
+        id: ["ST-VALÉRY-EN-C / YVETOT"],
+        name: "Yvetot",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#292f6a",
+            textColor: "#ffffff",
+            text: "525",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "YVETOT" }],
+        },
+      },
+    ],
+  },
+  {
     id: "NOMAD:527",
     name: "527",
     colors: { background: "#9E6A9A", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["GISORS", "MESNIÈRES-EN-B / GISORS", "SERQUEUX / GISORS"],
-        alternate: "Gisors",
-        name: "Gare SNCF",
-        city: "GISORS",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#9E6A9A",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "527",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["DIEPPE", "SERQUEUX / DIEPPE", "FORGES-LES-E / DIEPPE"],
-        alternate: "Dieppe",
-        name: "Gare SNCF",
-        city: "DIEPPE",
+        id: ["SERQUEUX / DIEPPE", "FORGES-LES-E / DIEPPE"],
+        name: "Dieppe",
         girouette: {
           routeNumber: {
             backgroundColor: "#9E6A9A",
@@ -246,11 +3147,9 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["FORGES-LES-EAUX", "DIEPPE / FORGES-LES-E"],
+        id: ["GISORS / MESNIÈRES-EN-B"],
         autoHide: true,
-        alternate: "Forge-les-Eaux",
-        name: "Place Brévière",
-        city: "FORGE-LES-EAUX",
+        name: "Mesnières-en-Bray",
         girouette: {
           routeNumber: {
             backgroundColor: "#9E6A9A",
@@ -259,15 +3158,12 @@ const nomadRegionRoutes: Route[] = [
             font: "1508SUPX",
             text: "527",
           },
-          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
+          pages: [{ font: "1508SUPX", text: "MESNIERES-EN-BRAY" }],
         },
       },
       {
-        id: ["SERQUEUX", "DIEPPE / SERQUEUX", "GISORS / SERQUEUX"],
-        autoHide: true,
-        alternate: "Serqueux",
-        name: "Gare SNCF",
-        city: "SERQUEUX",
+        id: ["DIEPPE / SERQUEUX", "GISORS / SERQUEUX"],
+        name: "Serqueux",
         girouette: {
           routeNumber: {
             backgroundColor: "#9E6A9A",
@@ -280,10 +3176,9 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["GISORS / MESNIÈRES-EN-B"],
+        id: ["DIEPPE / FORGES-LES-E"],
         autoHide: true,
-        alternate: "Mesnières-en-Bray",
-        name: "MESNIÈRES-EN-BRAY",
+        name: "Forges-les-Eaux",
         girouette: {
           routeNumber: {
             backgroundColor: "#9E6A9A",
@@ -292,11 +3187,43 @@ const nomadRegionRoutes: Route[] = [
             font: "1508SUPX",
             text: "527",
           },
-          pages: [{ font: "1508SUPX", text: "MESNIERES-EN-BRAY" }],
+          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
+        },
+      },
+      {
+        id: ["MESNIÈRES-EN-B / GISORS", "SERQUEUX / GISORS"],
+        name: "Gisors",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#9E6A9A",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "527",
+          },
+          pages: [{ font: "1508SUPX", text: "GISORS" }],
         },
       },
     ],
   },
+
+  //
+  // ZONE A NETTOYER :
+  //
+
+  {
+    id: "NOMAD:FAUSSELIGNE",
+    noCartridge: true,
+    name: "! >",
+    colors: { background: "#ffffff", text: "#000000" },
+    destinations: [
+      {
+        id: [],
+        name: "LES LIGNES SUIVANTES N'ONT PAS ÉTÉ NETTOYÉES/MISES EN FORME",
+      },
+    ],
+  },
+
   {
     id: "NOMAD:101R",
     noCartridge: true,
@@ -438,7 +3365,13 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#20b14a", text: "#ffffff" },
     destinations: [
       {
-        id: ["COURSEULLES-SUR-MER / CAEN"],
+        id: [
+          "COURSEULLES-SUR-MER / CAEN",
+          "BERNIERES-SUR-MER / CAEN",
+          "DOUVRES-LA-DELIVRANDE / CAEN",
+          "LANGRUNE-SUR-MER / CAEN",
+          "VER-SUR-MER / CAEN",
+        ],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -452,77 +3385,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BERNIERES-SUR-MER / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "101",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["DOUVRES-LA-DELIVRANDE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "101",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["LANGRUNE-SUR-MER / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "101",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["COURSEULLES-SUR-MER / CAEN [EXPRESS]"],
-        name: "CAEN [EXPRESS]",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "101",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN [EXPRESS]" }],
-        },
-      },
-      {
-        id: ["VER-SUR-MER / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "101",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["ASNELLES / CAEN [EXPRESS]"],
+        id: ["COURSEULLES-SUR-MER / CAEN [EXPRESS]", "ASNELLES / CAEN [EXPRESS]"],
         name: "CAEN [EXPRESS]",
         girouette: {
           routeNumber: {
@@ -544,21 +3407,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#f7941d", text: "#000000" },
     destinations: [
       {
-        id: ["BENY SUR MER / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f7941d",
-            textColor: "#000000",
-            text: "102",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["CRESSERONS / CAEN"],
+        id: ["BENY SUR MER / CAEN", "CRESSERONS / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -622,63 +3471,15 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#8f3e97", text: "#ffffff" },
     destinations: [
       {
-        id: ["CREULLY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "103",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["SAINTE-CROIX-SUR-MER / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "103",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["THAON / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "103",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["LE FRESNE CAMILLY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "103",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["CAIRON / CAEN"],
+        id: [
+          "CREULLY / CAEN",
+          "SAINTE-CROIX-SUR-MER / CAEN",
+          "THAON / CAEN",
+          "LE FRESNE CAMILLY / CAEN",
+          "CAIRON / CAEN",
+          "BANVILLE / CAEN",
+          "LANTHEUIL / CAEN",
+        ],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -747,34 +3548,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1507SUPX", text: "SAINTE-CROIX-SUR-MER" }],
         },
       },
-      {
-        id: ["BANVILLE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "103",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["LANTHEUIL / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "103",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
     ],
   },
   {
@@ -784,35 +3557,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#e41e27", text: "#ffffff" },
     destinations: [
       {
-        id: ["VERSON / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "104",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["FONTAINE ETOUPEFOUR / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "104",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["BARON SUR ODON / CAEN"],
+        id: ["VERSON / CAEN", "FONTAINE ETOUPEFOUR / CAEN", "BARON SUR ODON / CAEN", "BOUGY / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -868,20 +3613,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BOUGY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "104",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
         id: ["CAEN / BOUGY"],
         name: "BOUGY",
         girouette: {
@@ -904,63 +3635,13 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#8f3e97", text: "#ffffff" },
     destinations: [
       {
-        id: ["LA CAINE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "105",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["AUNAY SUR ODON / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "105",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["VACOGNES NEUILLY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "105",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["EVRECY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "105",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["SAINTE HONORINE DU FAY / CAEN"],
+        id: [
+          "LA CAINE / CAEN",
+          "AUNAY SUR ODON / CAEN",
+          "VACOGNES NEUILLY / CAEN",
+          "EVRECY / CAEN",
+          "SAINTE HONORINE DU FAY / CAEN",
+        ],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -1066,49 +3747,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#f7941d", text: "#000000" },
     destinations: [
       {
-        id: ["FEUGUEROLLES BULLY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f7941d",
-            textColor: "#000000",
-            text: "106",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["HAMARS / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f7941d",
-            textColor: "#000000",
-            text: "106",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["AMAYE SUR ORNE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f7941d",
-            textColor: "#000000",
-            text: "106",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["VIEUX / CAEN"],
+        id: ["FEUGUEROLLES BULLY / CAEN", "HAMARS / CAEN", "AMAYE SUR ORNE / CAEN", "VIEUX / CAEN", "AVENAY / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -1178,20 +3817,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["AVENAY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f7941d",
-            textColor: "#000000",
-            text: "106",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
         id: ["CAEN / AVENAY"],
         name: "AVENAY",
         girouette: {
@@ -1228,35 +3853,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#007dc5", text: "#ffffff" },
     destinations: [
       {
-        id: ["MUTRECY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#007dc5",
-            textColor: "#ffffff",
-            text: "107",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["ROCQUANCOURT / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#007dc5",
-            textColor: "#ffffff",
-            text: "107",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["SAINT ANDRE SUR ORNE / CAEN"],
+        id: ["MUTRECY / CAEN", "ROCQUANCOURT / CAEN", "SAINT ANDRE SUR ORNE / CAEN", "LAIZE LA VILLE / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -1325,20 +3922,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "LAIZE LA VILLE" }],
         },
       },
-      {
-        id: ["LAIZE LA VILLE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#007dc5",
-            textColor: "#ffffff",
-            text: "107",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
     ],
   },
   {
@@ -1348,49 +3931,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#8f3e97", text: "#ffffff" },
     destinations: [
       {
-        id: ["MOULINES / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "108",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["CESNY BOIS HALBOUT / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "108",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["SAINT GERMAIN LE VASSON / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "108",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["GOUVIX / CAEN"],
+        id: ["MOULINES / CAEN", "CESNY BOIS HALBOUT / CAEN", "SAINT GERMAIN LE VASSON / CAEN", "GOUVIX / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -1468,21 +4009,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#8f3e97", text: "#ffffff" },
     destinations: [
       {
-        id: ["MERY CORBON / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "109",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["MOULT / CAEN"],
+        id: ["MERY CORBON / CAEN", "MOULT / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -1532,105 +4059,16 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#e41e27", text: "#ffffff" },
     destinations: [
       {
-        id: ["CONTEVILLE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "110",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["MOULT / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "110",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["CAGNY / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "110",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["FRENOUVILLE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "110",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["VIMONT / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "110",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["MERY CORBON / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "110",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["MEZIDON CANON / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "110",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["CHICHEBOVILLE / CAEN"],
+        id: [
+          "CONTEVILLE / CAEN",
+          "MOULT / CAEN",
+          "CAGNY / CAEN",
+          "FRENOUVILLE / CAEN",
+          "VIMONT / CAEN",
+          "MERY CORBON / CAEN",
+          "MEZIDON CANON / CAEN",
+          "CHICHEBOVILLE / CAEN",
+        ],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -1764,7 +4202,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#e41e27", text: "#ffffff" },
     destinations: [
       {
-        id: ["HONFLEUR / LE HAVRE"],
+        id: ["HONFLEUR / LE HAVRE", "CAEN / LE HAVRE", "DEAUVILLE / LE HAVRE"],
         name: "LE HAVRE",
         girouette: {
           routeNumber: {
@@ -1778,7 +4216,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CABOURG / DEAUVILLE"],
+        id: ["CABOURG / DEAUVILLE", "CAEN / DEAUVILLE"],
         name: "DEAUVILLE",
         girouette: {
           routeNumber: {
@@ -1792,21 +4230,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN / DEAUVILLE"],
-        name: "DEAUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
-        },
-      },
-      {
-        id: ["DEAUVILLE / HONFLEUR"],
+        id: ["DEAUVILLE / HONFLEUR", "CAEN / HONFLEUR"],
         name: "HONFLEUR",
         girouette: {
           routeNumber: {
@@ -1820,21 +4244,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN / LE HAVRE"],
-        name: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
-        },
-      },
-      {
-        id: ["CAEN / LA RIVIERE SAINT SAUVEUR"],
+        id: ["CAEN / LA RIVIERE SAINT SAUVEUR", "DEAUVILLE / LA RIVIERE SAINT SAUVEUR"],
         name: "LA RIVIERE SAINT SAUVEUR",
         girouette: {
           routeNumber: {
@@ -1862,20 +4272,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CAEN / HONFLEUR"],
-        name: "HONFLEUR",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "HONFLEUR" }],
-        },
-      },
-      {
         id: ["CAEN / DIVES SUR MER"],
         name: "DIVES SUR MER",
         girouette: {
@@ -1889,34 +4285,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "DIVES SUR MER" }],
         },
       },
-      {
-        id: ["DEAUVILLE / LE HAVRE"],
-        name: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
-        },
-      },
-      {
-        id: ["DEAUVILLE / LA RIVIERE SAINT SAUVEUR"],
-        name: "LA RIVIERE SAINT SAUVEUR",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1407SUPX", text: "LA RIVIERE SAINT-SAUVEUR" }],
-        },
-      },
     ],
   },
   {
@@ -1926,7 +4294,14 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#e41e27", text: "#ffffff" },
     destinations: [
       {
-        id: ["BAVENT / CAEN"],
+        id: [
+          "BAVENT / CAEN",
+          "DIVES SUR MER / CAEN",
+          "DEAUVILLE / CAEN",
+          "HONFLEUR / CAEN",
+          "LE HAVRE / CAEN",
+          "LA RIVIERE SAINT SAUVEUR / CAEN",
+        ],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -1940,49 +4315,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["DIVES SUR MER / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["DEAUVILLE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["HONFLEUR / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["HONFLEUR / CABOURG"],
+        id: ["HONFLEUR / CABOURG", "DEAUVILLE / CABOURG"],
         name: "CABOURG",
         girouette: {
           routeNumber: {
@@ -2010,49 +4343,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LE HAVRE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["HONFLEUR / DEAUVILLE"],
-        name: "DEAUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
-        },
-      },
-      {
-        id: ["LA RIVIERE SAINT SAUVEUR / DEAUVILLE"],
-        name: "DEAUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
-        },
-      },
-      {
-        id: ["LE HAVRE / DEAUVILLE"],
+        id: ["HONFLEUR / DEAUVILLE", "LA RIVIERE SAINT SAUVEUR / DEAUVILLE", "LE HAVRE / DEAUVILLE"],
         name: "DEAUVILLE",
         girouette: {
           routeNumber: {
@@ -2079,184 +4370,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "HONFLEUR EXPRESS" }],
         },
       },
-      {
-        id: ["DEAUVILLE / CABOURG"],
-        name: "CABOURG",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CABOURG" }],
-        },
-      },
-      {
-        id: ["LA RIVIERE SAINT SAUVEUR / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "111",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:112",
-    noCartridge: true,
-    name: "112",
-    colors: { background: "#0080c5", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["TOUQUES / DEAUVILLE"],
-        name: "DEAUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#0080c5",
-            textColor: "#ffffff",
-            text: "112",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
-        },
-      },
-      {
-        id: ["DEAUVILLE / TOUQUES"],
-        name: "TOUQUES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#0080c5",
-            textColor: "#ffffff",
-            text: "112",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "TOUQUES" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:113",
-    noCartridge: true,
-    name: "113",
-    colors: { background: "#20b14a", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["TOUQUES / DEAUVILLE"],
-        name: "DEAUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "113",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
-        },
-      },
-      {
-        id: ["DEAUVILLE / TOUQUES"],
-        name: "TOUQUES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "113",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "TOUQUES" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:114",
-    noCartridge: true,
-    name: "114",
-    colors: { background: "#e41e27", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["BAYEUX / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "114",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["CAEN / BAYEUX"],
-        name: "BAYEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "114",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
-        },
-      },
-      {
-        id: ["PUTOT EN BESSIN / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "114",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["CAEN / PUTOT EN BESSIN"],
-        name: "PUTOT EN BESSIN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "114",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "PUTOT EN BESSIN" }],
-        },
-      },
-      {
-        id: ["CAEN / BRETTEVILLE L'ORGUEILLEUSE"],
-        name: "BRETTEVILLE L'ORGUEILLEUSE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "114",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BRETTEVILLE" }],
-        },
-      },
     ],
   },
   {
@@ -2266,35 +4379,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#8f3e97", text: "#ffffff" },
     destinations: [
       {
-        id: ["HOTTOT LES BAGUES / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "115",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["CAUMONT L'EVENTE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "115",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["VILLERS BOCAGE / CAEN"],
+        id: ["HOTTOT LES BAGUES / CAEN", "CAUMONT L'EVENTE / CAEN", "VILLERS BOCAGE / CAEN", "NOYERS BOCAGE / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -2363,34 +4448,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "TOURNAY SUR ODON" }],
         },
       },
-      {
-        id: ["NOYERS BOCAGE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "115",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["HOTTOT LES BAGUES"],
-        name: "HOTTOT LES BAGUES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "115",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "HOTTOT LES BAGUES" }],
-        },
-      },
     ],
   },
   {
@@ -2400,21 +4457,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#007dc5", text: "#ffffff" },
     destinations: [
       {
-        id: ["AUNAY SUR ODON / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#007dc5",
-            textColor: "#ffffff",
-            text: "116",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["VILLERS BOCAGE / CAEN"],
+        id: ["AUNAY SUR ODON / CAEN", "VILLERS BOCAGE / CAEN", "VIRE / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -2498,20 +4541,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["VIRE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#007dc5",
-            textColor: "#ffffff",
-            text: "116",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
         id: ["CAEN / VIRE"],
         name: "VIRE",
         girouette: {
@@ -2534,49 +4563,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#e41e27", text: "#ffffff" },
     destinations: [
       {
-        id: ["CONDE SUR NOIREAU / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "117",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["SAINT LAURENT DE CONDEL / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "117",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["THURY HARCOURT / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e41e27",
-            textColor: "#ffffff",
-            text: "117",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["FLERS / CAEN"],
+        id: ["CONDE SUR NOIREAU / CAEN", "SAINT LAURENT DE CONDEL / CAEN", "THURY HARCOURT / CAEN", "FLERS / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -2668,7 +4655,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#20b14a", text: "#ffffff" },
     destinations: [
       {
-        id: ["FALAISE / CAEN"],
+        id: ["FALAISE / CAEN", "FLERS / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -2695,20 +4682,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "FALAISE" }],
         },
       },
-      {
-        id: ["FLERS / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "118",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
     ],
   },
   {
@@ -2718,63 +4691,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#20b14a", text: "#ffffff" },
     destinations: [
       {
-        id: ["BURES SUR DIVES / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "119",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["PONT L'EVEQUE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "119",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["DOZULE / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "119",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["TROARN / CAEN"],
-        name: "CAEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "119",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN" }],
-        },
-      },
-      {
-        id: ["ESCOVILLE / CAEN"],
+        id: ["BURES SUR DIVES / CAEN", "PONT L'EVEQUE / CAEN", "DOZULE / CAEN", "TROARN / CAEN", "ESCOVILLE / CAEN"],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -2866,49 +4783,12 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#20b14a", text: "#ffffff" },
     destinations: [
       {
-        id: ["COLLEVILLE SUR MER / BAYEUX"],
-        name: "BAYEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "120",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
-        },
-      },
-      {
-        id: ["GRANDCAMP MAISY / BAYEUX"],
-        name: "BAYEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "120",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
-        },
-      },
-      {
-        id: ["PORT EN BESSIN HUPPAIN / BAYEUX"],
-        name: "BAYEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#20b14a",
-            textColor: "#ffffff",
-            text: "120",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
-        },
-      },
-      {
-        id: ["SAINTE HONORINE DES PERTES / BAYEUX"],
+        id: [
+          "COLLEVILLE SUR MER / BAYEUX",
+          "GRANDCAMP MAISY / BAYEUX",
+          "PORT EN BESSIN HUPPAIN / BAYEUX",
+          "SAINTE HONORINE DES PERTES / BAYEUX",
+        ],
         name: "BAYEUX",
         girouette: {
           routeNumber: {
@@ -2986,35 +4866,13 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#8f3e97", text: "#ffffff" },
     destinations: [
       {
-        id: ["TRACY SUR MER / BAYEUX"],
-        name: "BAYEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "121",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
-        },
-      },
-      {
-        id: ["COURSEULLES SUR MER / BAYEUX"],
-        name: "BAYEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "121",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
-        },
-      },
-      {
-        id: ["COLLEVILLE SUR MER / BAYEUX"],
+        id: [
+          "TRACY SUR MER / BAYEUX",
+          "COURSEULLES SUR MER / BAYEUX",
+          "COLLEVILLE SUR MER / BAYEUX",
+          "OUISTREHAM / BAYEUX",
+          "BERNIERES SUR MER / BAYEUX",
+        ],
         name: "BAYEUX",
         girouette: {
           routeNumber: {
@@ -3056,34 +4914,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["OUISTREHAM / BAYEUX"],
-        name: "BAYEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "121",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
-        },
-      },
-      {
-        id: ["BERNIERES SUR MER / BAYEUX"],
-        name: "BAYEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8f3e97",
-            textColor: "#ffffff",
-            text: "121",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BAYEUX" }],
-        },
-      },
-      {
         id: ["BAYEUX / OUISTREHAM"],
         name: "OUISTREHAM",
         girouette: {
@@ -3114,63 +4944,13 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD:122",
-    noCartridge: true,
-    name: "122",
-    colors: { background: "#007dc5", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["LE HAVRE / CAEN EXPRESS"],
-        name: "CAEN EXPRESS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#007dc5",
-            textColor: "#ffffff",
-            text: "122",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAEN EXPRESS" }],
-        },
-      },
-      {
-        id: ["CAEN / LE HAVRE EXPRESS"],
-        name: "LE HAVRE EXPRESS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#007dc5",
-            textColor: "#ffffff",
-            text: "122",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE EXPRESS" }],
-        },
-      },
-    ],
-  },
-  {
     id: "NOMAD:123",
     noCartridge: true,
     name: "123",
     colors: { background: "#f7941d", text: "#000000" },
     destinations: [
       {
-        id: ["LA RIVIERE-SAINT-SAUVEUR / LISIEUX"],
-        name: "LISIEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f7941d",
-            textColor: "#000000",
-            text: "123",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LISIEUX" }],
-        },
-      },
-      {
-        id: ["LE HAVRE / LISIEUX"],
+        id: ["LA RIVIERE-SAINT-SAUVEUR / LISIEUX", "LE HAVRE / LISIEUX", "HONFLEUR / LISIEUX"],
         name: "LISIEUX",
         girouette: {
           routeNumber: {
@@ -3226,7 +5006,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LISIEUX / HONFLEUR"],
+        id: ["LISIEUX / HONFLEUR", "LE HAVRE / HONFLEUR"],
         name: "HONFLEUR",
         girouette: {
           routeNumber: {
@@ -3237,3034 +5017,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "HONFLEUR" }],
-        },
-      },
-      {
-        id: ["LE HAVRE / HONFLEUR"],
-        name: "HONFLEUR",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f7941d",
-            textColor: "#000000",
-            text: "123",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "HONFLEUR" }],
-        },
-      },
-      {
-        id: ["HONFLEUR / LISIEUX"],
-        name: "LISIEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f7941d",
-            textColor: "#000000",
-            text: "123",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LISIEUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:124",
-    noCartridge: true,
-    name: "124",
-    colors: { background: "#808080", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["DEAUVILLE / DIVES-SUR-MER"],
-        name: "DIVES-SUR-MER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#808080",
-            textColor: "#ffffff",
-            text: "124",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DIVES-SUR-MER" }],
-        },
-      },
-      {
-        id: ["LISIEUX / DEAUVILLE"],
-        name: "DEAUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#808080",
-            textColor: "#ffffff",
-            text: "124",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
-        },
-      },
-      {
-        id: ["DIVES-SUR-MER / DEAUVILLE"],
-        name: "DEAUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#808080",
-            textColor: "#ffffff",
-            text: "124",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DEAUVILLE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:201",
-    noCartridge: true,
-    name: "201",
-    colors: { background: "#df1614", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["SAINT-OUEN-DE-THOUBERVILLE / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#df1614",
-            textColor: "#ffffff",
-            text: "201",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["ELBEUF / HONGUEMARE-GUENOUVILLE"],
-        name: "HONGUEMARE-GUENOUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#df1614",
-            textColor: "#ffffff",
-            text: "201",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1407SUPX", text: "HONGUEMARE-GUENOUVILLE" }],
-        },
-      },
-      {
-        id: ["HONGUEMARE-GUENOUVILLE / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#df1614",
-            textColor: "#ffffff",
-            text: "201",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:202",
-    noCartridge: true,
-    name: "202",
-    colors: { background: "#32b5b0", text: "#000000" },
-    destinations: [
-      {
-        id: ["LOUVIERS / VERNON"],
-        name: "VERNON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#32b5b0",
-            textColor: "#000000",
-            text: "202",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNON" }],
-        },
-      },
-      {
-        id: ["VERNON / LOUVIERS"],
-        name: "LOUVIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#32b5b0",
-            textColor: "#000000",
-            text: "202",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LOUVIERS" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:203",
-    noCartridge: true,
-    name: "203",
-    colors: { background: "#31a8df", text: "#000000" },
-    destinations: [
-      {
-        id: ["SAINT-PIERRE-LÈS-ELBEUF / MARTOT"],
-        name: "MARTOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#31a8df",
-            textColor: "#000000",
-            text: "203",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "MARTOT" }],
-        },
-      },
-      {
-        id: ["LOUVIERS / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#31a8df",
-            textColor: "#000000",
-            text: "203",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["ELBEUF / LOUVIERS"],
-        name: "LOUVIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#31a8df",
-            textColor: "#000000",
-            text: "203",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LOUVIERS" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:204",
-    noCartridge: true,
-    name: "204",
-    colors: { background: "#e6ce08", text: "#000000" },
-    destinations: [
-      {
-        id: ["BOURGTHEROULDE-INFREVILLE / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["LE BOSC-ROGER-EN-ROUMOIS / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["ELBEUF / BOURGTHEROULDE-INFREVILLE"],
-        name: "BOURGTHEROULDE-INFREVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOURGTHEROULDE" }],
-        },
-      },
-      {
-        id: ["BOSGUERARD-DE-MARCOUVILLE / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["ELBEUF / LE BOSC-ROGER-EN-ROUMOIS"],
-        name: "LE BOSC-ROGER-EN-ROUMOIS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1407SUPX", text: "LE BOSC-ROGER-EN-ROUMOIS" }],
-        },
-      },
-      {
-        id: ["ELBEUF / THENOUVILLE"],
-        name: "THENOUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "THENOUVILLE" }],
-        },
-      },
-      {
-        id: ["ELBEUF / BOISSEY-LE-CHATEL"],
-        name: "BOISSEY-LE-CHATEL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOISSEY-LE-CHATEL" }],
-        },
-      },
-      {
-        id: ["THENOUVILLE / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["BOISSEY-LE-CHATEL / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["ELBEUF / BOSGUERARD-DE-MARCOUVILLE"],
-        name: "BOSGUERARD-DE-MARCOUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e6ce08",
-            textColor: "#000000",
-            text: "204",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOSGUERARD" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:205",
-    noCartridge: true,
-    name: "205",
-    colors: { background: "#a31968", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["BEAUMONT-LE-ROGER / VAL-DE-REUIL"],
-        name: "VAL-DE-REUIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a31968",
-            textColor: "#ffffff",
-            text: "205",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "VAL-DE-REUIL" }],
-        },
-      },
-      {
-        id: ["LE NEUBOURG / VAL-DE-REUIL"],
-        name: "VAL-DE-REUIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a31968",
-            textColor: "#ffffff",
-            text: "205",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "VAL-DE-REUIL" }],
-        },
-      },
-      {
-        id: ["BEAUMONT-LE-ROGER / LE NEUBOURG"],
-        name: "LE NEUBOURG",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a31968",
-            textColor: "#ffffff",
-            text: "205",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE NEUBOURG" }],
-        },
-      },
-      {
-        id: ["LE NEUBOURG / BEAUMONT-LE-ROGER"],
-        name: "BEAUMONT-LE-ROGER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a31968",
-            textColor: "#ffffff",
-            text: "205",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BEAUMONT-LE-ROGER" }],
-        },
-      },
-      {
-        id: ["VAL-DE-REUIL / BEAUMONT-LE-ROGER"],
-        name: "BEAUMONT-LE-ROGER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a31968",
-            textColor: "#ffffff",
-            text: "205",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BEAUMONT-LE-ROGER" }],
-        },
-      },
-      {
-        id: ["VAL-DE-REUIL / LE NEUBOURG"],
-        name: "LE NEUBOURG",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a31968",
-            textColor: "#ffffff",
-            text: "205",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE NEUBOURG" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:206",
-    noCartridge: true,
-    name: "206",
-    colors: { background: "#835f34", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["ÉVREUX / GISORS"],
-        name: "GISORS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#835f34",
-            textColor: "#ffffff",
-            text: "206",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["GISORS / LES ANDELYS"],
-        name: "LES ANDELYS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#835f34",
-            textColor: "#ffffff",
-            text: "206",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
-        },
-      },
-      {
-        id: ["GISORS / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#835f34",
-            textColor: "#ffffff",
-            text: "206",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["LES ANDELYS / GISORS"],
-        name: "GISORS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#835f34",
-            textColor: "#ffffff",
-            text: "206",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / LES ANDELYS"],
-        name: "LES ANDELYS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#835f34",
-            textColor: "#ffffff",
-            text: "206",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
-        },
-      },
-      {
-        id: ["AUBEVOYE / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#835f34",
-            textColor: "#ffffff",
-            text: "206",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["LES ANDELYS / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#835f34",
-            textColor: "#ffffff",
-            text: "206",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:207",
-    noCartridge: true,
-    name: "207",
-    colors: { background: "#e9a255", text: "#000000" },
-    destinations: [
-      {
-        id: ["TOURNY / VERNON"],
-        name: "VERNON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9a255",
-            textColor: "#000000",
-            text: "207",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNON" }],
-        },
-      },
-      {
-        id: ["LES ANDELYS / VERNON"],
-        name: "VERNON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9a255",
-            textColor: "#000000",
-            text: "207",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNON" }],
-        },
-      },
-      {
-        id: ["VERNON / LES ANDELYS"],
-        name: "LES ANDELYS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9a255",
-            textColor: "#000000",
-            text: "207",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
-        },
-      },
-      {
-        id: ["VERNON / GAILLON"],
-        name: "GAILLON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9a255",
-            textColor: "#000000",
-            text: "207",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GAILLON" }],
-        },
-      },
-      {
-        id: ["VERNON / TOURNY"],
-        name: "TOURNY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9a255",
-            textColor: "#000000",
-            text: "207",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "TOURNY" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:208",
-    noCartridge: true,
-    name: "208",
-    colors: { background: "#afca17", text: "#000000" },
-    destinations: [
-      {
-        id: ["ÉTRÉPAGNY / VERNON"],
-        name: "VERNON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#afca17",
-            textColor: "#000000",
-            text: "208",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNON" }],
-        },
-      },
-      {
-        id: ["VERNON / GISORS"],
-        name: "GISORS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#afca17",
-            textColor: "#000000",
-            text: "208",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["VERNON / ÉTRÉPAGNY"],
-        name: "ÉTRÉPAGNY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#afca17",
-            textColor: "#000000",
-            text: "208",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ETREPAGNY" }],
-        },
-      },
-      {
-        id: ["GISORS / VERNON"],
-        name: "VERNON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#afca17",
-            textColor: "#000000",
-            text: "208",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNON" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:209",
-    noCartridge: true,
-    name: "209",
-    colors: { background: "#122e68", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["LES ANDELYS / AUBEVOYE"],
-        name: "AUBEVOYE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#122e68",
-            textColor: "#ffffff",
-            text: "209",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AUBEVOYE" }],
-        },
-      },
-      {
-        id: ["AUBEVOYE / LES ANDELYS"],
-        name: "LES ANDELYS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#122e68",
-            textColor: "#ffffff",
-            text: "209",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:210",
-    noCartridge: true,
-    name: "210",
-    colors: { background: "#eb3a4c", text: "#000000" },
-    destinations: [
-      {
-        id: ["ÉVREUX / VERNON"],
-        name: "VERNON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#eb3a4c",
-            textColor: "#000000",
-            text: "210",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNON" }],
-        },
-      },
-      {
-        id: ["VERNON / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#eb3a4c",
-            textColor: "#000000",
-            text: "210",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / GISORS"],
-        name: "GISORS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#eb3a4c",
-            textColor: "#000000",
-            text: "210",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["GISORS / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#eb3a4c",
-            textColor: "#000000",
-            text: "210",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["CAILLOUET-ORGEVILLE / EVREUX"],
-        name: "EVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#eb3a4c",
-            textColor: "#000000",
-            text: "210",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / CAILLOUET-ORGEVILLE"],
-        name: "CAILLOUET-ORGEVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#eb3a4c",
-            textColor: "#000000",
-            text: "210",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "CAILLOUET-ORGEVILLE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:211",
-    noCartridge: true,
-    name: "211",
-    colors: { background: "#722f82", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["ÉVREUX / DREUX"],
-        name: "DREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#722f82",
-            textColor: "#ffffff",
-            text: "211",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DREUX" }],
-        },
-      },
-      {
-        id: ["DREUX / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#722f82",
-            textColor: "#ffffff",
-            text: "211",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["MESNIL-SUR-L'ESTRÉE / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#722f82",
-            textColor: "#ffffff",
-            text: "211",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:212",
-    noCartridge: true,
-    name: "212",
-    colors: { background: "#83d4ed", text: "#000000" },
-    destinations: [
-      {
-        id: ["VERNEUIL-SUR-AVRE / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["DAMVILLE / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["VERNEUIL-SUR-AVRE / CONDÉ-SUR-ITON"],
-        name: "CONDÉ-SUR-ITON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CONDE-SUR-ITON" }],
-        },
-      },
-      {
-        id: ["VERNEUIL-SUR-AVRE / DAMVILLE"],
-        name: "DAMVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DAMVILLE" }],
-        },
-      },
-      {
-        id: ["DAMVILLE / VERNEUIL-SUR-AVRE"],
-        name: "VERNEUIL-SUR-AVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNEUIL-SUR-AVRE" }],
-        },
-      },
-      {
-        id: ["CONDÉ-SUR-ITON / VERNEUIL-SUR-AVRE"],
-        name: "VERNEUIL-SUR-AVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNEUIL-SUR-AVRE" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / DAMVILLE"],
-        name: "DAMVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DAMVILLE" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / VERNEUIL-SUR-AVRE"],
-        name: "VERNEUIL-SUR-AVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNEUIL-SUR-AVRE" }],
-        },
-      },
-      {
-        id: ["BRETEUIL-SUR-ITON / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#83d4ed",
-            textColor: "#000000",
-            text: "212",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:213",
-    noCartridge: true,
-    name: "213",
-    colors: { background: "#ef8464", text: "#000000" },
-    destinations: [
-      {
-        id: ["ÉVREUX / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ef8464",
-            textColor: "#000000",
-            text: "213",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["L'AIGLE / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ef8464",
-            textColor: "#000000",
-            text: "213",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:214",
-    noCartridge: true,
-    name: "214",
-    colors: { background: "#e7adcf", text: "#000000" },
-    destinations: [
-      {
-        id: ["LE NEUBOURG / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["HONFLEUR / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-      {
-        id: ["PONT-AUDEMER / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["HONFLEUR / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["BRIONNE / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["PONT-AUDEMER / HONFLEUR"],
-        name: "HONFLEUR",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "HONFLEUR" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / HONFLEUR"],
-        name: "HONFLEUR",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "HONFLEUR" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / LE NEUBOURG"],
-        name: "LE NEUBOURG",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7adcf",
-            textColor: "#000000",
-            text: "214",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LE NEUBOURG" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:215",
-    noCartridge: true,
-    name: "215",
-    colors: { background: "#719152", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["ÉVREUX / LOUVIERS"],
-        name: "LOUVIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LOUVIERS" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["LOUVIERS / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["PONT-DE-L'ARCHE / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["VAL-DE-REUIL / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["ÉVREUX / ELBEUF"],
-        name: "ELBEUF",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ELBEUF" }],
-        },
-      },
-      {
-        id: ["ELBEUF / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["LOUVIERS / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["ROUEN / EVREUX"],
-        name: "EVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["ROUEN / ÉVREUX"],
-        name: "ÉVREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["ELBEUF / LOUVIERS"],
-        name: "LOUVIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LOUVIERS" }],
-        },
-      },
-      {
-        id: ["ELBEUF / PONT-DE-L'ARCHE"],
-        name: "PONT-DE-L'ARCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-DE-L'ARCHE" }],
-        },
-      },
-      {
-        id: ["ROUEN / LOUVIERS"],
-        name: "LOUVIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LOUVIERS" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:217",
-    noCartridge: true,
-    name: "217",
-    colors: { background: "#b72a41", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["BERNAY / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b72a41",
-            textColor: "#ffffff",
-            text: "217",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-      {
-        id: ["PONT-AUDEMER / BERNAY"],
-        name: "BERNAY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b72a41",
-            textColor: "#ffffff",
-            text: "217",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BERNAY" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:218",
-    noCartridge: true,
-    name: "218",
-    colors: { background: "#b26bc1", text: "#000000" },
-    destinations: [
-      {
-        id: ["ROUEN / CHARLEVAL"],
-        name: "CHARLEVAL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b26bc1",
-            textColor: "#000000",
-            text: "218",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CHARLEVAL" }],
-        },
-      },
-      {
-        id: ["CHARLEVAL / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b26bc1",
-            textColor: "#000000",
-            text: "218",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["VASCOEUIL / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b26bc1",
-            textColor: "#000000",
-            text: "218",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["ROUEN / VASCOEUIL"],
-        name: "VASCOEUIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b26bc1",
-            textColor: "#000000",
-            text: "218",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VASCOEUIL" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:219",
-    noCartridge: true,
-    name: "219",
-    colors: { background: "#7a79b6", text: "#000000" },
-    destinations: [
-      {
-        id: ["ROUEN / GISORS"],
-        name: "GISORS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["LE MESNIL-ESNARD / GISORS"],
-        name: "GISORS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["GISORS / FLEURY-SUR-ANDELLE"],
-        name: "FLEURY-SUR-ANDELLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLEURY-SUR-ANDELLE" }],
-        },
-      },
-      {
-        id: ["GISORS / SAUSSAY-LA-CAMPAGNE"],
-        name: "SAUSSAY-LA-CAMPAGNE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "SAUSSAY-LA-CAMPAGNE" }],
-        },
-      },
-      {
-        id: ["GISORS / ÉTRÉPAGNY"],
-        name: "ÉTRÉPAGNY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ETREPAGNY" }],
-        },
-      },
-      {
-        id: ["GISORS / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["SAUSSAY-LA-CAMPAGNE / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["SAUSSAY-LA-CAMPAGNE / GISORS"],
-        name: "GISORS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["FLEURY-SUR-ANDELLE / GISORS"],
-        name: "GISORS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GISORS" }],
-        },
-      },
-      {
-        id: ["ROUEN / FLEURY-SUR-ANDELLE"],
-        name: "FLEURY-SUR-ANDELLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a79b6",
-            textColor: "#000000",
-            text: "219",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLEURY-SUR-ANDELLE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:220",
-    noCartridge: true,
-    name: "220",
-    colors: { background: "#fdcb36", text: "#000000" },
-    destinations: [
-      {
-        id: ["LES ANDELYS / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#fdcb36",
-            textColor: "#000000",
-            text: "220",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["ROUEN / LES ANDELYS"],
-        name: "LES ANDELYS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#fdcb36",
-            textColor: "#000000",
-            text: "220",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LES ANDELYS" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:221",
-    noCartridge: true,
-    name: "221",
-    colors: { background: "#ed1d8a", text: "#000000" },
-    destinations: [
-      {
-        id: ["ROUEN / ALIZAY"],
-        name: "ALIZAY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ed1d8a",
-            textColor: "#000000",
-            text: "221",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALIZAY" }],
-        },
-      },
-      {
-        id: ["ALIZAY / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ed1d8a",
-            textColor: "#000000",
-            text: "221",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:222",
-    noCartridge: true,
-    name: "222",
-    colors: { background: "#33a739", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["LE BOSC-ROGER-EN-ROUMOIS / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#33a739",
-            textColor: "#ffffff",
-            text: "222",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["ROUEN / LE BOSC-ROGER-EN-ROUMOIS"],
-        name: "LE BOSC-ROGER-EN-ROUMOIS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#33a739",
-            textColor: "#ffffff",
-            text: "222",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1407SUPX", text: "LE BOSC-ROGER-EN-ROUMOIS" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:223",
-    noCartridge: true,
-    name: "223",
-    colors: { background: "#5688c6", text: "#000000" },
-    destinations: [
-      {
-        id: ["PONT-AUDEMER / BOURG-ACHARD"],
-        name: "BOURG-ACHARD",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOURG-ACHARD" }],
-        },
-      },
-      {
-        id: ["PONT-AUDEMER / ST-OUEN-DE-THOUBERVILLE"],
-        name: "ST-OUEN-DE-THOUBERVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1407SUPX", text: "ST-OUEN-DE-THOUBERVILLE" }],
-        },
-      },
-      {
-        id: ["PONT-AUDEMER / LA HAYE-DE-ROUTOT"],
-        name: "LA HAYE-DE-ROUTOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LA HAYE-DE-ROUTOT" }],
-        },
-      },
-      {
-        id: ["PONT-AUDEMER / BARNEVILLE-SUR-SEINE"],
-        name: "BARNEVILLE-SUR-SEINE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "BARNEVILLE-SUR-SEINE" }],
-        },
-      },
-      {
-        id: ["PONT-AUDEMER / BOUQUETOT"],
-        name: "BOUQUETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOUQUETOT" }],
-        },
-      },
-      {
-        id: ["LA HAYE-DE-ROUTOT / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-      {
-        id: ["BOURG-ACHARD / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-      {
-        id: ["ST-OUEN-DE-THOUBERVILLE / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-      {
-        id: ["ROUTOT / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-      {
-        id: ["BARNEVILLE-SUR-SEINE / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5688c6",
-            textColor: "#000000",
-            text: "223",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:224",
-    noCartridge: true,
-    name: "224",
-    colors: { background: "#a9b76a", text: "#000000" },
-    destinations: [
-      {
-        id: ["LISIEUX / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a9b76a",
-            textColor: "#000000",
-            text: "224",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-      {
-        id: ["PONT-AUDEMER / LISIEUX"],
-        name: "LISIEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a9b76a",
-            textColor: "#000000",
-            text: "224",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LISIEUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:225",
-    noCartridge: true,
-    name: "225",
-    colors: { background: "#512b0f", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["MARCILLY-SUR-EURE / EZY-SUR-EURE"],
-        name: "EZY-SUR-EURE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EZY-SUR-EURE" }],
-        },
-      },
-      {
-        id: ["IVRY-LA-BATAILLE / BUEIL"],
-        name: "BUEIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BUEIL" }],
-        },
-      },
-      {
-        id: ["GARENNES-SUR-EURE / BUEIL"],
-        name: "BUEIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BUEIL" }],
-        },
-      },
-      {
-        id: ["BUEIL / EZY-SUR-EURE"],
-        name: "EZY-SUR-EURE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EZY-SUR-EURE" }],
-        },
-      },
-      {
-        id: ["BUEIL / MARCILLY-SUR-EURE"],
-        name: "MARCILLY-SUR-EURE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MARCILLY-SUR-EURE" }],
-        },
-      },
-      {
-        id: ["BUEIL / GARENNES-SUR-EURE"],
-        name: "GARENNES-SUR-EURE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GARENNES-SUR-EURE" }],
-        },
-      },
-      {
-        id: ["BUEIL / IVRY-LA-BATAILLE"],
-        name: "IVRY-LA-BATAILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "IVRY-LA-BATAILLE" }],
-        },
-      },
-      {
-        id: ["EZY-SUR-EURE / MARCILLY-SUR-EURE"],
-        name: "MARCILLY-SUR-EURE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MARCILLY-SUR-EURE" }],
-        },
-      },
-      {
-        id: ["BREVAL / MARCILLY-SUR-EURE"],
-        name: "MARCILLY-SUR-EURE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MARCILLY-SUR-EURE" }],
-        },
-      },
-      {
-        id: ["MARCILLY-SUR-EURE / BRÉVAL"],
-        name: "BRÉVAL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BREVAL" }],
-        },
-      },
-      {
-        id: ["EZY-SUR-EURE / BUEIL"],
-        name: "BUEIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BUEIL" }],
-        },
-      },
-      {
-        id: ["MARCILLY-SUR-EURE / BUEIL"],
-        name: "BUEIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#512b0f",
-            textColor: "#ffffff",
-            text: "225",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BUEIL" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:226",
-    noCartridge: true,
-    name: "226",
-    colors: { background: "#b75858", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["BOURTH / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b75858",
-            textColor: "#ffffff",
-            text: "226",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["VERNEUIL-SUR-AVRE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b75858",
-            textColor: "#ffffff",
-            text: "226",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["L'AIGLE / VERNEUIL-SUR-AVRE"],
-        name: "VERNEUIL-SUR-AVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b75858",
-            textColor: "#ffffff",
-            text: "226",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNEUIL-SUR-AVRE" }],
-        },
-      },
-      {
-        id: ["L'AIGLE / CHANDAI"],
-        name: "CHANDAI",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b75858",
-            textColor: "#ffffff",
-            text: "226",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CHANDAI" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:227",
-    noCartridge: true,
-    name: "227",
-    colors: { background: "#b3549a", text: "#000000" },
-    destinations: [
-      {
-        id: ["PONT-AUDEMER / LE HAVRE"],
-        name: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b3549a",
-            textColor: "#000000",
-            text: "227",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
-        },
-      },
-      {
-        id: ["LE HAVRE / PONT-AUDEMER"],
-        name: "PONT-AUDEMER",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b3549a",
-            textColor: "#000000",
-            text: "227",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:301",
-    noCartridge: true,
-    name: "301",
-    colors: { background: "#7ab929", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["CARENTAN / CHERBOURG"],
-        name: "CHERBOURG",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7ab929",
-            textColor: "#ffffff",
-            text: "301",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CHERBOURG" }],
-        },
-      },
-      {
-        id: ["CHERBOURG / CARENTAN"],
-        name: "CARENTAN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7ab929",
-            textColor: "#ffffff",
-            text: "301",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CARENTAN" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:302",
-    noCartridge: true,
-    name: "302",
-    colors: { background: "#ecce00", text: "#000000" },
-    destinations: [
-      {
-        id: ["SANT-LO / CARENTAN"],
-        name: "CARENTAN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ecce00",
-            textColor: "#000000",
-            text: "302",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CARENTAN" }],
-        },
-      },
-      {
-        id: ["CARENTAN / SAINT-LO"],
-        name: "SAINT-LO",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ecce00",
-            textColor: "#000000",
-            text: "302",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:303",
-    noCartridge: true,
-    name: "303",
-    colors: { background: "#ff0009", text: "#000000" },
-    destinations: [
-      {
-        id: ["SAINT-SAUVEUR / COUTANCES"],
-        name: "COUTANCES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ff0009",
-            textColor: "#000000",
-            text: "303",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
-        },
-      },
-      {
-        id: ["LA HAYE-DU-PUITS / COUTANCES"],
-        name: "COUTANCES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ff0009",
-            textColor: "#000000",
-            text: "303",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
-        },
-      },
-      {
-        id: ["COUTANCES / SAINT-SAUVEUR"],
-        name: "SAINT-SAUVEUR",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ff0009",
-            textColor: "#000000",
-            text: "303",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-SAUVEUR" }],
-        },
-      },
-      {
-        id: ["COUTANCES (WOOD) / LA HAYE"],
-        name: "LA HAYE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ff0009",
-            textColor: "#000000",
-            text: "303",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LA HAYE" }],
-        },
-      },
-      {
-        id: ["VALOGNES / COUTANCES"],
-        name: "COUTANCES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ff0009",
-            textColor: "#000000",
-            text: "303",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
-        },
-      },
-      {
-        id: ["COUTANCES / VALOGNES"],
-        name: "VALOGNES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ff0009",
-            textColor: "#000000",
-            text: "303",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VALOGNES" }],
-        },
-      },
-      {
-        id: ["LA HAYE-DU-PUITS / VALOGNES"],
-        name: "VALOGNES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ff0009",
-            textColor: "#000000",
-            text: "303",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VALOGNES" }],
-        },
-      },
-      {
-        id: ["COUTANCES (SNCF) / LESSAY"],
-        name: "LESSAY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ff0009",
-            textColor: "#000000",
-            text: "303",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LESSAY" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:304",
-    noCartridge: true,
-    name: "304",
-    colors: { background: "#209645", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["SAINT-LO / VIRE"],
-        name: "VIRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#209645",
-            textColor: "#ffffff",
-            text: "304",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "VIRE" }],
-        },
-      },
-      {
-        id: ["VIRE / SAINT-LO"],
-        name: "SAINT-LO",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#209645",
-            textColor: "#ffffff",
-            text: "304",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:305",
-    noCartridge: true,
-    name: "305",
-    colors: { background: "#f39200", text: "#000000" },
-    destinations: [
-      {
-        id: ["GRANVILLE / SAINT-LO [MDD]"],
-        name: "SAINT-LO [MDD]",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-LO [MDD]" }],
-        },
-      },
-      {
-        id: ["GRANVILLE / SAINT-LO"],
-        name: "SAINT-LO",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
-        },
-      },
-      {
-        id: ["GRANVILLE / COUTANCES"],
-        name: "COUTANCES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
-        },
-      },
-      {
-        id: ["GRANVILLE / LISON"],
-        name: "LISON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LISON" }],
-        },
-      },
-      {
-        id: ["COUTANCES / GRANVILLE"],
-        name: "GRANVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
-        },
-      },
-      {
-        id: ["LISON / GRANVILLE"],
-        name: "GRANVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
-        },
-      },
-      {
-        id: ["SAINT-LO / GRANVILLE"],
-        name: "GRANVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
-        },
-      },
-      {
-        id: ["COUTANCES / LISON"],
-        name: "LISON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LISON" }],
-        },
-      },
-      {
-        id: ["LISON / COUTANCES"],
-        name: "COUTANCES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f39200",
-            textColor: "#000000",
-            text: "305",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:306",
-    noCartridge: true,
-    name: "306",
-    colors: { background: "#a0519a", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["SAINT-LO / AVRANCHES"],
-        name: "AVRANCHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a0519a",
-            textColor: "#ffffff",
-            text: "306",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
-        },
-      },
-      {
-        id: ["AVRANCHES / SAINT-LO [MDD]"],
-        name: "SAINT-LO [MDD]",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a0519a",
-            textColor: "#ffffff",
-            text: "306",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-LO [MDD]" }],
-        },
-      },
-      {
-        id: ["VILLEDIEU-LES-POELES / SAINT-LO [MDD]"],
-        name: "SAINT-LO [MDD]",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a0519a",
-            textColor: "#ffffff",
-            text: "306",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-LO [MDD]" }],
-        },
-      },
-      {
-        id: ["SAINT-LO / PERCY"],
-        name: "PERCY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a0519a",
-            textColor: "#ffffff",
-            text: "306",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "PERCY" }],
-        },
-      },
-      {
-        id: ["AVRANCHES / SAINT-LO"],
-        name: "SAINT-LO",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a0519a",
-            textColor: "#ffffff",
-            text: "306",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:307",
-    noCartridge: true,
-    name: "307",
-    colors: { background: "#e52725", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["SARTILLY / AVRANCHES"],
-        name: "AVRANCHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e52725",
-            textColor: "#ffffff",
-            text: "307",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
-        },
-      },
-      {
-        id: ["AVRANCHES / GRANVILLE"],
-        name: "GRANVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e52725",
-            textColor: "#ffffff",
-            text: "307",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
-        },
-      },
-      {
-        id: ["GRANVILLE / AVRANCHES"],
-        name: "AVRANCHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e52725",
-            textColor: "#ffffff",
-            text: "307",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:308",
-    noCartridge: true,
-    name: "308",
-    colors: { background: "#907d24", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["GRANVILLE / AVRANCHES"],
-        name: "AVRANCHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#907d24",
-            textColor: "#ffffff",
-            text: "308",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
-        },
-      },
-      {
-        id: ["AVRANCHES / GRANVILLE"],
-        name: "GRANVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#907d24",
-            textColor: "#ffffff",
-            text: "308",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
-        },
-      },
-      {
-        id: ["BEAUVOIR / GRANVILLE"],
-        name: "GRANVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#907d24",
-            textColor: "#ffffff",
-            text: "308",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
-        },
-      },
-      {
-        id: ["GRANVILLE / BEAUVOIR"],
-        name: "BEAUVOIR",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#907d24",
-            textColor: "#ffffff",
-            text: "308",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BEAUVOIR" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:309",
-    noCartridge: true,
-    name: "309",
-    colors: { background: "#c44e23", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["SAINT-HILAIRE-DU-HARCOUET / VIRE"],
-        name: "VIRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "VIRE" }],
-        },
-      },
-      {
-        id: ["MORTAIN / AVRANCHES"],
-        name: "AVRANCHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
-        },
-      },
-      {
-        id: ["SAINT-HILAIRE-DU-HARCOUET / AVRANCHES"],
-        name: "AVRANCHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
-        },
-      },
-      {
-        id: ["DUCEY / AVRANCHES"],
-        name: "AVRANCHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
-        },
-      },
-      {
-        id: ["AVRANCHES / VIRE"],
-        name: "VIRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "VIRE" }],
-        },
-      },
-      {
-        id: ["AVRANCHES / DUCEY"],
-        name: "DUCEY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DUCEY" }],
-        },
-      },
-      {
-        id: ["AVRANCHES / PONTAUBAULT"],
-        name: "PONTAUBAULT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "PONTAUBAULT" }],
-        },
-      },
-      {
-        id: ["AVRANCHES / MORTAIN"],
-        name: "MORTAIN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAIN" }],
-        },
-      },
-      {
-        id: ["VIRE / AVRANCHES"],
-        name: "AVRANCHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "AVRANCHES" }],
-        },
-      },
-      {
-        id: ["VIRE / SAINT-HILAIRE-DU-HARCOUET"],
-        name: "SAINT-HILAIRE-DU-HARCOUET",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c44e23",
-            textColor: "#ffffff",
-            text: "309",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1407SUPX", text: "ST-HILAIRE-DU-HARCOUET" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:310",
-    noCartridge: true,
-    name: "310",
-    colors: { background: "#8cc4d1", text: "#000000" },
-    destinations: [
-      {
-        id: ["COUTANCES / LES PLAGES"],
-        name: "LES PLAGES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#8cc4d1",
-            textColor: "#000000",
-            text: "310",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LES PLAGES" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:401",
-    noCartridge: true,
-    name: "401",
-    colors: { background: "#f18665", text: "#000000" },
-    destinations: [
-      {
-        id: ["PUTANGES / BRIOUZE / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f18665",
-            textColor: "#000000",
-            text: "401",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["FLERS / BRIOUZE / PUTANGES"],
-        name: "PUTANGES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f18665",
-            textColor: "#000000",
-            text: "401",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PUTANGES" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:402",
-    noCartridge: true,
-    name: "402",
-    colors: { background: "#d1b706", text: "#000000" },
-    destinations: [
-      {
-        id: ["FLERS / LANDISACQ"],
-        name: "LANDISACQ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#d1b706",
-            textColor: "#000000",
-            text: "402",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LANDISACQ" }],
-        },
-      },
-      {
-        id: ["LANDISACQ / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#d1b706",
-            textColor: "#000000",
-            text: "402",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["TINCHEBRAY / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#d1b706",
-            textColor: "#000000",
-            text: "402",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["TINCHEBRAY / LANDISACQ"],
-        name: "LANDISACQ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#d1b706",
-            textColor: "#000000",
-            text: "402",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LANDISACQ" }],
-        },
-      },
-      {
-        id: ["LANDISACQ / TINCHEBRAY"],
-        name: "TINCHEBRAY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#d1b706",
-            textColor: "#000000",
-            text: "402",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "TINCHEBRAY" }],
         },
       },
     ],
@@ -6276,7 +5028,12 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#e8afd0", text: "#000000" },
     destinations: [
       {
-        id: ["FLERS / MESSEI / LA FERTÉ MACÉ"],
+        id: [
+          "FLERS / MESSEI / LA FERTÉ MACÉ",
+          "MESSEI / LA FERTÉ MACÉ",
+          "COUTERNE / LA FERTÉ MACÉ",
+          "BAGNOLES DE L'ORNE / LA FERTÉ MACÉ",
+        ],
         name: "LA FERTÉ MACÉ",
         girouette: {
           routeNumber: {
@@ -6290,7 +5047,13 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BAGNOLES DE L'ORNE / ALENÇON"],
+        id: [
+          "BAGNOLES DE L'ORNE / ALENÇON",
+          "SAINT-DENIS-SUR-SARTHON / ALENÇON",
+          "FLERS / LA FERTÉ MACÉ / ALENÇON",
+          "FLERS / BAGNOLES DE L'ORNE / ALENÇON",
+          "LALACELLE / ALENÇON",
+        ],
         name: "ALENÇON",
         girouette: {
           routeNumber: {
@@ -6304,63 +5067,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["SAINT-DENIS-SUR-SARTHON / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["FLERS / LA FERTÉ MACÉ / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["MESSEI / LA FERTÉ MACÉ"],
-        name: "LA FERTÉ MACÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
-        },
-      },
-      {
-        id: ["FLERS / BAGNOLES DE L'ORNE"],
-        name: "BAGNOLES DE L'ORNE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BAGNOLES DE L'ORNE" }],
-        },
-      },
-      {
-        id: ["LA FERTÉ MACÉ / BAGNOLES DE L'ORNE"],
+        id: ["FLERS / BAGNOLES DE L'ORNE", "LA FERTÉ MACÉ / BAGNOLES DE L'ORNE"],
         name: "BAGNOLES DE L'ORNE",
         girouette: {
           routeNumber: {
@@ -6388,7 +5095,16 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ALENÇON / LA FERTÉ MACÉ / FLERS"],
+        id: [
+          "ALENÇON / LA FERTÉ MACÉ / FLERS",
+          "LA FERTÉ MACÉ / MESSEI / FLERS",
+          "BAGNOLES DE L'ORNE / LA FERTÉ / FLERS",
+          "LA SAUVAGÈRE / FLERS",
+          "ALENÇON / COUTERNE / FLERS",
+          "BAGNOLES DE L'ORNE / MESSEI / FLERS",
+          "ALENÇON / BAGNOLES / FLERS",
+          "COUTERNE / LA FERTÉ MACÉ / FLERS",
+        ],
         name: "FLERS",
         girouette: {
           routeNumber: {
@@ -6430,48 +5146,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LA FERTÉ MACÉ / MESSEI / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["COUTERNE / LA FERTÉ MACÉ"],
-        name: "LA FERTÉ MACÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
-        },
-      },
-      {
-        id: ["BAGNOLES DE L'ORNE / LA FERTÉ MACÉ"],
-        name: "LA FERTÉ MACÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
-        },
-      },
-      {
         id: ["LA FERTÉ MACÉ / COUTERNE"],
         name: "COUTERNE",
         girouette: {
@@ -6486,7 +5160,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LA FERTÉ MACÉ / MEHOUDIN"],
+        id: ["LA FERTÉ MACÉ / MEHOUDIN", "FLERS / LA FERTÉ MACÉ / MEHOUDIN"],
         name: "MEHOUDIN",
         girouette: {
           routeNumber: {
@@ -6497,20 +5171,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "MEHOUDIN" }],
-        },
-      },
-      {
-        id: ["FLERS / BAGNOLES DE L'ORNE / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6525,48 +5185,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1407SUPX", text: "LA FERRIERE AUX ETANGS" }],
-        },
-      },
-      {
-        id: ["FLERS / LA FERTÉ MACÉ / MEHOUDIN"],
-        name: "MEHOUDIN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "MEHOUDIN" }],
-        },
-      },
-      {
-        id: ["BAGNOLES DE L'ORNE / LA FERTÉ / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["LALACELLE / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
         },
       },
       {
@@ -6597,76 +5215,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "MESSEI" }],
         },
       },
-      {
-        id: ["LA SAUVAGÈRE / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["ALENÇON / COUTERNE / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["BAGNOLES DE L'ORNE / MESSEI / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["ALENÇON / BAGNOLES / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
-      {
-        id: ["COUTERNE / LA FERTÉ MACÉ / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e8afd0",
-            textColor: "#000000",
-            text: "403",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
-        },
-      },
     ],
   },
   {
@@ -6676,7 +5224,12 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#845f34", text: "#ffffff" },
     destinations: [
       {
-        id: ["CUISSAI / LONRAI / ALENÇON"],
+        id: [
+          "CUISSAI / LONRAI / ALENÇON",
+          "LA FERTÉ MACÉ / CARROUGES / ALENÇON",
+          "LA FERTÉ MACÉ / DAMIGNY / ALENÇON",
+          "LA FERTÉ MACÉ / LONRAI / ALENÇON",
+        ],
         name: "ALENÇON",
         girouette: {
           routeNumber: {
@@ -6718,77 +5271,11 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LA FERTÉ MACÉ / CARROUGES / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#845f34",
-            textColor: "#ffffff",
-            text: "404",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["ALENÇON / CARROUGES / LA FERTÉ MACÉ"],
-        name: "LA FERTÉ MACÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#845f34",
-            textColor: "#ffffff",
-            text: "404",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
-        },
-      },
-      {
-        id: ["LA FERTÉ MACÉ / DAMIGNY / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#845f34",
-            textColor: "#ffffff",
-            text: "404",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["LA FERTÉ MACÉ / LONRAI / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#845f34",
-            textColor: "#ffffff",
-            text: "404",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["ALENÇON / LONRAI / LA FERTÉ MACÉ"],
-        name: "LA FERTÉ MACÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#845f34",
-            textColor: "#ffffff",
-            text: "404",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
-        },
-      },
-      {
-        id: ["SEES / CARROUGES / LA FERTÉ MACÉ"],
+        id: [
+          "ALENÇON / CARROUGES / LA FERTÉ MACÉ",
+          "ALENÇON / LONRAI / LA FERTÉ MACÉ",
+          "SEES / CARROUGES / LA FERTÉ MACÉ",
+        ],
         name: "LA FERTÉ MACÉ",
         girouette: {
           routeNumber: {
@@ -6824,21 +5311,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LA FERTÉ MACÉ / BAGNOLES / DOMFRONT"],
-        name: "DOMFRONT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#abb96b",
-            textColor: "#000000",
-            text: "405",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DOMFRONT" }],
-        },
-      },
-      {
-        id: ["LA FERTÉ MACÉ / CHAMPSECRET / DOMFRONT"],
+        id: ["LA FERTÉ MACÉ / BAGNOLES / DOMFRONT", "LA FERTÉ MACÉ / CHAMPSECRET / DOMFRONT"],
         name: "DOMFRONT",
         girouette: {
           routeNumber: {
@@ -6874,7 +5347,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#7a7ab8", text: "#000000" },
     destinations: [
       {
-        id: ["LONLAY-L'ABBAYE / DOMFRONT / FLERS"],
+        id: ["LONLAY-L'ABBAYE / DOMFRONT / FLERS", "DOMFRONT / LE CHATELLIER / FLERS"],
         name: "FLERS",
         girouette: {
           routeNumber: {
@@ -6888,7 +5361,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LONLAY-L'ABBAYE / DOMFRONT"],
+        id: ["LONLAY-L'ABBAYE / DOMFRONT", "FLERS / LE CHATELLIER / DOMFRONT"],
         name: "DOMFRONT",
         girouette: {
           routeNumber: {
@@ -6902,7 +5375,11 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["FLERS / LE CHATELLIER / LONLAY-L'ABBAYE"],
+        id: [
+          "FLERS / LE CHATELLIER / LONLAY-L'ABBAYE",
+          "FLERS / DOMFRONT / LONLAY-L'ABBAYE",
+          "DOMFRONT / LONLAY-L'ABBAYE",
+        ],
         name: "LONLAY-L'ABBAYE",
         girouette: {
           routeNumber: {
@@ -6913,62 +5390,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "LONLAY-L'ABBAYE" }],
-        },
-      },
-      {
-        id: ["FLERS / DOMFRONT / LONLAY-L'ABBAYE"],
-        name: "LONLAY-L'ABBAYE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a7ab8",
-            textColor: "#000000",
-            text: "406",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LONLAY-L'ABBAYE" }],
-        },
-      },
-      {
-        id: ["FLERS / LE CHATELLIER / DOMFRONT"],
-        name: "DOMFRONT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a7ab8",
-            textColor: "#000000",
-            text: "406",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DOMFRONT" }],
-        },
-      },
-      {
-        id: ["DOMFRONT / LONLAY-L'ABBAYE"],
-        name: "LONLAY-L'ABBAYE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a7ab8",
-            textColor: "#000000",
-            text: "406",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LONLAY-L'ABBAYE" }],
-        },
-      },
-      {
-        id: ["DOMFRONT / LE CHATELLIER / FLERS"],
-        name: "FLERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7a7ab8",
-            textColor: "#000000",
-            text: "406",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
         },
       },
       {
@@ -7022,7 +5443,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ARGENTAN / RANES / BAGNOLES DE L'ORNE"],
+        id: ["ARGENTAN / RANES / BAGNOLES DE L'ORNE", "ARGENTAN / BAGNOLES DE L'ORNE"],
         name: "BAGNOLES DE L'ORNE",
         girouette: {
           routeNumber: {
@@ -7063,56 +5484,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "LA FERTE MACE" }],
         },
       },
-      {
-        id: ["ARGENTAN / BAGNOLES DE L'ORNE"],
-        name: "BAGNOLES DE L'ORNE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c69615",
-            textColor: "#000000",
-            text: "407",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BAGNOLES DE L'ORNE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:408",
-    noCartridge: true,
-    name: "408",
-    colors: { background: "#f87479", text: "#000000" },
-    destinations: [
-      {
-        id: ["FALAISE / OCCAGNES / ARGENTAN"],
-        name: "ARGENTAN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f87479",
-            textColor: "#000000",
-            text: "408",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ARGENTAN" }],
-        },
-      },
-      {
-        id: ["ARGENTAN / OCCAGNES / FALAISE", "ARGENTANT-OCCAGNES-FALAISE"],
-        name: "FALAISE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f87479",
-            textColor: "#000000",
-            text: "408",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FALAISE" }],
-        },
-      },
     ],
   },
   {
@@ -7150,7 +5521,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CHAILLOUÉ / SEES"],
+        id: ["CHAILLOUÉ / SEES", "NONANT-LE-PIN / CHAILLOUÉ / SEES"],
         name: "SEES",
         girouette: {
           routeNumber: {
@@ -7164,35 +5535,12 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["GACÉ / NEUVILLE-SUR-TOUQUES / VIMOUTIERS"],
-        name: "VIMOUTIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b0cb1d",
-            textColor: "#000000",
-            text: "409",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VIMOUTIERS" }],
-        },
-      },
-      {
-        id: ["SÉES / GACÉ / VIMOUTIERS"],
-        name: "VIMOUTIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b0cb1d",
-            textColor: "#000000",
-            text: "409",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VIMOUTIERS" }],
-        },
-      },
-      {
-        id: ["ALENÇON / SEES / VIMOUTIERS"],
+        id: [
+          "GACÉ / NEUVILLE-SUR-TOUQUES / VIMOUTIERS",
+          "SÉES / GACÉ / VIMOUTIERS",
+          "ALENÇON / SEES / VIMOUTIERS",
+          "ALENÇON / GACÉ / VIMOUTIERS",
+        ],
         name: "VIMOUTIERS",
         girouette: {
           routeNumber: {
@@ -7220,20 +5568,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ALENÇON / GACÉ / VIMOUTIERS"],
-        name: "VIMOUTIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b0cb1d",
-            textColor: "#000000",
-            text: "409",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VIMOUTIERS" }],
-        },
-      },
-      {
         id: ["SEES / NONANT-LE-PIN"],
         name: "NONANT-LE-PIN",
         girouette: {
@@ -7247,20 +5581,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "NONANT-LE-PIN" }],
         },
       },
-      {
-        id: ["NONANT-LE-PIN / CHAILLOUÉ / SEES"],
-        name: "SEES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b0cb1d",
-            textColor: "#000000",
-            text: "409",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SEES" }],
-        },
-      },
     ],
   },
   {
@@ -7270,7 +5590,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#eba457", text: "#000000" },
     destinations: [
       {
-        id: ["VIMOUTIERS / TRUN / ARGENTAN"],
+        id: ["VIMOUTIERS / TRUN / ARGENTAN", "TRUN / ARGENTAN"],
         name: "ARGENTAN",
         girouette: {
           routeNumber: {
@@ -7312,20 +5632,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["TRUN / ARGENTAN"],
-        name: "ARGENTAN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#eba457",
-            textColor: "#000000",
-            text: "410",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ARGENTAN" }],
-        },
-      },
-      {
         id: ["ARGENTAN / BAILLEUL"],
         name: "BAILLEUL",
         girouette: {
@@ -7342,91 +5648,18 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD:411",
-    noCartridge: true,
-    name: "411",
-    colors: { background: "#fecd38", text: "#000000" },
-    destinations: [
-      {
-        id: ["GACÉ / EXMES / ARGENTAN"],
-        name: "ARGENTAN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#fecd38",
-            textColor: "#000000",
-            text: "411",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ARGENTAN" }],
-        },
-      },
-      {
-        id: ["ARGENTAN / EXMES / GACÉ"],
-        name: "GACÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#fecd38",
-            textColor: "#000000",
-            text: "411",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GACE" }],
-        },
-      },
-    ],
-  },
-  {
     id: "NOMAD:412",
     noCartridge: true,
     name: "412",
     colors: { background: "#b4569b", text: "#000000" },
     destinations: [
       {
-        id: ["GACÉ / SAINTE-GAUBURGE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b4569b",
-            textColor: "#000000",
-            text: "412",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["RAI / AUBE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b4569b",
-            textColor: "#000000",
-            text: "412",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["AUBE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b4569b",
-            textColor: "#000000",
-            text: "412",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["SAINTE-GAUBURGE-SAINTE-COLOMBE / L'AIGLE"],
+        id: [
+          "GACÉ / SAINTE-GAUBURGE / L'AIGLE",
+          "RAI / AUBE / L'AIGLE",
+          "AUBE / L'AIGLE",
+          "SAINTE-GAUBURGE-SAINTE-COLOMBE / L'AIGLE",
+        ],
         name: "L'AIGLE",
         girouette: {
           routeNumber: {
@@ -7484,77 +5717,17 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD:413",
-    noCartridge: true,
-    name: "413",
-    colors: { background: "#ea5984", text: "#000000" },
-    destinations: [
-      {
-        id: ["LA FERTÉ-EN-OUCHE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ea5984",
-            textColor: "#000000",
-            text: "413",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["L'AIGLE / LA FERTÉ-EN-OUCHE"],
-        name: "LA FERTÉ-EN-OUCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ea5984",
-            textColor: "#000000",
-            text: "413",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LA FERTE-EN-OUCHE" }],
-        },
-      },
-      {
-        id: ["VIMOUTIERS / LA FERTÉ-EN-OUCHE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ea5984",
-            textColor: "#000000",
-            text: "413",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-    ],
-  },
-  {
     id: "NOMAD:414",
     noCartridge: true,
     name: "414",
     colors: { background: "#e96c0f", text: "#000000" },
     destinations: [
       {
-        id: ["TOUROUVRE AU PERCHE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e96c0f",
-            textColor: "#000000",
-            text: "414",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["MORTAGNE-AU-PERCHE / TOUROUVRE / L'AIGLE"],
+        id: [
+          "TOUROUVRE AU PERCHE / L'AIGLE",
+          "MORTAGNE-AU-PERCHE / TOUROUVRE / L'AIGLE",
+          "MORTAGNE-AU-PERCHE / CRULAI / L'AIGLE",
+        ],
         name: "L'AIGLE",
         girouette: {
           routeNumber: {
@@ -7596,21 +5769,11 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["L'AIGLE / TOUROUVRE / MORTAGNE-AU-PERCHE"],
-        name: "MORTAGNE-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e96c0f",
-            textColor: "#000000",
-            text: "414",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
-        },
-      },
-      {
-        id: ["LA VENTROUZE / MORTAGNE-AU-PERCHE"],
+        id: [
+          "L'AIGLE / TOUROUVRE / MORTAGNE-AU-PERCHE",
+          "LA VENTROUZE / MORTAGNE-AU-PERCHE",
+          "L'AIGLE / MORTAGNE-AU-PERCHE",
+        ],
         name: "MORTAGNE-AU-PERCHE",
         girouette: {
           routeNumber: {
@@ -7638,34 +5801,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["MORTAGNE-AU-PERCHE / CRULAI / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e96c0f",
-            textColor: "#000000",
-            text: "414",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["L'AIGLE / MORTAGNE-AU-PERCHE"],
-        name: "MORTAGNE-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e96c0f",
-            textColor: "#000000",
-            text: "414",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
-        },
-      },
-      {
         id: ["L'AIGLE / SAINT-LANGIS-LES-MORTAGNE"],
         name: "SAINT-LANGIS-LES-MORTAGNE",
         girouette: {
@@ -7688,21 +5823,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#588ac7", text: "#000000" },
     destinations: [
       {
-        id: ["MOULINS-LA-MARCHE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#588ac7",
-            textColor: "#000000",
-            text: "415",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["ALENÇON / MOULINS-LA-MARCHE / L'AIGLE"],
+        id: ["MOULINS-LA-MARCHE / L'AIGLE", "ALENÇON / MOULINS-LA-MARCHE / L'AIGLE", "ALENÇON / LARRE / L'AIGLE"],
         name: "L'AIGLE",
         girouette: {
           routeNumber: {
@@ -7758,49 +5879,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["L'AIGLE / ESSAY / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#588ac7",
-            textColor: "#000000",
-            text: "415",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["ALENÇON / LARRE / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#588ac7",
-            textColor: "#000000",
-            text: "415",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-      {
-        id: ["MENIL-ERREUX / SEMALLE / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#588ac7",
-            textColor: "#000000",
-            text: "415",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["COURTOMER / ALENÇON"],
+        id: ["L'AIGLE / ESSAY / ALENÇON", "MENIL-ERREUX / SEMALLE / ALENÇON", "COURTOMER / ALENÇON"],
         name: "ALENÇON",
         girouette: {
           routeNumber: {
@@ -7815,42 +5894,7 @@ const nomadRegionRoutes: Route[] = [
       },
     ],
   },
-  {
-    id: "NOMAD:416",
-    noCartridge: true,
-    name: "416",
-    colors: { background: "#33a8e0", text: "#000000" },
-    destinations: [
-      {
-        id: ["L'AIGLE / SAINT-MAURICE-LÈS-CHARENCEY"],
-        name: "SAINT-MAURICE-LÈS-CHARENCEY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#33a8e0",
-            textColor: "#000000",
-            text: "416",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [[{ text: "SAINT-MAURICE" }, { text: "LES-CHARENCEY" }]],
-        },
-      },
-      {
-        id: ["SAINT-MAURICE-LÈS-CHARENCEY / L'AIGLE"],
-        name: "L'AIGLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#33a8e0",
-            textColor: "#000000",
-            text: "416",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "L'AIGLE" }],
-        },
-      },
-    ],
-  },
+
   {
     id: "NOMAD:417",
     noCartridge: true,
@@ -7858,7 +5902,11 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#7bb92d", text: "#ffffff" },
     destinations: [
       {
-        id: ["MORTAGNE-AU-PERCHE / LE MÊLE / ALENÇON"],
+        id: [
+          "MORTAGNE-AU-PERCHE / LE MÊLE / ALENÇON",
+          "MORTAGNE-AU-PERCHE / ALENÇON",
+          "NOGENT-LE-ROTROU / MORTAGNE / ALENÇON",
+        ],
         name: "ALENÇON",
         girouette: {
           routeNumber: {
@@ -7872,21 +5920,11 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["MORTAGNE-AU-PERCHE / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7bb92d",
-            textColor: "#ffffff",
-            text: "417",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["ALENÇON / LE MÊLE / MORTAGNE-AU-PERCHE"],
+        id: [
+          "ALENÇON / LE MÊLE / MORTAGNE-AU-PERCHE",
+          "NOGENT-LE-ROTROU / MORTAGNE-AU-PERCHE",
+          "LE MÊLE-SUR-SARTHE / MORTAGNE-AU-PERCHE",
+        ],
         name: "MORTAGNE-AU-PERCHE",
         girouette: {
           routeNumber: {
@@ -7900,7 +5938,11 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ALENÇON / MORTAGNE / NOGENT-LE-ROTROU"],
+        id: [
+          "ALENÇON / MORTAGNE / NOGENT-LE-ROTROU",
+          "MORTAGNE / REMALARD / NOGENT-LE-ROTROU",
+          "REMALARD / CONDE / NOGENT-LE-ROTROU",
+        ],
         name: "NOGENT-LE-ROTROU",
         girouette: {
           routeNumber: {
@@ -7911,48 +5953,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#000000",
           },
           pages: [{ font: "1508SUPX", text: "NOGENT-LE-ROTROU" }],
-        },
-      },
-      {
-        id: ["MORTAGNE / REMALARD / NOGENT-LE-ROTROU"],
-        name: "NOGENT-LE-ROTROU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7bb92d",
-            textColor: "#ffffff",
-            text: "417",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "NOGENT-LE-ROTROU" }],
-        },
-      },
-      {
-        id: ["NOGENT-LE-ROTROU / MORTAGNE / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7bb92d",
-            textColor: "#ffffff",
-            text: "417",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["NOGENT-LE-ROTROU / MORTAGNE-AU-PERCHE"],
-        name: "MORTAGNE-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7bb92d",
-            textColor: "#ffffff",
-            text: "417",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
         },
       },
       {
@@ -7984,34 +5984,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["REMALARD / CONDE / NOGENT-LE-ROTROU"],
-        name: "NOGENT-LE-ROTROU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7bb92d",
-            textColor: "#ffffff",
-            text: "417",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "NOGENT-LE-ROTROU" }],
-        },
-      },
-      {
-        id: ["LE MÊLE-SUR-SARTHE / MORTAGNE-AU-PERCHE"],
-        name: "MORTAGNE-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7bb92d",
-            textColor: "#ffffff",
-            text: "417",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
-        },
-      },
-      {
         id: ["MORTAGNE-AU-PERCHE / LE MÊLE"],
         name: "LE MÊLE",
         girouette: {
@@ -8026,21 +5998,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["MORTAGNE-AU-PERCHE / CONDE-SUR-HUISNE"],
-        name: "CONDE-SUR-HUISNE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7bb92d",
-            textColor: "#ffffff",
-            text: "417",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CONDE-SUR-HUISNE" }],
-        },
-      },
-      {
-        id: ["REMALARD / CONDE-SUR-HUISNE"],
+        id: ["MORTAGNE-AU-PERCHE / CONDE-SUR-HUISNE", "REMALARD / CONDE-SUR-HUISNE"],
         name: "CONDE-SUR-HUISNE",
         girouette: {
           routeNumber: {
@@ -8067,20 +6025,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1407SUPX", text: "LA CHAPELLE-MONTLIGEON" }],
         },
       },
-      {
-        id: ["ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#7bb92d",
-            textColor: "#ffffff",
-            text: "417",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
     ],
   },
   {
@@ -8090,7 +6034,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#e5d461", text: "#000000" },
     destinations: [
       {
-        id: ["BELLÊME / MAMERS / ALENÇON"],
+        id: ["BELLÊME / MAMERS / ALENÇON", "NOGENT-LE-ROTROU / BELLEME / ALENÇON", "MAMERS / ALENÇON"],
         name: "ALENÇON",
         girouette: {
           routeNumber: {
@@ -8104,21 +6048,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["NOGENT-LE-ROTROU / BELLEME / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e5d461",
-            textColor: "#000000",
-            text: "418",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["ALENÇON / MAMERS / BELLÊME"],
+        id: ["ALENÇON / MAMERS / BELLÊME", "NOGENT-LE-ROTROU / BERD'HUIS / BELLÊME"],
         name: "BELLÊME",
         girouette: {
           routeNumber: {
@@ -8132,7 +6062,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ALENÇON / MAMERS"],
+        id: ["ALENÇON / MAMERS", "NOGENT-LE-ROTROU / BELLÊME / MAMERS"],
         name: "MAMERS",
         girouette: {
           routeNumber: {
@@ -8146,35 +6076,12 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ALENÇON / MAMERS / NOGENT-LE-ROTROU"],
-        name: "NOGENT-LE-ROTROU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e5d461",
-            textColor: "#000000",
-            text: "418",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "NOGENT-LE-ROTROU" }],
-        },
-      },
-      {
-        id: ["MAMERS / ALENÇON"],
-        name: "ALENÇON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e5d461",
-            textColor: "#000000",
-            text: "418",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-      {
-        id: ["MAMERS / BELLÊME / NOGENT-LE-ROTROU"],
+        id: [
+          "ALENÇON / MAMERS / NOGENT-LE-ROTROU",
+          "MAMERS / BELLÊME / NOGENT-LE-ROTROU",
+          "BERD'HUIS / NOGENT-LE-ROTROU",
+          "BELLÊME / NOGENT-LE-ROTROU",
+        ],
         name: "NOGENT-LE-ROTROU",
         girouette: {
           routeNumber: {
@@ -8215,62 +6122,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "NOCE" }],
         },
       },
-      {
-        id: ["NOGENT-LE-ROTROU / BELLÊME / MAMERS"],
-        name: "MAMERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e5d461",
-            textColor: "#000000",
-            text: "418",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "MAMERS" }],
-        },
-      },
-      {
-        id: ["BERD'HUIS / NOGENT-LE-ROTROU"],
-        name: "NOGENT-LE-ROTROU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e5d461",
-            textColor: "#000000",
-            text: "418",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "NOGENT-LE-ROTROU" }],
-        },
-      },
-      {
-        id: ["BELLÊME / NOGENT-LE-ROTROU"],
-        name: "NOGENT-LE-ROTROU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e5d461",
-            textColor: "#000000",
-            text: "418",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "NOGENT-LE-ROTROU" }],
-        },
-      },
-      {
-        id: ["NOGENT-LE-ROTROU / BERD'HUIS / BELLÊME"],
-        name: "BELLÊME",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e5d461",
-            textColor: "#000000",
-            text: "418",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BELLEME" }],
-        },
-      },
     ],
   },
   {
@@ -8280,35 +6131,11 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#147684", text: "#ffffff" },
     destinations: [
       {
-        id: ["CETON / BELLÊME / MORTAGNE-AU-PERCHE"],
-        name: "MORTAGNE-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#147684",
-            textColor: "#ffffff",
-            text: "419",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
-        },
-      },
-      {
-        id: ["IGÉ / BELLÊME / MORTAGNE-AU-PERCHE"],
-        name: "MORTAGNE-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#147684",
-            textColor: "#ffffff",
-            text: "419",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
-        },
-      },
-      {
-        id: ["LE GUÉ-DE-LA-CHÂINE / MORTAGNE-AU-PERCHE"],
+        id: [
+          "CETON / BELLÊME / MORTAGNE-AU-PERCHE",
+          "IGÉ / BELLÊME / MORTAGNE-AU-PERCHE",
+          "LE GUÉ-DE-LA-CHÂINE / MORTAGNE-AU-PERCHE",
+        ],
         name: "MORTAGNE-AU-PERCHE",
         girouette: {
           routeNumber: {
@@ -8365,234 +6192,7 @@ const nomadRegionRoutes: Route[] = [
       },
     ],
   },
-  {
-    id: "NOMAD:420",
-    noCartridge: true,
-    name: "420",
-    colors: { background: "#b82b41", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["IGE / BELLÊME"],
-        name: "BELLÊME",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b82b41",
-            textColor: "#ffffff",
-            text: "420",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BELLEME" }],
-        },
-      },
-      {
-        id: ["BELLÊME / IGE"],
-        name: "IGE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b82b41",
-            textColor: "#ffffff",
-            text: "420",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "IGE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:421",
-    noCartridge: true,
-    name: "421",
-    colors: { background: "#35b6b2", text: "#000000" },
-    destinations: [
-      {
-        id: ["SERIGNY / MAMERS"],
-        name: "MAMERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#35b6b2",
-            textColor: "#000000",
-            text: "421",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "MAMERS" }],
-        },
-      },
-      {
-        id: ["MAMERS / SERIGNY"],
-        name: "SERIGNY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#35b6b2",
-            textColor: "#000000",
-            text: "421",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SERIGNY" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:422",
-    noCartridge: true,
-    name: "422",
-    colors: { background: "#164194", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["LONGNY-AU-PERCHE / MORTAGNE-AU-PERCHE"],
-        name: "MORTAGNE-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#164194",
-            textColor: "#ffffff",
-            text: "422",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
-        },
-      },
-      {
-        id: ["LA LOUPE / LONGNY-AU-PERCHE"],
-        name: "LONGNY-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#164194",
-            textColor: "#ffffff",
-            text: "422",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LONGNY-AU-PERCHE" }],
-        },
-      },
-      {
-        id: ["LA LOUPE / LONGNY / MORTAGNE-AU-PERCHE"],
-        name: "MORTAGNE-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#164194",
-            textColor: "#ffffff",
-            text: "422",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MORTAGNE-AU-PERCHE" }],
-        },
-      },
-      {
-        id: ["MORTAGNE-AU-PERCHE / LONGNY-AU-PERCHE"],
-        name: "LONGNY-AU-PERCHE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#164194",
-            textColor: "#ffffff",
-            text: "422",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LONGNY-AU-PERCHE" }],
-        },
-      },
-      {
-        id: ["MORTAGNE-AU-PERCHE / LA LOUPE"],
-        name: "LA LOUPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#164194",
-            textColor: "#ffffff",
-            text: "422",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LA LOUPE" }],
-        },
-      },
-      {
-        id: ["LONGNY-AU-PERCHE / LA LOUPE"],
-        name: "LA LOUPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#164194",
-            textColor: "#ffffff",
-            text: "422",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LA LOUPE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:425",
-    noCartridge: true,
-    name: "425",
-    colors: { background: "#f87479", text: "#000000" },
-    destinations: [
-      {
-        id: ["L'AIGLE / DREUX"],
-        name: "DREUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f87479",
-            textColor: "#000000",
-            text: "425",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DREUX" }],
-        },
-      },
-      {
-        id: ["L'AIGLE / SURDON"],
-        name: "SURDON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f87479",
-            textColor: "#000000",
-            text: "425",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SURDON" }],
-        },
-      },
-      {
-        id: ["ALENCON / SURDON"],
-        name: "SURDON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f87479",
-            textColor: "#000000",
-            text: "425",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SURDON" }],
-        },
-      },
-      {
-        id: ["SURDON / ALENCON"],
-        name: "ALENCON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f87479",
-            textColor: "#000000",
-            text: "425",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALENCON" }],
-        },
-      },
-    ],
-  },
+
   {
     id: "NOMAD:501",
     noCartridge: true,
@@ -8642,49 +6242,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LUNERAY / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#42539e",
-            textColor: "#ffffff",
-            text: "501",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["LA GAILLARDE / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#42539e",
-            textColor: "#ffffff",
-            text: "501",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["BRACHY / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#42539e",
-            textColor: "#ffffff",
-            text: "501",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["FONTAINE-LE-DUN / DIEPPE"],
+        id: ["LUNERAY / DIEPPE", "LA GAILLARDE / DIEPPE", "BRACHY / DIEPPE", "FONTAINE-LE-DUN / DIEPPE"],
         name: "DIEPPE",
         girouette: {
           routeNumber: {
@@ -8741,28 +6299,7 @@ const nomadRegionRoutes: Route[] = [
       },
     ],
   },
-  {
-    id: "NOMAD:502",
-    noCartridge: true,
-    name: "502",
-    colors: { background: "#e4ca12", text: "#000000" },
-    destinations: [
-      {
-        id: ["LE TRÉPORT / LE TRÉPORT"],
-        name: "LE TRÉPORT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e4ca12",
-            textColor: "#000000",
-            text: "502",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LE TREPORT" }],
-        },
-      },
-    ],
-  },
+
   {
     id: "NOMAD:503",
     noCartridge: true,
@@ -8812,63 +6349,13 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ANQUETIERVILLE / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "503",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-      {
-        id: ["SAINT-WANDRILLE-R / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "503",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-      {
-        id: ["CAUDEBEC-EN-C / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "503",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-      {
-        id: ["VILLEQUIER / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "503",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-      {
-        id: ["BOIS-HIMONT / YVETOT"],
+        id: [
+          "ANQUETIERVILLE / YVETOT",
+          "SAINT-WANDRILLE-R / YVETOT",
+          "CAUDEBEC-EN-C / YVETOT",
+          "VILLEQUIER / YVETOT",
+          "BOIS-HIMONT / YVETOT",
+        ],
         name: "YVETOT",
         girouette: {
           routeNumber: {
@@ -8891,7 +6378,7 @@ const nomadRegionRoutes: Route[] = [
     destinations: [
       {
         id: ["BRÉAUTÉ / ÉTRETAT"],
-        name: "ÉTRETAT",
+        name: "Étretat",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -8905,7 +6392,7 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["ÉTRETAT / BRÉAUTÉ"],
-        name: "BRÉAUTÉ",
+        name: "Bréauté",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -8919,42 +6406,7 @@ const nomadRegionRoutes: Route[] = [
       },
     ],
   },
-  {
-    id: "NOMAD:505",
-    noCartridge: true,
-    name: "505",
-    colors: { background: "#f58966", text: "#000000" },
-    destinations: [
-      {
-        id: ["ROUEN / BOISSAY"],
-        name: "BOISSAY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f58966",
-            textColor: "#000000",
-            text: "505",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOISSAY" }],
-        },
-      },
-      {
-        id: ["BOISSAY / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f58966",
-            textColor: "#000000",
-            text: "505",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-    ],
-  },
+
   {
     id: "NOMAD:506",
     noCartridge: true,
@@ -9032,49 +6484,12 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LILLEBONNE / LE HAVRE"],
-        name: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "506",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
-        },
-      },
-      {
-        id: ["CAUDEBEC-EN-C / LE HAVRE"],
-        name: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "506",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
-        },
-      },
-      {
-        id: ["BOLBEC / LE HAVRE"],
-        name: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "506",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
-        },
-      },
-      {
-        id: ["NOTRE-DAME-DE-GRAVENCHON / LE HAVRE"],
+        id: [
+          "LILLEBONNE / LE HAVRE",
+          "CAUDEBEC-EN-C / LE HAVRE",
+          "BOLBEC / LE HAVRE",
+          "NOTRE-DAME-DE-GRAVENCHON / LE HAVRE",
+        ],
         name: "LE HAVRE",
         girouette: {
           routeNumber: {
@@ -9096,49 +6511,14 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#9ab36c", text: "#000000" },
     destinations: [
       {
-        id: ["BOLBEC / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "507",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["BRETTEVILLE-DU-GRAND-CAUX / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "507",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["HOUQUETOT / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "507",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["MANNEVILLE-LA-G / FÉCAMP"],
+        id: [
+          "BOLBEC / FÉCAMP",
+          "BRETTEVILLE-DU-GRAND-CAUX / FÉCAMP",
+          "HOUQUETOT / FÉCAMP",
+          "MANNEVILLE-LA-G / FÉCAMP",
+          "ANNOUVILLE-VILMESNIL / FÉCAMP",
+          "VATTETOT-SOUS-B / FÉCAMP",
+        ],
         name: "FÉCAMP",
         girouette: {
           routeNumber: {
@@ -9166,7 +6546,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["FÉCAMP / BOLBEC"],
+        id: ["FÉCAMP / BOLBEC", "GODERVILLE / BOLBEC"],
         name: "BOLBEC",
         girouette: {
           routeNumber: {
@@ -9249,48 +6629,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "GODERVILLE" }],
         },
       },
-      {
-        id: ["GODERVILLE / BOLBEC"],
-        name: "BOLBEC",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "507",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOLBEC" }],
-        },
-      },
-      {
-        id: ["ANNOUVILLE-VILMESNIL / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "507",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["VATTETOT-SOUS-B / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "507",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
     ],
   },
   {
@@ -9342,7 +6680,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["FÉCAMP / LE HAVRE"],
+        id: ["FÉCAMP / LE HAVRE", "ST-SAUVEUR-D'ÉMALLEVILLE / LE HAVRE", "VALMONT / LE HAVRE"],
         name: "LE HAVRE",
         girouette: {
           routeNumber: {
@@ -9356,7 +6694,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["FÉCAMP / MONTIVILLIERS"],
+        id: ["FÉCAMP / MONTIVILLIERS", "GODERVILLE / MONTIVILLIERS"],
         name: "MONTIVILLIERS",
         girouette: {
           routeNumber: {
@@ -9384,91 +6722,16 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["GODERVILLE / MONTIVILLIERS"],
-        name: "MONTIVILLIERS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "MONTIVILLIERS" }],
-        },
-      },
-      {
-        id: ["ST-SAUVEUR-D'ÉMALLEVILLE / LE HAVRE"],
-        name: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
-        },
-      },
-      {
-        id: ["VALMONT / LE HAVRE"],
-        name: "LE HAVRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LE HAVRE" }],
-        },
-      },
-      {
-        id: ["ANGERVILLE-L'ORCHER / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["GODERVILLE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["HERMEVILLE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["LE HAVRE / FÉCAMP"],
+        id: [
+          "ANGERVILLE-L'ORCHER / FÉCAMP",
+          "GODERVILLE / FÉCAMP",
+          "HERMEVILLE / FÉCAMP",
+          "LE HAVRE / FÉCAMP",
+          "MANIQUERVILLE / FÉCAMP",
+          "MONTIVILLIERS / FÉCAMP",
+          "ST-MARTIN-DU-BEC / FÉCAMP",
+          "TURRETOT / FÉCAMP",
+        ],
         name: "FÉCAMP",
         girouette: {
           routeNumber: {
@@ -9496,34 +6759,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["MANIQUERVILLE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["MONTIVILLIERS / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
         id: ["MONTIVILLIERS / ST-SAUVEUR-D'ÉMALLEVILLE"],
         name: "ST-SAUVEUR-D'ÉMALLEVILLE",
         girouette: {
@@ -9535,34 +6770,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [[{ text: "SAINT-SAUVEUR" }, { text: "D'EMALLEVILLE" }]],
-        },
-      },
-      {
-        id: ["ST-MARTIN-DU-BEC / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["TURRETOT / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec413d",
-            textColor: "#000000",
-            text: "508",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
       {
@@ -9588,175 +6795,22 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#bf922a", text: "#000000" },
     destinations: [
       {
-        id: ["BEAUREPAIRE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["BÉNOUVILLE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["GERVILLE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["CRIQUEBEUF-EN-C / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["CUVERVILLE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["ÉTRETAT / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["HEUQUEVILLE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["LE HAVRE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["LES LOGES / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["VATTETOT-SUR-M / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["VILLAINVILLE / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["YPORT / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["FROBERVILLE / FÉCAMP"],
+        id: [
+          "BEAUREPAIRE / FÉCAMP",
+          "BÉNOUVILLE / FÉCAMP",
+          "GERVILLE / FÉCAMP",
+          "CRIQUEBEUF-EN-C / FÉCAMP",
+          "CUVERVILLE / FÉCAMP",
+          "ÉTRETAT / FÉCAMP",
+          "HEUQUEVILLE / FÉCAMP",
+          "LE HAVRE / FÉCAMP",
+          "LES LOGES / FÉCAMP",
+          "VATTETOT-SUR-M / FÉCAMP",
+          "VILLAINVILLE / FÉCAMP",
+          "YPORT / FÉCAMP",
+          "FROBERVILLE / FÉCAMP",
+          "OCTEVILLE-SUR-M / FÉCAMP",
+        ],
         name: "FÉCAMP",
         girouette: {
           routeNumber: {
@@ -9795,20 +6849,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "YPORT" }],
-        },
-      },
-      {
-        id: ["OCTEVILLE-SUR-M / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#bf922a",
-            textColor: "#000000",
-            text: "509",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
         },
       },
     ],
@@ -9989,242 +7029,7 @@ const nomadRegionRoutes: Route[] = [
       },
     ],
   },
-  {
-    id: "NOMAD:510",
-    noCartridge: true,
-    name: "510",
-    colors: { background: "#864595", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["FÉCAMP / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#864595",
-            textColor: "#ffffff",
-            text: "510",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-      {
-        id: ["YVETOT / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#864595",
-            textColor: "#ffffff",
-            text: "510",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:511",
-    noCartridge: true,
-    name: "511",
-    colors: { background: "#ba4d95", text: "#000000" },
-    destinations: [
-      {
-        id: ["ROUEN / ROUMARE"],
-        name: "ROUMARE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ba4d95",
-            textColor: "#000000",
-            text: "511",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUMARE" }],
-        },
-      },
-      {
-        id: ["ROUMARE / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ba4d95",
-            textColor: "#000000",
-            text: "511",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:512",
-    noCartridge: true,
-    name: "512",
-    colors: { background: "#5665ab", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["FRESNE-LE-PLAN / LE MESNIL-ESNARD"],
-        name: "LE MESNIL-ESNARD",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "512",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE MESNIL-ESNARD" }],
-        },
-      },
-      {
-        id: ["PERRIERS-SUR-A / LE MESNIL-ESNARD"],
-        name: "LE MESNIL-ESNARD",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "512",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE MESNIL-ESNARD" }],
-        },
-      },
-      {
-        id: ["LE MESNIL-ESNARD / PERRIERS-SUR-A"],
-        name: "PERRIERS-SUR-A",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "512",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1507SUPX", text: "PERRIERS-SUR-ANDELLE" }],
-        },
-      },
-      {
-        id: ["LE MESNIL-ESNARD / MESNIL-RAOUL"],
-        name: "MESNIL-RAOUL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "512",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MESNIL-RAOUL" }],
-        },
-      },
-      {
-        id: ["FRANQUEVILLE-ST-PIERRE / PERRIERS-SUR-A"],
-        name: "PERRIERS-SUR-A",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "512",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1507SUPX", text: "PERRIERS-SUR-ANDELLE" }],
-        },
-      },
-      {
-        id: ["PERRIERS-SUR-A / FRANQUEVILLE-ST-PIERRE"],
-        name: "FRANQUEVILLE-ST-PIERRE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5665ab",
-            textColor: "#ffffff",
-            text: "512",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1407SUPX", text: "FRANQUEVILLE-ST-PIERRE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:513",
-    noCartridge: true,
-    name: "513",
-    colors: { background: "#9ac63f", text: "#000000" },
-    destinations: [
-      {
-        id: ["ST-VALÉRY-EN-C / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ac63f",
-            textColor: "#000000",
-            text: "513",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["FÉCAMP / ST-VALÉRY-EN-C"],
-        name: "ST-VALÉRY-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ac63f",
-            textColor: "#000000",
-            text: "513",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:514",
-    noCartridge: true,
-    name: "514",
-    colors: { background: "#ea5284", text: "#000000" },
-    destinations: [
-      {
-        id: ["DIEPPE / ST-VALÉRY-EN-C"],
-        name: "ST-VALÉRY-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ea5284",
-            textColor: "#000000",
-            text: "514",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
-        },
-      },
-      {
-        id: ["ST-VALÉRY-EN-C / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ea5284",
-            textColor: "#000000",
-            text: "514",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-    ],
-  },
+
   {
     id: "NOMAD:515",
     noCartridge: true,
@@ -10246,7 +7051,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["DIEPPE / ST-AUBIN-SUR-S"],
+        id: ["DIEPPE / ST-AUBIN-SUR-S", "ST-SAËNS / ST-AUBIN-SUR-S"],
         name: "ST-AUBIN-SUR-S",
         girouette: {
           routeNumber: {
@@ -10260,7 +7065,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ST-AUBIN-SUR-S / LA CHAPELLE-DU-BOURGAY"],
+        id: ["ST-AUBIN-SUR-S / LA CHAPELLE-DU-BOURGAY", "DIEPPE / LA CHAPELLE-DU-BOURGAY"],
         name: "LA CHAPELLE-DU-BOURGAY",
         girouette: {
           routeNumber: {
@@ -10274,7 +7079,13 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["MONTREUIL-EN-C / DIEPPE"],
+        id: [
+          "MONTREUIL-EN-C / DIEPPE",
+          "TORCY-LE-PETIT / DIEPPE",
+          "BELLENCOMBRE / DIEPPE",
+          "ST-SAËNS / DIEPPE",
+          "LA CHAUSSÉE / DIEPPE",
+        ],
         name: "DIEPPE",
         girouette: {
           routeNumber: {
@@ -10299,62 +7110,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "NOTRE-DAME-DU-PARC" }],
-        },
-      },
-      {
-        id: ["TORCY-LE-PETIT / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec7223",
-            textColor: "#000000",
-            text: "515",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["DIEPPE / LA CHAPELLE-DU-BOURGAY"],
-        name: "LA CHAPELLE-DU-BOURGAY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec7223",
-            textColor: "#000000",
-            text: "515",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1407SUPX", text: "LA CHAPELLE-DU-BOURGAY" }],
-        },
-      },
-      {
-        id: ["ST-SAËNS / ST-AUBIN-SUR-S"],
-        name: "ST-AUBIN-SUR-S",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec7223",
-            textColor: "#000000",
-            text: "515",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1407SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
-        },
-      },
-      {
-        id: ["BELLENCOMBRE / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec7223",
-            textColor: "#000000",
-            text: "515",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
         },
       },
       {
@@ -10383,34 +7138,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "ST-SAENS" }],
-        },
-      },
-      {
-        id: ["ST-SAËNS / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec7223",
-            textColor: "#000000",
-            text: "515",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["LA CHAUSSÉE / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#ec7223",
-            textColor: "#000000",
-            text: "515",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
         },
       },
       {
@@ -10548,7 +7275,13 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BRUNVILLE / DIEPPE"],
+        id: [
+          "BRUNVILLE / DIEPPE",
+          "ENVERMEU / DIEPPE",
+          "LONDINIÈRES / DIEPPE",
+          "ST-OUEN-SOUS-BAILLY / DIEPPE",
+          "FRESNOY-FOLNY / DIEPPE",
+        ],
         name: "DIEPPE",
         girouette: {
           routeNumber: {
@@ -10562,21 +7295,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ENVERMEU / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#73bb45",
-            textColor: "#ffffff",
-            text: "516",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["ENVERMEU / ST-AUBIN-SUR-S"],
+        id: ["ENVERMEU / ST-AUBIN-SUR-S", "FRESNOY-FOLNY / ST-AUBIN-SUR-S"],
         name: "ST-AUBIN-SUR-S",
         girouette: {
           routeNumber: {
@@ -10587,62 +7306,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#000000",
           },
           pages: [{ font: "1407SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
-        },
-      },
-      {
-        id: ["LONDINIÈRES / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#73bb45",
-            textColor: "#ffffff",
-            text: "516",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["ST-OUEN-SOUS-BAILLY / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#73bb45",
-            textColor: "#ffffff",
-            text: "516",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["FRESNOY-FOLNY / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#73bb45",
-            textColor: "#ffffff",
-            text: "516",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["FRESNOY-FOLNY / ST-AUBIN-SUR-S"],
-        name: "ST-AUBIN-SUR-S",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#73bb45",
-            textColor: "#ffffff",
-            text: "516",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
     ],
@@ -10696,21 +7359,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["DIEPPE / PENLY"],
-        name: "PENLY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9d461",
-            textColor: "#000000",
-            text: "517",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PENLY" }],
-        },
-      },
-      {
-        id: ["ST-AUBIN-SUR-S / PENLY"],
+        id: ["DIEPPE / PENLY", "ST-AUBIN-SUR-S / PENLY"],
         name: "PENLY",
         girouette: {
           routeNumber: {
@@ -10738,77 +7387,14 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BELLEVILLE-SUR-M / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9d461",
-            textColor: "#000000",
-            text: "517",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["BERNEVAL-LE-GRAND / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9d461",
-            textColor: "#000000",
-            text: "517",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["BRACQUEMONT / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9d461",
-            textColor: "#000000",
-            text: "517",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["PENLY / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9d461",
-            textColor: "#000000",
-            text: "517",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["ST-MARTIN-EN-C / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e9d461",
-            textColor: "#000000",
-            text: "517",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["DERCHIGNY / DIEPPE"],
+        id: [
+          "BELLEVILLE-SUR-M / DIEPPE",
+          "BERNEVAL-LE-GRAND / DIEPPE",
+          "BRACQUEMONT / DIEPPE",
+          "PENLY / DIEPPE",
+          "ST-MARTIN-EN-C / DIEPPE",
+          "DERCHIGNY / DIEPPE",
+        ],
         name: "DIEPPE",
         girouette: {
           routeNumber: {
@@ -10872,21 +7458,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["DIEPPE / ST-NICOLAS-D'A"],
-        name: "ST-NICOLAS-D'A",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7accc",
-            textColor: "#000000",
-            text: "518",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ST-NICOLAS-D'A" }],
-        },
-      },
-      {
-        id: ["ST-AUBIN-SUR-S / ST-NICOLAS-D'A"],
+        id: ["DIEPPE / ST-NICOLAS-D'A", "ST-AUBIN-SUR-S / ST-NICOLAS-D'A"],
         name: "ST-NICOLAS-D'A",
         girouette: {
           routeNumber: {
@@ -10914,35 +7486,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ST-JACQUES-D'A / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7accc",
-            textColor: "#000000",
-            text: "518",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["ST-NICOLAS-D'A / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e7accc",
-            textColor: "#000000",
-            text: "518",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["ENVERMEU / DIEPPE"],
+        id: ["ST-JACQUES-D'A / DIEPPE", "ST-NICOLAS-D'A / DIEPPE", "ENVERMEU / DIEPPE"],
         name: "DIEPPE",
         girouette: {
           routeNumber: {
@@ -10964,7 +7508,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#af599e", text: "#000000" },
     destinations: [
       {
-        id: ["BIVILLE-SUR-M / EU"],
+        id: ["BIVILLE-SUR-M / EU", "TOCQUEVILLE-SUR-EU / EU", "DIEPPE / EU"],
         name: "EU",
         girouette: {
           routeNumber: {
@@ -10978,7 +7522,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BIVILLE-SUR-M / LE TRÉPORT"],
+        id: ["BIVILLE-SUR-M / LE TRÉPORT", "CRIEL-SUR-M / LE TRÉPORT"],
         name: "LE TRÉPORT",
         girouette: {
           routeNumber: {
@@ -10992,49 +7536,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CRIEL-SUR-M / LE TRÉPORT"],
-        name: "LE TRÉPORT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "519",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "LE TREPORT" }],
-        },
-      },
-      {
-        id: ["TOCQUEVILLE-SUR-EU / EU"],
-        name: "EU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "519",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EU" }],
-        },
-      },
-      {
-        id: ["DIEPPE / EU"],
-        name: "EU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "519",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EU" }],
-        },
-      },
-      {
-        id: ["EU / BIVILLE-SUR-M"],
+        id: ["EU / BIVILLE-SUR-M", "LE TRÉPORT / BIVILLE-SUR-M"],
         name: "BIVILLE-SUR-M",
         girouette: {
           routeNumber: {
@@ -11059,20 +7561,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["LE TRÉPORT / BIVILLE-SUR-M"],
-        name: "BIVILLE-SUR-M",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "519",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BIVILLE-SUR-MER" }],
         },
       },
       {
@@ -11126,21 +7614,16 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#5187c2", text: "#000000" },
     destinations: [
       {
-        id: ["MAUCOMBLE / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5187c2",
-            textColor: "#000000",
-            text: "520",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["NEUFCHÂTEL-EN-B / ROUEN"],
+        id: [
+          "MAUCOMBLE / ROUEN",
+          "NEUFCHÂTEL-EN-B / ROUEN",
+          "ST-SAËNS / ROUEN",
+          "BUCHY / ROUEN",
+          "CAILLY / ROUEN",
+          "LA RUE-ST-PIERRE / ROUEN",
+          "QUINCAMPOIX / ROUEN",
+          "ESTEVILLE / ROUEN",
+        ],
         name: "ROUEN",
         girouette: {
           routeNumber: {
@@ -11179,76 +7662,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1407SUPX", text: "ST-GEORGES-SUR-FONTAINE" }],
-        },
-      },
-      {
-        id: ["ST-SAËNS / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5187c2",
-            textColor: "#000000",
-            text: "520",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["BUCHY / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5187c2",
-            textColor: "#000000",
-            text: "520",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["CAILLY / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5187c2",
-            textColor: "#000000",
-            text: "520",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["LA RUE-ST-PIERRE / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5187c2",
-            textColor: "#000000",
-            text: "520",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["QUINCAMPOIX / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5187c2",
-            textColor: "#000000",
-            text: "520",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
         },
       },
       {
@@ -11349,70 +7762,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "ST-SAENS" }],
         },
       },
-      {
-        id: ["ESTEVILLE / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#5187c2",
-            textColor: "#000000",
-            text: "520",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:521",
-    noCartridge: true,
-    name: "521",
-    colors: { background: "#c895bf", text: "#000000" },
-    destinations: [
-      {
-        id: ["NEUFCHÂTEL-EN-B / BLANGY-SUR-BRESLE"],
-        name: "BLANGY-SUR-BRESLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c895bf",
-            textColor: "#000000",
-            text: "521",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BLANGY-SUR-BRESLE" }],
-        },
-      },
-      {
-        id: ["GAMACHES / NEUFCHÂTEL-EN-B"],
-        name: "NEUFCHÂTEL-EN-B",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c895bf",
-            textColor: "#000000",
-            text: "521",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "NEUFCHATEL-EN-BRAY" }],
-        },
-      },
-      {
-        id: ["NEUFCHÂTEL-EN-B / GAMACHES"],
-        name: "GAMACHES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c895bf",
-            textColor: "#000000",
-            text: "521",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GAMACHES" }],
-        },
-      },
     ],
   },
   {
@@ -11464,21 +7813,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ELBEUF-SUR-A / SERVAVILLE-S"],
-        name: "SERVAVILLE-S",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e52227",
-            textColor: "#ffffff",
-            text: "522",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1407SUPX", text: "SERVAVILLE-SALMONVILLE" }],
-        },
-      },
-      {
-        id: ["GRAINVILLE-SUR-R / SERVAVILLE-S"],
+        id: ["ELBEUF-SUR-A / SERVAVILLE-S", "GRAINVILLE-SUR-R / SERVAVILLE-S", "CROISY-SUR-A / SERVAVILLE-S"],
         name: "SERVAVILLE-S",
         girouette: {
           routeNumber: {
@@ -11506,20 +7841,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CROISY-SUR-A / SERVAVILLE-S"],
-        name: "SERVAVILLE-S",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e52227",
-            textColor: "#ffffff",
-            text: "522",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1407SUPX", text: "SERVAVILLE-SALMONVILLE" }],
-        },
-      },
-      {
         id: ["ROUEN / LA FEUILLIE"],
         name: "LA FEUILLIE",
         girouette: {
@@ -11534,21 +7855,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CROISY-SUR-A / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e52227",
-            textColor: "#ffffff",
-            text: "522",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["VASCOEUIL / ROUEN"],
+        id: ["CROISY-SUR-A / ROUEN", "VASCOEUIL / ROUEN", "GOURNAY-EN-B / ROUEN"],
         name: "ROUEN",
         girouette: {
           routeNumber: {
@@ -11575,20 +7882,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "VASCOEUIL" }],
         },
       },
-      {
-        id: ["GOURNAY-EN-B / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e52227",
-            textColor: "#ffffff",
-            text: "522",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
     ],
   },
   {
@@ -11612,7 +7905,12 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ST-MACLOU-DE-FOLLEVILLE / DIEPPE"],
+        id: [
+          "ST-MACLOU-DE-FOLLEVILLE / DIEPPE",
+          "VAL-DE-SAÂNE / DIEPPE",
+          "BERTRIMONT / DIEPPE",
+          "HEUGLEVILLE SUR SCIE / DIEPPE",
+        ],
         name: "DIEPPE",
         girouette: {
           routeNumber: {
@@ -11654,20 +7952,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["VAL-DE-SAÂNE / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ac63d",
-            textColor: "#000000",
-            text: "523",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
         id: ["DIEPPE / ETAIMPUIS"],
         name: "ETAIMPUIS",
         girouette: {
@@ -11679,20 +7963,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "ETAIMPUIS" }],
-        },
-      },
-      {
-        id: ["BERTRIMONT / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ac63d",
-            textColor: "#000000",
-            text: "523",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
         },
       },
       {
@@ -11751,20 +8021,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "AUFFAY" }],
         },
       },
-      {
-        id: ["HEUGLEVILLE SUR SCIE / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ac63d",
-            textColor: "#000000",
-            text: "523",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
     ],
   },
   {
@@ -11774,7 +8030,13 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#fbc134", text: "#000000" },
     destinations: [
       {
-        id: ["BACQUEVILLE-EN-C / DIEPPE"],
+        id: [
+          "BACQUEVILLE-EN-C / DIEPPE",
+          "LONGUEVILLE-SUR-S / DIEPPE",
+          "VÉNESTANVILLE / DIEPPE",
+          "BELMESNIL / DIEPPE",
+          "SAÂNE-ST-JUST / DIEPPE",
+        ],
         name: "DIEPPE",
         girouette: {
           routeNumber: {
@@ -11830,62 +8092,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LONGUEVILLE-SUR-S / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#fbc134",
-            textColor: "#000000",
-            text: "524",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["VÉNESTANVILLE / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#fbc134",
-            textColor: "#000000",
-            text: "524",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["BELMESNIL / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#fbc134",
-            textColor: "#000000",
-            text: "524",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
-        id: ["SAÂNE-ST-JUST / DIEPPE"],
-        name: "DIEPPE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#fbc134",
-            textColor: "#000000",
-            text: "524",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DIEPPE" }],
-        },
-      },
-      {
         id: ["DIEPPE / LAMMERVILLE"],
         name: "LAMMERVILLE",
         girouette: {
@@ -11930,49 +8136,13 @@ const nomadRegionRoutes: Route[] = [
     ],
   },
   {
-    id: "NOMAD:525",
-    noCartridge: true,
-    name: "525",
-    colors: { background: "#292f6a", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["YVETOT / ST-VALÉRY-EN-C"],
-        name: "ST-VALÉRY-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#292f6a",
-            textColor: "#ffffff",
-            text: "525",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1507SUPX", text: "SAINT-VALERY-EN-CAUX" }],
-        },
-      },
-      {
-        id: ["ST-VALÉRY-EN-C / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#292f6a",
-            textColor: "#ffffff",
-            text: "525",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-    ],
-  },
-  {
     id: "NOMAD:526",
     noCartridge: true,
     name: "526",
     colors: { background: "#a6cc3a", text: "#000000" },
     destinations: [
       {
-        id: ["ROUEN / PAVILLY"],
+        id: ["ROUEN / PAVILLY", "YVETOT / PAVILLY", "YERVILLE / PAVILLY"],
         name: "PAVILLY",
         girouette: {
           routeNumber: {
@@ -12000,7 +8170,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["BARENTIN / YERVILLE"],
+        id: ["BARENTIN / YERVILLE", "PAVILLY / YERVILLE"],
         name: "YERVILLE",
         girouette: {
           routeNumber: {
@@ -12014,35 +8184,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["PAVILLY / YERVILLE"],
-        name: "YERVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a6cc3a",
-            textColor: "#000000",
-            text: "526",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YERVILLE" }],
-        },
-      },
-      {
-        id: ["YVETOT / PAVILLY"],
-        name: "PAVILLY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a6cc3a",
-            textColor: "#000000",
-            text: "526",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PAVILLY" }],
-        },
-      },
-      {
-        id: ["PAVILLY / ROUEN"],
+        id: ["PAVILLY / ROUEN", "MOTTEVILLE / ROUEN"],
         name: "ROUEN",
         girouette: {
           routeNumber: {
@@ -12067,20 +8209,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#FFFFFF",
           },
           pages: [{ font: "1508SUPX", text: "BARENTIN" }],
-        },
-      },
-      {
-        id: ["MOTTEVILLE / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a6cc3a",
-            textColor: "#000000",
-            text: "526",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
         },
       },
       {
@@ -12111,20 +8239,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1407SUPX", text: "SAINT-JEAN-DU-CARDONNAY" }],
         },
       },
-      {
-        id: ["YERVILLE / PAVILLY"],
-        name: "PAVILLY",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#a6cc3a",
-            textColor: "#000000",
-            text: "526",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "PAVILLY" }],
-        },
-      },
     ],
   },
   {
@@ -12134,36 +8248,8 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#78bbe1", text: "#000000" },
     destinations: [
       {
-        id: ["BOLBEC / BRÉAUTÉ"],
-        name: "BRÉAUTÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#78bbe1",
-            textColor: "#000000",
-            text: "528",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BREAUTE" }],
-        },
-      },
-      {
-        id: ["BRÉAUTÉ / FAUVILLE-EN-CAUX"],
-        name: "FAUVILLE-EN-CAUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#78bbe1",
-            textColor: "#000000",
-            text: "528",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
-        },
-      },
-      {
         id: ["BRÉAUTÉ / NOINTOT"],
-        name: "NOINTOT",
+        name: "Nointot",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -12176,22 +8262,9 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["NOINTOT / BRÉAUTÉ"],
-        name: "BRÉAUTÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#78bbe1",
-            textColor: "#000000",
-            text: "528",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BREAUTE" }],
-        },
-      },
-      {
         id: ["BRÉAUTÉ / BOLBEC"],
-        name: "BOLBEC",
+        autoHide: true,
+        name: "Bolbec",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -12203,6 +8276,35 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "BOLBEC" }],
         },
       },
+      {
+        id: ["BRÉAUTÉ / FAUVILLE-EN-CAUX"],
+        autoHide: true,
+        name: "Fauville-en-Caux",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#78bbe1",
+            textColor: "#000000",
+            text: "528",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
+        },
+      },
+      {
+        id: ["BOLBEC / BRÉAUTÉ", "NOINTOT / BRÉAUTÉ"],
+        name: "Bréauté",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#78bbe1",
+            textColor: "#000000",
+            text: "528",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "BREAUTE" }],
+        },
+      },
     ],
   },
   {
@@ -12212,7 +8314,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#f4a94e", text: "#000000" },
     destinations: [
       {
-        id: ["GRUGNY / ROUEN"],
+        id: ["GRUGNY / ROUEN", "FONTAINE-LE-B / ROUEN", "CLÈRES / ROUEN", "BOSC-LE-HARD / ROUEN", "MONTVILLE / ROUEN"],
         name: "ROUEN",
         girouette: {
           routeNumber: {
@@ -12268,20 +8370,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["FONTAINE-LE-B / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f4a94e",
-            textColor: "#000000",
-            text: "529",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
         id: ["ROUEN / LE BOCASSE"],
         name: "LE BOCASSE",
         girouette: {
@@ -12310,20 +8398,6 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["CLÈRES / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f4a94e",
-            textColor: "#000000",
-            text: "529",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
         id: ["ROUEN / BOSC-LE-HARD"],
         name: "BOSC-LE-HARD",
         girouette: {
@@ -12337,84 +8411,6 @@ const nomadRegionRoutes: Route[] = [
           pages: [{ font: "1508SUPX", text: "BOSC-LE-HARD" }],
         },
       },
-      {
-        id: ["BOSC-LE-HARD / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f4a94e",
-            textColor: "#000000",
-            text: "529",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["MONTVILLE / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#f4a94e",
-            textColor: "#000000",
-            text: "529",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:530",
-    noCartridge: true,
-    name: "530",
-    colors: { background: "#e30613", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["DUCLAIR / CAUDEBEC-EN-C"],
-        name: "CAUDEBEC-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e30613",
-            textColor: "#ffffff",
-            text: "530",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-CAUX" }],
-        },
-      },
-      {
-        id: ["CAUDEBEC-EN-C / ROUEN"],
-        name: "ROUEN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e30613",
-            textColor: "#ffffff",
-            text: "530",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["ROUEN / CAUDEBEC-EN-C"],
-        name: "CAUDEBEC-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e30613",
-            textColor: "#ffffff",
-            text: "530",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "CAUDEBEC-EN-CAUX" }],
-        },
-      },
     ],
   },
   {
@@ -12424,22 +8420,8 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#c56927", text: "#ffffff" },
     destinations: [
       {
-        id: ["BARENTIN / BARENTIN"],
-        name: "BARENTIN",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#c56927",
-            textColor: "#ffffff",
-            text: "531",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "BARENTIN" }],
-        },
-      },
-      {
-        id: ["LE TRAIT / BARENTIN"],
-        name: "BARENTIN",
+        id: ["BARENTIN / BARENTIN", "LE TRAIT / BARENTIN"],
+        name: "Barentin",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -12453,7 +8435,7 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["BARENTIN / LE TRAIT"],
-        name: "LE TRAIT",
+        name: "Le Trait",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -12463,800 +8445,6 @@ const nomadRegionRoutes: Route[] = [
             outlineColor: "#000000",
           },
           pages: [{ font: "1508SUPX", text: "LE TRAIT" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:532",
-    noCartridge: true,
-    name: "532",
-    colors: { background: "#b5c069", text: "#000000" },
-    destinations: [
-      {
-        id: ["HATTENVILLE / BOLBEC"],
-        name: "BOLBEC",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "532",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOLBEC" }],
-        },
-      },
-      {
-        id: ["YÉBLERON / BOLBEC"],
-        name: "BOLBEC",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "532",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BOLBEC" }],
-        },
-      },
-      {
-        id: ["BOLBEC / FAUVILLE-EN-C"],
-        name: "FAUVILLE-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "532",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
-        },
-      },
-      {
-        id: ["BOLBEC / HATTENVILLE"],
-        name: "HATTENVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "532",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "HATTENVILLE" }],
-        },
-      },
-      {
-        id: ["BOLBEC / YÉBLERON"],
-        name: "YÉBLERON",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "532",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YEBLERON" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:533",
-    noCartridge: true,
-    name: "533",
-    colors: { background: "#3eacdd", text: "#000000" },
-    destinations: [
-      {
-        id: ["OUAINVILLE / CANY-BARVILLE"],
-        name: "CANY-BARVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#3eacdd",
-            textColor: "#000000",
-            text: "533",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CANY-BARVILLE" }],
-        },
-      },
-      {
-        id: ["CANY-BARVILLE / VITTEFLEUR"],
-        name: "VITTEFLEUR",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#3eacdd",
-            textColor: "#000000",
-            text: "533",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VITTEFLEUR" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:534",
-    noCartridge: true,
-    name: "534",
-    colors: { background: "#af599e", text: "#000000" },
-    destinations: [
-      {
-        id: ["CRIEL-SUR-M / TOUFFREVILLE-SUR-EU"],
-        name: "TOUFFREVILLE-SUR-EU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "534",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "TOUFFREVILLE-SUR-EU" }],
-        },
-      },
-      {
-        id: ["TOUFFREVILLE-SUR-EU / CRIEL-SUR-M"],
-        name: "CRIEL-SUR-M",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "534",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "CRIEL-SUR-MER" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:535",
-    noCartridge: true,
-    name: "535",
-    colors: { background: "#af599e", text: "#000000" },
-    destinations: [
-      {
-        id: ["EU / GUERVILLE"],
-        name: "GUERVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "535",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GUERVILLE" }],
-        },
-      },
-      {
-        id: ["GUERVILLE / EU"],
-        name: "EU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "535",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EU" }],
-        },
-      },
-      {
-        id: ["EU / TOUFFREVILLE-SUR-EU"],
-        name: "TOUFFREVILLE-SUR-EU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "535",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "TOUFFREVILLE-SUR-EU" }],
-        },
-      },
-      {
-        id: ["TOUFFREVILLE-SUR-EU / EU"],
-        name: "EU",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#af599e",
-            textColor: "#000000",
-            text: "535",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "EU" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:536",
-    noCartridge: true,
-    name: "536",
-    colors: { background: "#b5c069", text: "#000000" },
-    destinations: [
-      {
-        id: ["FAUVILLE-EN-C / HATTENVILLE"],
-        name: "HATTENVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "536",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "HATTENVILLE" }],
-        },
-      },
-      {
-        id: ["HATTENVILLE / FAUVILLE-EN-C"],
-        name: "FAUVILLE-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "536",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
-        },
-      },
-      {
-        id: ["FAUVILLE-EN-C / HAUTOT-LE-VATOIS"],
-        name: "HAUTOT-LE-VATOIS",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "536",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "HAUTOT-LE-VATOIS" }],
-        },
-      },
-      {
-        id: ["FAUVILLE-EN-C / BERMONVILLE"],
-        name: "BERMONVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "536",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BERMONVILLE" }],
-        },
-      },
-      {
-        id: ["HAUTOT-LE-VATOIS / FAUVILLE-EN-C"],
-        name: "FAUVILLE-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "536",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
-        },
-      },
-      {
-        id: ["BERMONVILLE / FAUVILLE-EN-C"],
-        name: "FAUVILLE-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#b5c069",
-            textColor: "#000000",
-            text: "536",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:537",
-    noCartridge: true,
-    name: "537",
-    colors: { background: "#e61e28", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["FORGES-LES-E / LONGMESNIL"],
-        name: "LONGMESNIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "537",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LONGMESNIL" }],
-        },
-      },
-      {
-        id: ["HAUCOURT / FORGES-LES-E"],
-        name: "FORGES-LES-E",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "537",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
-        },
-      },
-      {
-        id: ["FORGES-LES-E / SERQUEUX"],
-        name: "SERQUEUX",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "537",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "SERQUEUX" }],
-        },
-      },
-      {
-        id: ["GAILLEFONTAINE / FORGES-LES-E"],
-        name: "FORGES-LES-E",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "537",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
-        },
-      },
-      {
-        id: ["FORGES-LES-E / LE FOSSÉ"],
-        name: "LE FOSSÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "537",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "LE FOSSE" }],
-        },
-      },
-      {
-        id: ["RONCHEROLLES-EN-B / FORGES-LES-E"],
-        name: "FORGES-LES-E",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "537",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "FORGES-LES-EAUX" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:538",
-    noCartridge: true,
-    name: "538",
-    colors: { background: "#9ab36c", text: "#000000" },
-    destinations: [
-      {
-        id: ["GODERVILLE / VIRVILLE"],
-        name: "VIRVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "VIRVILLE" }],
-        },
-      },
-      {
-        id: ["GODERVILLE / SAUSSEUZEMARE"],
-        name: "SAUSSEUZEMARE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "SAUSSEUZEMARE" }],
-        },
-      },
-      {
-        id: ["GODERVILLE / HATTENVILLE"],
-        name: "HATTENVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "HATTENVILLE" }],
-        },
-      },
-      {
-        id: ["GODERVILLE / BERNIÈRES"],
-        name: "BERNIÈRES",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "BERNIERES" }],
-        },
-      },
-      {
-        id: ["GODERVILLE / ANNOUVILLE-VILMESNIL"],
-        name: "ANNOUVILLE-VILMESNIL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "ANNOUVILLE-VILMESNIL" }],
-        },
-      },
-      {
-        id: ["VIRVILLE / GODERVILLE"],
-        name: "GODERVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GODERVILLE" }],
-        },
-      },
-      {
-        id: ["SAUSSEUZEMARE / GODERVILLE"],
-        name: "GODERVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GODERVILLE" }],
-        },
-      },
-      {
-        id: ["HATTENVILLE / GODERVILLE"],
-        name: "GODERVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GODERVILLE" }],
-        },
-      },
-      {
-        id: ["BERNIÈRES / GODERVILLE"],
-        name: "GODERVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GODERVILLE" }],
-        },
-      },
-      {
-        id: ["ANNOUVILLE-VILMESNIL / GODERVILLE"],
-        name: "GODERVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ab36c",
-            textColor: "#000000",
-            text: "538",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "GODERVILLE" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:539",
-    noCartridge: true,
-    name: "539",
-    colors: { background: "#e61e28", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["GOURNAY-EN-B / NEUF-MARCHÉ"],
-        name: "NEUF-MARCHÉ",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "539",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "NEUF-MARCHE" }],
-        },
-      },
-      {
-        id: ["GOURNAY-EN-B / MÉNERVAL"],
-        name: "MÉNERVAL",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "539",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "MENERVAL" }],
-        },
-      },
-      {
-        id: ["GOURNAY-EN-B / FERRIÈRES-EN-B"],
-        name: "FERRIÈRES-EN-B",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "539",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "FERRIERES-EN-BRAY" }],
-        },
-      },
-      {
-        id: ["GOURNAY-EN-B / DOUDEAUVILLE"],
-        name: "DOUDEAUVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "539",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "DOUDEAUVILLE" }],
-        },
-      },
-      {
-        id: ["NEUF-MARCHÉ / GOURNAY-EN-B"],
-        name: "GOURNAY-EN-B",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "539",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
-        },
-      },
-      {
-        id: ["MÉNERVAL / GOURNAY-EN-B"],
-        name: "GOURNAY-EN-B",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "539",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
-        },
-      },
-      {
-        id: ["FERRIÈRES-EN-B / GOURNAY-EN-B"],
-        name: "GOURNAY-EN-B",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "539",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
-        },
-      },
-      {
-        id: ["DOUDEAUVILLE / GOURNAY-EN-B"],
-        name: "GOURNAY-EN-B",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#e61e28",
-            textColor: "#ffffff",
-            text: "539",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "GOURNAY-EN-BRAY" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:540",
-    noCartridge: true,
-    name: "540",
-    colors: { background: "#cab100", text: "#000000" },
-    destinations: [
-      {
-        id: ["YVETOT / DOUDEVILLE"],
-        name: "DOUDEVILLE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "540",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "DOUDEVILLE" }],
-        },
-      },
-      {
-        id: ["DOUDEVILLE / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "540",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-      {
-        id: ["YVETOT / FAUVILLE-EN-C"],
-        name: "FAUVILLE-EN-C",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "540",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FAUVILLE-EN-CAUX" }],
-        },
-      },
-      {
-        id: ["YVETOT / ALVIMARE"],
-        name: "ALVIMARE",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "540",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "ALVIMARE" }],
-        },
-      },
-      {
-        id: ["FAUVILLE-EN-C / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "540",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-      {
-        id: ["ALVIMARE / YVETOT"],
-        name: "YVETOT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#cab100",
-            textColor: "#000000",
-            text: "540",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "YVETOT" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "NOMAD:541",
-    noCartridge: true,
-    name: "541",
-    colors: { background: "#9ac36f", text: "#000000" },
-    destinations: [
-      {
-        id: ["ST-PIERRE-EN-PORT / FÉCAMP"],
-        name: "FÉCAMP",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ac36f",
-            textColor: "#000000",
-            text: "541",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1508SUPX", text: "FECAMP" }],
-        },
-      },
-      {
-        id: ["FÉCAMP / ST-PIERRE-EN-PORT"],
-        name: "ST-PIERRE-EN-PORT",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#9ac36f",
-            textColor: "#000000",
-            text: "541",
-            outlineColor: "#FFFFFF",
-          },
-          pages: [{ font: "1507SUPX", text: "SAINT-PIERRE-EN-PORT" }],
         },
       },
     ],
