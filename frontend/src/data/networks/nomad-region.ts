@@ -1078,7 +1078,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUEN / ÉVREUX", "MONT-SAINT-AIGNAN / ÉVREUX", "VERNEUIL-SUR-AVRE / ÉVREUX"],
+        id: ["ROUEN / ÉVREUX", "MONT-SAINT-AIGNAN / ÉVREUX", "VERNEUIL-SUR-AVRE / ÉVREUX", "ÉVREUX"],
         name: "Évreux",
         girouette: {
           routeNumber: {
@@ -1092,7 +1092,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["LOUVIERS / ROUEN", "ÉVREUX / ROUEN"],
+        id: ["LOUVIERS / ROUEN", "ÉVREUX / ROUEN", "ROUEN"],
         name: "Rouen",
         girouette: {
           routeNumber: {
@@ -1106,7 +1106,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUEN / MONT-SAINT-AIGNAN"],
+        id: ["ROUEN / MONT-SAINT-AIGNAN", "MONT-SAINT-AIGNAN"],
         autoHide: true,
         name: "Mont-Saint-Aignan",
         girouette: {
@@ -1735,7 +1735,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["ROUEN / PONT-AUDEMER"],
+        id: ["ROUEN / PONT-AUDEMER", "PONT-AUDEMER"],
         name: "Pont-Audemer",
         girouette: {
           routeNumber: {
@@ -1764,7 +1764,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUTOT / ROUEN", "PONT-AUDEMER / ROUEN"],
+        id: ["ROUTOT / ROUEN", "PONT-AUDEMER / ROUEN", "ROUEN"],
         name: "Rouen",
         girouette: {
           routeNumber: {
@@ -3133,7 +3133,7 @@ const nomadRegionRoutes: Route[] = [
     colors: { background: "#9E6A9A", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["SERQUEUX / DIEPPE", "FORGES-LES-E / DIEPPE"],
+        id: ["SERQUEUX / DIEPPE", "FORGES-LES-E / DIEPPE", "DIEPPE"],
         name: "Dieppe",
         girouette: {
           routeNumber: {
@@ -3162,7 +3162,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["DIEPPE / SERQUEUX", "GISORS / SERQUEUX"],
+        id: ["DIEPPE / SERQUEUX", "GISORS / SERQUEUX", "SERQUEUX"],
         name: "Serqueux",
         girouette: {
           routeNumber: {
@@ -3176,7 +3176,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["DIEPPE / FORGES-LES-E"],
+        id: ["DIEPPE / FORGES-LES-E", "FORGES-LES-EAUX"],
         autoHide: true,
         name: "Forges-les-Eaux",
         girouette: {
@@ -3191,7 +3191,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["MESNIÈRES-EN-B / GISORS", "SERQUEUX / GISORS"],
+        id: ["MESNIÈRES-EN-B / GISORS", "SERQUEUX / GISORS", "GISORS"],
         name: "Gisors",
         girouette: {
           routeNumber: {
