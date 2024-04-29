@@ -99,7 +99,7 @@ async function loadCalendars(resourcePath: string) {
     }
   });
 
-  return calendars;
+  return calendars.toSorted(searchSort);
 }
 
 async function loadShapes(resourcePath: string): Promise<Shape[]> {
