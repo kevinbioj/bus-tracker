@@ -1,7 +1,7 @@
-import { Database } from 'bun:sqlite';
-import { drizzle } from 'drizzle-orm/bun-sqlite';
+import Database from 'better-sqlite3';
+import { drizzle } from 'drizzle-orm/better-sqlite3';
 
-const DB_PATH = Bun.env.DB_PATH;
+const DB_PATH = process.env.DB_PATH;
 if (typeof DB_PATH === 'undefined') {
   console.warn(`YABS\tNo database path supplied (DB_PATH), activities won't be recorded.`);
 }

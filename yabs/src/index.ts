@@ -1,3 +1,4 @@
+import { serve } from '@hono/node-server';
 import { Cron } from 'croner';
 import dayjs from 'dayjs';
 import { Context, Hono } from 'hono';
@@ -21,7 +22,7 @@ const DEFAULT_RETRY_INTERVAL = 10_000;
 
 const gtfsResources = new Map<string, GtfsResource>();
 const output = new Map<string, YabsEntry[]>();
-const suppliedDatabase = !!Bun.env.DB_PATH;
+const suppliedDatabase = !!process.env.DB_PATH;
 let hasComputedFirstEntries = false;
 
 console.log(`YABS\tListening on port ${port}.`);
@@ -30,7 +31,6 @@ server.get('/vehicles', handleGetVehicles);
 server.get('/history', handleGetVehicleList);
 server.get('/history/:operator', handleGetOperatorVehicleList);
 server.get('/history/:operator/:number', handleGetOperatorVehicle);
-export default { port, fetch: server.fetch };
 
 async function init() {
   console.log('YABS\tLoading resources into memory.');
@@ -197,3 +197,5 @@ async function updateEntries(source: Source) {
     }
   }
 }
+
+serve({ fetch: server.fetch, port });

@@ -1,5 +1,6 @@
-export async function parseCsv<T = Record<string, string>>(input: string) {
+export async function parseCsv<T = Record<string, string>>(input: string | Buffer) {
   const [header, ...records] = input
+    .toString()
     .trimEnd()
     .split(/\r?\n/)
     .map((line) => line.trim().split(','));
