@@ -1,5 +1,5 @@
-import { sleep } from 'bun';
 import { exec } from 'node:child_process';
+import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { groupBy } from '~/utils/group-by';
@@ -46,8 +46,7 @@ export async function downloadStaticResource(properties: GtfsProperties) {
 
 async function loadCalendars(resourcePath: string) {
   const calendars: Calendar[] = (
-    await Bun.file(join(resourcePath, 'calendar.txt'))
-      .text()
+    await readFile(join(resourcePath, 'calendar.txt'))
       .then(parseCsv)
       .catch(() => [])
   )
@@ -70,8 +69,7 @@ async function loadCalendars(resourcePath: string) {
     .toSorted(searchSort);
 
   (
-    await Bun.file(join(resourcePath, 'calendar_dates.txt'))
-      .text()
+    await readFile(join(resourcePath, 'calendar_dates.txt'))
       .then(parseCsv)
       .catch(() => [])
   ).forEach((calendarDate) => {
@@ -103,8 +101,7 @@ async function loadCalendars(resourcePath: string) {
 }
 
 async function loadShapes(resourcePath: string): Promise<Shape[]> {
-  const shapePoints = await Bun.file(join(resourcePath, 'shapes.txt'))
-    .text()
+  const shapePoints = await readFile(join(resourcePath, 'shapes.txt'))
     .then(parseCsv)
     .catch(() => []);
   const shapes = groupBy(shapePoints, (shapePoint) => shapePoint.shape_id);
@@ -122,7 +119,7 @@ async function loadShapes(resourcePath: string): Promise<Shape[]> {
 }
 
 async function loadStops(resourcePath: string): Promise<Stop[]> {
-  return (await Bun.file(join(resourcePath, 'stops.txt')).text().then(parseCsv))
+  return (await readFile(join(resourcePath, 'stops.txt')).then(parseCsv))
     .map((stop) => ({
       id: stop.stop_id,
       name: stop.stop_name,
@@ -133,9 +130,9 @@ async function loadStops(resourcePath: string): Promise<Stop[]> {
 }
 
 async function loadTrips(resourcePath: string, calendars: Calendar[], shapes: Shape[], stops: Stop[]): Promise<Trip[]> {
-  const trips = await Bun.file(join(resourcePath, 'trips.txt')).text().then(parseCsv);
+  const trips = await readFile(join(resourcePath, 'trips.txt')).then(parseCsv);
   const stopTimes = groupBy(
-    await Bun.file(join(resourcePath, 'stop_times.txt')).text().then(parseCsv),
+    await readFile(join(resourcePath, 'stop_times.txt')).then(parseCsv),
     (stopTime) => stopTime.trip_id,
   );
   return trips
