@@ -19,6 +19,95 @@ const twistoRoutes: Route[] = [
     ],
   },
   {
+    id: "TWISTO:B1",
+    name: "B1",
+    colors: { background: "#23a638", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Ifs Jean Vilar"],
+        autoHide: true,
+        name: "IFS Jean Vilar",
+        girouette: {
+          routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "B1" },
+          pages: [[{ text: "PLAN B TRAM T1" }, { text: "IFS JEAN VILAR" }]],
+        },
+      },
+      {
+        id: ["Hérouville-Saint-Clair Saint-Clair"],
+        autoHide: true,
+        name: "Saint-Clair",
+        city: "HÉROUVILLE-SAINT-CLAIR",
+        girouette: {
+          routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "B1" },
+          pages: [[{ text: "PLAN B TRAM T1" }, { text: "HEROUVILLE ST-CLAIR" }]],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO:B2",
+    name: "Plan B - T2",
+    colors: { background: "#e73132", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Caen Campus 2"],
+        autoHide: true,
+        name: "Campus 2",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
+          pages: [[{ text: "PLAN B TRAM T2" }, { text: "CAEN CAMPUS 2" }]],
+        },
+      },
+      {
+        id: ["Caen Presqu'ile"],
+        autoHide: true,
+        name: "CAEN Presqu'ile",
+        girouette: {
+          routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
+          pages: [[{ text: "PLAN B TRAM T2" }, { text: "CAEN PRESQU'ILE" }]],
+        },
+      },
+    ],
+  },
+  {
+    id: "TWISTO:B3",
+    name: "Plan B - T3",
+    colors: { background: "#009adf", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Fleury-sur-Orne HAUTS DE L'ORNE"],
+        autoHide: true,
+        name: "Hauts de l'Orne",
+        city: "FLEURY-SUR-ORNE",
+        girouette: {
+          routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
+          pages: [[{ text: "PLAN B TRAM T3" }, { text: "FLEURY HAUTS DE L'ORNE" }]],
+        },
+      },
+      {
+        id: ["Caen Collège Hawking"],
+        autoHide: true,
+        name: "Collège Hawking",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
+          pages: [[{ text: "PLAN B TRAM T3" }, { text: "CAEN COLLEGE HAWKING" }]],
+        },
+      },
+      {
+        id: ["Caen Château-Quatrans"],
+        autoHide: true,
+        name: "Château Quatrans",
+        city: "CAEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
+          pages: [[{ text: "PLAN B TRAM T3" }, { text: "CAEN CHATEAU QUATRANS" }]],
+        },
+      },
+    ],
+  },
+  {
     id: "TWISTO:T1",
     name: "T1",
     colors: { background: "#23a638", text: "#ffffff" },
@@ -2613,82 +2702,6 @@ const twistoRoutes: Route[] = [
             text: "137D",
           },
           pages: [{ text: "SOLIERS Hameau du Four" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "TWISTO:B1",
-    mapOnly: true,
-    name: "B1",
-    colors: { background: "#23a638", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["Ifs Jean Vilar"],
-        name: "IFS Jean Vilar",
-        girouette: {
-          routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "B1" },
-          pages: [[{ text: "PLAN B TRAM T1" }, { text: "IFS JEAN VILAR" }]],
-        },
-      },
-      {
-        id: ["Hérouville-Saint-Clair Saint-Clair"],
-        name: "Saint-Clair",
-        city: "HÉROUVILLE-SAINT-CLAIR",
-        girouette: {
-          routeNumber: { backgroundColor: "#23a638", textColor: "#ffffff", outlineColor: "#000000", text: "B1" },
-          pages: [[{ text: "PLAN B TRAM T1" }, { text: "HEROUVILLE ST-CLAIR" }]],
-        },
-      },
-    ],
-  },
-  {
-    id: "TWISTO:B2",
-    mapOnly: true,
-    name: "Plan B - T2",
-    colors: { background: "#e73132", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["Caen Campus 2"],
-        name: "Campus 2",
-        city: "CAEN",
-        girouette: {
-          routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
-          pages: [[{ text: "PLAN B TRAM T2" }, { text: "CAEN CAMPUS 2" }]],
-        },
-      },
-      {
-        id: ["Caen Presqu'ile"],
-        name: "CAEN Presqu'ile",
-        girouette: {
-          routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
-          pages: [[{ text: "PLAN B TRAM T2" }, { text: "CAEN PRESQU'ILE" }]],
-        },
-      },
-    ],
-  },
-  {
-    id: "TWISTO:B3",
-    mapOnly: true,
-    name: "Plan B - T3",
-    colors: { background: "#009adf", text: "#ffffff" },
-    destinations: [
-      {
-        id: ["Fleury-sur-Orne HAUTS DE L'ORNE"],
-        name: "Hauts de l'Orne",
-        city: "FLEURY-SUR-ORNE",
-        girouette: {
-          routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
-          pages: [[{ text: "PLAN B TRAM T3" }, { text: "FLEURY HAUTS DE L'ORNE" }]],
-        },
-      },
-      {
-        id: ["Caen Château-Quatrans"],
-        name: "Château Quatrans",
-        city: "CAEN",
-        girouette: {
-          routeNumber: { backgroundColor: "#009adf", textColor: "#ffffff", outlineColor: "#000000", text: "B3" },
-          pages: [[{ text: "PLAN B TRAM T3" }, { text: "CAEN CHATEAU QUATRANS" }]],
         },
       },
     ],
