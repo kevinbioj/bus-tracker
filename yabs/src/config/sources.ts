@@ -18,7 +18,6 @@ const sources: Source[] = [
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/e0dbd217-15cd-4e28-9459-211a27511a34',
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/divia-dijon-gtfs-rt-trip-update',
       vehiclePositionHref: 'https://proxy.transport.data.gouv.fr/resource/divia-dijon-gtfs-rt-vehicle-position',
-      generateShapes: true,
       filters: {
         scheduled: (trip) =>
           [
@@ -41,6 +40,7 @@ const sources: Source[] = [
             '4-75',
           ].includes(trip.route),
       },
+      shapesStrategy: 'IGNORE',
     },
   },
 ];
