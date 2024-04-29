@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
+import { search } from '~/utils/search';
 import { GtfsProperties, Trip, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
@@ -54,7 +55,7 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       getOperator: () => 'TNI',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
-      generateShapes: true,
+      shapesStrategy: 'GENERATE',
       routePrefix: 'ASTUCE-TGR',
       filters: {
         scheduled: (trip) => trip.route !== '446',
@@ -70,7 +71,6 @@ const sources: Source[] = [
       staticResourceHref: 'https://gtfs.tae76.fr/gtfs/feed.zip',
       tripUpdateHref: 'https://gtfs.tae76.fr/gtfs-rt.bin',
       routePrefix: 'ASTUCE',
-      generateShapes: true,
       filters: {
         scheduled: () => false,
         tripUpdate: (trip, index, array) => {
@@ -79,6 +79,7 @@ const sources: Source[] = [
         },
       },
       missingStopTimeUpdateStrategy: 'SKIP',
+      shapesStrategy: 'GENERATE',
     },
   },
   {
@@ -91,7 +92,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/astuce-26-30-rouen-gtfs-rt-trip-update',
       vehiclePositionHref: 'https://proxy.transport.data.gouv.fr/resource/astuce-26-30-rouen-gtfs-rt-vehicle-position',
       routePrefix: 'ASTUCE',
-      generateShapes: true,
+      shapesStrategy: 'GENERATE',
     },
   },
   {
@@ -131,22 +132,22 @@ const sources: Source[] = [
       filters: {
         scheduled: (trip) => ['12', '13', '21'].includes(trip.route),
         tripUpdate: (tripUpdate, _, __, resource) => {
-          const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
-          if (typeof trip !== 'undefined') {
+          const trip = search(resource.trips, tripUpdate.tripUpdate.trip.tripId);
+          if (trip !== null) {
             tripUpdate.tripUpdate.trip.routeId = trip.route;
           }
           return true;
         },
         vehiclePosition: (vehiclePosition, _, __, resource) => {
-          const trip = resource.trips.get(vehiclePosition.vehicle.trip.tripId);
-          if (typeof trip !== 'undefined') {
+          const trip = search(resource.trips, vehiclePosition.vehicle.trip.tripId);
+          if (trip !== null) {
             vehiclePosition.vehicle.trip.routeId = trip.route;
           }
           return true;
         },
       },
       afterInit: (resource) => {
-        for (const [_, trip] of resource.trips) {
+        for (const trip of resource.trips) {
           if (trip.route !== 'T') continue;
           const [first, last] = [trip.stops.at(0)!.stop, trip.stops.at(-1)!.stop];
           trip.route = match([first.name, last.name])
@@ -188,8 +189,8 @@ const sources: Source[] = [
         scheduled: () => false,
         tripUpdate: (tripUpdate, _, __, resource) => {
           const tripId = tripUpdate.tripUpdate.trip.tripId.split(':')[0];
-          const trip = resource.trips.get(tripId);
-          if (typeof trip !== 'undefined') {
+          const trip = search(resource.trips, tripId);
+          if (trip !== null) {
             tripUpdate.tripUpdate.trip.tripId = tripId;
             // @ts-expect-error Just for this ressource 🙏
             tripUpdate.tripUpdate.vehicle = { id: trip.trainNumber ?? null };
@@ -206,8 +207,7 @@ const sources: Source[] = [
             trainNumber: trip.headsign,
           };
         });
-        resource.trips.clear();
-        transformedTrips.forEach((trip) => resource.trips.set(trip.id, trip));
+        resource.trips = transformedTrips;
       },
       getOperator: () => 'LIA',
     },
@@ -272,6 +272,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       getOperator: () => 'SNGO',
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -285,6 +286,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       getOperator: () => 'DEEPMOB',
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -303,6 +305,7 @@ const sources: Source[] = [
         return capCotentinDevices.get(descriptor.id) ?? null;
       },
       filters: { scheduled: () => false },
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -327,6 +330,7 @@ const sources: Source[] = [
           trip.headsign = lastStopTime.stop.name;
         });
       },
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -341,6 +345,7 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
       filters: { scheduled: () => false },
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -359,6 +364,7 @@ const sources: Source[] = [
       },
       getOperator: () => 'ASTROBUS',
       getVehicleNumber: () => null,
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -377,6 +383,7 @@ const sources: Source[] = [
       },
       getOperator: () => 'HOBUS',
       getVehicleNumber: () => null,
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -395,6 +402,7 @@ const sources: Source[] = [
       },
       getOperator: () => 'NEVA',
       getVehicleNumber: () => null,
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -412,6 +420,7 @@ const sources: Source[] = [
       },
       getOperator: () => 'NEMUS',
       getVehicleNumber: () => null,
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -428,6 +437,7 @@ const sources: Source[] = [
         scheduled: (trip) => trip.route !== 'TAD 1',
       },
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -446,6 +456,7 @@ const sources: Source[] = [
       },
       getOperator: () => 'LBUS',
       getVehicleNumber: () => null,
+      shapesStrategy: 'IGNORE',
     },
   },
   {
@@ -456,7 +467,7 @@ const sources: Source[] = [
       id: 'LEBUS',
       routePrefix: 'LEBUS',
       staticResourceHref: 'http://exs.atm.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=LEBUS',
-      generateShapes: true,
+      shapesStrategy: 'GENERATE',
       afterInit: (resource) => {
         resource.stops.forEach((stop) => {
           stop.name = stop.name.replace('Pont-audemer : ', '');
