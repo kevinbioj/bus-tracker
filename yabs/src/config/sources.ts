@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
-import { GtfsProperties, Trip, TripUpdateEntity, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
+import { GtfsProperties, Trip, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
@@ -41,8 +41,6 @@ const sources: Source[] = [
         trip.calendar.id.startsWith('IST') || trip.calendar.id.startsWith('INT') || trip.route === '89'
           ? 'TNI'
           : 'TCAR',
-      timeSlice: 'FIRST_REALTIME',
-      propagateDelays: true,
     },
   },
   {
@@ -80,6 +78,7 @@ const sources: Source[] = [
           return index === array.findIndex((item) => trip.tripUpdate.vehicle!.id === item.tripUpdate.vehicle?.id);
         },
       },
+      missingStopTimeUpdateStrategy: 'SKIP',
     },
   },
   {
