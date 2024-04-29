@@ -19,7 +19,6 @@ const sources: Source[] = [
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/divia-dijon-gtfs-rt-trip-update',
       vehiclePositionHref: 'https://proxy.transport.data.gouv.fr/resource/divia-dijon-gtfs-rt-vehicle-position',
       generateShapes: true,
-      propagateDelays: true,
       filters: {
         scheduled: (trip) =>
           [
