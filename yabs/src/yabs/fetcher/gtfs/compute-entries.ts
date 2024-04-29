@@ -170,14 +170,18 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           };
 
           if (typeof stopTimeUpdate === 'undefined') {
-            const shouldPropagate = !!properties.propagateDelays && currentDelta !== null;
+            if (properties.missingStopTimeUpdateStrategy === 'SKIP') {
+              return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
+            }
+            if (properties.missingStopTimeUpdateStrategy === 'NO-DATA' || currentDelta === null) {
+              currentDelta = null;
+              return { ...partialStopTime, timestamp: partialStopTime.scheduled, delta: null, isRealtime: false };
+            }
             return {
               ...partialStopTime,
-              timestamp: parseTime(stopTime.time)
-                .add(shouldPropagate ? currentDelta! : 0, 'seconds')
-                .unix(),
-              delta: shouldPropagate ? currentDelta! : null,
-              isRealtime: shouldPropagate,
+              timestamp: parseTime(stopTime.time).add(currentDelta, 'seconds').unix(),
+              delta: currentDelta,
+              isRealtime: true,
             };
           }
 
@@ -351,14 +355,18 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
           };
 
           if (typeof stopTimeUpdate === 'undefined') {
-            const shouldPropagate = !!properties.propagateDelays && currentDelta !== null;
+            if (properties.missingStopTimeUpdateStrategy === 'SKIP') {
+              return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
+            }
+            if (properties.missingStopTimeUpdateStrategy === 'NO-DATA' || currentDelta === null) {
+              currentDelta = null;
+              return { ...partialStopTime, timestamp: partialStopTime.scheduled, delta: null, isRealtime: false };
+            }
             return {
               ...partialStopTime,
-              timestamp: parseTime(stopTime.time)
-                .add(shouldPropagate ? currentDelta! : 0, 'seconds')
-                .unix(),
-              delta: shouldPropagate ? currentDelta! : null,
-              isRealtime: shouldPropagate,
+              timestamp: parseTime(stopTime.time).add(currentDelta, 'seconds').unix(),
+              delta: currentDelta,
+              isRealtime: true,
             };
           }
 
@@ -409,7 +417,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
           id: `${properties.id}:${id}`,
           source,
           stopTimes:
-            typeof vehiclePosition.vehicle.currentStopSequence !== 'number' || properties.timeSlice === 'FIRST_REALTIME'
+            typeof vehiclePosition.vehicle.currentStopSequence !== 'number'
               ? stopTimes.filter((stopTime) => {
                   return dayjs
                     .unix(stopTime.timestamp ?? stopTime.scheduled)
