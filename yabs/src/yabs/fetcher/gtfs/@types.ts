@@ -24,9 +24,8 @@ export type GtfsProperties = {
   afterInit?: (resource: GtfsResource) => unknown;
   getOperator?: (trip: Trip) => string;
   getVehicleNumber?: (descriptor: VehicleDescriptor) => string | null;
-  timeSlice?: 'VEHICLE_POSITION' | 'FIRST_REALTIME';
+  missingStopTimeUpdateStrategy?: 'PROPAGATE-DELAY' | 'NO-DATA' | 'SKIP';
   generateShapes?: boolean;
-  propagateDelays?: boolean;
   registerActivity?: boolean;
 };
 
