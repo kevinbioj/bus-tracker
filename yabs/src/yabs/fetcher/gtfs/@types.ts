@@ -25,7 +25,7 @@ export type GtfsProperties = {
   getOperator?: (trip: Trip) => string;
   getVehicleNumber?: (descriptor: VehicleDescriptor) => string | null;
   missingStopTimeUpdateStrategy?: 'PROPAGATE-DELAY' | 'NO-DATA' | 'SKIP';
-  generateShapes?: boolean;
+  shapesStrategy?: 'IGNORE' | 'LOAD-IF-PRESENT' | 'GENERATE';
   registerActivity?: boolean;
 };
 
@@ -41,9 +41,9 @@ export type Calendar = {
 };
 
 export type GtfsResource = {
-  calendars: Map<string, Calendar>;
-  stops: Map<string, Stop>;
-  trips: Map<string, Trip>;
+  calendars: Calendar[];
+  stops: Stop[];
+  trips: Trip[];
 };
 
 export type Shape = {
