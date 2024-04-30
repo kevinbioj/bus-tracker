@@ -62,7 +62,8 @@ const twistoRoutes: Route[] = [
       {
         id: ["Caen Presqu'ile"],
         autoHide: true,
-        name: "CAEN Presqu'ile",
+        name: "Presqu'île",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "B2" },
           pages: [[{ text: "PLAN B TRAM T2" }, { text: "CAEN PRESQU'ILE" }]],
@@ -148,7 +149,8 @@ const twistoRoutes: Route[] = [
       },
       {
         id: ["Caen Presqu'ile"],
-        name: "CAEN Presqu'ile",
+        name: "Presqu'île",
+        city: "CAEN",
         girouette: {
           routeNumber: { backgroundColor: "#e73132", textColor: "#ffffff", outlineColor: "#000000", text: "T2" },
           pages: [{ font: "1510N2E1", text: "CAEN PRESQU'ILE" }],
