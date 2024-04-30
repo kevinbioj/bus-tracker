@@ -695,7 +695,7 @@ const nomadRegionRoutes: Route[] = [
     id: "NOMAD:210",
     noCartridge: true,
     name: "210",
-    colors: { background: "#eb3a4c", text: "#000000" },
+    colors: { background: "#eb3a4c", text: "#ffffff" },
     destinations: [
       {
         id: ["ÉVREUX / GISORS"],
@@ -704,9 +704,9 @@ const nomadRegionRoutes: Route[] = [
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#eb3a4c",
-            textColor: "#000000",
+            textColor: "#ffffff",
             text: "210",
-            outlineColor: "#FFFFFF",
+            outlineColor: "#000000",
           },
           pages: [{ font: "1508SUPX", text: "GISORS" }],
         },
@@ -719,9 +719,9 @@ const nomadRegionRoutes: Route[] = [
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#eb3a4c",
-            textColor: "#000000",
+            textColor: "#ffffff",
             text: "210",
-            outlineColor: "#FFFFFF",
+            outlineColor: "#000000",
           },
           pages: [{ font: "1508SUPX", text: "VERNON" }],
         },
@@ -734,9 +734,9 @@ const nomadRegionRoutes: Route[] = [
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#eb3a4c",
-            textColor: "#000000",
+            textColor: "#ffffff",
             text: "210",
-            outlineColor: "#FFFFFF",
+            outlineColor: "#000000",
           },
           pages: [{ font: "1507SUPX", text: "CAILLOUET-ORGEVILLE" }],
         },
@@ -748,9 +748,9 @@ const nomadRegionRoutes: Route[] = [
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#eb3a4c",
-            textColor: "#000000",
+            textColor: "#ffffff",
             text: "210",
-            outlineColor: "#FFFFFF",
+            outlineColor: "#000000",
           },
           pages: [{ font: "1508SUPX", text: "EVREUX" }],
         },
@@ -847,7 +847,7 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["DAMVILLE / VERNEUIL-SUR-AVRE", "CONDÉ-SUR-ITON / VERNEUIL-SUR-AVRE", "ÉVREUX / VERNEUIL-SUR-AVRE"],
-        name: "VERNEUIL-SUR-AVRE",
+        name: "Verneuil-sur-Avre",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
@@ -934,6 +934,7 @@ const nomadRegionRoutes: Route[] = [
       },
       {
         id: ["HONFLEUR / PONT-AUDEMER", "ÉVREUX / PONT-AUDEMER"],
+        autoHide: true,
         name: "Pont-Audemer",
         girouette: {
           routeNumber: {
@@ -1028,21 +1029,7 @@ const nomadRegionRoutes: Route[] = [
         },
       },
       {
-        id: ["ELBEUF / ÉVREUX", "ROUEN / ÉVREUX", "LOUVIERS / ÉVREUX"],
-        name: "Évreux",
-        girouette: {
-          routeNumber: {
-            font: "1508SUPX",
-            backgroundColor: "#719152",
-            textColor: "#ffffff",
-            text: "215",
-            outlineColor: "#000000",
-          },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
-        },
-      },
-      {
-        id: ["ROUEN / EVREUX"],
+        id: ["ELBEUF / ÉVREUX", "ROUEN / ÉVREUX", "ROUEN / EVREUX", "LOUVIERS / ÉVREUX"],
         name: "Évreux",
         girouette: {
           routeNumber: {
