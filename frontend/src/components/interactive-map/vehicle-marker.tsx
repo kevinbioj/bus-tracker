@@ -1,13 +1,13 @@
 "use client";
 
-import clsx from "clsx";
 import dayjs from "dayjs";
+import updateLocale from "dayjs/plugin/updateLocale";
 import { LatLngExpression } from "leaflet";
 import Image from "next/image";
 import Link from "next/link";
 import { RefObject, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Popup } from "react-leaflet";
-import { ExternalLink, Satellite as SatelliteIcon } from "tabler-icons-react";
+import { Satellite as SatelliteIcon } from "tabler-icons-react";
 import { match } from "ts-pattern";
 import { useLocalStorage } from "usehooks-ts";
 
@@ -21,6 +21,18 @@ import { useViewport } from "~/hooks/useViewport";
 import { BusIcon } from "~/images/transport-modes/bus-icon";
 import ReactMoveableCircleMarker, { MoveableCircleMarker } from "~/util/moveable-circler-marker";
 
+dayjs.extend(updateLocale);
+dayjs.updateLocale("en", {
+  relativeTime: {
+    future: "dans %s",
+    past: "il y a %s",
+    s: "%d secondes",
+    m: "une minute",
+    mm: "%d minutes",
+    h: "une heure",
+  },
+});
+
 const getNoise = () => (Math.random() - 0.5) * 0.000045;
 
 const isTouchScreen = window.matchMedia("(pointer: coarse)").matches;
@@ -31,9 +43,18 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
   const route = routes.find((route) => route.routeIds?.includes(data.trip.route) || route.id === data.trip.route);
   const destination = route?.destinations.find((destination) => destination.id.includes(data.trip.headsign ?? ""));
 
+  const updatePositionTime = () => {
+    const timestamp = dayjs.unix(data.vehicle.position.timestamp);
+    if (dayjs().diff(timestamp, "hours") < 1) return timestamp.fromNow();
+    return dayjs().diff(timestamp, "day") >= 1
+      ? `le ${timestamp.format("DD/MM à HH:mm:ss")}`
+      : `à ${timestamp.format("HH:mm:ss")}`;
+  };
+
   const [showScheduledTrips] = useLocalStorage("show-scheduled-trips", true);
   const [showNextStops] = useLocalStorage("show-next-stops", true);
   const [devMode] = useLocalStorage("dev-mode", false);
+  const [positionTime, setPositionTime] = useState("");
 
   const { width } = useViewport();
 
@@ -65,9 +86,14 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
     _popup.options.autoPan = false;
   }, []);
 
+  useEffect(() => {
+    setPositionTime(updatePositionTime());
+    const interval = setInterval(() => setPositionTime(updatePositionTime()), 3000);
+    return () => clearInterval(interval);
+  }, [data]);
+
   if (!showScheduledTrips && data.vehicle.position.type === "SCHEDULED") return null;
 
-  const timestamp = dayjs.unix(data.vehicle.position.timestamp);
   const operator = operators.find((operator) => operator.id === data.source)!;
 
   const girouetteWidth = Math.min(width - 50, destination?.girouette?.width ?? 384);
@@ -170,10 +196,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                 height={operator.logo.size[1]}
               />
               <span className="text-center">
-                {data.vehicle.id ? `n°${data.vehicle.id}` : "N/A"} à{" "}
-                {dayjs().diff(timestamp, "day") >= 1
-                  ? timestamp.format("DD/MM à HH:mm:ss")
-                  : timestamp.format("HH:mm:ss")}
+                {data.vehicle.id ? `n°${data.vehicle.id}` : "N/A"} {positionTime}
                 {devMode && ` / ${data.trip.id}`}
               </span>
               <SatelliteIcon
