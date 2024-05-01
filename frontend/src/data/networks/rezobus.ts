@@ -49,6 +49,16 @@ const rezobusRoutes: Route[] = [
         },
       },
       {
+        id: ["BOLBEC Le Vallot"],
+        name: "Le Vallot",
+        city: "BOLBEC",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#005d9c", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
+          pages: [[{ text: "BOLBEC" }, { text: "LE VALLOT" }]],
+        },
+      },
+      {
         id: ["BOLBEC Vivier"],
         name: "Vivier",
         city: "BOLBEC",
