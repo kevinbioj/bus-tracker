@@ -31,6 +31,7 @@ server.get('/vehicles', handleGetVehicles);
 server.get('/history', handleGetVehicleList);
 server.get('/history/:operator', handleGetOperatorVehicleList);
 server.get('/history/:operator/:number', handleGetOperatorVehicle);
+server.post('/update-resource/:id', handleUpdateResource);
 
 async function init() {
   console.log('YABS\tLoading resources into memory.');
@@ -123,6 +124,15 @@ async function handleGetOperatorVehicle(c: Context) {
     console.error(e);
     return c.json({ message: 'An unknown error occurred, please try again later' }, 500);
   }
+}
+
+async function handleUpdateResource(c: Context) {
+  const resourceId = c.req.param('id').toUpperCase();
+  const source = sources.find((s) => s.id === resourceId);
+  if (typeof source === 'undefined') return c.json({ message: 'No resource exists with this id.' }, 404);
+  if (source.type !== 'GTFS') return c.json({ message: 'This resource is not GTFS-based, cannot update.' }, 400);
+  await updateResource(source);
+  return c.json({ message: 'Update done!' }, 200);
 }
 
 // --- SCHEDULED JOBS
