@@ -134,13 +134,10 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
 
   const entries = new Map<string, YabsEntry>();
 
-  const abortController = new AbortController();
-  const timeout = setTimeout(() => abortController.abort(), 10000);
-  const tripUpdate = await fetch(properties.tripUpdateHref, { signal: abortController.signal })
+  const tripUpdate = await fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(5000) })
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeTripUpdate(buffer));
-  clearTimeout(timeout);
 
   await Promise.allSettled(
     tripUpdate.entity
@@ -308,18 +305,16 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
 
   const entries = new Map<string, YabsEntry>();
 
-  const abortController = new AbortController();
-  const timeout = setTimeout(() => abortController.abort(), 10000);
-  const tripUpdates = await fetch(properties.tripUpdateHref, { signal: abortController.signal })
-    .then((response) => response.arrayBuffer())
-    .then((arrayBuffer) => Buffer.from(arrayBuffer))
-    .then((buffer) => decodeTripUpdate(buffer));
-
-  const vehiclePositions = await fetch(properties.vehiclePositionHref, { signal: abortController.signal })
-    .then((response) => response.arrayBuffer())
-    .then((arrayBuffer) => Buffer.from(arrayBuffer))
-    .then((buffer) => decodeVehiclePosition(buffer));
-  clearTimeout(timeout);
+  const [tripUpdates, vehiclePositions] = await Promise.all([
+    fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(5000) })
+      .then((response) => response.arrayBuffer())
+      .then((arrayBuffer) => Buffer.from(arrayBuffer))
+      .then((buffer) => decodeTripUpdate(buffer)),
+    fetch(properties.vehiclePositionHref, { signal: AbortSignal.timeout(5000) })
+      .then((response) => response.arrayBuffer())
+      .then((arrayBuffer) => Buffer.from(arrayBuffer))
+      .then((buffer) => decodeVehiclePosition(buffer)),
+  ]);
 
   await Promise.allSettled(
     vehiclePositions.entity
