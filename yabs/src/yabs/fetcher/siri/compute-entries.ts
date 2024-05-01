@@ -20,8 +20,6 @@ const vehicleMonitoringRequestPayload = `<?xml version="1.0" encoding="utf-8"?>
 const unescape = (input: string) => input.replace('&apos;', "'");
 
 export async function computeSiriEntries(properties: SiriProperties) {
-  const abortController = new AbortController();
-  const timeout = setTimeout(() => abortController.abort(), 5000);
   const response = await fetch(properties.siriEndpoint, {
     body: vehicleMonitoringRequestPayload,
     headers: {
@@ -30,15 +28,16 @@ export async function computeSiriEntries(properties: SiriProperties) {
       'User-Agent': 'Bus-Tracker.xyz/1.0',
     },
     method: 'POST',
-    signal: abortController.signal,
+    signal: AbortSignal.timeout(5000),
   });
-  clearInterval(timeout);
   if (!response.ok) return null;
   const payload = await response.text();
   const data = parser.parse(payload);
   const vehicles = data.Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity as
     | SiriVehicleActivity[]
-    | SiriVehicleActivity;
+    | SiriVehicleActivity
+    | undefined;
+  if (typeof vehicles === 'undefined') return [];
   return Promise.all(
     (Array.isArray(vehicles)
       ? vehicles.sort(
