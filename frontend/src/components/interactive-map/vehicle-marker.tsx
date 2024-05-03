@@ -43,20 +43,21 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
   const route = routes.find((route) => route.routeIds?.includes(data.trip.route) || route.id === data.trip.route);
   const destination = route?.destinations.find((destination) => destination.id.includes(data.trip.headsign ?? ""));
 
-  const updatePositionTime = () => {
-    const timestamp = dayjs.unix(data.vehicle.position.timestamp);
-    if (dayjs().diff(timestamp, "hours") < 1) return timestamp.fromNow();
-    return dayjs().diff(timestamp, "day") >= 1
-      ? `le ${timestamp.format("DD/MM à HH:mm:ss")}`
-      : `à ${timestamp.format("HH:mm:ss")}`;
-  };
-
   const [showScheduledTrips] = useLocalStorage("show-scheduled-trips", true);
   const [showNextStops] = useLocalStorage("show-next-stops", true);
+  const [useAbsoluteTime] = useLocalStorage("use-absolute-time", false);
   const [devMode] = useLocalStorage("dev-mode", false);
   const [positionTime, setPositionTime] = useState("");
 
   const { width } = useViewport();
+
+  const updatePositionTime = () => {
+    const timestamp = dayjs.unix(data.vehicle.position.timestamp);
+    if (!useAbsoluteTime && dayjs().diff(timestamp, "hours") < 1) return timestamp.fromNow();
+    return dayjs().diff(timestamp, "day") >= 1
+      ? `le ${timestamp.format("DD/MM à HH:mm:ss")}`
+      : `à ${timestamp.format("HH:mm:ss")}`;
+  };
 
   const position = useMemo(() => {
     const applyNoise = data.trip.stopTimes.length === 0 || data.trip.stopTimes[0].sequence === 1 ? false : true;
@@ -90,7 +91,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
     setPositionTime(updatePositionTime());
     const interval = setInterval(() => setPositionTime(updatePositionTime()), 3000);
     return () => clearInterval(interval);
-  }, [data]);
+  }, [data, useAbsoluteTime]);
 
   if (!showScheduledTrips && data.vehicle.position.type === "SCHEDULED") return null;
 

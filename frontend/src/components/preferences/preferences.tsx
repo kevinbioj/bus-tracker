@@ -5,6 +5,7 @@ import { Settings as SettingsIcon } from "tabler-icons-react";
 import GeolocationPreference from "~/components/preferences/geolocation";
 import NextStopsPreference from "~/components/preferences/next-stops";
 import ScheduledTripsPreference from "~/components/preferences/scheduled-trips";
+import UseAbsoluteTimePreference from "~/components/preferences/use-absolute-time";
 import { Button } from "~/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "~/components/ui/dialog";
 
@@ -24,6 +25,7 @@ export default function Preferences() {
           <GeolocationPreference />
           <ScheduledTripsPreference />
           <NextStopsPreference />
+          <UseAbsoluteTimePreference />
         </div>
         <hr className="my-2" />
         <DialogTitle>Besoin de me contacter ?</DialogTitle>
