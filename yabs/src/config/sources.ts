@@ -39,7 +39,10 @@ const sources: Source[] = [
         },
       },
       getOperator: (trip) =>
-        trip.calendar.id.startsWith('IST') || trip.calendar.id.startsWith('INT') || trip.route === '89'
+        trip.calendar.id.startsWith('IST') ||
+        trip.calendar.id.startsWith('INT') ||
+        trip.route === '06' ||
+        trip.route === '89'
           ? 'TNI'
           : 'TCAR',
     },
