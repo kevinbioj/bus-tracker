@@ -28,7 +28,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
       'User-Agent': 'Bus-Tracker.xyz/1.0',
     },
     method: 'POST',
-    signal: AbortSignal.timeout(5000),
+    signal: AbortSignal.timeout(10000),
   });
   if (!response.ok) return null;
   const payload = await response.text();

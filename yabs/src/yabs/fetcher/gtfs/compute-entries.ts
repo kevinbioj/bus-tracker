@@ -134,7 +134,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
 
   const entries = new Map<string, YabsEntry>();
 
-  const tripUpdate = await fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(5000) })
+  const tripUpdate = await fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(10000) })
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeTripUpdate(buffer));
@@ -306,11 +306,11 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
   const entries = new Map<string, YabsEntry>();
 
   const [tripUpdates, vehiclePositions] = await Promise.all([
-    fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(5000) })
+    fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(10000) })
       .then((response) => response.arrayBuffer())
       .then((arrayBuffer) => Buffer.from(arrayBuffer))
       .then((buffer) => decodeTripUpdate(buffer)),
-    fetch(properties.vehiclePositionHref, { signal: AbortSignal.timeout(5000) })
+    fetch(properties.vehiclePositionHref, { signal: AbortSignal.timeout(10000) })
       .then((response) => response.arrayBuffer())
       .then((arrayBuffer) => Buffer.from(arrayBuffer))
       .then((buffer) => decodeVehiclePosition(buffer)),
