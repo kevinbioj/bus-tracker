@@ -11,6 +11,7 @@ const lbusRoutes: Route[] = [
         id: [
           "ZA la Semaille > Centre hospitalier Anne de Ticheville",
           "ZA du Bois du cours > Centre hospitalier Anne de Ticheville",
+          "253",
           "254",
         ],
         name: "Centre Hospitalier Anne de Ticheville",
