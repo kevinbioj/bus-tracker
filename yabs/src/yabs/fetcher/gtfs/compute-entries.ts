@@ -230,7 +230,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
             ? properties.getVehicleNumber(vehicleDescriptor)
             : vehicleDescriptor.label ?? vehicleDescriptor.id
           : null;
-        const ledColor = vehicleId ? await getVehicleLedColor({ operator: source, number: +vehicleId }) : null;
+        const ledColor = vehicleId ? await getVehicleLedColor({ operator: source, number: vehicleId }) : null;
 
         const currentStop = search(resource.stops, currentStopTime.id)!;
 
@@ -406,7 +406,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         const vehicleId = properties.getVehicleNumber
           ? properties.getVehicleNumber(vehicleDescriptor)
           : vehicleDescriptor.label ?? vehicleDescriptor.id;
-        const ledColor = vehicleId ? await getVehicleLedColor({ operator: source, number: +vehicleId }) : null;
+        const ledColor = vehicleId ? await getVehicleLedColor({ operator: source, number: vehicleId }) : null;
 
         const id = vehicleId ? `VEH:${vehicleId}` : trip.block ? `BLO:${trip.block}` : `JOU:${trip.id}`;
         entries.set(id, {
