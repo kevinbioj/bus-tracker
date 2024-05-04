@@ -34,9 +34,9 @@ export default function Preferences() {
           Envoyez-moi un e-mail à{" "}
           <a
             className="text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300 transition-colors"
-            href="mailto:contact@bus-tracker.xyz?subject=Bus Tracker - ?"
+            href="mailto:contact@bus-tracker.fr?subject=Bus Tracker - ?"
           >
-            contact@bus-tracker.xyz
+            contact@bus-tracker.fr
           </a>{" "}
           😉
         </p>

@@ -20,7 +20,7 @@ const destinations = [
         en Normandie
       </span>
     ),
-    href: "https://www.bus-tracker.xyz",
+    href: "https://normandie.bus-tracker.fr",
     color: "#d20a28",
     textColor: "#ffffff",
   },
@@ -34,7 +34,7 @@ const destinations = [
         à Dijon
       </span>
     ),
-    href: "https://dijon.bus-tracker.xyz",
+    href: "https://dijon.bus-tracker.fr",
     color: "#9E40A7",
     textColor: "#ffffff",
   },
