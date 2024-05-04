@@ -5,7 +5,7 @@ export const vehicles = sqliteTable(
   {
     id: integer('id').primaryKey({ autoIncrement: true }),
     operator: text('operator').notNull(),
-    number: integer('number').notNull(),
+    number: text('number').notNull(),
     type: text('type', { enum: ['BUS', 'SUBWAY', 'TRAMWAY'] }).notNull(),
     name: text('name'),
     tcId: integer('tc_id'),

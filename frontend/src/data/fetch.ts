@@ -25,7 +25,7 @@ export async function fetchOperatorVehicles(operator: string) {
   return response.json() as Promise<LightVehicleDto[]>;
 }
 
-export async function fetchOperatorVehicle(operator: string, number: number, period?: string) {
+export async function fetchOperatorVehicle(operator: string, number: string, period?: string) {
   const response = await fetch(`${YABS_URL}/history/${operator}/${number}${period ? `?period=${period}` : ""}`);
   if (!response.ok) return null;
   return response.json() as Promise<VehicleDto>;

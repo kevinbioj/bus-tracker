@@ -113,7 +113,7 @@ async function handleGetOperatorVehicle(c: Context) {
   if (Number.isNaN(number)) return c.json({ message: 'An invalid vehicle number was received' }, 400);
 
   try {
-    const vehicle = await getVehicle({ operator, number: +number }, period);
+    const vehicle = await getVehicle({ operator, number }, period);
     return c.json(vehicle);
   } catch (e) {
     if (e instanceof Error) {
@@ -189,7 +189,7 @@ async function updateEntries(source: Source) {
             .filter((data) => data.vehicle.id !== null && data.activityRegistered)
             .map((data) =>
               insertActivity(
-                { operator: data.source, number: +data.vehicle.id! },
+                { operator: data.source, number: data.vehicle.id! },
                 { routeId: data.trip.route, time: dayjs.unix(data.timestamp).toDate() },
               ),
             ),
