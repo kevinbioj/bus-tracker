@@ -11,7 +11,7 @@ const parseSiriRef = (ref: string) => ref.split(':')[3];
 const vehicleMonitoringRequestPayload = `<?xml version="1.0" encoding="utf-8"?>
 <Siri xmlns="http://www.siri.org.uk/siri" version="2.0">
 <ServiceRequest>
-        <RequestorRef>BUS-TRACKER.XYZ</RequestorRef>
+        <RequestorRef>BUS-TRACKER.FR</RequestorRef>
         <VehicleMonitoringRequest version="2.0" />
     </ServiceRequest>
 </Siri>
@@ -25,7 +25,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
     headers: {
       'Content-Type': 'application/xml',
       'Content-Length': vehicleMonitoringRequestPayload.length.toString(),
-      'User-Agent': 'Bus-Tracker.xyz/1.0',
+      'User-Agent': 'Bus-Tracker.fr/1.0',
     },
     method: 'POST',
     signal: AbortSignal.timeout(10000),
