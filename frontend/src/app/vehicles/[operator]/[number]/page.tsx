@@ -38,13 +38,11 @@ export default async function VehicleEntryPage({ params, searchParams }: Vehicle
   const operator = operators.find((o) => o.id === params.operator?.toUpperCase());
   if (typeof operator === "undefined") notFound();
 
-  if (Number.isNaN(+params.number)) redirect(`/vehicles/${operator.id.toLowerCase()}`, RedirectType.replace);
-
   const period = searchParams.period ? dayjs(searchParams.period, "YYYY-MM") : dayjs();
   if (!period.isValid()) redirect(`/vehicles/${operator.id}/${params.number}`, RedirectType.replace);
   const periodAsString = period.format("YYYY-MM");
 
-  const vehicle = await fetchOperatorVehicle(operator.id, +params.number, periodAsString);
+  const vehicle = await fetchOperatorVehicle(operator.id, params.number, periodAsString);
   if (vehicle === null) notFound();
 
   if (vehicle.activeOn.length > 0 && !vehicle.activeOn.includes(periodAsString))

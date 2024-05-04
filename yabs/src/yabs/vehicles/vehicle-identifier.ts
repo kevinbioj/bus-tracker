@@ -1,1 +1,1 @@
-export type VehicleIdentifier = { operator: string; number: number };
+export type VehicleIdentifier = { operator: string; number: string };
