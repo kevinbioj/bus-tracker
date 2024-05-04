@@ -66,27 +66,30 @@ const astuceRoutes: Route[] = [
     colors: { background: "#E6007E", text: "#FFED00" },
     destinations: [
       {
-        id: ["Place du 8-Mai PETIT-QUEVILLY"],
+        id: ["Boulingrin"],
         autoHide: true,
-        name: "Place du 8-Mai",
-        city: "PETIT-QUEVILLY",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
-          pages: [{ text: "PLACE DU 8-MAI" }, { text: "PETIT-QUEVILLY" }],
-        },
-      },
-      {
-        id: ["Georges Braque GRAND QUEVILLY"],
-        autoHide: true,
-        name: "Georges Braque",
-        city: "GRAND-QUEVILLY",
+        name: "Boulingrin",
+        city: "ROUEN",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
           pages: [
-            { font: "1510N2E1", text: "GEORGES BRAQUE" },
-            { font: "1510N2E1", text: "GRAND-QUEVILLY" },
+            { spacing: 4, text: "BOULINGRIN" },
+            { spacing: 4, text: "ROUEN" },
+          ],
+        },
+      },
+      {
+        id: ["Joffre-Mutualité ROUEN"],
+        autoHide: true,
+        name: "Joffre-Mutualité",
+        city: "ROUEN",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
+          pages: [
+            { font: "1508C2E1", spacing: 3, text: "JOFFRE-MUTUALITE" },
+            { spacing: 4, text: "ROUEN" },
           ],
         },
       },
@@ -112,16 +115,16 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Place du 8-Mai LE PETIT-QUEVILLY"],
+        id: ["Joffre-Mutualité ROUEN"],
         autoHide: true,
-        name: "Place du 8-Mai",
-        city: "PETIT-QUEVILLY",
+        name: "Joffre-Mutualité",
+        city: "ROUEN",
         girouette: {
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
           pages: [
-            { font: "14LUPLAN", spacing: 1, text: "PLACE DU 8-MAI" },
-            { font: "14LUPLAN", spacing: 1, text: "PETIT-QUEVILLY" },
+            { font: "14LUPLAN", spacing: 1, text: "JOFFRE-MUTUALITE" },
+            { font: "14LUPLAN", spacing: 1, text: "ROUEN" },
           ],
           width: 300,
         },
