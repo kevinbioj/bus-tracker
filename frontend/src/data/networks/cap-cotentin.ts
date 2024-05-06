@@ -197,7 +197,7 @@ const capCotentinRoutes: Route[] = [
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#F8DA41", textColor: "#000000", text: "5" },
-          pages: [{ font: "1510N2E1", text: "CHANTIER-ARSENAL" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "CHANTIER-ARSENAL" }],
         },
       },
       {
