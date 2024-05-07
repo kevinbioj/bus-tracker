@@ -1,32 +1,26 @@
 {
   "name": "yabs",
-  "version": "1.0.0",
-  "description": "",
-  "module": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "bun build src/index.ts --outdir ./dist --target node",
-    "start": "node dist/index.js",
+    "start": "node build/src/index.js",
+    "build": "npm run build:bundle && npm run build:copy-native",
+    "build:bundle": "bun build src/ --outdir ./build --target node",
+    "build:copy-native": "cp node_modules/better-sqlite3/build/Release/better_sqlite3.node build/",
     "format": "prettier --config .prettierrc --write src"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@hono/node-server": "^1.11.1",
     "better-sqlite3": "^9.6.0",
-    "croner": "^8.0.1",
-    "dayjs": "^1.11.10",
-    "drizzle-orm": "^0.30.1",
-    "fast-xml-parser": "^4.3.5",
-    "hono": "^4.1.1",
+    "croner": "^8.0.2",
+    "dayjs": "^1.11.11",
+    "drizzle-orm": "^0.30.10",
+    "fast-xml-parser": "^4.3.6",
+    "hono": "^4.3.2",
     "protobufjs": "^7.2.6",
-    "ts-pattern": "^5.0.8"
+    "ts-pattern": "^5.1.1"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "@types/bun": "latest",
-    "@types/node-cron": "^3.0.11",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5"
   }
