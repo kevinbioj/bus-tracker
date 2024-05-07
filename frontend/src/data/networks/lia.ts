@@ -1884,7 +1884,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#104C77", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["22 Parc Estuaire"],
+        id: ["Parc Estuaire"],
         name: "Parc de l'Estuaire",
         city: "GONFREVILLE-L'ORCHER",
         girouette: {
@@ -1925,7 +1925,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["22 Le Havre Gares"],
+        id: ["Le Havre Gares"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
