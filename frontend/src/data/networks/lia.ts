@@ -541,7 +541,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#E6007E", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["05 Sainte Adresse Ignauval"],
+        id: ["Sainte Adresse Ignauval"],
         name: "Ignauval",
         city: "SAINTE-ADRESSE",
         girouette: {
@@ -572,7 +572,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["05 Graville"],
+        id: ["Graville"],
         name: "Graville",
         city: "LE HAVRE",
         girouette: {
@@ -1815,7 +1815,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#4E55A1", text: "#FFFFFF" },
     destinations: [
       {
-        id: [" Montivilliers Gare"],
+        id: ["Montivilliers Gare"],
         name: "Gare",
         city: "MONTIVILLIERS",
         girouette: {
