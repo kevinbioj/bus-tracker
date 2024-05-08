@@ -2,14 +2,16 @@ import { Network, Route } from "~/@types";
 
 const lebusRoutes: Route[] = [
   {
-    id: "LEBUS:ATOUMOD013:Line:ATOUMOD013xLinex1xLOC:LOC",
+    id: "LEBUS:BUS",
+    routeIds: ["LEBUS:R1", "LEBUS:R2", "LEBUS:R3"],
     noCartridge: true,
-    name: "1",
-    colors: { background: "#4e9dcd", text: "#ffffff" },
+    name: "BUS",
+    colors: { background: "#f0b848", text: "#000000" },
     destinations: [
       {
-        id: ["Manneville-sur-Risle - Pont-audemer : Place V. Hugo"],
-        name: "Place Victor Hugo – Boucle des Baquets",
+        id: ["Boucle des Baquets"],
+        autoHide: true,
+        name: "Boucle des Baquets",
         city: "PONT-AUDEMER",
         girouette: {
           ledColor: "WHITE",
@@ -23,17 +25,9 @@ const lebusRoutes: Route[] = [
           pages: [[{ text: "LE BUS DE PONT-AUDEMER" }, { text: "BOUCLE DES BAQUETS" }]],
         },
       },
-    ],
-  },
-  {
-    id: "LEBUS:ATOUMOD013:Line:ATOUMOD013xLinex2xLOC:LOC",
-    noCartridge: true,
-    name: "2",
-    colors: { background: "#8db74f", text: "#ffffff" },
-    destinations: [
       {
-        id: ["Manneville-sur-Risle - Pont-audemer : Place V. Hugo"],
-        name: "Place Victor Hugo – Boucle complète",
+        id: ["Boucle complète"],
+        name: "Boucle complète",
         city: "PONT-AUDEMER",
         girouette: {
           ledColor: "WHITE",
@@ -47,17 +41,10 @@ const lebusRoutes: Route[] = [
           pages: [[{ text: "LE BUS DE PONT-AUDEMER" }, { text: "BOUCLE COMPLETE" }]],
         },
       },
-    ],
-  },
-  {
-    id: "LEBUS:ATOUMOD013:Line:ATOUMOD013xLinex3xLOC:LOC",
-    noCartridge: true,
-    name: "3",
-    colors: { background: "#cc483b", text: "#ffffff" },
-    destinations: [
       {
-        id: ["Manneville-sur-Risle - Pont-audemer : Place V. Hugo"],
-        name: "Place Victor Hugo – Boucle de Saint-Germain-Village",
+        id: ["Boucle de Saint-Germain"],
+        autoHide: true,
+        name: "Boucle de Saint-Germain-Village",
         city: "PONT-AUDEMER",
         girouette: {
           ledColor: "WHITE",
