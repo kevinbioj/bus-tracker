@@ -245,7 +245,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'NOMAD',
       staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad.zip',
-      filters: { scheduled: (trip) => trip.route !== '530' },
+      filters: { scheduled: (trip) => !['216', '228', '423', '424', '527', '530'].includes(trip.route) },
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },
@@ -259,7 +259,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad-geo3d.zip',
       tripUpdateHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
-      filters: { scheduled: () => false },
+      filters: { scheduled: (trip) => trip.calendar.id !== 'RT_ONLY' },
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },
