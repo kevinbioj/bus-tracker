@@ -2,6 +2,76 @@ import { Network, Route } from "~/@types";
 
 const nomadRegionRoutes: Route[] = [
   {
+    id: "NOMAD:NAV",
+    noCartridge: true,
+    name: "NAV",
+    colors: { background: "#402673", text: "#F49517" },
+    destinations: [
+      {
+        id: ["D-DAY COURSEULLES-SUR-MER / GRANDCAMP-MAISY", "D-DAY PORT-EN-BESSIN-HUPPAIN / GRANDCAMP-MAISY"],
+        name: "Grandcamp-Maisy",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            font: "1310C2E1",
+            backgroundColor: "#402673",
+            textColor: "#F49517",
+            text: "NAV",
+            outlineColor: "#000000",
+          },
+          pages: [[{ text: "NAVETTE D-DAY" }, { text: "GRANDCAMP-MAISY" }]],
+        },
+      },
+      {
+        id: ["D-DAY PORT-EN-BESSIN-HUPPAIN / COLLEVILLE-SUR-MER"],
+        autoHide: true,
+        name: "Colleville-sur-Mer",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            font: "1310C2E1",
+            backgroundColor: "#402673",
+            textColor: "#F49517",
+            text: "NAV",
+            outlineColor: "#000000",
+          },
+          pages: [[{ text: "NAVETTE D-DAY" }, { text: "COLLEVILLE-SUR-MER" }]],
+        },
+      },
+      {
+        id: ["D-DAY GRANDCAMP-MAISY / PORT-EN-BESSIN-HUPPAIN", "D-DAY COURSEULLES-SUR-MER / PORT-EN-BESSIN-HUPPAIN"],
+        autoHide: true,
+        name: "Port-en-Bessin-Huppain",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            font: "1310C2E1",
+            backgroundColor: "#402673",
+            textColor: "#F49517",
+            text: "NAV",
+            outlineColor: "#000000",
+          },
+          pages: [[{ text: "NAVETTE D-DAY" }, { text: "PORT-EN-BESSIN-HUPPAIN" }]],
+        },
+      },
+      {
+        id: ["D-DAY GRANDCAMP-MAISY / COURSEULLES-SUR-MER", "D-DAY PORT-EN-BESSIN-HUPPAIN / COURSEULLES-SUR-MER"],
+        name: "Courseulles-sur-Mer",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            font: "1310C2E1",
+            backgroundColor: "#402673",
+            textColor: "#F49517",
+            text: "NAV",
+            outlineColor: "#000000",
+          },
+          pages: [[{ text: "NAVETTE D-DAY" }, { text: "COURSEULLES-SUR-MER" }]],
+        },
+      },
+    ],
+  },
+  {
     id: "NOMAD:112",
     noCartridge: true,
     name: "112",
