@@ -469,13 +469,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'LEBUS',
       routePrefix: 'LEBUS',
-      staticResourceHref: 'http://exs.atm.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=LEBUS',
-      shapesStrategy: 'GENERATE',
-      afterInit: (resource) => {
-        resource.stops.forEach((stop) => {
-          stop.name = stop.name.replace('Pont-audemer : ', '');
-        });
-      },
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/lebus.zip',
     },
   },
 ];
