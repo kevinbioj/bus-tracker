@@ -1839,7 +1839,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "PAR GONNEVILLE / CRIQUETOT",
+                text: "PAR GONNEVILLE/CRIQUETOT",
               },
             ],
           ],
@@ -1870,7 +1870,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "PAR GONNEVILLE / CRIQUETOT",
+                text: "PAR GONNEVILLE/CRIQUETOT",
               },
             ],
           ],
