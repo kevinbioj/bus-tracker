@@ -723,6 +723,16 @@ const twistoRoutes: Route[] = [
     colors: { background: "#a7c4af", text: "#000000" },
     destinations: [
       {
+        id: ["Lion-sur-Mer Lion Plage"],
+        autoHide: true,
+        name: "Plage",
+        city: "LION-SUR-MER",
+        girouette: {
+          routeNumber: { backgroundColor: "#a7c4af", textColor: "#000000", outlineColor: "#FFFFFF", text: "12" },
+          pages: [{ text: "LION EXPRESS" }],
+        },
+      },
+      {
         id: ["Lion-sur-Mer Haut-Lion"],
         name: "Haut-Lion",
         city: "LION-SUR-MER",
