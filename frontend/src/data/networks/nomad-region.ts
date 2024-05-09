@@ -3,7 +3,6 @@ import { Network, Route } from "~/@types";
 const nomadRegionRoutes: Route[] = [
   {
     id: "NOMAD:NAV",
-    noCartridge: true,
     name: "NAV",
     colors: { background: "#402673", text: "#F49517" },
     destinations: [
