@@ -5,7 +5,6 @@ import { YabsEntry } from '~/@types';
 import { checkCalendar } from '~/utils/check-calendar';
 import { checkTrip } from '~/utils/check-trip';
 import { parseTime } from '~/utils/parse-time';
-import { search } from '~/utils/search';
 import { GtfsProperties, GtfsResource } from '~/yabs/fetcher/gtfs/@types';
 import { decodeTripUpdate, decodeVehiclePosition } from '~/yabs/fetcher/gtfs/decode-gtfsrt';
 import { getVehicleLedColor } from '~/yabs/vehicles/get-vehicle-led-color';
@@ -40,19 +39,13 @@ export async function computeGtfsEntries(resource: GtfsResource, properties: Gtf
 export function computeScheduled(resource: GtfsResource, properties: GtfsProperties, processedTrips: string[] = []) {
   const filter = properties.filters?.scheduled;
 
-  const ongoingTrips = resource.trips.filter((trip, index, array) => {
-    // 1. We run through the custom filter first.
-    if (typeof filter !== 'undefined' && !filter(trip, index, array, resource)) return false;
-    // 2. If the trip was already seen in realtime data, we skip it.
-    if (processedTrips.includes(trip.id)) return false;
-    // 3. If a trip with the same block (if available) was processed, we skip it.
-    if (trip.block !== null && processedTrips.some((id) => search(resource.trips, id)!.block === trip.block))
-      return false;
-    // 4. We check for calendar and stop time.
-    return checkCalendar(trip.calendar) && checkTrip(trip);
-  });
+  const entries: YabsEntry[] = [];
+  for (const trip of resource.trips.values()) {
+    if (typeof filter !== 'undefined' && !filter(trip, 0, [], resource)) continue;
+    if (processedTrips.includes(trip.id)) continue;
+    if (trip.block !== null && processedTrips.some((id) => resource.trips.get(id)!.block === trip.block)) continue;
+    if (!checkCalendar(trip.service) || !checkTrip(trip)) continue;
 
-  return ongoingTrips.map((trip) => {
     const stopTimes = trip.stops.map((stopTime) => ({
       id: stopTime.stop.id,
       name: stopTime.stop.name,
@@ -65,7 +58,7 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
 
     const currentStopTime = stopTimes.toReversed().find((stopTime) => Date.now() >= +stopTime.timestamp * 1000)!;
     const currentStopTimeIdx = stopTimes.indexOf(currentStopTime);
-    const currentStop = search(resource.stops, currentStopTime.id)!;
+    const currentStop = resource.stops.get(currentStopTime.id)!;
 
     let estimatedPosition = {
       latitude: currentStop.lat,
@@ -103,12 +96,12 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
       }
     }
 
-    return {
+    entries.push({
       id: `${properties.id}:JOU:${trip.id}`,
       stopTimes: stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
       trip: {
         id: trip.id,
-        calendar: trip.calendar.id,
+        calendar: trip.service.id,
         route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
         direction: trip.direction,
         headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
@@ -124,8 +117,9 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
       source: properties.getOperator?.(trip) ?? properties.id,
       timestamp: dayjs().unix(),
       activityRegistered: false,
-    } as const;
-  });
+    });
+  }
+  return entries;
 }
 
 export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsProperties) {
@@ -148,8 +142,8 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
       })
       .map(async (tripUpdate) => {
         // if (dayjs().diff(dayjs.unix(+tripUpdate.tripUpdate.timestamp), "minutes") >= 10) return;
-        const trip = search(resource.trips, tripUpdate.tripUpdate.trip.tripId);
-        if (trip === null) return;
+        const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
+        if (!trip) return;
         if (
           typeof tripUpdate.tripUpdate.trip.routeId !== 'undefined' &&
           tripUpdate.tripUpdate.trip.routeId !== trip.route
@@ -232,7 +226,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           : null;
         const ledColor = vehicleId ? await getVehicleLedColor({ operator: source, number: vehicleId }) : null;
 
-        const currentStop = search(resource.stops, currentStopTime.id)!;
+        const currentStop = resource.stops.get(currentStopTime.id)!;
 
         let estimatedPosition = {
           latitude: currentStop.lat,
@@ -276,7 +270,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
             : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
           trip: {
             id: trip.id,
-            calendar: trip.calendar.id,
+            calendar: trip.service.id,
             route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
             direction: trip.direction,
             headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
@@ -324,8 +318,8 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       })
       .map(async (vehiclePosition) => {
         if (typeof vehiclePosition.vehicle.trip === 'undefined') return;
-        const trip = search(resource.trips, vehiclePosition.vehicle.trip.tripId);
-        if (trip === null) return;
+        const trip = resource.trips.get(vehiclePosition.vehicle.trip.tripId);
+        if (!trip) return;
         if (
           typeof vehiclePosition.vehicle.trip.routeId !== 'undefined' &&
           vehiclePosition.vehicle.trip.routeId !== trip.route
@@ -422,7 +416,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
               : stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!),
           trip: {
             id: trip.id,
-            calendar: trip.calendar.id,
+            calendar: trip.service.id,
             route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
             direction: trip.direction,
             headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,

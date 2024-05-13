@@ -31,19 +31,19 @@ export type GtfsProperties = {
 
 //- GTFS Static
 
-export type Calendar = {
+export type Service = {
   id: string;
   days: [boolean, boolean, boolean, boolean, boolean, boolean, boolean];
-  whitelist: string[];
-  blacklist: string[];
-  from: string;
-  to: string;
+  inclusions: string[];
+  exclusions: string[];
+  startDate: string;
+  endDate: string;
 };
 
 export type GtfsResource = {
-  calendars: Calendar[];
-  stops: Stop[];
-  trips: Trip[];
+  services: Map<string, Service>;
+  stops: Map<string, Stop>;
+  trips: Map<string, Trip>;
 };
 
 export type Shape = {
@@ -67,7 +67,7 @@ export type StopTime = {
 
 export type Trip = {
   id: string;
-  calendar: Calendar;
+  service: Service;
   block: string | null;
   route: string;
   direction: number;

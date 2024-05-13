@@ -39,8 +39,8 @@ const sources: Source[] = [
         },
       },
       getOperator: (trip) =>
-        trip.calendar.id.startsWith('IST') ||
-        trip.calendar.id.startsWith('INT') ||
+        trip.service.id.startsWith('IST') ||
+        trip.service.id.startsWith('INT') ||
         trip.route === '06' ||
         trip.route === '89'
           ? 'TNI'
@@ -135,22 +135,22 @@ const sources: Source[] = [
       filters: {
         scheduled: (trip) => ['12', '13', '21'].includes(trip.route),
         tripUpdate: (tripUpdate, _, __, resource) => {
-          const trip = search(resource.trips, tripUpdate.tripUpdate.trip.tripId);
-          if (trip !== null) {
+          const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
+          if (trip) {
             tripUpdate.tripUpdate.trip.routeId = trip.route;
           }
           return true;
         },
         vehiclePosition: (vehiclePosition, _, __, resource) => {
-          const trip = search(resource.trips, vehiclePosition.vehicle.trip.tripId);
-          if (trip !== null) {
+          const trip = resource.trips.get(vehiclePosition.vehicle.trip.tripId);
+          if (trip) {
             vehiclePosition.vehicle.trip.routeId = trip.route;
           }
           return true;
         },
       },
       afterInit: (resource) => {
-        for (const trip of resource.trips) {
+        for (const trip of resource.trips.values()) {
           if (trip.route !== 'T') continue;
           const [first, last] = [trip.stops.at(0)!.stop, trip.stops.at(-1)!.stop];
           trip.route = match([first.name, last.name])
@@ -192,8 +192,8 @@ const sources: Source[] = [
         scheduled: () => false,
         tripUpdate: (tripUpdate, _, __, resource) => {
           const tripId = tripUpdate.tripUpdate.trip.tripId.split(':')[0];
-          const trip = search(resource.trips, tripId);
-          if (trip !== null) {
+          const trip = resource.trips.get(tripId);
+          if (trip) {
             tripUpdate.tripUpdate.trip.tripId = tripId;
             // @ts-expect-error Just for this ressource 🙏
             tripUpdate.tripUpdate.vehicle = { id: trip.trainNumber ?? null };
@@ -202,15 +202,12 @@ const sources: Source[] = [
         },
       },
       afterInit: (resource) => {
-        const transformedTrips: Trip[] = [...resource.trips.values()].map((trip) => {
-          return {
-            ...trip,
-            id: trip.id.split(':')[0],
-            headsign: trip.stops.at(-1)!.stop.name,
-            trainNumber: trip.headsign,
-          };
-        });
-        resource.trips = transformedTrips;
+        for (const trip of resource.trips.values()) {
+          trip.id = trip.id.split(':')[0];
+          (trip.headsign = trip.stops.at(-1)!.stop.name),
+            // @ts-expect-error
+            (trip.trainNumber = trip.headsign);
+        }
       },
       getOperator: () => 'LIA',
     },
@@ -259,7 +256,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad-geo3d.zip',
       tripUpdateHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
-      filters: { scheduled: (trip) => trip.calendar.id !== 'RT_ONLY' },
+      filters: { scheduled: (trip) => trip.service.id !== 'RT_ONLY' },
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },
