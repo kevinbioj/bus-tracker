@@ -4,8 +4,7 @@ import { join } from 'node:path';
 
 import { groupBy } from '~/utils/group-by';
 import { parseCsv } from '~/utils/parse-csv';
-import { search, searchSort } from '~/utils/search';
-import { Calendar, GtfsProperties, Shape, Stop, Trip } from '~/yabs/fetcher/gtfs/@types';
+import { GtfsProperties, Service, Shape, Stop, Trip } from '~/yabs/fetcher/gtfs/@types';
 
 const $ = (command: string) =>
   new Promise<string>((resolve, reject) =>
@@ -29,15 +28,15 @@ export async function downloadStaticResource(properties: GtfsProperties) {
       );
     }
   }
-  const [calendars, shapes, stops] = await Promise.all([
+  const [services, shapes, stops] = await Promise.all([
     loadCalendars(tmpdir),
-    properties.shapesStrategy === 'IGNORE' ? [] : loadShapes(tmpdir),
+    properties.shapesStrategy === 'IGNORE' ? new Map() : loadShapes(tmpdir),
     loadStops(tmpdir),
   ]);
 
-  const trips = await loadTrips(tmpdir, calendars, shapes, stops);
+  const trips = await loadTrips(tmpdir, services, shapes, stops);
   await $(`rm -r "${tmpdir}"`);
-  const resource = { calendars, stops, trips };
+  const resource = { services, stops, trips };
   properties.afterInit?.(resource);
   return resource;
 }
@@ -45,113 +44,134 @@ export async function downloadStaticResource(properties: GtfsProperties) {
 // ---
 
 async function loadCalendars(resourcePath: string) {
-  const calendars: Calendar[] = (
-    await readFile(join(resourcePath, 'calendar.txt'))
-      .then(parseCsv)
-      .catch(() => [])
-  )
-    .map<Calendar>((calendar) => ({
-      id: calendar.service_id,
-      days: [
-        !!+calendar.sunday,
-        !!+calendar.monday,
-        !!+calendar.tuesday,
-        !!+calendar.wednesday,
-        !!+calendar.thursday,
-        !!+calendar.friday,
-        !!+calendar.saturday,
-      ],
-      blacklist: [],
-      whitelist: [],
-      from: calendar.start_date,
-      to: calendar.end_date,
-    }))
-    .toSorted(searchSort);
+  const services = new Map<string, Service>();
 
-  (
-    await readFile(join(resourcePath, 'calendar_dates.txt'))
-      .then(parseCsv)
-      .catch(() => [])
-  ).forEach((calendarDate) => {
-    let calendar = search(calendars, calendarDate.service_id);
-    if (calendar === null) {
-      calendar = {
-        id: calendarDate.service_id,
+  const serviceRecords = await readFile(join(resourcePath, 'calendar.txt'))
+    .then(parseCsv)
+    .catch(() => []);
+
+  for (const serviceRecord of serviceRecords) {
+    services.set(serviceRecord.service_id, {
+      id: serviceRecord.service_id,
+      days: [
+        !!+serviceRecord.sunday,
+        !!+serviceRecord.monday,
+        !!+serviceRecord.tuesday,
+        !!+serviceRecord.wednesday,
+        !!+serviceRecord.thursday,
+        !!+serviceRecord.friday,
+        !!+serviceRecord.saturday,
+      ],
+      exclusions: [],
+      inclusions: [],
+      startDate: serviceRecord.start_date,
+      endDate: serviceRecord.end_date,
+    });
+  }
+
+  const calendarDateRecords = await readFile(join(resourcePath, 'calendar_dates.txt'))
+    .then(parseCsv)
+    .catch(() => []);
+
+  for (const calendarDateRecord of calendarDateRecords) {
+    let service = services.get(calendarDateRecord.service_id);
+    if (!service) {
+      service = {
+        id: calendarDateRecord.service_id,
         days: [false, false, false, false, false, false, false],
-        blacklist: [],
-        whitelist: [],
-        from: '20000101',
-        to: '20991231',
+        exclusions: [],
+        inclusions: [],
+        startDate: '20000101',
+        endDate: '20991231',
       };
-      calendars.push(calendar);
+      services.set(service.id, service);
     }
 
-    switch (+calendarDate.exception_type) {
+    switch (+calendarDateRecord.exception_type) {
       case 1:
-        calendar.whitelist.push(calendarDate.date);
+        service.inclusions.push(calendarDateRecord.date);
         break;
       case 2:
-        calendar.blacklist.push(calendarDate.date);
+        service.exclusions.push(calendarDateRecord.date);
         break;
       default:
     }
-  });
+  }
 
-  return calendars.toSorted(searchSort);
+  return services;
 }
 
-async function loadShapes(resourcePath: string): Promise<Shape[]> {
+async function loadShapes(resourcePath: string) {
   const shapePoints = await readFile(join(resourcePath, 'shapes.txt'))
     .then(parseCsv)
     .catch(() => []);
-  const shapes = groupBy(shapePoints, (shapePoint) => shapePoint.shape_id);
-  return [...shapes.entries()]
-    .map(([shapeId, points]) => ({
+  const shapePointsByShapeId = groupBy(shapePoints, (shapePoint) => shapePoint.shape_id);
+  const shapes = new Map<string, Shape>();
+
+  for (const [shapeId, shapePoints] of shapePointsByShapeId) {
+    shapes.set(shapeId, {
       id: shapeId,
-      points: points.map((shapePoint) => ({
-        lat: +shapePoint.shape_pt_lat,
-        lon: +shapePoint.shape_pt_lon,
-        sequence: +shapePoint.shape_pt_sequence,
-        distance: +shapePoint.shape_dist_traveled,
-      })),
-    }))
-    .toSorted(searchSort);
+      points: shapePoints
+        .map((shapePoint) => ({
+          lat: +shapePoint.shape_pt_lat,
+          lon: +shapePoint.shape_pt_lon,
+          sequence: +shapePoint.shape_pt_sequence,
+          distance: +shapePoint.shape_dist_traveled,
+        }))
+        .toSorted((a, b) => a.sequence - b.sequence),
+    });
+  }
+
+  return shapes;
 }
 
-async function loadStops(resourcePath: string): Promise<Stop[]> {
-  return (await readFile(join(resourcePath, 'stops.txt')).then(parseCsv))
-    .map((stop) => ({
-      id: stop.stop_id,
-      name: stop.stop_name,
-      lat: +stop.stop_lat,
-      lon: +stop.stop_lon,
-    }))
-    .toSorted(searchSort);
+async function loadStops(resourcePath: string) {
+  const stopRecords = await readFile(join(resourcePath, 'stops.txt')).then(parseCsv);
+  const stops = new Map<string, Stop>();
+  for (const stopRecord of stopRecords) {
+    if (stopRecord.location_type && +stopRecord.location_type !== 0) continue;
+    stops.set(stopRecord.stop_id, {
+      id: stopRecord.stop_id,
+      name: stopRecord.stop_name,
+      lat: +stopRecord.stop_lat,
+      lon: +stopRecord.stop_lon,
+    });
+  }
+  return stops;
 }
 
-async function loadTrips(resourcePath: string, calendars: Calendar[], shapes: Shape[], stops: Stop[]): Promise<Trip[]> {
-  const trips = await readFile(join(resourcePath, 'trips.txt')).then(parseCsv);
+async function loadTrips(
+  resourcePath: string,
+  services: Map<string, Service>,
+  shapes: Map<string, Shape>,
+  stops: Map<string, Stop>,
+) {
+  const tripRecords = await readFile(join(resourcePath, 'trips.txt')).then(parseCsv);
   const stopTimes = groupBy(
     await readFile(join(resourcePath, 'stop_times.txt')).then(parseCsv),
     (stopTime) => stopTime.trip_id,
   );
-  return trips
-    .map((trip) => ({
-      id: trip.trip_id,
-      calendar: search(calendars, trip.service_id)!,
-      block: trip.block_id || null,
-      route: trip.route_id,
-      direction: +trip.direction_id,
-      headsign: trip.trip_headsign,
-      stops: (stopTimes.get(trip.trip_id) ?? [])
+  const trips = new Map<string, Trip>();
+
+  for (const tripRecord of tripRecords) {
+    trips.set(tripRecord.trip_id, {
+      id: tripRecord.trip_id,
+      service: services.get(tripRecord.service_id)!,
+      block: tripRecord.block_id || null,
+      route: tripRecord.route_id,
+      direction: +tripRecord.direction_id,
+      headsign: tripRecord.trip_headsign,
+      stops: (stopTimes.get(tripRecord.trip_id) ?? [])
         .map((stopTime) => ({
           sequence: +stopTime.stop_sequence,
-          stop: search(stops, stopTime.stop_id)!,
+          stop: stops.get(stopTime.stop_id)!,
           time: stopTime.departure_time,
           distanceTraveled: stopTime.shape_dist_traveled ? +stopTime.shape_dist_traveled : null,
         }))
         .sort((a, b) => a.sequence - b.sequence),
-      shape: search(shapes, trip.shape_id),
-    }))
-    .toSorted(searchSort);
+      shape: shapes.get(tripRecord.shape_id) ?? null,
+    });
+  }
+
+  return trips;
 }

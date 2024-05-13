@@ -184,16 +184,16 @@ async function updateEntries(source: Source) {
     if (entries !== null) {
       output.set(source.id, entries);
       if (suppliedDatabase) {
-        await Promise.all(
-          entries
-            .filter((data) => data.vehicle.id !== null && data.activityRegistered)
-            .map((data) =>
-              insertActivity(
-                { operator: data.source, number: data.vehicle.id! },
-                { routeId: data.trip.route, time: dayjs.unix(data.timestamp).toDate() },
-              ),
-            ),
-        );
+        for (const entry of entries) {
+          if (entry.vehicle.id === null || !entry.activityRegistered) continue;
+          await insertActivity(
+            {
+              operator: entry.source,
+              number: entry.vehicle.id,
+            },
+            { routeId: entry.trip.route, time: dayjs.unix(entry.timestamp).toDate() },
+          );
+        }
       }
       console.log(`YABS\t${source.id}\tEntries were updated in ${Date.now() - then}ms.`);
     } else {
