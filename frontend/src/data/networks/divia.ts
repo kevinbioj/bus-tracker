@@ -856,7 +856,7 @@ const diviaRoutes: Route[] = [
             text: "F'Ni",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508C2E1", text: "CHEVIGNY-SAINT-SAUVEUR" }],
+          pages: [{ font: "1508C2E1", text: "CHEVIGNY-ST-SAUVEUR" }],
         },
       },
       {
