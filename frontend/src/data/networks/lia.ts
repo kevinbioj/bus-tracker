@@ -633,7 +633,17 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-A",
-                text: "OSCAR NIEMEYER",
+                text: "O. NIEMEYER",
+              },
+            ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "O. NIEMEYER",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR MONT-GAILLARD",
               },
             ],
           ],
@@ -726,6 +736,16 @@ const liaRoutes: Route[] = [
               {
                 font: "LUMIPLAN-A",
                 text: "PLACE JENNER",
+              },
+            ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "PLACE JENNER",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR MONT-GAILLARD",
               },
             ],
           ],
