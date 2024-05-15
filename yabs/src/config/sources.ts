@@ -1,8 +1,7 @@
 import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
-import { search } from '~/utils/search';
-import { GtfsProperties, Trip, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
+import { GtfsProperties, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
@@ -273,6 +272,28 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       getOperator: () => 'SNGO',
       shapesStrategy: 'IGNORE',
+      filters: {
+        tripUpdate: (tripUpdate, _, __, resource) => {
+          const matchingTrip = resource.trips.get(`ATOUMOD007:ServiceJourney:${tripUpdate.tripUpdate.trip.tripId}:LOC`);
+          if (matchingTrip) {
+            tripUpdate.tripUpdate.trip.tripId = matchingTrip.id;
+            tripUpdate.tripUpdate.stopTimeUpdate.forEach((stopTimeUpdate) => {
+              const stopTime = matchingTrip.stops.find((x) => x.stop.id.includes(stopTimeUpdate.stopId));
+              if (stopTime) {
+                stopTimeUpdate.stopId = stopTime.stop.id;
+              }
+            });
+          }
+          return true;
+        },
+        vehiclePosition: (vehicle, _, __, resource) => {
+          const matchingTrip = resource.trips.get(`ATOUMOD007:ServiceJourney:${vehicle.vehicle.trip.tripId}:LOC`);
+          if (matchingTrip) {
+            vehicle.vehicle.trip.tripId = matchingTrip.id;
+          }
+          return true;
+        },
+      },
     },
   },
   {

@@ -128,7 +128,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
 
   const entries = new Map<string, YabsEntry>();
 
-  const tripUpdate = await fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(10000) })
+  const tripUpdate = await fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(15000) })
     .then((response) => response.arrayBuffer())
     .then((arrayBuffer) => Buffer.from(arrayBuffer))
     .then((buffer) => decodeTripUpdate(buffer));
@@ -300,18 +300,30 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
   const entries = new Map<string, YabsEntry>();
 
   const [tripUpdates, vehiclePositions] = await Promise.all([
-    fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(10000) })
+    fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(15000) })
       .then((response) => response.arrayBuffer())
       .then((arrayBuffer) => Buffer.from(arrayBuffer))
-      .then((buffer) => decodeTripUpdate(buffer)),
-    fetch(properties.vehiclePositionHref, { signal: AbortSignal.timeout(10000) })
+      .then(
+        (buffer) =>
+          decodeTripUpdate(buffer).entity?.filter((tripUpdate, index, array) =>
+            properties.filters?.tripUpdate ? properties.filters.tripUpdate(tripUpdate, index, array, resource) : true,
+          ) ?? [],
+      ),
+    fetch(properties.vehiclePositionHref, { signal: AbortSignal.timeout(15000) })
       .then((response) => response.arrayBuffer())
       .then((arrayBuffer) => Buffer.from(arrayBuffer))
-      .then((buffer) => decodeVehiclePosition(buffer)),
+      .then(
+        (buffer) =>
+          decodeVehiclePosition(buffer).entity?.filter((vehiclePosition, index, array) =>
+            properties.filters?.vehiclePosition
+              ? properties.filters.vehiclePosition(vehiclePosition, index, array, resource)
+              : true,
+          ) ?? [],
+      ),
   ]);
 
   await Promise.allSettled(
-    vehiclePositions.entity
+    vehiclePositions
       .filter((vehiclePosition, index, array) => {
         const filter = properties.filters?.vehiclePosition;
         return filter ? filter(vehiclePosition, index, array, resource) : true;
@@ -326,7 +338,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         )
           return;
 
-        const tripUpdate = tripUpdates.entity.find((tripUpdate) => tripUpdate.tripUpdate.trip.tripId === trip.id);
+        const tripUpdate = tripUpdates.find((tripUpdate) => tripUpdate.tripUpdate.trip.tripId === trip.id);
         if (
           typeof tripUpdate === 'undefined' &&
           dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minutes') >= 10

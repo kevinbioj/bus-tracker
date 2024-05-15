@@ -3,7 +3,7 @@ import { Network, Route } from "~/@types";
 const sngoRoutes: Route[] = [
   {
     id: "SNGO:21",
-    routeIds: ["SNGO:21", "ATOUMOD007:Line:21:LOC"],
+    routeIds: ["SNGO:21", "SNGO:ATOUMOD007:Line:21:LOC"],
     name: "1",
     colors: { background: "#e30613", text: "#ffffff" },
     destinations: [
@@ -53,7 +53,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:22",
-    routeIds: ["SNGO:22", "ATOUMOD007:Line:22:LOC"],
+    routeIds: ["SNGO:22", "SNGO:ATOUMOD007:Line:22:LOC"],
     name: "2",
     colors: { background: "#76b82a", text: "#ffffff" },
     destinations: [
@@ -103,7 +103,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:23",
-    routeIds: ["SNGO:23", "ATOUMOD007:Line:23:LOC"],
+    routeIds: ["SNGO:23", "SNGO:ATOUMOD007:Line:23:LOC"],
     name: "3",
     colors: { background: "#fd0", text: "#000000" },
     destinations: [
@@ -142,7 +142,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:24",
-    routeIds: ["SNGO:24", "ATOUMOD007:Line:24:LOC"],
+    routeIds: ["SNGO:24", "SNGO:ATOUMOD007:Line:24:LOC"],
     name: "4",
     colors: { background: "#00b1eb", text: "#ffffff" },
     destinations: [
@@ -170,7 +170,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:25",
-    routeIds: ["SNGO:25", "ATOUMOD007:Line:25:LOC"],
+    routeIds: ["SNGO:25", "SNGO:ATOUMOD007:Line:25:LOC"],
     name: "5",
     colors: { background: "#164194", text: "#ffffff" },
     destinations: [
@@ -198,7 +198,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:26",
-    routeIds: ["SNGO:26", "ATOUMOD007:Line:26:LOC"],
+    routeIds: ["SNGO:26", "SNGO:ATOUMOD007:Line:26:LOC"],
     name: "6",
     colors: { background: "#ea619f", text: "#ffffff" },
     destinations: [
@@ -226,7 +226,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:38",
-    routeIds: ["SNGO:38", "ATOUMOD007:Line:38:LOC"],
+    routeIds: ["SNGO:38", "SNGO:ATOUMOD007:Line:38:LOC"],
     name: "8A",
     colors: { background: "#8b663a", text: "#ffffff" },
     destinations: [
@@ -276,7 +276,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:48",
-    routeIds: ["SNGO:48", "ATOUMOD007:Line:48:LOC"],
+    routeIds: ["SNGO:48", "SNGO:ATOUMOD007:Line:48:LOC"],
     name: "8B",
     colors: { background: "#cdcc00", text: "#ffffff" },
     destinations: [
@@ -326,7 +326,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:29",
-    routeIds: ["SNGO:29", "ATOUMOD007:Line:29:LOC"],
+    routeIds: ["SNGO:29", "SNGO:ATOUMOD007:Line:29:LOC"],
     name: "9",
     colors: { background: "#7f5ca3", text: "#ffffff" },
     destinations: [
@@ -354,7 +354,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:10",
-    routeIds: ["SNGO:10", "ATOUMOD007:Line:10:LOC"],
+    routeIds: ["SNGO:10", "SNGO:ATOUMOD007:Line:10:LOC"],
     name: "10",
     colors: { background: "#ef7d00", text: "#ffffff" },
     destinations: [
@@ -404,7 +404,7 @@ const sngoRoutes: Route[] = [
   },
   {
     id: "SNGO:31",
-    routeIds: ["SNGO:31", "ATOUMOD007:Line:31:LOC"],
+    routeIds: ["SNGO:31", "SNGO:ATOUMOD007:Line:31:LOC"],
     name: "11",
     colors: { background: "#252B5A", text: "#ffffff" },
     destinations: [
