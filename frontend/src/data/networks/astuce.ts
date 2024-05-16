@@ -66,7 +66,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#E6007E", text: "#FFED00" },
     destinations: [
       {
-        id: ["Boulingrin"],
+        id: ["Boulingrin ROUEN", "Boulingrin"],
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
@@ -80,7 +80,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Joffre-Mutualité ROUEN"],
+        id: ["Joffre-Mutualité ROUEN", "Joffre-Mutualité"],
         autoHide: true,
         name: "Joffre-Mutualité",
         city: "ROUEN",
