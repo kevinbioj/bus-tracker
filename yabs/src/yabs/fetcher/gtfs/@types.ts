@@ -6,21 +6,9 @@ export type GtfsProperties = {
   staticResourceHref: string;
   tripUpdateHref?: string;
   vehiclePositionHref?: string;
-  filters?: {
-    scheduled?: (trip: Trip, index: number, array: Trip[], resource: GtfsResource) => boolean;
-    tripUpdate?: (
-      tripUpdate: TripUpdateEntity,
-      index: number,
-      array: TripUpdateEntity[],
-      resource: GtfsResource,
-    ) => boolean;
-    vehiclePosition?: (
-      tripUpdate: VehiclePositionEntity,
-      index: number,
-      array: VehiclePositionEntity[],
-      resource: GtfsResource,
-    ) => boolean;
-  };
+  allowScheduled?: (trip: Trip, resource: GtfsResource) => boolean;
+  mapTripUpdateEntities?: (entities: TripUpdateEntity[], resource: GtfsResource) => TripUpdateEntity[];
+  mapVehiclePositionEntities?: (entities: VehiclePositionEntity[], resource: GtfsResource) => VehiclePositionEntity[];
   afterInit?: (resource: GtfsResource) => unknown;
   getOperator?: (trip: Trip) => string;
   getVehicleNumber?: (descriptor: VehicleDescriptor) => string | null;
