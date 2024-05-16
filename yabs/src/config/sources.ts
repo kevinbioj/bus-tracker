@@ -1,13 +1,14 @@
 import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
+import { parseTime } from '~/utils/parse-time';
 import { GtfsProperties, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
 
-const zenbusFilter = (entity: VehiclePositionEntity) =>
-  dayjs().diff(dayjs.unix(+entity.vehicle.timestamp), 'minutes') < 10;
+const zenbusFilter = (entities: VehiclePositionEntity[]) =>
+  entities.filter((entity) => dayjs().diff(dayjs.unix(+entity.vehicle.timestamp), 'minutes') < 10);
 
 export type Source = {
   id: string;
@@ -27,15 +28,13 @@ const sources: Source[] = [
       tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
       vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       routePrefix: 'ASTUCE',
-      filters: {
-        scheduled: (trip) => {
-          if (['35', '89', '322'].includes(trip.route)) return true;
-          if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Lafayette ROUEN'].includes(trip.headsign))
-            return true;
-          if (trip.route === '07' && ['Hôtel de Ville SOTTEVILLE-LÈS-ROUEN', 'Lafayette ROUEN'].includes(trip.headsign))
-            return true;
-          return false;
-        },
+      allowScheduled: (trip) => {
+        if (['35', '89', '322'].includes(trip.route)) return true;
+        if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Lafayette ROUEN'].includes(trip.headsign))
+          return true;
+        if (trip.route === '07' && ['Hôtel de Ville SOTTEVILLE-LÈS-ROUEN', 'Lafayette ROUEN'].includes(trip.headsign))
+          return true;
+        return false;
       },
       getOperator: (trip) =>
         trip.service.id.startsWith('IST') ||
@@ -59,9 +58,7 @@ const sources: Source[] = [
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
       shapesStrategy: 'GENERATE',
       routePrefix: 'ASTUCE-TGR',
-      filters: {
-        scheduled: (trip) => trip.route !== '446',
-      },
+      allowScheduled: (trip) => trip.route !== '446',
     },
   },
   {
@@ -73,13 +70,29 @@ const sources: Source[] = [
       staticResourceHref: 'https://gtfs.tae76.fr/gtfs/feed.zip',
       tripUpdateHref: 'https://gtfs.tae76.fr/gtfs-rt.bin',
       routePrefix: 'ASTUCE',
-      filters: {
-        scheduled: () => false,
-        tripUpdate: (trip, index, array) => {
-          if (typeof trip.tripUpdate.vehicle?.id !== 'string') return false;
-          return index === array.findIndex((item) => trip.tripUpdate.vehicle!.id === item.tripUpdate.vehicle?.id);
-        },
+      allowScheduled: () => false,
+      mapTripUpdateEntities: (entities, resource) => {
+        const tripStartTimes = entities.reduce((map, entity) => {
+          const trip = resource.trips.get(entity.tripUpdate.trip.tripId)!;
+          const startTime = parseTime(trip.stops.at(0)!.time).unix();
+          map.set(trip.id, startTime);
+          return map;
+        }, new Map<string, number>());
+
+        const sortedEntities = entities
+          .filter((tripUpdate) => tripUpdate.tripUpdate.vehicle?.id)
+          .sort(
+            (a, b) => tripStartTimes.get(a.tripUpdate.trip.tripId)! - tripStartTimes.get(b.tripUpdate.trip.tripId)!,
+          );
+
+        const groupedEntities = Map.groupBy(sortedEntities, (tripUpdate) => tripUpdate.tripUpdate.vehicle!.id);
+        return [...groupedEntities.values()].map((entities) => entities.at(0)!);
       },
+      //   tripUpdate: (trip, index, array) => {
+      //     if (typeof trip.tripUpdate.vehicle?.id !== 'string') return false;
+      //     return index === array.findIndex((item) => trip.tripUpdate.vehicle!.id === item.tripUpdate.vehicle?.id);
+      //   },
+      // },
       missingStopTimeUpdateStrategy: 'SKIP',
       shapesStrategy: 'GENERATE',
     },
@@ -131,23 +144,23 @@ const sources: Source[] = [
       tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/lia/trip-updates',
       vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/lia/vehicle-positions',
       routePrefix: 'LIA',
-      filters: {
-        scheduled: (trip) => ['12', '13', '21'].includes(trip.route),
-        tripUpdate: (tripUpdate, _, __, resource) => {
+      allowScheduled: (trip) => ['12', '13', '21'].includes(trip.route),
+      mapTripUpdateEntities: (entities, resource) =>
+        entities.map((tripUpdate) => {
           const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
           if (trip) {
             tripUpdate.tripUpdate.trip.routeId = trip.route;
           }
-          return true;
-        },
-        vehiclePosition: (vehiclePosition, _, __, resource) => {
+          return tripUpdate;
+        }),
+      mapVehiclePositionEntities: (entities, resource) =>
+        entities.map((vehiclePosition) => {
           const trip = resource.trips.get(vehiclePosition.vehicle.trip.tripId);
           if (trip) {
             vehiclePosition.vehicle.trip.routeId = trip.route;
           }
-          return true;
-        },
-      },
+          return vehiclePosition;
+        }),
       afterInit: (resource) => {
         for (const trip of resource.trips.values()) {
           if (trip.route !== 'T') continue;
@@ -187,9 +200,9 @@ const sources: Source[] = [
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/sncf-ter-gtfs-rt-trip-updates',
       routePrefix: 'LIA',
       registerActivity: false,
-      filters: {
-        scheduled: () => false,
-        tripUpdate: (tripUpdate, _, __, resource) => {
+      allowScheduled: () => false,
+      mapTripUpdateEntities: (entities, resource) =>
+        entities.map((tripUpdate) => {
           const tripId = tripUpdate.tripUpdate.trip.tripId.split(':')[0];
           const trip = resource.trips.get(tripId);
           if (trip) {
@@ -197,9 +210,8 @@ const sources: Source[] = [
             // @ts-expect-error Just for this ressource 🙏
             tripUpdate.tripUpdate.vehicle = { id: trip.trainNumber ?? null };
           }
-          return true;
-        },
-      },
+          return tripUpdate;
+        }),
       afterInit: (resource) => {
         for (const trip of resource.trips.values()) {
           trip.id = trip.id.split(':')[0];
@@ -219,9 +231,7 @@ const sources: Source[] = [
       id: 'SEMO',
       routePrefix: 'SEMO',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/98bbbf7c-10ff-48a0-afc2-c5f7b3dda5af',
-      filters: {
-        scheduled: (trip) => !trip.route.startsWith('S'),
-      },
+      allowScheduled: (trip) => !trip.route.startsWith('S'),
     },
   },
   {
@@ -241,7 +251,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'NOMAD',
       staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad.zip',
-      filters: { scheduled: (trip) => !['216', '228', '423', '424', '527', '530'].includes(trip.route) },
+      allowScheduled: (trip) => !['216', '228', '423', '424', '527', '530'].includes(trip.route),
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },
@@ -255,7 +265,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad-geo3d.zip',
       tripUpdateHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
-      filters: { scheduled: (trip) => trip.service.id !== 'RT_ONLY' },
+      allowScheduled: (trip) => trip.service.id !== 'RT_ONLY',
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },
@@ -272,8 +282,8 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       getOperator: () => 'SNGO',
       shapesStrategy: 'IGNORE',
-      filters: {
-        tripUpdate: (tripUpdate, _, __, resource) => {
+      mapTripUpdateEntities: (entities, resource) =>
+        entities.map((tripUpdate) => {
           const matchingTrip = resource.trips.get(`ATOUMOD007:ServiceJourney:${tripUpdate.tripUpdate.trip.tripId}:LOC`);
           if (matchingTrip) {
             tripUpdate.tripUpdate.trip.tripId = matchingTrip.id;
@@ -284,16 +294,16 @@ const sources: Source[] = [
               }
             });
           }
-          return true;
-        },
-        vehiclePosition: (vehicle, _, __, resource) => {
+          return tripUpdate;
+        }),
+      mapVehiclePositionEntities: (entities, resource) =>
+        entities.map((vehicle) => {
           const matchingTrip = resource.trips.get(`ATOUMOD007:ServiceJourney:${vehicle.vehicle.trip.tripId}:LOC`);
           if (matchingTrip) {
             vehicle.vehicle.trip.tripId = matchingTrip.id;
           }
-          return true;
-        },
-      },
+          return vehicle;
+        }),
     },
   },
   {
@@ -325,7 +335,7 @@ const sources: Source[] = [
         if (typeof descriptor.label === 'string') return descriptor.label;
         return capCotentinDevices.get(descriptor.id) ?? null;
       },
-      filters: { scheduled: () => false },
+      allowScheduled: () => false,
       shapesStrategy: 'IGNORE',
     },
   },
@@ -341,9 +351,7 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       getOperator: () => 'REZOBUS',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
-      filters: {
-        scheduled: (trip) => !['14', '30'].includes(trip.route),
-      },
+      allowScheduled: (trip) => !['14', '30'].includes(trip.route),
       afterInit: (resource) => {
         resource.trips.forEach((trip) => {
           const lastStopTime = trip.stops.at(-1);
@@ -365,7 +373,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
-      filters: { scheduled: () => false },
+      allowScheduled: () => false,
       shapesStrategy: 'IGNORE',
     },
   },
@@ -379,10 +387,8 @@ const sources: Source[] = [
       staticResourceHref: 'https://zenbus.net/gtfs/static/download.zip?dataset=astrobus',
       tripUpdateHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=astrobus',
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=astrobus',
-      filters: {
-        scheduled: () => false,
-        vehiclePosition: zenbusFilter,
-      },
+      allowScheduled: () => false,
+      mapVehiclePositionEntities: zenbusFilter,
       getOperator: () => 'ASTROBUS',
       getVehicleNumber: () => null,
       shapesStrategy: 'IGNORE',
@@ -398,10 +404,8 @@ const sources: Source[] = [
       staticResourceHref: 'https://zenbus.net/gtfs/static/download.zip?dataset=hobus',
       tripUpdateHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=hobus',
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=hobus',
-      filters: {
-        scheduled: () => false,
-        vehiclePosition: zenbusFilter,
-      },
+      allowScheduled: () => false,
+      mapVehiclePositionEntities: zenbusFilter,
       getOperator: () => 'HOBUS',
       getVehicleNumber: () => null,
       shapesStrategy: 'IGNORE',
@@ -417,10 +421,8 @@ const sources: Source[] = [
       staticResourceHref: 'https://zenbus.net/gtfs/static/download.zip?dataset=granville',
       tripUpdateHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=granville',
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=granville',
-      filters: {
-        scheduled: () => false,
-        vehiclePosition: zenbusFilter,
-      },
+      allowScheduled: () => false,
+      mapVehiclePositionEntities: zenbusFilter,
       getOperator: () => 'NEVA',
       getVehicleNumber: () => null,
       shapesStrategy: 'IGNORE',
@@ -436,9 +438,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/821cfc05-c8db-48a5-a830-9358054bee95',
       tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/trip-updates',
       vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/vehicle-positions',
-      filters: {
-        scheduled: () => false,
-      },
+      allowScheduled: () => false,
       getOperator: () => 'NEMUS',
       getVehicleNumber: () => null,
       shapesStrategy: 'IGNORE',
@@ -454,9 +454,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/keolis-bayeux/gtfs-rt',
-      filters: {
-        scheduled: (trip) => trip.route !== 'TAD 1',
-      },
+      allowScheduled: (trip) => trip.route !== 'TAD 1',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
       shapesStrategy: 'IGNORE',
     },
@@ -471,10 +469,8 @@ const sources: Source[] = [
       staticResourceHref: 'https://zenbus.net/gtfs/static/download.zip?dataset=bernay',
       tripUpdateHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=bernay',
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=bernay',
-      filters: {
-        scheduled: () => false,
-        vehiclePosition: zenbusFilter,
-      },
+      allowScheduled: () => false,
+      mapVehiclePositionEntities: zenbusFilter,
       getOperator: () => 'LBUS',
       getVehicleNumber: () => null,
       shapesStrategy: 'IGNORE',
