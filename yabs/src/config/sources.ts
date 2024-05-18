@@ -30,10 +30,10 @@ const sources: Source[] = [
       routePrefix: 'ASTUCE',
       allowScheduled: (trip) => {
         if (['35', '89', '322'].includes(trip.route)) return true;
-        if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Lafayette ROUEN'].includes(trip.headsign))
-          return true;
-        if (trip.route === '07' && ['Hôtel de Ville SOTTEVILLE-LÈS-ROUEN', 'Lafayette ROUEN'].includes(trip.headsign))
-          return true;
+        // if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Lafayette ROUEN'].includes(trip.headsign))
+        //   return true;
+        // if (trip.route === '07' && ['Hôtel de Ville SOTTEVILLE-LÈS-ROUEN', 'Lafayette ROUEN'].includes(trip.headsign))
+        //   return true;
         return false;
       },
       getOperator: (trip) =>

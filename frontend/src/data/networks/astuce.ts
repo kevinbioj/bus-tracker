@@ -412,42 +412,42 @@ const astuceRoutes: Route[] = [
           pages: [{ text: "STADE DIOCHON" }, { text: "PETIT-QUEVILLY" }],
         },
       },
-      {
-        id: ["Lafayette ROUEN"],
-        autoHide: true,
-        name: "Lafayette",
-        city: "ROUEN",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#E6007E",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "F1",
-          },
-          pages: [
-            { spacing: 3, text: "LAFAYETTE" },
-            { spacing: 3, text: "ROUEN" },
-          ],
-        },
-      },
-      {
-        id: ["Boulingrin ROUEN", "Boulingrin ROUE N"],
-        autoHide: true,
-        name: "Boulingrin",
-        city: "ROUEN",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#E6007E",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "F1",
-          },
-          pages: [
-            { spacing: 3, text: "BOULINGRIN" },
-            { spacing: 3, text: "ROUEN" },
-          ],
-        },
-      },
+      // {
+      //   id: ["Lafayette ROUEN"],
+      //   autoHide: true,
+      //   name: "Lafayette",
+      //   city: "ROUEN",
+      //   girouette: {
+      //     routeNumber: {
+      //       backgroundColor: "#E6007E",
+      //       textColor: "#FFFFFF",
+      //       outlineColor: "#000000",
+      //       text: "F1",
+      //     },
+      //     pages: [
+      //       { spacing: 3, text: "LAFAYETTE" },
+      //       { spacing: 3, text: "ROUEN" },
+      //     ],
+      //   },
+      // },
+      // {
+      //   id: ["Boulingrin ROUEN", "Boulingrin ROUE N"],
+      //   autoHide: true,
+      //   name: "Boulingrin",
+      //   city: "ROUEN",
+      //   girouette: {
+      //     routeNumber: {
+      //       backgroundColor: "#E6007E",
+      //       textColor: "#FFFFFF",
+      //       outlineColor: "#000000",
+      //       text: "F1",
+      //     },
+      //     pages: [
+      //       { spacing: 3, text: "BOULINGRIN" },
+      //       { spacing: 3, text: "ROUEN" },
+      //     ],
+      //   },
+      // },
       {
         id: ["Plaine de la Ronce ISNEAUVILLE"],
         name: "Plaine de la Ronce",
@@ -717,44 +717,44 @@ const astuceRoutes: Route[] = [
           pages: [{ text: "HOTEL DE VILLE" }, { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" }],
         },
       },
-      {
-        id: ["Lafayette ROUEN"],
-        autoHide: true,
-        name: "Lafayette",
-        city: "ROUEN",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: {
-            backgroundColor: "#008F5B",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "F7",
-          },
-          pages: [
-            { spacing: 3, text: "LAFAYETTE" },
-            { spacing: 3, text: "ROUEN" },
-          ],
-        },
-      },
-      {
-        id: ["Boulingrin ROUEN", "Boulingrin ROUE N"],
-        autoHide: true,
-        name: "Boulingrin",
-        city: "ROUEN",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: {
-            backgroundColor: "#008F5B",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "F7",
-          },
-          pages: [
-            { spacing: 3, text: "BOULINGRIN" },
-            { spacing: 3, text: "ROUEN" },
-          ],
-        },
-      },
+      // {
+      //   id: ["Lafayette ROUEN"],
+      //   autoHide: true,
+      //   name: "Lafayette",
+      //   city: "ROUEN",
+      //   girouette: {
+      //     ledColor: "WHITE",
+      //     routeNumber: {
+      //       backgroundColor: "#008F5B",
+      //       textColor: "#FFFFFF",
+      //       outlineColor: "#000000",
+      //       text: "F7",
+      //     },
+      //     pages: [
+      //       { spacing: 3, text: "LAFAYETTE" },
+      //       { spacing: 3, text: "ROUEN" },
+      //     ],
+      //   },
+      // },
+      // {
+      //   id: ["Boulingrin ROUEN", "Boulingrin ROUE N"],
+      //   autoHide: true,
+      //   name: "Boulingrin",
+      //   city: "ROUEN",
+      //   girouette: {
+      //     ledColor: "WHITE",
+      //     routeNumber: {
+      //       backgroundColor: "#008F5B",
+      //       textColor: "#FFFFFF",
+      //       outlineColor: "#000000",
+      //       text: "F7",
+      //     },
+      //     pages: [
+      //       { spacing: 3, text: "BOULINGRIN" },
+      //       { spacing: 3, text: "ROUEN" },
+      //     ],
+      //   },
+      // },
       {
         id: ["La Pléiade MONT-SAINT-AIGNAN"],
         name: "La Pléiade",
