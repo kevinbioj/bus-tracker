@@ -200,7 +200,11 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         stopTimes.toReversed().find((stopTime) => {
           return dayjs().isAfter(dayjs.unix(stopTime.timestamp ?? stopTime.scheduled));
         }) ?? stopTimes[0];
-      if (dayjs().diff(dayjs.unix(currentStopTime.timestamp!), 'minutes') > 10) return;
+      if (
+        currentStopTime.sequence === trip.stops.at(-1)!.sequence &&
+        dayjs().diff(dayjs.unix(currentStopTime.timestamp!), 'minutes') > 10
+      )
+        return;
       const currentStopTimeIdx = stopTimes.indexOf(currentStopTime);
 
       const firstTimestamp = stopTimes.find((st) => st.timestamp !== null)?.timestamp;
