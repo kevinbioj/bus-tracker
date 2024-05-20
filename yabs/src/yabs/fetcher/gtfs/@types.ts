@@ -6,7 +6,7 @@ export type GtfsProperties = {
   staticResourceHref: string;
   tripUpdateHref?: string;
   vehiclePositionHref?: string;
-  allowScheduled?: (trip: Trip, resource: GtfsResource) => boolean;
+  allowScheduled?: ((trip: Trip, resource: GtfsResource) => boolean) | boolean;
   mapTripUpdateEntities?: (entities: TripUpdateEntity[], resource: GtfsResource) => TripUpdateEntity[];
   mapVehiclePositionEntities?: (entities: VehiclePositionEntity[], resource: GtfsResource) => VehiclePositionEntity[];
   afterInit?: (resource: GtfsResource) => unknown;
@@ -32,6 +32,7 @@ export type GtfsResource = {
   services: Map<string, Service>;
   stops: Map<string, Stop>;
   trips: Map<string, Trip>;
+  scheduledTrips: Trip[];
 };
 
 export type Shape = {

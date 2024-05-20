@@ -37,11 +37,8 @@ export async function computeGtfsEntries(resource: GtfsResource, properties: Gtf
 // ---
 
 export function computeScheduled(resource: GtfsResource, properties: GtfsProperties, processedTrips: string[] = []) {
-  const filter = properties.allowScheduled;
-
   const entries: YabsEntry[] = [];
-  for (const trip of resource.trips.values()) {
-    if (typeof filter !== 'undefined' && !filter(trip, resource)) continue;
+  for (const trip of resource.scheduledTrips) {
     if (processedTrips.includes(trip.id)) continue;
     if (trip.block !== null && processedTrips.some((id) => resource.trips.get(id)!.block === trip.block)) continue;
     if (!checkCalendar(trip.service) || !checkTrip(trip)) continue;

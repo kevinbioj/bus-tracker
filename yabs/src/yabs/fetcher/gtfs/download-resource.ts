@@ -4,7 +4,7 @@ import { join } from 'node:path';
 
 import { groupBy } from '~/utils/group-by';
 import { parseCsv } from '~/utils/parse-csv';
-import { GtfsProperties, Service, Shape, Stop, Trip } from '~/yabs/fetcher/gtfs/@types';
+import { GtfsProperties, GtfsResource, Service, Shape, Stop, Trip } from '~/yabs/fetcher/gtfs/@types';
 
 const $ = (command: string) =>
   new Promise<string>((resolve, reject) =>
@@ -35,8 +35,17 @@ export async function downloadStaticResource(properties: GtfsProperties) {
   ]);
 
   const trips = await loadTrips(tmpdir, services, shapes, stops);
+  const semiResource = { services, stops, trips, scheduledTrips: [] };
+  const scheduledTrips =
+    typeof properties.allowScheduled === 'undefined' || properties.allowScheduled === true
+      ? [...trips.values()]
+      : properties.allowScheduled === false
+        ? []
+        : [...trips.values()].filter((trip) =>
+            (properties.allowScheduled as (trip: Trip, resource: GtfsResource) => boolean)(trip, semiResource),
+          );
   await $(`rm -r "${tmpdir}"`);
-  const resource = { services, stops, trips };
+  const resource = { ...semiResource, scheduledTrips };
   properties.afterInit?.(resource);
   return resource;
 }
