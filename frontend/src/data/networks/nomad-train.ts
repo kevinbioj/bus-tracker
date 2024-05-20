@@ -324,7 +324,7 @@ const nomadCar: Route[] = [
     ],
   },
   {
-    id: "NOMAD-TER:FR:Line::960d5017-915b-4c7e-b452-2fd669ba48a5:",
+    id: "NOMAD-TER:FR:Line::7BDE293E-0D29-48A4-8978-8ADB3FFEA340:",
     noCartridge: true,
     name: "K45",
     colors: { background: "#E00046", text: "#FFFFFF" },
@@ -435,6 +435,21 @@ const nomadCar: Route[] = [
             text: "C2",
           },
           pages: [{ font: "1508SUPX", text: "PARIS SAINT-LAZARE" }],
+        },
+      },
+      {
+        id: ["Mantes-la-Jolie"],
+        name: "Mantes-la-Jolie",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#3581C3",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "C2",
+          },
+          pages: [{ font: "1508SUPX", text: "MANTES-LA-JOLIE" }],
         },
       },
       {
@@ -714,7 +729,7 @@ const nomadCar: Route[] = [
     ],
   },
   {
-    id: "NOMAD-TER:FR:Line::A6CE6325-08D1-4C25-9D15-15C2DC5E7BD0:",
+    id: "NOMAD-TER:FR:Line::3e9229c5-ae84-4f9e-98df-93cc2e91b55c:",
     noCartridge: true,
     name: "P11",
     colors: { background: "#63BF00", text: "#FFFFFF" },
