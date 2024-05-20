@@ -3,7 +3,7 @@ import { Network, Route } from "~/@types";
 const liaRoutes: Route[] = [
   {
     id: "LIA:LER",
-    routeIds: ["LIA:FR:Line::325702f0-8067-4665-a0d8-5ebce7e59d0a:"],
+    routeIds: ["NOMAD-TER:FR:Line::325702f0-8067-4665-a0d8-5ebce7e59d0a:"],
     name: "LER",
     colors: { background: "#ed6ea7", text: "#FFFFFF" },
     destinations: [

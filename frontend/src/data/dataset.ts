@@ -13,7 +13,8 @@ import liaNetwork from "~/data/networks/lia";
 import mocaNetwork from "~/data/networks/moca";
 import nemusNetwork from "~/data/networks/nemus";
 import nevaNetwork from "~/data/networks/neva";
-import nomadRegionNetwork from "~/data/networks/nomad-region";
+import nomadCarNetwork from "~/data/networks/nomad-car";
+import nomadTrainNetwork from "~/data/networks/nomad-train";
 import rezobusNetwork from "~/data/networks/rezobus";
 import semoNetwork from "~/data/networks/semo";
 import sngoNetwork from "~/data/networks/sngo";
@@ -21,7 +22,8 @@ import transurbainNetwork from "~/data/networks/transurbain";
 import twistoNetwork from "~/data/networks/twisto";
 
 export const networks: Network[] = [
-  nomadRegionNetwork,
+  nomadTrainNetwork,
+  nomadCarNetwork,
   astuceNetwork,
   twistoNetwork,
   liaNetwork,

@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
 import { parseTime } from '~/utils/parse-time';
-import { GtfsProperties, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
+import { GtfsProperties, Trip, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
 import { SiriProperties } from '~/yabs/fetcher/siri/@types';
 
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
@@ -47,7 +47,7 @@ const sources: Source[] = [
   },
   {
     id: 'TCAR-TGR',
-    refreshCron: '0,10,20,30,40,50 * * * * *',
+    refreshCron: '2,32 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR-TGR',
@@ -63,14 +63,14 @@ const sources: Source[] = [
   },
   {
     id: 'TAE',
-    refreshCron: '0,30 * * * * *',
+    refreshCron: '4,34 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TAE',
       staticResourceHref: 'https://gtfs.tae76.fr/gtfs/feed.zip',
       tripUpdateHref: 'https://gtfs.tae76.fr/gtfs-rt.bin',
       routePrefix: 'ASTUCE',
-      allowScheduled: () => false,
+      allowScheduled: false,
       mapTripUpdateEntities: (entities, resource) => {
         const tripStartTimes = entities.reduce((map, entity) => {
           const trip = resource.trips.get(entity.tripUpdate.trip.tripId)!;
@@ -99,7 +99,7 @@ const sources: Source[] = [
   },
   {
     id: 'TNI',
-    refreshCron: '0 * * * * *',
+    refreshCron: '5 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TNI',
@@ -112,7 +112,7 @@ const sources: Source[] = [
   },
   {
     id: 'HANGA',
-    refreshCron: '0 * * * * *',
+    refreshCron: '35 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'HANGA',
@@ -124,7 +124,7 @@ const sources: Source[] = [
   },
   {
     id: 'TWISTO',
-    refreshCron: '15,45 * * * * *',
+    refreshCron: '6,36 * * * * *',
     type: 'SIRI-XML',
     siriProperties: {
       id: 'TWISTO',
@@ -136,7 +136,7 @@ const sources: Source[] = [
   },
   {
     id: 'LIA',
-    refreshCron: '5,15,25,35,45,55 * * * * *',
+    refreshCron: '38 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'LIA',
@@ -191,16 +191,16 @@ const sources: Source[] = [
     },
   },
   {
-    id: 'LIA-LER',
-    refreshCron: '30 * * * * *',
+    id: 'NOMAD-TER',
+    refreshCron: '40 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
-      id: 'LIA-LER',
-      staticResourceHref: 'https://gtfs.bus-tracker.fr/sncf-ler.zip',
+      id: 'NOMAD-TER',
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/sncf-nomad.zip',
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/sncf-ter-gtfs-rt-trip-updates',
-      routePrefix: 'LIA',
+      routePrefix: 'NOMAD-TER',
       registerActivity: false,
-      allowScheduled: () => false,
+      allowScheduled: false,
       mapTripUpdateEntities: (entities, resource) =>
         entities.map((tripUpdate) => {
           const tripId = tripUpdate.tripUpdate.trip.tripId.split(':')[0];
@@ -213,40 +213,22 @@ const sources: Source[] = [
           return tripUpdate;
         }),
       afterInit: (resource) => {
+        const fixedTrips = new Map<string, Trip>();
         for (const trip of resource.trips.values()) {
           trip.id = trip.id.split(':')[0];
-          (trip.headsign = trip.stops.at(-1)!.stop.name),
-            // @ts-expect-error
-            (trip.trainNumber = trip.headsign);
+          // @ts-expect-error
+          trip.trainNumber = trip.headsign;
+          trip.headsign = trip.stops.at(-1)!.stop.name;
+          fixedTrips.set(trip.id, trip);
         }
+        resource.trips = fixedTrips;
       },
-      getOperator: () => 'LIA',
-    },
-  },
-  {
-    id: 'SEMO',
-    refreshCron: '0,20,40 * * * * *',
-    type: 'GTFS',
-    gtfsProperties: {
-      id: 'SEMO',
-      routePrefix: 'SEMO',
-      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/98bbbf7c-10ff-48a0-afc2-c5f7b3dda5af',
-      allowScheduled: (trip) => !trip.route.startsWith('S'),
-    },
-  },
-  {
-    id: 'TRANSURBAIN',
-    refreshCron: '10,30,50 * * * * *',
-    type: 'GTFS',
-    gtfsProperties: {
-      id: 'TRANSURBAIN',
-      routePrefix: 'TRANSURBAIN',
-      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/ec78df83-2e60-4284-acc3-86a0baa76bf0',
+      getOperator: (trip) => (trip.route === 'FR:Line::325702f0-8067-4665-a0d8-5ebce7e59d0a:' ? 'LIA' : 'NOMAD'),
     },
   },
   {
     id: 'NOMAD',
-    refreshCron: '0,20,40 * * * * *',
+    refreshCron: '42 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD',
@@ -258,7 +240,7 @@ const sources: Source[] = [
   },
   {
     id: 'NOMAD-GEO3D',
-    refreshCron: '30 * * * * *',
+    refreshCron: '35 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD-GEO3D',
@@ -271,8 +253,29 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'SEMO',
+    refreshCron: '42 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'SEMO',
+      routePrefix: 'SEMO',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/98bbbf7c-10ff-48a0-afc2-c5f7b3dda5af',
+      allowScheduled: (trip) => !trip.route.startsWith('S'),
+    },
+  },
+  {
+    id: 'TRANSURBAIN',
+    refreshCron: '42 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'TRANSURBAIN',
+      routePrefix: 'TRANSURBAIN',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/ec78df83-2e60-4284-acc3-86a0baa76bf0',
+    },
+  },
+  {
     id: 'SNGO',
-    refreshCron: '15 * * * * *',
+    refreshCron: '42 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'SNGO',
@@ -308,7 +311,7 @@ const sources: Source[] = [
   },
   {
     id: 'DEEPMOB',
-    refreshCron: '15 * * * * *',
+    refreshCron: '48 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'DEEPMOB',
@@ -322,7 +325,7 @@ const sources: Source[] = [
   },
   {
     id: 'CAPCOT',
-    refreshCron: '15,45 * * * * *',
+    refreshCron: '48 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'CAPCOT',
@@ -335,13 +338,13 @@ const sources: Source[] = [
         if (typeof descriptor.label === 'string') return descriptor.label;
         return capCotentinDevices.get(descriptor.id) ?? null;
       },
-      allowScheduled: () => false,
+      allowScheduled: false,
       shapesStrategy: 'IGNORE',
     },
   },
   {
     id: 'REZOBUS',
-    refreshCron: '15,45 * * * * *',
+    refreshCron: '48 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'REZOBUS',
@@ -364,7 +367,7 @@ const sources: Source[] = [
   },
   {
     id: 'MOCA',
-    refreshCron: '25,55 * * * * *',
+    refreshCron: '50 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'MOCA',
@@ -373,13 +376,13 @@ const sources: Source[] = [
       tripUpdateHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/moca/gtfs-rt',
       getVehicleNumber: (descriptor) => descriptor.label ?? null,
-      allowScheduled: () => false,
+      allowScheduled: false,
       shapesStrategy: 'IGNORE',
     },
   },
   {
     id: 'ASTROBUS',
-    refreshCron: '15,45 * * * * *',
+    refreshCron: '50 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'ASTROBUS',
@@ -387,7 +390,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://zenbus.net/gtfs/static/download.zip?dataset=astrobus',
       tripUpdateHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=astrobus',
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=astrobus',
-      allowScheduled: () => false,
+      allowScheduled: false,
       mapVehiclePositionEntities: zenbusFilter,
       getOperator: () => 'ASTROBUS',
       getVehicleNumber: () => null,
@@ -396,7 +399,7 @@ const sources: Source[] = [
   },
   {
     id: 'HOBUS',
-    refreshCron: '45 * * * * *',
+    refreshCron: '50 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'HOBUS',
@@ -404,7 +407,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://zenbus.net/gtfs/static/download.zip?dataset=hobus',
       tripUpdateHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=hobus',
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=hobus',
-      allowScheduled: () => false,
+      allowScheduled: false,
       mapVehiclePositionEntities: zenbusFilter,
       getOperator: () => 'HOBUS',
       getVehicleNumber: () => null,
@@ -413,7 +416,7 @@ const sources: Source[] = [
   },
   {
     id: 'NEVA',
-    refreshCron: '45 * * * * *',
+    refreshCron: '50 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NEVA',
@@ -421,7 +424,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://zenbus.net/gtfs/static/download.zip?dataset=granville',
       tripUpdateHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=granville',
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=granville',
-      allowScheduled: () => false,
+      allowScheduled: false,
       mapVehiclePositionEntities: zenbusFilter,
       getOperator: () => 'NEVA',
       getVehicleNumber: () => null,
@@ -430,7 +433,7 @@ const sources: Source[] = [
   },
   {
     id: 'NEMUS',
-    refreshCron: '15 * * * * *',
+    refreshCron: '52 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NEMUS',
@@ -438,7 +441,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/821cfc05-c8db-48a5-a830-9358054bee95',
       tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/trip-updates',
       vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/vehicle-positions',
-      allowScheduled: () => false,
+      allowScheduled: false,
       getOperator: () => 'NEMUS',
       getVehicleNumber: () => null,
       shapesStrategy: 'IGNORE',
@@ -446,7 +449,7 @@ const sources: Source[] = [
   },
   {
     id: 'BYBUS',
-    refreshCron: '8,18,28,38,48,58 * * * * *',
+    refreshCron: '52 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'BYBUS',
@@ -461,7 +464,7 @@ const sources: Source[] = [
   },
   {
     id: 'LBUS',
-    refreshCron: '45 * * * * *',
+    refreshCron: '55 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'LBUS',
@@ -469,7 +472,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://zenbus.net/gtfs/static/download.zip?dataset=bernay',
       tripUpdateHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=bernay',
       vehiclePositionHref: 'https://zenbus.net/gtfs/rt/poll.proto?dataset=bernay',
-      allowScheduled: () => false,
+      allowScheduled: false,
       mapVehiclePositionEntities: zenbusFilter,
       getOperator: () => 'LBUS',
       getVehicleNumber: () => null,
@@ -478,7 +481,7 @@ const sources: Source[] = [
   },
   {
     id: 'LEBUS',
-    refreshCron: '5,20,35,50 * * * * *',
+    refreshCron: '55 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'LEBUS',

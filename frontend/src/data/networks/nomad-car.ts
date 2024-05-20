@@ -1,6 +1,6 @@
 import { Network, Route } from "~/@types";
 
-const nomadRegionRoutes: Route[] = [
+const nomadCar: Route[] = [
   {
     id: "NOMAD:NAV",
     name: "NAV",
@@ -8509,8 +8509,8 @@ const nomadRegionRoutes: Route[] = [
 
 const network: Network = {
   slug: "nomad",
-  name: "Nomad – Région Normandie",
-  routes: nomadRegionRoutes,
+  name: "NOMAD Car – Région Normandie",
+  routes: nomadCar,
   color: "#ef434d",
   textColor: "#ffffff",
 };
