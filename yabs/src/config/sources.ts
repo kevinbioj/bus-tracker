@@ -196,7 +196,7 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD-TER',
-      staticResourceHref: 'https://gtfs.bus-tracker.fr/sncf-nomad.zip',
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad-train.zip',
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/sncf-ter-gtfs-rt-trip-updates',
       routePrefix: 'NOMAD-TER',
       registerActivity: false,
