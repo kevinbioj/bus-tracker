@@ -559,6 +559,22 @@ const nomadCar: Route[] = [
         },
       },
       {
+        id: ["Pontorson - Mont-Saint-Michel"],
+        autoHide: true,
+        name: "Pontorson - Mont-Saint-Michel",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#3581C3",
+            textColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "C12",
+            outlineColor: "#000000",
+          },
+          pages: [[{ text: "PONTORSON" }, { text: "MONT-SAINT-MICHEL" }]],
+        },
+      },
+      {
         id: ["Rennes"],
         name: "Rennes",
         girouette: {
