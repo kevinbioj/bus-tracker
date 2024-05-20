@@ -361,8 +361,8 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["Lille"],
-        name: "Lille",
+        id: ["Lille Flandres"],
+        name: "Lille Flandres",
         girouette: {
           ledColor: "WHITE",
           routeNumber: {
@@ -372,7 +372,7 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "K45",
           },
-          pages: [{ font: "1508SUPX", text: "LILLE" }],
+          pages: [{ font: "1508SUPX", text: "LILLE FLANDRES" }],
         },
       },
     ],
