@@ -544,7 +544,24 @@ const nomadCar: Route[] = [
         },
       },
       {
+        id: ["Coutances"],
+        autoHide: true,
+        name: "Coutances",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#3581C3",
+            textColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "C12",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
+        },
+      },
+      {
         id: ["Granville"],
+        autoHide: true,
         name: "Granville",
         girouette: {
           ledColor: "WHITE",
@@ -912,8 +929,8 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["Le Tréport"],
-        name: "Le Tréport",
+        id: ["Le Tréport - Mers-les-Bains"],
+        name: "Le Tréport - Mers-les-Bains",
         girouette: {
           ledColor: "WHITE",
           routeNumber: {
@@ -923,7 +940,7 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "P30",
           },
-          pages: [{ font: "1508SUPX", text: "LE TREPORT" }],
+          pages: [[{ text: "LE TREPORT" }, { text: "MERS-LES-BAINS" }]],
         },
       },
     ],
