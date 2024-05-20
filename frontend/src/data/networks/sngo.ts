@@ -129,7 +129,7 @@ const sngoRoutes: Route[] = [
         },
       },
       {
-        id: ["VERNON - Louis Damasse"],
+        id: ["VERNON - L. Damasse"],
         name: "Louis Damasse",
         city: "VERNON",
         girouette: {
