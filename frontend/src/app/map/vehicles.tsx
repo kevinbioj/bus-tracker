@@ -1,4 +1,4 @@
-import { mapCenter } from "../../../constants";
+import { defaultCenter, defaultZoom } from "../../../constants";
 import "leaflet/dist/leaflet.css";
 import dynamic from "next/dynamic";
 
@@ -17,7 +17,7 @@ const InteractiveMap = dynamic(() => import("../../components/interactive-map/in
 export default function Vehicles() {
   return (
     <main>
-      <InteractiveMap center={mapCenter} className={MAP_HEIGHT} />
+      <InteractiveMap className={MAP_HEIGHT} defaultCenter={defaultCenter} defaultZoom={defaultZoom} />
       <DataStatus />
       <RouteList />
       <Caption />
