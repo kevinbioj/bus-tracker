@@ -62,6 +62,21 @@ const nomadCar: Route[] = [
         },
       },
       {
+        id: ["Évreux Normandie"],
+        name: "Évreux Normandie",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#64005E",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "K2+",
+          },
+          pages: [{ font: "1508SUPX", text: "EVREUX NORMANDIE" }],
+        },
+      },
+      {
         id: ["Cherbourg"],
         name: "Cherbourg",
         girouette: {
