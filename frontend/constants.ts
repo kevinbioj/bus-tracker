@@ -5,4 +5,6 @@ export const brandColor = {
   hover: "#B90070",
 };
 
-export const mapCenter = [47.316667, 5.016667] satisfies LatLngTuple;
+export const defaultNetworkSlug = "divia";
+export const defaultCenter = [47.321836, 5.040527] satisfies LatLngTuple;
+export const defaultZoom = 12;
