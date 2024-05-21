@@ -2,7 +2,7 @@
 
 import { LatLngExpression } from "leaflet";
 import { MapContainer, TileLayer } from "react-leaflet";
-import { useLocalStorage, useMediaQuery } from "usehooks-ts";
+import { useLocalStorage } from "usehooks-ts";
 
 import Geolocate from "~/components/interactive-map/geolocate";
 import LocationSaver from "~/components/interactive-map/location-saver";
@@ -11,21 +11,22 @@ import VehicleHightlight from "./vehicle-highlight";
 import VehicleMarkers from "./vehicle-markers";
 
 type InteractiveMapProps = {
-  center: LatLngExpression;
   className?: string;
+  defaultCenter: LatLngExpression;
+  defaultZoom: number;
 };
 
-export default function InteractiveMap({ center, className }: InteractiveMapProps) {
+export default function InteractiveMap({ className, defaultCenter, defaultZoom }: InteractiveMapProps) {
   const darkMode = false; /*useMediaQuery("(prefers-color-scheme: dark)", { defaultValue: false });*/
   const [lastLocation] = useLocalStorage<[number, number, number] | null>("last-location", null);
   return (
     <section>
       <h2 className="font-bold sr-only text-2xl text-center">Carte interactive</h2>
       <MapContainer
-        center={lastLocation ? [lastLocation[0], lastLocation[1]] : center}
+        center={lastLocation ? [lastLocation[0], lastLocation[1]] : defaultCenter}
         className={className}
         id="interactive-map"
-        zoom={lastLocation?.[2] ?? 12}
+        zoom={lastLocation?.[2] ?? defaultZoom}
       >
         {darkMode ? (
           <TileLayer
