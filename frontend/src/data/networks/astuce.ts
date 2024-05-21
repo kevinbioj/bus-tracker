@@ -4754,7 +4754,7 @@ const astuceRoutes: Route[] = [
 
 const network: Network = {
   slug: "reseau-astuce",
-  name: "Réseau Astuce – Métropole Rouen Normandie",
+  name: "Astuce – Métropole Rouen Normandie",
   routes: astuceRoutes,
   color: "#B0105F",
   textColor: "#ffffff",
