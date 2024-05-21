@@ -621,20 +621,26 @@ const astuceRoutes: Route[] = [
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
         girouette: {
-          routeNumber: { backgroundColor: "#AFC900", textColor: "#000000", text: "F5" },
+          routeNumber: { backgroundColor: "#9FB900", outlineColor: "#FFFFFF", textColor: "#000000", text: "F5" },
           pages: [{ text: "LYCEE GALILEE" }, { font: "1310C2E1", spacing: 1, text: "FRANQUEVILLE-SAINT-PIERRE" }],
         },
       },
       {
         id: ["Théâtre des Arts ROUEN", "Théâtre des Arts"],
-        name: "Théâtre des Arts",
+        name: "Boulingrin (terminus provisoire)",
         city: "ROUEN",
         girouette: {
-          routeNumber: { backgroundColor: "#AFC900", textColor: "#000000", text: "F5" },
+          routeNumber: { backgroundColor: "#9FB900", outlineColor: "#FFFFFF", textColor: "#000000", text: "F5" },
+          // À REMETTRE COMME C'ÉTAIT LORSQUE LA DÉVIATION SERA KO
           pages: [
-            { font: "1508C2E1", spacing: 3, text: "THEATRE DES ARTS" },
+            { spacing: 5, text: "BOULINGRIN" },
             { spacing: 5, text: "ROUEN" },
+            { font: "1508C2E1", text: "TERMINUS PROVISOIRE" },
           ],
+          // pages: [
+          //   { font: "1508C2E1", spacing: 3, text: "THEATRE DES ARTS" },
+          //   { spacing: 5, text: "ROUEN" },
+          // ],
         },
       },
     ],
