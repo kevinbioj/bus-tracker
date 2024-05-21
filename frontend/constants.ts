@@ -5,4 +5,6 @@ export const brandColor = {
   hover: "#8D0D4C",
 };
 
-export const mapCenter = [49.443232, 1.099971] satisfies LatLngTuple;
+export const defaultNetworkSlug = "nomad-train";
+export const defaultCenter = [49.177814, -0.005493] satisfies LatLngTuple;
+export const defaultZoom = 8;
