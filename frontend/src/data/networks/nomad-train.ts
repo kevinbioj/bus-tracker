@@ -200,7 +200,7 @@ const nomadCar: Route[] = [
     colors: { background: "#E00046", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Paris Montparnasse Hall 1 - 2"],
+        id: ["Paris Montparnasse Hall 1 - 2", "Paris Montparnasse Vaugirard"],
         name: "Paris Montparnasse",
         girouette: {
           ledColor: "WHITE",
@@ -216,6 +216,7 @@ const nomadCar: Route[] = [
       },
       {
         id: ["Granville"],
+        autoHide: true,
         name: "Granville",
         girouette: {
           ledColor: "WHITE",
@@ -227,6 +228,21 @@ const nomadCar: Route[] = [
             text: "K4",
           },
           pages: [{ font: "1508SUPX", text: "GRANVILLE" }],
+        },
+      },
+      {
+        id: ["Pontorson - Mont-Saint-Michel"],
+        name: "Pontorson - Mont-Saint-Michel",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#E00046",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "K4",
+          },
+          pages: [[{ text: "PONTORSON" }, { text: "MONT-SAINT-MICHEL" }]],
         },
       },
     ],
@@ -439,6 +455,7 @@ const nomadCar: Route[] = [
       },
       {
         id: ["Mantes-la-Jolie"],
+        autoHide: true,
         name: "Mantes-la-Jolie",
         girouette: {
           ledColor: "WHITE",
@@ -454,6 +471,7 @@ const nomadCar: Route[] = [
       },
       {
         id: ["Évreux Normandie"],
+        autoHide: true,
         name: "Évreux Normandie",
         girouette: {
           ledColor: "WHITE",
@@ -465,6 +483,21 @@ const nomadCar: Route[] = [
             outlineColor: "#000000",
           },
           pages: [{ font: "1508SUPX", text: "EVREUX NORMANDIE" }],
+        },
+      },
+      {
+        id: ["Caen"],
+        name: "Caen",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#3581C3",
+            textColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "C2",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "CAEN" }],
         },
       },
     ],
@@ -506,8 +539,8 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["Elbeuf Saint-Aubin"],
-        name: "Elbeuf Saint-Aubin",
+        id: ["Elbeuf - Saint-Aubin"],
+        name: "Elbeuf - Saint-Aubin",
         girouette: {
           ledColor: "WHITE",
           routeNumber: {
@@ -517,7 +550,7 @@ const nomadCar: Route[] = [
             text: "C10",
             outlineColor: "#000000",
           },
-          pages: [{ font: "1508SUPX", text: "ELBEUF SAINT-AUBIN" }],
+          pages: [{ font: "1507SUPX", text: "ELBEUF - SAINT-AUBIN" }],
         },
       },
     ],

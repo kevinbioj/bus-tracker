@@ -1670,7 +1670,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "111",
           },
-          pages: [[{ text: "MONDEVILLE" }, { font: "1508SUPX", text: "COLLEGE GUILLEMOT" }]],
+          pages: [[{ text: "MONDEVILLE" }, { text: "COLLEGE GUILLEMOT" }]],
         },
       },
     ],
