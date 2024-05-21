@@ -215,8 +215,23 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["Granville"],
+        id: ["Argentan"],
         autoHide: true,
+        name: "Argentan",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#E00046",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "K4",
+          },
+          pages: [{ font: "1508SUPX", text: "ARGENTAN" }],
+        },
+      },
+      {
+        id: ["Granville"],
         name: "Granville",
         girouette: {
           ledColor: "WHITE",
@@ -232,6 +247,7 @@ const nomadCar: Route[] = [
       },
       {
         id: ["Pontorson - Mont-Saint-Michel"],
+        autoHide: true,
         name: "Pontorson - Mont-Saint-Michel",
         girouette: {
           ledColor: "WHITE",
@@ -416,6 +432,21 @@ const nomadCar: Route[] = [
         },
       },
       {
+        id: ["Vernon - Giverny"],
+        name: "Vernon - Giverny",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#3581C3",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "C1",
+          },
+          pages: [{ font: "1508SUPX", text: "VERNON - GIVERNY" }],
+        },
+      },
+      {
         id: ["Rouen Rive Droite"],
         name: "Rouen Rive Droite",
         girouette: {
@@ -483,6 +514,22 @@ const nomadCar: Route[] = [
             outlineColor: "#000000",
           },
           pages: [{ font: "1508SUPX", text: "EVREUX NORMANDIE" }],
+        },
+      },
+      {
+        id: ["Serquigny"],
+        autoHide: true,
+        name: "Serquigny",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#3581C3",
+            textColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "C2",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "SERQUIGNY" }],
         },
       },
       {
@@ -574,6 +621,22 @@ const nomadCar: Route[] = [
             text: "C12",
           },
           pages: [{ font: "1508SUPX", text: "CAEN" }],
+        },
+      },
+      {
+        id: ["Saint-Lô"],
+        autoHide: true,
+        name: "Saint-Lô",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#3581C3",
+            textColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "C12",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "SAINT-LO" }],
         },
       },
       {

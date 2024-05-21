@@ -2266,8 +2266,8 @@ const liaRoutes: Route[] = [
                 text: "H A R F L E U R",
               },
               {
-                font: "LUMIPLAN-2",
-                text: "L A  B R E Q U E",
+                font: "LUMIPLAN-A",
+                text: "LA BREQUE",
               },
             ],
           ],
