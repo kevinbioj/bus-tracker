@@ -16,6 +16,22 @@ import { getVehicle } from '~/yabs/vehicles/get-vehicle';
 import { getVehicles } from '~/yabs/vehicles/get-vehicles';
 import { insertActivity } from '~/yabs/vehicles/insert-activity';
 
+// Very ugly polyfill while Node 22 x Protobufjs won't work
+Map.groupBy = function <K, T>(items: Iterable<T>, keySelector: (item: T, index: number) => K) {
+  const map = new Map<K, T[]>();
+  let index = 0;
+  for (const item of items) {
+    const key = keySelector(item, index);
+    let table = map.get(key);
+    if (!table) {
+      table = [];
+      map.set(key, table);
+    }
+    table.push(item);
+  }
+  return map;
+};
+
 const waitFor = (time: number) => new Promise((r) => setTimeout(r, time));
 const DEFAULT_RETRY_COUNT = 0;
 const DEFAULT_RETRY_INTERVAL = 10_000;
