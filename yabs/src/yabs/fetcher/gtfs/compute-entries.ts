@@ -93,15 +93,22 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
       }
     }
 
+    const nextStops = stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1);
     entries.push({
       id: `${properties.id}:JOU:${trip.id}`,
-      stopTimes: stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
+      stopTimes: nextStops,
       trip: {
         id: trip.id,
         calendar: trip.service.id,
         route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
         direction: trip.direction,
         headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
+        status:
+          nextStops.length === 0
+            ? 'ARRIVED'
+            : nextStops[0].sequence === trip.stops[0].sequence
+              ? 'WAITING_FOR_DEPARTURE'
+              : 'ONGOING',
       },
       vehicle: {
         id: null,
@@ -258,18 +265,25 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         }
       }
 
+      const nextStops = dayjs.unix(currentStopTime.timestamp!).isAfter()
+        ? stopTimes
+        : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1);
       const id = vehicleId ? `VEH:${vehicleId}` : trip.block ? `BLO:${trip.block}` : `JOU:${trip.id}`;
       entries.set(id, {
         id: `${properties.id}:${id}`,
-        stopTimes: dayjs.unix(currentStopTime.timestamp!).isAfter()
-          ? stopTimes
-          : stopTimes.slice(stopTimes.indexOf(currentStopTime) + 1),
+        stopTimes: nextStops,
         trip: {
           id: trip.id,
           calendar: trip.service.id,
           route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
           direction: trip.direction,
           headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
+          status:
+            nextStops.length === 0
+              ? 'ARRIVED'
+              : nextStops[0].sequence === trip.stops[0].sequence
+                ? 'WAITING_FOR_DEPARTURE'
+                : 'ONGOING',
         },
         vehicle: {
           id: vehicleId,
@@ -395,24 +409,31 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         : vehicleDescriptor.label ?? vehicleDescriptor.id;
       const ledColor = vehicleId ? await getVehicleLedColor({ operator: source, number: vehicleId }) : null;
 
+      const nextStops =
+        typeof vehiclePosition.vehicle.currentStopSequence !== 'number'
+          ? stopTimes.filter((stopTime) => {
+              return dayjs
+                .unix(stopTime.timestamp ?? stopTime.scheduled)
+                .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minute');
+            })
+          : stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!);
       const id = vehicleId ? `VEH:${vehicleId}` : trip.block ? `BLO:${trip.block}` : `JOU:${trip.id}`;
       entries.set(id, {
         id: `${properties.id}:${id}`,
         source,
-        stopTimes:
-          typeof vehiclePosition.vehicle.currentStopSequence !== 'number'
-            ? stopTimes.filter((stopTime) => {
-                return dayjs
-                  .unix(stopTime.timestamp ?? stopTime.scheduled)
-                  .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minute');
-              })
-            : stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!),
+        stopTimes: nextStops,
         trip: {
           id: trip.id,
           calendar: trip.service.id,
           route: properties.routePrefix ? `${properties.routePrefix}:${trip.route}` : trip.route,
           direction: trip.direction,
           headsign: trip.headsign?.trim().length > 0 ? trip.headsign : stopTimes.at(-1)!.name,
+          status:
+            nextStops.length === 0
+              ? 'ARRIVED'
+              : nextStops[0].sequence === trip.stops[0].sequence
+                ? 'WAITING_FOR_DEPARTURE'
+                : 'ONGOING',
         },
         vehicle: {
           id: vehicleId,

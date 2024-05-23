@@ -86,6 +86,7 @@ export type VehicleData = {
     direction: number;
     headsign: string | null;
     stopTimes: StopTime[];
+    status: "WAITING_FOR_DEPARTURE" | "ONGOING" | "ARRIVED";
   };
   vehicle: {
     id: string | null;

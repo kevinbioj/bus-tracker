@@ -86,6 +86,7 @@ function handleGetVehicles(c: Context) {
         delta: stopTime.delta,
         isRealtime: stopTime.isRealtime,
       })),
+      status: entry.trip.status,
     },
     vehicle: {
       id: entry.vehicle.id,

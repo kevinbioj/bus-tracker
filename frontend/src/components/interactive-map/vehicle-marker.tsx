@@ -51,16 +51,17 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
 
   const { width } = useViewport();
 
-  const updatePositionTime = () => {
+  const updatePositionTime = useCallback(() => {
     const timestamp = dayjs.unix(data.vehicle.position.timestamp);
     if (!useAbsoluteTime && dayjs().diff(timestamp, "hours") < 1) return timestamp.fromNow();
     return dayjs().diff(timestamp, "day") >= 1
       ? `le ${timestamp.format("DD/MM à HH:mm:ss")}`
       : `à ${timestamp.format("HH:mm:ss")}`;
-  };
+  }, [data, useAbsoluteTime]);
 
   const position = useMemo(() => {
-    const applyNoise = data.trip.stopTimes.length === 0 || data.trip.stopTimes[0].sequence === 1 ? false : true;
+    const applyNoise = data.trip.status !== "ONGOING";
+    if (data.id.includes("3371")) console.log(applyNoise);
     const { latitude, longitude, type } = data.vehicle.position;
     if (type === "GPS") return [latitude, longitude];
     return applyNoise ? [latitude, longitude] : [latitude + getNoise(), longitude + getNoise()];
@@ -91,7 +92,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
     setPositionTime(updatePositionTime());
     const interval = setInterval(() => setPositionTime(updatePositionTime()), 3000);
     return () => clearInterval(interval);
-  }, [data, useAbsoluteTime]);
+  }, [data, useAbsoluteTime, updatePositionTime]);
 
   if (!showScheduledTrips && data.vehicle.position.type === "SCHEDULED") return null;
 
