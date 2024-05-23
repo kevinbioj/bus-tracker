@@ -61,69 +61,6 @@ const astuceRoutes: Route[] = [
     ],
   },
   {
-    id: "ASTUCE:88",
-    name: "N",
-    colors: { background: "#E6007E", text: "#FFED00" },
-    destinations: [
-      {
-        id: ["Boulingrin ROUEN", "Boulingrin"],
-        autoHide: true,
-        name: "Boulingrin",
-        city: "ROUEN",
-        girouette: {
-          ledColor: "WHITE",
-          dimensions: { rnWidth: 0, destinationWidth: 192, height: 17 },
-          pages: [
-            [{ text: "NAVETTE VIVA CITE" }, { text: "ROUEN" }],
-            [{ text: "NAVETTE VIVA CITE" }, { text: "BOULINGRIN" }],
-          ],
-        },
-      },
-      {
-        id: ["Pôle Multimodal OISSEL"],
-        autoHide: true,
-        name: "Pôle Multimodal",
-        city: "OISSEL",
-        girouette: {
-          ledColor: "WHITE",
-          dimensions: { rnWidth: 0, destinationWidth: 192, height: 17 },
-          pages: [
-            [{ text: "NAVETTE VIVA CITE" }, { text: "OISSEL" }],
-            [{ text: "NAVETTE VIVA CITE" }, { text: "POLE MULTIMODAL" }],
-          ],
-        },
-      },
-      {
-        id: ["Georges Braque GRAND QUEVILLY"],
-        autoHide: true,
-        name: "Georges Braque",
-        city: "GRAND-QUEVILLY",
-        girouette: {
-          ledColor: "WHITE",
-          dimensions: { rnWidth: 0, destinationWidth: 192, height: 17 },
-          pages: [
-            [{ text: "NAVETTE VIVA CITE" }, { text: "GRAND-QUEVILLY" }],
-            [{ text: "NAVETTE VIVA CITE" }, { text: "GEORGES BRAQUE" }],
-          ],
-        },
-      },
-      {
-        id: ["Technopôle SAINT-ETIENNE-DU-ROUVRAY"],
-        autoHide: true,
-        name: "Technopôle",
-        city: "SAINT-ÉTIENNE-DU-ROUVRAY",
-        girouette: {
-          ledColor: "WHITE",
-          dimensions: { rnWidth: 0, destinationWidth: 192, height: 17 },
-          pages: [
-            [{ text: "NAVETTE VIVA CITE" }, { text: "SAINT-ETIENNE-DU-ROUVRAY" }],
-            [{ text: "NAVETTE VIVA CITE" }, { text: "TECHNOPOLE" }],
-          ],
-        },
-      },
-    ],
-  },
-  {
     id: "ASTUCE:89",
     name: "N",
     colors: { background: "#E6007E", text: "#FFED00" },
@@ -934,11 +871,17 @@ const astuceRoutes: Route[] = [
     destinations: [
       {
         id: ["Martainville ROUEN", "Martainville"],
-        name: "Martainville",
+        name: "Boulingrin (terminus provisoire)",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#F78C00", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
-          pages: [{ text: "MARTAINVILLE" }, { spacing: 5, text: "ROUEN" }],
+          // À REMETTRE COMME C'ÉTAIT LORSQUE LA DÉVIATION SERA KO
+          pages: [
+            { spacing: 5, text: "BOULINGRIN" },
+            { spacing: 5, text: "ROUEN" },
+            { font: "1508C2E1", text: "TERMINUS PROVISOIRE" },
+          ],
+          // pages: [{ text: "MARTAINVILLE" }, { spacing: 5, text: "ROUEN" }],
         },
       },
       {

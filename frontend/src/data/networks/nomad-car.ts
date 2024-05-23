@@ -1017,7 +1017,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["PONT-AUDEMER / HONFLEUR", "ÉVREUX / HONFLEUR"],
+        id: ["PONT-AUDEMER / HONFLEUR", "PONT AUDEMER / HONFLEUR", "ÉVREUX / HONFLEUR"],
         name: "Honfleur",
         girouette: {
           routeNumber: {
@@ -1856,7 +1856,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["CHERBOURG / CARENTAN"],
+        id: ["CHERBOURG / CARENTAN", "CHERBOURG / ST-LÔ"],
         name: "Carentan",
         girouette: {
           routeNumber: {
@@ -3441,7 +3441,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["COURSEULLES-SUR-MER / CAEN [EXPRESS]", "ASNELLES / CAEN [EXPRESS]"],
+        id: ["COURSEULLES-SUR-MER / CAEN [EXPRESS]", "ASNELLES / CAEN [EXPRESS]", "ASNELLES / CAEN EXPRESS"],
         name: "CAEN [EXPRESS]",
         girouette: {
           routeNumber: {
@@ -7117,7 +7117,7 @@ const nomadCar: Route[] = [
             text: "515",
             outlineColor: "#FFFFFF",
           },
-          pages: [{ font: "1407SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
+          pages: [{ font: "1507SUPX", text: "SAINT-AUBIN-SUR-SCIE" }],
         },
       },
       {
