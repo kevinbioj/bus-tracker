@@ -14,17 +14,6 @@ import { useActiveNetwork } from "~/hooks/useActiveNetwork";
 export default function Header() {
   const [network] = useActiveNetwork();
   const pathname = usePathname();
-  const [alertSeen, setAlertSeen] = useState(true);
-  const [alertBlink, setAlertBlink] = useState(true);
-  useEffect(() => {
-    const value = localStorage.getItem("alertSeen");
-    if (value === null) setAlertSeen(false);
-  }, []);
-  useEffect(() => {
-    const stopBlink = () => setAlertBlink(false);
-    const timeout = setTimeout(stopBlink, 5000);
-    return () => clearTimeout(timeout);
-  }, [alertBlink]);
   useEffect(() => {
     const themeColor = document.head.querySelector('meta[name="theme-color"]');
     if (themeColor !== null) {
@@ -49,27 +38,6 @@ export default function Header() {
         </h1>
         <Preferences />
       </header>
-      {!alertSeen && (
-        <div
-          className="transition-colors py-0.5 text-center"
-          style={{ backgroundColor: network?.color ?? "#ffffff", color: network?.textColor ?? "#000000" }}
-        >
-          <span className={clsx(alertBlink && "animate-pulse duration-700")}>
-            <span className="font-bold">IMPORTANT :</span> Changement d&apos;adresse le 22 mai 2024 &gt;{" "}
-            <button
-              onClick={() => {
-                setAlertSeen(true);
-                localStorage.setItem("alertSeen", "true");
-                alert(
-                  "bus-tracker.xyz devient définitivement bus-tracker.fr à partir du 22 mai 2024\n\nEn Normandie sur normandie.bus-tracker.fr\nÀ Dijon sur dijon.bus-tracker.fr\n\nBien que vous ayez été automatiquement redirigé•e vers la nouvelle adresse, pensez à mettre vos favoris à jour 😉",
-                );
-              }}
-            >
-              + d&apos;infos
-            </button>
-          </span>
-        </div>
-      )}
       <nav
         className="transition-colors"
         style={{ backgroundColor: network?.color ?? "#ffffff", color: network?.textColor ?? "#000000" }}
