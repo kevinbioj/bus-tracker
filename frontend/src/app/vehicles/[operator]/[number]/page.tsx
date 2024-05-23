@@ -18,19 +18,14 @@ import { groupBy } from "~/util/group-by";
 dayjs.extend(dayjsCustomParseFormat);
 dayjs.locale(dayjsFrench);
 
-export const revalidate = 0;
-
 type VehicleEntryPageProps = { params: { operator?: string; number: string }; searchParams: { period?: string } };
 
-export function generateMetadata({ params, searchParams }: VehicleEntryPageProps) {
+export function generateMetadata({ params }: VehicleEntryPageProps) {
   const operator = operators.find((o) => o.id === params.operator?.toUpperCase());
   if (typeof operator === "undefined") return {};
-  const date = searchParams.period ? dayjs(searchParams.period, "YYYY-MM") : dayjs();
   return {
-    title: `Véhicule n°${params.number} – ${operator.name} – Historique – Bus Tracker`,
-    description: `Historique des activités du véhicule n°${params.number} du réseau ${
-      operator.name
-    } du mois de ${date.format("MMMM YYYY")}.`,
+    title: `${operator.name} n°${params.number} | Bus Tracker`,
+    description: `Retrouvez les détails du véhicule ${operator.name} n°${params.number} ainsi que ses activités.`,
   };
 }
 

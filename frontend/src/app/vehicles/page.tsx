@@ -5,8 +5,9 @@ import Link from "next/link";
 import operators from "~/data/operators";
 
 export const metadata: Metadata = {
-  title: "Historique – Bus Tracker",
-  description: "Historisation des activités des véhicules géolocalisés.",
+  title: "Historique | Bus Tracker",
+  description:
+    "Retrouvez l'ensemble des véhicules répertoriés sur Bus Tracker, leurs détails ainsi que leurs activités.",
 };
 
 export default function OperatorsList() {

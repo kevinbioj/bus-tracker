@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  compress: false,
+  reactStrictMode: false,
   redirects: async () => [
     {
       source: "/",
@@ -8,7 +8,6 @@ const nextConfig = {
       permanent: true,
     },
   ],
-  staticPageGenerationTimeout: 0,
 };
 
 export default nextConfig;

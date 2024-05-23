@@ -1,4 +1,4 @@
-import plugin, { Config } from "tailwindcss";
+import { Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 import { brandColor } from "./constants";
@@ -74,13 +74,7 @@ const tailwindConfig = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    // @ts-ignore I have no idea what it's yelling about
-    plugin(({ addVariant }) => addVariant("ios-desktop", "@supports (background: -webkit-named-image(i))")),
-    // @ts-ignore I have no idea what it's yelling about
-    plugin(({ addVariant }) => addVariant("ios-mobile", "@supports (-webkit-tap-highlight-color: white)")),
-  ],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
 export default tailwindConfig;
