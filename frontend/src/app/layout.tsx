@@ -1,7 +1,6 @@
-import { Metadata, Viewport } from "next";
+import { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
 
-import { brandColor } from "~/../constants";
 import Providers from "~/app/providers";
 import logoSmall from "~/images/icon.png";
 import Header from "~/layout/header";
@@ -10,7 +9,7 @@ import "~/styles/globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bus-tracker.fr"),
   title: "Bus Tracker",
-  description: "Application de suivi des véhicules de transports en commun.",
+  description: "Bus Tracker est une application de visualisation des véhicules de transport en commun.",
   icons: { apple: logoSmall.src, icon: logoSmall.src },
   keywords: ["bus", "tracker"],
   robots: "index, follow",
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Bus Tracker",
-    description: "Application de suivi des véhicules de transports en commun.",
+    description: "Bus Tracker est une application de visualisation des véhicules de transport en commun.",
     locale: "fr-FR",
     countryName: "France",
     images: [logoSmall.src],
