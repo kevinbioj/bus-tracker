@@ -65,6 +65,40 @@ export async function computeSiriEntries(properties: SiriProperties) {
               : []),
         ];
         const ledColor = await getVehicleLedColor({ operator: source, number: vehicleLabel });
+        const nextStops = [
+          ...(dayjs().isBefore(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime)
+            ? [
+                {
+                  id: parseSiriRef(vehicle.MonitoredVehicleJourney.OriginRef),
+                  name: unescape(vehicle.MonitoredVehicleJourney.OriginName),
+                  sequence: 1,
+                  timestamp: dayjs(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime).unix(),
+                  delta: 0,
+                  isRealtime: true,
+                },
+              ]
+            : []),
+          ...(calls
+            .sort((a, b) => a.Order - b.Order)
+            .map((stopCall) => {
+              const isCancelled = stopCall.ArrivalStatus === 'cancelled';
+              return {
+                id: parseSiriRef(stopCall.StopPointRef),
+                name: unescape(stopCall.StopPointName),
+                sequence: stopCall.Order,
+                timestamp: isCancelled
+                  ? null
+                  : dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
+                delta: isCancelled
+                  ? null
+                  : dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).diff(
+                      stopCall.AimedDepartureTime ?? stopCall.AimedArrivalTime,
+                      'seconds',
+                    ),
+                isRealtime: true,
+              };
+            }) ?? []),
+        ];
         return {
           id: `${properties.id}:VEH:${vehicleLabel}`,
           source: source,
@@ -76,6 +110,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
             route: properties.prefix
               ? `${properties.prefix}:${parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef)}`
               : parseSiriRef(vehicle.MonitoredVehicleJourney.LineRef),
+            status: nextStops.length === 0 ? 'ARRIVED' : 'ONGOING',
           },
           vehicle: {
             id: vehicleLabel.toString(),
@@ -87,40 +122,7 @@ export async function computeSiriEntries(properties: SiriProperties) {
             },
             ledColor,
           },
-          stopTimes: [
-            ...(dayjs().isBefore(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime)
-              ? [
-                  {
-                    id: parseSiriRef(vehicle.MonitoredVehicleJourney.OriginRef),
-                    name: unescape(vehicle.MonitoredVehicleJourney.OriginName),
-                    sequence: 1,
-                    timestamp: dayjs(vehicle.MonitoredVehicleJourney.OriginAimedDepartureTime).unix(),
-                    delta: 0,
-                    isRealtime: true,
-                  },
-                ]
-              : []),
-            ...(calls
-              .sort((a, b) => a.Order - b.Order)
-              .map((stopCall) => {
-                const isCancelled = stopCall.ArrivalStatus === 'cancelled';
-                return {
-                  id: parseSiriRef(stopCall.StopPointRef),
-                  name: unescape(stopCall.StopPointName),
-                  sequence: stopCall.Order,
-                  timestamp: isCancelled
-                    ? null
-                    : dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
-                  delta: isCancelled
-                    ? null
-                    : dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).diff(
-                        stopCall.AimedDepartureTime ?? stopCall.AimedArrivalTime,
-                        'seconds',
-                      ),
-                  isRealtime: true,
-                };
-              }) ?? []),
-          ],
+          stopTimes: nextStops,
           timestamp: timestamp,
           activityRegistered: true,
         };

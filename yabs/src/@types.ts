@@ -15,6 +15,7 @@ export type YabsEntry = {
     route: string;
     direction: number;
     headsign: string | null;
+    status: 'WAITING_FOR_DEPARTURE' | 'ONGOING' | 'ARRIVED';
   };
   vehicle: {
     id: string | null;
