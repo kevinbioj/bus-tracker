@@ -2113,10 +2113,10 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "SAINTE-ADRESSE",
+                text: "S A I N T E - A D R E S S E",
               },
               {
-                font: "LUMIPLAN-2",
+                font: "LUMIPLAN-A",
                 text: "LYCEE JEANNE D'ARC",
               },
             ],
@@ -2153,7 +2153,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "SAINTE-ADRESSE",
+                text: "S A I N T E - A D R E S S E",
               },
               {
                 font: "LUMIPLAN-A",
