@@ -13,7 +13,7 @@ const operators: Operator[] = [
   },
   {
     id: "TCAR",
-    name: "Réseau Astuce (Rouen Normandie) | Transdev Rouen",
+    name: "Astuce (Rouen Normandie) | Transdev Rouen",
     hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-rouen.svg",
@@ -29,7 +29,7 @@ const operators: Operator[] = [
   },
   {
     id: "TAE",
-    name: "Réseau Astuce (Rouen Normandie) | Régie des Transports urbains de l'Agglomération Elbeuvienne",
+    name: "Astuce (Rouen Normandie) | Régie des Transports urbains de l'Agglomération Elbeuvienne",
     hasHistory: true,
     logo: {
       href: "/assets/operators/tae.svg",
@@ -39,7 +39,7 @@ const operators: Operator[] = [
   },
   {
     id: "TNI",
-    name: "Réseau Astuce (Rouen Normandie) | Transdev Normandie Interurbain",
+    name: "Astuce (Rouen Normandie) | Transdev Normandie Interurbain",
     hasHistory: true,
     logo: {
       href: "/assets/operators/transdev-normandie.svg",
@@ -49,7 +49,7 @@ const operators: Operator[] = [
   },
   {
     id: "HANGA",
-    name: "Réseau Astuce (Rouen Normandie) | Autocars Hangard",
+    name: "Astuce (Rouen Normandie) | Autocars Hangard",
     hasHistory: false,
     logo: {
       href: "/assets/operators/cars-hangard.png",
