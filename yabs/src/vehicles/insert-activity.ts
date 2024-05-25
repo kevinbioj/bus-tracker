@@ -1,9 +1,9 @@
 import dayjs from 'dayjs';
-import { and, asc, desc, eq } from 'drizzle-orm';
+import { and, desc, eq } from 'drizzle-orm';
 
-import { orm } from '~/yabs/vehicles/database';
-import { vehicleActivities, vehicles } from '~/yabs/vehicles/schema';
-import { VehicleIdentifier } from '~/yabs/vehicles/vehicle-identifier';
+import { orm } from './database.js';
+import { vehicleActivities, vehicles } from './schema.js';
+import type { VehicleIdentifier } from './vehicle-identifier.js';
 
 const ALLOWED_TIMEOUT = 7200; // 2 hours of allowed timeout on a same route
 
@@ -22,9 +22,9 @@ export async function insertActivity(identifier: VehicleIdentifier, activity: Ac
     .where(eq(vehicleActivities.vehicleId, vehicle.id))
     .orderBy(desc(vehicleActivities.startTime))
     .limit(1)
-    .then((rows) => (rows.length > 0 ? rows[0] : null));
+    .then((rows) => rows[0]);
 
-  if (lastActivity !== null && shouldUpdateActivity(lastActivity, activity)) {
+  if (lastActivity && shouldUpdateActivity(lastActivity, activity)) {
     await orm
       .update(vehicleActivities)
       .set({ updatedTime: activity.time })
@@ -48,9 +48,9 @@ async function getOrCreateVehicle(identifier: VehicleIdentifier) {
     .select()
     .from(vehicles)
     .where(and(eq(vehicles.operator, identifier.operator), eq(vehicles.number, identifier.number)))
-    .then((rows) => (rows.length > 0 ? rows[0] : null));
+    .then((rows) => rows[0]);
 
-  if (vehicle === null) {
+  if (!vehicle) {
     const createdVehicle = await orm
       .insert(vehicles)
       .values([
@@ -61,7 +61,7 @@ async function getOrCreateVehicle(identifier: VehicleIdentifier) {
         },
       ])
       .returning()
-      .then((rows) => rows[0]);
+      .then((rows) => rows[0]!);
     return createdVehicle;
   }
 

@@ -1,10 +1,10 @@
 import dayjs from 'dayjs';
 import { SQL, and, desc, eq, sql } from 'drizzle-orm';
 
-import { ACTIVITY_TIMEOUT } from '~/yabs/vehicles/constants';
-import { orm } from '~/yabs/vehicles/database';
-import { vehicleActivities, vehicles } from '~/yabs/vehicles/schema';
-import { VehicleIdentifier } from '~/yabs/vehicles/vehicle-identifier';
+import { ACTIVITY_TIMEOUT } from './constants.js';
+import { orm } from './database.js';
+import { vehicleActivities, vehicles } from './schema.js';
+import type { VehicleIdentifier } from './vehicle-identifier.js';
 
 const ACTIVITY_MONTH_SELECT = (distinct: boolean) =>
   sql.raw(
@@ -22,9 +22,9 @@ export async function getVehicle(identifier: VehicleIdentifier, period?: string)
     .select()
     .from(vehicles)
     .where(and(eq(vehicles.operator, identifier.operator), eq(vehicles.number, identifier.number)))
-    .then((rows) => (rows.length > 0 ? rows[0] : null));
+    .then((rows) => rows[0]);
 
-  if (vehicle === null) {
+  if (!vehicle) {
     throw new Error('VEHICLE_NOT_FOUND');
   }
 

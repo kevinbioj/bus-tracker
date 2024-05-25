@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 
-import { Service } from '~/yabs/fetcher/gtfs/@types';
+import type { Service } from '../types.js';
 
 export function checkCalendar(calendar: Service) {
   const now = dayjs().subtract(4, 'hours').subtract(30, 'minutes');

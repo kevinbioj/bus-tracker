@@ -1,6 +1,6 @@
-import { parse } from 'protobufjs';
+import protobufjs from 'protobufjs';
 
-import { GtfsRtTripUpdate, GtfsRtVehiclePosition } from '~/yabs/fetcher/gtfs/@types';
+import type { GtfsRtTripUpdate, GtfsRtVehiclePosition } from './types.js';
 
 const proto = `
 // Copyright 2015 The GTFS Specifications Authors.
@@ -642,7 +642,7 @@ message TranslatedString {
   extensions 1000 to 1999;
 }`;
 
-const type = parse(proto).root.lookupType('transit_realtime.FeedMessage');
+const type = protobufjs.parse(proto).root.lookupType('transit_realtime.FeedMessage');
 
 export function decodeTripUpdate(input: Buffer): GtfsRtTripUpdate {
   const data = type.decode(input).toJSON() as GtfsRtTripUpdate;

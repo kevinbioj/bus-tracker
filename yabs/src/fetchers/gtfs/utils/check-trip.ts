@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 
-import { parseTime } from '~/utils/parse-time';
-import { Trip } from '~/yabs/fetcher/gtfs/@types';
+import type { Trip } from '../types.js';
+import { parseTime } from './parse-time.js';
 
 export function checkTrip(trip: Trip) {
   if (trip.stops.length === 0) return false;

@@ -1,5 +1,5 @@
-import { GtfsProperties } from '~/yabs/fetcher/gtfs/@types';
-import { SiriProperties } from '~/yabs/fetcher/siri/@types';
+import type { GtfsProperties } from '../fetchers/gtfs/types.js';
+import type { SiriProperties } from '../fetchers/siri/types.js';
 
 export type Source = {
   id: string;
