@@ -441,6 +441,45 @@ const sngoRoutes: Route[] = [
       },
     ],
   },
+  {
+    id: "SNGO:241",
+    name: "NAV",
+    colors: { background: "#009a93", text: "#ffffff" },
+    destinations: [
+      {
+        id: ["Giverny Parking"],
+        name: "Parking",
+        city: "GIVERNY",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#009a93",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "NAV",
+          },
+          pages: [{ font: "1510N2E1", spacing: 1, text: "GIVERNY PARKING" }],
+        },
+      },
+      {
+        id: ["VERNON Gare SNCF"],
+        name: "Gare SNCF",
+        city: "VERNON",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#009a93",
+            textColor: "#ffffff",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "NAV",
+          },
+          pages: [{ font: "1510N2E1", spacing: 1, text: "VERNON GARE SNCF" }],
+        },
+      },
+    ],
+  },
 ];
 
 const network: Network = {

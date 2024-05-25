@@ -310,6 +310,22 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'SNGO-GIVERNY',
+    refreshCron: '42 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'SNGO-GIVERNY',
+      routePrefix: 'SNGO',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs/pub',
+      tripUpdateHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs-rt',
+      vehiclePositionHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs-rt',
+      getOperator: () => 'SNGO',
+      getVehicleNumber: (descriptor) => descriptor.label ?? null,
+      allowScheduled: false,
+      shapesStrategy: 'IGNORE',
+    },
+  },
+  {
     id: 'DEEPMOB',
     refreshCron: '48 * * * * *',
     type: 'GTFS',
