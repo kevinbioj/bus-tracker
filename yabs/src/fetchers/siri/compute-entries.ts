@@ -1,8 +1,9 @@
 import dayjs from 'dayjs';
 import { XMLParser } from 'fast-xml-parser';
 
-import { SiriProperties, SiriVehicleActivity } from '~/yabs/fetcher/siri/@types';
-import { getVehicleLedColor } from '~/yabs/vehicles/get-vehicle-led-color';
+import type { YabsEntry } from '../../types.js';
+import { getVehicleLedColor } from '../../vehicles/get-vehicle-led-color.js';
+import type { SiriProperties, SiriVehicleActivity } from './types.js';
 
 const parser = new XMLParser();
 
@@ -19,7 +20,7 @@ const vehicleMonitoringRequestPayload = `<?xml version="1.0" encoding="utf-8"?>
 
 const unescape = (input: string) => input.replace('&apos;', "'");
 
-export async function computeSiriEntries(properties: SiriProperties) {
+export async function computeSiriEntries(properties: SiriProperties): Promise<YabsEntry[] | null> {
   const response = await fetch(properties.siriEndpoint, {
     body: vehicleMonitoringRequestPayload,
     headers: {

@@ -2,9 +2,9 @@ import { exec } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { groupBy } from '~/utils/group-by';
-import { parseCsv } from '~/utils/parse-csv';
-import { GtfsProperties, GtfsResource, Service, Shape, Stop, Trip } from '~/yabs/fetcher/gtfs/@types';
+import type { GtfsProperties, GtfsResource, Service, Shape, Stop, Trip } from './types.js';
+import { groupBy } from './utils/group-by.js';
+import { parseCsv } from './utils/parse-csv.js';
 
 const $ = (command: string) =>
   new Promise<string>((resolve, reject) =>

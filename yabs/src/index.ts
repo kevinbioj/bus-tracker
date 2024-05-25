@@ -1,36 +1,20 @@
 import { serve } from '@hono/node-server';
 import { Cron } from 'croner';
 import dayjs from 'dayjs';
-import { Context, Hono } from 'hono';
+import { type Context, Hono } from 'hono';
 import { match } from 'ts-pattern';
 
-import { YabsEntry } from '~/@types';
-import { port } from '~/config/common';
-import sources, { Source } from '~/config/sources';
-import { GtfsResource } from '~/yabs/fetcher/gtfs/@types';
-import { computeGtfsEntries } from '~/yabs/fetcher/gtfs/compute-entries';
-import { downloadStaticResource } from '~/yabs/fetcher/gtfs/download-resource';
-import { computeSiriEntries } from '~/yabs/fetcher/siri/compute-entries';
-import { getOperatorVehicles } from '~/yabs/vehicles/get-operator-vehicles';
-import { getVehicle } from '~/yabs/vehicles/get-vehicle';
-import { getVehicles } from '~/yabs/vehicles/get-vehicles';
-import { insertActivity } from '~/yabs/vehicles/insert-activity';
-
-// Very ugly polyfill while Node 22 x Protobufjs won't work
-Map.groupBy = function <K, T>(items: Iterable<T>, keySelector: (item: T, index: number) => K) {
-  const map = new Map<K, T[]>();
-  let index = 0;
-  for (const item of items) {
-    const key = keySelector(item, index);
-    let table = map.get(key);
-    if (!table) {
-      table = [];
-      map.set(key, table);
-    }
-    table.push(item);
-  }
-  return map;
-};
+import { port } from './config/common.js';
+import sources, { type Source } from './config/sources.js';
+import { computeGtfsEntries } from './fetchers/gtfs/compute-entries.js';
+import { downloadStaticResource } from './fetchers/gtfs/download-resource.js';
+import type { GtfsResource } from './fetchers/gtfs/types.js';
+import { computeSiriEntries } from './fetchers/siri/compute-entries.js';
+import type { YabsEntry } from './types.js';
+import { getOperatorVehicles } from './vehicles/get-operator-vehicles.js';
+import { getVehicle } from './vehicles/get-vehicle.js';
+import { getVehicles } from './vehicles/get-vehicles.js';
+import { insertActivity } from './vehicles/insert-activity.js';
 
 const waitFor = (time: number) => new Promise((r) => setTimeout(r, time));
 const DEFAULT_RETRY_COUNT = 0;
@@ -125,7 +109,8 @@ async function handleGetOperatorVehicle(c: Context) {
   if (!suppliedDatabase) {
     return c.json({ error: 'History service is unavailable at this moment.' }, 503);
   }
-  const { operator, number } = c.req.param();
+  const operator = c.req.param('operator');
+  const number = c.req.param('number');
   const period = c.req.query('period');
   if (Number.isNaN(number)) return c.json({ message: 'An invalid vehicle number was received' }, 400);
 
@@ -217,7 +202,7 @@ async function updateEntries(source: Source) {
       console.log(`YABS\t${source.id}\tNo entries were returned, keeping old entries.`);
     }
   } catch (e) {
-    if (e instanceof DOMException) {
+    if (e instanceof Error && e.name === 'AbortError') {
       console.error(`YABS\t${source.id}\tRequest was aborted due to timeout being reached.`);
     } else {
       console.error(`YABS\t${source.id}\tFailed to update entries:\n`, e instanceof Error ? e.stack : e);

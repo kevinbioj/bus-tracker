@@ -1,9 +1,9 @@
 import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
-import { parseTime } from '~/utils/parse-time';
-import { GtfsProperties, Trip, VehiclePositionEntity } from '~/yabs/fetcher/gtfs/@types';
-import { SiriProperties } from '~/yabs/fetcher/siri/@types';
+import type { GtfsProperties, Trip, VehiclePositionEntity } from '../fetchers/gtfs/types.js';
+import { parseTime } from '../fetchers/gtfs/utils/parse-time.js';
+import type { SiriProperties } from '../fetchers/siri/types.js';
 
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
 
@@ -131,7 +131,7 @@ const sources: Source[] = [
       prefix: 'TWISTO',
       siriEndpoint: 'https://api.okina.fr/gateway/cae/realtime/anshar/services',
       getOperator: () => 'TWISTO',
-      getVehicleLabel: (ref) => +ref.replace('Keolis_', ''),
+      getVehicleLabel: (ref) => ref.replace('Keolis_', ''),
     },
   },
   {

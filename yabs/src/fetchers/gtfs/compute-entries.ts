@@ -1,15 +1,18 @@
 import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
-import { YabsEntry } from '~/@types';
-import { checkCalendar } from '~/utils/check-calendar';
-import { checkTrip } from '~/utils/check-trip';
-import { parseTime } from '~/utils/parse-time';
-import { GtfsProperties, GtfsResource } from '~/yabs/fetcher/gtfs/@types';
-import { decodeTripUpdate, decodeVehiclePosition } from '~/yabs/fetcher/gtfs/decode-gtfsrt';
-import { getVehicleLedColor } from '~/yabs/vehicles/get-vehicle-led-color';
+import type { YabsEntry } from '../../types.js';
+import { getVehicleLedColor } from '../../vehicles/get-vehicle-led-color.js';
+import { decodeTripUpdate, decodeVehiclePosition } from './decode-gtfsrt.js';
+import type { GtfsProperties, GtfsResource } from './types.js';
+import { checkCalendar } from './utils/check-calendar.js';
+import { checkTrip } from './utils/check-trip.js';
+import { parseTime } from './utils/parse-time.js';
 
-export async function computeGtfsEntries(resource: GtfsResource, properties: GtfsProperties): Promise<YabsEntry[]> {
+export async function computeGtfsEntries(
+  resource: GtfsResource,
+  properties: GtfsProperties,
+): Promise<YabsEntry[] | null> {
   const entries = await match([properties.tripUpdateHref, properties.vehiclePositionHref])
     .with([P.string, P.string], async () => {
       const realtimeEntries = await fetchVehiclePositionAndTripUpdate(resource, properties);
@@ -64,7 +67,7 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
     };
 
     if (trip.shape !== null && currentStopTimeIdx < stopTimes.length - 1) {
-      const nextStopTime = stopTimes[currentStopTimeIdx + 1];
+      const nextStopTime = stopTimes[currentStopTimeIdx + 1]!;
       const inBetweenTime = nextStopTime.timestamp - currentStopTime.timestamp;
       const timePercentToNextStop = (dayjs().unix() - currentStopTime.timestamp) / inBetweenTime;
       const estimatedTraveledDistance =
@@ -106,7 +109,7 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
         status:
           nextStops.length === 0
             ? 'ARRIVED'
-            : nextStops[0].sequence === trip.stops[0].sequence
+            : nextStops[0]!.sequence === trip.stops[0]!.sequence
               ? 'WAITING_FOR_DEPARTURE'
               : 'ONGOING',
       },
@@ -206,7 +209,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
       const currentStopTime =
         stopTimes.toReversed().find((stopTime) => {
           return dayjs().isAfter(dayjs.unix(stopTime.timestamp ?? stopTime.scheduled));
-        }) ?? stopTimes[0];
+        }) ?? stopTimes[0]!;
       if (
         currentStopTime.sequence === trip.stops.at(-1)!.sequence &&
         dayjs().diff(dayjs.unix(currentStopTime.timestamp!), 'minutes') > 10
@@ -249,19 +252,21 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           .find((point) => point.distance < estimatedTraveledDistance);
         if (currentShapePoint) {
           const nextShapePoint = trip.shape.points[trip.shape.points.indexOf(currentShapePoint) + 1];
-          const ratio =
-            (estimatedTraveledDistance - currentShapePoint.distance) /
-            (nextShapePoint.distance - currentShapePoint.distance);
+          if (nextShapePoint) {
+            const ratio =
+              (estimatedTraveledDistance - currentShapePoint.distance) /
+              (nextShapePoint.distance - currentShapePoint.distance);
 
-          estimatedPosition = {
-            latitude: nextShapePoint
-              ? currentShapePoint.lat + (nextShapePoint.lat - currentShapePoint.lat) * ratio
-              : currentShapePoint.lat,
-            longitude: nextShapePoint
-              ? currentShapePoint.lon + (nextShapePoint.lon - currentShapePoint.lon) * ratio
-              : currentShapePoint.lon,
-            timestamp: dayjs().unix(),
-          };
+            estimatedPosition = {
+              latitude: nextShapePoint
+                ? currentShapePoint.lat + (nextShapePoint.lat - currentShapePoint.lat) * ratio
+                : currentShapePoint.lat,
+              longitude: nextShapePoint
+                ? currentShapePoint.lon + (nextShapePoint.lon - currentShapePoint.lon) * ratio
+                : currentShapePoint.lon,
+              timestamp: dayjs().unix(),
+            };
+          }
         }
       }
 
@@ -281,7 +286,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           status:
             nextStops.length === 0
               ? 'ARRIVED'
-              : nextStops[0].sequence === trip.stops[0].sequence
+              : nextStops[0]!.sequence === trip.stops[0]!.sequence
                 ? 'WAITING_FOR_DEPARTURE'
                 : 'ONGOING',
         },
@@ -431,7 +436,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
           status:
             nextStops.length === 0
               ? 'ARRIVED'
-              : nextStops[0].sequence === trip.stops[0].sequence
+              : nextStops[0]!.sequence === trip.stops[0]!.sequence
                 ? 'WAITING_FOR_DEPARTURE'
                 : 'ONGOING',
         },

@@ -1,8 +1,8 @@
 import { and, eq } from 'drizzle-orm';
 
-import { databaseActivated, orm } from '~/yabs/vehicles/database';
-import { vehicles } from '~/yabs/vehicles/schema';
-import { VehicleIdentifier } from '~/yabs/vehicles/vehicle-identifier';
+import { databaseActivated, orm } from './database.js';
+import { vehicles } from './schema.js';
+import type { VehicleIdentifier } from './vehicle-identifier.js';
 
 export async function getVehicleLedColor(identifier: VehicleIdentifier) {
   if (!databaseActivated) return null;
