@@ -1,6 +1,8 @@
+import { offset } from "@floating-ui/dom";
 import dayjs from "dayjs";
 import dayjsDurationPlugin, { Duration } from "dayjs/plugin/duration";
 import dayjsRelativeTimePlugin from "dayjs/plugin/relativeTime";
+import { Tooltip } from "react-tooltip";
 import { Rss, X } from "tabler-icons-react";
 import { P, match } from "ts-pattern";
 
@@ -9,18 +11,18 @@ import { StopTime } from "~/@types";
 dayjs.extend(dayjsDurationPlugin);
 dayjs.extend(dayjsRelativeTimePlugin);
 
-type NextStopsProps = { stopTimes: StopTime[] };
+type NextStopsProps = { stopTimes: StopTime[]; tooltipId?: string };
 
 const humanizeDuration = (duration: Duration) =>
   duration.asSeconds() < 60
     ? `${duration.asSeconds()} seconde${duration.asSeconds() > 1 ? "s" : ""}`
     : `${Math.floor(duration.asMinutes())} minute${Math.floor(duration.asMinutes()) > 1 ? "s" : ""}`;
 
-export default function NextStops({ stopTimes }: NextStopsProps) {
+export default function NextStops({ stopTimes, tooltipId }: NextStopsProps) {
   if (stopTimes.length === 0) return null;
   return (
     <div className="-mb-2 px-2">
-      <div className="font-[Achemine] max-h-24 min-w-44 mt-0.5 overflow-y-scroll w-full">
+      <div className="font-[Achemine] max-h-24 min-w-44 mt-0.5 overflow-y-scroll relative w-full">
         {stopTimes.map((stopTime) => {
           return (
             <div className="grid grid-cols-[auto_1rem_2.1rem] font-bold mt-0.5" key={stopTime.id}>
@@ -34,37 +36,40 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
               )}
               {match([stopTime.timestamp, stopTime.isRealtime])
                 .with([null, P.boolean], () => (
-                  <span title="Arrêt non desservi">
+                  <span data-tooltip-id="next-stop-delay" data-tooltip-content="Arrêt non desservi">
                     <X className="mx-auto -mt-0.5 stroke-red-500" size={18} strokeWidth={3} />
                   </span>
                 ))
                 .with([P.number, false], ([time]) => (
-                  <span className="tabular-nums hover:cursor-default" title="Horaire théorique">
+                  <span className="tabular-nums hover:cursor-default">{dayjs.unix(time).format("HH:mm")}</span>
+                ))
+                .with([P.number, true], ([time]) => (
+                  <span
+                    className="tabular-nums text-green-700 dark:text-green-500 hover:cursor-default"
+                    data-tooltip-id="next-stop-delay"
+                    data-tooltip-content={
+                      stopTime.delta !== null
+                        ? stopTime.delta === 0
+                          ? "À l'heure"
+                          : stopTime.delta < 0
+                            ? `Avance de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
+                            : `Retard de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
+                        : "Horaire temps-réel"
+                    }
+                  >
                     {dayjs.unix(time).format("HH:mm")}
                   </span>
                 ))
-                .with([P.number, true], ([time]) => {
-                  return (
-                    <span
-                      className="tabular-nums text-green-700 dark:text-green-500 hover:cursor-default"
-                      title={
-                        stopTime.delta !== null
-                          ? stopTime.delta === 0
-                            ? "À l'heure"
-                            : stopTime.delta < 0
-                              ? `Avance de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
-                              : `Retard de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
-                          : "Horaire temps-réel"
-                      }
-                    >
-                      {dayjs.unix(time).format("HH:mm")}
-                    </span>
-                  );
-                })
                 .exhaustive()}
             </div>
           );
         })}
+        <Tooltip
+          id="next-stop-delay"
+          place="left"
+          middlewares={[offset(15)]}
+          style={{ paddingBlock: 5, paddingInline: 10 }}
+        />
       </div>
     </div>
   );

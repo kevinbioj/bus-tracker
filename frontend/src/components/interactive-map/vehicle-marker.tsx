@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { RefObject, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Popup } from "react-leaflet";
+import { Tooltip } from "react-tooltip";
 import { Satellite as SatelliteIcon } from "tabler-icons-react";
 import { match } from "ts-pattern";
 import { useLocalStorage } from "usehooks-ts";
@@ -37,9 +38,13 @@ const getNoise = () => (Math.random() - 0.5) * 0.000045;
 
 const isTouchScreen = window.matchMedia("(pointer: coarse)").matches;
 
-type VehicleMarkerProps = { data: VehicleData };
+type VehicleMarkerProps = {
+  data: VehicleData;
+  activeMarker: string | undefined;
+  setActiveMarker: (id?: string) => any;
+};
 
-export default function VehicleMarker({ data }: VehicleMarkerProps) {
+export default function VehicleMarker({ data, activeMarker, setActiveMarker }: VehicleMarkerProps) {
   const route = routes.find((route) => route.routeIds?.includes(data.trip.route) || route.id === data.trip.route);
   const destination = route?.destinations.find((destination) => destination.id.includes(data.trip.headsign ?? ""));
 
@@ -78,8 +83,6 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
     });
   }, [data, ref, route]);
 
-  const [isHovered, setHovered] = useState(false);
-
   const adjustPan = useCallback((ref: RefObject<MoveableCircleMarker>) => {
     if (ref.current === null) return;
     const { _popup } = ref.current as unknown as { _popup: { options: { autoPan: boolean }; _adjustPan: () => void } };
@@ -100,6 +103,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
 
   const girouetteWidth = Math.min(width - 50, destination?.girouette?.width ?? 384);
   const ledColor = data.vehicle.ledColor ?? destination?.girouette?.ledColor ?? "YELLOW";
+  const tooltipId = data.id;
 
   return (
     <ReactMoveableCircleMarker
@@ -107,8 +111,10 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
       duration={1000}
       bubblingMouseEvents={false}
       eventHandlers={{
-        click: () => {
-          setHovered(false);
+        click: (e) => {
+          const target = e.target as MoveableCircleMarker;
+          setActiveMarker(data.id);
+          if (!target.isPopupOpen()) target.openPopup();
           if (!isTouchScreen) {
             adjustPan(ref);
           }
@@ -120,23 +126,18 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
           }
         },
         mouseover: (e) => {
+          if (isTouchScreen) return;
           const target = e.target as MoveableCircleMarker;
-          setHovered(true);
-          if (target.isPopupOpen()) return;
-          target.openPopup();
-          if (isTouchScreen) {
-            setTimeout(() => adjustPan(ref), 100);
+          if (activeMarker !== data.id) {
+            target.openPopup();
           }
         },
         mouseout: (e) => {
+          if (isTouchScreen) return;
           const target = e.target as MoveableCircleMarker;
-          if (!isHovered) return;
-          setTimeout(() => {
-            setHovered(false);
-            if (target.isPopupOpen()) {
-              target.closePopup();
-            }
-          });
+          if (activeMarker !== data.id) {
+            target.closePopup();
+          }
         },
       }}
       fillOpacity={1}
@@ -145,7 +146,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
       radius={8}
       ref={ref}
     >
-      <Popup autoClose autoPan={false} closeButton={false}>
+      <Popup autoClose autoPan={false} closeButton={false} closeOnClick={false}>
         <div style={{ width: `${girouetteWidth + 1}px` }}>
           <div className="border-[1px] border-neutral-800">
             {destination?.girouette ? (
@@ -221,7 +222,7 @@ export default function VehicleMarker({ data }: VehicleMarkerProps) {
                 <span className="font-[Achemine] font-bold flex text-sm text-white">Détails du véhicule</span>
               </Link>
             )}
-            {showNextStops && <NextStops stopTimes={data.trip.stopTimes} />}
+            {showNextStops && <NextStops stopTimes={data.trip.stopTimes} tooltipId={tooltipId} />}
           </div>
         </div>
       </Popup>

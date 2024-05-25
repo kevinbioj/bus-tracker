@@ -1,6 +1,7 @@
 "use client";
 
-import { LatLngExpression } from "leaflet";
+import { LatLngExpression, Map } from "leaflet";
+import { useCallback, useState } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { useLocalStorage } from "usehooks-ts";
 
@@ -18,7 +19,22 @@ type InteractiveMapProps = {
 
 export default function InteractiveMap({ className, defaultCenter, defaultZoom }: InteractiveMapProps) {
   const darkMode = false; /*useMediaQuery("(prefers-color-scheme: dark)", { defaultValue: false });*/
+  const [activeMarker, setActiveMarker] = useState<string>();
   const [lastLocation] = useLocalStorage<[number, number, number] | null>("last-location", null);
+
+  const mapRef = useCallback((map: Map | null) => {
+    if (map === null) return;
+
+    map.addEventListener("click", () => {
+      setActiveMarker(undefined);
+      map.closePopup();
+    });
+
+    map.addEventListener("popupclose", () => {
+      setActiveMarker(undefined);
+    });
+  }, []);
+
   return (
     <section>
       <h2 className="font-bold sr-only text-2xl text-center">Carte interactive</h2>
@@ -26,6 +42,7 @@ export default function InteractiveMap({ className, defaultCenter, defaultZoom }
         center={lastLocation ? [lastLocation[0], lastLocation[1]] : defaultCenter}
         className={className}
         id="interactive-map"
+        ref={mapRef}
         zoom={lastLocation?.[2] ?? defaultZoom}
       >
         {darkMode ? (
@@ -40,7 +57,7 @@ export default function InteractiveMap({ className, defaultCenter, defaultZoom }
           />
         )}
         <LocationSaver />
-        <VehicleMarkers />
+        <VehicleMarkers activeMarker={activeMarker} setActiveMarker={setActiveMarker} />
         <VehicleHightlight />
         <Geolocate />
       </MapContainer>
