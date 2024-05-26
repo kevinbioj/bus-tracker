@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { RefObject, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Popup } from "react-leaflet";
-import { Tooltip } from "react-tooltip";
 import { Satellite as SatelliteIcon } from "tabler-icons-react";
 import { match } from "ts-pattern";
 import { useLocalStorage } from "usehooks-ts";
@@ -66,7 +65,6 @@ export default function VehicleMarker({ data, activeMarker, setActiveMarker }: V
 
   const position = useMemo(() => {
     const applyNoise = data.trip.status !== "ONGOING";
-    if (data.id.includes("3371")) console.log(applyNoise);
     const { latitude, longitude, type } = data.vehicle.position;
     if (type === "GPS") return [latitude, longitude];
     return applyNoise ? [latitude, longitude] : [latitude + getNoise(), longitude + getNoise()];

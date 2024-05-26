@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { ArrowLeft, ArrowsSort, Filter } from "tabler-icons-react";
 import { match } from "ts-pattern";
 
@@ -16,27 +16,25 @@ export default function VehicleList({ operator, vehicles }: VehicleList) {
   const [sort, setSort] = useState<"number" | "activity">("number");
   const [filter, setFilter] = useState("");
 
-  const filtered = useMemo(() => {
-    const pattern = new RegExp(filter.replaceAll("_", "\\d"));
-    return vehicles
-      .filter((v) => {
-        if (filter === "") return true;
-        return pattern.test(v.number.toString()) || pattern.test(v.name ?? "");
-      })
-      .sort((a, b) => {
-        if (sort === "number") {
-          return a.number - b.number;
-        } else if (sort === "activity") {
-          if (a.currentRouteId !== null && b.currentRouteId !== null) return a.number - b.number;
-          if (a.currentRouteId !== null) return -1;
-          if (b.currentRouteId !== null) return 1;
-          return new Date(b.sinceTime ?? 0).getTime() - new Date(a.sinceTime ?? 0).getTime();
-        }
-        return 0;
-      });
-  }, [filter, sort, vehicles]);
+  const pattern = new RegExp(filter.replaceAll("_", "\\d"));
+  const filtered = vehicles
+    .filter((v) => {
+      if (filter === "") return true;
+      return pattern.test(v.number.toString()) || pattern.test(v.name ?? "");
+    })
+    .sort((a, b) => {
+      if (sort === "number") {
+        return a.number - b.number;
+      } else if (sort === "activity") {
+        if (a.currentRouteId !== null && b.currentRouteId !== null) return a.number - b.number;
+        if (a.currentRouteId !== null) return -1;
+        if (b.currentRouteId !== null) return 1;
+        return new Date(b.sinceTime ?? 0).getTime() - new Date(a.sinceTime ?? 0).getTime();
+      }
+      return 0;
+    });
 
-  const activeCount = useMemo(() => filtered.filter((v) => v.currentRouteId !== null).length, [filtered]);
+  const activeCount = filtered.filter((v) => v.currentRouteId !== null).length;
 
   return (
     <main className="max-w-screen-lg mt-3 mx-auto px-2 scroll-my-72 scroll-smooth">
