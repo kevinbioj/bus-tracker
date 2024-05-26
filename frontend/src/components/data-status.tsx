@@ -5,7 +5,6 @@ import dayjs from "dayjs";
 import { Refresh } from "tabler-icons-react";
 import { match } from "ts-pattern";
 
-import NetworkSelector from "~/components/network-selector";
 import { REFRESH_INTERVAL, useVehiclesQuery } from "~/hooks/useVehicles";
 
 export default function DataStatus() {

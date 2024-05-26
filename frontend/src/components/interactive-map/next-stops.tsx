@@ -18,7 +18,7 @@ const humanizeDuration = (duration: Duration) =>
     ? `${duration.asSeconds()} seconde${duration.asSeconds() > 1 ? "s" : ""}`
     : `${Math.floor(duration.asMinutes())} minute${Math.floor(duration.asMinutes()) > 1 ? "s" : ""}`;
 
-export default function NextStops({ stopTimes, tooltipId }: NextStopsProps) {
+export default function NextStops({ stopTimes }: NextStopsProps) {
   if (stopTimes.length === 0) return null;
   return (
     <div className="-mb-2 px-2">
