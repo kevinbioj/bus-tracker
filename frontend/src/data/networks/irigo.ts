@@ -183,7 +183,7 @@ const irigoRoutes: Route[] = [
         city: "BEAUCOUZÉ",
         girouette: {
           routeNumber: { backgroundColor: "#9B1670", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
-          pages: [{ text: "BEAUCOUZE" }],
+          pages: [{ text: "HAUTE ROCHE" }],
         },
       },
       {
