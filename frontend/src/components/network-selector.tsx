@@ -38,6 +38,20 @@ const destinations = [
     color: "#9E40A7",
     textColor: "#ffffff",
   },
+  {
+    id: "angers",
+    title: (
+      <span className="font-bold flex items-center gap-2">
+        <span className="w-8 h-full relative">
+          <Image className="object-contain" fill src="/assets/destinations/angers.svg" alt="" />
+        </span>{" "}
+        à Angers
+      </span>
+    ),
+    href: "https://angers.bus-tracker.fr",
+    color: "#EB0F2D",
+    textColor: "#ffffff",
+  },
 ];
 
 export default function NetworkSelector() {
