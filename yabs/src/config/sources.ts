@@ -16,6 +16,13 @@ const sources: Source[] = [
       id: 'IRIGO',
       staticResourceHref: 'https://chouette.enroute.mobi/api/v1/datas/Irigo/gtfs.zip',
       tripUpdateHref: 'https://ara-api.enroute.mobi/irigo/gtfs/trip-updates',
+      allowScheduled: false,
+      mapTripUpdateEntities: (tripUpdates) =>
+        tripUpdates.filter((tripUpdate) => {
+          const routeId = +(tripUpdate.tripUpdate.trip.routeId ?? 0);
+          if (Number.isNaN(routeId)) return true;
+          return routeId < 100;
+        }),
     },
   },
 ];
