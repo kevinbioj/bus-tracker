@@ -63,6 +63,16 @@ const irigoRoutes: Route[] = [
         },
       },
       {
+        id: ["BERGES DE MAINE"],
+        autoHide: true,
+        name: "Berges de Maine",
+        city: "ANGERS",
+        girouette: {
+          routeNumber: { backgroundColor: "#E30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
+          pages: [{ font: "1510N2E1", text: "BERGES DE MAINE" }],
+        },
+      },
+      {
         id: ["VERNEAU"],
         autoHide: true,
         name: "Verneau",
@@ -96,6 +106,36 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#00569D", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
           pages: [{ text: "MONPLAISIR" }],
+        },
+      },
+      {
+        id: ["CONSERVATOIRE"],
+        autoHide: true,
+        name: "Conservatoire",
+        city: "ANGERS",
+        girouette: {
+          routeNumber: { backgroundColor: "#00569D", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
+          pages: [{ text: "CONSERVATOIRE" }],
+        },
+      },
+      {
+        id: ["SAINT SERGE"],
+        autoHide: true,
+        name: "Saint-Serge Université",
+        city: "ANGERS",
+        girouette: {
+          routeNumber: { backgroundColor: "#00569D", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
+          pages: [{ font: "1508C2E1", text: "ST-SERGE UNIVERSITE" }],
+        },
+      },
+      {
+        id: ["MOLIERE"],
+        autoHide: true,
+        name: "Molière",
+        city: "ANGERS",
+        girouette: {
+          routeNumber: { backgroundColor: "#00569D", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
+          pages: [{ text: "MOLIERE" }],
         },
       },
       {
