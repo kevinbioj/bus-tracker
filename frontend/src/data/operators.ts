@@ -4,7 +4,7 @@ const operators: Operator[] = [
   {
     id: "IRIGO",
     name: "Irigo (Angers Loire Métropole)",
-    hasHistory: false,
+    hasHistory: true,
     logo: {
       href: "/assets/operators/irigo.svg",
       size: [132, 132],
