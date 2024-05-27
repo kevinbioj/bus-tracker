@@ -33,7 +33,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://pysae.com/api/v2/groups/irigo/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/irigo/gtfs-rt',
       allowScheduled: false,
-      getVehicleNumber: (descriptor) => descriptor.label ?? null,
+      getVehicleNumber: (descriptor) => (descriptor.label ? descriptor.label.trim() : null),
     },
   },
 ];
