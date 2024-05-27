@@ -239,7 +239,7 @@ const irigoRoutes: Route[] = [
       {
         id: ["ST-BARTHÉLEMY Venaiserie"],
         name: "Venaiserie",
-        city: "SAINT-BARTHÉLEMY",
+        city: "SAINT-BARTHÉLEMY-D'ANJOU",
         girouette: {
           routeNumber: { backgroundColor: "#9B1670", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
           pages: [{ text: "VENAISERIE" }],
@@ -439,10 +439,10 @@ const irigoRoutes: Route[] = [
       {
         id: ["ST-SYLVAIN St-Aubin La Salle", "ST-SYLVAIN St-Aubin La Salle via ZI"],
         name: "Saint-Aubin La Salle",
-        city: "SAINT-SYLVAIN",
+        city: "SAINT-SYLVAIN-D'ANJOU",
         girouette: {
           routeNumber: { backgroundColor: "#AE0F0A", textColor: "#FFFFFF", outlineColor: "#000000", text: "7" },
-          pages: [{ font: "1508C2E1", text: "ST-AUBIN LA SALLE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "ST-AUBIN LA SALLE" }],
         },
       },
     ],
@@ -538,7 +538,7 @@ const irigoRoutes: Route[] = [
       {
         id: ["ST-SYLVAIN Chêne Vert"],
         name: "Chêne Vert",
-        city: "SAINT-SYLVAIN",
+        city: "SAINT-SYLVAIN-D'ANJOU",
         girouette: {
           routeNumber: { backgroundColor: "#7263A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
           pages: [{ text: "CHENE VERT" }],
@@ -657,7 +657,13 @@ const irigoRoutes: Route[] = [
         name: "Gares Papin",
         city: "ANGERS",
         girouette: {
-          routeNumber: { backgroundColor: "#E7343F", textColor: "#FFFFFF", outlineColor: "#000000", text: "E20" },
+          routeNumber: {
+            backgroundColor: "#E7343F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E20",
+          },
           pages: [{ text: "GARES PAPIN" }],
         },
       },
@@ -666,7 +672,13 @@ const irigoRoutes: Route[] = [
         name: "L'Atoll",
         city: "BEAUCOUZÉ",
         girouette: {
-          routeNumber: { backgroundColor: "#E7343F", textColor: "#FFFFFF", outlineColor: "#000000", text: "E20" },
+          routeNumber: {
+            backgroundColor: "#E7343F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E20",
+          },
           pages: [{ text: "L'ATOLL" }],
         },
       },
@@ -683,7 +695,13 @@ const irigoRoutes: Route[] = [
         name: "Gares Papin",
         city: "ANGERS",
         girouette: {
-          routeNumber: { backgroundColor: "#95C11F", textColor: "#FFFFFF", outlineColor: "#000000", text: "E21" },
+          routeNumber: {
+            backgroundColor: "#95C11F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E21",
+          },
           pages: [{ text: "GARES PAPIN" }],
         },
       },
@@ -692,7 +710,13 @@ const irigoRoutes: Route[] = [
         name: "Domaine du Val",
         city: "MONTREUIL-JUIGNÉ",
         girouette: {
-          routeNumber: { backgroundColor: "#95C11F", textColor: "#FFFFFF", outlineColor: "#000000", text: "E21" },
+          routeNumber: {
+            backgroundColor: "#95C11F",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E21",
+          },
           pages: [{ font: "1510N2E1", text: "DOMAINE DU VAL" }],
         },
       },
@@ -709,7 +733,13 @@ const irigoRoutes: Route[] = [
         name: "Gares Papin",
         city: "ANGERS",
         girouette: {
-          routeNumber: { backgroundColor: "#C94191", textColor: "#FFFFFF", outlineColor: "#000000", text: "E22" },
+          routeNumber: {
+            backgroundColor: "#C94191",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E22",
+          },
           pages: [{ text: "GARES PAPIN" }],
         },
       },
@@ -718,7 +748,13 @@ const irigoRoutes: Route[] = [
         name: "Chantourteau",
         city: "BOUCHEMAINE",
         girouette: {
-          routeNumber: { backgroundColor: "#C94191", textColor: "#FFFFFF", outlineColor: "#000000", text: "E22" },
+          routeNumber: {
+            backgroundColor: "#C94191",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E22",
+          },
           pages: [{ text: "CHANTOURTEAU" }],
         },
       },
@@ -735,7 +771,13 @@ const irigoRoutes: Route[] = [
         name: "Hôtel de Ville",
         city: "ANGERS",
         girouette: {
-          routeNumber: { backgroundColor: "#F08046", textColor: "#FFFFFF", outlineColor: "#000000", text: "E23" },
+          routeNumber: {
+            backgroundColor: "#F08046",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E23",
+          },
           pages: [{ text: "HOTEL DE VILLE" }],
         },
       },
@@ -744,7 +786,13 @@ const irigoRoutes: Route[] = [
         name: "Guicheteau",
         city: "MÛRS-ÉRIGNÉ",
         girouette: {
-          routeNumber: { backgroundColor: "#F08046", textColor: "#FFFFFF", outlineColor: "#000000", text: "E23" },
+          routeNumber: {
+            backgroundColor: "#F08046",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E23",
+          },
           pages: [{ text: "GUICHETEAU" }],
         },
       },
@@ -761,7 +809,13 @@ const irigoRoutes: Route[] = [
         name: "Hôtel de Ville",
         city: "ANGERS",
         girouette: {
-          routeNumber: { backgroundColor: "#00A7A7", textColor: "#FFFFFF", outlineColor: "#000000", text: "E24" },
+          routeNumber: {
+            backgroundColor: "#00A7A7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E24",
+          },
           pages: [{ text: "HOTEL DE VILLE" }],
         },
       },
@@ -770,7 +824,13 @@ const irigoRoutes: Route[] = [
         name: "Royale",
         city: "CORNÉ",
         girouette: {
-          routeNumber: { backgroundColor: "#00A7A7", textColor: "#FFFFFF", outlineColor: "#000000", text: "E24" },
+          routeNumber: {
+            backgroundColor: "#00A7A7",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E24",
+          },
           pages: [{ text: "ROYALE" }],
         },
       },
@@ -817,7 +877,7 @@ const irigoRoutes: Route[] = [
         city: "BAUNÉ",
         girouette: {
           routeNumber: { backgroundColor: "#E6007E", textColor: "#FFFFFF", outlineColor: "#000000", text: "30" },
-          pages: [{ text: "Louise Michel" }],
+          pages: [{ text: "LOUISE MICHEL" }],
         },
       },
     ],
@@ -853,7 +913,7 @@ const irigoRoutes: Route[] = [
         city: "SOUCELLES",
         girouette: {
           routeNumber: { backgroundColor: "#008530", textColor: "#FFFFFF", outlineColor: "#000000", text: "31" },
-          pages: [{ text: "SOUCELLES STADE" }],
+          pages: [{ font: "1510N2E1", text: "SOUCELLES STADE" }],
         },
       },
     ],
@@ -915,7 +975,7 @@ const irigoRoutes: Route[] = [
         city: "FENEU",
         girouette: {
           routeNumber: { backgroundColor: "#951B81", textColor: "#FFFFFF", outlineColor: "#000000", text: "33" },
-          pages: [{ font: "1510N2E1", text: "CROIX DE BEAUVAIS" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "CROIX DE BEAUVAIS" }],
         },
       },
     ],
@@ -942,7 +1002,7 @@ const irigoRoutes: Route[] = [
         city: "ANGERS",
         girouette: {
           routeNumber: { backgroundColor: "#F39200", textColor: "#FFFFFF", outlineColor: "#000000", text: "34" },
-          pages: [{ text: "TERRA BOTANICA" }],
+          pages: [{ font: "1510N2E1", text: "TERRA BOTANICA" }],
         },
       },
       {
@@ -983,9 +1043,8 @@ const irigoRoutes: Route[] = [
       },
       {
         id: ["ST-LÉGER La Coudre"],
-        autoHide: true,
         name: "La Coudre",
-        city: "ST-LÉGER",
+        city: "SAINT-LÉGER-DES-BOIS",
         girouette: {
           routeNumber: { backgroundColor: "#00A6E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "35" },
           pages: [{ text: "LA COUDRE" }],
@@ -993,8 +1052,9 @@ const irigoRoutes: Route[] = [
       },
       {
         id: ["ST-LÉGER Les Essarts"],
+        autoHide: true,
         name: "Les Essarts",
-        city: "SAINT-LÉGER",
+        city: "SAINT-LÉGER-DES-BOIS",
         girouette: {
           routeNumber: { backgroundColor: "#00A6E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "35" },
           pages: [{ text: "LES ESSARTS" }],
@@ -1018,12 +1078,12 @@ const irigoRoutes: Route[] = [
         },
       },
       {
-        id: ["ST-LÉGER Les Essarts"],
-        name: "Les Essarts",
-        city: "SAINT-LÉGER",
+        id: ["ST-MARTIN Beau Soleil"],
+        name: "Beau Soleil",
+        city: "SAINT-MARTIN-DU-FOUILLOUX",
         girouette: {
           routeNumber: { backgroundColor: "#D2091E", textColor: "#FFFFFF", outlineColor: "#000000", text: "36" },
-          pages: [{ text: "LES ESSARTS" }],
+          pages: [{ text: "BEAU SOLEIL" }],
         },
       },
     ],
@@ -1049,7 +1109,7 @@ const irigoRoutes: Route[] = [
         city: "ECUILLÉ",
         girouette: {
           routeNumber: { backgroundColor: "#9CA61F", textColor: "#FFFFFF", outlineColor: "#000000", text: "37" },
-          pages: [{ text: "ECUILLE MAIRIE" }],
+          pages: [{ font: "1510N2E1", text: "ECUILLE MAIRIE" }],
         },
       },
     ],
@@ -1175,6 +1235,16 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#DEA600", textColor: "#FFFFFF", outlineColor: "#000000", text: "41" },
           pages: [{ font: "1508C2E1", spacing: 1, text: "GARE ROUTIERE ESPLANADE" }],
+        },
+      },
+      {
+        id: ["SOULAINES Haute-Marzelle"],
+        autoHide: true,
+        name: "Haute-Marzelle",
+        city: "SOULAINES",
+        girouette: {
+          routeNumber: { backgroundColor: "#DEA600", textColor: "#FFFFFF", outlineColor: "#000000", text: "41" },
+          pages: [{ font: "1510N2E1", text: "HAUTE-MARZELLE" }],
         },
       },
       {
