@@ -36,6 +36,53 @@ const irigoRoutes: Route[] = [
     ],
   },
   {
+    id: "Tbus",
+    name: "Tbus",
+    colors: { background: "#E6007E", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Roseraie / Belle-Beille Campus"],
+        autoHide: true,
+        name: "Roseraie / Belle-Beille Campus",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E6007E",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508C2E1",
+            text: "Tbus",
+          },
+          pages: [
+            [
+              { spacing: 2, text: "ROSERAIE /" },
+              { spacing: 2, text: "BELLE-BEILLE CAMPUS" },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["Avrillé-Ardenne / Monplaisir"],
+        autoHide: true,
+        name: "Avrillé-Ardenne / Monplaisir",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#E6007E",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508C2E1",
+            text: "Tbus",
+          },
+          pages: [
+            [
+              { spacing: 2, text: "AVRILLE-ARDENNE" },
+              { spacing: 2, text: "/ MONPLAISIR" },
+            ],
+          ],
+        },
+      },
+    ],
+  },
+  {
     id: "A",
     name: "A",
     colors: { background: "#E30613", text: "#FFFFFF" },
