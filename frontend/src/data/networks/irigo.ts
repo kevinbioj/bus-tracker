@@ -330,6 +330,16 @@ const irigoRoutes: Route[] = [
         },
       },
       {
+        id: ["ANGERS Lorraine"],
+        autoHide: true,
+        name: "Lorraine",
+        city: "ANGERS",
+        girouette: {
+          routeNumber: { backgroundColor: "#009EE1", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
+          pages: [{ text: "LORRAINE" }],
+        },
+      },
+      {
         id: ["ANGERS Parc Expo"],
         name: "Parc des Expositions",
         city: "ANGERS",
@@ -1121,6 +1131,16 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#E84E0F", textColor: "#FFFFFF", outlineColor: "#000000", text: "39" },
           pages: [{ font: "1508C2E1", text: "GARE ROUTIERE SEMARD" }],
+        },
+      },
+      {
+        id: ["STE-GEMMES Le Fresne"],
+        autoHide: true,
+        name: "Le Fresne",
+        city: "SAINTE-GEMMES-SUR-LOIRE",
+        girouette: {
+          routeNumber: { backgroundColor: "#E84E0F", textColor: "#FFFFFF", outlineColor: "#000000", text: "39" },
+          pages: [{ text: "LE FRESNE" }],
         },
       },
       {
@@ -3415,7 +3435,7 @@ const irigoRoutes: Route[] = [
             font: "1508SUPX",
             text: "301",
           },
-          pages: [{ text: "ESAT Brunelleries" }],
+          pages: [{ font: "1510N2E1", text: "ESAT Brunelleries" }],
         },
       },
       {
@@ -3467,7 +3487,7 @@ const irigoRoutes: Route[] = [
             font: "1508SUPX",
             text: "302",
           },
-          pages: [{ text: "ESAT Bejonnières" }],
+          pages: [{ font: "1510N2E1", text: "ESAT Bejonnieres" }],
         },
       },
     ],
