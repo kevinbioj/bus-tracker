@@ -382,11 +382,12 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         }
 
         const stopTimeEvent = stopTimeUpdate.departure ?? stopTimeUpdate.arrival;
-
-        if (typeof stopTimeEvent?.delay === 'number') {
-          currentDelta = stopTimeEvent.delay;
-        } else if (typeof stopTimeEvent?.time === 'string') {
-          currentDelta = dayjs.unix(+stopTimeEvent.time).diff(dayjs.unix(partialStopTime.scheduled), 'seconds');
+        if (typeof stopTimeEvent !== 'undefined') {
+          if (typeof stopTimeEvent.time === 'string') {
+            currentDelta = dayjs.unix(+stopTimeEvent.time).diff(dayjs.unix(partialStopTime.scheduled), 'seconds');
+          } else {
+            currentDelta = stopTimeEvent.delay ?? 0;
+          }
         }
 
         const timestamp =
