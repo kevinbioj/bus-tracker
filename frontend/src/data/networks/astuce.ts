@@ -603,7 +603,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Georges Braque"],
+        id: ["Georges Braque", "Georges Braque GRAND-QUEVILLY"],
         autoHide: true,
         name: "Georges Braque",
         city: "GRAND-QUEVILLY",
