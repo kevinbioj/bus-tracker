@@ -28,6 +28,15 @@ const sources: Source[] = [
       tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
       vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       routePrefix: 'ASTUCE',
+      mapTripUpdateEntities: (tripUpdates) => {
+        tripUpdates.forEach((tripUpdate) => {
+          tripUpdate.tripUpdate.stopTimeUpdate.forEach((stopTimeUpdate) => {
+            delete stopTimeUpdate.arrival?.time;
+            delete stopTimeUpdate.departure?.time;
+          });
+        });
+        return tripUpdates;
+      },
       allowScheduled: (trip) => {
         if (['35', '89', '322'].includes(trip.route)) return true;
         // if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Lafayette ROUEN'].includes(trip.headsign))
