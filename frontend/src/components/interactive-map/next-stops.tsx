@@ -51,15 +51,17 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
                   <Tooltip
                     className={
                       stopTime.delta !== null
-                        ? Math.abs(stopTime.delta) < 30
-                          ? "bg-green-600 dark:bg-green-700 text-white"
-                          : "bg-orange-500 dark:bg-orange-700 text-white"
+                        ? stopTime.delta >= 30
+                          ? "bg-orange-500 dark:bg-orange-700 text-white"
+                          : stopTime.delta <= -30
+                            ? "bg-red-500 dark:bg-red-700 text-white"
+                            : "bg-green-600 dark:bg-green-700 text-white"
                         : ""
                     }
                     content={
                       stopTime.delta !== null
                         ? Math.abs(stopTime.delta) < 30
-                          ? "À l'heure"
+                          ? "A l'heure"
                           : stopTime.delta < 0
                             ? `Avance de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
                             : `Retard de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
