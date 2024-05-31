@@ -563,7 +563,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Théâtre des Arts ROUEN", "Théâtre des Arts"],
+        id: ["Théâtre des Arts ROUEN", "Théâtre des Arts", "Boulingrin ROUEN"],
         name: "Boulingrin (terminus provisoire)",
         city: "ROUEN",
         girouette: {
