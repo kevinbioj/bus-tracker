@@ -15,21 +15,19 @@ export async function computeGtfsEntries(
 ): Promise<YabsEntry[] | null> {
   const entries = await match([properties.tripUpdateHref, properties.vehiclePositionHref])
     .with([P.string, P.string], async () => {
-      const realtimeEntries = await fetchVehiclePositionAndTripUpdate(resource, properties);
-      const scheduledEntries = computeScheduled(
-        resource,
-        properties,
-        realtimeEntries.map((rt) => rt.trip.id),
-      );
+      const [realtimeEntries, canceledTrips] = await fetchVehiclePositionAndTripUpdate(resource, properties);
+      const scheduledEntries = computeScheduled(resource, properties, [
+        ...realtimeEntries.map((rt) => rt.trip.id),
+        ...canceledTrips,
+      ]);
       return [realtimeEntries, scheduledEntries].flat();
     })
     .with([P.string, P.nullish], async () => {
-      const realtimeEntries = await fetchTripUpdate(resource, properties);
-      const scheduledEntries = computeScheduled(
-        resource,
-        properties,
-        realtimeEntries.map((rt) => rt.trip.id),
-      );
+      const [realtimeEntries, canceledTrips] = await fetchTripUpdate(resource, properties);
+      const scheduledEntries = computeScheduled(resource, properties, [
+        ...realtimeEntries.map((rt) => rt.trip.id),
+        ...canceledTrips,
+      ]);
       return [realtimeEntries, scheduledEntries].flat();
     })
     .otherwise(() => computeScheduled(resource, properties));
@@ -133,6 +131,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
   if (typeof properties.tripUpdateHref === 'undefined')
     throw new Error(`${properties.id}\tNo href to trip updates was found, cannot continue.`);
 
+  const canceledTrips: string[] = [];
   const entries = new Map<string, YabsEntry>();
 
   const tripUpdate = await fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(15000) })
@@ -151,6 +150,11 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         tripUpdate.tripUpdate.trip.routeId !== trip.route
       )
         return;
+
+      if (tripUpdate.tripUpdate.trip.scheduleRelationship === 'CANCELED') {
+        canceledTrips.push(trip.id);
+        return;
+      }
 
       let currentDelta: number | null = null;
       const stopTimes = trip.stops.map((stopTime) => {
@@ -305,13 +309,14 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
     }),
   );
 
-  return [...entries.values()];
+  return [[...entries.values()], canceledTrips] as const;
 }
 
 export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, properties: GtfsProperties) {
   if (typeof properties.tripUpdateHref === 'undefined' || typeof properties.vehiclePositionHref === 'undefined')
     throw new Error(`${properties.id}\tBoth trip update and vehicle position href must be set.`);
 
+  const canceledTrips: string[] = [];
   const entries = new Map<string, YabsEntry>();
 
   const [tripUpdates, vehiclePositions] = await Promise.all([
@@ -344,6 +349,11 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         dayjs().diff(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minutes') >= 10
       )
         return;
+
+      if (tripUpdate?.tripUpdate.trip.scheduleRelationship === 'CANCELED') {
+        canceledTrips.push(trip.id);
+        return;
+      }
 
       let currentDelta: number | null = null;
       const stopTimes = trip.stops.map((stopTime) => {
@@ -457,5 +467,5 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
     }),
   );
 
-  return [...entries.values()];
+  return [[...entries.values()], canceledTrips] as const;
 }
