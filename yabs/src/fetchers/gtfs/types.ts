@@ -85,6 +85,7 @@ export type TripUpdateEntity = {
       arrival?: StopTimeEvent;
       departure?: StopTimeEvent;
       stopId: string;
+      stopSequence: number;
     }>;
     timestamp: string;
     trip: {
