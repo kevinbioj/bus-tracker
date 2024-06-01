@@ -158,7 +158,9 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
 
       let currentDelta: number | null = null;
       const stopTimes = trip.stops.map((stopTime) => {
-        const stopTimeUpdate = tripUpdate?.tripUpdate.stopTimeUpdate.find((stu) => stu.stopId === stopTime.stop.id);
+        const stopTimeUpdate = tripUpdate?.tripUpdate.stopTimeUpdate.find(
+          (stu) => (stu.stopSequence ?? 0) === stopTime.sequence || stu.stopId === stopTime.stop.id,
+        );
         const partialStopTime = {
           id: stopTime.stop.id,
           name: stopTime.stop.name,
@@ -357,7 +359,9 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
 
       let currentDelta: number | null = null;
       const stopTimes = trip.stops.map((stopTime) => {
-        const stopTimeUpdate = tripUpdate?.tripUpdate.stopTimeUpdate.find((stu) => stu.stopId === stopTime.stop.id);
+        const stopTimeUpdate = tripUpdate?.tripUpdate.stopTimeUpdate.find(
+          (stu) => stu.stopSequence === stopTime.sequence || stu.stopId === stopTime.stop.id,
+        );
         const partialStopTime = {
           id: stopTime.stop.id,
           name: stopTime.stop.name,
