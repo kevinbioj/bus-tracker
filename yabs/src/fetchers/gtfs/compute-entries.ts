@@ -54,7 +54,8 @@ export function computeScheduled(resource: GtfsResource, properties: GtfsPropert
       isRealtime: false,
     }));
 
-    const currentStopTime = stopTimes.toReversed().find((stopTime) => Date.now() >= +stopTime.timestamp * 1000)!;
+    const currentStopTime =
+      stopTimes.toReversed().find((stopTime) => Date.now() >= +stopTime.timestamp * 1000) ?? stopTimes[0];
     const currentStopTimeIdx = stopTimes.indexOf(currentStopTime);
     const currentStop = resource.stops.get(currentStopTime.id)!;
 

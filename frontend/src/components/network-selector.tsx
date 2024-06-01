@@ -25,6 +25,20 @@ const destinations = [
     textColor: "#ffffff",
   },
   {
+    id: "angers",
+    title: (
+      <span className="font-bold flex items-center gap-2">
+        <span className="w-8 h-full relative">
+          <Image className="object-contain" fill src="/assets/destinations/angers.svg" alt="" />
+        </span>{" "}
+        à Angers
+      </span>
+    ),
+    href: "https://angers.bus-tracker.fr",
+    color: "#EB0F2D",
+    textColor: "#ffffff",
+  },
+  {
     id: "dijon",
     title: (
       <span className="font-bold flex items-center gap-2">
@@ -39,17 +53,17 @@ const destinations = [
     textColor: "#ffffff",
   },
   {
-    id: "angers",
+    id: "rennes",
     title: (
       <span className="font-bold flex items-center gap-2">
         <span className="w-8 h-full relative">
-          <Image className="object-contain" fill src="/assets/destinations/angers.svg" alt="" />
+          <Image className="object-contain" fill src="/assets/destinations/rennes.svg" alt="" />
         </span>{" "}
-        à Angers
+        à Rennes
       </span>
     ),
-    href: "https://angers.bus-tracker.fr",
-    color: "#EB0F2D",
+    href: "https://rennes.bus-tracker.fr",
+    color: "#1D1D1B",
     textColor: "#ffffff",
   },
 ];
