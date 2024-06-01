@@ -19,6 +19,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-trip-update',
       vehiclePositionHref:
         'https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-vehicle-position',
+      allowScheduled: (trip) => trip.route === '4-1001', // métro a uniquement
     },
   },
 ];
