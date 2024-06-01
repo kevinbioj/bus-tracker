@@ -90,6 +90,7 @@ export type TripUpdateEntity = {
     trip: {
       tripId: string;
       routeId?: string;
+      scheduleRelationship: 'SCHEDULED' | 'CANCELED';
     };
     vehicle?: VehicleDescriptor;
   };
