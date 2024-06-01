@@ -1,10 +1,10 @@
 import { LatLngTuple } from "leaflet";
 
 export const brandColor = {
-  DEFAULT: "#B0105F",
-  hover: "#8D0D4C",
+  DEFAULT: "#173166",
+  hover: "#072156",
 };
 
-export const defaultNetworkSlug = "nomad-train";
-export const defaultCenter = [49.177814, -0.005493] satisfies LatLngTuple;
-export const defaultZoom = 8;
+export const defaultNetworkSlug = "star";
+export const defaultCenter = [48.1165, -1.677801] satisfies LatLngTuple;
+export const defaultZoom = 11;
