@@ -361,10 +361,14 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       }
 
       let currentDelta: number | null = null;
+      const hasStopSequences = tripUpdate?.tripUpdate.stopTimeUpdate.some(
+        (stu) => typeof stu.stopSequence === 'number',
+      );
       const stopTimes = trip.stops.map((stopTime) => {
-        const stopTimeUpdate = tripUpdate?.tripUpdate.stopTimeUpdate.find(
-          (stu) => stu.stopSequence === stopTime.sequence || stu.stopId === stopTime.stop.id,
-        );
+        const stopTimeUpdate = tripUpdate?.tripUpdate.stopTimeUpdate.find((stu) => {
+          if (!hasStopSequences || typeof stu.stopSequence === 'undefined') return stu.stopId === stopTime.stop.id;
+          return stu.stopSequence === stopTime.sequence;
+        });
         const partialStopTime = {
           id: stopTime.stop.id,
           name: stopTime.stop.name,
