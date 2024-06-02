@@ -29,7 +29,7 @@ const irigoRoutes: Route[] = [
         name: "Navette Marché Monplaisir",
         city: "ANGERS",
         girouette: {
-          routeNumber: { backgroundColor: "#DEDC03", textColor: "#484F54", outlineColor: "#000000", text: "M" },
+          routeNumber: { backgroundColor: "#DEDC03", textColor: "#484F54", outlineColor: "#FFFFFF", text: "M" },
           pages: [[{ text: "NAVETTE" }, { text: "MARCHE MONPLAISIR" }]],
         },
       },
