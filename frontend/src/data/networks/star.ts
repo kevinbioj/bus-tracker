@@ -520,13 +520,23 @@ const starRoutes: Route[] = [
     colors: { background: "#FFDD00", text: "#3D3C3F" },
     destinations: [
       {
-        id: ["Bruz Centre", "Bruz"],
+        id: ["Bruz"],
+        autoHide: true,
+        name: "Lavoisier",
+        city: "BRUZ",
+        girouette: {
+          routeNumber: { backgroundColor: "#FFDD00", textColor: "#3D3C3F", outlineColor: "#FFFFFF", text: "C7ex" },
+          pages: [{ text: "BRUZ LAVOISIER" }],
+        },
+      },
+      {
+        id: ["Bruz Centre"],
         autoHide: true,
         name: "Bruz Centre",
         city: "BRUZ",
         girouette: {
           routeNumber: { backgroundColor: "#FFDD00", textColor: "#3D3C3F", outlineColor: "#FFFFFF", text: "C7ex" },
-          pages: [{ text: "BRUZ CENTRE" }],
+          pages: [{ text: "BRUZ LAVOISIER" }],
         },
       },
       {
