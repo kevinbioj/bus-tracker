@@ -677,7 +677,10 @@ const starRoutes: Route[] = [
         city: "SAINT-GRÉGOIRE",
         girouette: {
           routeNumber: { backgroundColor: "#BA65A5", textColor: "#FFFFFF", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "GRAND QUARTIER" }, { font: "1510N2E1", text: "SAINT-GREGOIRE" }],
+          pages: [
+            { font: "1510N2E1", text: "GRAND QUARTIER" },
+            { font: "1510N2E1", text: "SAINT-GREGOIRE" },
+          ],
         },
       },
       {
@@ -695,7 +698,7 @@ const starRoutes: Route[] = [
         city: "RENNES",
         girouette: {
           routeNumber: { backgroundColor: "#BA65A5", textColor: "#FFFFFF", outlineColor: "#000000", text: "12" },
-          pages: [{ text: "JACQUES CARTIER" }, { text: "RENNES" }],
+          pages: [{ font: "1510N2E1", text: "JACQUES CARTIER" }, { text: "RENNES" }],
         },
       },
       {
