@@ -36,6 +36,7 @@ export async function downloadStaticResource(properties: GtfsProperties) {
 
   const trips = await loadTrips(tmpdir, services, shapes, stops);
   const semiResource = { services, stops, trips, scheduledTrips: [] };
+  properties.afterInit?.(semiResource);
   const scheduledTrips =
     typeof properties.allowScheduled === 'undefined' || properties.allowScheduled === true
       ? [...trips.values()]
@@ -46,7 +47,6 @@ export async function downloadStaticResource(properties: GtfsProperties) {
           );
   await $(`rm -r "${tmpdir}"`);
   const resource = { ...semiResource, scheduledTrips };
-  properties.afterInit?.(resource);
   return resource;
 }
 
