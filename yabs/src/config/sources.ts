@@ -270,6 +270,12 @@ const sources: Source[] = [
       routePrefix: 'SEMO',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/98bbbf7c-10ff-48a0-afc2-c5f7b3dda5af',
       allowScheduled: (trip) => !trip.route.startsWith('S'),
+      afterInit: (resource) => {
+        resource.trips.forEach((trip) => {
+          trip.id = trip.id.split(':')[2].split('x')[0];
+          trip.route = trip.route.split(':')[2];
+        });
+      },
     },
   },
   {
