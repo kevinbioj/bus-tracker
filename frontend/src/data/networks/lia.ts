@@ -2473,7 +2473,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-A",
-                text: "COLLEGE JACQUES MONOD",
+                text: "COLLEGE J. MONOD",
               },
               {
                 font: "LUMIPLAN-2",

@@ -2046,7 +2046,7 @@ const twistoRoutes: Route[] = [
             spacing: 2,
             text: "123",
           },
-          pages: [{ text: "SAINT-AUBIN EGLISE" }],
+          pages: [{ font: "1508SUPX", text: "SAINT-AUBIN EGLISE" }],
         },
       },
     ],
