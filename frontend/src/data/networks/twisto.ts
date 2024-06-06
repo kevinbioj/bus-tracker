@@ -280,6 +280,16 @@ const twistoRoutes: Route[] = [
         },
       },
       {
+        id: ["Carpiquet Centre Aquatique"],
+        autoHide: true,
+        name: "Centre Aquatique",
+        city: "CARPIQUET",
+        girouette: {
+          routeNumber: { backgroundColor: "#c4ce10", textColor: "#000000", outlineColor: "#FFFFFF", text: "3" },
+          pages: [{ text: "CARPIQUET" }, { font: "1510N2E1", spacing: 1, text: "CENTRE AQUATIQUE" }],
+        },
+      },
+      {
         id: ["Carpiquet Aéroport"],
         name: "Aéroport",
         city: "CARPIQUET",
