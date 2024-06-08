@@ -188,6 +188,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "VIKIBUS",
+    name: "Vikibus (Ville d'Yvetot)",
+    hasHistory: false,
+    logo: {
+      href: "/assets/operators/vikibus.png",
+      size: [457, 163],
+    },
+    issues: [],
+  },
+  {
     id: "REZOBUS",
     name: "Rezo'Bus (Caux Seine Agglo)",
     hasHistory: true,

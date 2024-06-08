@@ -473,6 +473,22 @@ const sources: Source[] = [
       tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/ficibus/trip-updates',
       vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/ficibus/vehicle-positions',
       allowScheduled: false,
+      shapesStrategy: 'IGNORE',
+    },
+  },
+  {
+    id: 'VIKIBUS',
+    refreshCron: '6,36 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'VIKIBUS',
+      routePrefix: 'VIKIBUS',
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/vikibus.zip',
+      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/vikibus/trip-updates',
+      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/vikibus/vehicle-positions',
+      allowScheduled: false,
+      getVehicleNumber: () => null,
+      shapesStrategy: 'IGNORE',
     },
   },
   {

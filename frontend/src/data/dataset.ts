@@ -21,6 +21,7 @@ import semoNetwork from "~/data/networks/semo";
 import sngoNetwork from "~/data/networks/sngo";
 import transurbainNetwork from "~/data/networks/transurbain";
 import twistoNetwork from "~/data/networks/twisto";
+import vikibusNetwork from "~/data/networks/vikibus";
 
 export const networks: Network[] = [
   nomadTrainNetwork,
@@ -40,6 +41,7 @@ export const networks: Network[] = [
   bybusNetwork,
   mocaNetwork,
   ficibusNetwork,
+  vikibusNetwork,
   hobusNetwork,
   lbusNetwork,
   lebusNetwork,
