@@ -43,6 +43,16 @@ const ficibusRoutes: Route[] = [
         },
       },
       {
+        id: ["St Etienne"],
+        autoHide: true,
+        name: "Saint-Étienne",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#D89030", textColor: "#FFFFFF", outlineColor: "#000000", text: "2" },
+          pages: [{ text: "SAINT-ETIENNE" }],
+        },
+      },
+      {
         id: ["Hopital"],
         name: "Hôpital",
         girouette: {
