@@ -178,6 +178,16 @@ const operators: Operator[] = [
     issues: [],
   },
   {
+    id: "FICIBUS",
+    name: "Ficibus (Fécamp Caux Littoral)",
+    hasHistory: true,
+    logo: {
+      href: "/assets/operators/ficibus.svg",
+      size: [109, 38],
+    },
+    issues: [],
+  },
+  {
     id: "REZOBUS",
     name: "Rezo'Bus (Caux Seine Agglo)",
     hasHistory: true,

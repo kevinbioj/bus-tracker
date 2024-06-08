@@ -463,6 +463,19 @@ const sources: Source[] = [
     },
   },
   {
+    id: 'FICIBUS',
+    refreshCron: '6,36 * * * * *',
+    type: 'GTFS',
+    gtfsProperties: {
+      id: 'FICIBUS',
+      routePrefix: 'FICIBUS',
+      staticResourceHref: 'https://exs.atm.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=FICIBUS',
+      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/ficibus/trip-updates',
+      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/ficibus/vehicle-positions',
+      allowScheduled: false,
+    },
+  },
+  {
     id: 'NEMUS',
     refreshCron: '52 * * * * *',
     type: 'GTFS',

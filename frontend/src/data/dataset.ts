@@ -6,6 +6,7 @@ import astuceNetwork from "~/data/networks/astuce";
 import bybusNetwork from "~/data/networks/bybus";
 import capCotentinNetwork from "~/data/networks/cap-cotentin";
 import deepMobNetwork from "~/data/networks/deepmob";
+import ficibusNetwork from "~/data/networks/ficibus";
 import hobusNetwork from "~/data/networks/hobus";
 import lbusNetwork from "~/data/networks/lbus";
 import lebusNetwork from "~/data/networks/lebus";
@@ -38,6 +39,7 @@ export const networks: Network[] = [
   nemusNetwork,
   bybusNetwork,
   mocaNetwork,
+  ficibusNetwork,
   hobusNetwork,
   lbusNetwork,
   lebusNetwork,
