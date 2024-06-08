@@ -1221,7 +1221,22 @@ const nomadCar: Route[] = [
     colors: { background: "#b26bc1", text: "#ffffff" },
     destinations: [
       {
+        id: ["ROUEN / PERRIERS-SUR-ANDELLE"],
+        name: "Perriers-sur-Andelle",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#b26bc1",
+            textColor: "#ffffff",
+            text: "218",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1507SUPX", text: "PERRIERS-SUR-ANDELLE" }],
+        },
+      },
+      {
         id: ["ROUEN / CHARLEVAL"],
+        autoHide: true,
         name: "Charleval",
         girouette: {
           routeNumber: {
@@ -1250,7 +1265,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["VASCOEUIL / ROUEN", "CHARLEVAL / ROUEN"],
+        id: ["VASCOEUIL / ROUEN", "CHARLEVAL / ROUEN", "PERRIERS-SUR-ANDELLE / ROUEN"],
         name: "Rouen",
         girouette: {
           routeNumber: {
