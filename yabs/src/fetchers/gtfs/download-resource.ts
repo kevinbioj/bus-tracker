@@ -1,5 +1,7 @@
+import dayjs from 'dayjs';
+import decompress from 'decompress';
 import { exec } from 'node:child_process';
-import { readFile } from 'node:fs/promises';
+import { readFile, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import type { GtfsProperties, GtfsResource, Service, Shape, Stop, Trip } from './types.js';
@@ -16,9 +18,12 @@ const $ = (command: string) =>
 
 export async function downloadStaticResource(properties: GtfsProperties) {
   const tmpdir = await $('mktemp -d');
-  await $(`wget -t 1 -T 10 -O "${join(tmpdir, 'gtfs.zip')}" "${properties.staticResourceHref}"`);
-  await $(`unzip -o ${join(tmpdir, 'gtfs.zip')} -d ${tmpdir}`);
-  await $(`rm "${join(tmpdir, 'feed_info.txt')}"`).catch(() => void 0);
+  const response = await fetch(properties.staticResourceHref, {
+    signal: AbortSignal.timeout(10000),
+  });
+  const gtfsArchive = Buffer.from(await response.arrayBuffer());
+  await decompress(gtfsArchive, tmpdir);
+  await rm(join(tmpdir, 'feed_info.txt')).catch(() => void 0); // Ce fichier n'existe pas nécessairement
   if (properties.shapesStrategy === 'GENERATE') {
     if (typeof process.env.OSM_PATH === 'undefined') {
       console.warn(`YABS\t${properties.id}\tOSM_PATH environment variable is missing, skipping shapes generation.`);
@@ -35,7 +40,14 @@ export async function downloadStaticResource(properties: GtfsProperties) {
   ]);
 
   const trips = await loadTrips(tmpdir, services, shapes, stops);
-  const semiResource = { services, stops, trips, scheduledTrips: [] };
+  const semiResource = {
+    services,
+    stops,
+    trips,
+    scheduledTrips: [],
+    lastModified: response.headers.has('Last-Modified') ? dayjs(response.headers.get('Last-Modified')) : null,
+    loadedAt: dayjs(),
+  };
   properties.afterInit?.(semiResource);
   const scheduledTrips =
     typeof properties.allowScheduled === 'undefined' || properties.allowScheduled === true
@@ -45,7 +57,7 @@ export async function downloadStaticResource(properties: GtfsProperties) {
         : [...trips.values()].filter((trip) =>
             (properties.allowScheduled as (trip: Trip, resource: GtfsResource) => boolean)(trip, semiResource),
           );
-  await $(`rm -r "${tmpdir}"`);
+  await rm(tmpdir, { recursive: true });
   const resource = { ...semiResource, scheduledTrips };
   return resource;
 }

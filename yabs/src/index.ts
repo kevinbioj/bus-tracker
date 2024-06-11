@@ -42,7 +42,7 @@ async function init() {
   hasComputedFirstEntries = true;
 
   console.log('YABS\tRegistering scheduled tasks.');
-  Cron('0 * * * *', () => sources.map((source) => updateResource(source)));
+  Cron('*/5 * * * *', () => sources.map((source) => updateResource(source)));
   sources.map((source) => Cron(source.refreshCron, () => updateEntries(source)));
 }
 
@@ -143,6 +143,18 @@ async function updateResource(source: Source, retryCount = DEFAULT_RETRY_COUNT, 
   if (source.type !== 'GTFS') {
     console.log(`YABS\t${source.id}\tNo static resource required, ignoring.`);
     return;
+  }
+  const currentResource = gtfsResources.get(source.id);
+  if (currentResource) {
+    if (currentResource.lastModified !== null) {
+      const response = await fetch(source.gtfsProperties.staticResourceHref, { method: 'HEAD' });
+      if (response.ok && response.headers.has('Last-Modified')) {
+        const newLastModified = dayjs(response.headers.get('Last-Modified'));
+        if (newLastModified.diff(currentResource.lastModified) <= 0) return;
+      }
+    } else if (dayjs().diff(currentResource.loadedAt, 'minutes') < 60) {
+      return;
+    }
   }
   const then = Date.now();
   try {

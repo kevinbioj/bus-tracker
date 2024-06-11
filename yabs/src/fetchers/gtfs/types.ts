@@ -1,4 +1,5 @@
 //- Options
+import type { Dayjs } from 'dayjs';
 
 export type GtfsProperties = {
   id: string;
@@ -33,6 +34,8 @@ export type GtfsResource = {
   stops: Map<string, Stop>;
   trips: Map<string, Trip>;
   scheduledTrips: Trip[];
+  lastModified: Dayjs | null;
+  loadedAt: Dayjs;
 };
 
 export type Shape = {
