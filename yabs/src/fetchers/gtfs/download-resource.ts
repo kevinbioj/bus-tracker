@@ -19,7 +19,7 @@ const $ = (command: string) =>
 export async function downloadStaticResource(properties: GtfsProperties) {
   const tmpdir = await $('mktemp -d');
   const response = await fetch(properties.staticResourceHref, {
-    signal: AbortSignal.timeout(10000),
+    signal: AbortSignal.timeout(60000),
   });
   const gtfsArchive = Buffer.from(await response.arrayBuffer());
   await decompress(gtfsArchive, tmpdir);
