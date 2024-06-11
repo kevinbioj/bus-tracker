@@ -42,7 +42,12 @@ async function init() {
   hasComputedFirstEntries = true;
 
   console.log('YABS\tRegistering scheduled tasks.');
-  Cron('*/5 * * * *', () => sources.map((source) => updateResource(source)));
+  Cron('0 */5 * * *', async () => {
+    for (const source of sources) {
+      if (source.type !== 'GTFS') continue;
+      await updateResource(source);
+    }
+  });
   sources.map((source) => Cron(source.refreshCron, () => updateEntries(source)));
 }
 
