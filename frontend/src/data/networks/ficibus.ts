@@ -87,6 +87,16 @@ const ficibusRoutes: Route[] = [
           pages: [{ text: "HOPITAL" }],
         },
       },
+      {
+        id: ["Hopital Par Quai Des Pilotes"],
+        autoHide: true,
+        name: "Hôpital (par Quai des Pilotes)",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#FED024", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
+          pages: [[{ text: "HOPITAL" }, { text: "PAR QUAI DES PILOTES" }]],
+        },
+      },
     ],
   },
   {
