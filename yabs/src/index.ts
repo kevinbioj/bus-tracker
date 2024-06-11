@@ -42,7 +42,7 @@ async function init() {
   hasComputedFirstEntries = true;
 
   console.log('YABS\tRegistering scheduled tasks.');
-  Cron('0 */5 * * *', async () => {
+  Cron('0 */5 * * * *', async () => {
     for (const source of sources) {
       if (source.type !== 'GTFS') continue;
       await updateResource(source);
