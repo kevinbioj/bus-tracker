@@ -1,6 +1,7 @@
 import protobufjs from 'protobufjs';
+import { match } from 'ts-pattern';
 
-import type { GtfsRtTripUpdate, GtfsRtVehiclePosition } from './types.js';
+import type { TripUpdateEntity, VehiclePositionEntity } from './types.js';
 
 const proto = `
 // Copyright 2015 The GTFS Specifications Authors.
@@ -644,18 +645,33 @@ message TranslatedString {
 
 const type = protobufjs.parse(proto).root.lookupType('transit_realtime.FeedMessage');
 
-export function decodeTripUpdate(input: Buffer): GtfsRtTripUpdate {
-  const data = type.decode(input).toJSON() as GtfsRtTripUpdate;
-  return {
-    ...data,
-    entity: data.entity?.filter((entity) => typeof entity.tripUpdate !== 'undefined') ?? [],
-  };
-}
+// export function decodeTripUpdate(input: Buffer): GtfsRtTripUpdate {
+//   const data = type.decode(input).toJSON() as GtfsRtTripUpdate;
+//   return {
+//     ...data,
+//     entity: data.entity?.filter((entity) => typeof entity.tripUpdate !== 'undefined') ?? [],
+//   };
+// }
 
-export function decodeVehiclePosition(input: Buffer): GtfsRtVehiclePosition {
-  const data = type.decode(input).toJSON() as GtfsRtVehiclePosition;
-  return {
-    ...data,
-    entity: data.entity?.filter((entity) => typeof entity.vehicle !== 'undefined') ?? [],
-  };
+// export function decodeVehiclePosition(input: Buffer): GtfsRtVehiclePosition {
+//   const data = type.decode(input).toJSON() as GtfsRtVehiclePosition;
+//   return {
+//     ...data,
+//     entity: data.entity?.filter((entity) => typeof entity.vehicle !== 'undefined') ?? [],
+//   };
+// }
+
+export async function downloadGtfsRt<T extends TripUpdateEntity | VehiclePositionEntity>(
+  url: string,
+  filter: 'tripUpdate' | 'vehicle',
+): Promise<T[]> {
+  const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
+  if (!response.ok || response.status === 204) return [];
+  const rawPayload = Buffer.from(await response.arrayBuffer());
+  const decodedPayload = type.decode(rawPayload).toJSON();
+  if (!decodedPayload.entity) return [];
+  return match(filter)
+    .with('tripUpdate', () => decodedPayload.entity.filter((e: TripUpdateEntity) => e.tripUpdate))
+    .with('vehicle', () => decodedPayload.entity.filter((e: VehiclePositionEntity) => e.vehicle))
+    .exhaustive();
 }
