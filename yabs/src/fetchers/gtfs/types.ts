@@ -100,14 +100,6 @@ export type TripUpdateEntity = {
   };
 };
 
-export type GtfsRtTripUpdate = {
-  header: {
-    gtfsRealtimeVersion: string;
-    timestamp: string;
-  };
-  entity: TripUpdateEntity[];
-};
-
 export type VehiclePositionEntity = {
   id: string;
   vehicle: {
@@ -126,17 +118,10 @@ export type VehiclePositionEntity = {
   };
 };
 
-export type GtfsRtVehiclePosition = {
+export type GtfsRt<T extends TripUpdateEntity | VehiclePositionEntity> = {
   header: {
     gtfsRealtimeVersion: string;
     timestamp: string;
   };
-  entity: VehiclePositionEntity[];
+  entity: T[];
 };
-
-// ---
-
-type RequireAtLeastOne<T, Keys extends keyof T = keyof T> = Pick<T, Exclude<keyof T, Keys>> &
-  {
-    [K in Keys]-?: Required<Pick<T, K>> & Partial<Pick<T, Exclude<Keys, K>>>;
-  }[Keys];
