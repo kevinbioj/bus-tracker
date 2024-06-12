@@ -3,8 +3,8 @@ import { P, match } from 'ts-pattern';
 
 import type { YabsEntry } from '../../types.js';
 import { getVehicleLedColor } from '../../vehicles/get-vehicle-led-color.js';
-import { decodeTripUpdate, decodeVehiclePosition } from './decode-gtfsrt.js';
-import type { GtfsProperties, GtfsResource } from './types.js';
+import { downloadGtfsRt } from './download-gtfsrt.js';
+import { type GtfsProperties, type GtfsResource, type TripUpdateEntity, type VehiclePositionEntity } from './types.js';
 import { checkCalendar } from './utils/check-calendar.js';
 import { checkTrip } from './utils/check-trip.js';
 import { parseTime } from './utils/parse-time.js';
@@ -135,14 +135,12 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
   const canceledTrips: string[] = [];
   const entries = new Map<string, YabsEntry>();
 
-  const tripUpdate = await fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(15000) })
-    .then((response) => response.arrayBuffer())
-    .then((arrayBuffer) => Buffer.from(arrayBuffer))
-    .then((buffer) => decodeTripUpdate(buffer))
-    .then(({ entity }) => properties.mapTripUpdateEntities?.(entity, resource) ?? entity);
+  const tripUpdates = await downloadGtfsRt<TripUpdateEntity>(properties.tripUpdateHref, 'tripUpdate').then(
+    (tripUpdates) => properties.mapTripUpdateEntities?.(tripUpdates, resource) ?? tripUpdates,
+  );
 
   await Promise.allSettled(
-    tripUpdate.map(async (tripUpdate) => {
+    tripUpdates.map(async (tripUpdate) => {
       // if (dayjs().diff(dayjs.unix(+tripUpdate.tripUpdate.timestamp), "minutes") >= 10) return;
       const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
       if (!trip) return;
@@ -325,16 +323,12 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
   const entries = new Map<string, YabsEntry>();
 
   const [tripUpdates, vehiclePositions] = await Promise.all([
-    fetch(properties.tripUpdateHref, { signal: AbortSignal.timeout(15000) })
-      .then((response) => response.arrayBuffer())
-      .then((arrayBuffer) => Buffer.from(arrayBuffer))
-      .then((buffer) => decodeTripUpdate(buffer))
-      .then(({ entity }) => properties.mapTripUpdateEntities?.(entity, resource) ?? entity),
-    fetch(properties.vehiclePositionHref, { signal: AbortSignal.timeout(15000) })
-      .then((response) => response.arrayBuffer())
-      .then((arrayBuffer) => Buffer.from(arrayBuffer))
-      .then((buffer) => decodeVehiclePosition(buffer))
-      .then(({ entity }) => properties.mapVehiclePositionEntities?.(entity, resource) ?? entity),
+    downloadGtfsRt<TripUpdateEntity>(properties.tripUpdateHref, 'tripUpdate').then(
+      (tripUpdates) => properties.mapTripUpdateEntities?.(tripUpdates, resource) ?? tripUpdates,
+    ),
+    downloadGtfsRt<VehiclePositionEntity>(properties.vehiclePositionHref, 'vehicle').then(
+      (vehiclePositions) => properties.mapVehiclePositionEntities?.(vehiclePositions, resource) ?? vehiclePositions,
+    ),
   ]);
 
   await Promise.allSettled(
