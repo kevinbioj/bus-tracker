@@ -241,8 +241,32 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD',
-      staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad.zip',
-      allowScheduled: (trip) => !['216', '228', '423', '424', '527', '530'].includes(trip.route),
+      staticResourceHref: 'https://api.atm.cityway.fr/dataflow/offre-tc/download?provider=NOMAD&dataFormat=GTFS',
+      tripUpdateHref: 'https://api.atm.cityway.fr/dataflow/horaire-tc-tr/download?provider=NOMAD&dataFormat=GTFS-RT',
+      vehiclePositionHref:
+        'https://api.atm.cityway.fr/dataflow/vehicule-tc-tr/download?provider=NOMAD&dataFormat=GTFS-RT',
+      allowScheduled: (trip) => {
+        const geo3dRoutes = [
+          'ATOUMOD040:Line:1006979:LOC', // 216
+          'ATOUMOD040:Line:1006959:LOC', // 228
+          'ATOUMOD040:Line:1009747:LOC', // 423
+          'ATOUMOD040:Line:1009928:LOC', // 424
+          'ATOUMOD040:Line:1006919:LOC', // 527
+        ];
+        const marchesDeMerde = [
+          'ATOUMOD040:Line:1003080:LOC', // 532
+          'ATOUMOD040:Line:1003081:LOC', // 533
+          'ATOUMOD040:Line:1003082:LOC', // 534
+          'ATOUMOD040:Line:1003083:LOC', // 535
+          'ATOUMOD040:Line:1003084:LOC', // 536
+          'ATOUMOD040:Line:1003086:LOC', // 536
+          'ATOUMOD040:Line:1003087:LOC', // 538
+          'ATOUMOD040:Line:1003088:LOC', // 539
+          'ATOUMOD040:Line:1003091:LOC', // 540
+          'ATOUMOD040:Line:1003085:LOC', // 541
+        ];
+        return !geo3dRoutes.includes(trip.route) && !marchesDeMerde.includes(trip.route);
+      },
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },

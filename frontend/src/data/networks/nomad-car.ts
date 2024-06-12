@@ -3,6 +3,7 @@ import { Network, Route } from "~/@types";
 const nomadCar: Route[] = [
   {
     id: "NOMAD:NAV",
+    routeIds: ["NOMAD:NAV", "NOMAD:ATOUMOD040:Line:1010148:LOC"],
     name: "NAV",
     colors: { background: "#402673", text: "#F49517" },
     destinations: [
@@ -72,6 +73,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:112",
+    routeIds: ["NOMAD:112", "NOMAD:ATOUMOD040:Line:1004452:LOC"],
     noCartridge: true,
     name: "112",
     colors: { background: "#0080c5", text: "#ffffff" },
@@ -108,6 +110,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:113",
+    routeIds: ["NOMAD:113", "NOMAD:ATOUMOD040:Line:1004453:LOC"],
     noCartridge: true,
     name: "113",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -144,6 +147,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:114",
+    routeIds: ["NOMAD:114", "NOMAD:ATOUMOD040:Line:1004454:LOC"],
     noCartridge: true,
     name: "114",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -210,6 +214,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:122",
+    routeIds: ["NOMAD:122", "NOMAD:ATOUMOD040:Line:1004459:LOC"],
     noCartridge: true,
     name: "122",
     colors: { background: "#007dc5", text: "#ffffff" },
@@ -246,6 +251,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:124",
+    routeIds: ["NOMAD:124", "NOMAD:ATOUMOD040:Line:1004467:LOC"],
     noCartridge: true,
     name: "124",
     colors: { background: "#808080", text: "#ffffff" },
@@ -282,6 +288,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:201",
+    routeIds: ["NOMAD:201", "NOMAD:ATOUMOD040:Line:1003275:LOC"],
     noCartridge: true,
     name: "201",
     colors: { background: "#df1614", text: "#ffffff" },
@@ -318,6 +325,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:202",
+    routeIds: ["NOMAD:202", "NOMAD:ATOUMOD040:Line:1003276:LOC"],
     noCartridge: true,
     name: "202",
     colors: { background: "#32b5b0", text: "#000000" },
@@ -354,6 +362,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:203",
+    routeIds: ["NOMAD:203", "NOMAD:ATOUMOD040:Line:1003277:LOC"],
     noCartridge: true,
     name: "203",
     colors: { background: "#31a8df", text: "#000000" },
@@ -405,6 +414,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:204",
+    routeIds: ["NOMAD:204", "NOMAD:ATOUMOD040:Line:1003278:LOC"],
     noCartridge: true,
     name: "204",
     colors: { background: "#e6ce08", text: "#000000" },
@@ -507,6 +517,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:205",
+    routeIds: ["NOMAD:205", "NOMAD:ATOUMOD040:Line:1003279:LOC"],
     noCartridge: true,
     name: "205",
     colors: { background: "#a31968", text: "#ffffff" },
@@ -558,6 +569,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:206",
+    routeIds: ["NOMAD:206", "NOMAD:ATOUMOD040:Line:1003280:LOC"],
     noCartridge: true,
     name: "206",
     colors: { background: "#835f34", text: "#ffffff" },
@@ -609,6 +621,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:207",
+    routeIds: ["NOMAD:207", "NOMAD:ATOUMOD040:Line:1003281:LOC"],
     noCartridge: true,
     name: "207",
     colors: { background: "#e9a255", text: "#000000" },
@@ -675,6 +688,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:208",
+    routeIds: ["NOMAD:208", "NOMAD:ATOUMOD040:Line:1003282:LOC"],
     noCartridge: true,
     name: "208",
     colors: { background: "#afca17", text: "#000000" },
@@ -726,6 +740,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:209",
+    routeIds: ["NOMAD:209", "NOMAD:ATOUMOD040:Line:1003283:LOC"],
     noCartridge: true,
     name: "209",
     colors: { background: "#122e68", text: "#ffffff" },
@@ -762,6 +777,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:210",
+    routeIds: ["NOMAD:210", "NOMAD:ATOUMOD040:Line:1003284:LOC"],
     noCartridge: true,
     name: "210",
     colors: { background: "#eb3a4c", text: "#ffffff" },
@@ -828,6 +844,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:211",
+    routeIds: ["NOMAD:211", "NOMAD:ATOUMOD040:Line:1003289:LOC"],
     noCartridge: true,
     name: "211",
     colors: { background: "#722f82", text: "#ffffff" },
@@ -866,6 +883,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:212",
+    routeIds: ["NOMAD:212", "NOMAD:ATOUMOD040:Line:1003291:LOC"],
     noCartridge: true,
     name: "212",
     colors: { background: "#83d4ed", text: "#000000" },
@@ -932,6 +950,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:213",
+    routeIds: ["NOMAD:213", "NOMAD:ATOUMOD040:Line:1003292:LOC"],
     noCartridge: true,
     name: "213",
     colors: { background: "#ef8464", text: "#000000" },
@@ -968,6 +987,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:214",
+    routeIds: ["NOMAD:214", "NOMAD:ATOUMOD040:Line:1003293:LOC"],
     noCartridge: true,
     name: "214",
     colors: { background: "#e7adcf", text: "#000000" },
@@ -1034,6 +1054,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:215",
+    routeIds: ["NOMAD:215", "NOMAD:ATOUMOD040:Line:1003294:LOC"],
     noCartridge: true,
     name: "215",
     colors: { background: "#719152", text: "#ffffff" },
@@ -1115,6 +1136,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:216",
+    routeIds: ["NOMAD:216", "NOMAD:ATOUMOD040:Line:1006979:LOC"],
     name: "216",
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
@@ -1180,6 +1202,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:217",
+    routeIds: ["NOMAD:217", "NOMAD:ATOUMOD040:Line:1003295:LOC"],
     noCartridge: true,
     name: "217",
     colors: { background: "#b72a41", text: "#ffffff" },
@@ -1216,6 +1239,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:218",
+    routeIds: ["NOMAD:218", "NOMAD:ATOUMOD040:Line:1003296:LOC"],
     noCartridge: true,
     name: "218",
     colors: { background: "#b26bc1", text: "#ffffff" },
@@ -1282,6 +1306,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:219",
+    routeIds: ["NOMAD:219", "NOMAD:ATOUMOD040:Line:1003297:LOC"],
     noCartridge: true,
     name: "219",
     colors: { background: "#7a79b6", text: "#ffffff" },
@@ -1368,6 +1393,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:220",
+    routeIds: ["NOMAD:220", "NOMAD:ATOUMOD040:Line:1003298:LOC"],
     noCartridge: true,
     name: "220",
     colors: { background: "#fdcb36", text: "#000000" },
@@ -1404,6 +1430,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:221",
+    routeIds: ["NOMAD:221", "NOMAD:ATOUMOD040:Line:1003299:LOC"],
     noCartridge: true,
     name: "221",
     colors: { background: "#ed1d8a", text: "#FFFFFF" },
@@ -1440,6 +1467,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:222",
+    routeIds: ["NOMAD:222", "NOMAD:ATOUMOD040:Line:1003300:LOC"],
     noCartridge: true,
     name: "222",
     colors: { background: "#33a739", text: "#ffffff" },
@@ -1476,6 +1504,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:223",
+    routeIds: ["NOMAD:223", "NOMAD:ATOUMOD040:Line:1003301:LOC"],
     noCartridge: true,
     name: "223",
     colors: { background: "#5688c6", text: "#FFFFFF" },
@@ -1578,6 +1607,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:224",
+    routeIds: ["NOMAD:224", "NOMAD:ATOUMOD040:Line:1003302:LOC"],
     noCartridge: true,
     name: "224",
     colors: { background: "#a9b76a", text: "#000000" },
@@ -1614,6 +1644,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:225",
+    routeIds: ["NOMAD:225", "NOMAD:ATOUMOD040:Line:1003303:LOC"],
     noCartridge: true,
     name: "225",
     colors: { background: "#512b0f", text: "#ffffff" },
@@ -1715,6 +1746,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:226",
+    routeIds: ["NOMAD:226", "NOMAD:ATOUMOD040:Line:1003304:LOC"],
     noCartridge: true,
     name: "226",
     colors: { background: "#b75858", text: "#ffffff" },
@@ -1766,6 +1798,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:227",
+    routeIds: ["NOMAD:227", "NOMAD:ATOUMOD040:Line:1003305:LOC"],
     noCartridge: true,
     name: "227",
     colors: { background: "#b3549a", text: "#FFFFFF" },
@@ -1802,6 +1835,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:228",
+    routeIds: ["NOMAD:228", "NOMAD:ATOUMOD040:Line:1006959:LOC"],
     name: "228",
     colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
@@ -1852,6 +1886,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:301",
+    routeIds: ["NOMAD:301", "NOMAD:ATOUMOD040:Line:1002019:LOC"],
     noCartridge: true,
     name: "301",
     colors: { background: "#7ab929", text: "#ffffff" },
@@ -1888,6 +1923,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:302",
+    routeIds: ["NOMAD:302", "NOMAD:ATOUMOD040:Line:1007402:LOC"],
     noCartridge: true,
     name: "302",
     colors: { background: "#ecce00", text: "#000000" },
@@ -1924,6 +1960,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:303",
+    routeIds: ["NOMAD:303", "NOMAD:ATOUMOD040:Line:1002037:LOC"],
     noCartridge: true,
     name: "303",
     colors: { background: "#ff0009", text: "#ffffff" },
@@ -2005,6 +2042,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:304",
+    routeIds: ["NOMAD:304", "NOMAD:ATOUMOD040:Line:1007442:LOC"],
     noCartridge: true,
     name: "304",
     colors: { background: "#209645", text: "#ffffff" },
@@ -2041,6 +2079,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:305",
+    routeIds: ["NOMAD:305", "NOMAD:ATOUMOD040:Line:1002025:LOC"],
     noCartridge: true,
     name: "305",
     colors: { background: "#f39200", text: "#000000" },
@@ -2122,6 +2161,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:306",
+    routeIds: ["NOMAD:306", "NOMAD:ATOUMOD040:Line:1002026:LOC"],
     noCartridge: true,
     name: "306",
     colors: { background: "#a0519a", text: "#ffffff" },
@@ -2187,6 +2227,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:307",
+    routeIds: ["NOMAD:307", "NOMAD:ATOUMOD040:Line:1002035:LOC"],
     noCartridge: true,
     name: "307",
     colors: { background: "#e52725", text: "#ffffff" },
@@ -2223,6 +2264,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:308",
+    routeIds: ["NOMAD:308", "NOMAD:ATOUMOD040:Line:1002027:LOC"],
     noCartridge: true,
     name: "308",
     colors: { background: "#907d24", text: "#ffffff" },
@@ -2274,6 +2316,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:309",
+    routeIds: ["NOMAD:309", "NOMAD:ATOUMOD040:Line:1002036:LOC"],
     noCartridge: true,
     name: "309",
     colors: { background: "#c44e23", text: "#ffffff" },
@@ -2370,6 +2413,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:401",
+    routeIds: ["NOMAD:401", "NOMAD:ATOUMOD040:Line:1008217:LOC"],
     noCartridge: true,
     name: "401",
     colors: { background: "#f18665", text: "#000000" },
@@ -2406,6 +2450,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:402",
+    routeIds: ["NOMAD:402", "NOMAD:ATOUMOD040:Line:1008219:LOC"],
     noCartridge: true,
     name: "402",
     colors: { background: "#d1b706", text: "#000000" },
@@ -2457,6 +2502,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:408",
+    routeIds: ["NOMAD:408", "NOMAD:ATOUMOD040:Line:1008231:LOC"],
     noCartridge: true,
     name: "408",
     colors: { background: "#f87479", text: "#000000" },
@@ -2493,6 +2539,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:411",
+    routeIds: ["NOMAD:411", "NOMAD:ATOUMOD040:Line:1008237:LOC"],
     noCartridge: true,
     name: "411",
     colors: { background: "#fecd38", text: "#000000" },
@@ -2529,6 +2576,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:413",
+    routeIds: ["NOMAD:413", "NOMAD:ATOUMOD040:Line:1008241:LOC"],
     noCartridge: true,
     name: "413",
     colors: { background: "#ea5984", text: "#000000" },
@@ -2565,6 +2613,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:416",
+    routeIds: ["NOMAD:416", "NOMAD:ATOUMOD040:Line:1008185:LOC"],
     noCartridge: true,
     name: "416",
     colors: { background: "#33a8e0", text: "#000000" },
@@ -2601,6 +2650,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:420",
+    routeIds: ["NOMAD:420", "NOMAD:ATOUMOD040:Line:1008183:LOC"],
     noCartridge: true,
     name: "420",
     colors: { background: "#b82b41", text: "#ffffff" },
@@ -2637,6 +2687,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:421",
+    routeIds: ["NOMAD:421", "NOMAD:ATOUMOD040:Line:1008187:LOC"],
     noCartridge: true,
     name: "421",
     colors: { background: "#35b6b2", text: "#000000" },
@@ -2673,6 +2724,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:422",
+    routeIds: ["NOMAD:422", "NOMAD:ATOUMOD040:Line:1008253:LOC"],
     noCartridge: true,
     name: "422",
     colors: { background: "#164194", text: "#ffffff" },
@@ -2724,6 +2776,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:423",
+    routeIds: ["NOMAD:423", "NOMAD:ATOUMOD040:Line:1009747:LOC"],
     name: "423",
     colors: { background: "#5E8786", text: "#FFFFFF" },
     destinations: [
@@ -2759,6 +2812,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:424",
+    routeIds: ["NOMAD:424", "NOMAD:ATOUMOD040:Line:1009928:LOC"],
     name: "424",
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
@@ -2794,6 +2848,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:425",
+    routeIds: ["NOMAD:425", "NOMAD:ATOUMOD040:Line:1009929:LOC"],
     noCartridge: true,
     name: "425",
     colors: { background: "#f87479", text: "#000000" },
@@ -2845,6 +2900,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:502",
+    routeIds: ["NOMAD:502", "NOMAD:ATOUMOD040:Line:1003060:LOC"],
     noCartridge: true,
     name: "502",
     colors: { background: "#e4ca12", text: "#000000" },
@@ -2867,6 +2923,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:505",
+    routeIds: ["NOMAD:505", "NOMAD:ATOUMOD040:Line:1003050:LOC"],
     noCartridge: true,
     name: "505",
     colors: { background: "#f58966", text: "#000000" },
@@ -2903,6 +2960,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:510",
+    routeIds: ["NOMAD:510", "NOMAD:ATOUMOD040:Line:1003056:LOC"],
     noCartridge: true,
     name: "510",
     colors: { background: "#864595", text: "#ffffff" },
@@ -2939,6 +2997,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:511",
+    routeIds: ["NOMAD:511", "NOMAD:ATOUMOD040:Line:1003063:LOC"],
     noCartridge: true,
     name: "511",
     colors: { background: "#ba4d95", text: "#ffffff" },
@@ -2975,6 +3034,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:512",
+    routeIds: ["NOMAD:512", "NOMAD:ATOUMOD040:Line:1003065:LOC"],
     noCartridge: true,
     name: "512",
     colors: { background: "#5665ab", text: "#ffffff" },
@@ -3041,6 +3101,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:513",
+    routeIds: ["NOMAD:513", "NOMAD:ATOUMOD040:Line:1003066:LOC"],
     noCartridge: true,
     name: "513",
     colors: { background: "#9ac63f", text: "#000000" },
@@ -3077,6 +3138,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:514",
+    routeIds: ["NOMAD:514", "NOMAD:ATOUMOD040:Line:1003067:LOC"],
     noCartridge: true,
     name: "514",
     colors: { background: "#ea5284", text: "#000000" },
@@ -3113,6 +3175,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:521",
+    routeIds: ["NOMAD:521", "NOMAD:ATOUMOD040:Line:1003075:LOC"],
     noCartridge: true,
     name: "521",
     colors: { background: "#c895bf", text: "#000000" },
@@ -3164,6 +3227,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:525",
+    routeIds: ["NOMAD:525", "NOMAD:ATOUMOD040:Line:1006899:LOC"],
     noCartridge: true,
     name: "525",
     colors: { background: "#292f6a", text: "#ffffff" },
@@ -3200,6 +3264,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:527",
+    routeIds: ["NOMAD:527", "NOMAD:ATOUMOD040:Line:1006919:LOC"],
     name: "527",
     colors: { background: "#9E6A9A", text: "#FFFFFF" },
     destinations: [
@@ -3297,6 +3362,7 @@ const nomadCar: Route[] = [
 
   {
     id: "NOMAD:101R",
+    routeIds: ["NOMAD:101R", "NOMAD:ATOUMOD040:Line:1009907:LOC"],
     noCartridge: true,
     name: "101",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -3431,6 +3497,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:101A",
+    routeIds: ["NOMAD:101A", "NOMAD:ATOUMOD040:Line:1004440:LOC"],
     noCartridge: true,
     name: "101",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -3473,6 +3540,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:102",
+    routeIds: ["NOMAD:102", "NOMAD:ATOUMOD040:Line:1004441:LOC"],
     noCartridge: true,
     name: "102",
     colors: { background: "#f7941d", text: "#000000" },
@@ -3537,6 +3605,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:103",
+    routeIds: ["NOMAD:103", "NOMAD:ATOUMOD040:Line:1004442:LOC"],
     noCartridge: true,
     name: "103",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -3623,6 +3692,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:104",
+    routeIds: ["NOMAD:104", "NOMAD:ATOUMOD040:Line:1004444:LOC"],
     noCartridge: true,
     name: "104",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -3701,6 +3771,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:105",
+    routeIds: ["NOMAD:105", "NOMAD:ATOUMOD040:Line:1004445:LOC"],
     noCartridge: true,
     name: "105",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -3813,6 +3884,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:106",
+    routeIds: ["NOMAD:106", "NOMAD:ATOUMOD040:Line:1004446:LOC"],
     noCartridge: true,
     name: "106",
     colors: { background: "#f7941d", text: "#000000" },
@@ -3919,6 +3991,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:107",
+    routeIds: ["NOMAD:107", "NOMAD:ATOUMOD040:Line:1004447:LOC"],
     noCartridge: true,
     name: "107",
     colors: { background: "#007dc5", text: "#ffffff" },
@@ -3997,6 +4070,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:108",
+    routeIds: ["NOMAD:108", "NOMAD:ATOUMOD040:Line:1004448:LOC"],
     noCartridge: true,
     name: "108",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -4075,6 +4149,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:109",
+    routeIds: ["NOMAD:109", "NOMAD:ATOUMOD040:Line:1004450:LOC"],
     noCartridge: true,
     name: "109",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -4125,6 +4200,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:110",
+    routeIds: ["NOMAD:110", "NOMAD:ATOUMOD040:Line:1004473:LOC"],
     noCartridge: true,
     name: "110",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -4268,6 +4344,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:111R",
+    routeIds: ["NOMAD:111R", "NOMAD:ATOUMOD040:Line:1009867:LOC"],
     noCartridge: true,
     name: "111",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -4360,6 +4437,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:111A",
+    routeIds: ["NOMAD:111A", "NOMAD:ATOUMOD040:Line:1004451:LOC"],
     noCartridge: true,
     name: "111",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -4445,6 +4523,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:115",
+    routeIds: ["NOMAD:115", "NOMAD:ATOUMOD040:Line:1004477:LOC"],
     noCartridge: true,
     name: "115",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -4523,6 +4602,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:116",
+    routeIds: ["NOMAD:116", "NOMAD:ATOUMOD040:Line:1004455:LOC"],
     noCartridge: true,
     name: "116",
     colors: { background: "#007dc5", text: "#ffffff" },
@@ -4629,6 +4709,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:117",
+    routeIds: ["NOMAD:117", "NOMAD:ATOUMOD040:Line:1004456:LOC"],
     noCartridge: true,
     name: "117",
     colors: { background: "#e41e27", text: "#ffffff" },
@@ -4721,6 +4802,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:118",
+    routeIds: ["NOMAD:118", "NOMAD:ATOUMOD040:Line:1004457:LOC"],
     noCartridge: true,
     name: "118",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -4757,6 +4839,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:119",
+    routeIds: ["NOMAD:119", "NOMAD:ATOUMOD040:Line:1004458:LOC"],
     noCartridge: true,
     name: "119",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -4849,6 +4932,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:120",
+    routeIds: ["NOMAD:120", "NOMAD:ATOUMOD040:Line:1004464:LOC"],
     noCartridge: true,
     name: "120",
     colors: { background: "#20b14a", text: "#ffffff" },
@@ -4932,6 +5016,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:121",
+    routeIds: ["NOMAD:121", "NOMAD:ATOUMOD040:Line:1004465:LOC"],
     noCartridge: true,
     name: "121",
     colors: { background: "#8f3e97", text: "#ffffff" },
@@ -5016,6 +5101,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:123",
+    routeIds: ["NOMAD:123", "NOMAD:ATOUMOD040:Line:1004460:LOC"],
     noCartridge: true,
     name: "123",
     colors: { background: "#f7941d", text: "#000000" },
@@ -5094,6 +5180,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:403",
+    routeIds: ["NOMAD:403", "NOMAD:ATOUMOD040:Line:1008221:LOC"],
     noCartridge: true,
     name: "403",
     colors: { background: "#e8afd0", text: "#000000" },
@@ -5290,6 +5377,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:404",
+    routeIds: ["NOMAD:404", "NOMAD:ATOUMOD040:Line:1008223:LOC"],
     noCartridge: true,
     name: "404",
     colors: { background: "#845f34", text: "#ffffff" },
@@ -5363,6 +5451,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:405",
+    routeIds: ["NOMAD:405", "NOMAD:ATOUMOD040:Line:1008225:LOC"],
     noCartridge: true,
     name: "405",
     colors: { background: "#abb96b", text: "#000000" },
@@ -5413,6 +5502,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:406",
+    routeIds: ["NOMAD:406", "NOMAD:ATOUMOD040:Line:1008227:LOC"],
     noCartridge: true,
     name: "406",
     colors: { background: "#7a7ab8", text: "#000000" },
@@ -5481,6 +5571,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:407",
+    routeIds: ["NOMAD:407", "NOMAD:ATOUMOD040:Line:1008229:LOC"],
     noCartridge: true,
     name: "407",
     colors: { background: "#c69615", text: "#000000" },
@@ -5559,6 +5650,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:409",
+    routeIds: ["NOMAD:409", "NOMAD:ATOUMOD040:Line:1008233:LOC"],
     noCartridge: true,
     name: "409",
     colors: { background: "#b0cb1d", text: "#000000" },
@@ -5656,6 +5748,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:410",
+    routeIds: ["NOMAD:410", "NOMAD:ATOUMOD040:Line:1008235:LOC"],
     noCartridge: true,
     name: "410",
     colors: { background: "#eba457", text: "#000000" },
@@ -5720,6 +5813,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:412",
+    routeIds: ["NOMAD:412", "NOMAD:ATOUMOD040:Line:1008239:LOC"],
     noCartridge: true,
     name: "412",
     colors: { background: "#b4569b", text: "#000000" },
@@ -5789,6 +5883,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:414",
+    routeIds: ["NOMAD:414", "NOMAD:ATOUMOD040:Line:1008243:LOC"],
     noCartridge: true,
     name: "414",
     colors: { background: "#e96c0f", text: "#000000" },
@@ -5889,6 +5984,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:415",
+    routeIds: ["NOMAD:415", "NOMAD:ATOUMOD040:Line:1008245:LOC"],
     noCartridge: true,
     name: "415",
     colors: { background: "#588ac7", text: "#000000" },
@@ -5968,6 +6064,7 @@ const nomadCar: Route[] = [
 
   {
     id: "NOMAD:417",
+    routeIds: ["NOMAD:417", "NOMAD:ATOUMOD040:Line:1008247:LOC"],
     noCartridge: true,
     name: "417",
     colors: { background: "#7bb92d", text: "#ffffff" },
@@ -6100,6 +6197,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:418",
+    routeIds: ["NOMAD:418", "NOMAD:ATOUMOD040:Line:1008249:LOC"],
     noCartridge: true,
     name: "418",
     colors: { background: "#e5d461", text: "#000000" },
@@ -6197,6 +6295,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:419",
+    routeIds: ["NOMAD:419", "NOMAD:ATOUMOD040:Line:1008251:LOC"],
     noCartridge: true,
     name: "419",
     colors: { background: "#147684", text: "#ffffff" },
@@ -6266,6 +6365,7 @@ const nomadCar: Route[] = [
 
   {
     id: "NOMAD:501",
+    routeIds: ["NOMAD:501", "NOMAD:ATOUMOD040:Line:1003047:LOC"],
     noCartridge: true,
     name: "501",
     colors: { background: "#42539e", text: "#ffffff" },
@@ -6373,6 +6473,7 @@ const nomadCar: Route[] = [
 
   {
     id: "NOMAD:503",
+    routeIds: ["NOMAD:503", "NOMAD:ATOUMOD040:Line:1003048:LOC"],
     noCartridge: true,
     name: "503",
     colors: { background: "#cab100", text: "#000000" },
@@ -6443,6 +6544,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:504",
+    routeIds: ["NOMAD:504", "NOMAD:ATOUMOD040:Line:1003049:LOC"],
     noCartridge: true,
     name: "504",
     colors: { background: "#dcadcd", text: "#000000" },
@@ -6480,6 +6582,7 @@ const nomadCar: Route[] = [
 
   {
     id: "NOMAD:506",
+    routeIds: ["NOMAD:506", "NOMAD:ATOUMOD040:Line:1003051:LOC"],
     noCartridge: true,
     name: "506",
     colors: { background: "#5665ab", text: "#ffffff" },
@@ -6577,6 +6680,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:507",
+    routeIds: ["NOMAD:507", "NOMAD:ATOUMOD040:Line:1003053:LOC"],
     noCartridge: true,
     name: "507",
     colors: { background: "#9ab36c", text: "#000000" },
@@ -6704,6 +6808,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:508",
+    routeIds: ["NOMAD:508", "NOMAD:ATOUMOD040:Line:1003054:LOC"],
     noCartridge: true,
     name: "508",
     colors: { background: "#ec413d", text: "#000000" },
@@ -6861,6 +6966,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:509R",
+    routeIds: ["NOMAD:509R", "NOMAD:ATOUMOD040:Line:1009847:LOC"],
     noCartridge: true,
     name: "509",
     colors: { background: "#bf922a", text: "#000000" },
@@ -6926,6 +7032,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:509A",
+    routeIds: ["NOMAD:509A", "NOMAD:ATOUMOD040:Line:1003055:LOC"],
     noCartridge: true,
     name: "509",
     colors: { background: "#bf922a", text: "#000000" },
@@ -7103,6 +7210,7 @@ const nomadCar: Route[] = [
 
   {
     id: "NOMAD:515",
+    routeIds: ["NOMAD:515", "NOMAD:ATOUMOD040:Line:1003068:LOC"],
     noCartridge: true,
     name: "515",
     colors: { background: "#ec7223", text: "#000000" },
@@ -7257,6 +7365,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:516",
+    routeIds: ["NOMAD:516", "NOMAD:ATOUMOD040:Line:1003069:LOC"],
     noCartridge: true,
     name: "516",
     colors: { background: "#73bb45", text: "#ffffff" },
@@ -7383,6 +7492,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:517",
+    routeIds: ["NOMAD:517", "NOMAD:ATOUMOD040:Line:1003070:LOC"],
     noCartridge: true,
     name: "517",
     colors: { background: "#e9d461", text: "#000000" },
@@ -7496,6 +7606,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:518",
+    routeIds: ["NOMAD:518", "NOMAD:ATOUMOD040:Line:1003071:LOC"],
     noCartridge: true,
     name: "518",
     colors: { background: "#e7accc", text: "#000000" },
@@ -7574,6 +7685,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:519",
+    routeIds: ["NOMAD:519", "NOMAD:ATOUMOD040:Line:1003072:LOC"],
     noCartridge: true,
     name: "519",
     colors: { background: "#af599e", text: "#000000" },
@@ -7680,6 +7792,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:520",
+    routeIds: ["NOMAD:520", "NOMAD:ATOUMOD040:Line:1003073:LOC"],
     noCartridge: true,
     name: "520",
     colors: { background: "#5187c2", text: "#000000" },
@@ -7837,6 +7950,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:522",
+    routeIds: ["NOMAD:522", "NOMAD:ATOUMOD040:Line:1003076:LOC"],
     noCartridge: true,
     name: "522",
     colors: { background: "#e52227", text: "#ffffff" },
@@ -7957,6 +8071,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:523",
+    routeIds: ["NOMAD:523", "NOMAD:ATOUMOD040:Line:1003078:LOC"],
     noCartridge: true,
     name: "523",
     colors: { background: "#9ac63d", text: "#000000" },
@@ -8096,6 +8211,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:524",
+    routeIds: ["NOMAD:524", "NOMAD:ATOUMOD040:Line:1003079:LOC"],
     noCartridge: true,
     name: "524",
     colors: { background: "#fbc134", text: "#000000" },
@@ -8208,6 +8324,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:526",
+    routeIds: ["NOMAD:526", "NOMAD:ATOUMOD040:Line:1003057:LOC"],
     noCartridge: true,
     name: "526",
     colors: { background: "#a6cc3a", text: "#000000" },
@@ -8314,6 +8431,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:528",
+    routeIds: ["NOMAD:528", "NOMAD:ATOUMOD040:Line:1003043:LOC"],
     noCartridge: true,
     name: "528",
     colors: { background: "#78bbe1", text: "#000000" },
@@ -8380,6 +8498,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:529",
+    routeIds: ["NOMAD:529", "NOMAD:ATOUMOD040:Line:1003059:LOC"],
     noCartridge: true,
     name: "529",
     colors: { background: "#f4a94e", text: "#000000" },
@@ -8486,6 +8605,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:531",
+    routeIds: ["NOMAD:531", "NOMAD:ATOUMOD040:Line:1003058:LOC"],
     noCartridge: true,
     name: "531",
     colors: { background: "#c56927", text: "#ffffff" },
