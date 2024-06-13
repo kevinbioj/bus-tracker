@@ -247,11 +247,12 @@ const sources: Source[] = [
         'https://api.atm.cityway.fr/dataflow/vehicule-tc-tr/download?provider=NOMAD&dataFormat=GTFS-RT',
       allowScheduled: (trip) => {
         const geo3dRoutes = [
-          'ATOUMOD040:Line:1006979:LOC', // 216
-          'ATOUMOD040:Line:1006959:LOC', // 228
-          'ATOUMOD040:Line:1009747:LOC', // 423
-          'ATOUMOD040:Line:1009928:LOC', // 424
-          'ATOUMOD040:Line:1006919:LOC', // 527
+          'ATOUMOD040:Line:1006979:LOC', // 216 (dans GTFS déidié à Geo3D)
+          'ATOUMOD040:Line:1006959:LOC', // 228 (dans GTFS déidié à Geo3D)
+          'ATOUMOD040:Line:1009747:LOC', // 423 (dans GTFS déidié à Geo3D)
+          'ATOUMOD040:Line:1009928:LOC', // 424 (dans GTFS déidié à Geo3D)
+          'ATOUMOD040:Line:1006919:LOC', // 527 (dans GTFS déidié à Geo3D)
+          'ATOUMOD040:Line:1003061:LOC', // 530 (gestion par Astuce)
         ];
         const marchesDeMerde = [
           'ATOUMOD040:Line:1003080:LOC', // 532
