@@ -5,7 +5,7 @@ import { orm } from './database.js';
 import { vehicleActivities, vehicles } from './schema.js';
 import type { VehicleIdentifier } from './vehicle-identifier.js';
 
-const ALLOWED_TIMEOUT = 7200; // 2 hours of allowed timeout on a same route
+const ALLOWED_TIMEOUT = 1800; // 30 minutes of allowed timeout on a same route
 
 type ActivityData = { routeId: string; time: Date };
 
