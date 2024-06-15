@@ -26,6 +26,7 @@ const fontProperties = {
   "DUHAMEL-24-22-2": { height: 22, spacing: 2, extraSpacing: false },
   // Special fonts
   METRO: { height: 16, spacing: 0, extraSpacing: false },
+  "1510N2E1-TCAR": { height: 15, spacing: 2, extraSpacing: false },
 } as const;
 
 type Font = keyof typeof fontProperties;
