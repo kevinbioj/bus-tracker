@@ -177,7 +177,7 @@ const astuceRoutes: Route[] = [
           },
           pages: [
             { font: "1508C2E1", spacing: 3, text: "MONT-AUX-MALADES" },
-            { font: "1508C2E1", spacing: 3, text: "MONT-SAINT-AIGNAN" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
@@ -458,7 +458,7 @@ const astuceRoutes: Route[] = [
               { spacing: 3, text: "CENTRE COMMERCIAL" },
               { spacing: 3, text: "LA VATINE" },
             ],
-            { font: "1508C2E1", spacing: 3, text: "MONT-SAINT-AIGNAN" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
@@ -712,7 +712,7 @@ const astuceRoutes: Route[] = [
           },
           pages: [
             { spacing: 4, text: "LA PLEIADE" },
-            { font: "1508C2E1", spacing: 3, text: "MONT-SAINT-AIGNAN" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
@@ -1060,7 +1060,7 @@ const astuceRoutes: Route[] = [
           routeNumber: { backgroundColor: "#F56278", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
           pages: [
             { font: "1508C2E1", spacing: 3, text: "PARC DE LA VATINE" },
-            { font: "1508C2E1", spacing: 3, text: "MONT-SAINT-AIGNAN" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-SAINT-AIGNAN" },
           ],
         },
       },
