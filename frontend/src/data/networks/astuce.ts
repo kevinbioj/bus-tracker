@@ -963,7 +963,10 @@ const astuceRoutes: Route[] = [
         city: "DÉVILLE-LÈS-ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "15" },
-          pages: [{ text: "JULES VERNE" }, { font: "1508C2E1", spacing: 3, text: "DEVILLE-LES-ROUEN" }],
+          pages: [
+            { spacing: 3, text: "JULES VERNE" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "DEVILLE-LES-ROUEN" },
+          ],
         },
       },
     ],
