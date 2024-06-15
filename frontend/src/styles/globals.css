@@ -102,6 +102,12 @@
 
 @font-face {
   font-display: block;
+  font-family: "1510N2E1-TCAR";
+  src: url("../fonts/girouette/1510N2E1-TCAR.ttf");
+}
+
+@font-face {
+  font-display: block;
   font-family: "LUMIPLAN-A";
   src: url("../fonts/girouette/LUMIPLAN-A.ttf");
 }
