@@ -176,7 +176,7 @@ const astuceRoutes: Route[] = [
             text: "T1",
           },
           pages: [
-            { font: "1508C2E1", spacing: 3, text: "MONT-AUX-MALADES" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-AUX-MALADES" },
             { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-SAINT-AIGNAN" },
           ],
         },
@@ -397,7 +397,7 @@ const astuceRoutes: Route[] = [
             text: "F1",
           },
           pages: [
-            { font: "1508C2E1", spacing: 3, text: "PLAINE DE LA RONCE" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "PLAINE DE LA RONCE" },
             { spacing: 4, text: "ISNEAUVILLE" },
           ],
         },
@@ -477,7 +477,7 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#FFDD00", textColor: "#000000", text: "F3" },
           pages: [
-            { font: "1508C2E1", spacing: 3, text: "CENTRE COMMERCIAL" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "CENTRE COMMERCIAL" },
             { font: "1508C2E1", text: "TOURVILLE-LA-RIVIERE" },
           ],
         },
@@ -754,8 +754,8 @@ const astuceRoutes: Route[] = [
             text: "F8",
           },
           pages: [
-            { font: "1510N2E1", text: "LYCEE DU CAILLY" },
-            { font: "1508C2E1", spacing: 3, text: "DEVILLE-LES-ROUEN" },
+            { font: "1513B3E1", spacing: 1, text: "LYCEE DU CAILLY" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "DEVILLE-LES-ROUEN" },
           ],
         },
       },
@@ -1059,7 +1059,7 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#F56278", textColor: "#000000", outlineColor: "#FFFFFF", text: "22" },
           pages: [
-            { font: "1508C2E1", spacing: 3, text: "PARC DE LA VATINE" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "PARC DE LA VATINE" },
             { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-SAINT-AIGNAN" },
           ],
         },
@@ -1422,7 +1422,7 @@ const astuceRoutes: Route[] = [
             text: "42",
           },
           pages: [
-            { font: "1510N2E1", text: "CENTRE ROUTIER" },
+            { font: "1513B3E1", text: "CENTRE ROUTIER" },
             { font: "1510N2E1", text: "GRAND-QUEVILLY" },
           ],
         },
@@ -1454,7 +1454,10 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             text: "43",
           },
-          pages: [{ font: "1510N2E1", text: "PLACE DU VIVIER" }, { text: "HOUPPEVILLE" }],
+          pages: [
+            { font: "1513B3E1", spacing: 1, text: "PLACE DU VIVIER" },
+            { spacing: 4, text: "HOUPPEVILLE" },
+          ],
         },
       },
       {
