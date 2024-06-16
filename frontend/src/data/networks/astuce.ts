@@ -575,7 +575,7 @@ const astuceRoutes: Route[] = [
             { font: "1508C2E1", text: "TERMINUS PROVISOIRE" },
           ],
           // pages: [
-          //   { font: "1508C2E1", spacing: 3, text: "THEATRE DES ARTS" },
+          //   { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
           //   { spacing: 5, text: "ROUEN" },
           // ],
         },
@@ -1146,7 +1146,7 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
           pages: [
-            { font: "1508C2E1", spacing: 3, text: "THEATRE DES ARTS" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
             { spacing: 5, text: "ROUEN" },
           ],
         },
