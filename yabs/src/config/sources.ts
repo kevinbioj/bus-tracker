@@ -241,7 +241,8 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD',
-      staticResourceHref: 'https://api.atm.cityway.fr/dataflow/offre-tc/download?provider=NOMAD&dataFormat=GTFS',
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad.zip',
+      // staticResourceHref: 'https://api.atm.cityway.fr/dataflow/offre-tc/download?provider=NOMAD&dataFormat=GTFS',
       tripUpdateHref: 'https://api.atm.cityway.fr/dataflow/horaire-tc-tr/download?provider=NOMAD&dataFormat=GTFS-RT',
       vehiclePositionHref:
         'https://api.atm.cityway.fr/dataflow/vehicule-tc-tr/download?provider=NOMAD&dataFormat=GTFS-RT',
