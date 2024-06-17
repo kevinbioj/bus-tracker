@@ -136,7 +136,8 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
   const entries = new Map<string, YabsEntry>();
 
   const tripUpdates = await downloadGtfsRt<TripUpdateEntity>(properties.tripUpdateHref, 'tripUpdate').then(
-    (tripUpdates) => properties.mapTripUpdateEntities?.(tripUpdates, resource) ?? tripUpdates,
+    (tripUpdates) =>
+      properties.mapTripUpdateEntities ? properties.mapTripUpdateEntities(tripUpdates, resource) : tripUpdates,
   );
 
   await Promise.allSettled(
@@ -323,11 +324,13 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
   const entries = new Map<string, YabsEntry>();
 
   const [tripUpdates, vehiclePositions] = await Promise.all([
-    downloadGtfsRt<TripUpdateEntity>(properties.tripUpdateHref, 'tripUpdate').then(
-      (tripUpdates) => properties.mapTripUpdateEntities?.(tripUpdates, resource) ?? tripUpdates,
+    downloadGtfsRt<TripUpdateEntity>(properties.tripUpdateHref, 'tripUpdate').then((tripUpdates) =>
+      properties.mapTripUpdateEntities ? properties.mapTripUpdateEntities(tripUpdates, resource) : tripUpdates,
     ),
-    downloadGtfsRt<VehiclePositionEntity>(properties.vehiclePositionHref, 'vehicle').then(
-      (vehiclePositions) => properties.mapVehiclePositionEntities?.(vehiclePositions, resource) ?? vehiclePositions,
+    downloadGtfsRt<VehiclePositionEntity>(properties.vehiclePositionHref, 'vehicle').then((vehiclePositions) =>
+      properties.mapVehiclePositionEntities
+        ? properties.mapVehiclePositionEntities(vehiclePositions, resource)
+        : vehiclePositions,
     ),
   ]);
 
