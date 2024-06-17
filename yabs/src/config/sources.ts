@@ -89,7 +89,11 @@ const sources: Source[] = [
         }, new Map<string, number>());
 
         const sortedEntities = entities
-          .filter((tripUpdate) => tripUpdate.tripUpdate.vehicle?.id)
+          .filter(
+            (tripUpdate) =>
+              tripUpdate.tripUpdate.vehicle?.id &&
+              dayjs().diff(dayjs.unix(+tripUpdate.tripUpdate.timestamp), 'minutes') < 60,
+          )
           .sort(
             (a, b) => tripStartTimes.get(a.tripUpdate.trip.tripId)! - tripStartTimes.get(b.tripUpdate.trip.tripId)!,
           );
