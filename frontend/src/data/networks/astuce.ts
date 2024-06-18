@@ -336,7 +336,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#E6007E", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Stade Diochon PETIT-QUEVILLY"],
+        id: ["Stade Diochon PETIT-QUEVILLY", "Stade Diochon"],
         name: "Stade Diochon",
         city: "PETIT-QUEVILLY",
         girouette: {
@@ -386,7 +386,7 @@ const astuceRoutes: Route[] = [
       //   },
       // },
       {
-        id: ["Plaine de la Ronce ISNEAUVILLE"],
+        id: ["Plaine de la Ronce ISNEAUVILLE", "Plaine de la Ronce"],
         name: "Plaine de la Ronce",
         city: "ISNEAUVILLE",
         girouette: {
@@ -554,7 +554,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#AFCA0B", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE"],
+        id: ["Lycée Galilée FRANQUEVILLE-SAINT-PIERRE", "Lycée Galilée"],
         name: "Lycée Galilée",
         city: "FRANQUEVILLE-SAINT-PIERRE",
         girouette: {
@@ -563,7 +563,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Théâtre des Arts ROUEN", "Théâtre des Arts", "Boulingrin ROUEN"],
+        id: ["Théâtre des Arts ROUEN", "Théâtre des Arts", "Boulingrin ROUEN", "Boulingrin"],
         name: "Boulingrin (terminus provisoire)",
         city: "ROUEN",
         girouette: {
@@ -1140,6 +1140,19 @@ const astuceRoutes: Route[] = [
         },
       },
       {
+        id: ["Champlain ROUEN"],
+        autoHide: true,
+        name: "Champlain",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: { backgroundColor: "#55943E", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
+          pages: [
+            { spacing: 4, text: "CHAMPLAIN" },
+            { spacing: 5, text: "ROUEN" },
+          ],
+        },
+      },
+      {
         id: ["Théâtre des Arts ROUEN"],
         name: "Théâtre des Arts",
         city: "ROUEN",
@@ -1447,7 +1460,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#9BD4E3", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Place du Vivier HOUPPEVILLE"],
+        id: ["Place du Vivier HOUPPEVILLE", "Place du Vivier"],
         name: "Place du Vivier",
         city: "HOUPPEVILLE",
         girouette: {
@@ -1464,7 +1477,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Longs Vallons NOTRE-DAME-DE-BONDEVILLE"],
+        id: ["Longs Vallons NOTRE-DAME-DE-BONDEVILLE", "Longs Vallons"],
         name: "Longs Vallons",
         city: "NOTRE-DAME-DE-BONDEVILLE",
         girouette: {
