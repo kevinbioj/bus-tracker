@@ -291,6 +291,7 @@ const sources: Source[] = [
       getOperator: () => 'NOMAD',
       mapTripUpdateEntities: (entities) => {
         for (const entity of entities) {
+          if (entity.tripUpdate.stopTimeUpdate.at(-1)!.stopId !== '207') continue;
           const rouenStSever = entity.tripUpdate.stopTimeUpdate.find((stu) => stu.stopId === '225');
           if (rouenStSever) rouenStSever.scheduleRelationship = 'SKIPPED';
         }
