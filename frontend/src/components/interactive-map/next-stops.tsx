@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import dayjs from "dayjs";
 import dayjsDurationPlugin, { Duration } from "dayjs/plugin/duration";
 import dayjsRelativeTimePlugin from "dayjs/plugin/relativeTime";
@@ -28,44 +29,50 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
               <span className="overflow-hidden text-ellipsis whitespace-nowrap" title={stopTime.name}>
                 {stopTime.name}
               </span>
-              {stopTime.timestamp !== null && stopTime.isRealtime ? (
-                <Rss className="ml-auto -rotate-90 stroke-green-700 dark:stroke-green-500" size={8} />
+              {stopTime.isRealtime ? (
+                <Rss
+                  className={clsx(
+                    "ml-auto -rotate-90",
+                    stopTime.delta !== null
+                      ? "stroke-green-700 dark:stroke-green-500"
+                      : "stroke-red-700 dark:stroke-red-500",
+                  )}
+                  size={8}
+                />
               ) : (
                 <div></div>
               )}
-              {match([stopTime.timestamp, stopTime.isRealtime])
-                .with([null, P.boolean], () => (
+              {match([stopTime.timestamp, stopTime.delta, stopTime.isRealtime])
+                .with([P.number, null, true], ([time]) => (
                   <Tooltip
                     className="bg-red-500 dark:bg-red-700 text-white"
                     content="Arrêt non desservi"
                     place="left"
                     spacing={10}
                   >
-                    <X className="mx-auto -mt-0.5 stroke-red-500 hover:cursor-help" size={18} strokeWidth={3} />
+                    <span className="tabular-nums text-red-700 dark:text-red-500 hover:cursor-help line-through decoration-1">
+                      {dayjs.unix(time).format("HH:mm")}
+                    </span>
                   </Tooltip>
                 ))
-                .with([P.number, false], ([time]) => (
+                .with([P.number, null, false], ([time]) => (
                   <span className="tabular-nums hover:cursor-default">{dayjs.unix(time).format("HH:mm")}</span>
                 ))
-                .with([P.number, true], ([time]) => (
+                .with([P.number, P.number, true], ([time, delta]) => (
                   <Tooltip
                     className={
-                      stopTime.delta !== null
-                        ? stopTime.delta >= 30
-                          ? "bg-orange-500 dark:bg-orange-700 text-white"
-                          : stopTime.delta <= -30
-                            ? "bg-red-500 dark:bg-red-700 text-white"
-                            : "bg-green-600 dark:bg-green-700 text-white"
-                        : ""
+                      delta >= 30
+                        ? "bg-orange-500 dark:bg-orange-700 text-white"
+                        : delta <= -30
+                          ? "bg-red-500 dark:bg-red-700 text-white"
+                          : "bg-green-600 dark:bg-green-700 text-white"
                     }
                     content={
-                      stopTime.delta !== null
-                        ? Math.abs(stopTime.delta) < 30
-                          ? "A l'heure"
-                          : stopTime.delta < 0
-                            ? `Avance de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
-                            : `Retard de ${humanizeDuration(dayjs.duration(Math.abs(stopTime.delta), "seconds"))}`
-                        : "Avance/retard indisponible"
+                      Math.abs(delta) < 30
+                        ? "A l'heure"
+                        : delta < 0
+                          ? `Avance de ${humanizeDuration(dayjs.duration(Math.abs(delta), "seconds"))}`
+                          : `Retard de ${humanizeDuration(dayjs.duration(Math.abs(delta), "seconds"))}`
                     }
                     place="left"
                     spacing={10}
@@ -75,7 +82,23 @@ export default function NextStops({ stopTimes }: NextStopsProps) {
                     </span>
                   </Tooltip>
                 ))
-                .exhaustive()}
+                .with([P.number, null, true], ([time]) => (
+                  <Tooltip content="Avance/retard indisponible" place="left" spacing={10}>
+                    <span className="tabular-nums text-green-700 dark:text-green-500 hover:cursor-help">
+                      {dayjs.unix(time).format("HH:mm")}
+                    </span>
+                  </Tooltip>
+                ))
+                .otherwise(() => (
+                  <Tooltip
+                    className="bg-red-500 dark:bg-red-700 text-white"
+                    content="Arrêt non desservi"
+                    place="left"
+                    spacing={10}
+                  >
+                    <X className="mx-auto -mt-0.5 stroke-red-500 hover:cursor-help" size={18} strokeWidth={3} />
+                  </Tooltip>
+                ))}
             </div>
           );
         })}
