@@ -173,7 +173,15 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
 
         if (typeof stopTimeUpdate === 'undefined') {
           if (properties.missingStopTimeUpdateStrategy === 'SKIP') {
-            return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
+            return {
+              ...partialStopTime,
+              timestamp: dayjs
+                .unix(partialStopTime.scheduled)
+                .add(currentDelta ?? 0, 'seconds')
+                .unix(),
+              delta: null,
+              isRealtime: true,
+            };
           }
           if (properties.missingStopTimeUpdateStrategy === 'NO-DATA' || currentDelta === null) {
             currentDelta = null;
@@ -193,7 +201,15 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         }
 
         if (stopTimeUpdate.scheduleRelationship === 'SKIPPED') {
-          return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
+          return {
+            ...partialStopTime,
+            timestamp: dayjs
+              .unix(partialStopTime.scheduled)
+              .add(currentDelta ?? 0, 'seconds')
+              .unix(),
+            delta: null,
+            isRealtime: true,
+          };
         }
 
         const stopTimeEvent = stopTimeUpdate.departure ?? stopTimeUpdate.arrival;
@@ -376,7 +392,15 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
 
         if (typeof stopTimeUpdate === 'undefined') {
           if (properties.missingStopTimeUpdateStrategy === 'SKIP') {
-            return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
+            return {
+              ...partialStopTime,
+              timestamp: dayjs
+                .unix(partialStopTime.scheduled)
+                .add(currentDelta ?? 0, 'seconds')
+                .unix(),
+              delta: null,
+              isRealtime: true,
+            };
           }
           if (properties.missingStopTimeUpdateStrategy === 'NO-DATA' || currentDelta === null) {
             currentDelta = null;
@@ -396,7 +420,15 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         }
 
         if (stopTimeUpdate.scheduleRelationship === 'SKIPPED') {
-          return { ...partialStopTime, timestamp: null, delta: null, isRealtime: true };
+          return {
+            ...partialStopTime,
+            timestamp: dayjs
+              .unix(partialStopTime.scheduled)
+              .add(currentDelta ?? 0, 'seconds')
+              .unix(),
+            delta: null,
+            isRealtime: true,
+          };
         }
 
         const stopTimeEvent = stopTimeUpdate.departure ?? stopTimeUpdate.arrival;
@@ -437,7 +469,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         typeof vehiclePosition.vehicle.currentStopSequence !== 'number'
           ? stopTimes.filter((stopTime) => {
               return dayjs
-                .unix(stopTime.timestamp ?? stopTime.scheduled)
+                .unix(stopTime.timestamp)
                 .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minute');
             })
           : stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!);
