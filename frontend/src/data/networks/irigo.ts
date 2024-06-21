@@ -2335,7 +2335,7 @@ const irigoRoutes: Route[] = [
             font: "1508SUPX",
             text: "153",
           },
-          pages: [{ text: "LE PLESSIS GRAMMOIRE" }],
+          pages: [{ font: "1507SUPX", text: "LE PLESSIS GRAMMOIRE" }],
         },
       },
       {
