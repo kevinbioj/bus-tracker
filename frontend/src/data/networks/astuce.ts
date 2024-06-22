@@ -238,7 +238,7 @@ const astuceRoutes: Route[] = [
             text: "T1",
           },
           pages: [
-            { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-AUX-MALADES" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "MONT AUX MALADES" },
             { font: "1510N2E1-TCAR", spacing: 1, text: "MONT-SAINT-AIGNAN" },
           ],
         },
