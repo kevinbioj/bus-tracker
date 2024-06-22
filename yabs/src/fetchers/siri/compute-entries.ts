@@ -87,9 +87,7 @@ export async function computeSiriEntries(properties: SiriProperties): Promise<Ya
                 id: parseSiriRef(stopCall.StopPointRef),
                 name: unescape(stopCall.StopPointName),
                 sequence: stopCall.Order,
-                timestamp: isCancelled
-                  ? null
-                  : dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
+                timestamp: dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).unix(),
                 delta: isCancelled
                   ? null
                   : dayjs(stopCall.ExpectedDepartureTime ?? stopCall.ExpectedArrivalTime).diff(
