@@ -1073,6 +1073,44 @@ const nomadCar: Route[] = [
     ],
   },
   {
+    id: "NOMAD-TER:FR:Line::92DB98EC-5A2B-415E-829C-C0262FDC5AD3:",
+    noCartridge: true,
+    name: "P31",
+    colors: { background: "#63BF00", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Trouville - Deauville"],
+        name: "Trouville - Deauville",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#63BF00",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "P31",
+          },
+          pages: [{ font: "1507SUPX", text: "TROUVILLE-DEAUVILLE" }],
+        },
+      },
+      {
+        id: ["Dives - Cabourg"],
+        name: "Dives - Cabourg",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#63BF00",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "P31",
+          },
+          pages: [{ font: "1508SUPX", text: "DIVES-CABOURG" }],
+        },
+      },
+    ],
+  },
+  {
     id: "NOMAD-TER:FR:Line::DD461A4B-557A-4303-B639-AED4F7A5141B:",
     noCartridge: true,
     name: "P45",
