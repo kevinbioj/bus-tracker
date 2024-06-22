@@ -1017,6 +1017,7 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Eude DÉVILLE-LÈS-ROUEN"],
+        autoHide: true,
         name: "Eude",
         city: "DÉVILLE-LÈS-ROUEN",
         girouette: {
@@ -1495,7 +1496,7 @@ const astuceRoutes: Route[] = [
             text: "42",
           },
           pages: [
-            { font: "1513B3E1", text: "CENTRE ROUTIER" },
+            { font: "1510N2E1", text: "CENTRE ROUTIER" },
             { font: "1510N2E1", text: "GRAND-QUEVILLY" },
           ],
         },
