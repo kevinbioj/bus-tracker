@@ -960,7 +960,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#00ACE5", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mont Pilon DARNÉTAL", "Mont Pilon"],
+        id: ["Mont Pilon DARNÉTAL", "Mont-Pilon"],
         name: "Mont Pilon",
         city: "DARNÉTAL",
         girouette: {
@@ -1289,11 +1289,12 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:35",
+    routeIds: ["ASTUCE:35", "ASTUCE-TGR:451"],
     name: "35",
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Sente d'Houdeville CANTELEU", "Sente d'Houdeville"],
+        id: ["Sente d'Houdeville"],
         name: "Sente d'Houdeville",
         city: "CANTELEU",
         girouette: {
@@ -1302,7 +1303,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Mont-Riboudet", "Mont-Riboudet ROUEN"],
+        id: ["Mont-Riboudet Kindarena"],
         autoHide: true,
         name: "Mont-Riboudet - Kindarena",
         city: "ROUEN",
@@ -1312,7 +1313,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Ecole Moulin NOTRE-DAME-DE-BONDEVILLE", "Ecole Moulin"],
+        id: ["École Moulin"],
         name: "École Moulin",
         city: "NOTRE-DAME-DE-BONDEVILLE",
         girouette: {
