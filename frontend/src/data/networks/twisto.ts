@@ -2734,7 +2734,26 @@ const twistoRoutes: Route[] = [
     mapOnly: true,
     noCartridge: true,
     colors: { background: "#FF0000", text: "#ffffff" },
-    destinations: [],
+    destinations: [
+      {
+        id: ["Saint-Germain-la-Blanche-Herbe Rue du Puits"],
+        name: "Rue du Puits",
+        city: "SAINT-GERMAIN-LA-BLANCHE-HERBE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#FF0000",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "MP",
+          },
+          pages: [
+            { font: "1508SUPX", text: "SAINT-GERMAIN" },
+            { font: "1508SUPX", text: "RUE DU PUITS" },
+          ],
+        },
+      },
+    ],
   },
 ];
 
