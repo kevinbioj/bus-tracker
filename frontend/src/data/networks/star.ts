@@ -206,7 +206,7 @@ const starRoutes: Route[] = [
         },
       },
       {
-        id: ["Saint-Jacques - Gaîté"],
+        id: ["St-Jacques Gaîté"],
         name: "Saint-Jacques - Gaîté",
         city: "SAINT-JACQUES-DE-LA-LANDE",
         girouette: {
