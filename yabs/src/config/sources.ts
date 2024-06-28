@@ -19,7 +19,7 @@ export type Source = {
 const sources: Source[] = [
   {
     id: 'TCAR',
-    refreshCron: '0,30 * * * * *',
+    refreshCron: '0,15,30,45 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR',
@@ -56,7 +56,7 @@ const sources: Source[] = [
   },
   {
     id: 'TCAR-TGR',
-    refreshCron: '2,32 * * * * *',
+    refreshCron: '5,15,25,35,45,55 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR-TGR',
@@ -72,7 +72,7 @@ const sources: Source[] = [
   },
   {
     id: 'TAE',
-    refreshCron: '4,34 * * * * *',
+    refreshCron: '3,23,43 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TAE',
@@ -112,7 +112,7 @@ const sources: Source[] = [
   },
   {
     id: 'TNI',
-    refreshCron: '5 * * * * *',
+    refreshCron: '5,35 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TNI',
