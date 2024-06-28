@@ -84,7 +84,7 @@ export type TripUpdateEntity = {
   id: string;
   tripUpdate: {
     stopTimeUpdate: Array<{
-      scheduleRelationship?: 'SCHEDULED' | 'SKIPPED' | 'NO-DATA';
+      scheduleRelationship?: 'SCHEDULED' | 'SKIPPED' | 'NO_DATA';
       arrival?: StopTimeEvent;
       departure?: StopTimeEvent;
       stopId: string;

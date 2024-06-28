@@ -195,7 +195,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
           };
         }
 
-        if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
+        if (stopTimeUpdate?.scheduleRelationship === 'NO_DATA') {
           currentDelta = null;
           return { ...partialStopTime, timestamp: partialStopTime.scheduled, delta: null, isRealtime: false };
         }
@@ -414,7 +414,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
           };
         }
 
-        if (stopTimeUpdate?.scheduleRelationship === 'NO-DATA') {
+        if (stopTimeUpdate?.scheduleRelationship === 'NO_DATA') {
           currentDelta = null;
           return { ...partialStopTime, timestamp: partialStopTime.scheduled, delta: null, isRealtime: false };
         }
