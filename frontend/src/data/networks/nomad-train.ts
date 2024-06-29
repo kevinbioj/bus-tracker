@@ -292,6 +292,22 @@ const nomadCar: Route[] = [
           pages: [[{ text: "PONTORSON" }, { text: "MONT-SAINT-MICHEL" }]],
         },
       },
+      {
+        id: ["Le Mont-Saint-Michel"],
+        autoHide: true,
+        name: "Le Mont-Saint-Michel",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#E00046",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "K4",
+          },
+          pages: [{ font: '1507SUPX', text: "LE MONT-SAINT-MICHEL" }],
+        },
+      }
     ],
   },
   {
