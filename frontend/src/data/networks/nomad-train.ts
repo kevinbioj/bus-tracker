@@ -25,6 +25,7 @@ const nomadCar: Route[] = [
       },
       {
         id: ["Yvetot"],
+        autoHide: true,
         name: "Yvetot",
         girouette: {
           ledColor: "WHITE",
