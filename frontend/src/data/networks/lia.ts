@@ -56,84 +56,9 @@ const liaRoutes: Route[] = [
     ],
   },
   {
-    id: "LIA:T",
-    noCartridge: true,
-    name: "T",
-    colors: { background: "#E30613", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Grand Hameau"],
-        autoHide: true,
-        name: "Grand Hameau",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
-          routeNumber: {
-            font: "14LUPLAN",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "T",
-          },
-          pages: [{ font: "14LUPLAN", text: "GRAND HAMEAU" }],
-        },
-      },
-      {
-        id: ["Pré Fleuri"],
-        autoHide: true,
-        name: "Pré Fleuri",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
-          routeNumber: {
-            font: "14LUPLAN",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "T",
-          },
-          pages: [{ font: "14LUPLAN", text: "PRE FLEURI" }],
-        },
-      },
-      {
-        id: ["La Plage"],
-        autoHide: true,
-        name: "La Plage",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
-          routeNumber: {
-            font: "14LUPLAN",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "T",
-          },
-          pages: [{ font: "14LUPLAN", text: "LA PLAGE" }],
-        },
-      },
-      {
-        id: ["Rond-Point"],
-        autoHide: true,
-        name: "Rond-Point",
-        girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
-          routeNumber: {
-            font: "14LUPLAN",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "T",
-          },
-          pages: [{ font: "14LUPLAN", text: "ROND-POINT" }],
-        },
-      },
-    ],
-  },
-  {
     id: "LIA:A",
     name: "A",
-    colors: { background: "#E30613", text: "#FFFFFF" },
+    colors: { background: "#E50040", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Grand Hameau"],
@@ -143,7 +68,7 @@ const liaRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
-            backgroundColor: "#E30613",
+            backgroundColor: "#E50040",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "A",
@@ -152,6 +77,23 @@ const liaRoutes: Route[] = [
         },
       },
       {
+        id: ["Rond-Point"],
+        autoHide: true,
+        name: "Rond-Point",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
+          routeNumber: {
+            font: "14LUPLAN",
+            backgroundColor: "#E50040",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "A",
+          },
+          pages: [{ font: "14LUPLAN", text: "ROND-POINT" }],
+        },
+      },
+      {
         id: ["La Plage"],
         name: "La Plage",
         city: "LE HAVRE",
@@ -159,7 +101,7 @@ const liaRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
-            backgroundColor: "#E30613",
+            backgroundColor: "#E50040",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "A",
@@ -172,7 +114,7 @@ const liaRoutes: Route[] = [
   {
     id: "LIA:B",
     name: "B",
-    colors: { background: "#00BB00", text: "#FFFFFF" },
+    colors: { background: "#3AAA35", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Pré Fleuri"],
@@ -182,7 +124,7 @@ const liaRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
-            backgroundColor: "#00BB00",
+            backgroundColor: "#3AAA35",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "B",
@@ -199,7 +141,7 @@ const liaRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
-            backgroundColor: "#00BB00",
+            backgroundColor: "#3AAA35",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "B",
@@ -215,7 +157,7 @@ const liaRoutes: Route[] = [
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 120 },
           routeNumber: {
             font: "14LUPLAN",
-            backgroundColor: "#00BB00",
+            backgroundColor: "#3AAA35",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "B",
@@ -226,12 +168,13 @@ const liaRoutes: Route[] = [
     ],
   },
   {
-    id: "LIA:01",
-    name: "1",
-    colors: { background: "#009FE3", text: "#FFFFFF" },
+    id: "LIA:C1",
+    name: "C1",
+    colors: { background: "#009EE3", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Montivilliers Gare"],
+        autoHide: true,
         name: "Gare",
         city: "MONTIVILLIERS",
         girouette: {
@@ -245,7 +188,7 @@ const liaRoutes: Route[] = [
             backgroundColor: "#009FE3",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "1",
+            text: "C1",
           },
           pages: [
             [
@@ -263,9 +206,8 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["La Plage"],
-        autoHide: true,
-        name: "La Plage",
+        id: ["Cité des Abbesses"],
+        name: "Cité des Abbesses",
         city: "LE HAVRE",
         girouette: {
           dimensions: {
@@ -278,17 +220,17 @@ const liaRoutes: Route[] = [
             backgroundColor: "#009FE3",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "1",
+            text: "C1",
           },
           pages: [
             [
               {
-                font: "LUMIPLAN-A",
-                text: "LE  HAVRE  LA  PLAGE",
+                font: "LUMIPLAN-2",
+                text: "M O N T I V I L L I E R S",
               },
               {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                font: "LUMIPLAN-A",
+                text: "CITE DES ABBESSES",
               },
             ],
           ],
@@ -309,7 +251,7 @@ const liaRoutes: Route[] = [
             backgroundColor: "#009FE3",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "1",
+            text: "C1",
           },
           pages: [
             [
@@ -334,7 +276,39 @@ const liaRoutes: Route[] = [
     colors: { background: "#E30613", text: "#FFFFFF" },
     destinations: [
       {
+        id: ["Parc Estuaire"],
+        name: "Parc de l'Estuaire",
+        city: "HARFLEUR",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#E30613",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "C2",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "GONFREVILLE-L'ORCHER",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "PARC ESTUAIRE",
+              },
+            ],
+          ],
+        },
+      },
+      {
         id: ["Place d'Armes"],
+        autoHide: true,
         name: "Place d'Armes",
         city: "HARFLEUR",
         girouette: {
@@ -398,9 +372,9 @@ const liaRoutes: Route[] = [
     ],
   },
   {
-    id: "LIA:03",
-    name: "3",
-    colors: { background: "#13A538", text: "#FFFFFF" },
+    id: "LIA:C3",
+    name: "C3",
+    colors: { background: "#3FA435", text: "#FFFFFF" },
     destinations: [
       {
         id: ["Grand Hameau"],
@@ -414,10 +388,10 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#13A538",
+            backgroundColor: "#3FA435",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "3",
+            text: "C3",
           },
           pages: [
             [
@@ -445,10 +419,10 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#13A538",
+            backgroundColor: "#3FA435",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "3",
+            text: "C3",
           },
           pages: [
             [
@@ -467,8 +441,8 @@ const liaRoutes: Route[] = [
     ],
   },
   {
-    id: "LIA:04",
-    name: "4",
+    id: "LIA:C4",
+    name: "C4",
     colors: { background: "#F7A823", text: "#FFFFFF" },
     destinations: [
       {
@@ -486,7 +460,7 @@ const liaRoutes: Route[] = [
             backgroundColor: "#F7A823",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "4",
+            text: "C4",
           },
           pages: [
             [
@@ -517,7 +491,7 @@ const liaRoutes: Route[] = [
             backgroundColor: "#F7A823",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "4",
+            text: "C4",
           },
           pages: [
             [
@@ -536,14 +510,14 @@ const liaRoutes: Route[] = [
     ],
   },
   {
-    id: "LIA:05",
-    name: "5",
-    colors: { background: "#E6007E", text: "#FFFFFF" },
+    id: "LIA:C5",
+    name: "C5",
+    colors: { background: "#E5007D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Sainte Adresse Ignauval"],
-        name: "Ignauval",
-        city: "SAINTE-ADRESSE",
+        id: ["Place d'Armes"],
+        name: "Place d'Armes",
+        city: "HARFLEUR",
         girouette: {
           dimensions: {
             height: 24,
@@ -552,28 +526,28 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#E6007E",
+            backgroundColor: "#E5007D",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "5",
+            text: "C5",
           },
           pages: [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "SAINTE-ADRESSE",
+                text: "H A R F L E U R",
               },
               {
                 font: "LUMIPLAN-A",
-                text: "I G N A U V A L",
+                text: "PLACE D'ARMES",
               },
             ],
           ],
         },
       },
       {
-        id: ["Graville"],
-        name: "Graville",
+        id: ["Dollemard"],
+        name: "Dollemard",
         city: "LE HAVRE",
         girouette: {
           dimensions: {
@@ -583,10 +557,10 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#E6007E",
+            backgroundColor: "#E5007D",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "5",
+            text: "C5",
           },
           pages: [
             [
@@ -596,7 +570,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-A",
-                text: "G R A V I L L E",
+                text: "D O L L E M A R D",
               },
             ],
           ],
@@ -605,13 +579,13 @@ const liaRoutes: Route[] = [
     ],
   },
   {
-    id: "LIA:06",
-    name: "6",
+    id: "LIA:C6",
+    name: "C6",
     colors: { background: "#FFE500", text: "#000000" },
     destinations: [
       {
-        id: ["O. Niemeyer"],
-        name: "Oscar Niemeyer",
+        id: ["Hôtel de Ville"],
+        name: "Hôtel de Ville",
         city: "LE HAVRE",
         girouette: {
           dimensions: {
@@ -623,7 +597,8 @@ const liaRoutes: Route[] = [
             font: "DUHAMEL-24-22-2",
             backgroundColor: "#FFE500",
             textColor: "#000000",
-            text: "6",
+            outlineColor: "#FFFFFF",
+            text: "C6",
           },
           pages: [
             [
@@ -633,48 +608,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-A",
-                text: "O. NIEMEYER",
-              },
-            ],
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "O. NIEMEYER",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "PAR MONT-GAILLARD",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Funiculaire / C. Monet / St Jo."],
-        autoHide: true,
-        name: "Institution Saint-Joseph",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#FFE500",
-            textColor: "#000000",
-            text: "6",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "INSTITUT. ST-JOSEPH",
+                text: "HOTEL DE VILLE",
               },
             ],
           ],
@@ -682,7 +616,6 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Mont Gaillard"],
-        autoHide: true,
         name: "Mont Gaillard",
         city: "LE HAVRE",
         girouette: {
@@ -695,7 +628,8 @@ const liaRoutes: Route[] = [
             font: "DUHAMEL-24-22-2",
             backgroundColor: "#FFE500",
             textColor: "#000000",
-            text: "6",
+            outlineColor: "#FFFFFF",
+            text: "C6",
           },
           pages: [
             [
@@ -705,15 +639,22 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-A",
-                text: "MONT-GAILLARD",
+                text: "MONT GAILLARD",
               },
             ],
           ],
         },
       },
+    ],
+  },
+  {
+    id: "LIA:C7",
+    name: "C7",
+    colors: { background: "#0072BC", text: "#FFFFFF" },
+    destinations: [
       {
-        id: ["Place Jenner"],
-        name: "Place Jenner",
+        id: ["Hôtel de Ville"],
+        name: "Hôtel de Ville",
         city: "LE HAVRE",
         girouette: {
           dimensions: {
@@ -723,9 +664,10 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#FFE500",
-            textColor: "#000000",
-            text: "6",
+            backgroundColor: "#0072BC",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "C7",
           },
           pages: [
             [
@@ -735,29 +677,12 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-A",
-                text: "PLACE JENNER",
-              },
-            ],
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "PLACE JENNER",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "PAR MONT-GAILLARD",
+                text: "HOTEL DE VILLE",
               },
             ],
           ],
         },
       },
-    ],
-  },
-  {
-    id: "LIA:07",
-    name: "7",
-    colors: { background: "#0069B4", text: "#FFFFFF" },
-    destinations: [
       {
         id: ["Caucriauville"],
         name: "Caucriauville",
@@ -770,10 +695,10 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#0069B4",
+            backgroundColor: "#0072BC",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "7",
+            text: "C7",
           },
           pages: [
             [
@@ -789,79 +714,16 @@ const liaRoutes: Route[] = [
           ],
         },
       },
-      {
-        id: ["Funiculaire C.Monet / St Jo."],
-        autoHide: true,
-        name: "Institution Saint-Joseph",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#0069B4",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "7",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "INSTITUT. ST-JOSEPH",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Le Havre MuMA"],
-        name: "MuMa",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#0069B4",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "7",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "M U M A",
-              },
-            ],
-          ],
-        },
-      },
     ],
   },
   {
-    id: "LIA:08",
-    name: "8",
-    colors: { background: "#E67900", text: "#FFFFFF" },
+    id: "LIA:C8",
+    name: "C8",
+    colors: { background: "#E67900", text: "#000000" },
     destinations: [
       {
-        id: ["Le Havre Gares"],
-        name: "Gares",
+        id: ["Hôtel de Ville"],
+        name: "Hôtel de Ville",
         city: "LE HAVRE",
         girouette: {
           dimensions: {
@@ -872,40 +734,9 @@ const liaRoutes: Route[] = [
           routeNumber: {
             font: "DUHAMEL-24-22-2",
             backgroundColor: "#E67900",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "8",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "LE  HAVRE  GARES",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Soquence"],
-        name: "Soquence",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#E67900",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "8",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "C8",
           },
           pages: [
             [
@@ -915,17 +746,38 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-A",
-                text: "S O Q U E N C E",
+                text: "HOTEL DE VILLE",
               },
             ],
+          ],
+        },
+      },
+      {
+        id: ["Mont Gaillard"],
+        name: "Mont Gaillard",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#E67900",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "C8",
+          },
+          pages: [
             [
               {
-                font: "LUMIPLAN-A",
-                text: "S O Q U E N C E",
+                font: "LUMIPLAN-2",
+                text: "L E   H A V R E",
               },
               {
-                font: "LUMIPLAN-2",
-                text: "P A R  L E S  N E I G E S",
+                font: "LUMIPLAN-A",
+                text: "MONT GAILLARD",
               },
             ],
           ],
@@ -936,12 +788,12 @@ const liaRoutes: Route[] = [
   {
     id: "LIA:09",
     name: "9",
-    colors: { background: "#BEBD00", text: "#000000" },
+    colors: { background: "#BEBD00", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Montivilliers Gare"],
-        name: "Gare",
-        city: "MONTIVILLIERS",
+        id: ["Mont Lecomte"],
+        name: "Mont Lecomte",
+        city: "LE HAVRE",
         girouette: {
           dimensions: {
             height: 24,
@@ -958,12 +810,12 @@ const liaRoutes: Route[] = [
           pages: [
             [
               {
-                font: "LUMIPLAN-A",
-                text: "MONTIVILLIERS  GARE",
+                font: "LUMIPLAN-2",
+                text: "L E   H A V R E",
               },
               {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                font: "LUMIPLAN-A",
+                text: "MONT LECOMTE",
               },
             ],
           ],
@@ -994,7 +846,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "PAR HARFLEUR/W. CHURCHILL",
+                text: "JE MONTE / JE VALIDE",
               },
             ],
           ],
@@ -1040,7 +892,6 @@ const liaRoutes: Route[] = [
       },
       {
         id: ["Grand Hameau"],
-        autoHide: true,
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -1070,47 +921,16 @@ const liaRoutes: Route[] = [
           ],
         },
       },
-      {
-        id: ["Octeville S/ Mer Littoral"],
-        name: "Littoral",
-        city: "OCTEVILLE-SUR-MER",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#95C11F",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            text: "10",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "OCTEVILLE S/ MER",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "L I T T O R A L",
-              },
-            ],
-          ],
-        },
-      },
     ],
   },
   {
     id: "LIA:11",
     name: "11",
-    colors: { background: "#E63312", text: "#FFFFFF" },
+    colors: { background: "#D9B6D7", text: "#000000" },
     destinations: [
       {
-        id: ["Montivilliers Gare"],
-        name: "Gare",
+        id: ["Montivilliers Ste Croix"],
+        name: "Cours Ste Croix",
         city: "MONTIVILLIERS",
         girouette: {
           dimensions: {
@@ -1120,16 +940,47 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#E63312",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
+            backgroundColor: "#D9B6D7",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "11",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "M O N T I V I L L I E R S",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "COURS STE-CROIX",
+              },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["Le Havre Gares"],
+        name: "Gares",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#D9B6D7",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
             text: "11",
           },
           pages: [
             [
               {
                 font: "LUMIPLAN-A",
-                text: "MONTIVILLIERS GARE",
+                text: "LE  HAVRE  GARES",
               },
               {
                 font: "LUMIPLAN-2",
@@ -1139,10 +990,17 @@ const liaRoutes: Route[] = [
           ],
         },
       },
+    ],
+  },
+  {
+    id: "LIA:11E",
+    name: "11E",
+    colors: { background: "#A01D15", text: "#FFFFFF" },
+    destinations: [
       {
-        id: ["Etainhus - St Romain"],
-        name: "Gare d'Étainhus - Saint-Romain",
-        city: "ÉTAINHUS",
+        id: ["Montivilliers Ste Croix"],
+        name: "Cours Ste Croix",
+        city: "MONTIVILLIERS",
         girouette: {
           dimensions: {
             height: 24,
@@ -1151,16 +1009,47 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#E63312",
+            backgroundColor: "#A01D15",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
-            text: "11",
+            text: "11E",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "M O N T I V I L L I E R S",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "COURS STE-CROIX",
+              },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["Le Havre Gares"],
+        name: "Gares",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#A01D15",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "11E",
           },
           pages: [
             [
               {
                 font: "LUMIPLAN-A",
-                text: "ETAINHUS ST-ROMAIN",
+                text: "LE  HAVRE  GARES",
               },
               {
                 font: "LUMIPLAN-2",
@@ -1202,17 +1091,16 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "P A R  H A R F L E U R",
+                text: "JE MONTE / JE VALIDE",
               },
             ],
           ],
         },
       },
       {
-        id: ["La Breque"],
-        autoHide: true,
-        name: "La Brèque",
-        city: "HARFLEUR",
+        id: ["Cité des Abbesses"],
+        name: "Cité des Abbesses",
+        city: "MONTIVILLIERS",
         girouette: {
           dimensions: {
             height: 24,
@@ -1230,73 +1118,11 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "H A R F L E U R",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "LA BREQUE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["St Romain de Colbosc"],
-        autoHide: true,
-        name: "Saint-Romain-de-Colbosc",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#FFE500",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            text: "12",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "ST-ROMAIN-DE-COLBOSC",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "ANDRE SIEGFRIED",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Etainhus - St Romain"],
-        name: "Gare d'Étainhus - Saint-Romain",
-        city: "ÉTAINHUS",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#FFE500",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            text: "12",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "ETAINHUS ST-ROMAIN",
+                text: "M O N T I V I L L I E R S",
               },
               {
                 font: "LUMIPLAN-2",
-                text: "P A R  H A R F L E U R",
+                text: "CITE DES ABBESSES",
               },
             ],
           ],
@@ -1310,39 +1136,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#FAC075", text: "#000000" },
     destinations: [
       {
-        id: ["Le Havre Gares"],
-        name: "Gares",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#FAC075",
-            textColor: "#000000",
-            outlineColor: "#FFFFFF",
-            text: "13",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "LE  HAVRE  GARES",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
         id: ["Grand Hameau"],
-        autoHide: true,
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -1373,7 +1167,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Etretat Gare"],
+        id: ["Etretat Gare", "Etretat"],
         name: "Gare",
         city: "ÉTRETAT",
         girouette: {
@@ -1411,9 +1205,9 @@ const liaRoutes: Route[] = [
     colors: { background: "#009640", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Montivilliers Gare"],
-        name: "Gare",
-        city: "MONTIVILLIERS",
+        id: ["Grand Hameau"],
+        name: "Grand Hameau",
+        city: "LE HAVRE",
         girouette: {
           dimensions: {
             height: 24,
@@ -1430,21 +1224,21 @@ const liaRoutes: Route[] = [
           pages: [
             [
               {
-                font: "LUMIPLAN-A",
-                text: "MONTIVILLIERS  GARE",
+                font: "LUMIPLAN-2",
+                text: "L E   H A V R E",
               },
               {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                font: "LUMIPLAN-A",
+                text: "GRAND HAMEAU",
               },
             ],
           ],
         },
       },
       {
-        id: ["Hopital J. Monod"],
-        name: "Hôpital Jacques Monod",
-        city: "MONTIVILLIERS",
+        id: ["Parc de l'Estuaire"],
+        name: "Parc de l'Estuaire",
+        city: "GONFREVILLE-L'ORCHER",
         girouette: {
           dimensions: {
             height: 24,
@@ -1462,11 +1256,11 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "M O N T I V I L L I E R S",
+                text: "GONFREVILLE-L'ORCHER",
               },
               {
                 font: "LUMIPLAN-A",
-                text: "HOPITAL J. MONOD",
+                text: "PARC ESTUAIRE",
               },
             ],
           ],
@@ -1479,47 +1273,6 @@ const liaRoutes: Route[] = [
     name: "15",
     colors: { background: "#DB679B", text: "#FFFFFF" },
     destinations: [
-      {
-        id: ["Z.I. Portuaire"],
-        name: "Total Raffinage",
-        city: "GONFREVILLE-L'ORCHER",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#DB679B",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "15",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "GONFREVILLE L'ORCHER",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "TOTAL RAFFINAGE",
-              },
-            ],
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "TOTAL RAFFINAGE",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "PAR HARFLEUR PL. D'ARMES",
-              },
-            ],
-          ],
-        },
-      },
       {
         id: ["Le Havre Gares"],
         name: "Gares",
@@ -1545,7 +1298,70 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "PAR HARFLEUR PL. D'ARMES",
+                text: "JE MONTE / JE VALIDE",
+              },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["Port 5555 - Parc Du Hode"],
+        name: "Port 5555 - Parc du Hode",
+        city: "SAINT-VIGOR-D'YMONVILLE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#DB679B",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "15",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "SAINT-VIGOR-D'YMONVILLE",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "PARC DU HODE",
+              },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["Port 5451 - PLPN"],
+        autoHide: true,
+        name: "Port 5451 - PLPN",
+        city: "ROGERVILLE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#DB679B",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "15",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "R O G E R V I L L E",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "P L P N",
               },
             ],
           ],
@@ -1560,7 +1376,7 @@ const liaRoutes: Route[] = [
     destinations: [
       {
         id: ["Mont Gaillard"],
-        name: "Mont-Gaillard",
+        name: "Mont Gaillard",
         city: "LE HAVRE",
         girouette: {
           dimensions: {
@@ -1583,15 +1399,15 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-A",
-                text: "MONT-GAILLARD",
+                text: "MONT GAILLARD",
               },
             ],
           ],
         },
       },
       {
-        id: ["Dollemard"],
-        name: "Dollemard",
+        id: ["Le Havre Gares"],
+        name: "Gares",
         city: "LE HAVRE",
         girouette: {
           dimensions: {
@@ -1609,12 +1425,12 @@ const liaRoutes: Route[] = [
           pages: [
             [
               {
-                font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
+                font: "LUMIPLAN-A",
+                text: "LE  HAVRE  GARES",
               },
               {
-                font: "LUMIPLAN-A",
-                text: "DOLLEMARD",
+                font: "LUMIPLAN-2",
+                text: "JE MONTE / JE VALIDE",
               },
             ],
           ],
@@ -1659,9 +1475,9 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Caucriauville"],
-        name: "Caucriauville",
-        city: "LE HAVRE",
+        id: ["Cité des Abbesses"],
+        name: "Cité des Abbesses",
+        city: "MONTIVILLIERS",
         girouette: {
           dimensions: {
             height: 24,
@@ -1679,11 +1495,11 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
+                text: "M O N T I V I L L I E R S",
               },
               {
                 font: "LUMIPLAN-A",
-                text: "CAUCRIAUVILLE",
+                text: "CITE DES ABBESSES",
               },
             ],
           ],
@@ -1696,37 +1512,6 @@ const liaRoutes: Route[] = [
     name: "18",
     colors: { background: "#56543C", text: "#FFFFFF" },
     destinations: [
-      {
-        id: ["Z.I. Portuaire"],
-        name: "Les Neiges",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#56543C",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "18",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "LES NEIGES",
-              },
-            ],
-          ],
-        },
-      },
       {
         id: ["Le Havre Gares"],
         name: "Gares",
@@ -1758,17 +1543,10 @@ const liaRoutes: Route[] = [
           ],
         },
       },
-    ],
-  },
-  {
-    id: "LIA:19",
-    name: "19",
-    colors: { background: "#82368C", text: "#FFFFFF" },
-    destinations: [
       {
         id: ["Z.I. Portuaire"],
-        name: "Renault Usine",
-        city: "SANDOUVILLE",
+        name: "Z.I. Portuaire",
+        city: "LE HAVRE",
         girouette: {
           dimensions: {
             height: 24,
@@ -1777,7 +1555,87 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#82368C",
+            backgroundColor: "#56543C",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "18",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "L E   H A V R E",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "Z.I. PORTUAIRE",
+              },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["Port 2000 - C.I.M."],
+        autoHide: true,
+        name: "Port 2000 - C.I.M.",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#56543C",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "18",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "L E   H A V R E",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "PORT 2000 - C.I.M.",
+              },
+            ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "PORT 2000 - C.I.M.",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "ACCES REGLEMENTE",
+              },
+            ],
+          ],
+        },
+      },
+    ],
+  },
+  {
+    id: "LIA:19",
+    name: "19",
+    colors: { background: "#E68800", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Mont Lecomte"],
+        name: "Mont Lecomte",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#E68800",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "19",
@@ -1786,11 +1644,11 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "SANDOUVILLE",
+                text: "L E   H A V R E",
               },
               {
                 font: "LUMIPLAN-A",
-                text: "RENAULT USINE",
+                text: "MONT LECOMTE",
               },
             ],
           ],
@@ -1808,7 +1666,7 @@ const liaRoutes: Route[] = [
           },
           routeNumber: {
             font: "DUHAMEL-24-22-2",
-            backgroundColor: "#82368C",
+            backgroundColor: "#E68800",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             text: "19",
@@ -1835,9 +1693,9 @@ const liaRoutes: Route[] = [
     colors: { background: "#4E55A1", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Montivilliers Gare"],
-        name: "Gare",
-        city: "MONTIVILLIERS",
+        id: ["Le Havre Gares"],
+        name: "Gares",
+        city: "LE HAVRE",
         girouette: {
           dimensions: {
             height: 24,
@@ -1855,11 +1713,11 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-A",
-                text: "MONTIVILLIERS GARE",
+                text: "LE  HAVRE  GARES",
               },
               {
                 font: "LUMIPLAN-2",
-                text: "PAR GONNEVILLE/CRIQUETOT",
+                text: "JE MONTE / JE VALIDE",
               },
             ],
           ],
@@ -1898,765 +1756,149 @@ const liaRoutes: Route[] = [
       },
     ],
   },
+  //- ARCHIVE 2024 - ANCIENNES LIGNES DU RÉSEAU
   {
-    id: "LIA:22",
-    name: "22",
+    id: "LIA:ARCHIVE-2024:01",
+    name: "1 (?-2024)",
+    colors: { background: "#009FE3", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:03",
+    name: "3 (?-2024)",
+    colors: { background: "#13A538", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:04",
+    name: "4 (?-2024)",
+    colors: { background: "#F7A823", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:05",
+    name: "5 (?-2024)",
+    colors: { background: "#E6007E", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:06",
+    name: "6 (?-2024)",
+    colors: { background: "#FFE500", text: "#000000" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:07",
+    name: "7 (?-2024)",
+    colors: { background: "#0069B4", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:08",
+    name: "8 (?-2024)",
+    colors: { background: "#E67900", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:09",
+    name: "9 (?-2024)",
+    colors: { background: "#BEBD00", text: "#000000" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:11",
+    name: "11 (?-2024)",
+    colors: { background: "#E63312", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:19",
+    name: "19 (?-2024)",
+    colors: { background: "#82368C", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "LIA:ARCHIVE-2024:22",
+    name: "22 (?-2024)",
     colors: { background: "#104C77", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Parc Estuaire"],
-        name: "Parc de l'Estuaire",
-        city: "GONFREVILLE-L'ORCHER",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#104C77",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "22",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "GONFREVILLE-L'ORCHER",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "PARC ESTUAIRE",
-              },
-            ],
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "PARC ESTUAIRE",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "PAR ST. OCEANE / HARFLEUR",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Le Havre Gares"],
-        name: "Gares",
-        city: "LE HAVRE",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#104C77",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "22",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "LE  HAVRE  GARES",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "PAR DEMIDOFF / UNIVERSITE",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:30",
+    id: "LIA:ARCHIVE-2024:30",
     noCartridge: true,
-    name: "30",
+    name: "30 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Funiculaire / C.Monet / St Jo.", "Funiculaire / C. Monet / St Jo."],
-        autoHide: true,
-        name: "Lycée Claude Monet / Institution Saint-Joseph",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "30",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "INSTITUT. ST-JOSEPH",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:31",
+    id: "LIA:ARCHIVE-2024:31",
     noCartridge: true,
-    name: "31",
+    name: "31 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Funiculaire / C.Monet / St Jo."],
-        autoHide: true,
-        name: "Lycée Claude Monet / Institution Saint-Joseph",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "31",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "INSTITUT. ST-JOSEPH",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Bigne a Fosse"],
-        autoHide: true,
-        name: "Bigne à Fosse",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "31",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "BIGNE A FOSSE",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:40",
+    id: "LIA:ARCHIVE-2024:40",
     noCartridge: true,
-    name: "40",
+    name: "40 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["J. d'Arc"],
-        autoHide: true,
-        name: "Lycée Jeanne d'Arc",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "40",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "S A I N T E - A D R E S S E",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "LYCEE JEANNE D'ARC",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:41",
+    id: "LIA:ARCHIVE-2024:41",
     noCartridge: true,
-    name: "41",
+    name: "41 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Ignauval"],
-        autoHide: true,
-        name: "Ignauval",
-        city: "SAINTE-ADRESSE",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "41",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "S A I N T E - A D R E S S E",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "I G N A U V A L",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["J. d'Arc"],
-        autoHide: true,
-        name: "Lycée Jeanne d'Arc",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "41",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "SAINTE-ADRESSE",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "LYCEE JEANNE D'ARC",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:50",
+    id: "LIA:ARCHIVE-2024:50",
     noCartridge: true,
-    name: "50",
+    name: "50 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Schuman"],
-        autoHide: true,
-        name: "Lycée Schuman",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "50",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "LYCEE SCHUMAN",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:60",
+    id: "LIA:ARCHIVE-2024:60",
     noCartridge: true,
-    name: "60",
+    name: "60 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["La Breque"],
-        autoHide: true,
-        name: "La Brèque",
-        city: "HARFLEUR",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "60",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "H A R F L E U R",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "LA BREQUE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["J. Prevost"],
-        autoHide: true,
-        name: "Lycée Jean Prévost",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "60",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "LYCEE J. PREVOST",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:70",
+    id: "LIA:ARCHIVE-2024:70",
     noCartridge: true,
-    name: "70",
+    name: "70 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["G. Courbet"],
-        autoHide: true,
-        name: "Collège G. Courbet",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "70",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "COLLEGE G. COURBET",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Pissotiere à Madame"],
-        autoHide: true,
-        name: "Pissotiere à Madame",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "70",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "PISSOTIERE A MADAME",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:71",
+    id: "LIA:ARCHIVE-2024:71",
     noCartridge: true,
-    name: "71",
+    name: "71 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["G. Courbet"],
-        autoHide: true,
-        name: "Collège G. Courbet",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "71",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "COLLEGE G. COURBET",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["F. Engels"],
-        autoHide: true,
-        name: "F. Engels",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "71",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "F. ENGELS",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:80",
+    id: "LIA:ARCHIVE-2024:80",
     noCartridge: true,
-    name: "80",
+    name: "80 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["College J. Monod"],
-        autoHide: true,
-        name: "Collège Jacques Monod",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "80",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "COLLEGE J. MONOD",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["A.Cazavan"],
-        autoHide: true,
-        name: "A. Cazavan",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "80",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "A. CAZAVAN",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:90",
+    id: "LIA:ARCHIVE-2024:90",
     noCartridge: true,
-    name: "90",
+    name: "90 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["P. Doumer / E.S.A.T."],
-        autoHide: true,
-        name: "E.S.A.T.",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "90",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "P. DOUMER / E.S.A.T.",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Graville"],
-        autoHide: true,
-        name: "Graville",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "90",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "L E   H A V R E",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "G R A V I L L E",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
-    id: "LIA:91",
+    id: "LIA:ARCHIVE-2024:91",
     noCartridge: true,
-    name: "91",
+    name: "91 (?-2024)",
     colors: { background: "#706F6F", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Montivilliers C.F.A."],
-        autoHide: true,
-        name: "C.F.A.",
-        city: "MONTIVILLIERS",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "91",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "MONTIVILLIERS C.F.A.",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Montivilliers Gare"],
-        autoHide: true,
-        name: "Gare",
-        city: "MONTIVILLIERS",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#706F6F",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "91",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-A",
-                text: "MONTIVILLIERS GARE",
-              },
-              {
-                font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
-              },
-            ],
-          ],
-        },
-      },
-    ],
+    destinations: [],
   },
 ];
 
