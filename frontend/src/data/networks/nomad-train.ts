@@ -24,6 +24,21 @@ const nomadCar: Route[] = [
         },
       },
       {
+        id: ["Yvetot"],
+        name: "Yvetot",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#64005E",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "K1+",
+          },
+          pages: [{ font: "1508SUPX", text: "YVETOT" }],
+        },
+      },
+      {
         id: ["Le Havre"],
         name: "Le Havre",
         girouette: {
