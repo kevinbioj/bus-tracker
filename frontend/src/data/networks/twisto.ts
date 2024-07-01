@@ -365,7 +365,7 @@ const twistoRoutes: Route[] = [
   },
   {
     id: "TWISTO:6A",
-    name: "6A",
+    name: "6a",
     colors: { background: "#fcdd19", text: "#000000" },
     destinations: [
       {
@@ -381,11 +381,21 @@ const twistoRoutes: Route[] = [
   },
   {
     id: "TWISTO:6B",
-    name: "6B",
+    name: "6b",
     colors: { background: "#fcdd19", text: "#000000" },
     destinations: [
       {
+        id: ["Colombelles Colombelles Ecole"],
+        name: "École",
+        city: "COLOMBELLES",
+        girouette: {
+          routeNumber: { backgroundColor: "#fcdd19", textColor: "#000000", text: "6b" },
+          pages: [{ font: "1510N2E1", spacing: 1,text: "COLOMBELLES ECOLE" }],
+        },
+      },
+      {
         id: ["Hérouville-Saint-Clair Saint-Clair"],
+        autoHide: true,
         name: "Saint-Clair",
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
@@ -444,14 +454,23 @@ const twistoRoutes: Route[] = [
         },
       },
       {
-        id: ["Caen CHU"],
-        name: "CHU",
-        city: "CAEN",
+        id: ["Hérouville-Saint-Clair Sphère"],
+        name: "Sphère",
+        city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#00804b", textColor: "#ffffff", outlineColor: "#000000", text: "8" },
-          pages: [{ text: "CAEN CHU" }],
+          pages: [{ font: '1508C2E1', spacing: 3, text: "HEROUVILLE SPHERE" }],
         },
       },
+      // {
+      //   id: ["Caen CHU"],
+      //   name: "CHU",
+      //   city: "CAEN",
+      //   girouette: {
+      //     routeNumber: { backgroundColor: "#00804b", textColor: "#ffffff", outlineColor: "#000000", text: "8" },
+      //     pages: [{ text: "CAEN CHU" }],
+      //   },
+      // },
     ],
   },
   {
