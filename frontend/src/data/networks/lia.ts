@@ -245,7 +245,7 @@ const liaRoutes: Route[] = [
       {
         id: ["Parc Estuaire"],
         name: "Parc de l'Estuaire",
-        city: "HARFLEUR",
+        city: "GONFREVILLE-L'ORCHER",
         girouette: {
           dimensions: {
             height: 24,
