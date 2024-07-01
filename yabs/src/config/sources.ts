@@ -15,7 +15,7 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'STAR',
       routePrefix: 'STAR',
-      staticResourceHref: 'https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_1_20240625_20240707_20240625094410.zip',
+      staticResourceHref: 'https://gtfs.bus-tracker.fr/star.zip',
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-trip-update',
       vehiclePositionHref:
         'https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-vehicle-position',
