@@ -789,6 +789,38 @@ const liaRoutes: Route[] = [
         },
       },
       {
+        id: ["Graville"],
+        autoHide: true,
+        name: "Graville",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#BEBD00",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "9",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "L E   H A V R E",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "G R A V I L L E",
+              },
+            ],
+          ],
+        },
+      },
+      {
         id: ["Le Havre Gares"],
         name: "Gares",
         city: "LE HAVRE",
@@ -1436,6 +1468,38 @@ const liaRoutes: Route[] = [
               {
                 font: "LUMIPLAN-A",
                 text: "PARC ESTUAIRE",
+              },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["Pre Fleuri"],
+        autoHide: true,
+        name: "Pré Fleuri",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#83D0F5",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            text: "17",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "L E   H A V R E",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "PRE FLEURI",
               },
             ],
           ],
