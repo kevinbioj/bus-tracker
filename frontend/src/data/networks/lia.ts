@@ -200,6 +200,16 @@ const liaRoutes: Route[] = [
                 text: "CITE DES ABBESSES",
               },
             ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "CITE DES ABBESSES",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR  LE  HAVRE  CENTRE",
+              },
+            ],
           ],
         },
       },
@@ -270,6 +280,16 @@ const liaRoutes: Route[] = [
                 text: "PARC ESTUAIRE",
               },
             ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "PARC ESTUAIRE",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR HARFLEUR PL. D'ARMES",
+              },
+            ],
           ],
         },
       },
@@ -299,6 +319,16 @@ const liaRoutes: Route[] = [
               {
                 font: "LUMIPLAN-A",
                 text: "G R A N D  Q U A I",
+              },
+            ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "G R A N D  Q U A I",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR HARFLEUR PL. D'ARMES",
               },
             ],
           ],
@@ -684,6 +714,16 @@ const liaRoutes: Route[] = [
                 text: "HOTEL DE VILLE",
               },
             ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "HOTEL DE VILLE",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR BOIS DE BLEVILLE",
+              },
+            ],
           ],
         },
       },
@@ -713,6 +753,16 @@ const liaRoutes: Route[] = [
               {
                 font: "LUMIPLAN-A",
                 text: "MONT GAILLARD",
+              },
+            ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "MONT GAILLARD",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR BOIS DE BLEVILLE",
               },
             ],
           ],
@@ -751,6 +801,16 @@ const liaRoutes: Route[] = [
               {
                 font: "LUMIPLAN-A",
                 text: "MONT LECOMTE",
+              },
+            ],
+            [
+              {
+                font: "LUMIPLAN-A",
+                text: "MONT LECOMTE",
+              },
+              {
+                font: "LUMIPLAN-2",
+                text: "PAR LES NEIGES / GRAVILLE",
               },
             ],
           ],
@@ -813,7 +873,7 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-2",
-                text: "JE MONTE / JE VALIDE",
+                text: "PAR LES NEIGES / GRAVILLE",
               },
             ],
           ],
