@@ -173,7 +173,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#009EE3", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Cité des Abbesses", "Montivilliers Gare"],
+        id: ["CITE DES ABBESSES"],
         name: "Cité des Abbesses",
         city: "MONTIVILLIERS",
         girouette: {
@@ -204,7 +204,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Ste-Adresse La Heve"],
+        id: ["STE ADRESSE LA HEVE"],
         name: "La Hève",
         city: "SAINTE-ADRESSE",
         girouette: {
@@ -243,7 +243,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#E30613", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Parc Estuaire"],
+        id: ["PARC ESTUAIRE"],
         name: "Parc de l'Estuaire",
         city: "GONFREVILLE-L'ORCHER",
         girouette: {
@@ -274,39 +274,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Place d'Armes"],
-        autoHide: true,
-        name: "Place d'Armes",
-        city: "HARFLEUR",
-        girouette: {
-          dimensions: {
-            height: 24,
-            rnWidth: 40,
-            destinationWidth: 140,
-          },
-          routeNumber: {
-            font: "DUHAMEL-24-22-2",
-            backgroundColor: "#E30613",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "C2",
-          },
-          pages: [
-            [
-              {
-                font: "LUMIPLAN-2",
-                text: "H A R F L E U R",
-              },
-              {
-                font: "LUMIPLAN-A",
-                text: "PLACE D'ARMES",
-              },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Grand Quai"],
+        id: ["GRAND  QUAI"],
         name: "Grand Quai",
         city: "LE HAVRE",
         girouette: {
@@ -344,7 +312,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#3FA435", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Grand Hameau"],
+        id: ["GRAND HAMEAU"],
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -375,7 +343,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Graville"],
+        id: ["GRAVILLE"],
         name: "Graville",
         city: "LE HAVRE",
         girouette: {
@@ -413,7 +381,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#F7A823", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Grand Hameau"],
+        id: ["GRAND HAMEAU"],
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -444,7 +412,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -482,7 +450,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#E5007D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Place d'Armes"],
+        id: ["PLACE D'ARMES"],
         name: "Place d'Armes",
         city: "HARFLEUR",
         girouette: {
@@ -513,7 +481,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Dollemard"],
+        id: ["DOLLEMARD"],
         name: "Dollemard",
         city: "LE HAVRE",
         girouette: {
@@ -551,7 +519,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#FFE500", text: "#000000" },
     destinations: [
       {
-        id: ["Hôtel de Ville"],
+        id: ["HOTEL  DE  VILLE"],
         name: "Hôtel de Ville",
         city: "LE HAVRE",
         girouette: {
@@ -582,7 +550,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Mont Gaillard"],
+        id: ["MONT  GAILLARD"],
         name: "Mont Gaillard",
         city: "LE HAVRE",
         girouette: {
@@ -620,7 +588,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#0072BC", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Hôtel de Ville"],
+        id: ["HOTEL  DE  VILLE"],
         name: "Hôtel de Ville",
         city: "LE HAVRE",
         girouette: {
@@ -651,7 +619,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Caucriauville"],
+        id: ["CAUCRIAUVILLE"],
         name: "Caucriauville",
         city: "LE HAVRE",
         girouette: {
@@ -689,7 +657,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#E67900", text: "#000000" },
     destinations: [
       {
-        id: ["Hôtel de Ville"],
+        id: ["HOTEL  DE  VILLE"],
         name: "Hôtel de Ville",
         city: "LE HAVRE",
         girouette: {
@@ -720,7 +688,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Mont Gaillard"],
+        id: ["MONT  GAILLARD"],
         name: "Mont Gaillard",
         city: "LE HAVRE",
         girouette: {
@@ -758,7 +726,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#BEBD00", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mont Lecomte"],
+        id: ["MONT  LECOMTE"],
         name: "Mont Lecomte",
         city: "LE HAVRE",
         girouette: {
@@ -789,7 +757,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Graville"],
+        id: ["GRAVILLE"],
         autoHide: true,
         name: "Graville",
         city: "LE HAVRE",
@@ -821,7 +789,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -859,7 +827,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#95C11F", text: "#000000" },
     destinations: [
       {
-        id: ["Parc de l'Estuaire"],
+        id: ["PARC ESTUAIRE"],
         name: "Parc de l'Estuaire",
         city: "GONFREVILLE-L'ORCHER",
         girouette: {
@@ -890,7 +858,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Grand Hameau"],
+        id: ["GRAND HAMEAU"],
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -928,8 +896,8 @@ const liaRoutes: Route[] = [
     colors: { background: "#D9B6D7", text: "#000000" },
     destinations: [
       {
-        id: ["Montivilliers Ste Croix"],
-        name: "Cours Ste Croix",
+        id: ["COURS STE-CROIX"],
+        name: "Cours Sainte-Croix",
         city: "MONTIVILLIERS",
         girouette: {
           dimensions: {
@@ -959,7 +927,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -997,8 +965,8 @@ const liaRoutes: Route[] = [
     colors: { background: "#A01D15", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Montivilliers Ste Croix"],
-        name: "Cours Ste Croix",
+        id: ["COURS STE-CROIX"],
+        name: "Cours Sainte-Croix",
         city: "MONTIVILLIERS",
         girouette: {
           dimensions: {
@@ -1028,7 +996,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -1066,7 +1034,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#FFE500", text: "#000000" },
     destinations: [
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -1097,7 +1065,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Cité des Abbesses"],
+        id: ["CITE DES ABBESSES"],
         name: "Cité des Abbesses",
         city: "MONTIVILLIERS",
         girouette: {
@@ -1135,7 +1103,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#FAC075", text: "#000000" },
     destinations: [
       {
-        id: ["Grand Hameau"],
+        id: ["GRAND HAMEAU"],
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -1166,8 +1134,8 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Etretat Gare", "Etretat"],
-        name: "Gare",
+        id: ["ETRETAT LE GRANDVAL"],
+        name: "Le Grandval",
         city: "ÉTRETAT",
         girouette: {
           dimensions: {
@@ -1186,7 +1154,7 @@ const liaRoutes: Route[] = [
             [
               {
                 font: "LUMIPLAN-A",
-                text: "ETRETAT  GARE",
+                text: "ETRETAT LE GRANDVAL",
               },
               {
                 font: "LUMIPLAN-2",
@@ -1204,7 +1172,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#009640", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Grand Hameau"],
+        id: ["GRAND HAMEAU"],
         name: "Grand Hameau",
         city: "LE HAVRE",
         girouette: {
@@ -1235,7 +1203,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Parc de l'Estuaire"],
+        id: ["PARC ESTUAIRE"],
         name: "Parc de l'Estuaire",
         city: "GONFREVILLE-L'ORCHER",
         girouette: {
@@ -1273,7 +1241,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#DB679B", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -1374,7 +1342,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#5B358C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mont Gaillard"],
+        id: ["MONT  GAILLARD"],
         name: "Mont Gaillard",
         city: "LE HAVRE",
         girouette: {
@@ -1405,7 +1373,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -1443,7 +1411,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#83D0F5", text: "#000000" },
     destinations: [
       {
-        id: ["Parc Estuaire"],
+        id: ["PARC ESTUAIRE"],
         name: "Parc de l'Estuaire",
         city: "GONFREVILLE-L'ORCHER",
         girouette: {
@@ -1474,7 +1442,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Pre Fleuri"],
+        id: ["PRE FLEURI"],
         autoHide: true,
         name: "Pré Fleuri",
         city: "LE HAVRE",
@@ -1506,7 +1474,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Cité des Abbesses"],
+        id: ["CITE DES ABBESSES"],
         name: "Cité des Abbesses",
         city: "MONTIVILLIERS",
         girouette: {
@@ -1544,7 +1512,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#56543C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -1575,7 +1543,7 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Z.I. Portuaire"],
+        id: ["Port 1704 - Terminal Roulier"],
         name: "Z.I. Portuaire",
         city: "LE HAVRE",
         girouette: {
@@ -1599,14 +1567,14 @@ const liaRoutes: Route[] = [
               },
               {
                 font: "LUMIPLAN-A",
-                text: "Z.I. PORTUAIRE",
+                text: "PORT 1704 - ROULIER",
               },
             ],
           ],
         },
       },
       {
-        id: ["Port 2000 - C.I.M."],
+        id: ["Port 2000 - CIM"],
         autoHide: true,
         name: "Port 2000 - C.I.M.",
         city: "LE HAVRE",
@@ -1655,7 +1623,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#E68800", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mont Lecomte"],
+        id: ["MONT  LECOMTE"],
         name: "Mont Lecomte",
         city: "LE HAVRE",
         girouette: {
@@ -1686,7 +1654,39 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Le Havre Gares"],
+        id: ["GRAVILLE"],
+        autoHide: true,
+        name: "Graville",
+        city: "LE HAVRE",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#E68800",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "19",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "L E   H A V R E",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "G R A V I L L E",
+              },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -1724,7 +1724,7 @@ const liaRoutes: Route[] = [
     colors: { background: "#4E55A1", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Le Havre Gares"],
+        id: ["LE HAVRE GARES"],
         name: "Gares",
         city: "LE HAVRE",
         girouette: {
@@ -1755,8 +1755,8 @@ const liaRoutes: Route[] = [
         },
       },
       {
-        id: ["Etretat Grandval"],
-        name: "Grandval",
+        id: ["ETRETAT LE GRANDVAL"],
+        name: "Le Grandval",
         city: "ÉTRETAT",
         girouette: {
           dimensions: {
