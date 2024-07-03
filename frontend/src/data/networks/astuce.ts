@@ -442,7 +442,7 @@ const astuceRoutes: Route[] = [
             text: "F1",
           },
           pages: [
-            { spacing: 3, text: "BOULINGRIN" },
+            { spacing: 5, text: "BOULINGRIN" },
             { spacing: 3, text: "ROUEN" },
           ],
         },
@@ -460,7 +460,7 @@ const astuceRoutes: Route[] = [
           },
           pages: [
             { font: "1510N2E1-TCAR", spacing: 1, text: "PLAINE DE LA RONCE" },
-            { spacing: 4, text: "ISNEAUVILLE" },
+            { spacing: 5, text: "ISNEAUVILLE" },
           ],
         },
       },
@@ -626,7 +626,7 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Boulingrin ROUEN", "Boulingrin"],
-        name: "Boulingrin (terminus provisoire)",
+        name: "Boulingrin",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#AFCA0B", outlineColor: "#FFFFFF", textColor: "#000000", text: "F5" },
@@ -634,7 +634,6 @@ const astuceRoutes: Route[] = [
           pages: [
             { spacing: 5, text: "BOULINGRIN" },
             { spacing: 5, text: "ROUEN" },
-            { font: "1508C2E1", text: "TERMINUS PROVISOIRE" },
           ],
           // pages: [
           //   { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
@@ -694,7 +693,7 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             text: "F6",
           },
-          pages: [{ text: "GARE" }, { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
+          pages: [{ spacing: 5, text: "GARE" }, { font: "1310C2E1", spacing: 1, text: "SAINT-ETIENNE-DU-ROUVRAY" }],
         },
       },
     ],
@@ -899,7 +898,7 @@ const astuceRoutes: Route[] = [
             outlineColor: "#000000",
             text: "11",
           },
-          pages: [{ text: "ILE LACROIX" }, { spacing: 5, text: "ROUEN" }],
+          pages: [{ spacing: 3, text: "ILE LACROIX" }, { spacing: 5, text: "ROUEN" }],
         },
       },
       {
@@ -929,7 +928,7 @@ const astuceRoutes: Route[] = [
     destinations: [
       {
         id: ["Martainville ROUEN", "Martainville"],
-        name: "Boulingrin (terminus provisoire)",
+        name: "Boulingrin",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#F8AE4C", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
@@ -937,7 +936,6 @@ const astuceRoutes: Route[] = [
           pages: [
             { spacing: 5, text: "BOULINGRIN" },
             { spacing: 5, text: "ROUEN" },
-            { font: "1508C2E1", text: "TERMINUS PROVISOIRE" },
           ],
           // pages: [{ text: "MARTAINVILLE" }, { spacing: 5, text: "ROUEN" }],
         },
@@ -1001,7 +999,7 @@ const astuceRoutes: Route[] = [
         city: "AMFREVILLE-LA-MIVOIE",
         girouette: {
           routeNumber: { backgroundColor: "#74B95B", textColor: "#000000", outlineColor: "#FFFFFF", text: "15" },
-          pages: [{ text: "GRAND VAL" }, { font: "1508C2E1", text: "AMFREVILLE-LA-MIVOIE" }],
+          pages: [{ spacing: 4, text: "GRAND VAL" }, { font: "1508C2E1", text: "AMFREVILLE-LA-MIVOIE" }],
         },
       },
       {
@@ -1035,7 +1033,7 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#74B95B", textColor: "#000000", outlineColor: "#FFFFFF", text: "15" },
           pages: [
-            { spacing: 5, text: "JULES VERNE" },
+            { spacing: 4, text: "JULES VERNE" },
             { font: "1510N2E1-TCAR", spacing: 1, text: "DEVILLE-LES-ROUEN" },
           ],
         },
@@ -1108,8 +1106,8 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#C29FCB", textColor: "#000000", outlineColor: "#FFFFFF", text: "20" },
           pages: [
-            { spacing: 5, text: "LE CHAPITRE" },
-            { spacing: 5, text: "BIHOREL" },
+            { spacing: 4, text: "LE CHAPITRE" },
+            { spacing: 4, text: "BIHOREL" },
           ],
         },
       },
