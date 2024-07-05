@@ -114,6 +114,31 @@ const astuceRoutes: Route[] = [
         },
       },
       {
+        id: ["Place du 8-Mai PETIT QUEVILLY"],
+        autoHide: true,
+        name: "Place du 8-Mai",
+        city: "PETIT-QUEVILLY",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
+          pages: [{ font: '1510N2E1', text: "PLACE DU 8-MAI" }, { text: "PETIT-QUEVILLY" }],
+        },
+      },
+      {
+        id: ["Georges Braque GRAND QUEVILLY"],
+        autoHide: true,
+        name: "Georges Braque",
+        city: "GRAND-QUEVILLY",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFED00", outlineColor: "#000000", text: "N" },
+          pages: [
+            { font: '1510N2E1', text: "GEORGES BRAQUE" },
+            { font: "1510N2E1", text: "GRAND-QUEVILLY" },
+          ],
+        },
+      },
+      {
         id: ["Hôtel de Ville SOTTEVILLE-LÈS-ROUEN"],
         autoHide: true,
         alternate: "Hôtel de Ville de Sotteville",
@@ -176,6 +201,21 @@ const astuceRoutes: Route[] = [
         },
       },
       {
+        id: ["Place du 8-Mai PETIT QUEVILLY"],
+        autoHide: true,
+        name: "Place du 8-Mai",
+        city: "PETIT-QUEVILLY",
+        girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
+          routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
+          pages: [
+            { font: "14LUPLAN", spacing: 1, text: "PLACE DU 8-MAI" },
+            { font: "14LUPLAN", spacing: 1, text: "PETIT-QUEVILLY" },
+          ],
+          width: 300,
+        },
+      },
+      {
         id: ["Georges Braque GRAND QUEVILLY"],
         name: "Georges Braque",
         city: "GRAND-QUEVILLY",
@@ -227,7 +267,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#E63027", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mont aux Malades MONT-SAINT-AIGNAN"],
+        id: ["Mont aux Malades MONT-SAINT-AIGNAN", "Mont aux Malades"],
         name: "Mont aux Malades",
         city: "MONT-SAINT-AIGNAN",
         girouette: {
@@ -268,7 +308,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#008F5B", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Tamarelle BIHOREL"],
+        id: ["Tamarelle BIHOREL", "Tamarelle"],
         name: "Tamarelle",
         city: "BIHOREL",
         girouette: {
@@ -285,7 +325,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Mairie - V. Schoelcher N.-D.-DE-BONDEVILLE"],
+        id: ["Mairie - V. Schoelcher N.-D.-DE-BONDEVILLE", "Mairie - V. Schoelcher"],
         name: "Victor Schoelcher",
         city: "NOTRE-DAME-DE-BONDEVILLE",
         girouette: {
@@ -309,7 +349,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#6D1C74", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Durécu-Lavoisier DARNÉTAL"],
+        id: ["Durécu-Lavoisier DARNÉTAL", "Durécu-Lavoisier"],
         name: "Durécu-Lavoisier",
         city: "DARNÉTAL",
         girouette: {
@@ -326,7 +366,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Monet CANTELEU"],
+        id: ["Monet CANTELEU", "Monet"],
         name: "Monet",
         city: "CANTELEU",
         girouette: {
@@ -350,7 +390,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#F5C500", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Zénith-Parc Expo GRAND QUEVILLY"],
+        id: ["Zénith-Parc Expo GRAND QUEVILLY", "Zénith - Parc Expo"],
         name: "Zénith - Parc Expo",
         city: "GRAND-QUEVILLY",
         girouette: {
@@ -362,7 +402,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Marie Curie - MTC ROUEN"],
+        id: ["Marie Curie - MTC ROUEN", "Marie Curie - MTC"],
         name: "Marie Curie - MTC",
         city: "ROUEN",
         girouette: {
@@ -398,7 +438,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#E6007E", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Stade Diochon PETIT-QUEVILLY", "Stade Diochon"],
+        id: ["Stade Diochon PETIT-QUEVILLY"],
         name: "Stade Diochon",
         city: "PETIT-QUEVILLY",
         girouette: {
@@ -413,7 +453,6 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Champlain ROUEN"],
-        autoHide: true,
         name: "Champlain",
         city: "ROUEN",
         girouette: {
@@ -431,7 +470,6 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Boulingrin ROUE N"],
-        autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
@@ -448,7 +486,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Plaine de la Ronce ISNEAUVILLE", "Plaine de la Ronce"],
+        id: ["Plaine de la Ronce ISNEAUVILLE"],
         name: "Plaine de la Ronce",
         city: "ISNEAUVILLE",
         girouette: {
@@ -472,7 +510,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#A2559D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Tamarelle BIHOREL", "Tamarelle"],
+        id: ["Tamarelle BIHOREL"],
         name: "Tamarelle",
         city: "BIHOREL",
         girouette: {
@@ -505,7 +543,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["La Vatine MONT-SAINT-AIGNAN", "La Vatine - Centre Commercial"],
+        id: ["La Vatine MONT-SAINT-AIGNAN"],
         name: "La Vatine - C.Cial",
         city: "MONT-SAINT-AIGNAN",
         girouette: {
@@ -577,7 +615,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#EC6408", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mont-Riboudet ROUEN", "Mont-Riboudet"],
+        id: ["Mont-Riboudet ROUEN"],
         name: "Mont-Riboudet - Kindarena",
         city: "ROUEN",
         girouette: {
@@ -625,20 +663,15 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Boulingrin ROUEN", "Boulingrin"],
+        id: ["Boulingrin ROUEN"],
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#AFCA0B", outlineColor: "#FFFFFF", textColor: "#000000", text: "F5" },
-          // À REMETTRE COMME C'ÉTAIT LORSQUE LA DÉVIATION SERA KO
           pages: [
             { spacing: 5, text: "BOULINGRIN" },
             { spacing: 5, text: "ROUEN" },
           ],
-          // pages: [
-          //   { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
-          //   { spacing: 5, text: "ROUEN" },
-          // ],
         },
       },
     ],
@@ -704,7 +737,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#008F5B", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Hôtel de Ville SOTTEVILLE-LÈS-ROUEN", "Hôtel de Ville de Sotteville"],
+        id: ["Hôtel de Ville SOTTEVILLE-LÈS-ROUEN"],
         alternate: "Hôtel de Ville de Sotteville",
         name: "Hôtel de Ville",
         city: "SOTTEVILLE-LÈS-ROUEN",
@@ -721,7 +754,6 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Champlain ROUEN"],
-        autoHide: true,
         name: "Champlain",
         city: "ROUEN",
         girouette: {
@@ -740,7 +772,6 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Boulingrin ROUEN"],
-        autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
@@ -758,7 +789,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["La Pléiade MONT-SAINT-AIGNAN", "La Pléiade"],
+        id: ["La Pléiade MONT-SAINT-AIGNAN"],
         name: "La Pléiade",
         city: "MONT-SAINT-AIGNAN",
         girouette: {
@@ -838,6 +869,21 @@ const astuceRoutes: Route[] = [
           pages: [{ font: "1407SUPX", spacing: 1, text: "THEATRE DES ARTS - ROUEN" }],
         },
       },
+      // {
+      //   id: ["THEATRE DES ARTS"],
+      //   name: "Champlain",
+      //   city: "ROUEN",
+      //   girouette: {
+      //     routeNumber: {
+      //       backgroundColor: "#248BCB",
+      //       textColor: "#FFFFFF",
+      //       outlineColor: "#000000",
+      //       font: "1508SUPX",
+      //       text: "F9",
+      //     },
+      //     pages: [{ font: "1507SUPX", text: "CHAMPLAIN - ROUEN" }],
+      //   },
+      // },
       // { id: ["GAREROUT1"], alternate: "Gare Routière de Rouen", name: "Gare Routière", city: "ROUEN" },
       {
         id: ["CHAMP DE FOIRE"],
@@ -888,7 +934,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#00ACE5", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Ile Lacroix ROUEN", "Ile Lacroix"],
+        id: ["Ile Lacroix ROUEN"],
         name: "Ile Lacroix",
         city: "ROUEN",
         girouette: {
@@ -902,7 +948,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Collège L. de Vinci BOIS-GUILLAUME", "Collège L. de Vinci"],
+        id: ["Collège L. de Vinci BOIS-GUILLAUME"],
         name: "Collège Léonard de Vinci",
         city: "BOIS-GUILLAUME",
         girouette: {
@@ -994,7 +1040,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#74B95B", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Grand Val AMFREVILLE-LA-MIVOIE", "Grand Val"],
+        id: ["Grand Val AMFREVILLE-LA-MIVOIE"],
         name: "Grand Val",
         city: "AMFREVILLE-LA-MIVOIE",
         girouette: {
@@ -1003,7 +1049,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Hôtel de Ville ROUEN", "Hôtel de Ville"],
+        id: ["Hôtel de Ville ROUEN"],
         autoHide: true,
         alternate: "Hôtel de Ville de Rouen",
         name: "Hôtel de Ville",
@@ -1047,7 +1093,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#C29FCB", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Mairie SAINT-AUBIN-ÉPINAY", "Mairie de Saint-Aubin-Epinay"],
+        id: ["Mairie SAINT-AUBIN-ÉPINAY"],
         alternate: "Mairie de Saint-Aubin-Épinay",
         name: "Mairie",
         city: "SAINT-AUBIN-ÉPINAY",
@@ -1081,7 +1127,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Boulingrin ROUEN"],
+        id: ["Boulingrin ROUEN", "Boulingrin"],
         autoHide: true,
         name: "Boulingrin",
         city: "ROUEN",
@@ -1119,7 +1165,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#F4A3AF", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Barrières de Darnétal ROUEN", "Barrières de Darnétal"],
+        id: ["Barrières de Darnétal ROUEN"],
         name: "Barrières de Darnétal",
         city: "ROUEN",
         girouette: {
@@ -1131,7 +1177,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Parc de la Vatine MONT-SAINT-AIGNAN", "Parc de la Vatine"],
+        id: ["Parc de la Vatine MONT-SAINT-AIGNAN"],
         name: "Parc de la Vatine",
         city: "MONT-SAINT-AIGNAN",
         girouette: {
@@ -1203,7 +1249,6 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Champlain ROUEN"],
-        autoHide: true,
         name: "Champlain",
         city: "ROUEN",
         girouette: {
@@ -1214,18 +1259,18 @@ const astuceRoutes: Route[] = [
           ],
         },
       },
-      {
-        id: ["Théâtre des Arts ROUEN"],
-        name: "Théâtre des Arts",
-        city: "ROUEN",
-        girouette: {
-          routeNumber: { backgroundColor: "#74B95B", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
-          pages: [
-            { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
-            { spacing: 5, text: "ROUEN" },
-          ],
-        },
-      },
+      // {
+      //   id: ["Théâtre des Arts ROUEN"],
+      //   name: "Théâtre des Arts",
+      //   city: "ROUEN",
+      //   girouette: {
+      //     routeNumber: { backgroundColor: "#74B95B", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
+      //     pages: [
+      //       { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
+      //       { spacing: 5, text: "ROUEN" },
+      //     ],
+      //   },
+      // },
     ],
   },
   {
@@ -1535,7 +1580,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#9BD4E3", text: "#1D1D1B" },
     destinations: [
       {
-        id: ["Place du Vivier HOUPPEVILLE", "Place du Vivier"],
+        id: ["Place du Vivier HOUPPEVILLE"],
         name: "Place du Vivier",
         city: "HOUPPEVILLE",
         girouette: {
