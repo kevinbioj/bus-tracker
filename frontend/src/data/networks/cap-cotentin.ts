@@ -62,7 +62,7 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#EB5D4D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["11", "17", "19"],
+        id: ["11"],
         name: "Schuman-Delaville",
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
@@ -71,17 +71,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["15"],
-        autoHide: true,
-        name: "Amont Quentin",
-        city: "CHERBOURG-EN-COTENTIN",
-        girouette: {
-          routeNumber: { backgroundColor: "#EB5D4D", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: "AMONT QUENTIN" }],
-        },
-      },
-      {
-        id: ["10", "16"],
+        id: ["10"],
         name: "Les Fourches",
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
@@ -106,7 +96,7 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["21"],
+        id: ["20"],
         name: "Digard",
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
@@ -182,8 +172,9 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#F8DA41", text: "#000000" },
     destinations: [
       {
-        id: ["50"],
-        name: "Flamands",
+        id: ["58"],
+        autoHide: true,
+        name: "Collignon",
         city: "TOURLAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#F8DA41", textColor: "#000000", text: "5" },
@@ -191,13 +182,12 @@ const capCotentinRoutes: Route[] = [
         },
       },
       {
-        id: ["51"],
-        autoHide: true,
-        name: "Chantier–Arsenal",
-        city: "CHERBOURG-EN-COTENTIN",
+        id: ["50"],
+        name: "Flamands",
+        city: "TOURLAVILLE",
         girouette: {
           routeNumber: { backgroundColor: "#F8DA41", textColor: "#000000", text: "5" },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "CHANTIER-ARSENAL" }],
+          pages: [{ text: "FLAMANDS" }],
         },
       },
       {
@@ -278,16 +268,16 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#58529E", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["606"],
-        name: "Schuman-Delaville",
+        id: ["601"],
+        name: "Gare",
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#58529E", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
-          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "SCHUMAN-DELAVILLE" }]],
+          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "GARE" }]],
         },
       },
       {
-        id: ["603", "604"],
+        id: ["603"],
         name: "Orano",
         city: "LA HAGUE",
         girouette: {
@@ -313,12 +303,12 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#1EB8D1", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["615", "616"],
-        name: "Schuman-Delaville",
+        id: ["611", "612"],
+        name: "Gare",
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#1EB8D1", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
-          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "SCHUMAN-DELAVILLE" }]],
+          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "GARE" }]],
         },
       },
       {
@@ -348,12 +338,12 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#86B5E2", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["625"],
-        name: "Schuman-Delaville",
+        id: ["621"],
+        name: "Gare",
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#86B5E2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C" },
-          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "SCHUMAN-DELAVILLE" }]],
+          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "GARE" }]],
         },
       },
       {
@@ -395,12 +385,12 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#107974", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["633"],
-        name: "Schuman-Delaville",
+        id: ["631"],
+        name: "Gare",
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#107974", textColor: "#FFFFFF", outlineColor: "#000000", text: "D" },
-          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "SCHUMAN-DELAVILLE" }]],
+          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "GARE" }]],
         },
       },
       {
@@ -420,22 +410,21 @@ const capCotentinRoutes: Route[] = [
     colors: { background: "#47B7A2", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["643"],
-        name: "Schuman-Delaville",
+        id: ["641"],
+        name: "Gare",
         city: "CHERBOURG-EN-COTENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#47B7A2", textColor: "#FFFFFF", outlineColor: "#000000", text: "E" },
-          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "SCHUMAN-DELAVILLE" }]],
+          pages: [[{ text: "CHERBOURG-EN-COTENTIN" }, { text: "GARE" }]],
         },
       },
       {
-        id: ["644"],
-        alternate: "Collège de Bricquebec",
-        name: "Collège",
+        id: ["645"],
+        name: "Square Frémine",
         city: "BRICQUEBEC-EN-COTENTIN",
         girouette: {
           routeNumber: { backgroundColor: "#47B7A2", textColor: "#FFFFFF", outlineColor: "#000000", text: "E" },
-          pages: [[{ text: "BRICQUEBEC-EN-COTENTIN" }, { text: "COLLEGE" }]],
+          pages: [[{ text: "BRICQUEBEC-EN-COTENTIN" }, { text: "SQUARE FREMINE" }]],
         },
       },
     ],
