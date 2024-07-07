@@ -2412,6 +2412,43 @@ const nomadCar: Route[] = [
     ],
   },
   {
+    id: 'NOMAD:311',
+    routeIds: ["NOMAD:311", "NOMAD:ATOUMOD040:Line:1002032:LOC"],
+    noCartridge: true,
+    name: "311",
+    colors: { background: '#EF9EC1', text: '#000000' },
+    destinations: [
+      {
+        id: ["COUTANCES / GRANVILLAIS"],
+        name: "Granvillais",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#EF9EC1",
+            textColor: "#000000",
+            text: "311",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "GRANVILLAIS" }],
+        },
+      },
+      {
+        id: ["GRANVILLAIS / COUTANCES"],
+        name: "Coutances",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#EF9EC1",
+            textColor: "#000000",
+            text: "311",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "COUTANCES" }],
+        },
+      },
+    ]
+  },
+  {
     id: "NOMAD:401",
     routeIds: ["NOMAD:401", "NOMAD:ATOUMOD040:Line:1008217:LOC"],
     noCartridge: true,
