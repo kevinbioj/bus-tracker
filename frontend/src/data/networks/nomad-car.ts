@@ -2412,6 +2412,29 @@ const nomadCar: Route[] = [
     ],
   },
   {
+    id: 'NOMAD:310',
+    routeIds: ["NOMAD:310", "NOMAD:ATOUMOD040:Line:1002031:LOC"],
+    noCartridge: true,
+    name: "310",
+    colors: { background: '#8CC4D1', text: '#FFFFFF' },
+    destinations: [
+      {
+        id: ["COUTANCES / LES PLAGES"],
+        name: "Les Plages",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#8CC4D1",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "310",
+          },
+          pages: [{ font: "1508SUPX", text: "LES PLAGES" }],
+        },
+      },
+    ]
+  },
+  {
     id: 'NOMAD:311',
     routeIds: ["NOMAD:311", "NOMAD:ATOUMOD040:Line:1002032:LOC"],
     noCartridge: true,
