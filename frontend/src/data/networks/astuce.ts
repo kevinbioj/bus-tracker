@@ -854,24 +854,9 @@ const astuceRoutes: Route[] = [
     name: "F9",
     colors: { background: "#248BCB", text: "#FFFFFF" },
     destinations: [
-      {
-        id: ["THEATRE DES ARTS"],
-        name: "Théâtre des Arts",
-        city: "ROUEN",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#248BCB",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "F9",
-          },
-          pages: [{ font: "1407SUPX", spacing: 1, text: "THEATRE DES ARTS - ROUEN" }],
-        },
-      },
       // {
       //   id: ["THEATRE DES ARTS"],
-      //   name: "Champlain",
+      //   name: "Théâtre des Arts",
       //   city: "ROUEN",
       //   girouette: {
       //     routeNumber: {
@@ -881,9 +866,24 @@ const astuceRoutes: Route[] = [
       //       font: "1508SUPX",
       //       text: "F9",
       //     },
-      //     pages: [{ font: "1507SUPX", text: "CHAMPLAIN - ROUEN" }],
+      //     pages: [{ font: "1407SUPX", spacing: 1, text: "THEATRE DES ARTS - ROUEN" }],
       //   },
       // },
+      {
+        id: ["CHAMPLAIN"],
+        name: "Champlain",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#248BCB",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "F9",
+          },
+          pages: [{ font: "1508SUPX", text: "CHAMPLAIN - ROUEN" }, { font: "1507SUPX", text: "TERMINUS PROVISOIRE" }],
+        },
+      },
       // { id: ["GAREROUT1"], alternate: "Gare Routière de Rouen", name: "Gare Routière", city: "ROUEN" },
       {
         id: ["CHAMP DE FOIRE"],
