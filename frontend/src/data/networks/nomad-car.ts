@@ -1141,22 +1141,7 @@ const nomadCar: Route[] = [
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["ROUEN / VERNEUIL-SUR-AVRE"],
-        autoHide: true,
-        name: "Verneuil-sur-Avre",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#4A2999",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "216",
-          },
-          pages: [{ font: "1508SUPX", text: "VERNEUIL-SUR-AVRE" }],
-        },
-      },
-      {
-        id: ["ROUEN / ÉVREUX", "MONT-SAINT-AIGNAN / ÉVREUX", "VERNEUIL-SUR-AVRE / ÉVREUX", "ÉVREUX"],
+        id: ["Rouen > Évreux"],
         name: "Évreux",
         girouette: {
           routeNumber: {
@@ -1170,7 +1155,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["LOUVIERS / ROUEN", "ÉVREUX / ROUEN", "ROUEN"],
+        id: ["Évreux > Rouen"],
         name: "Rouen",
         girouette: {
           routeNumber: {
@@ -1184,7 +1169,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["ROUEN / MONT-SAINT-AIGNAN", "MONT-SAINT-AIGNAN"],
+        id: ["Rouen > Mont-Saint-Aignan"],
         autoHide: true,
         name: "Mont-Saint-Aignan",
         girouette: {
@@ -1840,7 +1825,7 @@ const nomadCar: Route[] = [
     colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["ROUEN / PONT-AUDEMER", "PONT-AUDEMER"],
+        id: ["Rouen > Pont-Audemer", "Rouen > Pont-Audemer (Express)"],
         name: "Pont-Audemer",
         girouette: {
           routeNumber: {
@@ -1854,22 +1839,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["PONT-AUDEMER / BOURG-ACHARD"],
-        autoHide: true,
-        name: "Bourg-Achard",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#BA941C",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "228",
-          },
-          pages: [{ font: "1508SUPX", text: "BOURG-ACHARD" }],
-        },
-      },
-      {
-        id: ["ROUTOT / ROUEN", "PONT-AUDEMER / ROUEN", "ROUEN"],
+        id: ["Pont-Audemer > Rouen", "Pont-Audemer > Rouen (Express)"],
         name: "Rouen",
         girouette: {
           routeNumber: {
@@ -3329,7 +3299,7 @@ const nomadCar: Route[] = [
     colors: { background: "#9E6A9A", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["SERQUEUX / DIEPPE", "FORGES-LES-E / DIEPPE", "DIEPPE"],
+        id: ["Forges-les-Eaux > Dieppe"],
         name: "Dieppe",
         girouette: {
           routeNumber: {
@@ -3343,22 +3313,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["GISORS / MESNIÈRES-EN-B"],
-        autoHide: true,
-        name: "Mesnières-en-Bray",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#9E6A9A",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "527",
-          },
-          pages: [{ font: "1508SUPX", text: "MESNIERES-EN-BRAY" }],
-        },
-      },
-      {
-        id: ["DIEPPE / SERQUEUX", "GISORS / SERQUEUX", "SERQUEUX"],
+        id: ["Dieppe > Serqueux", "Gisors > Serqueux"],
         name: "Serqueux",
         girouette: {
           routeNumber: {
@@ -3372,7 +3327,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["DIEPPE / FORGES-LES-E", "FORGES-LES-EAUX"],
+        id: ["Dieppe > Forges-les-Eaux"],
         autoHide: true,
         name: "Forges-les-Eaux",
         girouette: {
@@ -3387,7 +3342,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["MESNIÈRES-EN-B / GISORS", "SERQUEUX / GISORS", "GISORS"],
+        id: ["Serqueux > Gisors"],
         name: "Gisors",
         girouette: {
           routeNumber: {
