@@ -286,7 +286,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad-geo3d.zip',
       tripUpdateHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://lrn.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
-      allowScheduled: (trip) => trip.service.id !== 'RT_ONLY',
+      allowScheduled: (trip) => trip.service.id !== 'SERVICE',
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
       mapTripUpdateEntities: (entities) => {
