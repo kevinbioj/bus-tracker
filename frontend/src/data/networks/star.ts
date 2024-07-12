@@ -231,26 +231,6 @@ const starRoutes: Route[] = [
         },
       },
       {
-        id: ["Rennes République", "République"],
-        autoHide: true,
-        name: "République",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#95C11E", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "C1" },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "RENNES REPUBLIQUE" }],
-        },
-      },
-      {
-        id: ["Rennes Gares"],
-        autoHide: true,
-        name: "Gares",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#95C11E", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "C1" },
-          pages: [{ text: "RENNES GARES" }],
-        },
-      },
-      {
         id: ["Chantepie"],
         name: "Rosa Parks",
         city: "CHANTEPIE",
@@ -273,36 +253,6 @@ const starRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#008BD2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C2" },
           pages: [{ text: "CHAMP DAGUET" }, { font: "1510N2E1", text: "SAINT-GREGOIRE" }],
-        },
-      },
-      {
-        id: ["Anatole France"],
-        autoHide: true,
-        name: "Anatole France",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#008BD2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C2" },
-          pages: [{ text: "ANATOLE FRANCE" }, { text: "RENNES" }],
-        },
-      },
-      {
-        id: ["Rennes Gares"],
-        autoHide: true,
-        name: "Gares",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#008BD2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C2" },
-          pages: [{ text: "RENNES GARES" }],
-        },
-      },
-      {
-        id: ["La Poterie"],
-        autoHide: true,
-        name: "La Poterie",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#008BD2", textColor: "#FFFFFF", outlineColor: "#000000", text: "C2" },
-          pages: [{ text: "LA POTERIE" }, { text: "RENNES" }],
         },
       },
       {
@@ -395,32 +345,12 @@ const starRoutes: Route[] = [
     colors: { background: "#F39200", text: "#1A171B" },
     destinations: [
       {
-        id: ["Joliot-Curie"],
-        autoHide: true,
-        name: "Joliot-Curie",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#F39200", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "C5" },
-          pages: [{ text: "JOLIOT-CURIE" }, { text: "RENNES" }],
-        },
-      },
-      {
         id: ["Saint-Laurent"],
         name: "Saint-Laurent",
         city: "RENNES",
         girouette: {
           routeNumber: { backgroundColor: "#F39200", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "C5" },
           pages: [{ text: "SAINT-LAURENT" }, { text: "RENNES" }],
-        },
-      },
-      {
-        id: ["République"],
-        autoHide: true,
-        name: "République",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#F39200", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "C5" },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "RENNES REPUBLIQUE" }],
         },
       },
       {
@@ -449,16 +379,6 @@ const starRoutes: Route[] = [
         },
       },
       {
-        id: ["Rennes République", "République"],
-        autoHide: true,
-        name: "République",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#61C3D9", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "C6" },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "RENNES REPUBLIQUE" }],
-        },
-      },
-      {
         id: ["Cesson Rigourdière", "Cesson-Sévigné"],
         name: "Rigourdière",
         city: "CESSON-SÉVIGNÉ",
@@ -475,22 +395,12 @@ const starRoutes: Route[] = [
     colors: { background: "#D39D2F", text: "#1A171B" },
     destinations: [
       {
-        id: ["Rennes Charles de Gaulle", "Ch de Gaulle"],
-        name: "Charles de Gaulle",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#D39D2F", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "C7" },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "CHARLES DE GAULLE" }, { text: "RENNES" }],
-        },
-      },
-      {
-        id: ["Saint-Jacques - Gaîté"],
-        autoHide: true,
+        id: ["Saint-Jacques - Gaîté", "St-Jacques-Gaîté", "Saint-Jacques Gaité via Parc Expo"],
         name: "Saint-Jacques - Gaîté",
         city: "SAINT-JACQUES-DE-LA-LANDE",
         girouette: {
           routeNumber: { backgroundColor: "#D39D2F", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "C7" },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "SAINT-JACQUES - GAITE" }],
+          pages: [{ font: "1508C2E1", text: "SAINT-JACQUES - GAITE" }],
         },
       },
       {
@@ -503,7 +413,7 @@ const starRoutes: Route[] = [
         },
       },
       {
-        id: ["Bruz Lavoisier"],
+        id: ["Bruz Lavoisier", "Bruz Lavoisier via Parc Expo"],
         autoHide: true,
         name: "Lavoisier",
         city: "BRUZ",
@@ -518,73 +428,7 @@ const starRoutes: Route[] = [
     id: "STAR:4-0047",
     name: "C7ex",
     colors: { background: "#FFDD00", text: "#3D3C3F" },
-    destinations: [
-      {
-        id: ["Bruz"],
-        autoHide: true,
-        name: "Lavoisier",
-        city: "BRUZ",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFDD00", textColor: "#3D3C3F", outlineColor: "#FFFFFF", text: "C7ex" },
-          pages: [{ text: "BRUZ LAVOISIER" }],
-        },
-      },
-      {
-        id: ["Bruz Centre"],
-        autoHide: true,
-        name: "Bruz Centre",
-        city: "BRUZ",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFDD00", textColor: "#3D3C3F", outlineColor: "#FFFFFF", text: "C7ex" },
-          pages: [{ text: "BRUZ LAVOISIER" }],
-        },
-      },
-      {
-        id: ["Bruz Ker Lann", "Ker Lann"],
-        autoHide: true,
-        name: "Ker Lann",
-        city: "BRUZ",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFDD00", textColor: "#3D3C3F", outlineColor: "#FFFFFF", text: "C7ex" },
-          pages: [{ text: "BRUZ KER LANN" }],
-        },
-      },
-      {
-        id: ["Rennes Charles de Gaulle", "Ch de Gaulle"],
-        autoHide: true,
-        name: "Charles de Gaulle",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFDD00", textColor: "#3D3C3F", outlineColor: "#FFFFFF", text: "C7ex" },
-          pages: [{ font: "1508C2E1", text: "CHARLES DE GAULLE" }, { text: "RENNES" }],
-        },
-      },
-    ],
-  },
-  {
-    id: "STAR:4-0308",
-    name: "C8",
-    colors: { background: "#00893E", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Porte de Cleunay"],
-        name: "Porte de Cleunay",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#00893E", textColor: "#FFFFFF", outlineColor: "#000000", text: "C8" },
-          pages: [{ font: "1510N2E1", spacing: 1, text: "PORTE DE CLEUNAY" }, { text: "RENNES" }],
-        },
-      },
-      {
-        id: ["Les Gayeulles"],
-        name: "Les Gayeulles",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#00893E", textColor: "#FFFFFF", outlineColor: "#000000", text: "C8" },
-          pages: [{ text: "LES GAYEULLES" }, { text: "RENNES" }],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
     id: "STAR:4-0010",
@@ -592,7 +436,7 @@ const starRoutes: Route[] = [
     colors: { background: "#EF859D", text: "#1A171B" },
     destinations: [
       {
-        id: ["Rennes Porte de Cleunay"],
+        id: ["Rennes Porte de Cleunay", "Porte de Cleunay"],
         name: "Porte de Cleunay",
         city: "RENNES",
         girouette: {
@@ -601,7 +445,7 @@ const starRoutes: Route[] = [
         },
       },
       {
-        id: ["Rennes Beaulieu Chimie"],
+        id: ["Rennes Beaulieu Chimie", "Beaulieu Chimie"],
         name: "Beaulieu Chimie",
         city: "RENNES",
         girouette: {
@@ -636,26 +480,6 @@ const starRoutes: Route[] = [
         },
       },
       {
-        id: ["Cesson Rigourdière -Brécé", "Brécé"],
-        autoHide: true,
-        name: "Rigourdière - Brécé",
-        city: "CESSON-SÉVIGNÉ",
-        girouette: {
-          routeNumber: { backgroundColor: "#004F9E", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
-          pages: [{ font: "1510N2E1", text: "RIGOURDIERE - BRECE" }, { text: "CESSON-SEVIGNE" }],
-        },
-      },
-      {
-        id: ["République"],
-        autoHide: true,
-        name: "République",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#004F9E", textColor: "#FFFFFF", outlineColor: "#000000", text: "11" },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "RENNES REPUBLIQUE" }],
-        },
-      },
-      {
         id: ["Roazhon Park"],
         autoHide: true,
         name: "Roazhon Park",
@@ -682,33 +506,12 @@ const starRoutes: Route[] = [
     colors: { background: "#BA65A5", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Grand Quartier"],
-        name: "Grand Quartier",
-        city: "SAINT-GRÉGOIRE",
-        girouette: {
-          routeNumber: { backgroundColor: "#BA65A5", textColor: "#FFFFFF", outlineColor: "#000000", text: "12" },
-          pages: [
-            { font: "1510N2E1", text: "GRAND QUARTIER" },
-            { font: "1510N2E1", text: "SAINT-GREGOIRE" },
-          ],
-        },
-      },
-      {
         id: ["Rennes Villejean-Université", "Villejean-U"],
         name: "Rennes Villejean-Université",
         city: "RENNES",
         girouette: {
           routeNumber: { backgroundColor: "#BA65A5", textColor: "#FFFFFF", outlineColor: "#000000", text: "12" },
           pages: [{ font: "1508C2E1", text: "VILLEJEAN-UNIVERSITE" }, { text: "RENNES" }],
-        },
-      },
-      {
-        id: ["Jacques Cartier"],
-        name: "Jacques Cartier",
-        city: "RENNES",
-        girouette: {
-          routeNumber: { backgroundColor: "#BA65A5", textColor: "#FFFFFF", outlineColor: "#000000", text: "12" },
-          pages: [{ font: "1510N2E1", text: "JACQUES CARTIER" }, { text: "RENNES" }],
         },
       },
       {
@@ -734,16 +537,6 @@ const starRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "13" },
           pages: [{ font: "1510N2E1", spacing: 1, text: "PORTE DE KER LANN" }, { text: "BRUZ" }],
-        },
-      },
-      {
-        id: ["Saint-Jacques  Gaîté", "St-Jacques-Gaîté"],
-        autoHide: true,
-        name: "Saint-Jacques - Gaîté",
-        city: "SAINT-JACQUES-DE-LA-LANDE",
-        girouette: {
-          routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "13" },
-          pages: [{ font: "1508C2E1", text: "SAINT-JACQUES - GAITE" }],
         },
       },
       {
@@ -797,7 +590,7 @@ const starRoutes: Route[] = [
     colors: { background: "#61C3D9", text: "#1A171B" },
     destinations: [
       {
-        id: ["Rennes Alma Sud"],
+        id: ["Rennes Alma Sud", "Alma Sud"],
         name: "Alma Sud",
         city: "RENNES",
         girouette: {
@@ -831,7 +624,7 @@ const starRoutes: Route[] = [
         },
       },
       {
-        id: ["Cesson-Sévigné Monniais"],
+        id: ["Cesson-Sévigné Monniais", "Cesson Monniais"],
         autoHide: true,
         name: "Monniais",
         city: "CESSON-SÉVIGNÉ",
@@ -841,7 +634,7 @@ const starRoutes: Route[] = [
         },
       },
       {
-        id: ["Rennes ZA Saint-Sulpice"],
+        id: ["Rennes ZA Saint-Sulpice", "ZA Saint-Sulpice"],
         name: "ZA Saint-Sulpice",
         city: "RENNES",
         girouette: {
@@ -880,54 +673,13 @@ const starRoutes: Route[] = [
     id: "STAR:4-0038",
     name: "38",
     colors: { background: "#008BD2", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Ménouriais"],
-        name: "Ménouriais",
-        city: "CESSON-SÉVIGNÉ",
-        girouette: {
-          routeNumber: { backgroundColor: "#008BD2", textColor: "#FFFFFF", outlineColor: "#000000", text: "38" },
-          pages: [{ text: "MENOURIAIS" }, { font: "1510N2E1", text: "CESSON-SEVIGNE" }],
-        },
-      },
-      {
-        id: ["Monniais"],
-        name: "Monniais",
-        city: "CESSON-SÉVIGNÉ",
-        girouette: {
-          routeNumber: { backgroundColor: "#008BD2", textColor: "#FFFFFF", outlineColor: "#000000", text: "38" },
-          pages: [{ text: "MONNIAIS" }, { font: "1510N2E1", text: "CESSON-SEVIGNE" }],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
     id: "STAR:4-0039",
     name: "39",
     colors: { background: "#BA65A5", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["Paul-Emile Victor", "P.E. Victor"],
-        name: "Paul-Émile Victor",
-        city: "SAINT-GRÉGOIRE",
-        girouette: {
-          routeNumber: { backgroundColor: "#BA65A5", textColor: "#FFFFFF", outlineColor: "#000000", text: "39" },
-          pages: [
-            { font: "1508C2E1", spacing: 3, text: "PAUL-EMILE VICTOR" },
-            { font: "1510N2E1", text: "SAINT-GREGOIRE" },
-          ],
-        },
-      },
-      {
-        id: ["Maison Blanche"],
-        name: "Maison Blanche",
-        city: "SAINT-GRÉGOIRE",
-        girouette: {
-          routeNumber: { backgroundColor: "#BA65A5", textColor: "#FFFFFF", outlineColor: "#000000", text: "39" },
-          pages: [{ text: "MAISON BLANCHE" }, { font: "1510N2E1", text: "SAINT-GREGOIRE" }],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
     id: "STAR:4-0050",
@@ -935,57 +687,19 @@ const starRoutes: Route[] = [
     colors: { background: "#FFCC00", text: "#1A171B" },
     destinations: [
       {
-        id: ["Rennes Atalante"],
-        autoHide: true,
-        name: "Rennes Atalante",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFCC00", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "50" },
-          pages: [{ font: "1407SUPX", text: "Rennes Atalante" }],
-        },
-      },
-      {
-        id: ["Cesson - Viasilva"],
-        autoHide: true,
+        id: ["Cesson - Viasilva", "Cesson-Viasilva", "Cesson - Viasilva via Placis Vert"],
         name: "Cesson - Viasilva",
         girouette: {
           routeNumber: { backgroundColor: "#FFCC00", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "50" },
-          pages: [{ font: "1407SUPX", text: "Cesson - Viasilva" }],
+          pages: [{ font: "1510N2E1", text: "CESSON-VIASILVA" }],
         },
       },
       {
-        id: ["Cesson - Viasilva via Placis Vert"],
-        autoHide: true,
-        name: "Cesson - Viasilva via Placis Vert",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFCC00", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "50" },
-          pages: [{ font: "1407SUPX", text: "Cesson - Viasilva via Placis Vert" }],
-        },
-      },
-      {
-        id: ["Thorigné-Fouillard"],
-        autoHide: true,
+        id: ["Thorigné", "Thorigné-Fouillard", "Thorigné-Fouillard via Placis Vert"],
         name: "Thorigné-Fouillard",
         girouette: {
           routeNumber: { backgroundColor: "#FFCC00", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "50" },
-          pages: [{ font: "1407SUPX", text: "Thorigné-Fouillard" }],
-        },
-      },
-      {
-        id: ["Thorigné"],
-        autoHide: true,
-        name: "Thorigné",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFCC00", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "50" },
-          pages: [{ font: "1407SUPX", text: "Thorigné" }],
-        },
-      },
-      {
-        id: ["Thorigné-Fouillard via Placis Vert"],
-        autoHide: true,
-        name: "Thorigné-Fouillard via Placis Vert",
-        girouette: {
-          routeNumber: { backgroundColor: "#FFCC00", textColor: "#1A171B", outlineColor: "#FFFFFF", text: "50" },
-          pages: [{ font: "1407SUPX", text: "Thorigné-Fouillard via Placis Vert" }],
+          pages: [{ font: "1513B3E1", text: 'THORIGNE' }],
         },
       },
     ],
@@ -996,66 +710,21 @@ const starRoutes: Route[] = [
     colors: { background: "#6F2282", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Rennes Les Gayeulles"],
-        autoHide: true,
-        name: "Rennes Les Gayeulles",
+        id: ["Rennes", "Rennes Les Gayeulles"],
+        name: "Les Gayeulles",
+        city: "RENNES",
         girouette: {
           routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "51" },
-          pages: [{ font: "1407SUPX", text: "Rennes Les Gayeulles" }],
-        },
-      },
-      {
-        id: ["Rennes"],
-        autoHide: true,
-        name: "Rennes",
-        girouette: {
-          routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "51" },
-          pages: [{ font: "1407SUPX", text: "Rennes" }],
-        },
-      },
-      {
-        id: ["Rennes Les Gayeulles via Gentilhomière"],
-        autoHide: true,
-        name: "Rennes Les Gayeulles via Gentilhomière",
-        girouette: {
-          routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "51" },
-          pages: [{ font: "1407SUPX", text: "Rennes Les Gayeulles via Gentilhomière" }],
+          pages: [{ font: "1508C2E1", text: "RENNES LES GAYEULLES" }],
         },
       },
       {
         id: ["Betton"],
-        autoHide: true,
-        name: "Betton",
+        name: "Champ Devant",
+        city: "BETTON",
         girouette: {
           routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "51" },
-          pages: [{ font: "1407SUPX", text: "Betton" }],
-        },
-      },
-      {
-        id: ["Betton via Gentilhommière"],
-        autoHide: true,
-        name: "Betton via Gentilhommière",
-        girouette: {
-          routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "51" },
-          pages: [{ font: "1407SUPX", text: "Betton via Gentilhommière" }],
-        },
-      },
-      {
-        id: ["Betton - Chevaigné - Saint-Sulpice-la-Forêt"],
-        autoHide: true,
-        name: "Betton - Chevaigné - Saint-Sulpice-la-Forêt",
-        girouette: {
-          routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "51" },
-          pages: [{ font: "1407SUPX", text: "Betton - Chevaigné - Saint-Sulpice-la-Forêt" }],
-        },
-      },
-      {
-        id: ["Saint-Sulpice"],
-        autoHide: true,
-        name: "Saint-Sulpice",
-        girouette: {
-          routeNumber: { backgroundColor: "#6F2282", textColor: "#FFFFFF", outlineColor: "#000000", text: "51" },
-          pages: [{ font: "1407SUPX", text: "Saint-Sulpice" }],
+          pages: [{ text: "CHAMP DEVANT" }, { text: "BETTON" }],
         },
       },
     ],
@@ -3606,26 +3275,18 @@ const starRoutes: Route[] = [
         autoHide: true,
         name: "Etangs d'Apigné",
         girouette: {
-          routeNumber: { backgroundColor: "#009C99", textColor: "#FFFFFF", outlineColor: "#000000", text: "API" },
-          pages: [{ font: "1407SUPX", text: "Etangs d'Apigné" }],
+          routeNumber: { backgroundColor: "#009C99", textColor: "#FFFFFF", outlineColor: "#000000", font: '1310C2E1', text: "API" },
+          pages: [{ font: "1508C2E1", text: "ETANGS D'APIGNE" }],
         },
       },
       {
-        id: ["Rennes République"],
-        autoHide: true,
-        name: "Rennes République",
-        girouette: {
-          routeNumber: { backgroundColor: "#009C99", textColor: "#FFFFFF", outlineColor: "#000000", text: "API" },
-          pages: [{ font: "1407SUPX", text: "Rennes République" }],
-        },
-      },
-      {
-        id: ["République"],
+        id: ["Rennes République", "République"],
         autoHide: true,
         name: "République",
+        city: "RENNES",
         girouette: {
-          routeNumber: { backgroundColor: "#009C99", textColor: "#FFFFFF", outlineColor: "#000000", text: "API" },
-          pages: [{ font: "1407SUPX", text: "République" }],
+          routeNumber: { backgroundColor: "#009C99", textColor: "#FFFFFF", outlineColor: "#000000", font: '1310C2E1', text: "API" },
+          pages: [{ font: "1508C2E1", spacing: 3, text: "RENNES REPUBLIQUE" }],
         },
       },
     ],
