@@ -34,7 +34,7 @@ const nevaRoutes: Route[] = [
     colors: { background: "#E91E63", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Haute-Lande (1)"],
+        id: ["Haute-Lande"],
         name: "Haute-Lande",
         city: "YQUELON",
         girouette: {
@@ -60,7 +60,7 @@ const nevaRoutes: Route[] = [
     colors: { background: "#536DFE", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["ZA Prétôt (2)"],
+        id: ["ZA Prétôt"],
         name: "Z.A. Prétôt",
         city: "GRANVILLE",
         girouette: {
@@ -69,7 +69,7 @@ const nevaRoutes: Route[] = [
         },
       },
       {
-        id: ["Hauteville (2)"],
+        id: ["Haute Ville"],
         name: "Haute Ville",
         city: "GRANVILLE",
         girouette: {
@@ -86,7 +86,7 @@ const nevaRoutes: Route[] = [
     colors: { background: "#FF6D00", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Granville - ZA TAILLAIS"],
+        id: ["ZA Taillais"],
         name: "Z.A. Taillais",
         city: "GRANVILLE",
         girouette: {
@@ -95,7 +95,7 @@ const nevaRoutes: Route[] = [
         },
       },
       {
-        id: ["La Haye-Pesnel - COLLEGE"],
+        id: ["Collège"],
         alternate: "Collège de la Haye",
         name: "Collège",
         city: "LA HAYE-PESNEL",
@@ -107,13 +107,69 @@ const nevaRoutes: Route[] = [
     ],
   },
   {
+    id: "NEVA:zenbus:Line:5188685444153344:LOC",
+    name: "5",
+    noCartridge: true,
+    colors: { background: "#FFD600", text: "#000000" },
+    destinations: [
+      {
+        id: ["Mairie"],
+        alternate: "Mairie de Carolles",
+        name: "Mairie",
+        city: "CAROLLES",
+        girouette: {
+          routeNumber: { backgroundColor: "#FFD600", textColor: "#FFFFFF", outlineColor: "#000000", text: "5" },
+          pages: [{ font: "1510N2E1", text: "CAROLLES MAIRIE" }],
+        },
+      },
+      {
+        id: ["Gare"],
+        alternate: "Gare de Granville",
+        name: "Gare",
+        city: "GRANVILLE",
+        girouette: {
+          routeNumber: { backgroundColor: "#FFD600", textColor: "#FFFFFF", outlineColor: "#000000", text: "5" },
+          pages: [{ font: "1510N2E1", text: "GRANVILLE GARE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "NEVA:zenbus:Line:5140010311352320:LOC",
+    name: "6",
+    noCartridge: true,
+    colors: { background: "#40C4FF", text: "#000000" },
+    destinations: [
+      {
+        id: ["Ancienne Gare"],
+        alternate: "Ancienne Gare de Bréhal",
+        name: "Ancienne Gare",
+        city: "BRÉHAL",
+        girouette: {
+          routeNumber: { backgroundColor: "#40C4FF", textColor: "#FFFFFF", outlineColor: "#000000", text: "6" },
+          pages: [{ font: "1508C2E1", text: "BREHAL ANCIENNE GARE" }],
+        },
+      },
+      {
+        id: ["Gare"],
+        alternate: "Gare de Granville",
+        name: "Gare",
+        city: "GRANVILLE",
+        girouette: {
+          routeNumber: { backgroundColor: "#40C4FF", textColor: "#FFFFFF", outlineColor: "#000000", text: "6" },
+          pages: [{ font: "1510N2E1", text: "GRANVILLE GARE" }],
+        },
+      },
+    ],
+  },
+  {
     id: "NEVA:zenbus:Line:5962875763949568:LOC",
     name: "7",
     noCartridge: true,
     colors: { background: "#388E3C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["CÉRENCES - Square de la Gare"],
+        id: ["Square de la Gare"],
         name: "Square de la Gare",
         city: "CÉRENCES",
         girouette: {
@@ -122,7 +178,7 @@ const nevaRoutes: Route[] = [
         },
       },
       {
-        id: ["GRANVILLE - Gare"],
+        id: ["Gare"],
         alternate: "Gare de Granville",
         name: "Gare",
         city: "GRANVILLE",
