@@ -273,6 +273,11 @@ const sources: Source[] = [
         ];
         return !geo3dRoutes.includes(trip.route) && !marchesDeMerde.includes(trip.route);
       },
+      afterInit: (resource) => {
+        for (const trip of resource.trips.values()) {
+          trip.id = trip.id.split(':')[2];
+        }
+      },
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
     },
