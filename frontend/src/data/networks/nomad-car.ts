@@ -1144,6 +1144,7 @@ const nomadCar: Route[] = [
         id: ["Rouen > Évreux"],
         name: "Évreux",
         girouette: {
+          ledColor: 'WHITE',
           routeNumber: {
             backgroundColor: "#4A2999",
             textColor: "#FFFFFF",
@@ -1151,13 +1152,14 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "216",
           },
-          pages: [{ font: "1508SUPX", text: "EVREUX" }],
+          pages: [{ font: "1508SUPX", text: "ROUEN > EVREUX" }],
         },
       },
       {
         id: ["Évreux > Rouen"],
         name: "Rouen",
         girouette: {
+          ledColor: 'WHITE',
           routeNumber: {
             backgroundColor: "#4A2999",
             textColor: "#FFFFFF",
@@ -1165,22 +1167,7 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "216",
           },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
-        },
-      },
-      {
-        id: ["Rouen > Mont-Saint-Aignan"],
-        autoHide: true,
-        name: "Mont-Saint-Aignan",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#4A2999",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "216",
-          },
-          pages: [{ font: "1508SUPX", text: "MONT-SAINT-AIGNAN" }],
+          pages: [{ font: "1508SUPX", text: "EVREUX > ROUEN" }],
         },
       },
     ],
@@ -1825,9 +1812,11 @@ const nomadCar: Route[] = [
     colors: { background: "#BA941C", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Rouen > Pont-Audemer", "Rouen > Pont-Audemer (Express)"],
-        name: "Pont-Audemer",
+        id: ["Rouen > Pont-Audemer (Express)"],
+        autoHide: true,
+        name: "Pont-Audemer (Express)",
         girouette: {
+          ledColor: 'WHITE',
           routeNumber: {
             backgroundColor: "#BA941C",
             textColor: "#FFFFFF",
@@ -1835,13 +1824,14 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "228",
           },
-          pages: [{ font: "1508SUPX", text: "PONT-AUDEMER" }],
+          pages: [[{ font: '1107SUPX', text: 'ROUEN > PONT-AUDEMER'}, { font: '0505SUPX', spacing: 3, text: 'DIRECT'}]],
         },
       },
       {
-        id: ["Pont-Audemer > Rouen", "Pont-Audemer > Rouen (Express)"],
-        name: "Rouen",
+        id: ["Rouen > Pont-Audemer"],
+        name: "Pont-Audemer",
         girouette: {
+          ledColor: 'WHITE',
           routeNumber: {
             backgroundColor: "#BA941C",
             textColor: "#FFFFFF",
@@ -1849,7 +1839,38 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "228",
           },
-          pages: [{ font: "1508SUPX", text: "ROUEN" }],
+          pages: [[{ font: '1107SUPX', text: 'ROUEN > PONT-AUDEMER'}, { font: '0505SUPX', text: 'VIA SAINT-OUEN-DE-THOUBERVILLE'}]],
+        },
+      },
+      {
+        id: ["Pont-Audemer > Rouen"],
+        name: "Rouen",
+        girouette: {
+          ledColor: 'WHITE',
+          routeNumber: {
+            backgroundColor: "#BA941C",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "228",
+          },
+          pages: [[{ font: '1107SUPX', text: 'PONT-AUDEMER > ROUEN'}, { font: '0505SUPX', text: 'VIA SAINT-OUEN-DE-THOUBERVILLE'}]],
+        },
+      },
+      {
+        id: ["Pont-Audemer > Rouen (Express)"],
+        autoHide: true,
+        name: "Rouen (Express)",
+        girouette: {
+          ledColor: 'WHITE',
+          routeNumber: {
+            backgroundColor: "#BA941C",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "228",
+          },
+          pages: [[{ font: '1107SUPX', text: 'PONT-AUDEMER > ROUEN'}, { font: '0505SUPX', spacing: 3, text: 'DIRECT'}]],
         },
       },
     ],
@@ -2811,9 +2832,10 @@ const nomadCar: Route[] = [
     colors: { background: "#5E8786", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["BAGNOLES DE L'ORNE / BRIOUZE", "BRIOUZE"],
+        id: ["BAGNOLES DE L'ORNE / BRIOUZE", "Bagnoles de l'Orne > Briouze"],
         name: "Briouze",
         girouette: {
+          ledColor: 'WHITE',
           routeNumber: {
             backgroundColor: "#5E8786",
             textColor: "#FFFFFF",
@@ -2821,13 +2843,14 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "423",
           },
-          pages: [{ font: "1508SUPX", text: "BRIOUZE" }],
+          pages: [{ font: "1508SUPX", text: "BAGNOLES > BRIOUZE" }],
         },
       },
       {
-        id: ["BRIOUZE / BAGNOLES DE L'ORNE", "BAGNOLES DE L'ORNE"],
+        id: ["BRIOUZE / BAGNOLES DE L'ORNE", "Briouze > Bagnoles de l'Orne"],
         name: "Bagnoles de l'Orne",
         girouette: {
+          ledColor: 'WHITE',
           routeNumber: {
             backgroundColor: "#5E8786",
             textColor: "#FFFFFF",
@@ -2835,7 +2858,7 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "423",
           },
-          pages: [{ font: "1508SUPX", text: "BAGNOLES DE L'ORNE" }],
+          pages: [{ font: "1508SUPX", text: "BRIOUZE > BAGNOLES" }],
         },
       },
     ],
@@ -2847,9 +2870,10 @@ const nomadCar: Route[] = [
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["FLERS / ARGENTAN", "ARGENTAN"],
+        id: ["FLERS / ARGENTAN", "Flers > Argentan"],
         name: "Argentan",
         girouette: {
+          ledColor: 'WHITE',
           routeNumber: {
             backgroundColor: "#4A2999",
             textColor: "#FFFFFF",
@@ -2857,13 +2881,14 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "424",
           },
-          pages: [{ font: "1508SUPX", text: "ARGENTAN" }],
+          pages: [{ font: "1508SUPX", text: "FLERS > ARGENTAN" }],
         },
       },
       {
-        id: ["ARGENTAN / FLERS", "FLERS"],
+        id: ["ARGENTAN / FLERS", "Argentan > Flers"],
         name: "Flers",
         girouette: {
+          ledColor: 'WHITE',
           routeNumber: {
             backgroundColor: "#4A2999",
             textColor: "#FFFFFF",
@@ -2871,7 +2896,7 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "424",
           },
-          pages: [{ font: "1508SUPX", text: "FLERS" }],
+          pages: [{ font: "1508SUPX", text: "ARGENTAN > FLERS" }],
         },
       },
     ],
