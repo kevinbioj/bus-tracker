@@ -1824,7 +1824,7 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "228",
           },
-          pages: [[{ font: '1107SUPX', text: 'ROUEN > PONT-AUDEMER'}, { font: '0505SUPX', spacing: 3, text: 'DIRECT'}]],
+          pages: [[{ font: '1107SUPX', text: 'ROUEN > PONT-AUDEMER'}, { font: '0505SUPX', spacing: 4, text: 'EXPRESS'}]],
         },
       },
       {
@@ -1870,7 +1870,7 @@ const nomadCar: Route[] = [
             font: "1508SUPX",
             text: "228",
           },
-          pages: [[{ font: '1107SUPX', text: 'PONT-AUDEMER > ROUEN'}, { font: '0505SUPX', spacing: 3, text: 'DIRECT'}]],
+          pages: [[{ font: '1107SUPX', text: 'PONT-AUDEMER > ROUEN'}, { font: '0505SUPX', spacing: 4, text: 'EXPRESS'}]],
         },
       },
     ],
