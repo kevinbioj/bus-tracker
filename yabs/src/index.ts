@@ -152,7 +152,8 @@ async function updateResource(source: Source, retryCount = DEFAULT_RETRY_COUNT, 
   const currentResource = gtfsResources.get(source.id);
   if (currentResource) {
     if (currentResource.lastModified !== null) {
-      const response = await fetch(source.gtfsProperties.staticResourceHref, { method: 'HEAD' });
+      const response = await fetch(source.gtfsProperties.staticResourceHref, { method: 'HEAD' })
+        .catch(() => ({ ok: false as const }));
       if (response.ok && response.headers.has('Last-Modified')) {
         const newLastModified = dayjs(response.headers.get('Last-Modified'));
         if (newLastModified.diff(currentResource.lastModified) <= 0) return;
