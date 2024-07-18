@@ -1261,7 +1261,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["VASCOEUIL / ROUEN", "CHARLEVAL / ROUEN", "PERRIERS-SUR-ANDELLE / ROUEN"],
+        id: ["VASCOEUIL / ROUEN", "CHARLEVAL / ROUEN", "PERRIERS-SUR-ANDELLE / ROUEN", "PERRIERS SUR ANDELLE / ROUEN"],
         name: "Rouen",
         girouette: {
           routeNumber: {
