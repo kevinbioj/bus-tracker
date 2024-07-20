@@ -53,8 +53,17 @@ const hobusRoutes: Route[] = [
         },
       },
       {
-        id: ["PHARE NATUROSPACE"],
+        id: ["GARE"],
         autoHide: true,
+        name: "Gare Routière",
+        city: "HONFLEUR",
+        girouette: {
+          routeNumber: { backgroundColor: "#00A0E3", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
+          pages: [{ text: "GARE ROUTIERE" }],
+        },
+      },
+      {
+        id: ["PHARE NATUROSPACE"],
         name: "Phare – Naturospace",
         city: "HONFLEUR",
         girouette: {
@@ -63,12 +72,12 @@ const hobusRoutes: Route[] = [
         },
       },
       {
-        id: ["GARE"],
-        name: "Gare Routière",
+        id: ["PLAGE"],
+        name: "Plage",
         city: "HONFLEUR",
         girouette: {
           routeNumber: { backgroundColor: "#00A0E3", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
-          pages: [{ text: "GARE ROUTIERE" }],
+          pages: [{ text: "PLAGE" }],
         },
       },
     ],
