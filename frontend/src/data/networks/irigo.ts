@@ -41,9 +41,9 @@ const irigoRoutes: Route[] = [
     colors: { background: "#E6007E", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Roseraie / Belle-Beille Campus"],
+        id: ["AVRILLE Ardenne <> Acacias <> Ardenne"],
         autoHide: true,
-        name: "Roseraie / Belle-Beille Campus",
+        name: "Ardenne <> Acacias",
         girouette: {
           routeNumber: {
             backgroundColor: "#E6007E",
@@ -52,32 +52,7 @@ const irigoRoutes: Route[] = [
             font: "1508C2E1",
             text: "Tbus",
           },
-          pages: [
-            [
-              { spacing: 2, text: "ROSERAIE /" },
-              { spacing: 2, text: "BELLE-BEILLE CAMPUS" },
-            ],
-          ],
-        },
-      },
-      {
-        id: ["Avrillé-Ardenne / Monplaisir"],
-        autoHide: true,
-        name: "Avrillé-Ardenne / Monplaisir",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#E6007E",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508C2E1",
-            text: "Tbus",
-          },
-          pages: [
-            [
-              { spacing: 2, text: "AVRILLE-ARDENNE" },
-              { spacing: 2, text: "/ MONPLAISIR" },
-            ],
-          ],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "ARDENNE <> ACACIAS" }],
         },
       },
     ],
@@ -97,26 +72,6 @@ const irigoRoutes: Route[] = [
         },
       },
       {
-        id: ["LES GARES"],
-        autoHide: true,
-        name: "Les Gares",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#E30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
-          pages: [{ text: "LES GARES" }],
-        },
-      },
-      {
-        id: ["BERGES DE MAINE"],
-        autoHide: true,
-        name: "Berges de Maine",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#E30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
-          pages: [{ font: "1510N2E1", text: "BERGES DE MAINE" }],
-        },
-      },
-      {
         id: ["VERNEAU"],
         autoHide: true,
         name: "Verneau",
@@ -124,6 +79,16 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#E30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
           pages: [{ text: "VERNEAU" }],
+        },
+      },
+      {
+        id: ["AVRILLE ACACIAS"],
+        autoHide: true,
+        name: "Acacias",
+        city: "AVRILLÉ",
+        girouette: {
+          routeNumber: { backgroundColor: "#E30613", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
+          pages: [{ text: "ACACIAS" }],
         },
       },
       {
@@ -149,16 +114,6 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#00569D", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
           pages: [{ text: "MONPLAISIR" }],
-        },
-      },
-      {
-        id: ["CONSERVATOIRE"],
-        autoHide: true,
-        name: "Conservatoire",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#00569D", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
-          pages: [{ text: "CONSERVATOIRE" }],
         },
       },
       {
@@ -198,7 +153,7 @@ const irigoRoutes: Route[] = [
     colors: { background: "#379E31", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["ANGERS ROSERAIE", "ROSERAIE"],
+        id: ["ROSERAIE"],
         name: "Monplaisir",
         city: "ANGERS",
         girouette: {
@@ -229,16 +184,6 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#008E8C", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
           pages: [{ text: "QUANTINIERE" }],
-        },
-      },
-      {
-        id: ["ANGERS André Leroy"],
-        autoHide: true,
-        name: "André Leroy",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#008E8C", textColor: "#FFFFFF", outlineColor: "#000000", text: "1" },
-          pages: [{ text: "ANDRE LEROY" }],
         },
       },
       {
@@ -312,6 +257,16 @@ const irigoRoutes: Route[] = [
         },
       },
       {
+        id: ["ANGERS André Leroy"],
+        autoHide: true,
+        name: "André Leroy",
+        city: "ANGERS",
+        girouette: {
+          routeNumber: { backgroundColor: "#F18700", textColor: "#FFFFFF", outlineColor: "#000000", text: "3" },
+          pages: [{ text: "ANDRE LEROY" }],
+        },
+      },
+      {
         id: ["ANGERS Foch-Maison Bleue"],
         autoHide: true,
         name: "Foch-Maison Bleue",
@@ -354,16 +309,6 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#009EE1", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
           pages: [{ text: "L'HOIRIE" }],
-        },
-      },
-      {
-        id: ["ANGERS Les Gares"],
-        autoHide: true,
-        name: "Les Gares",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#009EE1", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [{ text: "LES GARES" }],
         },
       },
       {
@@ -437,16 +382,6 @@ const irigoRoutes: Route[] = [
         },
       },
       {
-        id: ["ANGERS La Barre"],
-        autoHide: true,
-        name: "La Barre",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#291F6C", textColor: "#FFFFFF", outlineColor: "#000000", text: "6" },
-          pages: [{ text: "LA BARRE" }],
-        },
-      },
-      {
         id: ["BOUCHEMAINE Chantourteau"],
         name: "Chantourteau",
         city: "BOUCHEMAINE",
@@ -507,16 +442,6 @@ const irigoRoutes: Route[] = [
         },
       },
       {
-        id: ["ANGERS Gares Papin"],
-        autoHide: true,
-        name: "Gares Papin",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#E50076", textColor: "#FFFFFF", outlineColor: "#000000", text: "8" },
-          pages: [{ text: "GARES PAPIN" }],
-        },
-      },
-      {
         id: ["ANGERS Lorraine"],
         autoHide: true,
         name: "Lorraine",
@@ -524,6 +449,16 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#E50076", textColor: "#FFFFFF", outlineColor: "#000000", text: "8" },
           pages: [{ text: "LORRAINE" }],
+        },
+      },
+      {
+        id: ["SORGES"],
+        autoHide: true,
+        name: "Sorges",
+        city: "LES PONTS-DE-CÉ",
+        girouette: {
+          routeNumber: { backgroundColor: "#E50076", textColor: "#FFFFFF", outlineColor: "#000000", text: "8" },
+          pages: [{ text: "SORGES" }],
         },
       },
       {
@@ -587,23 +522,13 @@ const irigoRoutes: Route[] = [
         },
       },
       {
-        id: ["ANGERS Parc Expo"],
+        id: ["PROVINS"],
         autoHide: true,
-        name: "Parc Expo",
+        name: "Provins",
         city: "ANGERS",
         girouette: {
           routeNumber: { backgroundColor: "#7263A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
-          pages: [{ text: "PARC EXPO" }],
-        },
-      },
-      {
-        id: ["ANGERS Lorraine"],
-        autoHide: true,
-        name: "Lorraine",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#7263A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
-          pages: [{ text: "LORRAINE" }],
+          pages: [{ text: "PROVINS" }],
         },
       },
       {
@@ -886,6 +811,16 @@ const irigoRoutes: Route[] = [
         },
       },
       {
+        id: ["ST-SYLVAIN Pôle 49"],
+        autoHide: true,
+        name: "Pôle 49",
+        city: "SAINT-SYLVAIN-D'ANJOU",
+        girouette: {
+          routeNumber: { backgroundColor: "#E6007E", textColor: "#FFFFFF", outlineColor: "#000000", text: "30" },
+          pages: [{ text: "POLE 49" }],
+        },
+      },
+      {
         id: ["SARRIGNÉ Les Plantes"],
         autoHide: true,
         name: "Les Plantes",
@@ -1001,7 +936,7 @@ const irigoRoutes: Route[] = [
         },
       },
       {
-        id: ["FENEU Croix de Beauvais", "FENEU ZA Feuneu / Croix de Beauvais"],
+        id: ["FENEU Croix de Beauvais"],
         name: "Croix de Beauvais",
         city: "FENEU",
         girouette: {
@@ -1033,16 +968,6 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#F39200", textColor: "#FFFFFF", outlineColor: "#000000", text: "34" },
           pages: [{ font: "1510N2E1", text: "TERRA BOTANICA" }],
-        },
-      },
-      {
-        id: ["LE PLESSIS-MACÉ L'Orée"],
-        autoHide: true,
-        name: "L'Orée",
-        city: "LE PLESSIS-MACÉ",
-        girouette: {
-          routeNumber: { backgroundColor: "#F39200", textColor: "#FFFFFF", outlineColor: "#000000", text: "34" },
-          pages: [{ text: "L'OREE" }],
         },
       },
       {
@@ -1181,16 +1106,6 @@ const irigoRoutes: Route[] = [
         },
       },
       {
-        id: ["STE-GEMMES Le Fresne"],
-        autoHide: true,
-        name: "Le Fresne",
-        city: "SAINTE-GEMMES-SUR-LOIRE",
-        girouette: {
-          routeNumber: { backgroundColor: "#E84E0F", textColor: "#FFFFFF", outlineColor: "#000000", text: "39" },
-          pages: [{ text: "LE FRESNE" }],
-        },
-      },
-      {
         id: ["BÉHUARD Bourg"],
         name: "Bourg",
         city: "BÉHUARD",
@@ -1213,36 +1128,6 @@ const irigoRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#7263A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "40" },
           pages: [{ font: "1508C2E1", spacing: 1, text: "GARE ROUTIERE ESPLANADE" }],
-        },
-      },
-      {
-        id: ["ANGERS Saumuroise"],
-        autoHide: true,
-        name: "Saumuroise",
-        city: "ANGERS",
-        girouette: {
-          routeNumber: { backgroundColor: "#7263A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "40" },
-          pages: [{ text: "SAUMUROISE" }],
-        },
-      },
-      {
-        id: ["TRÉLAZÉ Gare", "ANGERS Gare routière Esplanade / Saumuroise / TRÉLAZÉ Gare"],
-        autoHide: true,
-        name: "Gare",
-        city: "TRÉLAZÉ",
-        girouette: {
-          routeNumber: { backgroundColor: "#7263A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "40" },
-          pages: [{ text: "TRELAZE GARE" }],
-        },
-      },
-      {
-        id: ["ANDARD Jeanne de Laval"],
-        autoHide: true,
-        name: "Jeanne de Laval",
-        city: "ANDARD",
-        girouette: {
-          routeNumber: { backgroundColor: "#7263A9", textColor: "#FFFFFF", outlineColor: "#000000", text: "40" },
-          pages: [{ font: "1510N2E1", text: "JEANNE DE LAVAL" }],
         },
       },
       {
@@ -1272,21 +1157,11 @@ const irigoRoutes: Route[] = [
       },
       {
         id: ["SOULAINES Haute-Marzelle"],
-        autoHide: true,
         name: "Haute-Marzelle",
         city: "SOULAINES",
         girouette: {
           routeNumber: { backgroundColor: "#DEA600", textColor: "#FFFFFF", outlineColor: "#000000", text: "41" },
           pages: [{ font: "1510N2E1", text: "HAUTE-MARZELLE" }],
-        },
-      },
-      {
-        id: ["BÉHUARD Bourg"],
-        name: "Bourg",
-        city: "BÉHUARD",
-        girouette: {
-          routeNumber: { backgroundColor: "#DEA600", textColor: "#FFFFFF", outlineColor: "#000000", text: "41" },
-          pages: [{ text: "BEHUARD BOURG" }],
         },
       },
     ],
