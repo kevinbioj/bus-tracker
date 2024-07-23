@@ -28,15 +28,6 @@ const sources: Source[] = [
       tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
       vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       routePrefix: 'ASTUCE',
-      mapTripUpdateEntities: (tripUpdates) => {
-        tripUpdates.forEach((tripUpdate) => {
-          tripUpdate.tripUpdate.stopTimeUpdate.forEach((stopTimeUpdate) => {
-            delete stopTimeUpdate.arrival?.time;
-            delete stopTimeUpdate.departure?.time;
-          });
-        });
-        return tripUpdates;
-      },
       allowScheduled: (trip) => {
         if (['89', '322'].includes(trip.route)) return true;
         if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Champlain ROUEN'].includes(trip.headsign))
@@ -158,54 +149,11 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/lia/vehicle-positions',
       routePrefix: 'LIA',
       allowScheduled: (trip) => ['12', '13', '21'].includes(trip.route),
-      mapTripUpdateEntities: (entities, resource) =>
-        entities.map((tripUpdate) => {
-          const trip = resource.trips.get(tripUpdate.tripUpdate.trip.tripId);
-          if (trip) {
-            tripUpdate.tripUpdate.trip.routeId = trip.route;
-          }
-          return tripUpdate;
-        }),
-      mapVehiclePositionEntities: (entities, resource) =>
-        entities.map((vehiclePosition) => {
-          const trip = resource.trips.get(vehiclePosition.vehicle.trip.tripId);
-          if (trip) {
-            vehiclePosition.vehicle.trip.routeId = trip.route;
-          }
-          return vehiclePosition;
-        }),
-      afterInit: (resource) => {
-        for (const trip of resource.trips.values()) {
-          if (trip.route !== 'T') continue;
-          const [first, last] = [trip.stops.at(0)!.stop, trip.stops.at(-1)!.stop];
-          trip.route = match([first.name, last.name])
-            .with(
-              P.union(
-                ['La Plage', 'Grand Hameau'],
-                ['Rond-Point', 'Grand Hameau'],
-                ['Grand Hameau', 'Rond-Point'],
-                ['Grand Hameau', 'La Plage'],
-              ),
-              () => 'A',
-            )
-            .with(
-              P.union(
-                ['La Plage', 'Pré Fleuri'],
-                ['Pré Fleuri', 'La Plage'],
-                ['Rond-Point', 'Pré Fleuri'],
-                ['Rond-Point', 'La Plage'],
-                ['Pré Fleuri', 'Rond-Point'],
-              ),
-              () => 'B',
-            )
-            .otherwise(() => 'T');
-        }
-      },
     },
   },
   {
     id: 'NOMAD-TER',
-    refreshCron: '40 * * * * *',
+    refreshCron: '10,20,30,40,50 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD-TER',
@@ -241,7 +189,7 @@ const sources: Source[] = [
   },
   {
     id: 'NOMAD',
-    refreshCron: '42 * * * * *',
+    refreshCron: '30 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD',
@@ -254,8 +202,8 @@ const sources: Source[] = [
         const geo3dRoutes = [
           'ATOUMOD040:Line:1006979:LOC', // 216 (dans GTFS déidié à Geo3D)
           'ATOUMOD040:Line:1006959:LOC', // 228 (dans GTFS déidié à Geo3D)
-          // 'ATOUMOD040:Line:1009747:LOC', // 423 (dans GTFS déidié à Geo3D)
-          // 'ATOUMOD040:Line:1009928:LOC', // 424 (dans GTFS déidié à Geo3D)
+          'ATOUMOD040:Line:1009747:LOC', // 423 (dans GTFS déidié à Geo3D)
+          'ATOUMOD040:Line:1009928:LOC', // 424 (dans GTFS déidié à Geo3D)
           'ATOUMOD040:Line:1006919:LOC', // 527 (dans GTFS déidié à Geo3D)
           'ATOUMOD040:Line:1003061:LOC', // 530 (gestion par Astuce)
         ];
@@ -284,7 +232,7 @@ const sources: Source[] = [
   },
   {
     id: 'NOMAD-GEO3D',
-    refreshCron: '35 * * * * *',
+    refreshCron: '5,15,25,35,40,45,55 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD-GEO3D',
@@ -305,7 +253,7 @@ const sources: Source[] = [
   },
   {
     id: 'SEMO',
-    refreshCron: '42 * * * * *',
+    refreshCron: '0,15,30,45 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'SEMO',
@@ -332,7 +280,7 @@ const sources: Source[] = [
   },
   {
     id: 'SNGO',
-    refreshCron: '42 * * * * *',
+    refreshCron: '3,23,43 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'SNGO',
@@ -342,33 +290,27 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       getOperator: () => 'SNGO',
       shapesStrategy: 'IGNORE',
-      mapTripUpdateEntities: (entities, resource) =>
-        entities.map((tripUpdate) => {
-          const matchingTrip = resource.trips.get(`ATOUMOD007:ServiceJourney:${tripUpdate.tripUpdate.trip.tripId}:LOC`);
-          if (matchingTrip) {
-            tripUpdate.tripUpdate.trip.tripId = matchingTrip.id;
-            tripUpdate.tripUpdate.stopTimeUpdate.forEach((stopTimeUpdate) => {
-              const stopTime = matchingTrip.stops.find((x) => x.stop.id.includes(stopTimeUpdate.stopId));
-              if (stopTime) {
-                stopTimeUpdate.stopId = stopTime.stop.id;
-              }
-            });
-          }
-          return tripUpdate;
-        }),
-      mapVehiclePositionEntities: (entities, resource) =>
-        entities.map((vehicle) => {
-          const matchingTrip = resource.trips.get(`ATOUMOD007:ServiceJourney:${vehicle.vehicle.trip.tripId}:LOC`);
-          if (matchingTrip) {
-            vehicle.vehicle.trip.tripId = matchingTrip.id;
-          }
-          return vehicle;
-        }),
+      afterInit: (resource) => {
+        for (const [tripId, trip] of [...resource.trips.entries()]) {
+          resource.trips.delete(tripId);
+          const fixedTripId = tripId.split(':')[2];
+          trip.id = fixedTripId;
+          trip.route = trip.route.split(':')[2];
+          resource.trips.set(fixedTripId, trip);
+        }
+
+        for (const [stopId, stop] of [...resource.stops.entries()]) {
+          resource.stops.delete(stopId);
+          const fixedStopId = stopId.split(':')[3];
+          stop.id = fixedStopId;
+          resource.stops.set(fixedStopId, stop);
+        }
+      },
     },
   },
   {
     id: 'SNGO-GIVERNY',
-    refreshCron: '42 * * * * *',
+    refreshCron: '9,19,29,39,49,59 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'SNGO-GIVERNY',
@@ -384,7 +326,7 @@ const sources: Source[] = [
   },
   {
     id: 'DEEPMOB',
-    refreshCron: '48 * * * * *',
+    refreshCron: '14,34,54 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'DEEPMOB',
@@ -398,7 +340,7 @@ const sources: Source[] = [
   },
   {
     id: 'CAPCOT',
-    refreshCron: '48 * * * * *',
+    refreshCron: '8,18,28,38,48,58 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'CAPCOT',
@@ -417,7 +359,7 @@ const sources: Source[] = [
   },
   {
     id: 'REZOBUS',
-    refreshCron: '48 * * * * *',
+    refreshCron: '8,18,28,38,48,58 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'REZOBUS',
@@ -440,7 +382,7 @@ const sources: Source[] = [
   },
   {
     id: 'MOCA',
-    refreshCron: '50 * * * * *',
+    refreshCron: '8,18,28,38,48,58 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'MOCA',
