@@ -1954,10 +1954,25 @@ const astuceRoutes: Route[] = [
     name: "G",
     colors: { background: "#D3D800", text: "#1D1D1B" },
     destinations: [
+      // {
+      //   id: ["ROUTE DU BAC"],
+      //   name: "Route du Bac",
+      //   city: "LA BOUILLE",
+      //   girouette: {
+      //     routeNumber: {
+      //       backgroundColor: "#D3D800",
+      //       textColor: "#000000",
+      //       outlineColor: "#FFFFFF",
+      //       font: "1508SUPX",
+      //       text: "G",
+      //     },
+      //     pages: [{ font: "1508SUPX", text: "ROUTE DU BAC" }],
+      //   },
+      // },
       {
-        id: ["ROUTE DU BAC"],
-        name: "Route du Bac",
-        city: "LA BOUILLE",
+        id: ["LES BOUTTIERES"],
+        name: "Les Bouttières",
+        city: "GRAND-COURONNE",
         girouette: {
           routeNumber: {
             backgroundColor: "#D3D800",
@@ -1966,7 +1981,10 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "G",
           },
-          pages: [{ font: "1508SUPX", text: "ROUTE DU BAC" }],
+          pages: [
+            { font: "1508SUPX", text: "LES BOUTTIERES" },
+            { font: "1507SUPX", text: "TERMINUS PROVISOIRE" },
+          ],
         },
       },
       {
