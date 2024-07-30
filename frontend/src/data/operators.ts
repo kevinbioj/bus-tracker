@@ -135,7 +135,13 @@ const operators: Operator[] = [
       href: "/assets/operators/sngo.jpg",
       size: [1280, 678],
     },
-    issues: [],
+    issues: [
+      {
+        status: "ONGOING",
+        message:
+          "En raison d'une absence de mise à jour de l'offre théorique, le réseau est désactivé jusqu'à nouvel ordre.",
+      },
+    ],
   },
   {
     id: "NEVA",
