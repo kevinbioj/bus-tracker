@@ -80,6 +80,16 @@ const diviaRoutes: Route[] = [
         },
       },
       {
+        id: ["DARCY"],
+        autoHide: true,
+        name: "Darcy",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#ab0070", textColor: "#ffffff", text: "T1", outlineColor: "#000000" },
+          pages: [{ text: "DARCY" }],
+        },
+      },
+      {
         id: ["Foch Gare"],
         autoHide: true,
         name: "Foch Gare",
@@ -122,6 +132,26 @@ const diviaRoutes: Route[] = [
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ab0070", textColor: "#ffffff", text: "T2", outlineColor: "#000000" },
           pages: [{ text: "BOURROCHES" }],
+        },
+      },
+      {
+        id: ["Monge"],
+        autoHide: true,
+        name: "Monge Cité de la gastronomie",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#ab0070", textColor: "#ffffff", text: "T2", outlineColor: "#000000" },
+          pages: [[{ text: "MONGE" }, { text: "CITE DE LA GASTRONOMIE" }]],
+        },
+      },
+      {
+        id: ["DARCY"],
+        autoHide: true,
+        name: "Darcy",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#ab0070", textColor: "#ffffff", text: "T2", outlineColor: "#000000" },
+          pages: [{ text: "DARCY" }],
         },
       },
       {
@@ -715,7 +745,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ee8250", textColor: "#ffffff", text: "35", outlineColor: "#000000" },
-          pages: [{ text: "MONTAGNE DE LARREY" }],
+          pages: [{ font: "1508C2E1", text: "MONTAGNE DE LARREY" }],
         },
       },
       {

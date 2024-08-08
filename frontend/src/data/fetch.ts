@@ -1,6 +1,6 @@
 import { LightVehicleDto, TripData, VehicleData, VehicleDto } from "~/@types";
 
-const YABS_URL = process.env.YABS_URL ?? "http://127.0.0.1:13337";
+const YABS_URL = process.env.YABS_URL ?? "http://192.168.1.10:15020";
 
 export async function fetchTrip(tripId: string) {
   const response = await fetch(`${YABS_URL}/trip/${tripId}`);
