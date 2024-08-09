@@ -206,7 +206,7 @@ const operators: Operator[] = [
   {
     id: "REZOBUS",
     name: "Rezo'Bus (Caux Seine Agglo)",
-    hasHistory: true,
+    hasHistory: false,
     logo: {
       href: "/assets/operators/rezobus.svg",
       size: [222, 73],

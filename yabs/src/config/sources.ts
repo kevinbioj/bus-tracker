@@ -368,7 +368,7 @@ const sources: Source[] = [
       tripUpdateHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/caux-seine-agglo/gtfs-rt',
       getOperator: () => 'REZOBUS',
-      getVehicleNumber: (descriptor) => descriptor.label ?? null,
+      getVehicleNumber: () => null,
       allowScheduled: (trip) => !['14', '30'].includes(trip.route),
       afterInit: (resource) => {
         resource.trips.forEach((trip) => {
