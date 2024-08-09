@@ -19,7 +19,7 @@ export type Source = {
 const sources: Source[] = [
   {
     id: 'TCAR',
-    refreshCron: '0,15,30,45 * * * * *',
+    refreshCron: '0,30 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR',
@@ -47,7 +47,7 @@ const sources: Source[] = [
   },
   {
     id: 'TCAR-TGR',
-    refreshCron: '5,15,25,35,45,55 * * * * *',
+    refreshCron: '5,35 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR-TGR',
@@ -63,7 +63,7 @@ const sources: Source[] = [
   },
   {
     id: 'TAE',
-    refreshCron: '3,23,43 * * * * *',
+    refreshCron: '2,32 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TAE',
@@ -103,7 +103,7 @@ const sources: Source[] = [
   },
   {
     id: 'TNI',
-    refreshCron: '5,35 * * * * *',
+    refreshCron: '3 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TNI',
@@ -116,7 +116,7 @@ const sources: Source[] = [
   },
   {
     id: 'HANGA',
-    refreshCron: '35 * * * * *',
+    refreshCron: '4 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'HANGA',
@@ -128,7 +128,7 @@ const sources: Source[] = [
   },
   {
     id: 'TWISTO',
-    refreshCron: '6,36 * * * * *',
+    refreshCron: '10,40 * * * * *',
     type: 'SIRI-XML',
     siriProperties: {
       id: 'TWISTO',
@@ -140,7 +140,7 @@ const sources: Source[] = [
   },
   {
     id: 'LIA',
-    refreshCron: '38 * * * * *',
+    refreshCron: '15,55 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'LIA',
@@ -153,7 +153,7 @@ const sources: Source[] = [
   },
   {
     id: 'NOMAD-TER',
-    refreshCron: '10,20,30,40,50 * * * * *',
+    refreshCron: '20 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD-TER',
@@ -189,7 +189,7 @@ const sources: Source[] = [
   },
   {
     id: 'NOMAD',
-    refreshCron: '30 * * * * *',
+    refreshCron: '20 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD',
@@ -232,7 +232,7 @@ const sources: Source[] = [
   },
   {
     id: 'NOMAD-GEO3D',
-    refreshCron: '5,15,25,35,40,45,55 * * * * *',
+    refreshCron: '20 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NOMAD-GEO3D',
@@ -253,7 +253,7 @@ const sources: Source[] = [
   },
   {
     id: 'SEMO',
-    refreshCron: '0,15,30,45 * * * * *',
+    refreshCron: '25,55 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'SEMO',
@@ -280,7 +280,7 @@ const sources: Source[] = [
   },
   // {
   //   id: 'SNGO',
-  //   refreshCron: '3,23,43 * * * * *',
+  //   refreshCron: '35 * * * * *',
   //   type: 'GTFS',
   //   gtfsProperties: {
   //     id: 'SNGO',
@@ -310,7 +310,7 @@ const sources: Source[] = [
   // },
   {
     id: 'SNGO-GIVERNY',
-    refreshCron: '9,19,29,39,49,59 * * * * *',
+    refreshCron: '35 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'SNGO-GIVERNY',
@@ -326,7 +326,7 @@ const sources: Source[] = [
   },
   {
     id: 'DEEPMOB',
-    refreshCron: '14,34,54 * * * * *',
+    refreshCron: '43 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'DEEPMOB',
@@ -340,7 +340,7 @@ const sources: Source[] = [
   },
   {
     id: 'CAPCOT',
-    refreshCron: '8,18,28,38,48,58 * * * * *',
+    refreshCron: '41 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'CAPCOT',
@@ -359,7 +359,7 @@ const sources: Source[] = [
   },
   {
     id: 'REZOBUS',
-    refreshCron: '8,18,28,38,48,58 * * * * *',
+    refreshCron: '8 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'REZOBUS',
@@ -382,7 +382,7 @@ const sources: Source[] = [
   },
   {
     id: 'MOCA',
-    refreshCron: '8,18,28,38,48,58 * * * * *',
+    refreshCron: '9 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'MOCA',
@@ -397,7 +397,7 @@ const sources: Source[] = [
   },
   {
     id: 'ASTROBUS',
-    refreshCron: '50 * * * * *',
+    refreshCron: '12 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'ASTROBUS',
@@ -414,7 +414,7 @@ const sources: Source[] = [
   },
   {
     id: 'HOBUS',
-    refreshCron: '50 * * * * *',
+    refreshCron: '13 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'HOBUS',
@@ -431,7 +431,7 @@ const sources: Source[] = [
   },
   {
     id: 'NEVA',
-    refreshCron: '50 * * * * *',
+    refreshCron: '17 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'NEVA',
@@ -448,7 +448,7 @@ const sources: Source[] = [
   },
   {
     id: 'FICIBUS',
-    refreshCron: '6,36 * * * * *',
+    refreshCron: '18,48 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'FICIBUS',
@@ -462,7 +462,7 @@ const sources: Source[] = [
   },
   {
     id: 'VIKIBUS',
-    refreshCron: '6,36 * * * * *',
+    refreshCron: '24 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'VIKIBUS',
