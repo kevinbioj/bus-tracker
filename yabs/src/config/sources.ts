@@ -10,7 +10,7 @@ export type Source = {
 const sources: Source[] = [
   {
     id: 'DIVIA',
-    refreshCron: '0,15,30,45 * * * * *',
+    refreshCron: '15,45 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'DIVIA',
