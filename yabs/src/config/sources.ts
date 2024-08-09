@@ -10,7 +10,7 @@ export type Source = {
 const sources: Source[] = [
   {
     id: 'STAR',
-    refreshCron: '0,15,30,45 * * * * *',
+    refreshCron: '10,50 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'STAR',
@@ -25,7 +25,7 @@ const sources: Source[] = [
           if (trip.route !== '4-1001' && trip.route !== '4-1002') continue;
           trip.id = `${+trip.id}`;
         }
-      }
+      },
     },
   },
 ];
