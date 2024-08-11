@@ -355,6 +355,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       if (typeof vehiclePosition.vehicle.trip === 'undefined') return;
       const trip = resource.trips.get(vehiclePosition.vehicle.trip.tripId);
       if (!trip) return;
+
       if (
         typeof vehiclePosition.vehicle.trip.routeId !== 'undefined' &&
         vehiclePosition.vehicle.trip.routeId !== trip.route
@@ -374,7 +375,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
       }
 
       let currentDelta: number | null = null;
-      const hasStopSequences = tripUpdate?.tripUpdate.stopTimeUpdate.some(
+      const hasStopSequences = tripUpdate?.tripUpdate.stopTimeUpdate?.some(
         (stu) => typeof stu.stopSequence === 'number',
       );
       const stopTimes = trip.stops.map((stopTime) => {
@@ -474,6 +475,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
             })
           : stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!);
       const id = vehicleId ? `VEH:${vehicleId}` : trip.block ? `BLO:${trip.block}` : `JOU:${trip.id}`;
+
       entries.set(id, {
         id: `${properties.id}:${id}`,
         source,
