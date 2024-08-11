@@ -15,7 +15,7 @@ export type GtfsProperties = {
   getVehicleNumber?: (descriptor: VehicleDescriptor) => string | null;
   missingStopTimeUpdateStrategy?: 'PROPAGATE-DELAY' | 'NO-DATA' | 'SKIP';
   shapesStrategy?: 'IGNORE' | 'LOAD-IF-PRESENT' | 'GENERATE';
-  registerActivity?: boolean;
+  registerActivity?: (trip: Trip) => boolean;
 };
 
 //- GTFS Static

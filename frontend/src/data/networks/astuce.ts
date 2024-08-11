@@ -4901,6 +4901,55 @@ const astuceRoutes: Route[] = [
       },
     ],
   },
+  {
+    id: "ASTUCE:HLP",
+    name: "DEP",
+    noCartridge: true,
+    colors: { background: "#000000", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Dépôt 2 Rivières"],
+        autoHide: true,
+        name: "Dépôt 2 Rivières",
+        girouette: {
+          routeNumber: {
+            font: "1510N2E1-TCAR",
+            backgroundColor: "#B0105F",
+            outlineColor: "#000000",
+            textColor: "#FFFFFF",
+            text: "@",
+          },
+          pages: [{ spacing: 5, text: "DEPOT" }, [{ text: "CE VEHICULE NE PREND" }, { text: "PLUS DE VOYAGEUR" }]],
+        },
+      },
+      {
+        id: ["ROUEN DEPOT", "Dépôt TNI Carnot"],
+        autoHide: true,
+        name: "ROUEN DEPOT / Dépôt TNI Carnot",
+        girouette: {
+          routeNumber: {
+            font: "1510N2E1-TCAR",
+            backgroundColor: "#B0105F",
+            outlineColor: "#000000",
+            textColor: "#FFFFFF",
+            text: "@",
+          },
+          pages: [{ spacing: 5, text: "DEPOT" }, [{ text: "CE VEHICULE NE PREND" }, { text: "PLUS DE VOYAGEUR" }]],
+        },
+      },
+      {
+        id: ["Dépôt St-Julien"],
+        autoHide: true,
+        name: "Dépôt St-Julien",
+        girouette: {
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
+          routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
+          pages: [{ font: "14LUPLAN", spacing: 1, text: "DEPOT" }],
+          width: 300,
+        },
+      },
+    ],
+  },
 ];
 
 const network: Network = {

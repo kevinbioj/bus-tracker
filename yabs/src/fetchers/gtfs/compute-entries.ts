@@ -324,7 +324,7 @@ export async function fetchTripUpdate(resource: GtfsResource, properties: GtfsPr
         },
         source,
         timestamp: +tripUpdate.tripUpdate.timestamp,
-        activityRegistered: properties.registerActivity ?? true,
+        activityRegistered: properties.registerActivity?.(trip) ?? true,
       });
     }),
   );
@@ -504,7 +504,7 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
           ledColor,
         },
         timestamp: +vehiclePosition.vehicle.timestamp,
-        activityRegistered: properties.registerActivity ?? true,
+        activityRegistered: properties.registerActivity?.(trip) ?? true,
       });
     }),
   );

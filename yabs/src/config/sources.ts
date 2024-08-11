@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import { P, match } from 'ts-pattern';
 
-import type { GtfsProperties, Trip, VehiclePositionEntity } from '../fetchers/gtfs/types.js';
+import type { GtfsProperties, Service, Trip, VehiclePositionEntity } from '../fetchers/gtfs/types.js';
 import { parseTime } from '../fetchers/gtfs/utils/parse-time.js';
 import type { SiriProperties } from '../fetchers/siri/types.js';
 
@@ -19,15 +19,71 @@ export type Source = {
 const sources: Source[] = [
   {
     id: 'TCAR',
-    refreshCron: '0,30 * * * * *',
+    refreshCron: '0,15,30,45 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR',
-      staticResourceHref:
-        'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
-      tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
-      vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
+      staticResourceHref: 'https://api.mrn.cityway.fr/dataflow/offre-tc/download?provider=TCAR&dataFormat=GTFS',
+      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/trip-updates',
+      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/vehicle-positions',
       routePrefix: 'ASTUCE',
+      registerActivity: (trip) => trip.route !== 'HLP',
+      afterInit: (resource) => {
+        const hlpService: Service = {
+          id: 'HLP_SERVICE',
+          days: [true, true, true, true, true, true, true],
+          startDate: '20230901',
+          endDate: '20340831',
+          exclusions: [],
+          inclusions: [],
+        };
+
+        resource.services.set('HLP_SERVICE', hlpService);
+
+        resource.trips.set('HLP_2RIV', {
+          id: 'HLP_2RIV',
+          route: 'HLP',
+          direction: 0,
+          headsign: 'Dépôt 2 Rivières',
+          stops: [],
+          block: null,
+          service: hlpService,
+          shape: null,
+        });
+
+        resource.trips.set('HLP_RDEP', {
+          id: 'HLP_RDEP',
+          route: 'HLP',
+          direction: 0,
+          headsign: 'ROUEN DEPOT',
+          stops: [],
+          block: null,
+          service: hlpService,
+          shape: null,
+        });
+
+        resource.trips.set('HLP_TNIC', {
+          id: 'HLP_TNIC',
+          route: 'HLP',
+          direction: 0,
+          headsign: 'Dépôt TNI Carnot',
+          stops: [],
+          block: null,
+          service: hlpService,
+          shape: null,
+        });
+
+        resource.trips.set('HLP_STJU', {
+          id: 'HLP_STJU',
+          route: 'HLP',
+          direction: 0,
+          headsign: 'Dépôt St-Julien',
+          stops: [],
+          block: null,
+          service: hlpService,
+          shape: null,
+        });
+      },
       allowScheduled: (trip) => {
         if (['89', '322'].includes(trip.route)) return true;
         if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Champlain ROUEN'].includes(trip.headsign))
@@ -160,7 +216,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://gtfs.bus-tracker.fr/nomad-train.zip',
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/sncf-ter-gtfs-rt-trip-updates',
       routePrefix: 'NOMAD-TER',
-      registerActivity: false,
+      registerActivity: () => false,
       allowScheduled: false,
       mapTripUpdateEntities: (entities, resource) =>
         entities.map((tripUpdate) => {
