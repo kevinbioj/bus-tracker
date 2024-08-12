@@ -114,7 +114,9 @@ const sources: Source[] = [
         trip.service.id.includes('IST_') ||
         trip.service.id.includes('INT_') ||
         trip.route === '06' ||
-        trip.route === '89'
+        trip.route === '89' ||
+        trip.id === 'DEP_ROUD' ||
+        trip.id === 'DEP_TNIC'
           ? 'TNI'
           : 'TCAR',
     },
