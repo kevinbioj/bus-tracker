@@ -93,8 +93,8 @@ const sources: Source[] = [
         return false;
       },
       getOperator: (trip) =>
-        trip.service.id.startsWith('IST') ||
-        trip.service.id.startsWith('INT') ||
+        trip.service.id.includes('IST_') ||
+        trip.service.id.includes('INT_') ||
         trip.route === '06' ||
         trip.route === '89'
           ? 'TNI'
