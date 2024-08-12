@@ -4903,10 +4903,25 @@ const astuceRoutes: Route[] = [
   },
   {
     id: "ASTUCE:HLP",
-    name: "DEP",
+    name: "HLP",
     noCartridge: true,
     colors: { background: "#000000", text: "#FFFFFF" },
     destinations: [
+      {
+        id: ["Haut-le-pied"],
+        autoHide: true,
+        name: "Haut-le-pied",
+        girouette: {
+          routeNumber: {
+            font: "1510N2E1-TCAR",
+            backgroundColor: "#B0105F",
+            outlineColor: "#000000",
+            textColor: "#FFFFFF",
+            text: "@",
+          },
+          pages: [[{ text: "CE VEHICULE NE PREND" }, { text: "PAS DE VOYAGEUR" }]],
+        },
+      },
       {
         id: ["Dépôt 2 Rivières"],
         autoHide: true,

@@ -1,5 +1,4 @@
 import dayjs from 'dayjs';
-import { P, match } from 'ts-pattern';
 
 import type { GtfsProperties, Service, Trip, VehiclePositionEntity } from '../fetchers/gtfs/types.js';
 import { parseTime } from '../fetchers/gtfs/utils/parse-time.js';
@@ -31,7 +30,7 @@ const sources: Source[] = [
       afterInit: (resource) => {
         const hlpService: Service = {
           id: 'HLP_SERVICE',
-          days: [true, true, true, true, true, true, true],
+          days: [false, false, false, false, false, false, false],
           startDate: '20230901',
           endDate: '20340831',
           exclusions: [],
@@ -40,8 +39,8 @@ const sources: Source[] = [
 
         resource.services.set('HLP_SERVICE', hlpService);
 
-        resource.trips.set('HLP_2RIV', {
-          id: 'HLP_2RIV',
+        resource.trips.set('DEP_2RIV', {
+          id: 'DEP_2RIV',
           route: 'HLP',
           direction: 0,
           headsign: 'Dépôt 2 Rivières',
@@ -51,8 +50,8 @@ const sources: Source[] = [
           shape: null,
         });
 
-        resource.trips.set('HLP_RDEP', {
-          id: 'HLP_RDEP',
+        resource.trips.set('DEP_ROUD', {
+          id: 'DEP_RDEP',
           route: 'HLP',
           direction: 0,
           headsign: 'ROUEN DEPOT',
@@ -62,8 +61,8 @@ const sources: Source[] = [
           shape: null,
         });
 
-        resource.trips.set('HLP_TNIC', {
-          id: 'HLP_TNIC',
+        resource.trips.set('DEP_TNIC', {
+          id: 'DEP_TNIC',
           route: 'HLP',
           direction: 0,
           headsign: 'Dépôt TNI Carnot',
@@ -73,8 +72,8 @@ const sources: Source[] = [
           shape: null,
         });
 
-        resource.trips.set('HLP_STJU', {
-          id: 'HLP_STJU',
+        resource.trips.set('DEP_STJU', {
+          id: 'DEP_STJU',
           route: 'HLP',
           direction: 0,
           headsign: 'Dépôt St-Julien',
@@ -83,6 +82,25 @@ const sources: Source[] = [
           service: hlpService,
           shape: null,
         });
+
+        resource.trips.set('HLP', {
+          id: 'HLP',
+          route: 'HLP',
+          direction: 0,
+          headsign: 'Haut-le-pied',
+          stops: [],
+          block: null,
+          service: hlpService,
+          shape: null,
+        });
+      },
+      mapVehiclePositionEntities: (entities) => {
+        for (const entity of entities) {
+          if (typeof entity.vehicle.trip === 'undefined') {
+            entity.vehicle.trip = { tripId: 'HLP' };
+          }
+        }
+        return entities;
       },
       allowScheduled: (trip) => {
         if (['89', '322'].includes(trip.route)) return true;
