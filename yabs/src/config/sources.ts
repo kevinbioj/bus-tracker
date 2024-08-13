@@ -18,82 +18,83 @@ export type Source = {
 const sources: Source[] = [
   {
     id: 'TCAR',
-    refreshCron: '0,15,30,45 * * * * *',
+    refreshCron: '0,30 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR',
-      staticResourceHref: 'https://api.mrn.cityway.fr/dataflow/offre-tc/download?provider=TCAR&dataFormat=GTFS',
-      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/trip-updates',
-      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/vehicle-positions',
+      staticResourceHref:
+        'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
+      tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
+      vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       routePrefix: 'ASTUCE',
       registerActivity: (trip) => trip.route !== 'HLP',
-      afterInit: (resource) => {
-        const hlpService: Service = {
-          id: 'HLP_SERVICE',
-          days: [false, false, false, false, false, false, false],
-          startDate: '20230901',
-          endDate: '20340831',
-          exclusions: [],
-          inclusions: [],
-        };
+      // afterInit: (resource) => {
+      //   const hlpService: Service = {
+      //     id: 'HLP_SERVICE',
+      //     days: [false, false, false, false, false, false, false],
+      //     startDate: '20230901',
+      //     endDate: '20340831',
+      //     exclusions: [],
+      //     inclusions: [],
+      //   };
 
-        resource.services.set('HLP_SERVICE', hlpService);
+      //   resource.services.set('HLP_SERVICE', hlpService);
 
-        resource.trips.set('DEP_2RIV', {
-          id: 'DEP_2RIV',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'Dépôt 2 Rivières',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
+      //   resource.trips.set('DEP_2RIV', {
+      //     id: 'DEP_2RIV',
+      //     route: 'HLP',
+      //     direction: 0,
+      //     headsign: 'Dépôt 2 Rivières',
+      //     stops: [],
+      //     block: null,
+      //     service: hlpService,
+      //     shape: null,
+      //   });
 
-        resource.trips.set('DEP_ROUD', {
-          id: 'DEP_RDEP',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'ROUEN DEPOT',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
+      //   resource.trips.set('DEP_ROUD', {
+      //     id: 'DEP_RDEP',
+      //     route: 'HLP',
+      //     direction: 0,
+      //     headsign: 'ROUEN DEPOT',
+      //     stops: [],
+      //     block: null,
+      //     service: hlpService,
+      //     shape: null,
+      //   });
 
-        resource.trips.set('DEP_TNIC', {
-          id: 'DEP_TNIC',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'Dépôt TNI Carnot',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
+      //   resource.trips.set('DEP_TNIC', {
+      //     id: 'DEP_TNIC',
+      //     route: 'HLP',
+      //     direction: 0,
+      //     headsign: 'Dépôt TNI Carnot',
+      //     stops: [],
+      //     block: null,
+      //     service: hlpService,
+      //     shape: null,
+      //   });
 
-        resource.trips.set('DEP_STJU', {
-          id: 'DEP_STJU',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'Dépôt St-Julien',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
+      //   resource.trips.set('DEP_STJU', {
+      //     id: 'DEP_STJU',
+      //     route: 'HLP',
+      //     direction: 0,
+      //     headsign: 'Dépôt St-Julien',
+      //     stops: [],
+      //     block: null,
+      //     service: hlpService,
+      //     shape: null,
+      //   });
 
-        resource.trips.set('HLP', {
-          id: 'HLP',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'Haut-le-pied',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
-      },
+      //   resource.trips.set('HLP', {
+      //     id: 'HLP',
+      //     route: 'HLP',
+      //     direction: 0,
+      //     headsign: 'Haut-le-pied',
+      //     stops: [],
+      //     block: null,
+      //     service: hlpService,
+      //     shape: null,
+      //   });
+      // },
       mapVehiclePositionEntities: (entities) => {
         for (const entity of entities) {
           if (typeof entity.vehicle.trip === 'undefined') {
