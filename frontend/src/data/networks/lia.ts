@@ -2009,17 +2009,17 @@ const liaRoutes: Route[] = [
             font: "DUHAMEL-24-22-2",
             backgroundColor: "#000000",
             textColor: "#FFFFFF",
-            text: "HLP",
+            text: "LIA",
           },
           pages: [
             [
               {
                 font: "LUMIPLAN-2",
-                text: "SANS VOYAGEUR",
+                text: "",
               },
               {
                 font: "LUMIPLAN-A",
-                text: "D E P O T",
+                text: "SANS VOYAGEUR",
               },
             ],
           ],

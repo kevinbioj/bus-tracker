@@ -227,6 +227,7 @@ const sources: Source[] = [
       id: 'LIA',
       staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/1e666e24-58ee-46b9-8952-ea2755ba88f2',
       tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/lia/trip-updates',
+
       vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/lia/vehicle-positions',
       routePrefix: 'LIA',
       allowScheduled: (trip) => ['12', '13', '21'].includes(trip.route),
@@ -244,6 +245,7 @@ const sources: Source[] = [
           shape: null,
         });
       },
+      registerActivity: (trip) => trip.route !== 'HLP',
       mapVehiclePositionEntities: (vehicles) => {
         for (const vehicle of vehicles) {
           if (typeof vehicle.vehicle.trip === 'undefined') {
