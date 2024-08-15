@@ -4913,6 +4913,7 @@ const astuceRoutes: Route[] = [
         name: "Rive Gauche | J. de Béthencourt",
         city: "ROUEN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#0BBBEF",
             textColor: "#FFFFFF",
@@ -4920,7 +4921,7 @@ const astuceRoutes: Route[] = [
             font: "1510N2E1",
             text: "C",
           },
-          pages: [[{ text: "RIVE GAUCHE" }, { text: "J. DE BETHANCOURT" }]],
+          pages: [[{ text: "RIVE GAUCHE" }, { text: "JEAN DE BETHENCOURT" }]],
         },
       },
       {
@@ -4928,6 +4929,7 @@ const astuceRoutes: Route[] = [
         name: "Rive Droite | Jean Ango",
         city: "ROUEN",
         girouette: {
+          ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#0BBBEF",
             textColor: "#FFFFFF",
