@@ -108,7 +108,7 @@ const sources: Source[] = [
         return entities;
       },
       allowScheduled: (trip) => {
-        if (['89', '99', '322'].includes(trip.route)) return true;
+        if (['06', '89', '99', '322'].includes(trip.route)) return true;
         if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Champlain ROUEN'].includes(trip.headsign))
           return true;
         if (trip.route === '07' && ['Hôtel de Ville SOTTEVILLE-LÈS-ROUEN', 'Champlain ROUEN'].includes(trip.headsign))
