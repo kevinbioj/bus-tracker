@@ -466,14 +466,16 @@ export async function fetchVehiclePositionAndTripUpdate(resource: GtfsResource, 
         : vehicleDescriptor.label ?? vehicleDescriptor.id;
       const ledColor = vehicleId ? await getVehicleLedColor({ operator: source, number: vehicleId }) : null;
 
-      const nextStops =
-        typeof vehiclePosition.vehicle.currentStopSequence !== 'number'
-          ? stopTimes.filter((stopTime) => {
-              return dayjs
-                .unix(stopTime.timestamp)
-                .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minute');
-            })
+      const nextStops = vehiclePosition.vehicle.currentStopSequence
+        ? stopTimes.filter((stopTime) => {
+            return dayjs
+              .unix(stopTime.timestamp)
+              .isSameOrAfter(dayjs.unix(+vehiclePosition.vehicle.timestamp), 'minute');
+          })
+        : vehiclePosition.vehicle.stopId
+          ? stopTimes.slice(stopTimes.findIndex((stopTime) => stopTime.id === vehiclePosition.vehicle.stopId))
           : stopTimes.filter((stopTime) => stopTime.sequence >= vehiclePosition.vehicle.currentStopSequence!);
+
       const id = vehicleId ? `VEH:${vehicleId}` : trip.block ? `BLO:${trip.block}` : `JOU:${trip.id}`;
 
       entries.set(id, {
