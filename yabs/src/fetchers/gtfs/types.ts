@@ -109,6 +109,7 @@ export type VehiclePositionEntity = {
       latitude: number;
       longitude: number;
     };
+    stopId?: string;
     timestamp: string;
     trip: {
       tripId: string;
