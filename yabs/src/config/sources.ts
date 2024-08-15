@@ -15,6 +15,15 @@ export type Source = {
   type: string;
 } & ({ type: 'GTFS'; gtfsProperties: GtfsProperties } | { type: 'SIRI-XML'; siriProperties: SiriProperties });
 
+const hlpService: Service = {
+  id: 'HLP_SERVICE',
+  days: [false, false, false, false, false, false, false],
+  startDate: '20230901',
+  endDate: '20340831',
+  exclusions: [],
+  inclusions: [],
+};
+
 const sources: Source[] = [
   {
     id: 'TCAR',
@@ -32,15 +41,6 @@ const sources: Source[] = [
           if (scheduledTrip.route !== '99') continue;
           scheduledTrip.block = 'CALYPSO';
         }
-
-        const hlpService: Service = {
-          id: 'HLP_SERVICE',
-          days: [false, false, false, false, false, false, false],
-          startDate: '20230901',
-          endDate: '20340831',
-          exclusions: [],
-          inclusions: [],
-        };
 
         resource.services.set('HLP_SERVICE', hlpService);
 
@@ -230,6 +230,28 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/lia/vehicle-positions',
       routePrefix: 'LIA',
       allowScheduled: (trip) => ['12', '13', '21'].includes(trip.route),
+      afterInit: (resource) => {
+        resource.services.set('HLP_SERVICE', hlpService);
+
+        resource.trips.set('HLP', {
+          id: 'HLP',
+          route: 'HLP',
+          direction: 0,
+          headsign: 'Haut-le-pied',
+          stops: [],
+          block: null,
+          service: hlpService,
+          shape: null,
+        });
+      },
+      mapVehiclePositionEntities: (vehicles) => {
+        for (const vehicle of vehicles) {
+          if (typeof vehicle.vehicle.trip === 'undefined') {
+            vehicle.vehicle.trip = { tripId: 'HLP' };
+          }
+        }
+        return vehicles;
+      },
     },
   },
   {

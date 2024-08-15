@@ -1991,6 +1991,42 @@ const liaRoutes: Route[] = [
     colors: { background: "#706F6F", text: "#FFFFFF" },
     destinations: [],
   },
+  {
+    id: "LIA:HLP",
+    name: "HLP",
+    colors: { background: "#000000", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Haut-le-pied"],
+        name: "Haut-le-pied",
+        girouette: {
+          dimensions: {
+            height: 24,
+            rnWidth: 40,
+            destinationWidth: 140,
+          },
+          routeNumber: {
+            font: "DUHAMEL-24-22-2",
+            backgroundColor: "#000000",
+            textColor: "#FFFFFF",
+            text: "HLP",
+          },
+          pages: [
+            [
+              {
+                font: "LUMIPLAN-2",
+                text: "SANS VOYAGEUR",
+              },
+              {
+                font: "LUMIPLAN-A",
+                text: "D E P O T",
+              },
+            ],
+          ],
+        },
+      },
+    ],
+  },
 ];
 
 const network: Network = {
