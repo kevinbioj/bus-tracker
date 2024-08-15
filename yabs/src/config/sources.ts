@@ -22,13 +22,17 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR',
-      staticResourceHref:
-        'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
-      tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
-      vehiclePositionHref: 'http://localhost:40409/vehicle-positions',
+      staticResourceHref: 'https://api.mrn.cityway.fr/dataflow/offre-tc/download?provider=TCAR&dataFormat=GTFS',
+      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/trip-updates',
+      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/vehicle-positions',
       routePrefix: 'ASTUCE',
       registerActivity: (trip) => trip.route !== 'HLP',
       afterInit: (resource) => {
+        for (const scheduledTrip of resource.scheduledTrips) {
+          if (scheduledTrip.route !== '99') continue;
+          scheduledTrip.block = 'CALYPSO';
+        }
+
         const hlpService: Service = {
           id: 'HLP_SERVICE',
           days: [false, false, false, false, false, false, false],
@@ -104,7 +108,7 @@ const sources: Source[] = [
         return entities;
       },
       allowScheduled: (trip) => {
-        if (['89', '322'].includes(trip.route)) return true;
+        if (['89', '99', '322'].includes(trip.route)) return true;
         if (trip.route === '01' && ['Stade Diochon PETIT-QUEVILLY', 'Champlain ROUEN'].includes(trip.headsign))
           return true;
         if (trip.route === '07' && ['Hôtel de Ville SOTTEVILLE-LÈS-ROUEN', 'Champlain ROUEN'].includes(trip.headsign))

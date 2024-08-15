@@ -4902,6 +4902,45 @@ const astuceRoutes: Route[] = [
     ],
   },
   {
+    id: "ASTUCE:99",
+    name: "Calypso",
+    noCartridge: true,
+    mapOnly: true,
+    colors: { background: "#0BBBEF", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["Rive Gauche | Ponton Jean de Béthencourt"],
+        name: "Rive Gauche | J. de Béthencourt",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#0BBBEF",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "C",
+          },
+          pages: [[{ text: "RIVE GAUCHE" }, { text: "J. DE BETHANCOURT" }]],
+        },
+      },
+      {
+        id: ["Rive Droite | Ponton Jean Ango"],
+        name: "Rive Droite | Jean Ango",
+        city: "ROUEN",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#0BBBEF",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "C",
+          },
+          pages: [[{ text: "RIVE DROITE" }, { text: "JEAN ANGO" }]],
+        },
+      },
+    ],
+  },
+  {
     id: "ASTUCE:HLP",
     name: "HLP",
     noCartridge: true,
