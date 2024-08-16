@@ -11,7 +11,7 @@ export default function Providers({ children }: ProvidersProps) {
   return (
     <PlausibleProvider
       customDomain="https://plausible.bus-tracker.fr"
-      domain="normandie.bus-tracker.fr"
+      domain="grenoble.bus-tracker.fr"
       enabled
       selfHosted
       trackOutboundLinks
