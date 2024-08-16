@@ -64,7 +64,7 @@ const tagRoutes: Route[] = [
       {
         id: ["Le Pont-de-Claix, L'Etoile"],
         name: "L'Etoile",
-        city: "LE PONT-DE-CALAIX",
+        city: "LE PONT-DE-CLAIX",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#3376B8", textColor: "#FFFFFF", outlineColor: "#000000", text: "A" },
@@ -316,7 +316,7 @@ const tagRoutes: Route[] = [
       {
         id: ["Gières, Universités - Biologie"],
         name: "Universités - Biologie",
-        city: "GRIÈRES",
+        city: "GIÈRES",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F5D24D", textColor: "#000000", outlineColor: "#FFFFFF", text: "C5" },
@@ -372,7 +372,7 @@ const tagRoutes: Route[] = [
       {
         id: ["Gières, Universités - Biologie"],
         name: "Universités - Biologie",
-        city: "GRIÈRES",
+        city: "GIÈRES",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#F5D24D", textColor: "#000000", outlineColor: "#FFFFFF", text: "C7" },
@@ -469,12 +469,12 @@ const tagRoutes: Route[] = [
       },
       {
         id: ["Gières, Gières Gare - Universités"],
-        name: "Grières Gare - Universités",
-        city: "GRIÈRES",
+        name: "Gare - Universités",
+        city: "GIÈRES",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#33A457", textColor: "#FFFFFF", outlineColor: "#000000", text: "14" },
-          pages: [{ font: "1508C2E1", spacing: 1, text: "GRIERES GARE-UNIVERSITES" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "GIERES GARE-UNIVERSITES" }],
         },
       },
     ],
@@ -698,12 +698,12 @@ const tagRoutes: Route[] = [
       {
         id: ["Gières, Gières Gare - Universités"],
         autoHide: true,
-        name: "Grières Gare - Universités",
-        city: "GRIÈRES",
+        name: "Gare - Universités",
+        city: "GIÈRES",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#1E71B8", textColor: "#FFFFFF", outlineColor: "#000000", text: "23" },
-          pages: [{ font: "1508C2E1", spacing: 1, text: "GRIERES GARE-UNIVERSITES" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "GIERES GARE-UNIVERSITES" }],
         },
       },
       {
@@ -1280,11 +1280,11 @@ const tagRoutes: Route[] = [
         id: ["Gières, Gières Gare - Universités"],
         autoHide: true,
         name: "Gare - Universités",
-        city: "GRIÈRES",
+        city: "GIÈRES",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#D572A8", textColor: "#FFFFFF", outlineColor: "#000000", text: "59" },
-          pages: [{ font: "1508C2E1", spacing: 1, text: "GRIERES GARE-UNIVERSITES" }],
+          pages: [{ font: "1508C2E1", spacing: 1, text: "GIERES GARE-UNIVERSITES" }],
         },
       },
       {
@@ -1744,7 +1744,7 @@ const tagRoutes: Route[] = [
         id: ["Gières, Gières Gare - Universités"],
         autoHide: true,
         name: "Bus Relais B - Gare - Universités",
-        city: "GRIÈRES",
+        city: "GIÈRES",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#479A45", textColor: "#FFFFFF", outlineColor: "#000000", text: "B" },
