@@ -1396,7 +1396,7 @@ const tagRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#D572A8", textColor: "#FFFFFF", outlineColor: "#000000", text: "62" },
-          pages: [{ font: "1510N2E1", text: "NOTRE-DAME - MUSEE" }],
+          pages: [{ font: "1508C2E1", text: "NOTRE-DAME - MUSEE" }],
         },
       },
       {
