@@ -209,7 +209,7 @@ const sources: Source[] = [
   },
   {
     id: 'TWISTO',
-    refreshCron: '10,40 * * * * *',
+    refreshCron: '10,25,40,55 * * * * *',
     type: 'SIRI-XML',
     siriProperties: {
       id: 'TWISTO',
