@@ -18,7 +18,6 @@ const sources: Source[] = [
       routePrefix: 'TAG',
       afterInit: (resource) => {
         for (const stop of resource.stops.values()) {
-          console.log(stop);
           if (stop.name.indexOf(', ') < 0) continue;
           const [city, name] = stop.name.split(', ');
           stop.name = `${city.toUpperCase()} - ${name}`;
