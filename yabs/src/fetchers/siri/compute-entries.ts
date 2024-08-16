@@ -30,8 +30,8 @@ export async function computeSiriEntries(properties: SiriProperties): Promise<Ya
     },
     method: 'POST',
     signal: AbortSignal.timeout(10000),
-  });
-  if (!response.ok) return null;
+  }).catch(() => null);
+  if (response === null || !response.ok) return null;
   const payload = await response.text();
   const data = parser.parse(payload);
   const vehicles = data.Siri.ServiceDelivery.VehicleMonitoringDelivery.VehicleActivity as
