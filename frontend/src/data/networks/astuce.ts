@@ -4966,7 +4966,7 @@ const astuceRoutes: Route[] = [
       {
         id: ["Dépôt 2 Rivières"],
         autoHide: true,
-        name: "Dépôt 2 Rivières",
+        name: "TCAR - Dépôt 2 Rivières",
         girouette: {
           routeNumber: {
             font: "1510N2E1-TCAR",
@@ -4981,7 +4981,7 @@ const astuceRoutes: Route[] = [
       {
         id: ["ROUEN DEPOT", "Dépôt TNI Carnot"],
         autoHide: true,
-        name: "ROUEN DEPOT / Dépôt TNI Carnot",
+        name: "TNI - Dépôt Rouen-Carnot",
         girouette: {
           routeNumber: {
             font: "1510N2E1-TCAR",
@@ -4996,11 +4996,28 @@ const astuceRoutes: Route[] = [
       {
         id: ["Dépôt St-Julien"],
         autoHide: true,
-        name: "Dépôt St-Julien",
+        name: "TCAR - Dépôt Saint-Julien",
         girouette: {
           dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
           routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
-          pages: [{ font: "14LUPLAN", spacing: 1, text: "DEPOT" }],
+          pages: [
+            { font: "14LUPLAN", spacing: 1, text: "DEPOT" },
+            {
+              font: "14LUPLAN",
+              spacing: 1,
+              text: "CE VEHICULE",
+            },
+            {
+              font: "14LUPLAN",
+              spacing: 1,
+              text: "NE PREND PAS",
+            },
+            {
+              font: "14LUPLAN",
+              spacing: 1,
+              text: "DE VOYAGEUR",
+            },
+          ],
           width: 300,
         },
       },
