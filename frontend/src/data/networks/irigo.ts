@@ -37,6 +37,7 @@ const irigoRoutes: Route[] = [
   },
   {
     id: "Tbus",
+    routeIds: ["Tbus", "Navette Tram Avrillé"],
     name: "Tbus",
     colors: { background: "#E6007E", text: "#FFFFFF" },
     destinations: [
@@ -52,7 +53,7 @@ const irigoRoutes: Route[] = [
             font: "1508C2E1",
             text: "Tbus",
           },
-          pages: [{ font: "1508C2E1", spacing: 3, text: "ARDENNE <> ACACIAS" }],
+          pages: [[{ text: "REMPLACEMENT LIGNE A" }, { text: "Ardenne - Acacias - Ardenne" }]],
         },
       },
     ],
