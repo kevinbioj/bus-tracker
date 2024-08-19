@@ -31,9 +31,15 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR',
-      staticResourceHref: 'https://api.mrn.cityway.fr/dataflow/offre-tc/download?provider=TCAR&dataFormat=GTFS',
-      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/trip-updates',
-      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/vehicle-positions',
+      // ANCIENNE INFRA
+      staticResourceHref:
+        'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
+      tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
+      vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
+      // NOUVELLE INFRA
+      // staticResourceHref: 'https://api.mrn.cityway.fr/dataflow/offre-tc/download?provider=TCAR&dataFormat=GTFS',
+      // tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/trip-updates',
+      // vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/vehicle-positions',
       routePrefix: 'ASTUCE',
       registerActivity: (trip) => trip.route !== 'HLP',
       afterInit: (resource) => {
