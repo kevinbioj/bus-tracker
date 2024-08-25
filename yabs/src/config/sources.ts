@@ -41,69 +41,28 @@ const sources: Source[] = [
       tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/trip-updates',
       vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/vehicle-positions',
       routePrefix: 'ASTUCE',
+      shapesStrategy: 'IGNORE',
       registerActivity: (trip) => trip.route !== 'HLP',
       afterInit: (resource) => {
-        for (const scheduledTrip of resource.scheduledTrips) {
-          if (scheduledTrip.route !== '99') continue;
-          scheduledTrip.block = 'CALYPSO';
-        }
-
         resource.services.set('HLP_SERVICE', hlpService);
 
-        resource.trips.set('DEP_2RIV', {
-          id: 'DEP_2RIV',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'Dépôt 2 Rivières',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
+        const makeHlpTrip = (id: string, headsign: string) =>
+          resource.trips.set(id, {
+            id,
+            route: 'HLP',
+            direction: 0,
+            headsign,
+            stops: [],
+            service: hlpService,
+            block: null,
+            shape: null,
+          });
 
-        resource.trips.set('DEP_ROUD', {
-          id: 'DEP_RDEP',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'ROUEN DEPOT',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
-
-        resource.trips.set('DEP_TNIC', {
-          id: 'DEP_TNIC',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'Dépôt TNI Carnot',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
-
-        resource.trips.set('DEP_STJU', {
-          id: 'DEP_STJU',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'Dépôt St-Julien',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
-
-        resource.trips.set('HLP', {
-          id: 'HLP',
-          route: 'HLP',
-          direction: 0,
-          headsign: 'Haut-le-pied',
-          stops: [],
-          block: null,
-          service: hlpService,
-          shape: null,
-        });
+        makeHlpTrip('DEP_2RIV', 'Dépôt 2 Rivières');
+        makeHlpTrip('DEP_ROUD', 'ROUEN DEPOT');
+        makeHlpTrip('DEP_TNIC', 'Dépôt TNI Carnot');
+        makeHlpTrip('DEP_STJU', 'Dépôt St-Julien');
+        makeHlpTrip('HLP', 'Haut-le-pied');
       },
       mapVehiclePositionEntities: (entities) => {
         for (const entity of entities) {
