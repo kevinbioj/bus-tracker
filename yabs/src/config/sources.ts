@@ -356,8 +356,8 @@ const sources: Source[] = [
       id: 'SNGO',
       routePrefix: 'SNGO',
       staticResourceHref: 'https://api.atm.cityway.fr/dataflow/offre-tc/download?provider=SNGO&dataFormat=GTFS',
-      tripUpdateHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
-      vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
+      // tripUpdateHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
+      // vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       getOperator: () => 'SNGO',
       shapesStrategy: 'IGNORE',
       afterInit: (resource) => {
