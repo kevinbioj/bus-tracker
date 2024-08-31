@@ -46,6 +46,7 @@ export async function downloadStaticResource(properties: GtfsProperties) {
     trips,
     scheduledTrips: [],
     lastModified: response.headers.has('Last-Modified') ? dayjs(response.headers.get('Last-Modified')) : null,
+    etag: response.headers.get('ETag'),
     loadedAt: dayjs(),
   };
   properties.afterInit?.(semiResource);
