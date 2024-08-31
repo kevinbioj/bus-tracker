@@ -1,11 +1,10 @@
 import dayjs from 'dayjs';
 import decompress from 'decompress';
 import { exec } from 'node:child_process';
-import { readFile, rm } from 'node:fs/promises';
+import { access, rm, stat } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import type { GtfsProperties, GtfsResource, Service, Shape, Stop, Trip } from './types.js';
-import { groupBy } from './utils/group-by.js';
 import { parseCsv } from './utils/parse-csv.js';
 
 const $ = (command: string) =>
@@ -68,97 +67,107 @@ export async function downloadStaticResource(properties: GtfsProperties) {
 async function loadCalendars(resourcePath: string) {
   const services = new Map<string, Service>();
 
-  const serviceRecords = await readFile(join(resourcePath, 'calendar.txt'))
-    .then(parseCsv)
-    .catch(() => []);
-
-  for (const serviceRecord of serviceRecords) {
-    services.set(serviceRecord.service_id, {
-      id: serviceRecord.service_id,
-      days: [
-        !!+serviceRecord.sunday,
-        !!+serviceRecord.monday,
-        !!+serviceRecord.tuesday,
-        !!+serviceRecord.wednesday,
-        !!+serviceRecord.thursday,
-        !!+serviceRecord.friday,
-        !!+serviceRecord.saturday,
-      ],
-      exclusions: [],
-      inclusions: [],
-      startDate: serviceRecord.start_date,
-      endDate: serviceRecord.end_date,
+  const cFile = join(resourcePath, 'calendar.txt');
+  const cFileExists = await access(cFile)
+    .then(() => true)
+    .catch(() => false);
+  if (cFileExists) {
+    await parseCsv(cFile, (record) => {
+      services.set(record.service_id, {
+        id: record.service_id,
+        days: [
+          !!+record.sunday,
+          !!+record.monday,
+          !!+record.tuesday,
+          !!+record.wednesday,
+          !!+record.thursday,
+          !!+record.friday,
+          !!+record.saturday,
+        ],
+        exclusions: [],
+        inclusions: [],
+        startDate: record.start_date,
+        endDate: record.end_date,
+      });
     });
   }
 
-  const calendarDateRecords = await readFile(join(resourcePath, 'calendar_dates.txt'))
-    .then(parseCsv)
-    .catch(() => []);
+  const cdFile = join(resourcePath, 'calendar_dates.txt');
+  const cdFileExists = await access(cdFile)
+    .then(() => true)
+    .catch(() => false);
+  if (cdFileExists) {
+    await parseCsv(cdFile, (record) => {
+      let service = services.get(record.service_id);
+      if (!service) {
+        service = {
+          id: record.service_id,
+          days: [false, false, false, false, false, false, false],
+          exclusions: [],
+          inclusions: [],
+          startDate: '20000101',
+          endDate: '20991231',
+        };
+        services.set(service.id, service);
+      }
 
-  for (const calendarDateRecord of calendarDateRecords) {
-    let service = services.get(calendarDateRecord.service_id);
-    if (!service) {
-      service = {
-        id: calendarDateRecord.service_id,
-        days: [false, false, false, false, false, false, false],
-        exclusions: [],
-        inclusions: [],
-        startDate: '20000101',
-        endDate: '20991231',
-      };
-      services.set(service.id, service);
-    }
-
-    switch (+calendarDateRecord.exception_type) {
-      case 1:
-        service.inclusions.push(calendarDateRecord.date);
-        break;
-      case 2:
-        service.exclusions.push(calendarDateRecord.date);
-        break;
-      default:
-    }
+      switch (+record.exception_type) {
+        case 1:
+          service.inclusions.push(record.date);
+          break;
+        case 2:
+          service.exclusions.push(record.date);
+          break;
+        default:
+      }
+    });
   }
 
   return services;
 }
 
 async function loadShapes(resourcePath: string) {
-  const shapePoints = await readFile(join(resourcePath, 'shapes.txt'))
-    .then(parseCsv)
-    .catch(() => []);
-  const shapePointsByShapeId = groupBy(shapePoints, (shapePoint) => shapePoint.shape_id);
   const shapes = new Map<string, Shape>();
 
-  for (const [shapeId, shapePoints] of shapePointsByShapeId) {
-    shapes.set(shapeId, {
-      id: shapeId,
-      points: shapePoints
-        .map((shapePoint) => ({
-          lat: +shapePoint.shape_pt_lat,
-          lon: +shapePoint.shape_pt_lon,
-          sequence: +shapePoint.shape_pt_sequence,
-          distance: +shapePoint.shape_dist_traveled,
-        }))
-        .toSorted((a, b) => a.sequence - b.sequence),
+  const sFile = join(resourcePath, 'shapes.txt');
+  const sFileExists = await access(sFile)
+    .then(() => true)
+    .catch(() => false);
+  if (sFileExists) {
+    await parseCsv(sFile, (record) => {
+      let shape = shapes.get(record.shape_id);
+      if (typeof shape === 'undefined') {
+        shape = { id: record.shape_id, points: [] };
+        shapes.set(record.shape_id, shape);
+      }
+
+      shape.points.push({
+        lat: +record.shape_pt_lat,
+        lon: +record.shape_pt_lon,
+        sequence: +record.shape_pt_sequence,
+        distance: +record.shape_dist_traveled,
+      });
     });
   }
+
+  for (const shape of shapes.values()) shape.points.sort((a, b) => a.sequence - b.sequence);
 
   return shapes;
 }
 
 async function loadStops(resourcePath: string) {
-  const stopRecords = await readFile(join(resourcePath, 'stops.txt')).then(parseCsv);
   const stops = new Map<string, Stop>();
-  for (const stopRecord of stopRecords) {
-    if (stopRecord.location_type && +stopRecord.location_type !== 0) continue;
-    stops.set(stopRecord.stop_id, {
-      id: stopRecord.stop_id,
-      name: stopRecord.stop_name,
-      lat: +stopRecord.stop_lat,
-      lon: +stopRecord.stop_lon,
+
+  await parseCsv(join(resourcePath, 'stops.txt'), (record) => {
+    if (record.location_type && +record.location_type !== 0) return;
+    stops.set(record.stop_id, {
+      id: record.stop_id,
+      name: record.stop_name,
+      lat: +record.stop_lat,
+      lon: +record.stop_lon,
     });
-  }
+  });
+
   return stops;
 }
 
@@ -168,32 +177,34 @@ async function loadTrips(
   shapes: Map<string, Shape>,
   stops: Map<string, Stop>,
 ) {
-  const tripRecords = await readFile(join(resourcePath, 'trips.txt')).then(parseCsv);
-  const stopTimes = groupBy(
-    await readFile(join(resourcePath, 'stop_times.txt')).then(parseCsv),
-    (stopTime) => stopTime.trip_id,
-  );
   const trips = new Map<string, Trip>();
 
-  for (const tripRecord of tripRecords) {
-    trips.set(tripRecord.trip_id, {
-      id: tripRecord.trip_id,
-      service: services.get(tripRecord.service_id)!,
-      block: tripRecord.block_id || null,
-      route: tripRecord.route_id,
-      direction: +tripRecord.direction_id,
-      headsign: tripRecord.trip_headsign,
-      stops: (stopTimes.get(tripRecord.trip_id) ?? [])
-        .map((stopTime) => ({
-          sequence: +stopTime.stop_sequence,
-          stop: stops.get(stopTime.stop_id)!,
-          time: stopTime.departure_time,
-          distanceTraveled: stopTime.shape_dist_traveled ? +stopTime.shape_dist_traveled : null,
-        }))
-        .sort((a, b) => a.sequence - b.sequence),
-      shape: shapes.get(tripRecord.shape_id) ?? null,
+  await parseCsv(join(resourcePath, 'trips.txt'), (record) => {
+    trips.set(record.trip_id, {
+      id: record.trip_id,
+      service: services.get(record.service_id)!,
+      block: record.block_id || null,
+      route: record.route_id,
+      direction: +record.direction_id,
+      headsign: record.trip_headsign,
+      stops: [],
+      shape: shapes.get(record.shape_id) ?? null,
     });
-  }
+  });
+
+  await parseCsv(join(resourcePath, 'stop_times.txt'), (record) => {
+    const trip = trips.get(record.trip_id);
+    if (typeof trip === 'undefined') return;
+
+    trip.stops.push({
+      sequence: +record.stop_sequence,
+      stop: stops.get(record.stop_id)!,
+      time: record.departure_time,
+      distanceTraveled: record.shape_dist_traveled ? +record.shape_dist_traveled : null,
+    });
+  });
+
+  for (const trip of trips.values()) trip.stops.sort((a, b) => a.sequence - b.sequence);
 
   return trips;
 }
