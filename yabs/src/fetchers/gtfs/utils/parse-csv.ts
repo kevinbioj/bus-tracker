@@ -1,18 +1,22 @@
 import { parse } from 'csv-parse';
+import { createReadStream } from 'node:fs';
 
-export async function parseCsv<T = Record<string, string>>(input: string | Buffer) {
-  const [header, ...records] = await new Promise<string[][]>((resolve, reject) =>
-    parse(input, { bom: true, skipEmptyLines: true }, (error, records) => {
-      if (error) reject(error);
-      else resolve(records);
-    }),
-  );
-  return records.map((values) => {
-    const record = {} as Record<string | number, unknown>;
-    values.forEach((value, index) => {
-      const key = header[index];
-      record[key] = value;
+export function parseCsv<T = Record<string, string>>(path: string, onRecord: (item: T) => unknown) {
+  const stream = createReadStream(path);
+  let header: string[] = [];
+
+  const csvStream = stream.pipe(parse({ bom: true, skipEmptyLines: true }));
+  csvStream.once('data', (headerRow) => {
+    header = headerRow;
+    csvStream.on('data', (dataRow) => {
+      let record: any = {};
+      for (let i = 0; i < dataRow.length; i += 1) record[header[i]] = dataRow[i];
+      onRecord(record);
     });
-    return record as T;
+  });
+
+  return new Promise((resolve, reject) => {
+    csvStream.once('end', resolve);
+    csvStream.once('error', reject);
   });
 }
