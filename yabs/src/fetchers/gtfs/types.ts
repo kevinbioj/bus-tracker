@@ -35,6 +35,7 @@ export type GtfsResource = {
   trips: Map<string, Trip>;
   scheduledTrips: Trip[];
   lastModified: Dayjs | null;
+  etag: string | null;
   loadedAt: Dayjs;
 };
 
