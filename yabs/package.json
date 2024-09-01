@@ -7,25 +7,25 @@
     "format": "prettier --config .prettierrc --write src"
   },
   "dependencies": {
-    "@hono/node-server": "^1.11.1",
-    "better-sqlite3": "^9.6.0",
-    "croner": "^8.0.2",
-    "csv-parse": "^5.5.5",
-    "dayjs": "^1.11.11",
+    "@hono/node-server": "^1.12.2",
+    "better-sqlite3": "^11.2.1",
+    "croner": "^8.1.1",
+    "csv-parse": "^5.5.6",
+    "dayjs": "^1.11.13",
     "decompress": "^4.2.1",
-    "drizzle-orm": "^0.30.10",
-    "fast-xml-parser": "^4.3.6",
-    "hono": "^4.3.2",
-    "protobufjs": "^7.2.6",
-    "ts-pattern": "^5.1.1",
+    "drizzle-orm": "^0.33.0",
+    "fast-xml-parser": "^4.4.1",
+    "hono": "^4.5.10",
+    "protobufjs": "^7.4.0",
+    "ts-pattern": "^5.3.1",
     "tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "@types/better-sqlite3": "^7.6.10",
+    "@types/better-sqlite3": "^7.6.11",
     "@types/decompress": "^4.2.7",
-    "@types/node": "^20.14.2",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
+    "@types/node": "^22.5.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
   }
 }
