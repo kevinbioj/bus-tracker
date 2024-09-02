@@ -1,7 +1,8 @@
 import dayjs from 'dayjs';
 import decompress from 'decompress';
 import { exec } from 'node:child_process';
-import { access, rm, stat } from 'node:fs/promises';
+import { access, mkdtemp, rm, stat } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 import type { GtfsProperties, GtfsResource, Service, Shape, Stop, Trip } from './types.js';
@@ -16,29 +17,30 @@ const $ = (command: string) =>
   );
 
 export async function downloadStaticResource(properties: GtfsProperties) {
-  const tmpdir = await $('mktemp -d');
+  const directory = await mkdtemp(join(tmpdir(), `bus-tracker_${properties.id}_`));
   const response = await fetch(properties.staticResourceHref, {
     signal: AbortSignal.timeout(60000),
   });
+  if (!response.ok) throw new Error(`Resource download failed with status code ${response.status}.`);
   const gtfsArchive = Buffer.from(await response.arrayBuffer());
-  await decompress(gtfsArchive, tmpdir);
-  await rm(join(tmpdir, 'feed_info.txt')).catch(() => void 0); // Ce fichier n'existe pas nécessairement
+  await decompress(gtfsArchive, directory);
+  await rm(join(directory, 'feed_info.txt')).catch(() => void 0); // Ce fichier n'existe pas nécessairement
   if (properties.shapesStrategy === 'GENERATE') {
     if (typeof process.env.OSM_PATH === 'undefined') {
       console.warn(`YABS\t${properties.id}\tOSM_PATH environment variable is missing, skipping shapes generation.`);
     } else {
-      await $(`pfaedle -D --inplace -x ${process.env.OSM_PATH} ${tmpdir}`).catch((e) =>
+      await $(`pfaedle -D --inplace -x ${process.env.OSM_PATH} ${directory}`).catch((e) =>
         console.error(`YABS\t${properties.id}\tFailed to generate shapes:`, e),
       );
     }
   }
   const [services, shapes, stops] = await Promise.all([
-    loadCalendars(tmpdir),
-    properties.shapesStrategy === 'IGNORE' ? new Map() : loadShapes(tmpdir),
-    loadStops(tmpdir),
+    loadCalendars(directory),
+    properties.shapesStrategy === 'IGNORE' ? new Map() : loadShapes(directory),
+    loadStops(directory),
   ]);
 
-  const trips = await loadTrips(tmpdir, services, shapes, stops);
+  const trips = await loadTrips(directory, services, shapes, stops);
   const semiResource = {
     services,
     stops,
@@ -57,7 +59,7 @@ export async function downloadStaticResource(properties: GtfsProperties) {
         : [...trips.values()].filter((trip) =>
             (properties.allowScheduled as (trip: Trip, resource: GtfsResource) => boolean)(trip, semiResource),
           );
-  await rm(tmpdir, { recursive: true });
+  await rm(directory, { recursive: true });
   const resource = { ...semiResource, scheduledTrips };
   return resource;
 }
