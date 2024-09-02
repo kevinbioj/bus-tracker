@@ -8,7 +8,7 @@ const semoRoutes: Route[] = [
     colors: { background: "#E85117", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["C1 LOUVIERS - Rendez-Vous Bus"],
+        id: ["LOUVIERS - Rendez-Vous Bus"],
         name: "Rendez-Vous Bus",
         city: "LOUVIERS",
         girouette: {
@@ -18,18 +18,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["C1 VAL-DE-REUIL - Voie Babeurre"],
-        autoHide: true,
-        name: "Voie Babeurre",
-        city: "VAL-DE-REUIL",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#E85117", textColor: "#FFFFFF", outlineColor: "#000000", text: "C1" },
-          pages: [{ text: "VAL-DE-REUIL" }, { text: "VOIE BABEURRE" }],
-        },
-      },
-      {
-        id: ["C1 VAL-DE-REUIL - Pasteur"],
+        id: ["VAL-DE-REUIL - Pasteur"],
         autoHide: true,
         name: "Pasteur",
         city: "VAL-DE-REUIL",
@@ -40,7 +29,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["C1 VAL-DE-REUIL - Gare S.N.C.F."],
+        id: ["VAL-DE-REUIL - Gare S.N.C.F."],
         alternate: "Gare SNCF de Val-de-Reuil",
         name: "Gare SNCF",
         city: "VAL-DE-REUIL",
@@ -59,7 +48,7 @@ const semoRoutes: Route[] = [
     colors: { background: "#F5C626", text: "#000000" },
     destinations: [
       {
-        id: ["E1 ST-AUBIN-LES-ELBEUF - Hôpital", "E1 SAINT-AUBIN-LES-ELBEUF - Hôpital"],
+        id: ["ST-AUBIN-LES-ELBEUF - Hôpital", "SAINT-AUBIN-LES-ELBEUF - Hôpital"],
         alternate: "Hôpital de Saint-Aubin-lès-Elbeuf",
         name: "Hôpital",
         city: "SAINT-AUBIN-LÈS-ELBEUF",
@@ -75,7 +64,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["E1 VAL-DE-REUIL - Pasteur"],
+        id: ["VAL-DE-REUIL - Pasteur"],
         autoHide: true,
         name: "Pasteur",
         city: "VAL-DE-REUIL",
@@ -91,7 +80,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["E1 VAL-DE-REUIL - Voie Babeurre"],
+        id: ["VAL-DE-REUIL - Voie Babeurre"],
         autoHide: true,
         name: "Voie Babeurre",
         city: "VAL-DE-REUIL",
@@ -107,7 +96,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["E1 LE-VAL-D'HAZEY - Gaillon-Abvye SNCF"],
+        id: ["LE-VAL-D'HAZEY - Gaillon-Aubevoye SNCF"],
         name: "Gare de Gaillon-Aubevoye",
         city: "LE-VAL-D'HAZEY",
         girouette: {
@@ -130,7 +119,7 @@ const semoRoutes: Route[] = [
     colors: { background: "#F39207", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["2 LOUVIERS - Lycée Les Fontenelles"],
+        id: ["LOUVIERS - Lycée Les Fontenelles"],
         name: "Lycée Les Fontenelles",
         city: "LOUVIERS",
         girouette: {
@@ -140,7 +129,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["2 INCARVILLE - La Source"],
+        id: ["INCARVILLE - La Source"],
         autoHide: true,
         name: "La Source",
         city: "INCARVILLE",
@@ -151,7 +140,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["2 VAL-DE-REUIL - Gare S.N.C.F."],
+        id: ["VAL-DE-REUIL - Gare S.N.C.F."],
         autoHide: true,
         alternate: "Gare SNCF de Val-de-Reuil",
         name: "Gare SNCF",
@@ -163,7 +152,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["2 INCARVILLE - Mairie"],
+        id: ["INCARVILLE - Mairie"],
         autoHide: true,
         alternate: "Mairie d'Incarville",
         name: "Mairie",
@@ -175,7 +164,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["2 LOUVIERS - Rendez-Vous Bus"],
+        id: ["LOUVIERS - Rendez-Vous Bus"],
         name: "Rendez-Vous Bus",
         city: "LOUVIERS",
         girouette: {
@@ -187,14 +176,14 @@ const semoRoutes: Route[] = [
     ],
   },
   {
-    id: "SEMO:3a",
+    id: "SEMO:3",
     noCartridge: true,
-    name: "3a",
+    name: "3",
     colors: { background: "#A1DAF8", text: "#000000" },
     destinations: [
       {
-        id: ["3a Circulaire Louviers Sens Horaire"],
-        name: "Sens horaire",
+        id: ["LOUVIERS - Glacéo"],
+        name: "Glacéo",
         city: "LOUVIERS",
         girouette: {
           ledColor: "WHITE",
@@ -204,66 +193,40 @@ const semoRoutes: Route[] = [
             outlineColor: "#FFFFFF",
             text: "3",
           },
-          pages: [[{ text: "CIRCULAIRE DE LOUVIERS" }, { text: "SENS HORAIRE" }]],
+          pages: [{ text: "LOUVIERS" }, { text: "GLACEO" }],
         },
       },
-    ],
-  },
-  {
-    id: "SEMO:3b",
-    noCartridge: true,
-    name: "3b",
-    colors: { background: "#A1DAF8", text: "#000000" },
-    destinations: [
       {
-        id: ["3b Circulaire Louviers Sens Anti-Horaire"],
-        name: "Sens anti-horaire",
+        id: ["LOUVIERS - Rendez-Vous Bus"],
+        name: "Rendez-Vous Bus",
         city: "LOUVIERS",
         girouette: {
           ledColor: "WHITE",
           routeNumber: {
             backgroundColor: "#A1DAF8",
             textColor: "#000000",
-            text: "3",
             outlineColor: "#FFFFFF",
+            text: "3",
           },
-          pages: [[{ text: "CIRCULAIRE DE LOUVIERS" }, { text: "SENS ANTI-HORAIRE" }]],
+          pages: [{ text: "LOUVIERS" }, { font: "1510N2E1", text: "RENDEZ-VOUS BUS" }],
         },
       },
     ],
   },
   {
-    id: "SEMO:4a",
+    id: "SEMO:4",
     noCartridge: true,
-    name: "4a",
+    name: "4",
     colors: { background: "#954B97", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["4a Circulaire Val-de-Reuil Sens Horaire"],
-        name: "Sens horaire",
+        id: ["VAL-DE-REUIL - Gare S.N.C.F."],
+        name: "Gare SNCF",
         city: "VAL-DE-REUIL",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#954B97", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [[{ text: "CIRCULAIRE VAL-DE-REUIL" }, { text: "SENS HORAIRE" }]],
-        },
-      },
-    ],
-  },
-  {
-    id: "SEMO:4b",
-    noCartridge: true,
-    name: "4b",
-    colors: { background: "#954B97", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["4a Circulaire Val-de-Reuil Sens Horaire"],
-        name: "Sens anti-horaire",
-        city: "VAL-DE-REUIL",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#954B97", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [[{ text: "CIRCULAIRE VAL-DE-REUIL" }, { text: "SENS ANTI-HORAIRE" }]],
+          pages: [{ text: "VAL-DE-REUIL" }, { text: "GARE SNCF" }],
         },
       },
     ],
@@ -330,7 +293,7 @@ const semoRoutes: Route[] = [
     colors: { background: "#83BC2A", text: "#000000" },
     destinations: [
       {
-        id: ["6a Circulaire Gaillon Sens Horaire"],
+        id: ["6a Circulaire Gaillon Sens Horaire", "Aller"],
         name: "Sens horaire",
         city: "GAILLON",
         girouette: {
@@ -450,7 +413,7 @@ const semoRoutes: Route[] = [
     colors: { background: "#114184", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["8 VAL-DE-REUIL - Gare S.N.C.F."],
+        id: ["VAL-DE-REUIL - Gare S.N.C.F."],
         name: "Gare SNCF",
         city: "VAL-DE-REUIL",
         girouette: {
@@ -460,7 +423,18 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["8 ANDE - Le Moulin"],
+        id: ["CONNELLES - Mairie"],
+        autoHide: true,
+        name: "Mairie",
+        city: "CONNELLES",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#114184", textColor: "#FFFFFF", outlineColor: "#000000", text: "8" },
+          pages: [{ text: "CONNELLES" }, { text: "MAIRIE" }],
+        },
+      },
+      {
+        id: ["ANDE - Le Moulin", " ANDE - Le Moulin"],
         name: "Le Moulin",
         city: "ANDE",
         girouette: {
@@ -478,7 +452,7 @@ const semoRoutes: Route[] = [
     colors: { background: "#277632", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["9 HEUDEBOUVILLE - Clos Desruets"],
+        id: ["HEUDEBOUVILLE - Clos Desruets"],
         name: "Clos Desruets",
         city: "HEUDEBOUVILLE",
         girouette: {
@@ -488,7 +462,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["9 LOUVIERS - Rendez-Vous Bus"],
+        id: ["LOUVIERS - Rendez-Vous Bus"],
         name: "Rendez-Vous Bus",
         city: "LOUVIERS",
         girouette: {
@@ -506,23 +480,23 @@ const semoRoutes: Route[] = [
     colors: { background: "#EA4E6E", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["10 LE-VAL-D'HAZEY - Gaillon-Abvye SNCF"],
-        name: "Gare SNCF de Gaillon-Aubevoye",
-        city: "LE-VAL-D'HAZEY",
+        id: ["LOUVIERS - Lycée Les Fontenelles"],
+        name: "Lycée les Fontenelles",
+        city: "LOUVIERS",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#EA4E6E", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
-          pages: [{ text: "LE-VAL-D'HAZEY" }, [{ text: "GARE SNCF" }, { text: "GAILLON-AUBEVOYE" }]],
+          pages: [{ text: "LOUVIERS" }, { font: "1508C2E1", text: "LYCEE LES FONTENELLES" }],
         },
       },
       {
-        id: ["10 COURCELLES S./SEINE - Coiffeur"],
-        name: "Coiffeur",
-        city: "COURCELLES-SUR-SEINE",
+        id: ["ACQUIGNY - Les Sablons"],
+        name: "Les Sablons",
+        city: "ACQUIGNY",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#EA4E6E", textColor: "#FFFFFF", outlineColor: "#000000", text: "10" },
-          pages: [{ font: "1508C2E1", text: "COURCELLES-SUR-SEINE" }, { text: "COIFFEUR" }],
+          pages: [{ text: "ACQUIGNY" }, { text: "LES SABLONS" }],
         },
       },
     ],
@@ -534,7 +508,7 @@ const semoRoutes: Route[] = [
     colors: { background: "#848484", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["D1 LOUVIERS - Les Fontenelles"],
+        id: [" LOUVIERS - Lycée Les Fontenelles"],
         name: "Les Fontenelles",
         city: "LOUVIERS",
         girouette: {
@@ -544,7 +518,7 @@ const semoRoutes: Route[] = [
         },
       },
       {
-        id: ["D1 VAL-DE-REUIL - Gare S.N.C.F."],
+        id: ["VAL-DE-REUIL - Gare S.N.C.F."],
         alternate: "Gare SNCF de Val-de-Reuil",
         name: "Gare SNCF",
         city: "VAL-DE-RUEIL",
