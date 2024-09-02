@@ -1217,7 +1217,7 @@ const nomadCar: Route[] = [
     colors: { background: "#b26bc1", text: "#ffffff" },
     destinations: [
       {
-        id: ["ROUEN / PERRIERS-SUR-ANDELLE"],
+        id: ["ROUEN / PERRIERS-SUR-ANDELLE", "ROUEN / PERRIERS SUR ANDELLE"],
         name: "Perriers-sur-Andelle",
         girouette: {
           routeNumber: {
