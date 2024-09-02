@@ -116,7 +116,7 @@ const sources: Source[] = [
       staticResourceHref: 'https://gtfs.tae76.fr/gtfs/feed.zip',
       tripUpdateHref: 'https://gtfs.tae76.fr/gtfs-rt.bin',
       routePrefix: 'ASTUCE',
-      allowScheduled: false,
+      allowScheduled: (trip) => trip.route === '120',
       mapTripUpdateEntities: (entities, resource) => {
         const tripStartTimes = entities.reduce((map, entity) => {
           const trip = resource.trips.get(entity.tripUpdate.trip.tripId)!;

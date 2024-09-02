@@ -452,40 +452,6 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Champlain ROUEN"],
-        name: "Champlain",
-        city: "ROUEN",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#E6007E",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "F1",
-          },
-          pages: [
-            { spacing: 4, text: "CHAMPLAIN" },
-            { spacing: 4, text: "ROUEN" },
-          ],
-        },
-      },
-      {
-        id: ["Boulingrin ROUE N"],
-        name: "Boulingrin",
-        city: "ROUEN",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#E6007E",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "F1",
-          },
-          pages: [
-            { spacing: 4, text: "BOULINGRIN" },
-            { spacing: 4, text: "ROUEN" },
-          ],
-        },
-      },
-      {
         id: ["Plaine de la Ronce ISNEAUVILLE"],
         name: "Plaine de la Ronce",
         city: "ISNEAUVILLE",
@@ -663,13 +629,13 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Boulingrin ROUEN"],
+        id: ["Théâtre des Arts ROUEN"],
         name: "Boulingrin",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#AFCA0B", outlineColor: "#FFFFFF", textColor: "#000000", text: "F5" },
           pages: [
-            { spacing: 4, text: "BOULINGRIN" },
+            { font: "1510N2E1-TCAR", text: "THEATRE DES ARTS" },
             { spacing: 4, text: "ROUEN" },
           ],
         },
@@ -694,6 +660,25 @@ const astuceRoutes: Route[] = [
             text: "F6",
           },
           pages: [{ text: "LES BOUTTIERES" }, { font: "1510N2E1", text: "GRAND-COURONNE" }],
+        },
+      },
+      {
+        id: ["Lycée Val de Seine GRAND-QUEVILLY"],
+        autoHide: true,
+        name: "Lycée Val de Seine",
+        city: "GRAND-QUEVILLY",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#00ACE5",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "F6",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LYCEE VAL DE SEINE" },
+            { font: "1508SUPX", text: "GRAND-QUEVILLY" },
+          ],
         },
       },
       {
@@ -753,42 +738,6 @@ const astuceRoutes: Route[] = [
             text: "F7",
           },
           pages: [{ text: "HOTEL DE VILLE" }, { font: "1508C2E1", text: "SOTTEVILLE-LES-ROUEN" }],
-        },
-      },
-      {
-        id: ["Champlain ROUEN"],
-        name: "Champlain",
-        city: "ROUEN",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: {
-            backgroundColor: "#008F5B",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "F7",
-          },
-          pages: [
-            { spacing: 4, text: "CHAMPLAIN" },
-            { spacing: 4, text: "ROUEN" },
-          ],
-        },
-      },
-      {
-        id: ["Boulingrin ROUEN"],
-        name: "Boulingrin",
-        city: "ROUEN",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: {
-            backgroundColor: "#008F5B",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            text: "F7",
-          },
-          pages: [
-            { spacing: 4, text: "BOULINGRIN" },
-            { spacing: 4, text: "ROUEN" },
-          ],
         },
       },
       {
@@ -857,24 +806,9 @@ const astuceRoutes: Route[] = [
     name: "F9",
     colors: { background: "#248BCB", text: "#FFFFFF" },
     destinations: [
-      // {
-      //   id: ["THEATRE DES ARTS"],
-      //   name: "Théâtre des Arts",
-      //   city: "ROUEN",
-      //   girouette: {
-      //     routeNumber: {
-      //       backgroundColor: "#248BCB",
-      //       textColor: "#FFFFFF",
-      //       outlineColor: "#000000",
-      //       font: "1508SUPX",
-      //       text: "F9",
-      //     },
-      //     pages: [{ font: "1407SUPX", spacing: 1, text: "THEATRE DES ARTS - ROUEN" }],
-      //   },
-      // },
       {
-        id: ["CHAMPLAIN"],
-        name: "Champlain",
+        id: ["THEATRE DES ARTS"],
+        name: "Théâtre des Arts",
         city: "ROUEN",
         girouette: {
           routeNumber: {
@@ -884,10 +818,7 @@ const astuceRoutes: Route[] = [
             font: "1508SUPX",
             text: "F9",
           },
-          pages: [
-            { font: "1508SUPX", text: "CHAMPLAIN - ROUEN" },
-            { font: "1507SUPX", text: "TERMINUS PROVISOIRE" },
-          ],
+          pages: [{ font: "1407SUPX", spacing: 1, text: "THEATRE DES ARTS - ROUEN" }],
         },
       },
       // { id: ["GAREROUT1"], alternate: "Gare Routière de Rouen", name: "Gare Routière", city: "ROUEN" },
@@ -1272,29 +1203,17 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Champlain ROUEN"],
-        name: "Champlain",
+        id: ["Théâtre des Arts ROUEN"],
+        name: "Théâtre des Arts",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#74B95B", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
           pages: [
-            { spacing: 4, text: "CHAMPLAIN" },
-            { spacing: 4, text: "ROUEN" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
+            { spacing: 5, text: "ROUEN" },
           ],
         },
       },
-      // {
-      //   id: ["Théâtre des Arts ROUEN"],
-      //   name: "Théâtre des Arts",
-      //   city: "ROUEN",
-      //   girouette: {
-      //     routeNumber: { backgroundColor: "#74B95B", textColor: "#000000", outlineColor: "#FFFFFF", text: "27" },
-      //     pages: [
-      //       { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
-      //       { spacing: 5, text: "ROUEN" },
-      //     ],
-      //   },
-      // },
     ],
   },
   {
@@ -1823,7 +1742,7 @@ const astuceRoutes: Route[] = [
   {
     id: "ASTUCE:113",
     name: "C",
-    colors: { background: "#9E2C87", text: "#FFFFFF" },
+    colors: { background: "#009F61", text: "#FFFFFF" },
     destinations: [
       {
         id: ["BOSC TARD"],
@@ -1831,7 +1750,7 @@ const astuceRoutes: Route[] = [
         city: "SAINT-PIERRE-LÈS-ELBEUF",
         girouette: {
           routeNumber: {
-            backgroundColor: "#9E2C87",
+            backgroundColor: "#009F61",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             font: "1508SUPX",
@@ -1841,34 +1760,18 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["LIEROULT"],
-        autoHide: true,
-        name: "Liéroult",
-        city: "SAINT-PIERRE-LÈS-ELBEUF",
+        id: ["MAIRIE DE CLEON"],
+        name: "Mairie",
+        city: "CLÉON",
         girouette: {
           routeNumber: {
-            backgroundColor: "#9E2C87",
+            backgroundColor: "#009F61",
             textColor: "#FFFFFF",
             outlineColor: "#000000",
             font: "1508SUPX",
             text: "C",
           },
-          pages: [{ font: "1508SUPX", text: "LIEROULT" }],
-        },
-      },
-      {
-        id: ["LES ARCHES"],
-        name: "Les Arches",
-        city: "ELBEUF-SUR-SEINE",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#9E2C87",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "C",
-          },
-          pages: [{ font: "1508SUPX", text: "LES ARCHES" }],
+          pages: [{ font: "1508SUPX", text: "MAIRIE DE CLEON" }],
         },
       },
     ],
@@ -1877,39 +1780,7 @@ const astuceRoutes: Route[] = [
     id: "ASTUCE:114",
     name: "E",
     colors: { background: "#00A266", text: "#FFFFFF" },
-    destinations: [
-      {
-        id: ["MOULIN SAINT ETIENNE"],
-        name: "Moulin Saint-Étienne",
-        city: "ELBEUF-SUR-SEINE",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#00A266",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "E",
-          },
-          pages: [{ font: "1507SUPX", spacing: 1, text: "MOULIN SAINT-ETIENNE" }],
-        },
-      },
-      {
-        id: ["MAIRIE DE CLEON"],
-        alternate: "Mairie de Cléon",
-        name: "Mairie",
-        city: "CLÉON",
-        girouette: {
-          routeNumber: {
-            backgroundColor: "#00A266",
-            textColor: "#FFFFFF",
-            outlineColor: "#000000",
-            font: "1508SUPX",
-            text: "E",
-          },
-          pages: [{ font: "1508SUPX", text: "MAIRIE DE CLEON" }],
-        },
-      },
-    ],
+    destinations: [],
   },
   {
     id: "ASTUCE:115",
@@ -1969,6 +1840,47 @@ const astuceRoutes: Route[] = [
       //     pages: [{ font: "1508SUPX", text: "ROUTE DU BAC" }],
       //   },
       // },
+      {
+        id: ["LES BOUTTIERES"],
+        name: "Les Bouttières",
+        city: "GRAND-COURONNE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#D3D800",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "G",
+          },
+          pages: [
+            { font: "1508SUPX", text: "LES BOUTTIERES" },
+            { font: "1507SUPX", text: "TERMINUS PROVISOIRE" },
+          ],
+        },
+      },
+      {
+        id: ["CHAMP DE FOIRE"],
+        name: "Champ de Foire",
+        city: "ELBEUF-SUR-SEINE",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#D3D800",
+            textColor: "#000000",
+            outlineColor: "#FFFFFF",
+            font: "1508SUPX",
+            text: "G",
+          },
+          pages: [{ font: "1508SUPX", text: "CHAMP DE FOIRE" }],
+        },
+      },
+    ],
+  },
+  {
+    id: "ASTUCE:120",
+    noCartridge: true,
+    name: "I",
+    colors: { background: "#38B4B6", text: "#FFFFFF" },
+    destinations: [
       {
         id: ["LES BOUTTIERES"],
         name: "Les Bouttières",
@@ -5022,6 +4934,12 @@ const astuceRoutes: Route[] = [
         },
       },
     ],
+  },
+  {
+    id: "ASTUCE:ARCHIVE-2024:113",
+    name: "C",
+    colors: { background: "#9E2C87", text: "#FFFFFF" },
+    destinations: [],
   },
 ];
 
