@@ -2068,6 +2068,22 @@ const astuceRoutes: Route[] = [
         },
       },
       {
+        id: ["COLLEGE MANDELA"],
+        autoHide: true,
+        name: "Collège Mandela",
+        city: "ELBEUF-SUR-SEINE",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#EE7BAE",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            text: "101",
+          },
+          pages: [{ font: "1508SUPX", text: "COLLEGE MANDELA" }],
+        },
+      },
+      {
         id: ["POLE MULTIMODAL DOC COTONI"],
         autoHide: true,
         name: "Pôle Multimodal-Cotoni",
