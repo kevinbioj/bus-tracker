@@ -38,7 +38,7 @@ const starRoutes: Route[] = [
         name: "St-Jacques Gaîté",
         girouette: {
           routeNumber: { backgroundColor: "#00893E", textColor: "#FFFFFF", text: "b" },
-          pages: [{ text: "Saint-Jacques Gaîté" }],
+          pages: [{ font: "1510N2E1", text: "St-Jacques Gaîté" }],
         },
       },
       {
