@@ -635,7 +635,7 @@ const astuceRoutes: Route[] = [
         girouette: {
           routeNumber: { backgroundColor: "#AFCA0B", outlineColor: "#FFFFFF", textColor: "#000000", text: "F5" },
           pages: [
-            { font: "1510N2E1-TCAR", text: "THEATRE DES ARTS" },
+            { font: "1510N2E1-TCAR", spacing: 1, text: "THEATRE DES ARTS" },
             { spacing: 4, text: "ROUEN" },
           ],
         },
@@ -947,7 +947,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#00ACE5", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Mont Pilon DARNÉTAL", "Mont-Pilon"],
+        id: ["Mont Pilon DARNÉTAL", "Mont-Pilon", "Mont Pilon"],
         name: "Mont Pilon",
         city: "DARNÉTAL",
         girouette: {
@@ -3420,7 +3420,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Lycée Flaubert ROUEN", "Lycée Flaubert - Texcier"],
+        id: ["Lycée Flaubert ROUEN", "Lycée Flaubert"],
         autoHide: true,
         name: "Lycée Flaubert",
         city: "ROUEN",
@@ -3433,7 +3433,7 @@ const astuceRoutes: Route[] = [
             text: "303",
           },
           pages: [
-            { font: "1407SUPX", text: "LYCEE FLAUBERT - TEXCIER" },
+            { font: "1508SUPX", text: "LYCEE FLAUBERT" },
             { font: "1508SUPX", text: "ROUEN" },
           ],
         },
