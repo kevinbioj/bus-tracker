@@ -19,10 +19,10 @@ const sources: Source[] = [
       tripUpdateHref: 'https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-trip-update',
       vehiclePositionHref:
         'https://proxy.transport.data.gouv.fr/resource/star-rennes-integration-gtfs-rt-vehicle-position',
-      allowScheduled: (trip) => trip.route === '4-1001' || trip.route === '4-1002', // métros a et b uniquement
+      allowScheduled: (trip) => trip.route === '5-1001' || trip.route === '5-1002', // métros a et b uniquement
       afterInit: (resource) => {
         for (const trip of resource.trips.values()) {
-          if (trip.route !== '4-1001' && trip.route !== '4-1002') continue;
+          if (trip.route !== '5-1001' && trip.route !== '5-1002') continue;
           trip.id = `${+trip.id}`;
         }
       },
