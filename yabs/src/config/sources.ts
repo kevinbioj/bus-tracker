@@ -93,7 +93,8 @@ const sources: Source[] = [
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR-TGR',
-      staticResourceHref: 'https://pysae.com/api/v2/groups/tcar/gtfs/pub',
+      staticResourceHref: 'https://pysae.com/api/v2/groups/tcar/gtfs/66d5c5b3a0180e6fe195b652',
+      // staticResourceHref: 'https://pysae.com/api/v2/groups/tcar/gtfs/pub',
       tripUpdateHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       vehiclePositionHref: 'https://pysae.com/api/v2/groups/tcar/gtfs-rt',
       getOperator: () => 'TNI',
