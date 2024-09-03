@@ -2077,6 +2077,35 @@ const starRoutes: Route[] = [
       { id: ["Rennes Rosa Parks"], autoHide: true, name: "Rennes Rosa Parks" },
     ],
   },
+  //- ARCHIVES 2024
+  {
+    id: "STAR:ARCHIVES-2024:4-0320",
+    noCartridge: true,
+    name: "20B",
+    colors: { background: "#FFCC00", text: "#1A171B" },
+    destinations: [],
+  },
+  {
+    id: "STAR:ARCHIVES-2024:4-0321",
+    noCartridge: true,
+    name: "21B",
+    colors: { background: "#BA65A5", text: "#FFFFFF" },
+    destinations: [],
+  },
+  {
+    id: "STAR:ARCHIVES-2024:4-0322",
+    noCartridge: true,
+    name: "22B",
+    colors: { background: "#61C3D9", text: "#1A171B" },
+    destinations: [],
+  },
+  {
+    id: "STAR:ARCHIVES-2024:4-0803",
+    noCartridge: true,
+    name: "API",
+    colors: { background: "#009C99", text: "#FFFFFF" },
+    destinations: [],
+  },
 ];
 
 const network: Network = {
