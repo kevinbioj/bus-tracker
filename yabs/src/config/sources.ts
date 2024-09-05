@@ -309,13 +309,6 @@ const sources: Source[] = [
       allowScheduled: (trip) => trip.service.id !== 'SERVICE',
       routePrefix: 'NOMAD',
       getOperator: () => 'NOMAD',
-      mapTripUpdateEntities: (entities) => {
-        for (const entity of entities) {
-          const rouenStSever = entity.tripUpdate.stopTimeUpdate.find((stu) => stu.stopId === '225');
-          if (rouenStSever) rouenStSever.scheduleRelationship = 'SKIPPED';
-        }
-        return entities;
-      },
     },
   },
   {
