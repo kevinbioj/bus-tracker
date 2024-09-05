@@ -2881,6 +2881,22 @@ const nomadCar: Route[] = [
           pages: [{ font: "1508SUPX", text: "BRIOUZE > BAGNOLES" }],
         },
       },
+      {
+        id: ["Briouze > Argentan"],
+        autoHide: true,
+        name: "Argentan",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#5E8786",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "423",
+          },
+          pages: [{ font: "1508SUPX", text: "BRIOUZE > ARGENTAN" }],
+        },
+      },
     ],
   },
   {
