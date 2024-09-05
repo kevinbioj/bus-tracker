@@ -33,32 +33,12 @@ server.get('/history/:operator', handleGetOperatorVehicleList);
 server.get('/history/:operator/:number', handleGetOperatorVehicle);
 server.post('/update-resource/:id', handleUpdateResource);
 
-async function init() {
-  console.log('YABS\tLoading resources into memory.');
-  await Promise.allSettled(sources.map((source) => updateResource(source)));
-
-  console.log('YABS\tComputing first entries.');
-  await Promise.allSettled(sources.map((source) => updateEntries(source)));
-  hasComputedFirstEntries = true;
-
-  console.log('YABS\tRegistering scheduled tasks.');
-  Cron('0 */5 * * * *', async () => {
-    for (const source of sources) {
-      if (source.type !== 'GTFS') continue;
-      await updateResource(source);
-    }
-  });
-  sources.map((source) => Cron(source.refreshCron, () => updateEntries(source)));
-}
-
-init();
-
 // --- ROUTE HANDLERS
 
 function handleGetVehicles(c: Context) {
-  if (!hasComputedFirstEntries) {
-    return c.json({ error: 'Server is warming up, retry in a few moments.' }, 503);
-  }
+  // if (!hasComputedFirstEntries) {
+  //   return c.json({ error: 'Server is warming up, retry in a few moments.' }, 503);
+  // }
   const vehicles = [...output.values()].flat().map((entry) => ({
     id: entry.id,
     source: entry.source,
@@ -170,6 +150,7 @@ async function updateResource(source: Source, retryCount = DEFAULT_RETRY_COUNT, 
       return;
     }
   }
+  console.log(`YABS\t${source.id}\tUpdating resource...`);
   const then = Date.now();
   try {
     const resource = await downloadStaticResource(source.gtfsProperties);
@@ -197,6 +178,7 @@ async function updateResource(source: Source, retryCount = DEFAULT_RETRY_COUNT, 
 async function updateEntries(source: Source) {
   const then = Date.now();
   try {
+    console.log(`YABS\t${source.id}\tUpdating entries...`);
     const entries = await match(source)
       .with({ type: 'GTFS' }, ({ gtfsProperties }) => {
         const resource = gtfsResources.get(source.id);
@@ -236,4 +218,23 @@ async function updateEntries(source: Source) {
   }
 }
 
+async function init() {
+  console.log('YABS\tLoading resources into memory.');
+  await Promise.allSettled(sources.map((source) => updateResource(source)));
+
+  console.log('YABS\tComputing first entries.');
+  await Promise.allSettled(sources.map((source) => updateEntries(source)));
+  hasComputedFirstEntries = true;
+
+  console.log('YABS\tRegistering scheduled tasks.');
+  Cron('0 */5 * * * *', async () => {
+    for (const source of sources) {
+      if (source.type !== 'GTFS') continue;
+      await updateResource(source);
+    }
+  });
+  sources.map((source) => Cron(source.refreshCron, () => updateEntries(source)));
+}
+
+init();
 serve({ fetch: server.fetch, port });
