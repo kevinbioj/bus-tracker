@@ -150,7 +150,6 @@ async function updateResource(source: Source, retryCount = DEFAULT_RETRY_COUNT, 
       return;
     }
   }
-  console.log(`YABS\t${source.id}\tUpdating resource...`);
   const then = Date.now();
   try {
     const resource = await downloadStaticResource(source.gtfsProperties);
@@ -178,7 +177,6 @@ async function updateResource(source: Source, retryCount = DEFAULT_RETRY_COUNT, 
 async function updateEntries(source: Source) {
   const then = Date.now();
   try {
-    console.log(`YABS\t${source.id}\tUpdating entries...`);
     const entries = await match(source)
       .with({ type: 'GTFS' }, ({ gtfsProperties }) => {
         const resource = gtfsResources.get(source.id);
