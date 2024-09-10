@@ -344,27 +344,27 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'SNGO',
       routePrefix: 'SNGO',
-      staticResourceHref: 'https://api.atm.cityway.fr/dataflow/offre-tc/download?provider=SNGO&dataFormat=GTFS',
+      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/71bf48f1-178e-4ce3-ba9d-361cc5be76a7',
       tripUpdateHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
       getOperator: () => 'SNGO',
       shapesStrategy: 'IGNORE',
-      afterInit: (resource) => {
-        for (const [tripId, trip] of [...resource.trips.entries()]) {
-          resource.trips.delete(tripId);
-          const fixedTripId = tripId.split(':')[2];
-          trip.id = fixedTripId;
-          trip.route = trip.route.split(':')[2];
-          resource.trips.set(fixedTripId, trip);
-        }
+      // afterInit: (resource) => {
+      //   for (const [tripId, trip] of [...resource.trips.entries()]) {
+      //     resource.trips.delete(tripId);
+      //     const fixedTripId = tripId.split(':')[2];
+      //     trip.id = fixedTripId;
+      //     trip.route = trip.route.split(':')[2];
+      //     resource.trips.set(fixedTripId, trip);
+      //   }
 
-        for (const [stopId, stop] of [...resource.stops.entries()]) {
-          resource.stops.delete(stopId);
-          const fixedStopId = stopId.split(':')[3];
-          stop.id = fixedStopId;
-          resource.stops.set(fixedStopId, stop);
-        }
-      },
+      //   for (const [stopId, stop] of [...resource.stops.entries()]) {
+      //     resource.stops.delete(stopId);
+      //     const fixedStopId = stopId.split(':')[3];
+      //     stop.id = fixedStopId;
+      //     resource.stops.set(fixedStopId, stop);
+      //   }
+      // },
     },
   },
   {
