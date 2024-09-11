@@ -58,16 +58,22 @@ const sources: Source[] = [
             shape: null,
           });
 
-        makeHlpTrip('DEP_2RIV', 'Dépôt 2 Rivières');
-        makeHlpTrip('DEP_ROUD', 'ROUEN DEPOT');
-        makeHlpTrip('DEP_TNIC', 'Dépôt TNI Carnot');
-        makeHlpTrip('DEP_STJU', 'Dépôt St-Julien');
-        makeHlpTrip('HLP', 'Haut-le-pied');
+        makeHlpTrip('DEPOT_2RIVI', 'Dépôt 2 Rivières');
+        makeHlpTrip('DEPOT_ROUEN', 'Dépôt Champlain');
+        makeHlpTrip('DEPOT_STJUL', 'Dépôt Saint-Julien');
       },
       mapVehiclePositionEntities: (entities) => {
         for (const entity of entities) {
           if (typeof entity.vehicle.trip === 'undefined') {
-            entity.vehicle.trip = { tripId: 'HLP' };
+            const vehicleId = +entity.vehicle.vehicle.id;
+            entity.vehicle.trip = {
+              tripId:
+                vehicleId >= 670 && vehicleId <= 675
+                  ? 'DEPOT_ROUEN'
+                  : vehicleId >= 831 && vehicleId <= 857
+                    ? 'DEPOT_STJUL'
+                    : 'DEPOT_2RIVI',
+            };
           }
         }
         return entities;

@@ -4874,24 +4874,20 @@ const astuceRoutes: Route[] = [
     colors: { background: "#000000", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Haut-le-pied"],
+        id: ["Dépôt Saint-Julien"],
         autoHide: true,
-        name: "Haut-le-pied",
+        name: "Transdev Rouen - Dépôt Saint-Julien (métro)",
         girouette: {
-          routeNumber: {
-            font: "1510N2E1-TCAR",
-            backgroundColor: "#B0105F",
-            outlineColor: "#000000",
-            textColor: "#FFFFFF",
-            text: "@",
-          },
-          pages: [[{ text: "CE VEHICULE NE PREND" }, { text: "PAS DE VOYAGEUR" }]],
+          dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
+          routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
+          pages: [{ font: "14LUPLAN", spacing: 1, text: "DEPOT" }],
+          width: 300,
         },
       },
       {
         id: ["Dépôt 2 Rivières"],
         autoHide: true,
-        name: "TCAR - Dépôt 2 Rivières",
+        name: "Transdev Rouen - Dépôt 2 Rivières (bus)",
         girouette: {
           routeNumber: {
             font: "1510N2E1-TCAR",
@@ -4904,9 +4900,9 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["ROUEN DEPOT", "Dépôt TNI Carnot"],
+        id: ["Dépôt Champlain"],
         autoHide: true,
-        name: "TNI - Dépôt Rouen-Carnot",
+        name: "Transdev Normandie - Dépôt de Champlain (bus)",
         girouette: {
           routeNumber: {
             font: "1510N2E1-TCAR",
@@ -4916,34 +4912,6 @@ const astuceRoutes: Route[] = [
             text: "@",
           },
           pages: [{ spacing: 5, text: "DEPOT" }, [{ text: "CE VEHICULE NE PREND" }, { text: "PLUS DE VOYAGEUR" }]],
-        },
-      },
-      {
-        id: ["Dépôt St-Julien"],
-        autoHide: true,
-        name: "TCAR - Dépôt Saint-Julien",
-        girouette: {
-          dimensions: { height: 16, rnWidth: 16, destinationWidth: 110 },
-          routeNumber: { backgroundColor: "#123E8B", textColor: "#FFFFFF", font: "METRO", text: "M" },
-          pages: [
-            { font: "14LUPLAN", spacing: 1, text: "DEPOT" },
-            {
-              font: "14LUPLAN",
-              spacing: 1,
-              text: "CE VEHICULE",
-            },
-            {
-              font: "14LUPLAN",
-              spacing: 1,
-              text: "NE PREND PAS",
-            },
-            {
-              font: "14LUPLAN",
-              spacing: 1,
-              text: "DE VOYAGEUR",
-            },
-          ],
-          width: 300,
         },
       },
     ],
