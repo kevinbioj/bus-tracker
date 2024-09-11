@@ -68,7 +68,7 @@ const sources: Source[] = [
             const vehicleId = +entity.vehicle.vehicle.id;
             entity.vehicle.trip = {
               tripId:
-                vehicleId >= 670 && vehicleId <= 675
+                vehicleId >= 670 && vehicleId <= 685
                   ? 'DEPOT_ROUEN'
                   : vehicleId >= 831 && vehicleId <= 857
                     ? 'DEPOT_STJUL'
