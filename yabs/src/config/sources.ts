@@ -79,16 +79,14 @@ const sources: Source[] = [
         return entities;
       },
       allowScheduled: (trip) => {
-        if (['06', '89', '99', '322'].includes(trip.route)) return true;
+        if (['06', '89', '99'].includes(trip.route)) return true;
         return false;
       },
       getOperator: (trip) =>
         trip.service.id.includes('IST_') ||
         trip.service.id.includes('INT_') ||
-        trip.route === '06' ||
-        trip.route === '89' ||
-        trip.id === 'DEP_RDEP' ||
-        trip.id === 'DEP_TNIC'
+        ['06', '89'].includes(trip.route) ||
+        trip.id === 'DEPOT_ROUEN'
           ? 'TNI'
           : 'TCAR',
     },
