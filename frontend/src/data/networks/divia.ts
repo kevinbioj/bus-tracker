@@ -4,6 +4,7 @@ const diviaRoutes: Route[] = [
   {
     id: "DIVIA:4-51",
     name: "GC",
+    noCartridge: true,
     colors: { background: "#0011e2", text: "#fcee21" },
     destinations: [
       {
