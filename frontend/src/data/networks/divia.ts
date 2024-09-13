@@ -2,6 +2,28 @@ import { Network, Route } from "~/@types";
 
 const diviaRoutes: Route[] = [
   {
+    id: "DIVIA:4-51",
+    name: "GC",
+    colors: { background: "#0011e2", text: "#fcee21" },
+    destinations: [
+      {
+        id: ["Festival GOLDEN COAST"],
+        autoHide: true,
+        name: "Festival Golden Coast",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#0011E2", textColor: "#FCEE21", text: "GC" },
+          pages: [
+            [
+              { spacing: 2, text: "NAVETTE FESTIVAL" },
+              { spacing: 2, text: "GOLDEN COAST" },
+            ],
+          ],
+        },
+      },
+    ],
+  },
+  {
     id: "DIVIA:4-PL",
     name: "PL",
     colors: { background: "#142477", text: "#ffffff" },
@@ -80,16 +102,6 @@ const diviaRoutes: Route[] = [
         },
       },
       {
-        id: ["DARCY"],
-        autoHide: true,
-        name: "Darcy",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#ab0070", textColor: "#ffffff", text: "T1", outlineColor: "#000000" },
-          pages: [{ text: "DARCY" }],
-        },
-      },
-      {
         id: ["Foch Gare"],
         autoHide: true,
         name: "Foch Gare",
@@ -132,26 +144,6 @@ const diviaRoutes: Route[] = [
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#ab0070", textColor: "#ffffff", text: "T2", outlineColor: "#000000" },
           pages: [{ text: "BOURROCHES" }],
-        },
-      },
-      {
-        id: ["Monge"],
-        autoHide: true,
-        name: "Monge Cité de la gastronomie",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#ab0070", textColor: "#ffffff", text: "T2", outlineColor: "#000000" },
-          pages: [[{ text: "MONGE" }, { text: "CITE DE LA GASTRONOMIE" }]],
-        },
-      },
-      {
-        id: ["DARCY"],
-        autoHide: true,
-        name: "Darcy",
-        girouette: {
-          ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#ab0070", textColor: "#ffffff", text: "T2", outlineColor: "#000000" },
-          pages: [{ text: "DARCY" }],
         },
       },
       {
@@ -1505,7 +1497,7 @@ const diviaRoutes: Route[] = [
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#000000", textColor: "#ffffff", text: "93", outlineColor: "#000000" },
-          pages: [[{ text: "NAVETTE PERSONNEL" }, { text: "DIRECTION> DEPOT" }]],
+          pages: [[{ text: "NAVETTE PERSONNEL" }, { text: "DIRECTION DEPOT" }]],
         },
       },
     ],
