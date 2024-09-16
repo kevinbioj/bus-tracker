@@ -6642,7 +6642,7 @@ const nomadCar: Route[] = [
 
   {
     id: "NOMAD:506",
-    routeIds: ["NOMAD:506", "NOMAD:ATOUMOD040:Line:1003051:LOC"],
+    routeIds: ["NOMAD:506", "NOMAD:ATOUMOD040:Line:1003051:LOC", "NOMAD:ATOUMOD040:Line:1010307:LOC"],
     noCartridge: true,
     name: "506",
     colors: { background: "#5665ab", text: "#ffffff" },
@@ -7852,7 +7852,7 @@ const nomadCar: Route[] = [
   },
   {
     id: "NOMAD:520",
-    routeIds: ["NOMAD:520", "NOMAD:ATOUMOD040:Line:1003073:LOC"],
+    routeIds: ["NOMAD:520", "NOMAD:ATOUMOD040:Line:1003073:LOC", "NOMAD:ATOUMOD040:Line:1010308:LOC"],
     noCartridge: true,
     name: "520",
     colors: { background: "#5187c2", text: "#000000" },
