@@ -798,6 +798,43 @@ const irigoRoutes: Route[] = [
     ],
   },
   {
+    id: "25",
+    name: "E25",
+    colors: { background: "#F9B000", text: "#FFFFFF" },
+    destinations: [
+      {
+        id: ["ANGERS Hôtel de Ville"],
+        name: "Hôtel de Ville",
+        city: "ANGERS",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F9B000",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E25",
+          },
+          pages: [{ text: "HOTEL DE VILLE" }],
+        },
+      },
+      {
+        id: ["ST SYLVAIN Chêne vert"],
+        name: "Chêne Vert",
+        city: "SAINT-SYLVAIN-D'ANJOU",
+        girouette: {
+          routeNumber: {
+            backgroundColor: "#F9B000",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1510N2E1",
+            text: "E25",
+          },
+          pages: [{ text: "CHENE VERT" }],
+        },
+      },
+    ],
+  },
+  {
     id: "30",
     name: "30",
     colors: { background: "#E6007E", text: "#FFFFFF" },
