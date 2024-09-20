@@ -1141,6 +1141,27 @@ const nomadCar: Route[] = [
     colors: { background: "#4A2999", text: "#FFFFFF" },
     destinations: [
       {
+        id: ["Rouen > Évreux (via Technopôle)"],
+        autoHide: true,
+        name: "Évreux (via Technopôle)",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#4A2999",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "216",
+          },
+          pages: [
+            [
+              { font: "1107SUPX", text: "ROUEN > EVREUX" },
+              { font: "0505SUPX", text: "VIA TECHNOPOLE" },
+            ],
+          ],
+        },
+      },
+      {
         id: ["Rouen > Évreux"],
         name: "Évreux",
         girouette: {
