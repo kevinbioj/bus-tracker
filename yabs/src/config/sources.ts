@@ -7,7 +7,31 @@ export type Source = {
   type: string;
 } & ({ type: 'GTFS'; gtfsProperties: GtfsProperties } | { type: 'SIRI-XML'; siriProperties: SiriProperties });
 
-const mainRoutes = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', 'A', 'B', 'C', 'NavM', 'Tbus'];
+const mainRoutes = [
+  '01',
+  '02',
+  '03',
+  '04',
+  '05',
+  '06',
+  '07',
+  '08',
+  '09',
+  '10',
+  '11',
+  '12',
+  '20',
+  '21',
+  '22',
+  '23',
+  '24',
+  '25',
+  'A',
+  'B',
+  'C',
+  'NavM',
+  'Tbus',
+];
 
 const sources: Source[] = [
   {
