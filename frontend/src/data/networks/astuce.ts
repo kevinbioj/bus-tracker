@@ -700,7 +700,7 @@ const astuceRoutes: Route[] = [
     colors: { background: "#0090D7", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Tamarelle BIHOREL"],
+        id: ["Tamarelle BIHOREL", "Tamarelle"],
         name: "Tamarelle",
         city: "BIHOREL",
         girouette: {
@@ -717,7 +717,7 @@ const astuceRoutes: Route[] = [
         },
       },
       {
-        id: ["Lycée du Cailly DÉVILLE-LES-ROUEN"],
+        id: ["Lycée du Cailly DÉVILLE-LES-ROUEN", "Lycée du Cailly"],
         name: "Lycée du Cailly",
         city: "DÉVILLE-LÈS-ROUEN",
         girouette: {
@@ -1770,9 +1770,9 @@ const astuceRoutes: Route[] = [
       //   },
       // },
       {
-        id: ["LES BOUTTIERES"],
-        name: "Les Bouttières",
-        city: "GRAND-COURONNE",
+        id: ["ROBERT LE DIABLE"],
+        name: "Robert le Diable",
+        city: "MOULINEAUX",
         girouette: {
           routeNumber: {
             backgroundColor: "#D3D800",
@@ -1782,7 +1782,7 @@ const astuceRoutes: Route[] = [
             text: "G",
           },
           pages: [
-            { font: "1508SUPX", text: "LES BOUTTIERES" },
+            { font: "1508SUPX", text: "ROBERT LE DIABLE" },
             { font: "1507SUPX", text: "TERMINUS PROVISOIRE" },
           ],
         },

@@ -250,7 +250,7 @@ const rezobusRoutes: Route[] = [
         city: "PORT-JÉRÔME-SUR-SEINE",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#e787b8", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
+          routeNumber: { backgroundColor: "#808000", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
           pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "SORTIE NORD" }]],
         },
       },
@@ -261,7 +261,7 @@ const rezobusRoutes: Route[] = [
         city: "PORT-JÉRÔME-SUR-SEINE",
         girouette: {
           ledColor: "WHITE",
-          routeNumber: { backgroundColor: "#e787b8", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
+          routeNumber: { backgroundColor: "#808000", textColor: "#FFFFFF", outlineColor: "#000000", text: "21" },
           pages: [[{ text: "PORT-JEROME-SUR-SEINE" }, { text: "HOTEL DE VILLE" }]],
         },
       },

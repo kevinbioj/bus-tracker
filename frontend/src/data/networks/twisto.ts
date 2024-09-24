@@ -390,7 +390,7 @@ const twistoRoutes: Route[] = [
         city: "COLOMBELLES",
         girouette: {
           routeNumber: { backgroundColor: "#fcdd19", textColor: "#000000", text: "6b" },
-          pages: [{ font: "1510N2E1", spacing: 1,text: "COLOMBELLES ECOLE" }],
+          pages: [{ font: "1510N2E1", spacing: 1, text: "COLOMBELLES ECOLE" }],
         },
       },
       {
@@ -459,7 +459,7 @@ const twistoRoutes: Route[] = [
         city: "HÉROUVILLE-SAINT-CLAIR",
         girouette: {
           routeNumber: { backgroundColor: "#00804b", textColor: "#ffffff", outlineColor: "#000000", text: "8" },
-          pages: [{ font: '1508C2E1', spacing: 3, text: "HEROUVILLE SPHERE" }],
+          pages: [{ font: "1508C2E1", spacing: 3, text: "HEROUVILLE SPHERE" }],
         },
       },
       // {
@@ -602,7 +602,7 @@ const twistoRoutes: Route[] = [
     colors: { background: "#f39869", text: "#000000" },
     destinations: [
       {
-        id: ["Caen Théâtre Quai 1"],
+        id: ["Caen Théâtre Quai 1", "Caen Théâtre Quai 3"],
         name: "Théâtre",
         city: "CAEN",
         girouette: {
@@ -2647,13 +2647,6 @@ const twistoRoutes: Route[] = [
           pages: [{ font: "1507SUPX", text: "IFS COLLEGE SENGHOR" }],
         },
       },
-    ],
-  },
-  {
-    id: "TWISTO:137A",
-    name: "137A",
-    colors: { background: "#ffffff", text: "#702283" },
-    destinations: [
       {
         id: ["SOLIERS Hameau du Four"],
         autoHide: true,
@@ -2663,7 +2656,7 @@ const twistoRoutes: Route[] = [
             font: "1508SUPX",
             backgroundColor: "#ffffff",
             textColor: "#702283",
-            text: "137A",
+            text: "137",
           },
           pages: [{ text: "SOLIERS Hameau du Four" }],
         },
@@ -2677,39 +2670,26 @@ const twistoRoutes: Route[] = [
             font: "1508SUPX",
             backgroundColor: "#ffffff",
             textColor: "#702283",
-            text: "137A",
+            text: "137",
           },
           pages: [{ text: "GRENTHEVILLE Le Hameau" }],
         },
       },
-    ],
-  },
-  {
-    id: "TWISTO:137B",
-    name: "137B",
-    colors: { background: "#ffffff", text: "#702283" },
-    destinations: [
       {
-        id: ["BOURGUEBUS La Hogue"],
+        id: ["Bourguébus La Hogue"],
         autoHide: true,
-        name: "BOURGUEBUS La Hogue",
+        name: "La Hogue",
+        city: "BOURGÉBUS",
         girouette: {
           routeNumber: {
             font: "1508SUPX",
             backgroundColor: "#ffffff",
             textColor: "#702283",
-            text: "137B",
+            text: "137",
           },
-          pages: [{ text: "BOURGUEBUS La Hogue" }],
+          pages: [{ font: "1507SUPX", text: "BOURGUEBUS LA HOGUE" }],
         },
       },
-    ],
-  },
-  {
-    id: "TWISTO:137C",
-    name: "137C",
-    colors: { background: "#ffffff", text: "#702283" },
-    destinations: [
       {
         id: ["BOURGUEBUS Centre"],
         autoHide: true,
@@ -2719,7 +2699,7 @@ const twistoRoutes: Route[] = [
             font: "1508SUPX",
             backgroundColor: "#ffffff",
             textColor: "#702283",
-            text: "137C",
+            text: "137",
           },
           pages: [{ text: "BOURGUEBUS Centre" }],
         },

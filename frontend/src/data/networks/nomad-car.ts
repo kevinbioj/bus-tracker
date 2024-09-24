@@ -455,7 +455,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["ELBEUF / LE BOSC-ROGER-EN-ROUMOIS"],
+        id: ["ELBEUF / LE BOSC-ROGER-EN-ROUMOIS", "ELBEUF / LE BOSC ROGER EN ROUMOIS"],
         autoHide: true,
         name: "Le Bosc-Roger-en-Roumois",
         girouette: {
@@ -1924,7 +1924,7 @@ const nomadCar: Route[] = [
     colors: { background: "#7ab929", text: "#ffffff" },
     destinations: [
       {
-        id: ["CARENTAN / CHERBOURG"],
+        id: ["CARENTAN / CHERBOURG", "ST-LO / CHERBOURG"],
         name: "Cherbourg-en-Cotentin",
         girouette: {
           routeNumber: {
@@ -3961,6 +3961,20 @@ const nomadCar: Route[] = [
           pages: [{ font: "1508SUPX", text: "VACOGNES NEUILLY" }],
         },
       },
+      {
+        id: ["CAEN / LES MONTS D'AUNAY"],
+        name: "LES MONTS D'AUNAY",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#8f3e97",
+            textColor: "#ffffff",
+            text: "105",
+            outlineColor: "#000000",
+          },
+          pages: [{ font: "1508SUPX", text: "LES MONTS D'AUNAY" }],
+        },
+      },
     ],
   },
   {
@@ -3999,7 +4013,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["CAEN / HAMARS"],
+        id: ["CAEN / HAMARS", "CAEN / HAMARS LE HOM"],
         name: "HAMARS",
         girouette: {
           routeNumber: {
@@ -4796,7 +4810,13 @@ const nomadCar: Route[] = [
     colors: { background: "#e41e27", text: "#ffffff" },
     destinations: [
       {
-        id: ["CONDE SUR NOIREAU / CAEN", "SAINT LAURENT DE CONDEL / CAEN", "THURY HARCOURT / CAEN", "FLERS / CAEN"],
+        id: [
+          "CONDE SUR NOIREAU / CAEN",
+          "SAINT LAURENT DE CONDEL / CAEN",
+          "THURY HARCOURT / CAEN",
+          "FLERS / CAEN",
+          "CALIGNY / CAEN",
+        ],
         name: "CAEN",
         girouette: {
           routeNumber: {
@@ -7442,6 +7462,20 @@ const nomadCar: Route[] = [
           pages: [{ font: "1508SUPX", text: "MONTREUIL-EN-CAUX" }],
         },
       },
+      {
+        id: ["DIEPPE / CROPUS"],
+        name: "CROPUS",
+        girouette: {
+          routeNumber: {
+            font: "1508SUPX",
+            backgroundColor: "#ec7223",
+            textColor: "#000000",
+            text: "515",
+            outlineColor: "#FFFFFF",
+          },
+          pages: [{ font: "1508SUPX", text: "CROPUS" }],
+        },
+      },
     ],
   },
   {
@@ -8332,7 +8366,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["DIEPPE / BELMESNIL"],
+        id: ["DIEPPE / BELMESNIL", "ST AUBIN SUR SCIE/ BELMESNIL"],
         name: "BELMESNIL",
         girouette: {
           routeNumber: {
