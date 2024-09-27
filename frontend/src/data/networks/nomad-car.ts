@@ -5706,7 +5706,7 @@ const nomadCar: Route[] = [
         },
       },
       {
-        id: ["ARGENTAN / RANES / BAGNOLES DE L'ORNE", "ARGENTAN / BAGNOLES DE L'ORNE"],
+        id: ["ARGENTAN / RANES / BAGNOLES DE L'ORNE", "ARGENTAN / BAGNOLES DE L'ORNE", "Argentan > Bagnoles de l'Orne"],
         name: "BAGNOLES DE L'ORNE",
         girouette: {
           routeNumber: {
