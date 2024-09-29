@@ -1191,6 +1191,59 @@ const nomadCar: Route[] = [
           pages: [{ font: "1508SUPX", text: "EVREUX > ROUEN" }],
         },
       },
+      {
+        id: ["Évreux > Rouen (via Technopôle)"],
+        autoHide: true,
+        name: "Rouen (via Technopôle)",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#4A2999",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "216",
+          },
+          pages: [
+            [
+              { font: "1107SUPX", text: "EVREUX > ROUEN" },
+              { font: "0505SUPX", text: "VIA TECHNOPOLE" },
+            ],
+          ],
+        },
+      },
+      {
+        id: ["Évreux > Rouen (Direct)"],
+        autoHide: true,
+        name: "Rouen (Direct)",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#4A2999",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "216",
+          },
+          pages: [{ font: "1507SUPX", text: "EVREUX > ROUEN DIRECT" }],
+        },
+      },
+      {
+        id: ["Rouen > Mont-Saint-Aignan"],
+        autoHide: true,
+        name: "Mont-Saint-Aignan - Campus",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: {
+            backgroundColor: "#4A2999",
+            textColor: "#FFFFFF",
+            outlineColor: "#000000",
+            font: "1508SUPX",
+            text: "216",
+          },
+          pages: [{ font: "1508SUPX", text: "MONT-SAINT-AIGNAN" }],
+        },
+      },
     ],
   },
   {
