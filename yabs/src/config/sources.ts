@@ -32,14 +32,14 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'TCAR',
       // ANCIENNE INFRA
-      // staticResourceHref:
-      //   'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
-      // tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
+      staticResourceHref:
+        'http://exs.tcar.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=ASTUCE&companyCode=ASTUCE:002',
+      tripUpdateHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.TripUpdate.pb',
       // vehiclePositionHref: 'https://tsi.tcar.cityway.fr/ftp/gtfsrt/Astuce.VehiclePosition.pb',
       // NOUVELLE INFRA
-      staticResourceHref: 'https://api.mrn.cityway.fr/dataflow/offre-tc/download?provider=TCAR&dataFormat=GTFS',
-      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/trip-updates',
-      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/vehicle-positions',
+      // staticResourceHref: 'https://api.mrn.cityway.fr/dataflow/offre-tc/download?provider=TCAR&dataFormat=GTFS',
+      // tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/trip-updates',
+      // vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/tcar/vehicle-positions',
       routePrefix: 'ASTUCE',
       shapesStrategy: 'IGNORE',
       registerActivity: (trip) => trip.route !== 'HLP',
@@ -78,10 +78,11 @@ const sources: Source[] = [
         }
         return entities;
       },
-      // allowScheduled: (trip) => {
-      //   if (['06', '89', '99'].includes(trip.route)) return true;
-      //   return false;
-      // },
+      allowScheduled: (trip) => {
+        return !['13', '14', '28', '33', '35', '36', '37', '38', '42', '44'].includes(trip.route) && +trip.route < 100;
+        // if (['06', '89', '99'].includes(trip.route)) return true;
+        // return false;
+      },
       getOperator: (trip) =>
         trip.service.id.includes('IST_') ||
         trip.service.id.includes('INT_') ||
