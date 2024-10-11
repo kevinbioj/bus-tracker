@@ -78,10 +78,10 @@ const sources: Source[] = [
         }
         return entities;
       },
-      allowScheduled: (trip) => {
-        if (['06', '89', '99'].includes(trip.route)) return true;
-        return false;
-      },
+      // allowScheduled: (trip) => {
+      //   if (['06', '89', '99'].includes(trip.route)) return true;
+      //   return false;
+      // },
       getOperator: (trip) =>
         trip.service.id.includes('IST_') ||
         trip.service.id.includes('INT_') ||
