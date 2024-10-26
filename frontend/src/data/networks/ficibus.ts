@@ -3,12 +3,13 @@ import { Network, Route } from "~/@types";
 const ficibusRoutes: Route[] = [
   {
     id: "FICIBUS:ATOUMOD008:Line:L1x2:LOC",
+    routeIds: ["FICIBUS:ATOUMOD008:Line:L1x2:LOC", "FICIBUS:ATOUMOD008:Line:L1x1:LOC"],
     noCartridge: true,
     name: "1",
     colors: { background: "#179FBA", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Robert Lilly"],
+        id: ["1 R.LILLY"],
         name: "Robert Lilly",
         girouette: {
           ledColor: "WHITE",
@@ -17,7 +18,7 @@ const ficibusRoutes: Route[] = [
         },
       },
       {
-        id: ["Hopital"],
+        id: ["1 HOPITAL"],
         name: "Hôpital",
         girouette: {
           ledColor: "WHITE",
@@ -34,7 +35,7 @@ const ficibusRoutes: Route[] = [
     colors: { background: "#D89030", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Robert Lilly"],
+        id: ["2 R.LILLY"],
         name: "Robert Lilly",
         girouette: {
           ledColor: "WHITE",
@@ -43,7 +44,7 @@ const ficibusRoutes: Route[] = [
         },
       },
       {
-        id: ["St Etienne"],
+        id: ["2 ST ETIENNE"],
         autoHide: true,
         name: "Saint-Étienne",
         girouette: {
@@ -53,7 +54,7 @@ const ficibusRoutes: Route[] = [
         },
       },
       {
-        id: ["Hopital"],
+        id: ["2 HOPITAL"],
         name: "Hôpital",
         girouette: {
           ledColor: "WHITE",
@@ -70,7 +71,7 @@ const ficibusRoutes: Route[] = [
     colors: { background: "#FED024", text: "#000000" },
     destinations: [
       {
-        id: ["St Nicolas"],
+        id: ["3 ST NICOLAS"],
         name: "Saint-Nicolas",
         girouette: {
           ledColor: "WHITE",
@@ -79,7 +80,7 @@ const ficibusRoutes: Route[] = [
         },
       },
       {
-        id: ["Hopital"],
+        id: ["3 HOPITAL"],
         name: "Hôpital",
         girouette: {
           ledColor: "WHITE",
@@ -88,7 +89,7 @@ const ficibusRoutes: Route[] = [
         },
       },
       {
-        id: ["Hopital Par Quai Des Pilotes"],
+        id: ["3 HOPITAL PAR QUAI DES PILOTES"],
         autoHide: true,
         name: "Hôpital (par Quai des Pilotes)",
         girouette: {
@@ -106,16 +107,26 @@ const ficibusRoutes: Route[] = [
     colors: { background: "#E6475D", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Heron Par Flaubert"],
-        name: "Héron (par Flaubert)",
+        id: ["LE HERON PAR FLAUBERT"],
+        autoHide: true,
+        name: "Le Héron (par Flaubert)",
         girouette: {
           ledColor: "WHITE",
           routeNumber: { backgroundColor: "#E6475D", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
-          pages: [[{ text: "HERON" }, { text: "PAR FLAUBERT" }]],
+          pages: [[{ text: "LE HERON" }, { text: "PAR FLAUBERT" }]],
         },
       },
       {
-        id: ["St Etienne"],
+        id: ["Fécamp - Le Héron"],
+        name: "Le Héron",
+        girouette: {
+          ledColor: "WHITE",
+          routeNumber: { backgroundColor: "#E6475D", textColor: "#FFFFFF", outlineColor: "#000000", text: "4" },
+          pages: [[{ text: "LE HERON" }, { text: "PAR FLAUBERT" }]],
+        },
+      },
+      {
+        id: ["4 ST ETIENNE"],
         name: "Saint-Étienne",
         girouette: {
           ledColor: "WHITE",
@@ -124,7 +135,7 @@ const ficibusRoutes: Route[] = [
         },
       },
       {
-        id: ["Plage"],
+        id: ["4 PLAGE"],
         autoHide: true,
         name: "Plage",
         girouette: {
@@ -142,7 +153,7 @@ const ficibusRoutes: Route[] = [
     colors: { background: "#9EC03B", text: "#FFFFFF" },
     destinations: [
       {
-        id: ["Cimetiere"],
+        id: ["5 CIMETIERE"],
         name: "Cimetière",
         girouette: {
           ledColor: "WHITE",
@@ -151,7 +162,7 @@ const ficibusRoutes: Route[] = [
         },
       },
       {
-        id: ["St Etienne"],
+        id: ["5 ST ETIENNE"],
         name: "Saint-Étienne",
         girouette: {
           ledColor: "WHITE",
