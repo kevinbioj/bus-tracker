@@ -4,6 +4,17 @@ import type { GtfsProperties, Service, Trip, VehiclePositionEntity } from '../fe
 import { parseTime } from '../fetchers/gtfs/utils/parse-time.js';
 import type { SiriProperties } from '../fetchers/siri/types.js';
 
+function nthIndexOf(input: string, pattern: string, n: number) {
+	const length = input.length;
+	let i = -1;
+	let j = n;
+	while (j-- && i++ < length) {
+		i = input.indexOf(pattern, i);
+		if (i < 0) break;
+	}
+	return i;
+}
+
 const capCotentinDevices = new Map([['de119cd6365c1d49', '908']]);
 
 const zenbusFilter = (entities: VehiclePositionEntity[]) =>
@@ -333,62 +344,62 @@ const sources: Source[] = [
       },
     },
   },
-  {
-    id: 'TRANSURBAIN',
-    refreshCron: '42 * * * * *',
-    type: 'GTFS',
-    gtfsProperties: {
-      id: 'TRANSURBAIN',
-      routePrefix: 'TRANSURBAIN',
-      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/ec78df83-2e60-4284-acc3-86a0baa76bf0',
-    },
-  },
-  {
-    id: 'SNGO',
-    refreshCron: '35 * * * * *',
-    type: 'GTFS',
-    gtfsProperties: {
-      id: 'SNGO',
-      routePrefix: 'SNGO',
-      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/71bf48f1-178e-4ce3-ba9d-361cc5be76a7',
-      tripUpdateHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
-      vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
-      getOperator: () => 'SNGO',
-      shapesStrategy: 'IGNORE',
-      // afterInit: (resource) => {
-      //   for (const [tripId, trip] of [...resource.trips.entries()]) {
-      //     resource.trips.delete(tripId);
-      //     const fixedTripId = tripId.split(':')[2];
-      //     trip.id = fixedTripId;
-      //     trip.route = trip.route.split(':')[2];
-      //     resource.trips.set(fixedTripId, trip);
-      //   }
+  // {
+  //   id: 'TRANSURBAIN',
+  //   refreshCron: '42 * * * * *',
+  //   type: 'GTFS',
+  //   gtfsProperties: {
+  //     id: 'TRANSURBAIN',
+  //     routePrefix: 'TRANSURBAIN',
+  //     staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/ec78df83-2e60-4284-acc3-86a0baa76bf0',
+  //   },
+  // },
+  // {
+  //   id: 'SNGO',
+  //   refreshCron: '35 * * * * *',
+  //   type: 'GTFS',
+  //   gtfsProperties: {
+  //     id: 'SNGO',
+  //     routePrefix: 'SNGO',
+  //     staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/71bf48f1-178e-4ce3-ba9d-361cc5be76a7',
+  //     tripUpdateHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
+  //     vehiclePositionHref: 'https://tnvs.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
+  //     getOperator: () => 'SNGO',
+  //     shapesStrategy: 'IGNORE',
+  //     // afterInit: (resource) => {
+  //     //   for (const [tripId, trip] of [...resource.trips.entries()]) {
+  //     //     resource.trips.delete(tripId);
+  //     //     const fixedTripId = tripId.split(':')[2];
+  //     //     trip.id = fixedTripId;
+  //     //     trip.route = trip.route.split(':')[2];
+  //     //     resource.trips.set(fixedTripId, trip);
+  //     //   }
 
-      //   for (const [stopId, stop] of [...resource.stops.entries()]) {
-      //     resource.stops.delete(stopId);
-      //     const fixedStopId = stopId.split(':')[3];
-      //     stop.id = fixedStopId;
-      //     resource.stops.set(fixedStopId, stop);
-      //   }
-      // },
-    },
-  },
-  {
-    id: 'SNGO-GIVERNY',
-    refreshCron: '35 * * * * *',
-    type: 'GTFS',
-    gtfsProperties: {
-      id: 'SNGO-GIVERNY',
-      routePrefix: 'SNGO',
-      staticResourceHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs/pub',
-      tripUpdateHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs-rt',
-      vehiclePositionHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs-rt',
-      getOperator: () => 'SNGO',
-      getVehicleNumber: (descriptor) => descriptor.label ?? null,
-      allowScheduled: false,
-      shapesStrategy: 'IGNORE',
-    },
-  },
+  //     //   for (const [stopId, stop] of [...resource.stops.entries()]) {
+  //     //     resource.stops.delete(stopId);
+  //     //     const fixedStopId = stopId.split(':')[3];
+  //     //     stop.id = fixedStopId;
+  //     //     resource.stops.set(fixedStopId, stop);
+  //     //   }
+  //     // },
+  //   },
+  // },
+  // {
+  //   id: 'SNGO-GIVERNY',
+  //   refreshCron: '35 * * * * *',
+  //   type: 'GTFS',
+  //   gtfsProperties: {
+  //     id: 'SNGO-GIVERNY',
+  //     routePrefix: 'SNGO',
+  //     staticResourceHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs/pub',
+  //     tripUpdateHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs-rt',
+  //     vehiclePositionHref: 'https://pysae.com/api/v2/groups/SNGO-Giverny/gtfs-rt',
+  //     getOperator: () => 'SNGO',
+  //     getVehicleNumber: (descriptor) => descriptor.label ?? null,
+  //     allowScheduled: false,
+  //     shapesStrategy: 'IGNORE',
+  //   },
+  // },
   {
     id: 'DEEPMOB',
     refreshCron: '43 * * * * *',
@@ -396,9 +407,25 @@ const sources: Source[] = [
     gtfsProperties: {
       id: 'DEEPMOB',
       routePrefix: 'DEEPMOB',
-      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/62248658-0eba-4f4e-b367-aaea635ecd38',
+      staticResourceHref: 'https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/80680/80680.20231227.130734.249189.zip',
       tripUpdateHref: 'https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/trip-updates',
       vehiclePositionHref: 'https://tud.geo3d.hanoverdisplays.com/api-1.0/gtfs-rt/vehicle-positions',
+      // afterInit: (resource) => {
+      //   for (const [id, trip] of [...resource.trips]) {
+      //     resource.trips.delete(id);
+      //     const newId = id.slice(nthIndexOf(id, ':', 2) + 1, nthIndexOf(id, ':', 3));
+      //     trip.id = newId;
+      //     const newRouteId = trip.route.slice(nthIndexOf(id, ':', 1) + 6, -4);
+      //     trip.route = newRouteId
+      //     resource.trips.set(newId, trip);
+      //   }
+      //   for (const [id, stop] of [...resource.stops]) {
+      //     resource.stops.delete(id);
+      //     const newId = id.slice(nthIndexOf(id, ':', 3) + 1, nthIndexOf(id, ':', 4));
+      //     stop.id = newId;
+      //     resource.stops.set(newId, stop);
+      //   }
+      // },
       getOperator: () => 'DEEPMOB',
       shapesStrategy: 'IGNORE',
     },
@@ -540,22 +567,22 @@ const sources: Source[] = [
       shapesStrategy: 'IGNORE',
     },
   },
-  {
-    id: 'NEMUS',
-    refreshCron: '52 * * * * *',
-    type: 'GTFS',
-    gtfsProperties: {
-      id: 'NEMUS',
-      routePrefix: 'NEMUS',
-      staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/821cfc05-c8db-48a5-a830-9358054bee95',
-      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/trip-updates',
-      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/vehicle-positions',
-      allowScheduled: false,
-      getOperator: () => 'NEMUS',
-      getVehicleNumber: () => null,
-      shapesStrategy: 'IGNORE',
-    },
-  },
+  // {
+  //   id: 'NEMUS',
+  //   refreshCron: '52 * * * * *',
+  //   type: 'GTFS',
+  //   gtfsProperties: {
+  //     id: 'NEMUS',
+  //     routePrefix: 'NEMUS',
+  //     staticResourceHref: 'https://www.data.gouv.fr/fr/datasets/r/821cfc05-c8db-48a5-a830-9358054bee95',
+  //     tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/trip-updates',
+  //     vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/nemus/vehicle-positions',
+  //     allowScheduled: false,
+  //     getOperator: () => 'NEMUS',
+  //     getVehicleNumber: () => null,
+  //     shapesStrategy: 'IGNORE',
+  //   },
+  // },
   {
     id: 'BYBUS',
     refreshCron: '52 * * * * *',
