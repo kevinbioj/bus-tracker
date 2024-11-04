@@ -106,7 +106,7 @@ const sources: Source[] = [
   },
   {
     id: 'TCAR-TGR',
-    refreshCron: '5,35 * * * * *',
+    refreshCron: '0,30 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TCAR-TGR',
@@ -122,7 +122,7 @@ const sources: Source[] = [
   },
   {
     id: 'TAE',
-    refreshCron: '2,32 * * * * *',
+    refreshCron: '0,30 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TAE',
@@ -162,7 +162,7 @@ const sources: Source[] = [
   },
   {
     id: 'TNI',
-    refreshCron: '3 * * * * *',
+    refreshCron: '0 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'TNI',
@@ -175,7 +175,7 @@ const sources: Source[] = [
   },
   {
     id: 'HANGA',
-    refreshCron: '4 * * * * *',
+    refreshCron: '0 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'HANGA',
@@ -199,7 +199,7 @@ const sources: Source[] = [
   },
   {
     id: 'LIA',
-    refreshCron: '15,55 * * * * *',
+    refreshCron: '10,50 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'LIA',
@@ -329,7 +329,7 @@ const sources: Source[] = [
   },
   {
     id: 'SEMO',
-    refreshCron: '25,55 * * * * *',
+    refreshCron: '15,45 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'SEMO',
@@ -402,7 +402,7 @@ const sources: Source[] = [
   // },
   {
     id: 'DEEPMOB',
-    refreshCron: '43 * * * * *',
+    refreshCron: '40 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'DEEPMOB',
@@ -432,7 +432,7 @@ const sources: Source[] = [
   },
   {
     id: 'CAPCOT',
-    refreshCron: '41 * * * * *',
+    refreshCron: '35 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'CAPCOT',
@@ -540,7 +540,7 @@ const sources: Source[] = [
   },
   {
     id: 'FICIBUS',
-    refreshCron: '18,48 * * * * *',
+    refreshCron: '48 * * * * *',
     type: 'GTFS',
     gtfsProperties: {
       id: 'FICIBUS',
@@ -552,21 +552,21 @@ const sources: Source[] = [
       shapesStrategy: 'IGNORE',
     },
   },
-  {
-    id: 'VIKIBUS',
-    refreshCron: '24 * * * * *',
-    type: 'GTFS',
-    gtfsProperties: {
-      id: 'VIKIBUS',
-      routePrefix: 'VIKIBUS',
-      staticResourceHref: 'https://gtfs.bus-tracker.fr/vikibus.zip',
-      tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/vikibus/trip-updates',
-      vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/vikibus/vehicle-positions',
-      allowScheduled: false,
-      getVehicleNumber: () => null,
-      shapesStrategy: 'IGNORE',
-    },
-  },
+  // {
+  //   id: 'VIKIBUS',
+  //   refreshCron: '24 * * * * *',
+  //   type: 'GTFS',
+  //   gtfsProperties: {
+  //     id: 'VIKIBUS',
+  //     routePrefix: 'VIKIBUS',
+  //     staticResourceHref: 'https://gtfs.bus-tracker.fr/vikibus.zip',
+  //     tripUpdateHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/vikibus/trip-updates',
+  //     vehiclePositionHref: 'https://gtfs.bus-tracker.fr/gtfs-rt/vikibus/vehicle-positions',
+  //     allowScheduled: false,
+  //     getVehicleNumber: () => null,
+  //     shapesStrategy: 'IGNORE',
+  //   },
+  // },
   // {
   //   id: 'NEMUS',
   //   refreshCron: '52 * * * * *',
