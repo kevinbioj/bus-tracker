@@ -564,7 +564,7 @@ const astuceRoutes: Route[] = [
       },
       {
         id: ["Théâtre des Arts ROUEN"],
-        name: "Boulingrin",
+        name: "Théâtre des Arts",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#AFCA0B", outlineColor: "#FFFFFF", textColor: "#000000", text: "F5" },
@@ -848,7 +848,7 @@ const astuceRoutes: Route[] = [
     destinations: [
       {
         id: ["Martainville ROUEN", "Martainville"],
-        name: "Boulingrin",
+        name: "Martainville",
         city: "ROUEN",
         girouette: {
           routeNumber: { backgroundColor: "#F8AE4C", textColor: "#000000", outlineColor: "#FFFFFF", text: "13" },
