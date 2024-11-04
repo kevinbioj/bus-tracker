@@ -19,6 +19,7 @@ const sources: Source[] = [
       vehiclePositionHref: 'https://proxy.transport.data.gouv.fr/resource/palmbus-cannes-gtfs-rt-vehicle-position',
       routePrefix: 'PALMBUS',
       allowScheduled: false,
+      shapesStrategy: 'IGNORE',
     },
   },
 ];
