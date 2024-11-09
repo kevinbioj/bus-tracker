@@ -102,6 +102,7 @@ const sources: Source[] = [
         trip.id === 'DEPOT_ROUEN'
           ? 'TNI'
           : 'TCAR',
+      getVehicleNumber: (descriptor) => descriptor.id,
     },
   },
   {
