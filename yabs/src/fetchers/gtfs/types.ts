@@ -84,7 +84,7 @@ export type VehicleDescriptor = {
 export type TripUpdateEntity = {
   id: string;
   tripUpdate: {
-    stopTimeUpdate: Array<{
+    stopTimeUpdate?: Array<{
       scheduleRelationship?: 'SCHEDULED' | 'SKIPPED' | 'NO_DATA';
       arrival?: StopTimeEvent;
       departure?: StopTimeEvent;
