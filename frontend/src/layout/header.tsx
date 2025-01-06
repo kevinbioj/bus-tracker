@@ -66,6 +66,10 @@ export default function Header() {
           </Link>
         </div>
       </nav>
+      <div className="py-1 text-center text-sm">
+        Découvrez la nouvelle version de l'app !<br />
+        <a className="font-bold" href="https://dev.bus-tracker.fr" target="_blank">https://dev.bus-tracker.fr</a><br />
+      </div>
     </>
   );
 }
