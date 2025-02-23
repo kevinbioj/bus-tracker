@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
 
-import Providers from "~/app/providers";
 import logoSmall from "~/images/icon.png";
 import Header from "~/layout/header";
 import "~/styles/globals.css";
@@ -39,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className="bg-neutral-100 text-black dark:bg-neutral-900 dark:text-white font-[Achemine] mb-12">
         <NextTopLoader color="#FFFFFF" showSpinner={false} />
         <Header />
-        <Providers>{children}</Providers>
+        {children}
       </body>
     </html>
   );

@@ -1,18 +1,6 @@
-import { LightVehicleDto, TripData, VehicleData, VehicleDto } from "~/@types";
+import { LightVehicleDto, VehicleDto } from "~/@types";
 
 const YABS_URL = process.env.YABS_URL ?? "http://127.0.0.1:13337";
-
-export async function fetchTrip(tripId: string) {
-  const response = await fetch(`${YABS_URL}/trip/${tripId}`);
-  const data = (await response.json()) as TripData;
-  return data;
-}
-
-export async function fetchVehicles() {
-  const response = await fetch(`${YABS_URL}/vehicles`);
-  const data = (await response.json()) as VehicleData[];
-  return data.sort((a, b) => +(a.vehicle.id ?? Infinity) - +(b.vehicle.id ?? Infinity));
-}
 
 export async function fetchVehicleList() {
   const response = await fetch(`${YABS_URL}/history`);

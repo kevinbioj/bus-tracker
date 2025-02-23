@@ -1,6 +1,4 @@
 //- OPERATORS
-import { GirouetteData } from "~/components/interactive-map/girouette";
-
 export type Network = {
   slug: string;
   name: string;
@@ -33,73 +31,7 @@ export type Route = {
   noCartridge?: boolean;
   name: string;
   colors: { background: string; text: string };
-  destinations: RouteTripDestination[];
-};
-
-export type RouteDestination = {
-  alternate?: string;
-  name: string;
-  city?: string;
-  autoHide?: boolean;
-  girouette?: GirouetteData;
-};
-
-export type RouteDirectionDestination = RouteDestination;
-
-export type RouteTripDestination = { id: string[] } & RouteDestination;
-
-export type StopTime = {
-  id: string;
-  sequence: number;
-  name: string;
-  timestamp: number | null;
-  delta: number | null;
-  isRealtime: boolean;
-};
-
-//- TRIPS
-
-export type TripData = {
-  id: string;
-  source: string;
-  stopTimes: StopTime[];
-  trip: {
-    id: string;
-    route: string;
-    direction: number;
-    headsign: string | null;
-  };
-  vehicle: {
-    id: string | null;
-  };
-  timestamp: number;
-};
-
-//- VEHICLES
-
-export type VehicleData = {
-  id: string;
-  source: string;
-  trip: {
-    id: string;
-    route: string;
-    direction: number;
-    headsign: string | null;
-    stopTimes: StopTime[];
-    status: "WAITING_FOR_DEPARTURE" | "ONGOING" | "ARRIVED";
-  };
-  vehicle: {
-    id: string | null;
-    position: {
-      latitude: number;
-      longitude: number;
-      timestamp: number;
-      type: "GPS" | "REALTIME" | "SCHEDULED";
-    };
-    ledColor: "YELLOW" | "WHITE" | null;
-  };
-  timestamp: number;
-  activityRegistered: boolean;
+  destinations: [];
 };
 
 //- HISTORY

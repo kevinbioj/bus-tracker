@@ -3,15 +3,16 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  experimental: {
-    reactCompiler: true,
-  },
-  reactStrictMode: false,
   redirects: async () => [
     {
       source: "/",
       destination: "/map",
       permanent: true,
+    },
+    {
+      source: "/map",
+      destination: "/vehicles",
+      permanent: false,
     },
   ],
   typescript: {
