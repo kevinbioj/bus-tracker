@@ -67,8 +67,8 @@ export default function Header() {
         </div>
       </nav>
       <div className="py-1 text-center text-sm">
-        Découvrez la nouvelle version de l'app !<br />
-        <a className="font-bold" href="https://dev.bus-tracker.fr" target="_blank">https://dev.bus-tracker.fr</a><br />
+        Pour continuer à utiliser l'application, rendez-vous sur :<br />
+        <a className="font-bold" href="https://bus-tracker.fr" target="_blank">https://bus-tracker.fr</a><br />
       </div>
     </>
   );
